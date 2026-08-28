@@ -100,6 +100,26 @@ Modifiez le fichier `questions.js` et ajoutez une nouvelle question dans le form
 3. Créez une entrée dans l'objet `quizzesData`
 4. Ajoutez un lien dans la navigation
 
+## 🌐 Déploiement (GitHub Pages)
+
+Le site est 100% statique (aucun build step). Pour le publier sur GitHub Pages :
+
+```bash
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/<ton-pseudo>/<ton-repo>.git
+git push -u origin main
+```
+
+Puis sur GitHub : **Settings → Pages → Source : `main` / `/ (root)`**.
+
+Le site sera en ligne sur `https://<ton-pseudo>.github.io/<ton-repo>/`.
+
+Le fichier `.nojekyll` à la racine désactive le traitement Jekyll de GitHub Pages
+et garantit que tous les fichiers sont servis tels quels.
+
 ## 📞 Support et Questions
 
 Pour toute question ou suggestion, veuillez consulter les sources citées pour approfondir vos connaissances.
