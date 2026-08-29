@@ -800,6 +800,7 @@ function openCategory(key) {
     document.getElementById('themes-title').textContent = cat.label;
     document.getElementById('categories-view').classList.add('hidden');
     document.getElementById('subthemes-view').classList.remove('hidden');
+    hideCategoryPagination();
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
@@ -807,6 +808,7 @@ function closeCategory() {
     document.getElementById('themes-title').textContent = 'Thèmes de Quiz';
     document.getElementById('subthemes-view').classList.add('hidden');
     document.getElementById('categories-view').classList.remove('hidden');
+    showCategoryPagination();
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
@@ -846,6 +848,90 @@ function highlight(text, query) {
     const re = new RegExp(`(${escaped})`, 'gi');
     return text.replace(re, '<mark>$1</mark>');
 }
+
+
+/* ============================================================
+   Pagination de la vue catégories — 9 cartes par page.
+   Les cartes sont statiques dans index.html : on les masque
+   plutôt que de les regénérer, pour ne rien casser ailleurs.
+   ============================================================ */
+const CARDS_PER_PAGE = 9;
+let categoryPage = 1;
+
+function categoryCards() {
+    const cv = document.getElementById('categories-view');
+    return cv ? [...cv.querySelectorAll('.category-card')] : [];
+}
+
+function totalCategoryPages() {
+    return Math.max(1, Math.ceil(categoryCards().length / CARDS_PER_PAGE));
+}
+
+function renderCategoryPage(page) {
+    const cards = categoryCards();
+    if (!cards.length) return;
+
+    const pages = totalCategoryPages();
+    categoryPage = Math.min(Math.max(1, page), pages);
+
+    const start = (categoryPage - 1) * CARDS_PER_PAGE;
+    const end   = start + CARDS_PER_PAGE;
+
+    cards.forEach((card, i) => {
+        const visible = i >= start && i < end;
+        card.style.display = visible ? '' : 'none';
+        if (visible) {
+            // Relance l'apparition en cascade sur la nouvelle page.
+            card.style.animation = 'none';
+            void card.offsetWidth;                       // force un reflow
+            card.style.animation = '';
+            card.style.animationDelay = ((i - start) * 0.05) + 's';
+        }
+    });
+
+    renderCategoryPagination();
+}
+
+function renderCategoryPagination() {
+    const box = document.getElementById('categories-pagination');
+    if (!box) return;
+
+    const pages = totalCategoryPages();
+    if (pages <= 1) { box.innerHTML = ''; box.style.display = 'none'; return; }
+
+    box.style.display = '';
+    const prevOff = categoryPage === 1;
+    const nextOff = categoryPage === pages;
+
+    let dots = '';
+    for (let p = 1; p <= pages; p++) {
+        dots += `<button class="page-dot${p === categoryPage ? ' active' : ''}" onclick="goToCategoryPage(${p})" aria-label="Page ${p}">${p}</button>`;
+    }
+
+    box.innerHTML = `
+        <button class="page-btn" ${prevOff ? 'disabled' : ''} onclick="goToCategoryPage(${categoryPage - 1})">← Précédent</button>
+        <div class="page-dots">${dots}</div>
+        <button class="page-btn" ${nextOff ? 'disabled' : ''} onclick="goToCategoryPage(${categoryPage + 1})">Suivant →</button>
+    `;
+}
+
+function goToCategoryPage(page) {
+    renderCategoryPage(page);
+    const anchor = document.getElementById('themes-title');
+    if (anchor) anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function showCategoryPagination() {
+    const box = document.getElementById('categories-pagination');
+    if (box && totalCategoryPages() > 1) box.style.display = '';
+}
+
+function hideCategoryPagination() {
+    const box = document.getElementById('categories-pagination');
+    if (box) box.style.display = 'none';
+}
+
+window.goToCategoryPage = goToCategoryPage;
 
 function initSearch() {
     const input = document.getElementById('quiz-search');
@@ -927,6 +1013,7 @@ function hideCategoriesView() {
     if (cv) cv.classList.add('hidden');
     if (sv) sv.classList.add('hidden');
     if (title) title.style.display = 'none';
+    hideCategoryPagination();
 }
 
 function showCategoriesView() {
@@ -934,11 +1021,13 @@ function showCategoriesView() {
     const title = document.getElementById('themes-title');
     if (cv) cv.classList.remove('hidden');
     if (title) { title.style.display = ''; title.textContent = 'Thèmes de Quiz'; }
+    showCategoryPagination();
 }
 
 // Init au chargement de la page d'accueil
 document.addEventListener('DOMContentLoaded', () => {
     initSearch();
+    renderCategoryPage(1);
     // Lance automatiquement le mode aléatoire si on est sur la bonne page
     if (document.getElementById('quiz-container') && window.location.pathname.includes('quiz-aleatoire')) {
         startRandomQuiz();
