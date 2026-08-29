@@ -765,6 +765,7 @@ const categories = {
             { icon: '⚡', title: 'Harry Potter', desc: 'Sorts, Horcruxes, Poudlard et tous les secrets de l\'univers de J.K. Rowling.', url: 'quiz-harry-potter.html' },
             { icon: '⭐', title: 'Star Wars', desc: 'La Force, les Jedi, les Sith et toute la saga Skywalker dans une galaxie très très lointaine.', url: 'quiz-star-wars.html' },
             { icon: '🩸', title: 'Jujutsu Kaisen', desc: 'Sukuna, Gojo, les fléaux maudits et toute la saga Jujutsu Kaisen de Gege Akutami.', url: 'quiz-jujutsu-kaisen.html' },
+            { icon: '🎥', title: 'Cinéma', desc: 'Films cultes, grands réalisateurs, Cannes, Oscars et histoire du 7e art.', url: 'quiz-cinema.html' },
         ]
     },
 };
@@ -1072,3 +1073,16 @@ function startQuizHistoireFrance(difficulty) {
     nextBtn.onclick = () => quizManager.nextQuestion();
 }
 window.startQuizHistoireFrance = startQuizHistoireFrance;
+
+function startQuizCinema(difficulty) {
+    document.getElementById('difficulty-selection').style.display = 'none';
+    document.getElementById('quiz-container').style.display = 'block';
+
+    const quizData = quizzesData.cinema;
+    quizManager = new QuizManager(quizData, difficulty);
+    quizManager.init();
+
+    const nextBtn = document.getElementById('next-button');
+    nextBtn.onclick = () => quizManager.nextQuestion();
+}
+window.startQuizCinema = startQuizCinema;

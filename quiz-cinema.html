@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Cinéma</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo" onclick="location.href='index.html'">⚡ QuizzlyUnivers</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="javascript:void(0)" class="suggestion-button" onclick="suggestNewTheme()">Proposer un thème</a></li>
+                <li><a href="javascript:void(0)" class="report-button" onclick="openReportModal()">🐛 Signaler / Suggérer</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="quiz-container">
+            <!-- Difficulté Selection -->
+            <div id="difficulty-selection" class="difficulty-selection">
+                <div class="difficulty-header">
+                    <h2>Choisissez votre niveau de difficulté</h2>
+                    <p>Sélectionnez le niveau qui vous convient le mieux</p>
+                </div>
+                <div class="difficulty-grid">
+                    <div class="difficulty-card" onclick="startQuizCinema('facile')">
+                        <div class="difficulty-level">⭐</div>
+                        <h3>Facile</h3>
+                        <p>10 questions de base pour débuter</p>
+                        <div class="difficulty-badge">Spectateur</div>
+                    </div>
+                    <div class="difficulty-card active" onclick="startQuizCinema('moyen')">
+                        <div class="difficulty-level">⭐⭐</div>
+                        <h3>Moyen</h3>
+                        <p>10 questions intermédiaires</p>
+                        <div class="difficulty-badge">Cinéphile</div>
+                    </div>
+                    <div class="difficulty-card" onclick="startQuizCinema('difficile')">
+                        <div class="difficulty-level">⭐⭐⭐</div>
+                        <h3>Difficile</h3>
+                        <p>10 questions avancées</p>
+                        <div class="difficulty-badge">Critique de Cannes</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quiz Section -->
+            <div id="quiz-container" style="display: none;">
+                <div class="quiz-header">
+                    <h1>🎥 Cinéma</h1>
+                    <p>Films cultes, réalisateurs, festivals et histoire du 7e art</p>
+                </div>
+                <div class="progress-bar">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+                <p style="text-align: center; margin-bottom: 1rem; color: #94a3b8;" id="progress-text"></p>
+
+                <div class="question-card" id="question-container">
+                    <!-- Les questions seront générées ici par JavaScript -->
+                </div>
+
+                <div class="button-container">
+                    <button id="next-button" class="btn btn-primary">Suivante →</button>
+                </div>
+            </div>
+
+            <!-- Résultats -->
+            <div id="results-container" class="results-container" style="display: none;">
+                <div class="results-header">
+                    <h2>🎉 Quiz Terminé!</h2>
+                    <p id="results-message"></p>
+                </div>
+
+                <div class="results-score">
+                    <div class="score-circle">
+                        <span id="score-percentage">0%</span>
+                    </div>
+                    <div class="score-details">
+                        <p><strong id="score-text">0/10</strong> bonnes réponses</p>
+                        <p id="performance-message"></p>
+                    </div>
+                </div>
+
+                <div id="review-section" class="review-section">
+                    <!-- Les réponses seront affichées ici -->
+                </div>
+
+                <div class="button-container">
+                    <button class="btn btn-primary" onclick="location.reload()">Recommencer</button>
+                    <button class="btn btn-secondary" onclick="location.href='index.html'">Retour à l'accueil</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Info Section -->
+        <section class="info" style="margin-top: 3rem;">
+            <h2>À propos de ce Quiz</h2>
+            <div class="info-content">
+                <div>
+                    <p>Ce quiz parcourt l'histoire du cinéma, des frères Lumière à aujourd'hui : films cultes, grands réalisateurs, festivals, récompenses et vocabulaire technique du 7e art.</p>
+                </div>
+                <div>
+                    <ul>
+                        <li>🎥 De 1895 au cinéma d'aujourd'hui</li>
+                        <li>📚 Sources cinématographiques vérifiées</li>
+                        <li>🏆 3 niveaux : Spectateur, Cinéphile, Critique</li>
+                        <li>✅ Questions Vrai/Faux incluses</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 QuizzlyUnivers — L'Univers du Quizz</p>
+    </footer>
+
+    <script src="questions.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="animations.js" defer></script>
+</body>
+</html>

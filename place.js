@@ -20,7 +20,7 @@ const Place = (() => {
         { ic: '🫀', nm: 'Corps Humain', keys: ['corpsHumain'] },
         { ic: '🌍', nm: 'Géographie',   keys: ['geographie'] },
         { ic: '⚜️', nm: 'Histoire',     keys: ['histoireFrance'] },
-        { ic: '🎬', nm: 'Fiction',      keys: ['harryPotter', 'starWars', 'jujutsuKaisen'] },
+        { ic: '🎬', nm: 'Cinéma',       keys: ['cinema', 'harryPotter', 'starWars', 'jujutsuKaisen'] },
     ];
 
     const CHAMPIONS = [

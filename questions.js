@@ -9998,4 +9998,537 @@ const quizzesData = {
             }
         ]
     }
+,
+
+    cinema: {
+        title: "Cinéma",
+        description: "Films cultes, réalisateurs, festivals et histoire du 7e art",
+        facile: [
+            {
+                id: 1,
+                question: "Qui a réalisé le film Titanic (1997) ?",
+                options: ["Steven Spielberg", "Ridley Scott", "James Cameron", "Martin Scorsese"],
+                correct: 2,
+                explanation: "James Cameron a réalisé Titanic, sorti en 1997. Le film a remporté 11 Oscars, égalant le record de Ben-Hur (1959), et est resté le plus gros succès du box-office mondial pendant douze ans, jusqu'à Avatar, du même réalisateur.",
+                source: "Academy of Motion Picture Arts and Sciences — 70th Academy Awards."
+            },
+            {
+                id: 2,
+                question: "Quels frères sont considérés comme les inventeurs du cinéma ?",
+                options: ["Les frères Pathé", "Les frères Lumière", "Les frères Gaumont", "Les frères Warner"],
+                correct: 1,
+                explanation: "Auguste et Louis Lumière ont organisé la première projection publique payante le 28 décembre 1895, au Salon Indien du Grand Café à Paris. Leur cinématographe servait à la fois de caméra, de tireuse et de projecteur.",
+                source: "Institut Lumière — Histoire du cinématographe, 1895."
+            },
+            {
+                id: 3,
+                question: "Dans quelle ville se déroule le plus célèbre festival de cinéma français ?",
+                options: ["Deauville", "Avignon", "Annecy", "Cannes"],
+                correct: 3,
+                explanation: "Le Festival de Cannes se tient chaque année en mai sur la Croisette. Créé en 1946, il décerne la Palme d'Or, considérée comme l'une des récompenses les plus prestigieuses du cinéma mondial.",
+                source: "Festival de Cannes — Historique officiel du festival."
+            },
+            {
+                id: 4,
+                question: "Quelle récompense est décernée au Festival de Cannes ?",
+                options: ["L'Ours d'Or", "Le Lion d'Or", "La Palme d'Or", "Le Léopard d'Or"],
+                correct: 2,
+                explanation: "La Palme d'Or récompense le meilleur film de la sélection officielle de Cannes depuis 1955. L'Ours d'Or est décerné à Berlin, le Lion d'Or à Venise et le Léopard d'Or à Locarno.",
+                source: "Festival de Cannes — Palmarès officiel."
+            },
+            {
+                id: 5,
+                question: "Qui a créé le personnage de Charlot ?",
+                options: ["Buster Keaton", "Harold Lloyd", "Charlie Chaplin", "Jacques Tati"],
+                correct: 2,
+                explanation: "Charlie Chaplin a créé Charlot en 1914, reconnaissable à son chapeau melon, sa canne et sa démarche. Le personnage est devenu l'une des figures les plus célèbres du cinéma muet, notamment dans Les Temps modernes et Le Kid.",
+                source: "British Film Institute — Charlie Chaplin filmography."
+            },
+            {
+                id: 6,
+                question: "Quel studio a produit le film d'animation Toy Story ?",
+                options: ["DreamWorks", "Studio Ghibli", "Pixar", "Illumination"],
+                correct: 2,
+                explanation: "Toy Story, sorti en 1995, est le premier long-métrage entièrement réalisé en images de synthèse. Produit par Pixar et distribué par Disney, il a été réalisé par John Lasseter et a ouvert la voie à l'animation 3D moderne.",
+                source: "Pixar Animation Studios — Toy Story production history."
+            },
+            {
+                id: 7,
+                question: "Qui a créé l'univers Star Wars et réalisé le film de 1977 ?",
+                options: ["Steven Spielberg", "Ridley Scott", "George Lucas", "James Cameron"],
+                correct: 2,
+                explanation: "George Lucas a créé l'univers Star Wars et réalisé le premier film sorti en 1977. Il a également fondé Industrial Light & Magic, société d'effets spéciaux qui a révolutionné les trucages au cinéma.",
+                source: "Lucasfilm — Star Wars production archives."
+            },
+            {
+                id: 8,
+                question: "Quelle est la récompense la plus prestigieuse du cinéma américain ?",
+                options: ["Le Golden Globe", "Le BAFTA", "L'Oscar", "Le Grammy"],
+                correct: 2,
+                explanation: "Les Oscars (Academy Awards) sont décernés depuis 1929 par l'Academy of Motion Picture Arts and Sciences. Le Grammy récompense la musique, le BAFTA est britannique et le Golden Globe vient de la presse étrangère.",
+                source: "Academy of Motion Picture Arts and Sciences — About the Oscars."
+            },
+            {
+                id: 9,
+                question: "Quel réalisateur est surnommé le maître du suspense ?",
+                options: ["Stanley Kubrick", "Alfred Hitchcock", "Orson Welles", "Billy Wilder"],
+                correct: 1,
+                explanation: "Alfred Hitchcock a réalisé Psychose, Les Oiseaux, Sueurs froides et Fenêtre sur cour. Maître du suspense, il n'a pourtant jamais remporté l'Oscar du meilleur réalisateur malgré cinq nominations.",
+                source: "British Film Institute — Alfred Hitchcock retrospective."
+            },
+            {
+                id: 10,
+                question: "Quel est le premier long-métrage d'animation des studios Disney ?",
+                options: ["Pinocchio", "Bambi", "Blanche-Neige et les sept nains", "Dumbo"],
+                correct: 2,
+                explanation: "Blanche-Neige et les sept nains, sorti en 1937, est le premier long-métrage d'animation de Disney et le premier en Technicolor. Son succès a financé la construction des studios Disney de Burbank.",
+                source: "Walt Disney Archives — Snow White production history, 1937."
+            },
+            {
+                id: 11,
+                question: "Combien d'images par seconde compose le standard du cinéma ?",
+                options: ["12 images", "18 images", "24 images", "60 images"],
+                correct: 2,
+                explanation: "Le standard de 24 images par seconde s'est imposé avec l'arrivée du cinéma parlant à la fin des années 1920, car il offrait une qualité sonore suffisante. Il reste la norme au cinéma, même à l'ère du numérique.",
+                source: "Society of Motion Picture and Television Engineers — Frame rate standards."
+            },
+            {
+                id: 12,
+                question: "Qui a réalisé E.T. l'extra-terrestre et Jurassic Park ?",
+                options: ["George Lucas", "Robert Zemeckis", "Steven Spielberg", "Tim Burton"],
+                correct: 2,
+                explanation: "Steven Spielberg a réalisé Les Dents de la mer, E.T., Indiana Jones, Jurassic Park et La Liste de Schindler, qui lui a valu son premier Oscar du meilleur réalisateur en 1994.",
+                source: "Academy of Motion Picture Arts and Sciences — Steven Spielberg awards record."
+            },
+            {
+                id: 13,
+                question: "Quel film de 1972 raconte l'histoire de la famille Corleone ?",
+                options: ["Les Affranchis", "Scarface", "Le Parrain", "Casino"],
+                correct: 2,
+                explanation: "Le Parrain, réalisé par Francis Ford Coppola et adapté du roman de Mario Puzo, met en scène la famille mafieuse Corleone. Marlon Brando y interprète Don Vito Corleone et le film a remporté l'Oscar du meilleur film.",
+                source: "American Film Institute — The Godfather, AFI Catalog."
+            },
+            {
+                id: 14,
+                question: "Quel est le nom du studio d'animation japonais de Hayao Miyazaki ?",
+                options: ["Studio Toei", "Studio Ghibli", "Studio Madhouse", "Studio Bones"],
+                correct: 1,
+                explanation: "Le Studio Ghibli a été fondé en 1985 par Hayao Miyazaki, Isao Takahata et Toshio Suzuki. Il a produit Mon voisin Totoro, Princesse Mononoké et Le Voyage de Chihiro, Oscar du meilleur film d'animation en 2003.",
+                source: "Studio Ghibli — Historique officiel du studio."
+            },
+            {
+                id: 15,
+                question: "Comment appelle-t-on un film sans dialogues parlés ?",
+                options: ["Un film noir", "Un film muet", "Un court-métrage", "Un documentaire"],
+                correct: 1,
+                explanation: "Le cinéma muet a dominé de 1895 à la fin des années 1920. Les films étaient accompagnés de musique live et de cartons de texte appelés intertitres. Le Chanteur de jazz (1927) marque le passage au parlant.",
+                source: "Library of Congress — Silent film era collection."
+            },
+            {
+                id: 16,
+                question: "Quel acteur incarne Jack Dawson dans Titanic ?",
+                options: ["Brad Pitt", "Matt Damon", "Leonardo DiCaprio", "Johnny Depp"],
+                correct: 2,
+                explanation: "Leonardo DiCaprio incarne Jack Dawson aux côtés de Kate Winslet dans Titanic. Il a dû attendre 2016 et The Revenant pour remporter son premier Oscar du meilleur acteur, après cinq nominations.",
+                source: "Academy of Motion Picture Arts and Sciences — 88th Academy Awards."
+            },
+            {
+                id: 17,
+                question: "Quel terme désigne la personne qui dirige un tournage ?",
+                options: ["Le producteur", "Le réalisateur", "Le scénariste", "Le monteur"],
+                correct: 1,
+                explanation: "Le réalisateur dirige les acteurs et les équipes techniques et porte la vision artistique du film. Le producteur en assure le financement, le scénariste écrit l'histoire et le monteur assemble les plans.",
+                source: "Centre National du Cinéma (CNC) — Les métiers du cinéma."
+            },
+            {
+                id: 18,
+                question: "Quelle société de production a pour emblème un lion rugissant ?",
+                options: ["Paramount", "Universal", "MGM", "Columbia"],
+                correct: 2,
+                explanation: "Le lion rugissant Leo est l'emblème de la Metro-Goldwyn-Mayer depuis 1924. Paramount utilise une montagne étoilée, Universal un globe terrestre et Columbia une femme portant une torche.",
+                source: "MGM Studios — Corporate history and Leo the Lion."
+            },
+            {
+                id: 19,
+                question: "Quel film français de 2011 raconte l'amitié entre Philippe et Driss ?",
+                options: ["Le Dîner de cons", "Les Choristes", "Intouchables", "Amélie Poulain"],
+                correct: 2,
+                explanation: "Intouchables, réalisé par Olivier Nakache et Éric Toledano, met en scène François Cluzet et Omar Sy. Avec plus de 19 millions d'entrées en France, c'est l'un des plus grands succès du cinéma français.",
+                source: "CNC — Statistiques de fréquentation cinématographique, France."
+            },
+            {
+                id: 20,
+                question: "Comment appelle-t-on un film qui poursuit l'histoire du précédent ?",
+                options: ["Un prequel", "Une suite", "Un remake", "Un spin-off"],
+                correct: 1,
+                explanation: "Une suite prolonge l'histoire après le film original. Un prequel se déroule avant, un remake refait le même film et un spin-off suit un personnage secondaire dans sa propre aventure.",
+                source: "British Film Institute — Glossaire des termes cinématographiques."
+            },
+            {
+                id: 21,
+                question: "Quel réalisateur a signé Pulp Fiction et Kill Bill ?",
+                options: ["Martin Scorsese", "Quentin Tarantino", "David Fincher", "Christopher Nolan"],
+                correct: 1,
+                explanation: "Quentin Tarantino a réalisé Reservoir Dogs, Pulp Fiction (Palme d'Or 1994), Kill Bill et Inglourious Basterds. Son style mêle dialogues bavards, structure éclatée et références à la culture populaire.",
+                source: "Festival de Cannes — Palmarès 1994, Palme d'Or."
+            },
+            {
+                id: 22,
+                question: "Quel film sud-coréen a remporté l'Oscar du meilleur film en 2020 ?",
+                options: ["Old Boy", "Memories of Murder", "Parasite", "Decision to Leave"],
+                correct: 2,
+                explanation: "Parasite, de Bong Joon-ho, est devenu en 2020 le premier film non anglophone à remporter l'Oscar du meilleur film. Il avait déjà obtenu la Palme d'Or à Cannes l'année précédente.",
+                source: "Academy of Motion Picture Arts and Sciences — 92nd Academy Awards."
+            },
+            {
+                id: 23,
+                question: "Comment appelle-t-on l'assemblage final des plans d'un film ?",
+                options: ["Le cadrage", "Le montage", "Le mixage", "L'étalonnage"],
+                correct: 1,
+                explanation: "Le montage consiste à sélectionner et assembler les plans pour donner au film son rythme et son sens. Le cadrage concerne la composition de l'image, le mixage le son et l'étalonnage les couleurs.",
+                source: "Centre National du Cinéma (CNC) — Postproduction cinématographique."
+            },
+            {
+                id: 24,
+                question: "Quelle actrice incarne Hermione Granger dans les films Harry Potter ?",
+                options: ["Keira Knightley", "Emma Stone", "Emma Watson", "Natalie Portman"],
+                correct: 2,
+                explanation: "Emma Watson a interprété Hermione Granger dans les huit films Harry Potter, de 2001 à 2011. Elle avait onze ans lors du premier tournage et la saga l'a rendue célèbre dans le monde entier.",
+                source: "Warner Bros. — Harry Potter film series production notes."
+            },
+            {
+                id: 25,
+                question: "Quel genre de film met en scène des cow-boys dans l'Ouest américain ?",
+                options: ["Le péplum", "Le western", "Le film noir", "Le thriller"],
+                correct: 1,
+                explanation: "Le western se déroule dans l'Ouest américain du XIXe siècle. Le péplum met en scène l'Antiquité, le film noir explore le crime urbain en clair-obscur et le thriller repose sur le suspense.",
+                source: "American Film Institute — Film genres classification."
+            },
+            {
+                id: 26,
+                question: "Quel film d'animation Pixar raconte l'histoire d'un rat cuisinier ?",
+                options: ["Là-haut", "Le Monde de Nemo", "Ratatouille", "Wall-E"],
+                correct: 2,
+                explanation: "Ratatouille, réalisé par Brad Bird en 2007, suit Rémy, un rat doué pour la cuisine, dans un restaurant parisien. Le film a remporté l'Oscar du meilleur film d'animation en 2008.",
+                source: "Pixar Animation Studios — Ratatouille production notes."
+            },
+            {
+                id: 27,
+                question: "Quel réalisateur britannique a signé Inception et Interstellar ?",
+                options: ["Danny Boyle", "Christopher Nolan", "Guy Ritchie", "Sam Mendes"],
+                correct: 1,
+                explanation: "Christopher Nolan a réalisé Memento, la trilogie The Dark Knight, Inception, Interstellar et Oppenheimer, qui lui a valu l'Oscar du meilleur réalisateur en 2024. Il privilégie le tournage en pellicule.",
+                source: "Academy of Motion Picture Arts and Sciences — 96th Academy Awards."
+            },
+            {
+                id: 28,
+                question: "Quelle récompense couronne le meilleur film français de l'année ?",
+                options: ["Le Molière", "Le César", "La Victoire", "Le Goncourt"],
+                correct: 1,
+                explanation: "Les César récompensent le cinéma français depuis 1976. Les Molières couronnent le théâtre, les Victoires la musique et le Goncourt la littérature. La statuette est une œuvre du sculpteur César Baldaccini.",
+                source: "Académie des César — Historique de la cérémonie."
+            },
+            {
+                id: 29,
+                question: "Comment appelle-t-on un film qui raconte la vie d'une personne réelle ?",
+                options: ["Un reboot", "Un biopic", "Un remake", "Un blockbuster"],
+                correct: 1,
+                explanation: "Un biopic retrace la vie d'une personne ayant existé. Un remake refait un film existant, un reboot relance une franchise en repartant de zéro et un blockbuster désigne un très gros succès commercial.",
+                source: "British Film Institute — Glossaire des termes cinématographiques."
+            },
+            {
+                id: 30,
+                question: "Quel acteur français a incarné Obélix au cinéma ?",
+                options: ["Jean Reno", "Gérard Depardieu", "Christian Clavier", "Alain Delon"],
+                correct: 1,
+                explanation: "Gérard Depardieu a incarné Obélix dans plusieurs adaptations, à partir d'Astérix et Obélix contre César en 1999. Christian Clavier jouait Astérix dans les deux premiers films de la série.",
+                source: "Pathé — Fiches de production de la saga Astérix."
+            },
+            {
+                id: 101,
+                type: "vrai_faux",
+                question: "Le premier film parlant de l'histoire du cinéma est Le Chanteur de jazz.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le Chanteur de jazz, sorti en 1927, est le premier long-métrage à intégrer des dialogues synchronisés. Il a marqué la fin du cinéma muet et bouleversé toute l'industrie en quelques années.",
+                source: "Library of Congress — The Jazz Singer, National Film Registry."
+            },
+            {
+                id: 102,
+                type: "vrai_faux",
+                question: "Alfred Hitchcock a remporté l'Oscar du meilleur réalisateur.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Malgré cinq nominations, Alfred Hitchcock n'a jamais remporté l'Oscar du meilleur réalisateur. Il a seulement reçu en 1968 un prix honorifique, le Irving G. Thalberg Memorial Award, pour l'ensemble de sa carrière.",
+                source: "Academy of Motion Picture Arts and Sciences — Hitchcock nominations record."
+            },
+            {
+                id: 103,
+                type: "vrai_faux",
+                question: "Toy Story est le premier long-métrage entièrement réalisé en images de synthèse.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Sorti en 1995, Toy Story est le premier long-métrage intégralement créé en images de synthèse. Sa production a demandé quatre ans et le rendu final a mobilisé des centaines d'ordinateurs pendant des mois.",
+                source: "Pixar Animation Studios — Toy Story production history."
+            }
+        ],
+        moyen: [
+            {
+                id: 11,
+                question: "Quel mouvement cinématographique français est né à la fin des années 1950 ?",
+                options: ["Le réalisme poétique", "La Nouvelle Vague", "Le cinéma direct", "L'expressionnisme"],
+                correct: 1,
+                explanation: "La Nouvelle Vague réunit de jeunes critiques des Cahiers du cinéma devenus réalisateurs : Godard, Truffaut, Chabrol, Rohmer et Rivette. Ils tournaient en décors réels, avec peu de moyens et une grande liberté de ton.",
+                source: "Cinémathèque française — La Nouvelle Vague, dossier pédagogique."
+            },
+            {
+                id: 12,
+                question: "Quelle revue française a servi de creuset à la Nouvelle Vague ?",
+                options: ["Positif", "Les Cahiers du cinéma", "L'Écran français", "Première"],
+                correct: 1,
+                explanation: "Les Cahiers du cinéma, fondés en 1951 par André Bazin, ont accueilli les critiques qui allaient former la Nouvelle Vague. C'est là qu'a été théorisée la politique des auteurs, plaçant le réalisateur au centre de l'œuvre.",
+                source: "Cinémathèque française — Histoire des Cahiers du cinéma."
+            },
+            {
+                id: 13,
+                question: "Quel film muet montre une fusée plantée dans l'œil de la Lune ?",
+                options: ["L'Arrivée d'un train", "Le Voyage dans la Lune", "La Sortie de l'usine", "Le Cuirassé Potemkine"],
+                correct: 1,
+                explanation: "Le Voyage dans la Lune, réalisé par Georges Méliès en 1902, est l'un des premiers films de science-fiction. Méliès y met en œuvre de nombreux trucages, dont l'arrêt de caméra et les surimpressions.",
+                source: "Cinémathèque française — Georges Méliès, collections."
+            },
+            {
+                id: 14,
+                question: "Combien d'Oscars détient le record absolu pour un seul film ?",
+                options: ["9 Oscars", "10 Oscars", "11 Oscars", "13 Oscars"],
+                correct: 2,
+                explanation: "Trois films partagent le record de 11 Oscars : Ben-Hur (1959), Titanic (1997) et Le Seigneur des anneaux : Le Retour du roi (2003). Ce dernier est le seul à avoir converti toutes ses nominations en statuettes.",
+                source: "Academy of Motion Picture Arts and Sciences — Records and statistics."
+            },
+            {
+                id: 15,
+                question: "Quel réalisateur japonais a signé Les Sept Samouraïs et Rashômon ?",
+                options: ["Yasujirō Ozu", "Akira Kurosawa", "Kenji Mizoguchi", "Nagisa Ōshima"],
+                correct: 1,
+                explanation: "Akira Kurosawa a profondément influencé le cinéma mondial. Les Sept Samouraïs a inspiré Les Sept Mercenaires, et La Forteresse cachée a nourri Star Wars. Rashômon a révélé le cinéma japonais à l'Occident en 1951.",
+                source: "British Film Institute — Akira Kurosawa retrospective."
+            },
+            {
+                id: 16,
+                question: "Quel film de 1941 est souvent cité comme le plus grand de l'histoire ?",
+                options: ["Autant en emporte le vent", "Citizen Kane", "Casablanca", "Le Magicien d'Oz"],
+                correct: 1,
+                explanation: "Citizen Kane, réalisé et interprété par Orson Welles à 25 ans, a longtemps occupé la première place du classement de la revue Sight & Sound. Il est célèbre pour sa profondeur de champ et sa narration éclatée.",
+                source: "Sight & Sound (BFI) — The Greatest Films of All Time poll."
+            },
+            {
+                id: 17,
+                question: "Quelle récompense est décernée à la Mostra de Venise ?",
+                options: ["L'Ours d'Or", "Le Lion d'Or", "La Palme d'Or", "Le Léopard d'Or"],
+                correct: 1,
+                explanation: "La Mostra de Venise, créée en 1932, est le plus ancien festival de cinéma au monde et décerne le Lion d'Or. L'Ours d'Or revient à Berlin, la Palme d'Or à Cannes et le Léopard d'Or à Locarno.",
+                source: "La Biennale di Venezia — Storia della Mostra del Cinema."
+            },
+            {
+                id: 18,
+                question: "Comment appelle-t-on un plan filmé sans aucune coupure ?",
+                options: ["Un plan large", "Un plan-séquence", "Un champ-contrechamp", "Un travelling"],
+                correct: 1,
+                explanation: "Un plan-séquence filme une scène entière en une seule prise, sans montage. Le film 1917 de Sam Mendes donne l'illusion d'un unique plan-séquence, grâce à des raccords invisibles soigneusement dissimulés.",
+                source: "British Film Institute — Glossaire technique du cinéma."
+            },
+            {
+                id: 19,
+                question: "Quel mouvement allemand des années 1920 use de décors déformés ?",
+                options: ["Le néoréalisme", "L'expressionnisme allemand", "Le Kammerspiel", "Le Nouveau Cinéma allemand"],
+                correct: 1,
+                explanation: "L'expressionnisme allemand, illustré par Le Cabinet du docteur Caligari (1920) et Nosferatu (1922), utilise décors anguleux, ombres marquées et perspectives déformées pour traduire des états psychologiques.",
+                source: "Deutsche Kinemathek — German Expressionist cinema."
+            },
+            {
+                id: 20,
+                question: "Quel courant italien filmait la rue avec des acteurs amateurs ?",
+                options: ["Le néoréalisme", "La commedia all'italiana", "Le giallo", "Le péplum italien"],
+                correct: 0,
+                explanation: "Le néoréalisme italien, avec Rome ville ouverte de Rossellini et Le Voleur de bicyclette de De Sica, filmait la réalité sociale de l'après-guerre en décors naturels, souvent avec des acteurs non professionnels.",
+                source: "Cineteca di Bologna — Neorealismo italiano, archives."
+            },
+            {
+                id: 21,
+                question: "Quel réalisateur italien a signé La Dolce Vita et Huit et demi ?",
+                options: ["Michelangelo Antonioni", "Federico Fellini", "Luchino Visconti", "Pier Paolo Pasolini"],
+                correct: 1,
+                explanation: "Federico Fellini a remporté quatre Oscars du meilleur film en langue étrangère, un record. La Dolce Vita a obtenu la Palme d'Or en 1960 et a donné au monde le mot paparazzi, du nom d'un photographe du film.",
+                source: "Academy of Motion Picture Arts and Sciences — Federico Fellini awards."
+            },
+            {
+                id: 22,
+                question: "Comment appelle-t-on le mouvement de caméra qui se déplace avec le sujet ?",
+                options: ["Le panoramique", "Le travelling", "Le zoom", "La contre-plongée"],
+                correct: 1,
+                explanation: "Le travelling déplace physiquement la caméra, souvent sur rails ou sur grue. Le panoramique la fait pivoter sans la déplacer, le zoom modifie la focale et la contre-plongée désigne un angle de prise de vue.",
+                source: "Centre National du Cinéma (CNC) — Vocabulaire technique du tournage."
+            },
+            {
+                id: 23,
+                question: "Quel film de Sergio Leone a lancé le western spaghetti ?",
+                options: ["Le Bon, la Brute et le Truand", "Pour une poignée de dollars", "Il était une fois dans l'Ouest", "Et pour quelques dollars de plus"],
+                correct: 1,
+                explanation: "Pour une poignée de dollars (1964) a lancé le western spaghetti et révélé Clint Eastwood. Le film est une adaptation non autorisée du Yojimbo d'Akira Kurosawa, ce qui a valu un procès à Sergio Leone.",
+                source: "Cineteca di Bologna — Sergio Leone e il western all'italiana."
+            },
+            {
+                id: 24,
+                question: "Quel procédé donne aux films leurs couleurs saturées dès les années 1930 ?",
+                options: ["Le CinemaScope", "Le Technicolor", "Le Kinétoscope", "Le VistaVision"],
+                correct: 1,
+                explanation: "Le Technicolor trichrome, employé dès 1932, superposait trois négatifs pour obtenir des couleurs éclatantes, comme dans Le Magicien d'Oz. Le CinemaScope et le VistaVision concernent, eux, le format de l'image.",
+                source: "George Eastman Museum — Technicolor process history."
+            },
+            {
+                id: 25,
+                question: "Quel film d'animation japonais a remporté l'Oscar en 2003 ?",
+                options: ["Princesse Mononoké", "Le Voyage de Chihiro", "Le Château ambulant", "Mon voisin Totoro"],
+                correct: 1,
+                explanation: "Le Voyage de Chihiro, de Hayao Miyazaki, a remporté l'Oscar du meilleur film d'animation en 2003 et l'Ours d'Or à Berlin en 2002. C'est le premier film d'animation non américain récompensé aux Oscars.",
+                source: "Academy of Motion Picture Arts and Sciences — 75th Academy Awards."
+            },
+            {
+                id: 201,
+                type: "vrai_faux",
+                question: "Le Festival de Cannes a été créé en 1946.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! La première édition du Festival de Cannes s'est tenue en septembre 1946. Une édition avait été prévue en 1939, en réaction à la Mostra de Venise jugée trop soumise au régime fasciste, mais la guerre l'avait annulée.",
+                source: "Festival de Cannes — Historique officiel du festival."
+            },
+            {
+                id: 202,
+                type: "vrai_faux",
+                question: "La Mostra de Venise est le plus ancien festival de cinéma au monde.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Créée en 1932, la Mostra de Venise précède Cannes (1946) et Berlin (1951). Elle fait partie des trois grands festivals européens et décerne le Lion d'Or au meilleur film de sa sélection.",
+                source: "La Biennale di Venezia — Storia della Mostra del Cinema."
+            },
+            {
+                id: 203,
+                type: "vrai_faux",
+                question: "Un même film peut remporter la Palme d'Or et l'Oscar du meilleur film.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Parasite, de Bong Joon-ho, a réussi cet exploit rare : Palme d'Or à Cannes en 2019, puis Oscar du meilleur film en 2020. Avant lui, seul Marty (1955) avait décroché les deux récompenses.",
+                source: "Festival de Cannes / Academy of Motion Picture Arts and Sciences."
+            }
+        ],
+        difficile: [
+            {
+                id: 31,
+                question: "Quelle expérience prouve que le sens naît de la juxtaposition des plans ?",
+                options: ["L'effet Koulechov", "L'effet Vertov", "L'effet Bazin", "L'effet Griffith"],
+                correct: 0,
+                explanation: "L'effet Koulechov, mis en évidence vers 1920 par le cinéaste soviétique Lev Koulechov, montre qu'un même visage inexpressif paraît exprimer la faim, la tristesse ou le désir selon le plan qui lui succède.",
+                source: "Koulechov L. — Art of the Cinema, 1929."
+            },
+            {
+                id: 32,
+                question: "Quel manifeste danois de 1995 interdit décors et éclairages ajoutés ?",
+                options: ["Le Free Cinema", "Le Dogme 95", "Le Cinéma vérité", "Le Nouvel Hollywood"],
+                correct: 1,
+                explanation: "Le Dogme 95, lancé par Lars von Trier et Thomas Vinterberg, impose dix règles : caméra à l'épaule, décors naturels, son direct, aucun éclairage additionnel. Festen, de Vinterberg, en est le film le plus connu.",
+                source: "Det Danske Filminstitut — Dogme 95 manifesto archives."
+            },
+            {
+                id: 33,
+                question: "Quel film de Stanley Kubrick s'ouvre sur l'aube de l'humanité ?",
+                options: ["Orange mécanique", "2001, l'Odyssée de l'espace", "Shining", "Barry Lyndon"],
+                correct: 1,
+                explanation: "2001, l'Odyssée de l'espace (1968) s'ouvre sur la séquence de L'Aube de l'humanité, où un os lancé en l'air se transforme par un raccord célèbre en vaisseau spatial, ellipse de plusieurs millions d'années.",
+                source: "British Film Institute — Stanley Kubrick, 2001: A Space Odyssey."
+            },
+            {
+                id: 34,
+                question: "Quel théoricien a défendu le plan-séquence et la profondeur de champ ?",
+                options: ["Christian Metz", "André Bazin", "Jean Mitry", "Gilles Deleuze"],
+                correct: 1,
+                explanation: "André Bazin, cofondateur des Cahiers du cinéma, voyait dans le plan-séquence et la profondeur de champ un respect de l'ambiguïté du réel, par opposition au montage soviétique qui impose un sens au spectateur.",
+                source: "Bazin A. — Qu'est-ce que le cinéma ?, Éditions du Cerf, 1958."
+            },
+            {
+                id: 35,
+                question: "Quel réalisateur soviétique a théorisé le montage des attractions ?",
+                options: ["Dziga Vertov", "Sergueï Eisenstein", "Vsevolod Poudovkine", "Alexandre Dovjenko"],
+                correct: 1,
+                explanation: "Sergueï Eisenstein a théorisé le montage dialectique, où le choc entre deux plans produit une idée nouvelle. La séquence de l'escalier d'Odessa dans Le Cuirassé Potemkine (1925) en est l'illustration la plus célèbre.",
+                source: "Eisenstein S. — Le Film : sa forme, son sens, 1949."
+            },
+            {
+                id: 36,
+                question: "Quel format d'image large la Fox a-t-elle lancé en 1953 ?",
+                options: ["Le VistaVision", "Le CinemaScope", "Le Todd-AO", "Le Cinerama"],
+                correct: 1,
+                explanation: "Le CinemaScope, lancé avec La Tunique en 1953, utilisait des objectifs anamorphiques pour comprimer une image large sur une pellicule 35 mm standard. Hollywood cherchait ainsi à contrer la concurrence de la télévision.",
+                source: "SMPTE — Widescreen formats, historical overview."
+            },
+            {
+                id: 37,
+                question: "Quels réalisateurs ont eu deux Palmes d'Or avec Rosetta et L'Enfant ?",
+                options: ["Michael Haneke", "Les frères Dardenne", "Ken Loach", "Emir Kusturica"],
+                correct: 1,
+                explanation: "Jean-Pierre et Luc Dardenne ont obtenu la Palme d'Or en 1999 pour Rosetta et en 2005 pour L'Enfant. Leur cinéma social belge, filmé caméra à l'épaule, suit des personnages en marge dans la région de Liège.",
+                source: "Festival de Cannes — Palmarès 1999 et 2005."
+            },
+            {
+                id: 38,
+                question: "Sur quel phénomène repose l'illusion du mouvement au cinéma ?",
+                options: ["La seule rémanence rétinienne", "L'effet phi et le mouvement bêta", "La parallaxe optique", "La diffraction lumineuse"],
+                correct: 1,
+                explanation: "L'illusion du mouvement repose sur des phénomènes perceptifs, l'effet phi et le mouvement bêta, étudiés par le psychologue Max Wertheimer en 1912. L'explication par la seule persistance rétinienne est aujourd'hui jugée insuffisante.",
+                source: "Wertheimer M. — Experimentelle Studien über das Sehen von Bewegung, 1912."
+            },
+            {
+                id: 39,
+                question: "Quel personnage a imposé la capture de mouvement au cinéma ?",
+                options: ["Neytiri dans Avatar", "Gollum dans Le Seigneur des anneaux", "César dans La Planète des singes", "Thanos dans Avengers"],
+                correct: 1,
+                explanation: "Andy Serkis a incarné Gollum dans Le Seigneur des anneaux (2002) grâce à la capture de mouvement, faisant de lui le premier personnage numérique majeur animé par le jeu réel d'un acteur.",
+                source: "Weta Digital — Motion capture and the creation of Gollum."
+            },
+            {
+                id: 40,
+                question: "Quel critique a inventé l'expression septième art ?",
+                options: ["Louis Delluc", "Ricciotto Canudo", "Jean Epstein", "Germaine Dulac"],
+                correct: 1,
+                explanation: "Le critique italien Ricciotto Canudo a qualifié le cinéma de septième art dans son Manifeste des sept arts (1923), après l'architecture, la sculpture, la peinture, la musique, la poésie et la danse.",
+                source: "Canudo R. — Manifeste des sept arts, 1923."
+            },
+            {
+                id: 301,
+                type: "vrai_faux",
+                question: "Le Retour du roi a remporté tous les Oscars pour lesquels il était nommé.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! En 2004, Le Seigneur des anneaux : Le Retour du roi a converti ses onze nominations en onze statuettes, un sans-faute unique dans l'histoire des Oscars. Titanic et Ben-Hur ont aussi onze Oscars, mais avaient davantage de nominations.",
+                source: "Academy of Motion Picture Arts and Sciences — 76th Academy Awards."
+            },
+            {
+                id: 302,
+                type: "vrai_faux",
+                question: "Le Cuirassé Potemkine de Sergueï Eisenstein est un film muet.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Sorti en 1925, Le Cuirassé Potemkine est un film muet soviétique, projeté à l'origine avec un accompagnement musical live. Sa séquence de l'escalier d'Odessa reste l'une des plus étudiées de l'histoire du cinéma.",
+                source: "Gosfilmofond of Russia — Battleship Potemkin, 1925."
+            },
+            {
+                id: 303,
+                type: "vrai_faux",
+                question: "Une femme a déjà remporté la Palme d'Or à Cannes.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Jane Campion a obtenu la Palme d'Or en 1993 pour La Leçon de piano, ex æquo avec Adieu ma concubine. Julia Ducournau l'a remportée en 2021 pour Titane et Justine Triet en 2023 pour Anatomie d'une chute.",
+                source: "Festival de Cannes — Palmarès officiel, 1993, 2021 et 2023."
+            }
+        ]
+    }
 };
