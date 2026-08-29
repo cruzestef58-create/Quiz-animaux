@@ -1,12 +1,16 @@
 /* ============================================================
    Mode "Prends Ta Place" — QuizzlyUnivers
-   Plateau 3x3 de thèmes + duel final contre un champion IA.
-   Progression sauvegardée en localStorage.
+   Format televise en 3 manches (10 questions au total) :
+     Manche 1 : 1 question d'ouverture tiree au sort
+     Manche 2 : le champion choisit 4 themes pour piéger le joueur
+     Manche 3 : le joueur choisit 1 theme -> 5 questions dessus
+   Le champion repond aux memes questions en parallele.
+   Progression sauvegardee en localStorage.
    ============================================================ */
 const Place = (() => {
     'use strict';
 
-    /* ---------- Plateau : 9 thèmes, chacun agrège un ou plusieurs quiz ---------- */
+    /* ---------- Les 9 themes du plateau ---------- */
     const THEMES = [
         { ic: '🐕', nm: 'Canidés',      keys: ['educationCanine', 'lesChiens'] },
         { ic: '🐱', nm: 'Félins',       keys: ['lesChats', 'letion', 'letigre'] },
@@ -19,7 +23,6 @@ const Place = (() => {
         { ic: '🎬', nm: 'Fiction',      keys: ['harryPotter', 'starWars', 'jujutsuKaisen'] },
     ];
 
-    /* ---------- Champions : de plus en plus forts ---------- */
     const CHAMPIONS = [
         { av: '🦊', nm: 'Renard',   acc: 0.45, desc: 'Champion débutant — il doute encore' },
         { av: '🦉', nm: 'Hibou',    acc: 0.55, desc: 'Il a de la lecture' },
@@ -37,49 +40,34 @@ const Place = (() => {
         { min: 10, t: 'Légende' },
     ];
 
-    const LINES = [
-        [0,1,2],[3,4,5],[6,7,8],
-        [0,3,6],[1,4,7],[2,5,8],
-        [0,4,8],[2,4,6],
-    ];
+    const STORE = 'quizzly_place_v2';
+    const TIME = 20;                                   // secondes par question
+    const R3_LEVELS = ['facile', 'facile', 'moyen', 'moyen', 'difficile'];  // difficulte croissante
 
-    const STORE = 'quizzly_place_v1';
-    const DUEL_Q = 5, DUEL_TIME = 12;
+    let S = null, rafId = null;
 
-    /* ---------- État ---------- */
-    let S = null;
-    let timerId = null, deadline = 0;
-
-    /* ---------- Persistance (robuste : marche même si localStorage est bloqué) ---------- */
+    /* ---------- Persistance ---------- */
     function load() {
         try {
             const raw = localStorage.getItem(STORE);
-            if (raw) {
-                const d = JSON.parse(raw);
-                return { streak: d.streak | 0, best: d.best | 0 };
-            }
-        } catch (e) { /* mode privé / stockage désactivé */ }
+            if (raw) { const d = JSON.parse(raw); return { streak: d.streak | 0, best: d.best | 0 }; }
+        } catch (e) { /* stockage indisponible (navigation privee) */ }
         return { streak: 0, best: 0 };
     }
-    function save(p) {
-        try { localStorage.setItem(STORE, JSON.stringify(p)); } catch (e) { /* ignore */ }
-    }
+    function save(p) { try { localStorage.setItem(STORE, JSON.stringify(p)); } catch (e) {} }
 
     const rankFor = (n) => RANKS.filter(r => n >= r.min).pop().t;
     const champFor = (n) => CHAMPIONS[Math.min(n, CHAMPIONS.length - 1)];
     const $ = (id) => document.getElementById(id);
     const shuffle = (a) => { const b = a.slice(); for (let i = b.length - 1; i > 0; i--) { const j = (Math.random() * (i + 1)) | 0; [b[i], b[j]] = [b[j], b[i]]; } return b; };
+    const wait = (ms) => new Promise(r => setTimeout(r, ms));
 
-    /* ---------- Pioche de questions ---------- */
-    /* questions.js declare `const quizzesData` : une const de haut niveau n'est PAS
-       exposee sur window, on passe donc par la portee de script directement. */
-    function data() {
-        return (typeof quizzesData !== 'undefined') ? quizzesData : {};
-    }
+    /* questions.js declare `const quizzesData` : une const de haut niveau n'est pas
+       exposee sur window, on lit donc la portee de script directement. */
+    const data = () => (typeof quizzesData !== 'undefined') ? quizzesData : {};
 
     function pool(theme, levels) {
-        const src = data();
-        const out = [];
+        const src = data(), out = [];
         for (const k of theme.keys) {
             const q = src[k];
             if (!q) continue;
@@ -88,27 +76,25 @@ const Place = (() => {
         return out;
     }
 
-    /* Renvoie une question jamais posée dans cette partie. */
+    /* Tire une question inedite pour la partie, propositions melangees. */
     function draw(theme, levels) {
-        const p = pool(theme, levels).filter(q => !S.used.has(q.question));
-        const src = p.length ? p : pool(theme, levels);
-        if (!src.length) return null;
-        const q = src[(Math.random() * src.length) | 0];
+        let p = pool(theme, levels).filter(q => !S.used.has(q.question));
+        if (!p.length) p = pool(theme, ['facile', 'moyen', 'difficile']).filter(q => !S.used.has(q.question));
+        if (!p.length) return null;
+
+        const q = p[(Math.random() * p.length) | 0];
         S.used.add(q.question);
 
-        // On mélange les propositions pour ne pas figer la position de la bonne réponse.
-        const idx = q.options.map((_, i) => i);
-        const order = shuffle(idx);
+        const order = shuffle(q.options.map((_, i) => i));
         return {
             theme: theme.nm,
             question: q.question,
             options: order.map(i => q.options[i]),
             correct: order.indexOf(q.correct),
-            explanation: q.explanation || '',
         };
     }
 
-    /* ---------- Écrans ---------- */
+    /* ---------- Affichage ---------- */
     function show(name) {
         ['intro', 'game', 'end'].forEach(s => {
             const el = $('screen-' + s);
@@ -118,8 +104,7 @@ const Place = (() => {
     }
 
     function refreshIntro() {
-        const p = load();
-        const c = champFor(p.streak);
+        const p = load(), c = champFor(p.streak);
         $('intro-avatar').textContent = c.av;
         $('intro-name').textContent = `${c.nm} — ${rankFor(p.streak)}`;
         $('intro-desc').textContent = c.desc;
@@ -127,292 +112,220 @@ const Place = (() => {
         $('intro-best').textContent = p.best;
     }
 
-    /* ---------- Démarrage ---------- */
-    function start() {
-        const p = load();
-        const c = champFor(p.streak);
-        S = {
-            champ: c, streak: p.streak, best: p.best,
-            phase: 'board',
-            cells: Array(9).fill(null),      // null | 'you' | 'opp'
-            themes: shuffle(THEMES),
-            used: new Set(),
-            turn: 'you',
-            busy: false,
-            duelIdx: 0, duelYou: 0, duelOpp: 0, duelRes: [],
-        };
+    const setLog = (html) => { $('log').innerHTML = html; };
+    function setScores() { $('sc-you').textContent = S.you; $('sc-opp').textContent = S.opp; }
 
-        $('g-avatar').textContent = c.av;
-        $('g-name').textContent = c.nm;
-        $('lbl-opp').textContent = c.nm;
-        $('g-streak').textContent = p.streak;
-        $('g-phase').textContent = 'Manche 1 — Le Plateau';
-        $('duel-zone').style.display = 'none';
-        $('board').style.display = '';
-        $('q-panel').style.display = 'none';
-        $('timer-bar').style.display = 'none';
-
-        renderBoard();
-        updateScores();
-        setLog('À toi de jouer — choisis un thème.');
-        show('game');
+    function setRound(n) {
+        for (let i = 1; i <= 3; i++) {
+            const c = $('chip-' + i);
+            c.classList.toggle('active', i === n);
+            c.classList.toggle('done', i < n);
+        }
+        $('g-phase').textContent = ['', 'Manche 1 — Ouverture', 'Manche 2 — Le champion attaque', 'Manche 3 — Ton thème'][n];
     }
 
-    /* ---------- Plateau ---------- */
-    function renderBoard() {
+    function renderBoard(state) {
         const b = $('board');
+        b.style.display = '';
         b.innerHTML = '';
         S.themes.forEach((t, i) => {
-            const owner = S.cells[i];
             const d = document.createElement('div');
-            d.className = 'cell' + (owner ? ` taken ${owner}` : '');
+            const st = state(i, t);
+            d.className = 'cell' + (st.cls ? ' ' + st.cls : '');
             d.innerHTML = `<div class="ic">${t.ic}</div><div class="nm">${t.nm}</div>`;
-            if (!owner) d.onclick = () => pick(i);
+            if (st.onClick) d.onclick = st.onClick;
             b.appendChild(d);
         });
     }
+    const hideBoard = () => { $('board').style.display = 'none'; };
 
-    function updateScores() {
-        $('sc-you').textContent = S.phase === 'duel' ? S.duelYou : S.cells.filter(c => c === 'you').length;
-        $('sc-opp').textContent = S.phase === 'duel' ? S.duelOpp : S.cells.filter(c => c === 'opp').length;
-        $('box-you').classList.toggle('turn-active', S.turn === 'you');
-        $('box-opp').classList.toggle('turn-active', S.turn === 'opp');
-    }
+    /* ---------- Une question ---------- */
+    function ask(q, label) {
+        return new Promise(resolve => {
+            const panel = $('q-panel');
+            panel.style.display = '';
+            $('q-theme').textContent = q.theme;
+            $('q-count').textContent = label;
+            $('q-text').textContent = q.question;
 
-    const setLog = (html) => { $('log').innerHTML = html; };
+            const box = $('q-opts');
+            box.innerHTML = '';
+            let settled = false;
 
-    /* ---------- Tour du joueur ---------- */
-    function pick(i) {
-        if (S.busy || S.cells[i] || S.turn !== 'you') return;
-        S.busy = true;
-        $('board').classList.add('locked');
+            const done = (chosen) => {
+                if (settled) return;
+                settled = true;
+                stopTimer();
+                [...box.children].forEach((b, i) => {
+                    b.disabled = true;
+                    if (i === q.correct) b.classList.add('correct');
+                    else if (i === chosen) b.classList.add('wrong');
+                });
+                setTimeout(() => { panel.style.display = 'none'; resolve(chosen === q.correct); }, 1300);
+            };
 
-        const q = draw(S.themes[i], ['facile', 'moyen']);
-        if (!q) { S.busy = false; $('board').classList.remove('locked'); return; }
-
-        askQuestion(q, false, (ok) => {
-            S.cells[i] = ok ? 'you' : 'opp';
-            setLog(ok
-                ? `✅ Bonne réponse — tu captures <strong class="you">${S.themes[i].nm}</strong>.`
-                : `❌ Raté — <strong class="opp">${S.champ.nm}</strong> prend ${S.themes[i].nm}.`);
-            renderBoard();
-            updateScores();
-            setTimeout(() => afterMove('you'), 1400);
-        });
-    }
-
-    /* ---------- Tour du champion ---------- */
-    function oppTurn() {
-        S.turn = 'opp';
-        updateScores();
-        setLog(`<strong class="opp">${S.champ.nm}</strong> réfléchit…`);
-
-        setTimeout(() => {
-            const free = S.cells.map((c, i) => c === null ? i : -1).filter(i => i >= 0);
-            if (!free.length) return endBoard();
-
-            // L'IA privilégie une case qui la fait gagner, sinon qui te bloque, sinon au hasard.
-            const target = bestCell(free, 'opp') ?? bestCell(free, 'you') ?? free[(Math.random() * free.length) | 0];
-            const ok = Math.random() < S.champ.acc;
-            S.cells[target] = ok ? 'opp' : 'you';
-
-            setLog(ok
-                ? `<strong class="opp">${S.champ.nm}</strong> répond juste et prend ${S.themes[target].nm}.`
-                : `<strong class="opp">${S.champ.nm}</strong> se trompe — <strong class="you">${S.themes[target].nm}</strong> est à toi !`);
-            renderBoard();
-            updateScores();
-            setTimeout(() => afterMove('opp'), 1400);
-        }, 1100);
-    }
-
-    /* Case qui complète un alignement pour `who` (2 sur 3 + 1 libre). */
-    function bestCell(free, who) {
-        for (const L of LINES) {
-            const own = L.filter(i => S.cells[i] === who).length;
-            const emptyCells = L.filter(i => S.cells[i] === null);
-            if (own === 2 && emptyCells.length === 1 && free.includes(emptyCells[0])) return emptyCells[0];
-        }
-        return null;
-    }
-
-    function winningLine(who) {
-        return LINES.find(L => L.every(i => S.cells[i] === who)) || null;
-    }
-
-    function afterMove(who) {
-        const line = winningLine('you') || winningLine('opp');
-        if (line) {
-            const w = S.cells[line[0]];
-            highlight(line);
-            setLog(w === 'you'
-                ? '🎯 Alignement ! Tu remportes la manche.'
-                : `🎯 <strong class="opp">${S.champ.nm}</strong> aligne trois cases.`);
-            return setTimeout(() => w === 'you' ? startDuel() : finish(false), 1900);
-        }
-        if (S.cells.every(c => c !== null)) return endBoard();
-
-        S.turn = (who === 'you') ? 'opp' : 'you';
-        S.busy = false;
-        $('board').classList.remove('locked');
-        updateScores();
-
-        if (S.turn === 'opp') oppTurn();
-        else setLog('À toi — choisis un thème.');
-    }
-
-    function highlight(line) {
-        const cells = $('board').children;
-        line.forEach(i => cells[i] && cells[i].classList.add('win'));
-    }
-
-    function endBoard() {
-        const you = S.cells.filter(c => c === 'you').length;
-        const opp = S.cells.filter(c => c === 'opp').length;
-        setLog(`Plateau complet — ${you} contre ${opp}.`);
-        setTimeout(() => you > opp ? startDuel() : finish(false), 1700);
-    }
-
-    /* ---------- Manche 2 : le duel ---------- */
-    function startDuel() {
-        S.phase = 'duel';
-        S.turn = 'you';
-        $('board').style.display = 'none';
-        $('duel-zone').style.display = '';
-        $('g-phase').textContent = 'Manche 2 — Le Duel';
-        renderPips();
-        updateScores();
-        setLog(`⚔️ Duel final — ${DUEL_Q} questions difficiles, ${DUEL_TIME} secondes chacune.`);
-        setTimeout(duelNext, 1600);
-    }
-
-    function renderPips() {
-        const p = $('pips');
-        p.innerHTML = '';
-        for (let i = 0; i < DUEL_Q; i++) {
-            const d = document.createElement('div');
-            d.className = 'pip' + (S.duelRes[i] ? ' ' + S.duelRes[i] : '');
-            p.appendChild(d);
-        }
-    }
-
-    function duelNext() {
-        if (S.duelIdx >= DUEL_Q) {
-            return finish(S.duelYou > S.duelOpp);
-        }
-        const theme = S.themes[(Math.random() * S.themes.length) | 0];
-        const q = draw(theme, ['difficile', 'moyen']);
-        if (!q) return finish(S.duelYou > S.duelOpp);
-
-        setLog(`Question ${S.duelIdx + 1} sur ${DUEL_Q}`);
-        askQuestion(q, true, (ok) => {
-            const oppOk = Math.random() < S.champ.acc;
-            if (ok) S.duelYou++;
-            if (oppOk) S.duelOpp++;
-            S.duelRes[S.duelIdx] = ok && !oppOk ? 'you' : (!ok && oppOk ? 'opp' : '');
-            S.duelIdx++;
-
-            setLog(`${ok ? '✅ Tu marques.' : '❌ Manqué.'} &nbsp; ${oppOk
-                ? `<strong class="opp">${S.champ.nm}</strong> marque aussi.`
-                : `<strong class="opp">${S.champ.nm}</strong> se trompe.`}`);
-            renderPips();
-            updateScores();
-            setTimeout(duelNext, 1700);
-        });
-    }
-
-    /* ---------- Affichage d'une question ---------- */
-    function askQuestion(q, timed, done) {
-        const panel = $('q-panel');
-        panel.style.display = '';
-        $('q-theme').textContent = q.theme;
-        $('q-text').textContent = q.question;
-
-        const box = $('q-opts');
-        box.innerHTML = '';
-        let settled = false;
-
-        const finishQ = (chosen) => {
-            if (settled) return;
-            settled = true;
-            stopTimer();
-            const ok = chosen === q.correct;
-            [...box.children].forEach((b, i) => {
-                b.disabled = true;
-                if (i === q.correct) b.classList.add('correct');
-                else if (i === chosen) b.classList.add('wrong');
+            q.options.forEach((opt, i) => {
+                const b = document.createElement('button');
+                b.className = 'q-opt'; b.type = 'button'; b.textContent = opt;
+                b.onclick = () => done(i);
+                box.appendChild(b);
             });
-            setTimeout(() => { panel.style.display = 'none'; done(ok); }, 1200);
-        };
 
-        q.options.forEach((opt, i) => {
-            const b = document.createElement('button');
-            b.className = 'q-opt';
-            b.type = 'button';
-            b.textContent = opt;
-            b.onclick = () => finishQ(i);
-            box.appendChild(b);
+            startTimer(TIME, () => done(-1));
         });
-
-        if (timed) startTimer(DUEL_TIME, () => finishQ(-1));
-        else $('timer-bar').style.display = 'none';
     }
 
-    /* ---------- Chrono (requestAnimationFrame : pas de setInterval qui dérive) ---------- */
+    /* Chrono base sur requestAnimationFrame : pas de derive, pas de setInterval orphelin. */
     function startTimer(seconds, onTimeout) {
-        const bar = $('timer-bar'), fill = $('timer-fill');
-        bar.style.display = '';
-        deadline = performance.now() + seconds * 1000;
-
+        const fill = $('timer-fill');
+        const end = performance.now() + seconds * 1000;
         const step = () => {
-            const left = deadline - performance.now();
-            const ratio = Math.max(0, left / (seconds * 1000));
-            fill.style.transform = `scaleX(${ratio})`;
-            if (left <= 0) { timerId = null; return onTimeout(); }
-            timerId = requestAnimationFrame(step);
+            const left = end - performance.now();
+            fill.style.transform = `scaleX(${Math.max(0, left / (seconds * 1000))})`;
+            if (left <= 0) { rafId = null; return onTimeout(); }
+            rafId = requestAnimationFrame(step);
         };
-        timerId = requestAnimationFrame(step);
+        rafId = requestAnimationFrame(step);
     }
-    function stopTimer() {
-        if (timerId) cancelAnimationFrame(timerId);
-        timerId = null;
-        $('timer-bar').style.display = 'none';
+    function stopTimer() { if (rafId) cancelAnimationFrame(rafId); rafId = null; }
+
+    /* Le champion repond a la meme question, selon sa force. */
+    function champAnswers() { return Math.random() < S.champ.acc; }
+
+    async function resolveQuestion(q, label) {
+        const ok = await ask(q, label);
+        const oppOk = champAnswers();
+        if (ok) S.you++;
+        if (oppOk) S.opp++;
+        setScores();
+        setLog(`${ok ? '✅ Bonne réponse.' : '❌ Raté.'} &nbsp; <strong class="opp">${S.champ.nm}</strong> ${oppOk ? 'marque aussi.' : 'se trompe.'}`);
+        await wait(1500);
+        return ok;
     }
 
-    /* ---------- Fin de partie ---------- */
-    function finish(won) {
+    /* ---------- Déroulé ---------- */
+    async function run() {
+        /* ---- Manche 1 : question d'ouverture, thème tiré au sort ---- */
+        setRound(1);
+        hideBoard();
+        setLog('🎲 Question d\'ouverture — thème tiré au sort…');
+        await wait(1200);
+
+        const t1 = S.themes[(Math.random() * S.themes.length) | 0];
+        const q1 = draw(t1, ['facile', 'moyen']);
+        if (!q1) return finish();
+        const openOk = await resolveQuestion(q1, 'Question 1 / 10');
+
+        setLog(openOk
+            ? '🎯 Ouverture réussie — tu prends la main.'
+            : `😬 Ouverture manquée — <strong class="opp">${S.champ.nm}</strong> mène la danse.`);
+        await wait(1600);
+
+        /* ---- Manche 2 : le champion choisit 4 thèmes ---- */
+        setRound(2);
+        setLog(`<strong class="opp">${S.champ.nm}</strong> choisit 4 thèmes pour te piéger…`);
+        renderBoard(() => ({ cls: '' }));
+        await wait(1000);
+
+        const picks = shuffle(S.themes.map((_, i) => i)).slice(0, 4);
+        const chosen = [];
+        for (const idx of picks) {
+            chosen.push(idx);
+            renderBoard(i => ({ cls: chosen.includes(i) ? 'chosen-opp' : 'dim' }));
+            setLog(`<strong class="opp">${S.champ.nm}</strong> choisit <strong>${S.themes[idx].nm}</strong>`);
+            await wait(750);
+        }
+        await wait(700);
+
+        for (let n = 0; n < picks.length; n++) {
+            const idx = picks[n];
+            renderBoard(i => ({ cls: i === idx ? 'chosen-opp current' : (chosen.includes(i) ? 'chosen-opp' : 'dim') }));
+            setLog(`Thème imposé : <strong>${S.themes[idx].nm}</strong>`);
+            await wait(800);
+            const q = draw(S.themes[idx], ['moyen', 'difficile']);
+            if (!q) break;
+            await resolveQuestion(q, `Question ${n + 2} / 10`);
+        }
+
+        /* ---- Manche 3 : le joueur choisit son thème ---- */
+        setRound(3);
+        setLog('🎯 À toi de choisir ton thème — 5 questions dessus.');
+        const myTheme = await pickTheme();
+        hideBoard();
+
+        for (let n = 0; n < 5; n++) {
+            const q = draw(myTheme, [R3_LEVELS[n]]);
+            if (!q) break;
+            await resolveQuestion(q, `Question ${n + 6} / 10 · ${['Facile', 'Facile', 'Moyen', 'Moyen', 'Difficile'][n]}`);
+        }
+
+        finish();
+    }
+
+    /* Attend que le joueur clique un thème sur le plateau. */
+    function pickTheme() {
+        return new Promise(resolve => {
+            renderBoard((i, t) => ({
+                cls: 'pickable',
+                onClick: async () => {
+                    renderBoard(j => ({ cls: j === i ? 'chosen-you current' : 'dim' }));
+                    setLog(`Ton thème : <strong class="you">${t.nm}</strong> — 5 questions.`);
+                    await wait(1200);
+                    resolve(t);
+                },
+            }));
+        });
+    }
+
+    /* ---------- Fin ---------- */
+    function finish() {
         stopTimer();
         $('q-panel').style.display = 'none';
+        hideBoard();
 
-        const before = S.streak;
+        const won = S.you > S.opp;                 // egalite = le champion garde sa place
         const p = load();
+        const before = p.streak;
         p.streak = won ? before + 1 : 0;
         p.best = Math.max(p.best, p.streak);
         save(p);
 
-        const rankBefore = rankFor(before), rankAfter = rankFor(p.streak);
+        const rBefore = rankFor(before), rAfter = rankFor(p.streak);
 
         $('end-emoji').textContent = won ? '👑' : '💀';
-        $('end-title').textContent = won ? 'Tu prends sa place !' : 'Le champion garde sa place';
+        $('end-title').textContent = won ? 'Tu prends sa place !' : `${S.champ.nm} garde sa place`;
         $('end-sub').textContent = won
-            ? `Tu as battu ${S.champ.nm}. Le prochain sera plus coriace.`
-            : `${S.champ.nm} t'a résisté. Ta série repart de zéro.`;
+            ? `Tu finis ${S.you} à ${S.opp}. Le prochain champion sera plus coriace.`
+            : (S.you === S.opp
+                ? `Égalité ${S.you} partout — en cas d'égalité, le champion conserve son titre.`
+                : `Tu perds ${S.you} à ${S.opp}. Ta série repart de zéro.`);
 
         const rk = $('end-rank');
-        if (won && rankAfter !== rankBefore) {
-            rk.style.display = '';
-            rk.textContent = `🎖️ Nouveau titre débloqué : ${rankAfter}`;
-        } else {
-            rk.style.display = 'none';
-        }
+        if (won && rAfter !== rBefore) { rk.style.display = ''; rk.textContent = `🎖️ Nouveau titre débloqué : ${rAfter}`; }
+        else rk.style.display = 'none';
 
         $('end-stats').innerHTML =
-            `Série : <strong>${p.streak}</strong> &nbsp;·&nbsp; Record : <strong>${p.best}</strong> &nbsp;·&nbsp; Titre : <strong>${rankAfter}</strong>`;
+            `Série : <strong>${p.streak}</strong> &nbsp;·&nbsp; Record : <strong>${p.best}</strong> &nbsp;·&nbsp; Titre : <strong>${rAfter}</strong>`;
 
         show('end');
         refreshIntro();
     }
 
-    /* ---------- Init ---------- */
+    /* ---------- Démarrage ---------- */
+    function start() {
+        const p = load(), c = champFor(p.streak);
+        S = { champ: c, you: 0, opp: 0, used: new Set(), themes: shuffle(THEMES) };
+
+        $('g-avatar').textContent = c.av;
+        $('g-name').textContent = c.nm;
+        $('lbl-opp').textContent = c.nm;
+        $('g-streak').textContent = p.streak;
+        $('q-panel').style.display = 'none';
+        setScores();
+        show('game');
+        run();
+    }
+
     document.addEventListener('DOMContentLoaded', refreshIntro);
     if (document.readyState !== 'loading') refreshIntro();
 
