@@ -189,10 +189,13 @@ body::before {
 }
 
 /* ---- Pastille "Soutenir" ---- */
-.nav-support {
-    gap: 0.55rem;
-    padding: 0 1.45rem;
-    border-radius: 18px;
+/* Scope sur .nav-menu a : sinon la regle generique .nav-menu a (plus specifique)
+   ecrase le padding de ce bouton. */
+.nav-menu a.nav-support {
+    gap: 0.6rem;
+    padding: 0 2.1rem;          /* pastille plus genereuse : elle paraissait
+                                   etriquee a cote du bouton "Signaler" */
+    border-radius: 19px;
     background: linear-gradient(135deg, #9b5de5, #ec4899);
     color: #fff !important;
     font-size: 0.86rem;
@@ -201,7 +204,7 @@ body::before {
     transition: box-shadow 0.25s, transform 0.25s, filter 0.25s;
 }
 
-.nav-support:hover {
+.nav-menu a.nav-support:hover {
     color: #fff !important;
     filter: brightness(1.08);
     box-shadow: 0 6px 20px rgba(236, 72, 153, 0.5);
@@ -221,7 +224,7 @@ body::before {
     .nav-menu li:last-child { margin-left: 0.4rem; margin-right: 0; }
     .nav-menu a { height: 34px; font-size: 0.86rem; }
     .report-button { padding: 0 0.9rem !important; font-size: 0.78rem !important; }
-    .nav-support { padding: 0 1rem; font-size: 0.78rem; }
+    .nav-menu a.nav-support { padding: 0 1.4rem; font-size: 0.78rem; }
     .logo { font-size: 1.15rem; }
 }
 
@@ -229,7 +232,7 @@ body::before {
     .nav-menu { gap: 0.6rem; }
     .nav-menu li:last-child { margin-left: 0.25rem; }
     .nav-menu a { height: 32px; font-size: 0.8rem; }
-    .report-button, .nav-support { font-size: 0.73rem !important; padding: 0 0.8rem !important; }
+    .nav-menu a.report-button, .nav-menu a.nav-support { font-size: 0.73rem; padding: 0 0.9rem; }
     .logo { font-size: 1rem; }
 }
 
