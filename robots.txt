@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cruzestef58-create.github.io/QuizzlyUnivers/sitemap.xml
+Sitemap: https://quizzlyunivers.fr/sitemap.xml
