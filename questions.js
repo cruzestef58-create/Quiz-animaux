@@ -5973,7 +5973,7 @@ const quizzesData = {
                 source: "Université de Neuroscience Aviaire - Cerveau développé."
             },
             {
-                id: 40,
+                id: 301,
                 type: "vrai_faux",
                 question: "L'aigle royal peut voir jusqu'à 8 fois mieux que l'être humain.",
                 options: ["Vrai", "Faux"],
@@ -6553,7 +6553,7 @@ const quizzesData = {
                 source: "Institut de Neurobiologie Sensorielle - Mécanoréception avancée."
             },
             {
-                id: 40,
+                id: 301,
                 type: "vrai_faux",
                 question: "Le tigre est le seul grand félin qui aime l'eau et nage régulièrement.",
                 options: ["Vrai", "Faux"],
@@ -7347,7 +7347,7 @@ const quizzesData = {
                 source: "J.K. Rowling, saga Harry Potter — la Dame de Gros Gorge apparaît dès l'École des Sorciers, Chapitre 7."
             },
             {
-                id: 50,
+                id: 301,
                 type: "vrai_faux",
                 question: "Hermione Granger est née le 19 septembre, ce qui en fait une Vierge.",
                 options: ["Vrai", "Faux"],
@@ -10002,7 +10002,7 @@ const quizzesData = {
 
     cinema: {
         title: "Cinéma",
-        description: "Films cultes, réalisateurs, festivals et histoire du 7e art",
+        description: "Acteurs, réalisateurs, films cultes, séries et histoire du 7e art",
         facile: [
             {
                 id: 1,
@@ -10245,6 +10245,126 @@ const quizzesData = {
                 source: "Pathé — Fiches de production de la saga Astérix."
             },
             {
+                id: 31,
+                question: "Quel acteur incarne Forrest Gump ?",
+                options: ["Kevin Costner", "Tom Hanks", "Robin Williams", "Bruce Willis"],
+                correct: 1,
+                explanation: "Tom Hanks incarne Forrest Gump en 1994, rôle qui lui vaut son deuxième Oscar consécutif du meilleur acteur après Philadelphia. Seul Spencer Tracy avait réussi cet enchaînement avant lui.",
+                source: "Academy of Motion Picture Arts and Sciences — 67th Academy Awards."
+            },
+            {
+                id: 32,
+                question: "Quel acteur joue Neo dans Matrix ?",
+                options: ["Brad Pitt", "Keanu Reeves", "Nicolas Cage", "Will Smith"],
+                correct: 1,
+                explanation: "Keanu Reeves incarne Neo dans Matrix, sorti en 1999. Le rôle avait d'abord été proposé à Will Smith, qui l'a refusé pour tourner Wild Wild West.",
+                source: "Warner Bros. — The Matrix, production notes 1999."
+            },
+            {
+                id: 33,
+                question: "Quel acteur incarne Jack Sparrow dans Pirates des Caraïbes ?",
+                options: ["Orlando Bloom", "Johnny Depp", "Jude Law", "Colin Farrell"],
+                correct: 1,
+                explanation: "Johnny Depp incarne le capitaine Jack Sparrow depuis 2003. Il s'est inspiré du guitariste des Rolling Stones Keith Richards pour composer la démarche et l'élocution du personnage.",
+                source: "Walt Disney Pictures — Pirates of the Caribbean, production notes."
+            },
+            {
+                id: 34,
+                question: "Quel acteur incarne Iron Man dans les films Marvel ?",
+                options: ["Chris Evans", "Robert Downey Jr.", "Mark Ruffalo", "Chris Hemsworth"],
+                correct: 1,
+                explanation: "Robert Downey Jr. incarne Tony Stark de 2008 à 2019. Chris Evans joue Captain America, Mark Ruffalo Hulk et Chris Hemsworth Thor dans le même univers cinématographique.",
+                source: "Marvel Studios — Iron Man, production notes 2008."
+            },
+            {
+                id: 35,
+                question: "Quel acteur fut le tout premier interprète de James Bond au cinéma ?",
+                options: ["Roger Moore", "Sean Connery", "Pierce Brosnan", "Daniel Craig"],
+                correct: 1,
+                explanation: "Sean Connery inaugure le rôle dans James Bond 007 contre Dr No en 1962. Roger Moore, Pierce Brosnan et Daniel Craig lui succéderont, ce dernier prenant le relais en 2006 avec Casino Royale.",
+                source: "EON Productions — Dr. No, 1962, official franchise history."
+            },
+            {
+                id: 36,
+                question: "Quelle actrice incarne Rose dans Titanic ?",
+                options: ["Nicole Kidman", "Kate Winslet", "Cate Blanchett", "Julia Roberts"],
+                correct: 1,
+                explanation: "Kate Winslet incarne Rose DeWitt Bukater face à Leonardo DiCaprio. Elle avait 21 ans au tournage et a obtenu son premier Oscar bien plus tard, en 2009, pour The Reader.",
+                source: "Academy of Motion Picture Arts and Sciences — 81st Academy Awards."
+            },
+            {
+                id: 37,
+                question: "Quel acteur incarne le Joker dans The Dark Knight ?",
+                options: ["Joaquin Phoenix", "Heath Ledger", "Jack Nicholson", "Jared Leto"],
+                correct: 1,
+                explanation: "Heath Ledger incarne le Joker en 2008 et reçoit l'Oscar du meilleur second rôle à titre posthume. Jack Nicholson avait joué le personnage en 1989 et Joaquin Phoenix en 2019.",
+                source: "Academy of Motion Picture Arts and Sciences — 81st Academy Awards."
+            },
+            {
+                id: 38,
+                question: "Quel acteur incarne le gladiateur Maximus dans Gladiator ?",
+                options: ["Mel Gibson", "Russell Crowe", "Liam Neeson", "Colin Firth"],
+                correct: 1,
+                explanation: "Russell Crowe incarne Maximus dans le film de Ridley Scott sorti en 2000. Le rôle lui vaut l'Oscar du meilleur acteur et le film celui du meilleur film en 2001.",
+                source: "Academy of Motion Picture Arts and Sciences — 73rd Academy Awards."
+            },
+            {
+                id: 39,
+                question: "Quel acteur français a remporté l'Oscar du meilleur acteur en 2012 ?",
+                options: ["Omar Sy", "Jean Dujardin", "Vincent Cassel", "Guillaume Canet"],
+                correct: 1,
+                explanation: "Jean Dujardin devient en 2012 le premier acteur français oscarisé, pour The Artist de Michel Hazanavicius. Ce film muet en noir et blanc a également remporté l'Oscar du meilleur film.",
+                source: "Academy of Motion Picture Arts and Sciences — 84th Academy Awards."
+            },
+            {
+                id: 40,
+                question: "Quelle actrice française a été oscarisée pour son rôle d'Édith Piaf ?",
+                options: ["Juliette Binoche", "Marion Cotillard", "Isabelle Huppert", "Audrey Tautou"],
+                correct: 1,
+                explanation: "Marion Cotillard remporte l'Oscar de la meilleure actrice en 2008 pour La Môme. C'est la première récompense de cette catégorie attribuée à une interprétation entièrement en langue française.",
+                source: "Academy of Motion Picture Arts and Sciences — 80th Academy Awards."
+            },
+            {
+                id: 41,
+                question: "Quel acteur incarne Don Vito Corleone dans Le Parrain ?",
+                options: ["Al Pacino", "Marlon Brando", "Robert De Niro", "Jack Nicholson"],
+                correct: 1,
+                explanation: "Marlon Brando incarne Don Vito Corleone en 1972. Al Pacino joue son fils Michael, et Robert De Niro reprendra le rôle du Vito jeune dans Le Parrain, deuxième partie.",
+                source: "American Film Institute — The Godfather, AFI Catalog."
+            },
+            {
+                id: 42,
+                question: "Quel acteur français partage l'affiche de Léon avec Natalie Portman ?",
+                options: ["Daniel Auteuil", "Jean Reno", "Gérard Depardieu", "Vincent Lindon"],
+                correct: 1,
+                explanation: "Jean Reno incarne Léon dans le film de Luc Besson sorti en 1994. Natalie Portman, alors âgée de douze ans, y fait ses débuts au cinéma dans le rôle de Mathilda.",
+                source: "Gaumont — Léon, dossier de production, 1994."
+            },
+            {
+                id: 43,
+                question: "Quelle série met en scène le professeur de chimie Walter White ?",
+                options: ["The Wire", "Breaking Bad", "Dexter", "Better Call Saul"],
+                correct: 1,
+                explanation: "Breaking Bad, créée par Vince Gilligan et diffusée de 2008 à 2013, suit Walter White interprété par Bryan Cranston. Better Call Saul en est la série dérivée, centrée sur l'avocat Saul Goodman.",
+                source: "AMC Networks — Breaking Bad, series overview."
+            },
+            {
+                id: 44,
+                question: "Quelle série suit les familles Stark, Lannister et Targaryen ?",
+                options: ["Vikings", "Game of Thrones", "The Witcher", "Rome"],
+                correct: 1,
+                explanation: "Game of Thrones, adaptée des romans de George R. R. Martin, a été diffusée de 2011 à 2019. Avec 59 récompenses, elle détient le record de Emmy Awards pour une série de fiction.",
+                source: "Television Academy — Emmy Awards records, Game of Thrones."
+            },
+            {
+                id: 45,
+                question: "Quelle série des frères Duffer se déroule à Hawkins dans les années 1980 ?",
+                options: ["Dark", "Stranger Things", "The Umbrella Academy", "Riverdale"],
+                correct: 1,
+                explanation: "Stranger Things, créée par Matt et Ross Duffer, est diffusée sur Netflix depuis 2016. La série multiplie les références au cinéma des années 1980, notamment à Spielberg et à Stephen King.",
+                source: "Netflix — Stranger Things, series production notes."
+            },
+            {
                 id: 101,
                 type: "vrai_faux",
                 question: "Le premier film parlant de l'histoire du cinéma est Le Chanteur de jazz.",
@@ -10394,6 +10514,70 @@ const quizzesData = {
                 source: "Academy of Motion Picture Arts and Sciences — 75th Academy Awards."
             },
             {
+                id: 26,
+                question: "Quelle actrice détient le record de nominations aux Oscars ?",
+                options: ["Katharine Hepburn", "Meryl Streep", "Bette Davis", "Judi Dench"],
+                correct: 1,
+                explanation: "Meryl Streep totalise 21 nominations d'interprétation, un record absolu, pour trois statuettes remportées. Katharine Hepburn détient de son côté le record de victoires avec quatre Oscars.",
+                source: "Academy of Motion Picture Arts and Sciences — Acting nominations records."
+            },
+            {
+                id: 27,
+                question: "Quel acteur a refusé son Oscar en 1973 pour Le Parrain ?",
+                options: ["Al Pacino", "Marlon Brando", "Dustin Hoffman", "Robert Redford"],
+                correct: 1,
+                explanation: "Marlon Brando a refusé l'Oscar du meilleur acteur en 1973 pour protester contre le traitement réservé aux Amérindiens à Hollywood. Il avait envoyé Sacheen Littlefeather lire une déclaration à sa place.",
+                source: "Academy of Motion Picture Arts and Sciences — 45th Academy Awards."
+            },
+            {
+                id: 28,
+                question: "Quel acteur incarne Hannibal Lecter dans Le Silence des agneaux ?",
+                options: ["Gary Oldman", "Anthony Hopkins", "Ian McKellen", "Michael Caine"],
+                correct: 1,
+                explanation: "Anthony Hopkins remporte l'Oscar du meilleur acteur en 1992 pour ce rôle, alors qu'il n'apparaît que seize minutes à l'écran. C'est l'une des performances oscarisées les plus brèves de l'histoire.",
+                source: "Academy of Motion Picture Arts and Sciences — 64th Academy Awards."
+            },
+            {
+                id: 29,
+                question: "Quel acteur incarne Travis Bickle dans Taxi Driver ?",
+                options: ["Al Pacino", "Robert De Niro", "Harvey Keitel", "Joe Pesci"],
+                correct: 1,
+                explanation: "Robert De Niro incarne Travis Bickle dans le film de Martin Scorsese sorti en 1976, Palme d'Or à Cannes. Sa réplique improvisée You talkin' to me ? est devenue l'une des plus citées du cinéma.",
+                source: "Festival de Cannes — Palmarès 1976, Palme d'Or."
+            },
+            {
+                id: 30,
+                question: "Quelle actrice est l'héroïne de Diamants sur canapé ?",
+                options: ["Grace Kelly", "Audrey Hepburn", "Marilyn Monroe", "Elizabeth Taylor"],
+                correct: 1,
+                explanation: "Audrey Hepburn incarne Holly Golightly en 1961. Sa petite robe noire signée Givenchy, portée devant la vitrine de Tiffany, est devenue une image emblématique du cinéma et de la mode.",
+                source: "Paramount Pictures — Breakfast at Tiffany's, 1961."
+            },
+            {
+                id: 31,
+                question: "Quel réalisateur a signé Les Affranchis et Taxi Driver ?",
+                options: ["Francis Ford Coppola", "Martin Scorsese", "Brian De Palma", "Sidney Lumet"],
+                correct: 1,
+                explanation: "Martin Scorsese a réalisé Taxi Driver, Les Affranchis et Casino, souvent avec Robert De Niro. Il a dû attendre 2007 et Les Infiltrés pour recevoir enfin son Oscar du meilleur réalisateur.",
+                source: "Academy of Motion Picture Arts and Sciences — 79th Academy Awards."
+            },
+            {
+                id: 32,
+                question: "Quelle actrice française a joué dans Amélie Poulain ?",
+                options: ["Marion Cotillard", "Audrey Tautou", "Léa Seydoux", "Sophie Marceau"],
+                correct: 1,
+                explanation: "Audrey Tautou incarne Amélie Poulain dans le film de Jean-Pierre Jeunet sorti en 2001. Le film a réuni plus de 8 millions de spectateurs en France et a été nommé cinq fois aux Oscars.",
+                source: "CNC — Statistiques de fréquentation, Le Fabuleux Destin d'Amélie Poulain."
+            },
+            {
+                id: 33,
+                question: "Quel duo de réalisateurs a signé Matrix ?",
+                options: ["Les frères Coen", "Les sœurs Wachowski", "Les frères Russo", "Les frères Dardenne"],
+                correct: 1,
+                explanation: "Lana et Lilly Wachowski ont réalisé Matrix en 1999. Le film a popularisé l'effet bullet time, obtenu grâce à des dizaines d'appareils photo déclenchés en séquence autour du sujet.",
+                source: "Warner Bros. — The Matrix, production notes 1999."
+            },
+            {
                 id: 201,
                 type: "vrai_faux",
                 question: "Le Festival de Cannes a été créé en 1946.",
@@ -10503,6 +10687,54 @@ const quizzesData = {
                 source: "Canudo R. — Manifeste des sept arts, 1923."
             },
             {
+                id: 41,
+                question: "Quel acteur fut le premier Noir oscarisé comme meilleur acteur ?",
+                options: ["Denzel Washington", "Sidney Poitier", "Morgan Freeman", "James Earl Jones"],
+                correct: 1,
+                explanation: "Sidney Poitier remporte l'Oscar du meilleur acteur en 1964 pour Le Lys des champs. Denzel Washington sera le deuxième, près de quarante ans plus tard, pour Training Day en 2002.",
+                source: "Academy of Motion Picture Arts and Sciences — 36th Academy Awards."
+            },
+            {
+                id: 42,
+                question: "Quelle actrice détient le record de quatre Oscars d'interprétation ?",
+                options: ["Meryl Streep", "Katharine Hepburn", "Ingrid Bergman", "Frances McDormand"],
+                correct: 1,
+                explanation: "Katharine Hepburn a remporté quatre Oscars de la meilleure actrice, un record jamais égalé. Elle n'a pourtant assisté qu'une seule fois à la cérémonie durant toute sa carrière.",
+                source: "Academy of Motion Picture Arts and Sciences — Acting awards records."
+            },
+            {
+                id: 43,
+                question: "Quel acteur a refusé son Oscar en 1971 pour Patton ?",
+                options: ["Paul Newman", "George C. Scott", "Steve McQueen", "Charlton Heston"],
+                correct: 1,
+                explanation: "George C. Scott a refusé l'Oscar du meilleur acteur en 1971, jugeant la cérémonie dégradante et la compétition entre comédiens absurde. Il fut le premier à décliner une statuette d'interprétation.",
+                source: "Academy of Motion Picture Arts and Sciences — 43rd Academy Awards."
+            },
+            {
+                id: 44,
+                question: "Quel acteur est le plus jeune lauréat de l'Oscar du meilleur acteur ?",
+                options: ["Timothée Chalamet", "Adrien Brody", "Leonardo DiCaprio", "Matt Damon"],
+                correct: 1,
+                explanation: "Adrien Brody avait 29 ans lorsqu'il fut récompensé en 2003 pour Le Pianiste de Roman Polanski. Il reste à ce jour le plus jeune lauréat de la catégorie meilleur acteur.",
+                source: "Academy of Motion Picture Arts and Sciences — 75th Academy Awards."
+            },
+            {
+                id: 45,
+                question: "Quelle actrice fut la première Noire oscarisée comme meilleure actrice ?",
+                options: ["Whoopi Goldberg", "Halle Berry", "Viola Davis", "Octavia Spencer"],
+                correct: 1,
+                explanation: "Halle Berry a remporté l'Oscar de la meilleure actrice en 2002 pour À l'ombre de la haine. Plus de vingt ans après, elle demeure la seule femme noire récompensée dans cette catégorie.",
+                source: "Academy of Motion Picture Arts and Sciences — 74th Academy Awards."
+            },
+            {
+                id: 46,
+                question: "Quel acteur détient le record de nominations sans jamais avoir gagné ?",
+                options: ["Peter O'Toole", "Richard Burton", "Glenn Close", "Amy Adams"],
+                correct: 0,
+                explanation: "Peter O'Toole a été nommé huit fois pour l'Oscar du meilleur acteur sans jamais l'obtenir. Richard Burton en compte sept et Glenn Close huit également, toutes catégories d'interprétation confondues.",
+                source: "Academy of Motion Picture Arts and Sciences — Nominations without wins records."
+            },
+            {
                 id: 301,
                 type: "vrai_faux",
                 question: "Le Retour du roi a remporté tous les Oscars pour lesquels il était nommé.",
@@ -10528,6 +10760,952 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Jane Campion a obtenu la Palme d'Or en 1993 pour La Leçon de piano, ex æquo avec Adieu ma concubine. Julia Ducournau l'a remportée en 2021 pour Titane et Justine Triet en 2023 pour Anatomie d'une chute.",
                 source: "Festival de Cannes — Palmarès officiel, 1993, 2021 et 2023."
+            }
+        ]
+    }
+,
+
+    cultureG: {
+        title: "Culture Générale",
+        description: "Sciences, arts, littérature, sport et savoirs essentiels",
+        facile: [
+            {
+                id: 1,
+                question: "Qui a peint la Joconde ?",
+                options: ["Michel-Ange", "Raphaël", "Léonard de Vinci", "Botticelli"],
+                correct: 2,
+                explanation: "Léonard de Vinci a peint La Joconde entre 1503 et 1519. Le tableau est exposé au Louvre depuis 1797 et son vol en 1911 par Vincenzo Peruggia a largement contribué à sa célébrité mondiale.",
+                source: "Musée du Louvre — Notice de La Joconde, département des Peintures."
+            },
+            {
+                id: 2,
+                question: "Quel est le symbole chimique de l'or ?",
+                options: ["Ag", "Or", "Au", "Fe"],
+                correct: 2,
+                explanation: "L'or a pour symbole Au, du latin aurum. Ag désigne l'argent (argentum) et Fe le fer (ferrum). Ces symboles latins ont été fixés par la nomenclature chimique internationale.",
+                source: "IUPAC — Periodic Table of Elements, official nomenclature."
+            },
+            {
+                id: 3,
+                question: "Quelle planète est la plus proche du Soleil ?",
+                options: ["Vénus", "Mars", "Mercure", "La Terre"],
+                correct: 2,
+                explanation: "Mercure orbite à environ 58 millions de kilomètres du Soleil et boucle son année en 88 jours terrestres. Ce n'est pourtant pas la planète la plus chaude : Vénus la dépasse à cause de son effet de serre.",
+                source: "NASA — Solar System Exploration, Mercury factsheet."
+            },
+            {
+                id: 4,
+                question: "Qui a écrit Les Misérables ?",
+                options: ["Émile Zola", "Victor Hugo", "Gustave Flaubert", "Honoré de Balzac"],
+                correct: 1,
+                explanation: "Victor Hugo a publié Les Misérables en 1862, pendant son exil à Guernesey. Le roman suit Jean Valjean sur plusieurs décennies et dresse une fresque sociale de la France du XIXe siècle.",
+                source: "Bibliothèque nationale de France — Victor Hugo, Les Misérables, 1862."
+            },
+            {
+                id: 5,
+                question: "Combien de joueurs compte une équipe de football sur le terrain ?",
+                options: ["9 joueurs", "10 joueurs", "11 joueurs", "12 joueurs"],
+                correct: 2,
+                explanation: "Une équipe de football aligne onze joueurs, dont le gardien de but. Une rencontre ne peut se poursuivre si une équipe descend sous sept joueurs, à la suite d'expulsions ou de blessures.",
+                source: "FIFA — Lois du Jeu, Loi 3 : les joueurs."
+            },
+            {
+                id: 6,
+                question: "Quelle est la monnaie officielle du Japon ?",
+                options: ["Le won", "Le yuan", "Le yen", "Le baht"],
+                correct: 2,
+                explanation: "Le yen est la monnaie du Japon depuis 1871. Le won est sud-coréen, le yuan chinois et le baht thaïlandais. Le yen est l'une des principales monnaies de réserve mondiales.",
+                source: "Banque du Japon — Histoire de la monnaie japonaise."
+            },
+            {
+                id: 7,
+                question: "Quel est le plus grand animal ayant jamais existé ?",
+                options: ["Le cachalot", "La baleine bleue", "Le brachiosaure", "L'éléphant de mer"],
+                correct: 1,
+                explanation: "La baleine bleue atteint 30 mètres et 150 tonnes, dépassant tous les dinosaures connus. Sa langue seule peut peser autant qu'un éléphant et son cœur atteint la taille d'une petite voiture.",
+                source: "NOAA Fisheries — Blue whale species profile."
+            },
+            {
+                id: 8,
+                question: "Combien de touches compte un piano standard ?",
+                options: ["61 touches", "76 touches", "88 touches", "96 touches"],
+                correct: 2,
+                explanation: "Un piano moderne compte 88 touches, soit 52 blanches et 36 noires, couvrant sept octaves et un peu plus. Ce standard s'est imposé à la fin du XIXe siècle avec les pianos Steinway.",
+                source: "Steinway & Sons — Piano keyboard specifications."
+            },
+            {
+                id: 9,
+                question: "Quel gaz compose majoritairement l'air que nous respirons ?",
+                options: ["L'oxygène", "L'azote", "Le dioxyde de carbone", "L'hydrogène"],
+                correct: 1,
+                explanation: "L'air sec contient environ 78 % d'azote et 21 % d'oxygène. Le dioxyde de carbone n'en représente que 0,04 %, malgré son rôle déterminant dans l'effet de serre et le climat.",
+                source: "NOAA — Composition of Earth's atmosphere."
+            },
+            {
+                id: 10,
+                question: "Qui a écrit la tragédie Roméo et Juliette ?",
+                options: ["Molière", "William Shakespeare", "Jean Racine", "Pierre Corneille"],
+                correct: 1,
+                explanation: "William Shakespeare a écrit Roméo et Juliette vers 1595. La pièce met en scène deux amants de Vérone séparés par la rivalité des Montaigu et des Capulet, et reste l'une des plus jouées au monde.",
+                source: "British Library — Shakespeare's First Folio, 1623."
+            },
+            {
+                id: 11,
+                question: "Quel métal est liquide à température ambiante ?",
+                options: ["Le plomb", "L'étain", "Le mercure", "Le zinc"],
+                correct: 2,
+                explanation: "Le mercure fond à -39 °C, ce qui en fait le seul métal liquide dans les conditions ordinaires. Sa toxicité a conduit à l'abandon progressif des thermomètres qui en contenaient.",
+                source: "IUPAC — Mercury, physical and chemical properties."
+            },
+            {
+                id: 12,
+                question: "Quelle est la capitale des États-Unis ?",
+                options: ["New York", "Los Angeles", "Chicago", "Washington"],
+                correct: 3,
+                explanation: "Washington, dans le district de Columbia, est la capitale fédérale depuis 1800. Elle ne fait partie d'aucun État, statut voulu par les rédacteurs de la Constitution pour éviter toute rivalité entre États.",
+                source: "Library of Congress — History of Washington, D.C."
+            },
+            {
+                id: 13,
+                question: "Combien de jours compte une année bissextile ?",
+                options: ["364 jours", "365 jours", "366 jours", "367 jours"],
+                correct: 2,
+                explanation: "Une année bissextile compte 366 jours grâce au 29 février. Elle survient tous les quatre ans, sauf les années séculaires non divisibles par 400 : 1900 ne l'était pas, 2000 l'était.",
+                source: "Bureau des longitudes — Le calendrier grégorien."
+            },
+            {
+                id: 14,
+                question: "Dans quel pays sont nés les Jeux Olympiques ?",
+                options: ["En Italie", "En Égypte", "En Grèce", "En Turquie"],
+                correct: 2,
+                explanation: "Les Jeux Olympiques antiques se tenaient à Olympie, en Grèce, dès 776 avant J.-C. Ils furent supprimés en 393 puis rétablis sous forme moderne par Pierre de Coubertin à Athènes en 1896.",
+                source: "Comité International Olympique — Histoire des Jeux antiques."
+            },
+            {
+                id: 15,
+                question: "Quel tournoi de tennis se dispute à Roland-Garros ?",
+                options: ["Wimbledon", "L'US Open", "Les Internationaux de France", "L'Open d'Australie"],
+                correct: 2,
+                explanation: "Roland-Garros accueille les Internationaux de France depuis 1928, seul tournoi du Grand Chelem disputé sur terre battue. Rafael Nadal y détient un record de quatorze titres.",
+                source: "Fédération Française de Tennis — Histoire de Roland-Garros."
+            },
+            {
+                id: 16,
+                question: "Qui a peint le tableau Guernica ?",
+                options: ["Salvador Dalí", "Joan Miró", "Pablo Picasso", "Francisco Goya"],
+                correct: 2,
+                explanation: "Pablo Picasso a peint Guernica en 1937, après le bombardement de la ville basque par l'aviation allemande. Cette toile monumentale en noir et gris est devenue un symbole universel contre la guerre.",
+                source: "Museo Reina Sofía — Guernica, notice de l'œuvre."
+            },
+            {
+                id: 17,
+                question: "Combien de côtés possède un hexagone ?",
+                options: ["Cinq côtés", "Six côtés", "Sept côtés", "Huit côtés"],
+                correct: 1,
+                explanation: "Un hexagone possède six côtés. Le pentagone en a cinq, l'heptagone sept et l'octogone huit. La forme hexagonale est très répandue dans la nature, notamment dans les alvéoles d'abeilles.",
+                source: "Encyclopædia Universalis — Polygones et géométrie plane."
+            },
+            {
+                id: 18,
+                question: "Quelle langue compte le plus de locuteurs natifs au monde ?",
+                options: ["L'anglais", "L'espagnol", "Le chinois mandarin", "L'hindi"],
+                correct: 2,
+                explanation: "Le chinois mandarin compte environ 940 millions de locuteurs natifs. L'anglais domine en revanche le nombre total de locuteurs, langue seconde comprise, avec plus de 1,5 milliard de personnes.",
+                source: "Ethnologue — Languages of the World, édition 2023."
+            },
+            {
+                id: 19,
+                question: "Qui a composé la Neuvième Symphonie et son Ode à la joie ?",
+                options: ["Wolfgang Amadeus Mozart", "Ludwig van Beethoven", "Jean-Sébastien Bach", "Franz Schubert"],
+                correct: 1,
+                explanation: "Ludwig van Beethoven a achevé sa Neuvième Symphonie en 1824, alors qu'il était devenu sourd. Son finale, l'Ode à la joie, est aujourd'hui l'hymne officiel de l'Union européenne.",
+                source: "Beethoven-Haus Bonn — Symphonie n°9 en ré mineur, opus 125."
+            },
+            {
+                id: 20,
+                question: "Quel est le plus haut sommet du continent africain ?",
+                options: ["Le mont Kenya", "Le Kilimandjaro", "L'Atlas", "Le Ruwenzori"],
+                correct: 1,
+                explanation: "Le Kilimandjaro culmine à 5 895 mètres en Tanzanie. C'est un volcan endormi et la plus haute montagne isolée du monde, car il ne fait partie d'aucune chaîne montagneuse.",
+                source: "Tanzania National Parks — Kilimanjaro National Park."
+            },
+            {
+                id: 21,
+                question: "Combien de minutes compte une journée complète ?",
+                options: ["1 200 minutes", "1 440 minutes", "1 600 minutes", "2 400 minutes"],
+                correct: 1,
+                explanation: "Une journée compte 1 440 minutes, soit 24 heures de 60 minutes, ou encore 86 400 secondes. La seconde est définie depuis 1967 à partir des transitions de l'atome de césium 133.",
+                source: "Bureau international des poids et mesures — Définition de la seconde."
+            },
+            {
+                id: 22,
+                question: "Quelle est la formule chimique de l'eau ?",
+                options: ["CO2", "H2O", "O2", "NaCl"],
+                correct: 1,
+                explanation: "L'eau est composée de deux atomes d'hydrogène et d'un atome d'oxygène. CO2 désigne le dioxyde de carbone, O2 le dioxygène et NaCl le chlorure de sodium, autrement dit le sel de table.",
+                source: "IUPAC — Nomenclature of Inorganic Chemistry."
+            },
+            {
+                id: 23,
+                question: "Combien de cordes compte une guitare classique ?",
+                options: ["Quatre cordes", "Six cordes", "Sept cordes", "Douze cordes"],
+                correct: 1,
+                explanation: "La guitare classique possède six cordes, accordées de la plus grave à la plus aiguë en mi, la, ré, sol, si, mi. La basse en compte généralement quatre et le ukulélé quatre également.",
+                source: "Conservatoire de Paris — Organologie des instruments à cordes."
+            },
+            {
+                id: 24,
+                question: "Quel océan borde la côte ouest des États-Unis ?",
+                options: ["L'Atlantique", "L'océan Indien", "Le Pacifique", "L'océan Arctique"],
+                correct: 2,
+                explanation: "Le Pacifique borde la Californie, l'Oregon et l'État de Washington. L'Atlantique baigne la côte est, de la Floride au Maine. L'Alaska touche pour sa part l'océan Arctique.",
+                source: "NOAA — United States coastline geography."
+            },
+            {
+                id: 25,
+                question: "Qui a écrit Le Petit Prince ?",
+                options: ["Albert Camus", "Antoine de Saint-Exupéry", "Marcel Pagnol", "Jules Verne"],
+                correct: 1,
+                explanation: "Antoine de Saint-Exupéry a publié Le Petit Prince en 1943 à New York. Traduit en plus de 500 langues, c'est l'un des livres les plus vendus au monde. L'auteur, aviateur, a disparu en mer en 1944.",
+                source: "Bibliothèque nationale de France — Antoine de Saint-Exupéry, fonds."
+            },
+            {
+                id: 26,
+                question: "Quelle est la plus grande planète du système solaire ?",
+                options: ["Saturne", "Neptune", "Jupiter", "Uranus"],
+                correct: 2,
+                explanation: "Jupiter fait plus de onze fois le diamètre de la Terre et concentre à elle seule les deux tiers de la masse planétaire du système solaire. Sa Grande Tache rouge est une tempête vieille de plusieurs siècles.",
+                source: "NASA — Solar System Exploration, Jupiter factsheet."
+            },
+            {
+                id: 27,
+                question: "Quel est le premier homme à avoir marché sur la Lune ?",
+                options: ["Buzz Aldrin", "Neil Armstrong", "Youri Gagarine", "Michael Collins"],
+                correct: 1,
+                explanation: "Neil Armstrong a posé le pied sur la Lune le 21 juillet 1969, suivi de Buzz Aldrin. Michael Collins est resté en orbite dans le module de commande. Youri Gagarine fut, lui, le premier homme dans l'espace en 1961.",
+                source: "NASA — Apollo 11 mission overview."
+            },
+            {
+                id: 28,
+                question: "Quel instrument mesure la pression atmosphérique ?",
+                options: ["L'anémomètre", "Le baromètre", "L'hygromètre", "Le thermomètre"],
+                correct: 1,
+                explanation: "Le baromètre mesure la pression atmosphérique et permet d'anticiper le temps. L'anémomètre mesure le vent, l'hygromètre l'humidité de l'air et le thermomètre la température.",
+                source: "Météo-France — Instruments de mesure météorologique."
+            },
+            {
+                id: 29,
+                question: "Qui a peint le plafond de la chapelle Sixtine ?",
+                options: ["Léonard de Vinci", "Michel-Ange", "Raphaël", "Le Caravage"],
+                correct: 1,
+                explanation: "Michel-Ange a peint le plafond de la chapelle Sixtine entre 1508 et 1512, pour le pape Jules II. La fresque de La Création d'Adam en est le détail le plus célèbre.",
+                source: "Musei Vaticani — Cappella Sistina, storia e restauro."
+            },
+            {
+                id: 30,
+                question: "Combien de couleurs compte traditionnellement un arc-en-ciel ?",
+                options: ["Cinq couleurs", "Six couleurs", "Sept couleurs", "Huit couleurs"],
+                correct: 2,
+                explanation: "On décrit traditionnellement sept couleurs : rouge, orange, jaune, vert, bleu, indigo, violet. Ce découpage vient de Newton, qui tenait à faire correspondre le spectre aux sept notes de la gamme.",
+                source: "Newton I. — Opticks, 1704."
+            },
+            {
+                id: 101,
+                type: "vrai_faux",
+                question: "La Grande Muraille de Chine est visible à l'œil nu depuis la Lune.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! C'est une légende tenace. Depuis la Lune, aucune construction humaine n'est visible à l'œil nu. Même en orbite basse, la Muraille est très difficile à distinguer car elle est étroite et de la couleur du terrain.",
+                source: "NASA — Earth Observatory, China's Wall Less Great in View from Space."
+            },
+            {
+                id: 102,
+                type: "vrai_faux",
+                question: "La lumière met environ huit minutes pour parvenir du Soleil à la Terre.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! La lumière parcourt les 150 millions de kilomètres qui nous séparent du Soleil en environ 8 minutes et 20 secondes, à la vitesse de 299 792 458 mètres par seconde.",
+                source: "NASA — Sun factsheet, distance and light travel time."
+            },
+            {
+                id: 103,
+                type: "vrai_faux",
+                question: "Les chauves-souris sont les seuls mammifères capables de vol battu.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Les chauves-souris sont les seuls mammifères pratiquant un vol actif. D'autres, comme les écureuils volants ou les colugos, ne font que planer grâce à une membrane, sans véritable vol battu.",
+                source: "Smithsonian National Museum of Natural History — Order Chiroptera."
+            }
+        ],
+        moyen: [
+            {
+                id: 11,
+                question: "Quel physicien a formulé la relation E = mc² ?",
+                options: ["Isaac Newton", "Albert Einstein", "Niels Bohr", "Max Planck"],
+                correct: 1,
+                explanation: "Albert Einstein a publié cette relation en 1905, dans le cadre de la relativité restreinte. Elle établit l'équivalence entre masse et énergie et fonde la compréhension des réactions nucléaires.",
+                source: "Einstein A. — Annalen der Physik, 1905."
+            },
+            {
+                id: 12,
+                question: "Qui a découvert la pénicilline en 1928 ?",
+                options: ["Louis Pasteur", "Alexander Fleming", "Robert Koch", "Joseph Lister"],
+                correct: 1,
+                explanation: "Alexander Fleming a découvert par hasard qu'une moisissure, Penicillium notatum, détruisait des bactéries dans une boîte de culture oubliée. Il a reçu le prix Nobel de médecine en 1945.",
+                source: "Nobel Prize — Alexander Fleming, Nobel Lecture 1945."
+            },
+            {
+                id: 13,
+                question: "Quel naturaliste a formulé la théorie de l'évolution par sélection naturelle ?",
+                options: ["Jean-Baptiste Lamarck", "Charles Darwin", "Gregor Mendel", "Carl von Linné"],
+                correct: 1,
+                explanation: "Charles Darwin a publié L'Origine des espèces en 1859, après son voyage sur le Beagle. Alfred Russel Wallace était parvenu indépendamment à des conclusions très proches à la même période.",
+                source: "Darwin C. — On the Origin of Species, John Murray, 1859."
+            },
+            {
+                id: 14,
+                question: "En quelle année le mur de Berlin est-il tombé ?",
+                options: ["En 1985", "En 1989", "En 1991", "En 1993"],
+                correct: 1,
+                explanation: "Le mur de Berlin est tombé le 9 novembre 1989, après vingt-huit ans de séparation. Sa chute a précipité la réunification allemande, officialisée le 3 octobre 1990.",
+                source: "Stiftung Berliner Mauer — Chronologie de la chute du Mur."
+            },
+            {
+                id: 15,
+                question: "Qui a peint La Nuit étoilée ?",
+                options: ["Claude Monet", "Vincent van Gogh", "Paul Cézanne", "Edvard Munch"],
+                correct: 1,
+                explanation: "Vincent van Gogh a peint La Nuit étoilée en 1889, depuis sa chambre de l'asile de Saint-Rémy-de-Provence. L'œuvre est conservée au Museum of Modern Art de New York.",
+                source: "Museum of Modern Art — The Starry Night, collection notice."
+            },
+            {
+                id: 16,
+                question: "Combien d'éléments compte aujourd'hui le tableau périodique ?",
+                options: ["92 éléments", "103 éléments", "118 éléments", "126 éléments"],
+                correct: 2,
+                explanation: "Le tableau périodique compte 118 éléments reconnus. Les quatre derniers, dont l'oganesson, ont été officialisés en 2016. Au-delà de l'uranium (92), tous sont artificiels ou extrêmement rares.",
+                source: "IUPAC — Periodic Table of Elements, 2016 update."
+            },
+            {
+                id: 17,
+                question: "Quelle est la langue officielle du Brésil ?",
+                options: ["L'espagnol", "Le portugais", "Le français", "L'italien"],
+                correct: 1,
+                explanation: "Le Brésil est le seul pays lusophone d'Amérique, héritage de la colonisation portugaise entamée en 1500. Avec plus de 200 millions de locuteurs, c'est le premier pays de langue portugaise au monde.",
+                source: "IBGE — Instituto Brasileiro de Geografia e Estatística."
+            },
+            {
+                id: 18,
+                question: "Quel traité a donné naissance à l'Union européenne en 1992 ?",
+                options: ["Le traité de Rome", "Le traité de Maastricht", "Le traité de Lisbonne", "Le traité de Schengen"],
+                correct: 1,
+                explanation: "Le traité de Maastricht, signé en 1992, a créé l'Union européenne et posé les bases de l'euro. Le traité de Rome (1957) avait fondé la Communauté économique européenne.",
+                source: "Union européenne — Traité sur l'Union européenne, 1992."
+            },
+            {
+                id: 19,
+                question: "Qui a inventé l'imprimerie à caractères mobiles en Europe ?",
+                options: ["Johannes Gutenberg", "Aldo Manuzio", "William Caxton", "Nicolas Jenson"],
+                correct: 0,
+                explanation: "Johannes Gutenberg a mis au point vers 1450 à Mayence la presse à caractères mobiles métalliques. Des procédés comparables existaient déjà en Chine et en Corée plusieurs siècles auparavant.",
+                source: "Gutenberg-Museum Mainz — Die Erfindung des Buchdrucks."
+            },
+            {
+                id: 20,
+                question: "Quelle unité mesure la puissance en physique ?",
+                options: ["Le joule", "Le watt", "Le newton", "Le pascal"],
+                correct: 1,
+                explanation: "Le watt mesure la puissance, soit une énergie par unité de temps. Le joule mesure l'énergie, le newton la force et le pascal la pression. Ces unités appartiennent au Système international.",
+                source: "Bureau international des poids et mesures — Le Système international d'unités."
+            },
+            {
+                id: 21,
+                question: "Quel élément est le plus abondant dans l'univers observable ?",
+                options: ["L'oxygène", "L'hydrogène", "Le carbone", "L'hélium"],
+                correct: 1,
+                explanation: "L'hydrogène représente environ 75 % de la matière ordinaire de l'univers, devant l'hélium avec 23 %. Tous les éléments plus lourds réunis en constituent moins de 2 %.",
+                source: "NASA — Cosmic abundance of elements."
+            },
+            {
+                id: 22,
+                question: "Qui a écrit La Divine Comédie ?",
+                options: ["Pétrarque", "Dante Alighieri", "Boccace", "Virgile"],
+                correct: 1,
+                explanation: "Dante Alighieri a composé La Divine Comédie entre 1308 et 1321. Ce poème en trois parties, Enfer, Purgatoire et Paradis, a fixé le toscan comme base de la langue italienne moderne.",
+                source: "Società Dantesca Italiana — La Divina Commedia, édition critique."
+            },
+            {
+                id: 23,
+                question: "Quel philosophe allemand a écrit Ainsi parlait Zarathoustra ?",
+                options: ["Emmanuel Kant", "Friedrich Nietzsche", "Georg Hegel", "Arthur Schopenhauer"],
+                correct: 1,
+                explanation: "Friedrich Nietzsche a publié Ainsi parlait Zarathoustra entre 1883 et 1885. L'ouvrage développe les thèmes du surhomme et de l'éternel retour dans une forme poétique proche du récit prophétique.",
+                source: "Nietzsche F. — Also sprach Zarathustra, 1883-1885."
+            },
+            {
+                id: 24,
+                question: "Quelle est l'unité de base de l'information en informatique ?",
+                options: ["L'octet", "Le bit", "Le hertz", "Le pixel"],
+                correct: 1,
+                explanation: "Le bit est la plus petite unité d'information et ne prend que deux valeurs, 0 ou 1. Un octet regroupe huit bits. Le terme bit vient de la contraction de binary digit.",
+                source: "Shannon C. — A Mathematical Theory of Communication, 1948."
+            },
+            {
+                id: 25,
+                question: "Quel pays a remporté la Coupe du monde de football en 2018 ?",
+                options: ["Le Brésil", "La France", "L'Allemagne", "La Croatie"],
+                correct: 1,
+                explanation: "La France a battu la Croatie 4-2 en finale de la Coupe du monde 2018, à Moscou. C'était son deuxième titre après celui obtenu à domicile en 1998 contre le Brésil.",
+                source: "FIFA — 2018 FIFA World Cup Russia, official records."
+            },
+            {
+                id: 201,
+                type: "vrai_faux",
+                question: "Le Sahara est le plus grand désert du monde.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Un désert se définit par ses faibles précipitations, pas par sa chaleur. L'Antarctique, avec 14,2 millions de km², est le plus grand désert du monde. Le Sahara, avec 9,2 millions de km², est le plus grand désert chaud.",
+                source: "British Antarctic Survey — Antarctic desert classification."
+            },
+            {
+                id: 202,
+                type: "vrai_faux",
+                question: "Le mont Everest est la montagne la plus haute mesurée depuis sa base.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! L'Everest culmine au plus haut au-dessus du niveau de la mer, mais le Mauna Kea, à Hawaï, mesure plus de 10 000 mètres depuis sa base sous-marine, contre environ 4 000 mètres pour l'Everest depuis son plateau.",
+                source: "USGS — Mauna Kea volcano, height from base."
+            },
+            {
+                id: 203,
+                type: "vrai_faux",
+                question: "Le verre est un matériau recyclable à l'infini sans perte de qualité.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le verre peut être fondu et refondu indéfiniment sans que ses propriétés se dégradent, contrairement au papier ou à la plupart des plastiques dont les fibres ou les polymères s'altèrent à chaque cycle.",
+                source: "ADEME — Le recyclage du verre en France."
+            }
+        ],
+        difficile: [
+            {
+                id: 31,
+                question: "Quelle est la vitesse de la lumière dans le vide ?",
+                options: ["150 000 km/s", "299 792 km/s", "500 000 km/s", "1 million de km/s"],
+                correct: 1,
+                explanation: "La lumière se déplace à exactement 299 792 458 mètres par seconde dans le vide. Cette valeur est fixée par convention depuis 1983 et sert désormais à définir le mètre lui-même.",
+                source: "Bureau international des poids et mesures — Définition du mètre, 1983."
+            },
+            {
+                id: 32,
+                question: "Quel mathématicien a démontré l'incomplétude des systèmes formels ?",
+                options: ["David Hilbert", "Kurt Gödel", "Alan Turing", "Bertrand Russell"],
+                correct: 1,
+                explanation: "Kurt Gödel a publié en 1931 ses théorèmes d'incomplétude, montrant que tout système formel cohérent assez puissant contient des énoncés vrais qu'il ne peut démontrer. Ce résultat a ruiné le programme de Hilbert.",
+                source: "Gödel K. — Über formal unentscheidbare Sätze, 1931."
+            },
+            {
+                id: 33,
+                question: "Quelle civilisation a inventé le concept mathématique du zéro positionnel ?",
+                options: ["Les Grecs", "Les Indiens", "Les Romains", "Les Égyptiens"],
+                correct: 1,
+                explanation: "Les mathématiciens indiens, notamment Brahmagupta au VIIe siècle, ont formalisé le zéro comme nombre à part entière. Les Mayas l'utilisaient aussi indépendamment. Les chiffres transitèrent ensuite par le monde arabe.",
+                source: "Brahmagupta — Brāhmasphuṭasiddhānta, 628."
+            },
+            {
+                id: 34,
+                question: "Quel traité a mis fin à la Première Guerre mondiale avec l'Allemagne ?",
+                options: ["Le traité de Vienne", "Le traité de Versailles", "Le traité de Trianon", "Le traité de Sèvres"],
+                correct: 1,
+                explanation: "Le traité de Versailles, signé le 28 juin 1919 dans la galerie des Glaces, imposait à l'Allemagne de lourdes réparations. Le traité de Trianon concernait la Hongrie et celui de Sèvres l'Empire ottoman.",
+                source: "Archives nationales — Traité de Versailles, 28 juin 1919."
+            },
+            {
+                id: 35,
+                question: "Quel principe de la physique quantique interdit de connaître position et vitesse ?",
+                options: ["Le principe d'exclusion de Pauli", "Le principe d'incertitude de Heisenberg", "Le principe de superposition", "Le principe de correspondance"],
+                correct: 1,
+                explanation: "Le principe d'incertitude, énoncé par Werner Heisenberg en 1927, établit qu'on ne peut connaître simultanément avec une précision arbitraire la position et la quantité de mouvement d'une particule.",
+                source: "Heisenberg W. — Zeitschrift für Physik, 1927."
+            },
+            {
+                id: 36,
+                question: "Quel est l'organe qui produit l'insuline dans le corps humain ?",
+                options: ["Le foie", "Le pancréas", "La rate", "La thyroïde"],
+                correct: 1,
+                explanation: "Le pancréas sécrète l'insuline via les cellules bêta des îlots de Langerhans. Cette hormone fait entrer le glucose dans les cellules. Son défaut ou son inefficacité provoque le diabète.",
+                source: "Institut National de la Santé et de la Recherche Médicale (Inserm) — Le diabète."
+            },
+            {
+                id: 37,
+                question: "Quelle est la plus ancienne université encore en activité en Europe ?",
+                options: ["La Sorbonne", "L'université de Bologne", "Oxford", "Salamanque"],
+                correct: 1,
+                explanation: "L'université de Bologne, fondée en 1088, est considérée comme la plus ancienne université d'Europe encore en activité. Oxford a suivi vers 1096 et la Sorbonne au milieu du XIIIe siècle.",
+                source: "Università di Bologna — Nostra storia, fondazione 1088."
+            },
+            {
+                id: 38,
+                question: "Quel compositeur russe a écrit le ballet Le Sacre du printemps ?",
+                options: ["Sergueï Prokofiev", "Igor Stravinsky", "Piotr Tchaïkovski", "Dmitri Chostakovitch"],
+                correct: 1,
+                explanation: "Igor Stravinsky a composé Le Sacre du printemps, créé à Paris en 1913. Ses rythmes heurtés et ses dissonances provoquèrent un scandale mémorable lors de la première au Théâtre des Champs-Élysées.",
+                source: "Bibliothèque nationale de France — Le Sacre du printemps, 1913."
+            },
+            {
+                id: 39,
+                question: "Quelle particule a été découverte au CERN en 2012 ?",
+                options: ["Le neutrino", "Le boson de Higgs", "Le quark top", "Le muon"],
+                correct: 1,
+                explanation: "Le boson de Higgs a été observé en 2012 par les expériences ATLAS et CMS du Grand collisionneur de hadrons. Il explique l'origine de la masse des particules élémentaires et a valu le Nobel en 2013.",
+                source: "CERN — Observation of a new particle, ATLAS and CMS, 2012."
+            },
+            {
+                id: 40,
+                question: "Quel économiste a écrit La Richesse des nations en 1776 ?",
+                options: ["David Ricardo", "Adam Smith", "John Maynard Keynes", "Karl Marx"],
+                correct: 1,
+                explanation: "Adam Smith a publié La Richesse des nations en 1776, ouvrage fondateur de l'économie politique moderne. Il y développe la division du travail et la métaphore de la main invisible du marché.",
+                source: "Smith A. — An Inquiry into the Nature and Causes of the Wealth of Nations, 1776."
+            },
+            {
+                id: 301,
+                type: "vrai_faux",
+                question: "Les Vikings portaient des casques à cornes.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Aucune trouvaille archéologique n'atteste de casques vikings à cornes. Cette image vient des costumes créés pour l'opéra de Wagner au XIXe siècle et s'est ensuite installée dans l'imaginaire populaire.",
+                source: "National Museum of Denmark — The Viking helmet myth."
+            },
+            {
+                id: 302,
+                type: "vrai_faux",
+                question: "Le sang qui circule dans les veines est de couleur bleue.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Le sang est toujours rouge, plus sombre quand il est pauvre en oxygène. Les veines paraissent bleues à cause de la manière dont la peau absorbe et diffuse les différentes longueurs d'onde de la lumière.",
+                source: "Inserm — Physiologie de la circulation sanguine."
+            },
+            {
+                id: 303,
+                type: "vrai_faux",
+                question: "L'Empire romain d'Orient a survécu près de mille ans à la chute de Rome.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Rome est tombée en 476, mais l'Empire romain d'Orient, dit byzantin, s'est maintenu depuis Constantinople jusqu'à sa prise par les Ottomans en 1453, soit près de mille ans de plus.",
+                source: "Dumbarton Oaks — Byzantine Studies, chronology of the Eastern Roman Empire."
+            }
+        ]
+    }
+,
+
+    astrologie: {
+        title: "Astrologie",
+        description: "Signes, éléments, planètes et traditions du zodiaque",
+        facile: [
+            {
+                id: 1,
+                question: "Combien de signes compte le zodiaque occidental ?",
+                options: ["Dix signes", "Onze signes", "Douze signes", "Treize signes"],
+                correct: 2,
+                explanation: "Le zodiaque occidental compte douze signes, correspondant à douze secteurs de 30° chacun sur l'écliptique. Ce découpage remonte aux astronomes babyloniens, au premier millénaire avant notre ère.",
+                source: "Rochberg F. — The Heavenly Writing: Divination and Horoscopy in Mesopotamia, 2004."
+            },
+            {
+                id: 2,
+                question: "Quel est le premier signe du zodiaque ?",
+                options: ["Le Taureau", "Le Bélier", "Le Capricorne", "Le Verseau"],
+                correct: 1,
+                explanation: "Le Bélier ouvre le zodiaque tropical car il débute à l'équinoxe de printemps, autour du 21 mars. Ce point de départ est appelé point vernal, ou point gamma.",
+                source: "Institut de mécanique céleste (IMCCE) — Point vernal et zodiaque tropical."
+            },
+            {
+                id: 3,
+                question: "Quel élément est associé au signe du Bélier ?",
+                options: ["L'eau", "La terre", "Le feu", "L'air"],
+                correct: 2,
+                explanation: "Le Bélier est un signe de feu, comme le Lion et le Sagittaire. La tradition astrologique répartit les douze signes en quatre éléments : feu, terre, air et eau, à raison de trois signes chacun.",
+                source: "Tradition astrologique occidentale — Classification des signes par élément."
+            },
+            {
+                id: 4,
+                question: "Quels sont les trois signes d'eau du zodiaque ?",
+                options: ["Bélier, Lion et Sagittaire", "Cancer, Scorpion et Poissons", "Taureau, Vierge et Capricorne", "Gémeaux, Balance et Verseau"],
+                correct: 1,
+                explanation: "Les signes d'eau sont le Cancer, le Scorpion et les Poissons. Le feu regroupe Bélier, Lion et Sagittaire, la terre Taureau, Vierge et Capricorne, l'air Gémeaux, Balance et Verseau.",
+                source: "Tradition astrologique occidentale — Les quatre triplicités."
+            },
+            {
+                id: 5,
+                question: "Quel animal symbolise le signe du Cancer ?",
+                options: ["Le poisson", "Le crabe", "Le scorpion", "Le taureau"],
+                correct: 1,
+                explanation: "Le Cancer est symbolisé par le crabe, cancer signifiant crabe en latin. Dans la mythologie grecque, un crabe envoyé par Héra pour gêner Héraclès aurait été placé parmi les étoiles.",
+                source: "Ridpath I. — Star Tales, constellation mythology, 1988."
+            },
+            {
+                id: 6,
+                question: "Quel astre gouverne traditionnellement le signe du Lion ?",
+                options: ["La Lune", "Mars", "Le Soleil", "Vénus"],
+                correct: 2,
+                explanation: "Le Lion est le seul signe gouverné par le Soleil, tandis que le Cancer est le seul gouverné par la Lune. Les dix autres signes se répartissent les planètes, chacune en régissant deux dans le système traditionnel.",
+                source: "Ptolémée — Tetrabiblos, livre I, des domiciles planétaires."
+            },
+            {
+                id: 7,
+                question: "Quel signe correspond à une personne née le 15 août ?",
+                options: ["Le Cancer", "Le Lion", "La Vierge", "La Balance"],
+                correct: 1,
+                explanation: "Le Lion s'étend du 23 juillet au 22 août environ. Le Cancer le précède, du 21 juin au 22 juillet, et la Vierge lui succède, du 23 août au 22 septembre.",
+                source: "Tradition astrologique occidentale — Calendrier des signes du zodiaque."
+            },
+            {
+                id: 8,
+                question: "Quel objet symbolise le signe de la Balance ?",
+                options: ["Une flèche", "Une balance", "Une urne", "Une couronne"],
+                correct: 1,
+                explanation: "La Balance est le seul signe du zodiaque représenté par un objet et non par un être vivant. Elle symbolise l'équilibre et la justice, et débute à l'équinoxe d'automne, autour du 23 septembre.",
+                source: "Ridpath I. — Star Tales, constellation Libra."
+            },
+            {
+                id: 9,
+                question: "Combien de maisons compte un thème astrologique ?",
+                options: ["Huit maisons", "Dix maisons", "Douze maisons", "Seize maisons"],
+                correct: 2,
+                explanation: "Un thème astral se divise en douze maisons, chacune associée à un domaine de la vie comme l'identité, le travail ou les relations. Leur découpage dépend de l'heure et du lieu de naissance.",
+                source: "Tradition astrologique occidentale — Système des douze maisons."
+            },
+            {
+                id: 10,
+                question: "Qu'appelle-t-on l'ascendant en astrologie ?",
+                options: ["La planète la plus visible", "Le signe qui se levait à l'est", "Le signe opposé au sien", "La position de la Lune"],
+                correct: 1,
+                explanation: "L'ascendant est le signe qui se levait à l'horizon est au moment exact de la naissance. Il change environ toutes les deux heures, ce qui rend l'heure de naissance indispensable pour le déterminer.",
+                source: "Tradition astrologique occidentale — Calcul de l'ascendant."
+            },
+            {
+                id: 11,
+                question: "Combien d'animaux compte le zodiaque chinois ?",
+                options: ["Dix animaux", "Douze animaux", "Quatorze animaux", "Seize animaux"],
+                correct: 1,
+                explanation: "Le zodiaque chinois compte douze animaux se succédant sur un cycle de douze ans : rat, bœuf, tigre, lapin, dragon, serpent, cheval, chèvre, singe, coq, chien et cochon.",
+                source: "Musée national des arts asiatiques Guimet — Le zodiaque chinois."
+            },
+            {
+                id: 12,
+                question: "Quel signe est représenté par deux poissons ?",
+                options: ["Le Cancer", "Le Scorpion", "Les Poissons", "Le Verseau"],
+                correct: 2,
+                explanation: "Le signe des Poissons est figuré par deux poissons nageant en sens opposés, reliés par un lien. Il clôt le zodiaque, du 19 février au 20 mars environ, juste avant le retour du Bélier.",
+                source: "Ridpath I. — Star Tales, constellation Pisces."
+            },
+            {
+                id: 13,
+                question: "Quel signe est symbolisé par des jumeaux ?",
+                options: ["La Balance", "Les Gémeaux", "Le Verseau", "La Vierge"],
+                correct: 1,
+                explanation: "Les Gémeaux représentent Castor et Pollux, les jumeaux de la mythologie grecque. Le signe couvre la période allant du 21 mai au 20 juin environ et appartient à l'élément air.",
+                source: "Ridpath I. — Star Tales, constellation Gemini."
+            },
+            {
+                id: 14,
+                question: "Quelle planète gouverne traditionnellement le Bélier ?",
+                options: ["Vénus", "Mars", "Jupiter", "Saturne"],
+                correct: 1,
+                explanation: "Mars gouverne le Bélier dans la tradition astrologique, en cohérence avec le caractère combatif prêté à ce signe. Mars régit également le Scorpion dans le système traditionnel, avant l'usage de Pluton.",
+                source: "Ptolémée — Tetrabiblos, livre I, des domiciles planétaires."
+            },
+            {
+                id: 15,
+                question: "Quel signe ouvre l'année astrologique au printemps ?",
+                options: ["Le Capricorne", "Le Bélier", "Le Verseau", "Le Taureau"],
+                correct: 1,
+                explanation: "Le Bélier commence à l'équinoxe de printemps, moment où le jour et la nuit ont la même durée. Le zodiaque tropical se cale sur les saisons plutôt que sur la position réelle des constellations.",
+                source: "Institut de mécanique céleste (IMCCE) — Équinoxes et zodiaque tropical."
+            },
+            {
+                id: 16,
+                question: "Quel signe correspond à une personne née le 1er janvier ?",
+                options: ["Le Sagittaire", "Le Capricorne", "Le Verseau", "Les Poissons"],
+                correct: 1,
+                explanation: "Le Capricorne s'étend du 22 décembre au 19 janvier environ. Le Sagittaire le précède et le Verseau lui succède, à partir du 20 janvier. Le Capricorne est un signe de terre gouverné par Saturne.",
+                source: "Tradition astrologique occidentale — Calendrier des signes du zodiaque."
+            },
+            {
+                id: 17,
+                question: "Quels sont les trois signes de terre ?",
+                options: ["Bélier, Lion et Sagittaire", "Taureau, Vierge et Capricorne", "Cancer, Scorpion et Poissons", "Gémeaux, Balance et Verseau"],
+                correct: 1,
+                explanation: "Les signes de terre sont le Taureau, la Vierge et le Capricorne. La tradition leur associe le sens pratique et le rapport au concret, par opposition aux signes d'air, réputés plus intellectuels.",
+                source: "Tradition astrologique occidentale — Les quatre triplicités."
+            },
+            {
+                id: 18,
+                question: "Quel astre gouverne traditionnellement le signe du Cancer ?",
+                options: ["Le Soleil", "La Lune", "Mercure", "Neptune"],
+                correct: 1,
+                explanation: "La Lune gouverne le Cancer, seul signe placé sous son autorité. En astrologie, la Lune est associée aux émotions et à la vie intérieure, ce qui correspond au tempérament prêté au Cancer.",
+                source: "Ptolémée — Tetrabiblos, livre I, des domiciles planétaires."
+            },
+            {
+                id: 19,
+                question: "Quel signe est symbolisé par un archer ?",
+                options: ["Le Scorpion", "Le Sagittaire", "Le Capricorne", "Le Verseau"],
+                correct: 1,
+                explanation: "Le Sagittaire est représenté par un centaure tirant à l'arc. Signe de feu gouverné par Jupiter, il couvre la période du 22 novembre au 21 décembre environ, juste avant le solstice d'hiver.",
+                source: "Ridpath I. — Star Tales, constellation Sagittarius."
+            },
+            {
+                id: 20,
+                question: "Comment appelle-t-on la carte du ciel dressée à la naissance ?",
+                options: ["Le thème astral", "L'éphéméride", "La révolution solaire", "Le transit"],
+                correct: 0,
+                explanation: "Le thème astral, ou thème natal, représente la position des astres au moment et au lieu exacts de la naissance. L'éphéméride est la table donnant ces positions jour par jour.",
+                source: "Tradition astrologique occidentale — Le thème natal."
+            },
+            {
+                id: 101,
+                type: "vrai_faux",
+                question: "L'astrologie est reconnue comme une science par la communauté scientifique.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! L'astrologie n'a aucune validité scientifique. L'étude en double aveugle publiée par Shawn Carlson dans Nature en 1985 a montré que les astrologues ne faisaient pas mieux que le hasard pour associer un thème astral à un profil psychologique.",
+                source: "Carlson S. — A double-blind test of astrology, Nature, vol. 318, 1985."
+            },
+            {
+                id: 102,
+                type: "vrai_faux",
+                question: "L'astrologie et l'astronomie désignent la même discipline.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! L'astronomie est la science qui étudie les objets célestes par l'observation et la physique. L'astrologie est une tradition divinatoire qui prête aux astres une influence sur les caractères et les événements. Elles étaient liées dans l'Antiquité mais se sont séparées à partir du XVIIe siècle.",
+                source: "American Astronomical Society — Astronomy versus astrology, position statement."
+            },
+            {
+                id: 103,
+                type: "vrai_faux",
+                question: "La Balance est le seul signe du zodiaque représenté par un objet.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Tous les autres signes figurent un animal ou un personnage. La Balance, symbole d'équilibre et de justice, est la seule exception. Elle était d'ailleurs associée aux pinces du Scorpion dans les traditions babyloniennes anciennes.",
+                source: "Ridpath I. — Star Tales, constellation Libra."
+            }
+        ],
+        moyen: [
+            {
+                id: 11,
+                question: "Quelle planète gouverne à la fois les Gémeaux et la Vierge ?",
+                options: ["Vénus", "Mercure", "Mars", "Jupiter"],
+                correct: 1,
+                explanation: "Mercure gouverne les Gémeaux, signe d'air, et la Vierge, signe de terre. Dans le système traditionnel, chaque planète autre que le Soleil et la Lune régit deux signes, l'un diurne et l'autre nocturne.",
+                source: "Ptolémée — Tetrabiblos, livre I, des domiciles planétaires."
+            },
+            {
+                id: 12,
+                question: "Comment appelle-t-on les trois qualités qui répartissent les signes ?",
+                options: ["Les triplicités", "Les modalités", "Les décans", "Les aspects"],
+                correct: 1,
+                explanation: "Les modalités, ou quadruplicités, répartissent les signes en cardinaux, fixes et mutables, à raison de quatre par catégorie. Les triplicités désignent, elles, le classement par élément.",
+                source: "Tradition astrologique occidentale — Modalités et quadruplicités."
+            },
+            {
+                id: 13,
+                question: "Quels sont les quatre signes cardinaux du zodiaque ?",
+                options: ["Bélier, Cancer, Balance, Capricorne", "Taureau, Lion, Scorpion, Verseau", "Gémeaux, Vierge, Sagittaire, Poissons", "Bélier, Taureau, Gémeaux, Cancer"],
+                correct: 0,
+                explanation: "Les signes cardinaux ouvrent chacun une saison : le Bélier au printemps, le Cancer en été, la Balance en automne et le Capricorne en hiver. Ils sont associés à l'initiative dans la tradition.",
+                source: "Tradition astrologique occidentale — Signes cardinaux, fixes et mutables."
+            },
+            {
+                id: 14,
+                question: "Comment appelle-t-on l'angle de 180° entre deux planètes ?",
+                options: ["La conjonction", "L'opposition", "Le trigone", "Le carré"],
+                correct: 1,
+                explanation: "L'opposition sépare deux planètes de 180°. La conjonction correspond à 0°, le trigone à 120° et le carré à 90°. Ces angles, appelés aspects, structurent l'interprétation d'un thème astral.",
+                source: "Tradition astrologique occidentale — Les aspects planétaires."
+            },
+            {
+                id: 15,
+                question: "Quel signe chinois ouvre le cycle de douze ans ?",
+                options: ["Le dragon", "Le rat", "Le tigre", "Le cheval"],
+                correct: 1,
+                explanation: "Le rat ouvre le cycle chinois. Une légende raconte qu'il gagna la course organisée par l'Empereur de Jade en se faisant porter par le bœuf avant de bondir devant lui sur la ligne d'arrivée.",
+                source: "Musée national des arts asiatiques Guimet — Le zodiaque chinois."
+            },
+            {
+                id: 16,
+                question: "Quelle planète moderne est associée au signe du Scorpion ?",
+                options: ["Neptune", "Pluton", "Uranus", "Saturne"],
+                correct: 1,
+                explanation: "Depuis la découverte de Pluton en 1930, les astrologues modernes lui attribuent le Scorpion, auparavant gouverné par Mars. De même, Uranus a été associé au Verseau et Neptune aux Poissons.",
+                source: "Tradition astrologique moderne — Attribution des planètes transsaturniennes."
+            },
+            {
+                id: 17,
+                question: "Que désigne la première maison d'un thème astral ?",
+                options: ["Le patrimoine et l'argent", "L'identité et l'apparence", "Le foyer et la famille", "Les voyages lointains"],
+                correct: 1,
+                explanation: "La première maison, qui commence à l'ascendant, concerne l'identité, l'apparence et la manière de se présenter au monde. La deuxième traite des ressources, la quatrième du foyer et la neuvième des voyages.",
+                source: "Tradition astrologique occidentale — Signification des douze maisons."
+            },
+            {
+                id: 18,
+                question: "Comment appelle-t-on la division de chaque signe en trois parties de 10° ?",
+                options: ["Les décans", "Les termes", "Les dodécatémories", "Les degrés"],
+                correct: 0,
+                explanation: "Chaque signe se divise en trois décans de 10°, soit environ dix jours chacun. Ce système remonte à l'Égypte ancienne, où trente-six décans servaient à découper la nuit et l'année.",
+                source: "Neugebauer O. — Egyptian Astronomical Texts, decans, 1960."
+            },
+            {
+                id: 19,
+                question: "Quelle constellation le Soleil traverse-t-il sans qu'elle soit un signe ?",
+                options: ["La Grande Ourse", "Ophiuchus", "Orion", "Cassiopée"],
+                correct: 1,
+                explanation: "Le Soleil traverse Ophiuchus, le Serpentaire, entre le Scorpion et le Sagittaire. Cette constellation n'a jamais fait partie du zodiaque astrologique, découpé en douze secteurs égaux et non selon les contours des constellations.",
+                source: "Union Astronomique Internationale — Constellation boundaries, 1930."
+            },
+            {
+                id: 20,
+                question: "Quelle est la durée moyenne d'un signe solaire dans l'année ?",
+                options: ["Environ deux semaines", "Environ un mois", "Environ six semaines", "Environ deux mois"],
+                correct: 1,
+                explanation: "Le Soleil parcourt les 30° d'un signe en un mois environ, bouclant le zodiaque en une année. L'ascendant, lui, change beaucoup plus vite, environ toutes les deux heures.",
+                source: "Institut de mécanique céleste (IMCCE) — Course apparente du Soleil sur l'écliptique."
+            },
+            {
+                id: 201,
+                type: "vrai_faux",
+                question: "Les signes du zodiaque ne correspondent plus aux constellations réelles.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! La précession des équinoxes décale l'axe de la Terre d'environ un degré tous les 72 ans. Depuis l'Antiquité, un écart d'environ un signe s'est creusé : une personne dite Bélier a le plus souvent le Soleil dans la constellation des Poissons.",
+                source: "Institut de mécanique céleste (IMCCE) — La précession des équinoxes."
+            },
+            {
+                id: 202,
+                type: "vrai_faux",
+                question: "L'astrologie occidentale trouve ses origines en Mésopotamie.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Les premiers présages astraux babyloniens datent du deuxième millénaire avant notre ère et le zodiaque à douze secteurs apparaît vers le Ve siècle avant J.-C. Les Grecs, puis Ptolémée, ont ensuite systématisé cet héritage.",
+                source: "Rochberg F. — The Heavenly Writing, Cambridge University Press, 2004."
+            },
+            {
+                id: 203,
+                type: "vrai_faux",
+                question: "L'effet Barnum explique en partie pourquoi les horoscopes semblent justes.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! L'effet Barnum, ou effet Forer, désigne notre tendance à reconnaître comme personnelle une description vague qui pourrait s'appliquer à presque tout le monde. Forer l'a démontré en 1948 en donnant le même texte à tous ses étudiants, qui l'ont jugé très juste.",
+                source: "Forer B.R. — The fallacy of personal validation, Journal of Abnormal Psychology, 1949."
+            }
+        ],
+        difficile: [
+            {
+                id: 31,
+                question: "Quel astronome grec a rédigé le traité fondateur de l'astrologie occidentale ?",
+                options: ["Hipparque", "Claude Ptolémée", "Aristarque de Samos", "Ératosthène"],
+                correct: 1,
+                explanation: "Claude Ptolémée a rédigé au IIe siècle le Tetrabiblos, qui a structuré l'astrologie occidentale pour plus de mille ans. Il est aussi l'auteur de l'Almageste, traité d'astronomie géocentrique de référence.",
+                source: "Ptolémée — Tetrabiblos, IIe siècle, édition Loeb Classical Library."
+            },
+            {
+                id: 32,
+                question: "Comment appelle-t-on le point opposé à l'ascendant dans un thème ?",
+                options: ["Le milieu du ciel", "Le descendant", "Le fond du ciel", "Le nœud lunaire"],
+                correct: 1,
+                explanation: "Le descendant se situe à 180° de l'ascendant et ouvre la septième maison, celle des relations. Le milieu du ciel marque le sommet du thème et le fond du ciel son point le plus bas.",
+                source: "Tradition astrologique occidentale — Les quatre angles du thème."
+            },
+            {
+                id: 33,
+                question: "Quel phénomène décale progressivement le zodiaque par rapport aux étoiles ?",
+                options: ["La nutation", "La précession des équinoxes", "L'aberration de la lumière", "La parallaxe stellaire"],
+                correct: 1,
+                explanation: "La précession des équinoxes est la lente rotation de l'axe terrestre, qui décrit un cône en environ 25 800 ans. Hipparque l'a mise en évidence vers 130 avant J.-C. en comparant ses mesures à des observations plus anciennes.",
+                source: "Institut de mécanique céleste (IMCCE) — Précession et cycle de 25 800 ans."
+            },
+            {
+                id: 34,
+                question: "Qu'appelle-t-on le zodiaque sidéral, utilisé en astrologie védique ?",
+                options: ["Un zodiaque calé sur les saisons", "Un zodiaque calé sur les constellations", "Un zodiaque à treize signes", "Un zodiaque fondé sur la Lune"],
+                correct: 1,
+                explanation: "Le zodiaque sidéral se cale sur la position réelle des constellations, contrairement au zodiaque tropical occidental qui suit les saisons. L'écart entre les deux, appelé ayanamsa, atteint aujourd'hui environ 24°.",
+                source: "Pingree D. — Jyotiḥśāstra: Astral and Mathematical Literature, 1981."
+            },
+            {
+                id: 35,
+                question: "Quel astronome du XVIIe siècle exerçait aussi comme astrologue de cour ?",
+                options: ["Galilée", "Johannes Kepler", "Tycho Brahe", "Ces trois savants"],
+                correct: 3,
+                explanation: "Kepler, Brahe et Galilée ont tous les trois dressé des horoscopes, activité alors rémunératrice et socialement admise. Kepler, sceptique sur les méthodes courantes, la qualifiait de fille folle nourrissant sa mère l'astronomie.",
+                source: "Rutkin H.D. — Sapientia Astrologica, Springer, 2019."
+            },
+            {
+                id: 36,
+                question: "Quelle étude publiée dans Nature a testé l'astrologie en double aveugle ?",
+                options: ["L'étude Gauquelin de 1955", "L'étude Carlson de 1985", "L'étude Forer de 1948", "L'étude Eysenck de 1979"],
+                correct: 1,
+                explanation: "Shawn Carlson a publié en 1985 dans Nature une expérience où des astrologues devaient associer des thèmes astraux à des profils psychologiques. Leurs résultats ne dépassaient pas ceux du hasard.",
+                source: "Carlson S. — A double-blind test of astrology, Nature, vol. 318, 1985."
+            },
+            {
+                id: 37,
+                question: "Que désigne un nœud lunaire dans un thème astral ?",
+                options: ["Une phase de la Lune", "Une intersection d'orbites", "Une éclipse totale", "Une distance à la Terre"],
+                correct: 1,
+                explanation: "Les nœuds lunaires sont les deux points où l'orbite de la Lune croise l'écliptique. Ce sont des points de calcul astronomiques réels, et les éclipses ne peuvent survenir qu'à leur voisinage.",
+                source: "Institut de mécanique céleste (IMCCE) — Nœuds de l'orbite lunaire."
+            },
+            {
+                id: 38,
+                question: "Comment appelle-t-on une planète qui semble reculer dans le ciel ?",
+                options: ["Une planète stationnaire", "Une planète rétrograde", "Une planète culminante", "Une planète occultée"],
+                correct: 1,
+                explanation: "Le mouvement rétrograde est une illusion de perspective : la Terre dépasse une planète plus lente sur son orbite, qui paraît alors reculer. Mercure connaît ce phénomène trois à quatre fois par an.",
+                source: "NASA — Apparent retrograde motion of planets."
+            },
+            {
+                id: 39,
+                question: "Quel couple de chercheurs français a étudié statistiquement l'astrologie ?",
+                options: ["Les époux Curie", "Les époux Gauquelin", "Les frères Bogdanov", "Les époux Joliot"],
+                correct: 1,
+                explanation: "Michel et Françoise Gauquelin ont analysé des dizaines de milliers de dates de naissance dès les années 1950. Ils ont réfuté l'astrologie classique, mais défendu un effet Mars controversé, jamais confirmé de façon indépendante.",
+                source: "Benski C. et al. — The Mars Effect: A French Test, Prometheus Books, 1996."
+            },
+            {
+                id: 40,
+                question: "Quelle civilisation utilisait un calendrier rituel de 260 jours distinct du zodiaque ?",
+                options: ["Les Égyptiens", "Les Mayas", "Les Perses", "Les Étrusques"],
+                correct: 1,
+                explanation: "Les Mayas employaient le Tzolk'in, calendrier rituel de 260 jours combinant treize nombres et vingt signes. Il servait à la divination et fonctionnait en parallèle du calendrier solaire de 365 jours.",
+                source: "Aveni A. — Skywatchers of Ancient Mexico, University of Texas Press, 2001."
+            },
+            {
+                id: 301,
+                type: "vrai_faux",
+                question: "Le mot désastre vient du vocabulaire astrologique.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Désastre vient de l'italien disastro, formé du préfixe privatif dis- et d'astro, l'astre. Le terme désignait à l'origine une mauvaise configuration céleste, un malheur attribué à une étoile défavorable.",
+                source: "Centre National de Ressources Textuelles et Lexicales (CNRTL) — Étymologie de désastre."
+            },
+            {
+                id: 302,
+                type: "vrai_faux",
+                question: "Les jours de la semaine portent en français des noms de planètes.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Lundi vient de la Lune, mardi de Mars, mercredi de Mercure, jeudi de Jupiter et vendredi de Vénus. Samedi vient de Saturne par le latin, et dimanche du dies dominicus chrétien, qui a remplacé le jour du Soleil.",
+                source: "CNRTL — Étymologie des noms des jours de la semaine."
+            },
+            {
+                id: 303,
+                type: "vrai_faux",
+                question: "Le zodiaque à douze secteurs égaux a été fixé par les Babyloniens.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Les astronomes babyloniens ont divisé l'écliptique en douze secteurs de 30° vers le Ve siècle avant notre ère. Ce découpage régulier remplaçait des repères stellaires irréguliers et facilitait les calculs de position.",
+                source: "Rochberg F. — The Heavenly Writing, Cambridge University Press, 2004."
             }
         ]
     }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz - Cinéma</title>
+    <title>Quiz - Astrologie</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -27,23 +27,23 @@
                     <p>Sélectionnez le niveau qui vous convient le mieux</p>
                 </div>
                 <div class="difficulty-grid">
-                    <div class="difficulty-card" onclick="startQuizCinema('facile')">
+                    <div class="difficulty-card" onclick="startQuizAstrologie('facile')">
                         <div class="difficulty-level">⭐</div>
                         <h3>Facile</h3>
                         <p>10 questions de base pour débuter</p>
-                        <div class="difficulty-badge">Spectateur</div>
+                        <div class="difficulty-badge">Novice</div>
                     </div>
-                    <div class="difficulty-card active" onclick="startQuizCinema('moyen')">
+                    <div class="difficulty-card active" onclick="startQuizAstrologie('moyen')">
                         <div class="difficulty-level">⭐⭐</div>
                         <h3>Moyen</h3>
                         <p>10 questions intermédiaires</p>
-                        <div class="difficulty-badge">Cinéphile</div>
+                        <div class="difficulty-badge">Initié</div>
                     </div>
-                    <div class="difficulty-card" onclick="startQuizCinema('difficile')">
+                    <div class="difficulty-card" onclick="startQuizAstrologie('difficile')">
                         <div class="difficulty-level">⭐⭐⭐</div>
                         <h3>Difficile</h3>
                         <p>10 questions avancées</p>
-                        <div class="difficulty-badge">Critique de Cannes</div>
+                        <div class="difficulty-badge">Maître du Zodiaque</div>
                     </div>
                 </div>
             </div>
@@ -51,8 +51,8 @@
             <!-- Quiz Section -->
             <div id="quiz-container" style="display: none;">
                 <div class="quiz-header">
-                    <h1>🎥 Cinéma</h1>
-                    <p>Acteurs, réalisateurs, films cultes, séries et histoire du 7e art</p>
+                    <h1>♈ Astrologie</h1>
+                    <p>Signes, éléments, planètes et traditions du zodiaque</p>
                 </div>
                 <div class="progress-bar">
                     <div id="progress-fill" class="progress-fill"></div>
@@ -101,13 +101,13 @@
             <h2>À propos de ce Quiz</h2>
             <div class="info-content">
                 <div>
-                    <p>Un quiz cinéma volontairement large : acteurs et actrices, grands réalisateurs, films cultes, séries marquantes, festivals et récompenses, sans oublier l'histoire et le vocabulaire technique du 7e art.</p>
+                    <p>Ce quiz porte sur l'astrologie en tant que <strong>tradition culturelle et historique</strong> : les douze signes, les éléments, les planètes, les maisons et le zodiaque chinois. Les questions portent sur ce que dit cette tradition, ainsi que sur son histoire et son statut.</p><p style="margin-top:0.8rem; font-size:0.9rem; color:#94a3b8;">⚠️ À noter : l'astrologie n'a aucune validité scientifique établie. Elle est traitée ici comme un objet de culture, au même titre qu'une mythologie.</p>
                 </div>
                 <div>
                     <ul>
-                        <li>🎥 Acteurs, réalisateurs, films et séries</li>
-                        <li>📚 Sources cinématographiques vérifiées</li>
-                        <li>🏆 3 niveaux : Spectateur, Cinéphile, Critique</li>
+                        <li>♈ Les 12 signes, éléments et planètes</li>
+                        <li>📚 Sources historiques et scientifiques</li>
+                        <li>🔮 3 niveaux : Novice, Initié, Maître</li>
                         <li>✅ Questions Vrai/Faux incluses</li>
                     </ul>
                 </div>

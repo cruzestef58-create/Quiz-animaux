@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz - Cinéma</title>
+    <title>Quiz - Culture Générale</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -27,23 +27,23 @@
                     <p>Sélectionnez le niveau qui vous convient le mieux</p>
                 </div>
                 <div class="difficulty-grid">
-                    <div class="difficulty-card" onclick="startQuizCinema('facile')">
+                    <div class="difficulty-card" onclick="startQuizCultureG('facile')">
                         <div class="difficulty-level">⭐</div>
                         <h3>Facile</h3>
                         <p>10 questions de base pour débuter</p>
-                        <div class="difficulty-badge">Spectateur</div>
+                        <div class="difficulty-badge">Curieux</div>
                     </div>
-                    <div class="difficulty-card active" onclick="startQuizCinema('moyen')">
+                    <div class="difficulty-card active" onclick="startQuizCultureG('moyen')">
                         <div class="difficulty-level">⭐⭐</div>
                         <h3>Moyen</h3>
                         <p>10 questions intermédiaires</p>
-                        <div class="difficulty-badge">Cinéphile</div>
+                        <div class="difficulty-badge">Érudit</div>
                     </div>
-                    <div class="difficulty-card" onclick="startQuizCinema('difficile')">
+                    <div class="difficulty-card" onclick="startQuizCultureG('difficile')">
                         <div class="difficulty-level">⭐⭐⭐</div>
                         <h3>Difficile</h3>
                         <p>10 questions avancées</p>
-                        <div class="difficulty-badge">Critique de Cannes</div>
+                        <div class="difficulty-badge">Encyclopédie vivante</div>
                     </div>
                 </div>
             </div>
@@ -51,8 +51,8 @@
             <!-- Quiz Section -->
             <div id="quiz-container" style="display: none;">
                 <div class="quiz-header">
-                    <h1>🎥 Cinéma</h1>
-                    <p>Acteurs, réalisateurs, films cultes, séries et histoire du 7e art</p>
+                    <h1>🧠 Culture Générale</h1>
+                    <p>Sciences, arts, littérature, sport et savoirs essentiels</p>
                 </div>
                 <div class="progress-bar">
                     <div id="progress-fill" class="progress-fill"></div>
@@ -101,13 +101,13 @@
             <h2>À propos de ce Quiz</h2>
             <div class="info-content">
                 <div>
-                    <p>Un quiz cinéma volontairement large : acteurs et actrices, grands réalisateurs, films cultes, séries marquantes, festivals et récompenses, sans oublier l'histoire et le vocabulaire technique du 7e art.</p>
+                    <p>Ce quiz balaie les grands domaines du savoir : sciences, histoire, arts, littérature, géographie, sport et langue. De quoi tester l'étendue de vos connaissances générales.</p>
                 </div>
                 <div>
                     <ul>
-                        <li>🎥 Acteurs, réalisateurs, films et séries</li>
-                        <li>📚 Sources cinématographiques vérifiées</li>
-                        <li>🏆 3 niveaux : Spectateur, Cinéphile, Critique</li>
+                        <li>🧠 Tous les domaines du savoir</li>
+                        <li>📚 Sources vérifiées et citées</li>
+                        <li>🎓 3 niveaux : Curieux, Érudit, Encyclopédie</li>
                         <li>✅ Questions Vrai/Faux incluses</li>
                     </ul>
                 </div>

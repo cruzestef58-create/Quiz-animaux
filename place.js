@@ -10,7 +10,7 @@
 const Place = (() => {
     'use strict';
 
-    /* ---------- Les 9 themes du plateau ---------- */
+    /* ---------- Les 12 themes du plateau (grille 3 x 4) ---------- */
     const THEMES = [
         { ic: '🐕', nm: 'Canidés',      keys: ['educationCanine', 'lesChiens'] },
         { ic: '🐱', nm: 'Félins',       keys: ['lesChats', 'letion', 'letigre'] },
@@ -20,7 +20,10 @@ const Place = (() => {
         { ic: '🫀', nm: 'Corps Humain', keys: ['corpsHumain'] },
         { ic: '🌍', nm: 'Géographie',   keys: ['geographie'] },
         { ic: '⚜️', nm: 'Histoire',     keys: ['histoireFrance'] },
-        { ic: '🎬', nm: 'Cinéma',       keys: ['cinema', 'harryPotter', 'starWars', 'jujutsuKaisen'] },
+        { ic: '🎥', nm: 'Cinéma',       keys: ['cinema'] },
+        { ic: '🎬', nm: 'Fiction',      keys: ['harryPotter', 'starWars', 'jujutsuKaisen'] },
+        { ic: '🧠', nm: 'Culture G',    keys: ['cultureG'] },
+        { ic: '♈', nm: 'Astrologie',   keys: ['astrologie'] },
     ];
 
     const CHAMPIONS = [

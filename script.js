@@ -759,13 +759,25 @@ const categories = {
             { icon: '⚜️', title: 'Histoire de France', desc: 'Rois, révolutions, guerres et grands personnages qui ont forgé l\'identité française.', url: 'quiz-histoire-france.html' },
         ]
     },
+    cultureg: {
+        label: '🧠 Culture Générale',
+        quizzes: [
+            { icon: '🧠', title: 'Culture Générale', desc: 'Sciences, arts, littérature, sport, histoire — tous les savoirs essentiels.', url: 'quiz-culture-generale.html' },
+        ]
+    },
+    astrologie: {
+        label: '♈ Astrologie',
+        quizzes: [
+            { icon: '♈', title: 'Astrologie', desc: 'Les 12 signes, les éléments, les planètes et le zodiaque chinois.', url: 'quiz-astrologie.html' },
+        ]
+    },
     filmsseries: {
         label: '🎬 Films & Séries',
         quizzes: [
             { icon: '⚡', title: 'Harry Potter', desc: 'Sorts, Horcruxes, Poudlard et tous les secrets de l\'univers de J.K. Rowling.', url: 'quiz-harry-potter.html' },
             { icon: '⭐', title: 'Star Wars', desc: 'La Force, les Jedi, les Sith et toute la saga Skywalker dans une galaxie très très lointaine.', url: 'quiz-star-wars.html' },
             { icon: '🩸', title: 'Jujutsu Kaisen', desc: 'Sukuna, Gojo, les fléaux maudits et toute la saga Jujutsu Kaisen de Gege Akutami.', url: 'quiz-jujutsu-kaisen.html' },
-            { icon: '🎥', title: 'Cinéma', desc: 'Films cultes, grands réalisateurs, Cannes, Oscars et histoire du 7e art.', url: 'quiz-cinema.html' },
+            { icon: '🎥', title: 'Cinéma', desc: 'Acteurs, réalisateurs, films cultes, séries, Cannes et Oscars — le cinéma en grand.', url: 'quiz-cinema.html' },
         ]
     },
 };
@@ -1086,3 +1098,29 @@ function startQuizCinema(difficulty) {
     nextBtn.onclick = () => quizManager.nextQuestion();
 }
 window.startQuizCinema = startQuizCinema;
+
+function startQuizCultureG(difficulty) {
+    document.getElementById('difficulty-selection').style.display = 'none';
+    document.getElementById('quiz-container').style.display = 'block';
+
+    const quizData = quizzesData.cultureG;
+    quizManager = new QuizManager(quizData, difficulty);
+    quizManager.init();
+
+    const nextBtn = document.getElementById('next-button');
+    nextBtn.onclick = () => quizManager.nextQuestion();
+}
+window.startQuizCultureG = startQuizCultureG;
+
+function startQuizAstrologie(difficulty) {
+    document.getElementById('difficulty-selection').style.display = 'none';
+    document.getElementById('quiz-container').style.display = 'block';
+
+    const quizData = quizzesData.astrologie;
+    quizManager = new QuizManager(quizData, difficulty);
+    quizManager.init();
+
+    const nextBtn = document.getElementById('next-button');
+    nextBtn.onclick = () => quizManager.nextQuestion();
+}
+window.startQuizAstrologie = startQuizAstrologie;
