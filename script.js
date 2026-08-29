@@ -557,6 +557,67 @@ async function submitThemeSuggestion() {
     }
 }
 
+// ── Support / Don modal ────────────────────────────────────────────────────
+
+const KOFI_URL = 'https://ko-fi.com/estebancruz0712';
+
+function createSupportModal() {
+    const modal = document.createElement('div');
+    modal.id = 'support-modal';
+    modal.className = 'modal hidden';
+    modal.innerHTML = `
+        <div class="modal-content support-modal-content">
+            <button class="modal-close" aria-label="Fermer">&times;</button>
+            <div class="support-icon">♥</div>
+            <h2>Soutenir QuizzlyUnivers</h2>
+            <p class="support-intro">
+                Le site est <strong>entièrement gratuit</strong> et <strong>sans aucune publicité</strong>.
+                Chaque question est écrite, vérifiée et sourcée à la main — cela représente
+                beaucoup de temps.
+            </p>
+            <ul class="support-list">
+                <li>☕ Un café, c'est déjà énorme</li>
+                <li>🎯 Ça m'aide à créer de nouveaux thèmes</li>
+                <li>🔒 Le site restera gratuit dans tous les cas</li>
+            </ul>
+            <a href="${KOFI_URL}" class="btn-support-cta" target="_blank" rel="noopener noreferrer">
+                ♥ Faire un don sur Ko-fi
+            </a>
+            <p class="support-note">Paiement sécurisé · Aucun compte requis · Montant libre</p>
+            <button class="support-later">Une autre fois</button>
+        </div>
+    `;
+    document.body.appendChild(modal);
+
+    const fermer = () => closeSupportModal();
+    modal.querySelector('.modal-close').addEventListener('click', fermer);
+    modal.querySelector('.support-later').addEventListener('click', fermer);
+    modal.addEventListener('click', e => { if (e.target === modal) fermer(); });
+    // Le lien Ko-fi ouvre un nouvel onglet : on referme la fenetre derriere.
+    modal.querySelector('.btn-support-cta').addEventListener('click', () => setTimeout(fermer, 300));
+}
+
+function openSupportModal() {
+    if (!document.getElementById('support-modal')) createSupportModal();
+    const modal = document.getElementById('support-modal');
+    setTimeout(() => modal.classList.remove('hidden'), 10);
+}
+
+function closeSupportModal() {
+    const modal = document.getElementById('support-modal');
+    if (modal) modal.classList.add('hidden');
+}
+
+window.openSupportModal = openSupportModal;
+window.closeSupportModal = closeSupportModal;
+
+// Fermeture a la touche Echap, pour les deux fenetres
+document.addEventListener('keydown', e => {
+    if (e.key !== 'Escape') return;
+    closeSupportModal();
+    if (typeof closeReportModal === 'function') closeReportModal();
+});
+
 // ── Report / Suggestion modal ──────────────────────────────────────────────
 
 function createReportModal() {

@@ -1853,6 +1853,101 @@ footer p {
 
 
 
+/* ---- Fenetre de soutien ---- */
+.support-modal-content {
+    max-width: 460px;
+    text-align: center;
+}
+
+.support-icon {
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 0.6rem;
+    background: linear-gradient(135deg, #9b5de5, #ec4899);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.support-modal-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.support-intro {
+    color: #94a3b8;
+    line-height: 1.7;
+    font-size: 0.95rem;
+    margin-bottom: 1.4rem;
+}
+
+.support-intro strong { color: #e2e8f0; }
+
+.support-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.6rem;
+    text-align: left;
+    display: inline-block;
+}
+
+.support-list li {
+    color: #cbd5e1;
+    font-size: 0.92rem;
+    padding: 0.45rem 0;
+}
+
+.btn-support-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.95rem 1.5rem;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #9b5de5, #ec4899);
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: 0 6px 20px rgba(236, 72, 153, 0.32);
+    transition: transform 0.25s cubic-bezier(0.175,0.885,0.32,1.275), box-shadow 0.25s, filter 0.25s;
+}
+
+.btn-support-cta:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.08);
+    box-shadow: 0 10px 28px rgba(236, 72, 153, 0.5);
+}
+
+.support-note {
+    color: #64748b;
+    font-size: 0.78rem;
+    margin: 0.9rem 0 0;
+}
+
+.support-later {
+    margin-top: 1.1rem;
+    background: none;
+    border: none;
+    color: #64748b;
+    font-family: inherit;
+    font-size: 0.88rem;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.25s;
+}
+
+.support-later:hover { color: #cbd5e1; }
+
+@media (max-width: 520px) {
+    .support-modal-content { max-width: 92vw; }
+    .support-modal-content h2 { font-size: 1.25rem; }
+    .support-intro { font-size: 0.88rem; }
+}
+
+
 /* Ripple des boutons (etait injecte en JS au runtime) */
 @keyframes ripple {
     to { transform: scale(4); opacity: 0; }
