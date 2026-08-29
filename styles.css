@@ -1809,6 +1809,77 @@ footer p {
 }
 
 
+/* ---- Section de soutien / don ---- */
+.support {
+    background: linear-gradient(135deg, rgba(255, 94, 91, 0.10), rgba(255, 149, 92, 0.07));
+    border: 1px solid rgba(255, 94, 91, 0.28);
+    border-radius: 18px;
+    padding: 2.5rem 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.support h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+    color: #fff;
+}
+
+.support p {
+    color: #94a3b8;
+    max-width: 620px;
+    margin: 0 auto 1.6rem;
+    line-height: 1.7;
+}
+
+.btn-support {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.95rem 2.2rem;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #ff5e5b, #ff955c);
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    box-shadow: 0 8px 24px rgba(255, 94, 91, 0.25);
+    transition: transform 0.3s cubic-bezier(0.175,0.885,0.32,1.275), box-shadow 0.3s;
+}
+
+.btn-support:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 14px 34px rgba(255, 94, 91, 0.4);
+}
+
+.support-note {
+    display: block;
+    margin-top: 1.1rem;
+    font-size: 0.82rem;
+    color: #64748b;
+}
+
+/* Lien discret dans le pied de page */
+.footer-support {
+    color: #ff8a7a;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.25s;
+}
+
+.footer-support:hover {
+    color: #ffb3a6;
+    text-decoration: underline;
+}
+
+@media (max-width: 520px) {
+    .support { padding: 2rem 1.2rem; }
+    .support h2 { font-size: 1.3rem; }
+    .btn-support { padding: 0.85rem 1.6rem; font-size: 0.95rem; }
+}
+
+
 /* Ripple des boutons (etait injecte en JS au runtime) */
 @keyframes ripple {
     to { transform: scale(4); opacity: 0; }
