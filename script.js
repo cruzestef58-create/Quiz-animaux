@@ -1,3 +1,22 @@
+/* ============================================================
+   Securite — echappement HTML
+   Toute donnee provenant de l'utilisateur (recherche, signalement,
+   proposition de theme) doit passer par escapeHtml() avant d'etre
+   inseree via innerHTML, sinon du HTML saisi serait execute.
+   ============================================================ */
+function escapeHtml(v) {
+    return String(v == null ? '' : v)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
+
+/* Longueurs maximales acceptees a la saisie */
+const MAX_RECHERCHE = 60;
+const MAX_MESSAGE   = 1000;
+
 
 // Quiz Controller
 class QuizManager {
@@ -524,6 +543,10 @@ async function submitThemeSuggestion() {
     const input = document.getElementById('new-theme-input');
     const theme = input.value.trim();
     if (!theme) { alert('Écris un thème avant d\'envoyer !'); return; }
+    if (theme.length > 200) { alert('Proposition trop longue (200 caractères maximum).'); return; }
+
+    const autoriseTheme = peutEnvoyer();
+    if (!autoriseTheme.ok) { alert(autoriseTheme.motif); return; }
 
     const btn = document.getElementById('submit-theme-button');
     btn.disabled = true;
@@ -685,6 +708,39 @@ function closeReportModal() {
 
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xvzngdvd';
 
+
+/* ============================================================
+   Anti-spam : limitation de debit cote client.
+   Ce n'est PAS une securite forte (contournable en desactivant JS),
+   mais cela stoppe les envois repetes accidentels ou peu determines,
+   ce qui protege le quota Formspree (50 messages/mois).
+   ============================================================ */
+const DELAI_ENVOI_MS = 30 * 1000;   // 30 s entre deux envois
+const MAX_ENVOIS_JOUR = 5;
+
+function peutEnvoyer() {
+    let hist;
+    try {
+        hist = JSON.parse(localStorage.getItem('quizzly_envois') || '[]');
+    } catch (e) { hist = []; }
+
+    const maintenant = Date.now();
+    const jour = 24 * 60 * 60 * 1000;
+    hist = hist.filter(t => maintenant - t < jour);
+
+    if (hist.length && maintenant - hist[hist.length - 1] < DELAI_ENVOI_MS) {
+        const reste = Math.ceil((DELAI_ENVOI_MS - (maintenant - hist[hist.length - 1])) / 1000);
+        return { ok: false, motif: `Merci de patienter ${reste} secondes avant un nouvel envoi.` };
+    }
+    if (hist.length >= MAX_ENVOIS_JOUR) {
+        return { ok: false, motif: 'Tu as atteint la limite d\'envois pour aujourd\'hui. Reviens demain !' };
+    }
+
+    hist.push(maintenant);
+    try { localStorage.setItem('quizzly_envois', JSON.stringify(hist)); } catch (e) {}
+    return { ok: true };
+}
+
 async function submitReport() {
     const typeBtn = document.querySelector('.report-type-btn.active');
     const type = typeBtn ? typeBtn.dataset.type : 'bug';
@@ -692,6 +748,10 @@ async function submitReport() {
     const text = document.getElementById('report-text').value.trim();
 
     if (!text) { alert('Merci d\'écrire une description avant d\'envoyer.'); return; }
+    if (text.length > MAX_MESSAGE) { alert('Message trop long (1000 caractères maximum).'); return; }
+
+    const autorise = peutEnvoyer();
+    if (!autorise.ok) { alert(autorise.motif); return; }
 
     const submitBtn = document.getElementById('report-submit-btn');
     submitBtn.disabled = true;
@@ -737,9 +797,9 @@ function renderReportHistory() {
         reports.slice().reverse().map(r => `
             <div class="report-card">
                 <span class="report-tag report-tag-${r.type}">${r.type === 'bug' ? '🐛 Bug' : '💡 Suggestion'}</span>
-                <span class="report-quiz-tag">${r.quiz}</span>
-                <p>${r.text}</p>
-                <small>${r.date}</small>
+                <span class="report-quiz-tag">${escapeHtml(r.quiz)}</span>
+                <p>${escapeHtml(r.text)}</p>
+                <small>${escapeHtml(r.date)}</small>
             </div>
         `).join('');
 }
@@ -1004,7 +1064,7 @@ function initSearch() {
     const searchWrapper = document.getElementById('search-wrapper');
 
     input.addEventListener('input', () => {
-        const raw   = input.value.trim();
+        const raw   = input.value.trim().slice(0, MAX_RECHERCHE);
         const query = normalize(raw);
 
         // Afficher / masquer bouton croix
@@ -1023,7 +1083,7 @@ function initSearch() {
         const matches = searchIndex.filter(q => q.search.includes(query));
 
         if (matches.length === 0) {
-            resultsBox.innerHTML = `<div class="search-no-result">😕 Aucun quiz trouvé pour "<strong>${raw}</strong>"</div>`;
+            resultsBox.innerHTML = `<div class="search-no-result">😕 Aucun quiz trouvé pour "<strong>${escapeHtml(raw)}</strong>"</div>`;
         } else {
             resultsBox.innerHTML = matches.map(q => `
                 <a class="search-result-item" href="${q.url}">
