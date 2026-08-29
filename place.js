@@ -23,7 +23,7 @@ const Place = (() => {
         { ic: '🎥', nm: 'Cinéma',       keys: ['cinema'] },
         { ic: '🎬', nm: 'Fiction',      keys: ['harryPotter', 'starWars', 'jujutsuKaisen'] },
         { ic: '🧠', nm: 'Culture G',    keys: ['cultureG'] },
-        { ic: '♈', nm: 'Astrologie',   keys: ['astrologie'] },
+        { ic: '🔮', nm: 'Astrologie',   keys: ['astrologie'] },
     ];
 
     const CHAMPIONS = [

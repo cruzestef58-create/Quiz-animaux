@@ -766,9 +766,9 @@ const categories = {
         ]
     },
     astrologie: {
-        label: '♈ Astrologie',
+        label: '🔮 Astrologie',
         quizzes: [
-            { icon: '♈', title: 'Astrologie', desc: 'Les 12 signes, les éléments, les planètes et le zodiaque chinois.', url: 'quiz-astrologie.html' },
+            { icon: '🔮', title: 'Astrologie', desc: 'Les 12 signes, les éléments, les planètes et le zodiaque chinois.', url: 'quiz-astrologie.html' },
         ]
     },
     filmsseries: {
