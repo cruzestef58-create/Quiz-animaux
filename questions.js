@@ -73,7 +73,7 @@ const quizzesData = {
             {
                 id: 8,
                 question: "Quel est le poids moyen d'un chiot à la naissance ?",
-                options: ["50g à", "1kg minimum", "2kg", "5kg"],
+                options: ["50g à 500g", "1kg minimum", "2kg", "5kg"],
                 correct: 0,
                 explanation: "Le poids d'un chiot à la naissance dépend entièrement de la race. Un chiot Chihuahua peut peser seulement 50g, tandis qu'un chiot Saint-Bernard peut dépasser 500g. En général, un chiot pèse environ 1% du poids adulte de sa race. Un chiot qui ne grossit pas dans les premiers jours doit être surveillé par un vétérinaire.",
                 source: "Association Française des Vétérinaires - Le poids varie énormément selon la race."
@@ -121,7 +121,7 @@ const quizzesData = {
             {
                 id: 14,
                 question: "Quelle est la vision des couleurs chez le chien ?",
-                options: ["Vision trichromatique identique à l'humain avec perception du rouge", "Vision entièrement achromatique en niveaux de gris", "Pas de distinction rouge-vert", "Vision nocturne supérieure à l'humain mais identique aux chats avec"],
+                options: ["Vision trichromatique identique à l'humain avec perception du rouge", "Vision entièrement achromatique en niveaux de gris", "Pas de distinction rouge-vert", "Vision nocturne supérieure à l'humain et identique à celle du chat"],
                 correct: 2,
                 explanation: "Les chiens ne voient pas le monde en noir et blanc comme on le croyait autrefois. Ils distinguent les couleurs, mais leur spectre est limité : ils voient bien le bleu et le jaune, mais confondent le rouge et le vert (qui leur apparaissent tous les deux jaunâtres). C'est similaire à une forme de daltonisme rouge-vert chez l'humain.",
                 source: "Université de Biologie Canine - Les chiens voient principalement en bleu et jaune."
@@ -404,7 +404,7 @@ const quizzesData = {
             {
                 id: 33,
                 question: "Quel est le seuil de douleur généralement accepté chez les chiens ?",
-                options: ["Très bas", "Similaire aux humains", "Plus élevé que chez", "Inexistant"],
+                options: ["Un seuil très bas", "Similaire aux humains", "Plus élevé que les humains", "Totalement inexistant"],
                 correct: 2,
                 explanation: "Les chiens ont un seuil de douleur généralement plus élevé que les humains, ce qui est un héritage évolutif : un animal qui montre sa douleur en milieu naturel devient une cible. C'est pourquoi les chiens cachent souvent leurs blessures ou maladies jusqu'à un stade avancé. Il faut donc surveiller des signes subtils : boiterie légère, manque d'appétit, comportement plus calme qu'habituellement.",
                 source: "Centre Vétérinaire d'Anesthésiologie - Les chiens ont généralement un seuil de douleur plus élevé."
@@ -428,7 +428,7 @@ const quizzesData = {
             {
                 id: 36,
                 question: "Quel est le processus de 'counter-surfing' et comment le corriger ?",
-                options: ["Sauter sur les plans de trav", "Sauter sur les plans de trav", "Comportement normal", "Maladie"],
+                options: ["Un jeu à encourager", "Vol sur les plans de travail", "Comportement normal", "Signe de maladie"],
                 correct: 1,
                 explanation: "Le counter-surfing, c'est quand le chien pose les pattes sur les plans de travail ou les tables pour voler de la nourriture. Ce comportement est renforcé par la réussite : dès qu'il a réussi une fois, il recommence. La solution : ne jamais laisser de nourriture à portée, rediriger vers un comportement incompatible (s'asseoir), et ne jamais laisser le chien seul dans une cuisine avec de la nourriture accessible pendant l'apprentissage.",
                 source: "Association Française de Comportement - L'ignorance décourage ce comportement."
@@ -539,7 +539,7 @@ const quizzesData = {
             {
                 id: 48,
                 question: "Quel est le processus de 'redirection' de comportement ?",
-                options: ["Punition", "Guider le chien vers", "Ignorance du comportement", "Récompense immédiate"],
+                options: ["Punir le comportement indésirable", "Rediriger vers un comportement voulu", "Ignorer totalement le comportement", "Récompenser immédiatement le chien"],
                 correct: 1,
                 explanation: "La redirection consiste à interrompre un comportement indésirable et à proposer immédiatement une alternative acceptable. Par exemple, si le chien mâche le canapé, on lui tend un jouet à mâcher à la place. On ne punit pas, on redirige l'énergie. C'est plus efficace que la punition seule, car ça enseigne ce qu'il faut faire plutôt que juste ce qu'il ne faut pas faire.",
                 source: "Association Française de Comportement Animal - La redirection canalise l'énergie positivement."
@@ -547,7 +547,7 @@ const quizzesData = {
             {
                 id: 49,
                 question: "Quel est le taux d'apprentissage optimal pour les chiens ?",
-                options: ["Une seule session intensive de 45 à 60 minutes par jour pour maximiser la consolidation", "Plusieurs courtes sessions quotidiennes", "Une session longue de 30 minutes tous les deux jours en alternant stimulation physique et", "Une longue session hebdomadaire intensive suivie de renforcements verbaux quotidiens"],
+                options: ["Une seule session intensive de 45 à 60 minutes par jour pour maximiser la consolidation", "Plusieurs courtes sessions quotidiennes", "Une session de 30 minutes tous les deux jours en alternant les exercices", "Une longue session hebdomadaire intensive suivie de renforcements verbaux quotidiens"],
                 correct: 1,
                 explanation: "Plusieurs courtes sessions quotidiennes de 5 à 10 minutes sont bien plus efficaces qu'une longue session hebdomadaire. Le cerveau consolide les apprentissages entre les sessions, notamment pendant le sommeil. Cette régularité crée aussi une routine que le chien anticipe avec plaisir. L'idéal est d'intégrer des micro-sessions dans la vie quotidienne : avant les repas, lors des balades, au moment du jeu.",
                 source: "Institut de Psychologie Canine - L'apprentissage distribué est plus efficace."
@@ -955,7 +955,7 @@ const quizzesData = {
             {
                 id: 11,
                 question: "Quel est le chien officiel de la ville de Paris ?",
-                options: ["Le Bouledogue", "Le Caniche", "Le Berger de Beauce", "Il n'existe pas de chien officiel"],
+                options: ["Le Bouledogue français", "Le Caniche royal", "Le Berger de Beauce", "Il n'en existe aucun"],
                 correct: 3,
                 explanation: "Paris n'a pas de chien officiel. En revanche, le Bouledogue Français est souvent associé à la culture parisienne moderne et connaît un succès mondial depuis les années 2000. Le Caniche est lui aussi une race emblématique de la France, mais aucune ville française n'a officiellement adopté une race.",
                 source: "Mairie de Paris — Aucune race de chien n'est officiellement désignée comme symbole de Paris."
@@ -995,7 +995,7 @@ const quizzesData = {
             {
                 id: 16,
                 question: "Quel est l'espérance de vie moyenne d'un chien ?",
-                options: ["5 à 8 ans selon la race", "8 à 10 ans", "10 à 15 ans selon la race", "18 à 20 ans pour les races"],
+                options: ["5 à 8 ans", "8 à 10 ans", "10 à 15 ans", "18 à 20 ans pour les races"],
                 correct: 2,
                 explanation: "L'espérance de vie d'un chien est en moyenne de 10 à 15 ans, mais varie considérablement selon la race. Les petites races vivent généralement plus longtemps (15 ans et plus pour le Chihuahua ou le Jack Russell) que les grandes races (7-9 ans pour le Dogue Allemand ou le Saint-Bernard). La qualité de vie, l'alimentation et les soins vétérinaires jouent également un rôle important.",
                 source: "Veterinary Record — L'espérance de vie canine varie de 7 à 15 ans selon la taille et la race."
@@ -1703,7 +1703,7 @@ const quizzesData = {
             {
                 id: 3,
                 question: "Que signifie quand un chat ronronne ?",
-                options: ["Exclusivement un signe de bien-être et de satisfaction profonde envers son", "Contentement, mais aussi stress ou douleur", "Un signal d'avertissement précédant généralement une morsure ou une attaque", "Un réflexe respiratoire involontaire sans lien avec l'état émotionnel de l'animal"],
+                options: ["Exclusivement un signe de bien-être et de satisfaction envers son maître", "Contentement, mais aussi stress ou douleur", "Un signal d'avertissement précédant généralement une morsure ou une attaque", "Un réflexe respiratoire involontaire sans lien avec l'état émotionnel de l'animal"],
                 correct: 1,
                 explanation: "Le ronronnement est une vibration produite par les cordes vocales d'un chat. Bien qu'il indique généralement le contentement, les chats ronronnent aussi pour s'auto-apaiser en cas de douleur ou de stress. C'est un mécanisme complexe de communication.",
                 source: "Université de Cambridge - Le ronronnement peut indiquer le bien-être mais aussi la douleur ou l'anxiété."
@@ -1711,7 +1711,7 @@ const quizzesData = {
             {
                 id: 4,
                 question: "Que signifie quand un chat bande sa queue en forme de brosse ?",
-                options: ["Le chat est en état d'excitation intense et cherche à attirer l'attention", "Le chat a peur ou se sent menacé", "Le chat prépare une posture de chasse et s'apprête à bondir sur une", "Le chat ressent de l'affection et sollicite des caresses ou une interaction"],
+                options: ["Le chat est en état d'excitation intense et cherche à attirer l'attention", "Le chat a peur ou se sent menacé", "Le chat prépare une posture de chasse et s'apprête à bondir sur sa proie", "Le chat ressent de l'affection et sollicite des caresses ou une interaction"],
                 correct: 1,
                 explanation: "Quand un chat a peur ou se sent menacé, ses muscles érecteurs des poils se contractent et font gonfler sa queue comme une brosse. Combiné à une posture de côté (pour paraître plus grand), c'est un signal d'avertissement clair : 'je suis effrayé, ne m'approche pas'. Si l'intrus continue, le chat peut passer à l'attaque défensive.",
                 source: "Association Française de Vétérinaires - Une queue gonflée en brosse est un signe de peur ou de stress."
@@ -1807,7 +1807,7 @@ const quizzesData = {
             {
                 id: 16,
                 question: "À quelle distance un chat peut-il entendre ?",
-                options: ["Jusqu'à 1 mètre seulement leur sensibilité", "Jusqu'à 10 mètres permettant de localiser", "Jusqu'à 100 mètres", "Sans limite définie"],
+                options: ["Jusqu'à 1 mètre seulement", "Jusqu'à 10 mètres environ", "Jusqu'à 100 mètres", "Sans aucune limite"],
                 correct: 2,
                 explanation: "Les chats entendent des sons jusqu'à des fréquences de 79 000 Hz (contre 20 000 Hz chez l'humain), ce qui leur permet de détecter les ultrasons émis par les rongeurs. Ils peuvent percevoir des sons jusqu'à 100 mètres. Chacune de leurs oreilles peut pivoter indépendamment jusqu'à 180° pour localiser précisément une source sonore — comme une antenne satellite.",
                 source: "Institut de Sensorimotricité Féline - L'audition du chat est excellente jusqu'à 100m."
@@ -1903,7 +1903,7 @@ const quizzesData = {
             {
                 id: 28,
                 question: "Quel est le comportement du chat quand sa queue se gonfle ?",
-                options: ["Joie", "Peur ou", "Faim", "Sommeil"],
+                options: ["Joie et excitation", "Peur ou agressivité", "Faim intense", "Envie de dormir"],
                 correct: 1,
                 explanation: "La queue gonflée (piloérection) est un réflexe involontaire déclenché par l'adrénaline lors d'un stress ou d'une peur intense. Le chat gonfle aussi tout son pelage pour paraître plus imposant face à un adversaire. Ce signal combiné à une posture latérale, des oreilles aplaties et des feulements est un avertissement fort — un chat dans cet état peut mordre ou griffer si l'on insiste à l'approcher.",
                 source: "Institut de Comportement Animal - Une queue gonflée indique la peur."
@@ -2020,7 +2020,7 @@ const quizzesData = {
             {
                 id: 19,
                 question: "Que signifie les yeux qui se plissent chez un chat ?",
-                options: ["Il a peur", "Il est affectueux ou en conf", "Il va mordre", "Il a mal"],
+                options: ["Il a peur de vous", "Il est affectueux et en confiance", "Il va bientôt mordre", "Il a mal quelque part"],
                 correct: 1,
                 explanation: "Quand un chat plisse lentement les yeux en vous regardant, c'est l'équivalent d'un sourire ou d'un câlin en langage félin — parfois appelé 'slow blink' ou 'bisou du chat'. Des études ont confirmé que les humains qui imitent ce clignement lent obtiennent une réponse similaire de la part du chat, établissant une communication de confiance. C'est l'une des façons les plus simples de créer un lien avec un chat inconnu.",
                 source: "Institut de Comportement Animal - Les chats plissent les yeux comme marque d'affection."
@@ -2081,7 +2081,7 @@ const quizzesData = {
             {
                 id: 36,
                 question: "Quel est le rôle de la troisième paupière (nictitante) chez le chat ?",
-                options: ["Filtration des longueurs d'onde UV pour protéger la rétine lors de l'exposition au", "Protection et lubrification de l'œil", "Focalisation de la lumière sur la fovéa centrale pour maximiser la résolution", "Amplification des sons haute fréquence grâce à une membrane tympanique accessible"],
+                options: ["Filtration des ultraviolets pour protéger la rétine du soleil", "Protection et lubrification de l'œil", "Focalisation de la lumière sur la fovéa centrale pour maximiser la résolution", "Amplification des sons haute fréquence grâce à une membrane tympanique accessible"],
                 correct: 1,
                 explanation: "La troisième paupière (membrane nictitante) est un tissu semi-transparent qui glisse horizontalement sur l'œil. Elle protège la cornée des égratignures et débris, et contribue à la lubrification oculaire en étalant les larmes. Quand cette membrane est visible sur un chat éveillé et en bonne santé, c'est souvent un signe de fatigue extrême, de maladie (parasites, infection, déshydratation) ou de stress — à surveiller.",
                 source: "Institut d'Ophtalmologie Féline - Elle protège l'œil des débris."
@@ -2166,7 +2166,7 @@ const quizzesData = {
             {
                 id: 46,
                 question: "Quel est le rôle de la prostrate chez le chat mâle ?",
-                options: ["Synthèse des androgènes territoriaux", "Production de fluide séminal", "Sécrétion d'enzymes protéolytiques dégradant les protéines de la", "Régulation de la fréquence respiratoire via des chémorécepteurs"],
+                options: ["Synthèse des androgènes territoriaux", "Production de fluide séminal", "Sécrétion d'enzymes dégradant les protéines de la semence", "Régulation de la fréquence respiratoire via des chémorécepteurs"],
                 correct: 1,
                 explanation: "La prostate du chat mâle produit une partie du liquide séminal qui nourrit et transporte les spermatozoïdes lors de l'éjaculation. Contrairement au chien et à l'humain, les maladies de la prostate sont rares chez le chat. La castration réduit considérablement la taille de la prostate et les risques associés. Les mâles castrés présentent rarement des problèmes prostatiques au cours de leur vie.",
                 source: "Institut d'Anatomie Reproductive - La prostrate soutient la reproduction."
@@ -2298,7 +2298,7 @@ const quizzesData = {
             {
                 id: 27,
                 question: "Quel est le secret de la flexibilité vertébrale exceptionnelle du chat ?",
-                options: ["Muscles rétracteurs des griffes exceptionnellement puissants permettant des sauts de", "Vertèbres disques lombaires flexibles", "Absence de clavicule rigide et colonne vertébrale hyper-flexible", "Tendons de la cheville élastiques stockant l'énergie comme des ressorts"],
+                options: ["Muscles rétracteurs des griffes très puissants permettant de grands sauts", "Vertèbres disques lombaires flexibles", "Absence de clavicule rigide et colonne vertébrale hyper-flexible", "Tendons de la cheville élastiques stockant l'énergie comme des ressorts"],
                 correct: 2,
                 explanation: "La flexibilité exceptionnelle du chat vient de deux adaptations anatomiques clés : une clavicule vestigiale non fusionnée (ce qui permet l'épaule de s'effacer pour passer dans des espaces étroits) et des vertèbres lombaires avec des disques intervertébraux très élastiques. Cette colonne 'ressort' est à la base du galop en foulées bondissantes typique du chat et de sa capacité à se faufiler dans des espaces incroyablement étroits.",
                 source: "American Veterinary Medical Association - Absence de fusion claviculaire permettant la rotation."
@@ -2356,7 +2356,7 @@ const quizzesData = {
             {
                 id: 53,
                 question: "Quel est le processus de la 'cardiomyopathie hypertrophique féline' ?",
-                options: ["Dégénérescence progressive des valves auriculo-ventriculaires due à des dépôts de", "Épaississement du myocarde cardiaque", "Dilatation des ventricules avec amincissement de la paroi causant une insuffisance", "Inflammation chronique du péricarde provoquant une constriction progressive du sac"],
+                options: ["Dégénérescence des valves auriculo-ventriculaires par dépôts de collagène", "Épaississement du myocarde cardiaque", "Dilatation des ventricules avec amincissement de la paroi causant une insuffisance", "Inflammation chronique du péricarde provoquant une constriction progressive du sac"],
                 correct: 1,
                 explanation: "La cardiomyopathie hypertrophique féline (HCM) est la maladie cardiaque la plus fréquente chez le chat : le muscle du ventricule gauche s'épaissit anormalement, réduisant le volume de sang éjecté à chaque battement. Elle touche environ 15% des chats adultes, avec une prédisposition génétique dans les races Maine Coon, Ragdoll et Persan. Souvent silencieuse, elle peut provoquer soudainement une thrombose aortique (paralysie des pattes arrière) ou une insuffisance cardiaque.",
                 source: "Journal de Cardiologie Vétérinaire - Maladie commune chez les chats."
@@ -2380,7 +2380,7 @@ const quizzesData = {
             {
                 id: 56,
                 question: "Quel est le rôle du complexe B dans le métabolisme félin ?",
-                options: ["Régulation de la coagulation sanguine et de la densité minérale osseuse via la vitamine", "Essentiels pour l'énergie et la neurologie", "Renforcement exclusif de la matrice osseuse en association avec le calcium et le", "Maintien de l'acuité visuelle nocturne grâce aux phospholipides des membranes"],
+                options: ["Régulation de la coagulation sanguine et de la densité minérale osseuse via la vitamine", "Essentiels pour l'énergie et la neurologie", "Renforcement de la matrice osseuse en association avec le calcium et le phosphore", "Maintien de l'acuité visuelle nocturne grâce aux phospholipides des membranes"],
                 correct: 1,
                 explanation: "Les vitamines du complexe B (B1/thiamine, B2/riboflavine, B3/niacine, B12...) sont des cofacteurs essentiels au métabolisme énergétique et au bon fonctionnement du système nerveux. Le chat a des besoins particulièrement élevés en niacine (B3) car il ne peut pas la synthétiser à partir du tryptophane comme les autres mammifères. Une alimentation exclusivement à base de viande crue non équilibrée peut provoquer des carences en vitamine B1 causant des troubles neurologiques graves.",
                 source: "Institut de Nutrition Vétérinaire - Cofacteurs métaboliques critiques."
@@ -2404,7 +2404,7 @@ const quizzesData = {
             {
                 id: 59,
                 question: "Quel est le processus de la 'iléite lymphoplasmacytaire' chez le chat ?",
-                options: ["Malabsorption secondaire à une atrophie villositaire causée par une entéropathie exsudative", "Inflammation chronique de l'intestin grêle", "Prolifération bactérienne anaérobie dans l'iléon terminal due à un ralentissement du", "Réaction d'hypersensibilité alimentaire de type IV aux protéines bovines ou aviaires de"],
+                options: ["Malabsorption secondaire à une atrophie villositaire causée par une entéropathie exsudative", "Inflammation chronique de l'intestin grêle", "Prolifération bactérienne dans l'iléon terminal due à un transit ralenti", "Réaction d'hypersensibilité alimentaire aux protéines bovines ou aviaires"],
                 correct: 1,
                 explanation: "L'iléite lymphoplasmacytaire est la forme la plus courante de maladie inflammatoire de l'intestin (IBD) chez le chat. Des cellules immunitaires (lymphocytes et plasmocytes) infiltrent la paroi de l'intestin grêle, perturbant l'absorption des nutriments. Symptômes : vomissements chroniques, diarrhée, perte de poids malgré un bon appétit. Le diagnostic nécessite une biopsie. Le traitement repose sur des corticostéroïdes et souvent un régime hypoallergénique.",
                 source: "Journal de Gastroentérologie Féline - Inflammatory bowel disease féline."
@@ -2412,7 +2412,7 @@ const quizzesData = {
             {
                 id: 60,
                 question: "Quel est le rôle de la fibrinogène dans la coagulation féline ?",
-                options: ["Transport des hormones liposolubles et des vitamines A", "Formation du caillot sanguin et fibrines", "Acheminement de l'oxygène depuis les poumons vers les tissus via les", "Production d'anticorps spécifiques lors de la première exposition à un agent"],
+                options: ["Transport des hormones liposolubles et des vitamines A", "Formation du caillot sanguin et fibrines", "Acheminement de l'oxygène des poumons vers les tissus périphériques", "Production d'anticorps spécifiques lors de la première exposition à un agent"],
                 correct: 1,
                 explanation: "Le fibrinogène est une protéine plasmatique produite par le foie qui joue un rôle central dans la coagulation. Lors d'une lésion vasculaire, la thrombine convertit le fibrinogène en fibrine, qui forme un réseau fibreux constituant la structure du caillot sanguin. Chez le chat, un taux bas de fibrinogène peut indiquer une coagulopathie sévère (CIVD) ou une insuffisance hépatique grave. C'est un des marqueurs mesurés lors de bilans de coagulation vétérinaires.",
                 source: "Institut d'Hématologie - Facteur critique de coagulation."
@@ -2444,7 +2444,7 @@ const quizzesData = {
             {
                 id: 64,
                 question: "Quel est le rôle de l'interféron dans la réponse immunitaire féline ?",
-                options: ["Enzyme de restriction dégradant l'ARN viral double brin dans les cellules infectées par un virus", "Protéine antivirale et modulation immunitaire", "Accélérateur de la digestion des protéines virales capturées par phagocytose dans les", "Neurotransmetteur inhibiteur activé lors des réponses inflammatoires au niveau du système nerveux"],
+                options: ["Enzyme de restriction dégradant l'ARN viral double brin dans les cellules infectées par un virus", "Protéine antivirale et modulation immunitaire", "Accélérateur de la digestion des protéines virales capturées par phagocytose", "Neurotransmetteur inhibiteur activé lors des réponses inflammatoires au niveau du système nerveux"],
                 correct: 1,
                 explanation: "Les interférons sont des protéines de signalisation (cytokines) produites par les cellules infectées pour alerter les cellules voisines et activer les défenses immunitaires. L'interféron félin oméga est utilisé en médecine vétérinaire comme traitement immunomodulateur pour des maladies chroniques comme le FIV (virus de l'immunodéficience féline) ou la panleucopénie. Il stimule le système immunitaire et possède une activité antivirale directe.",
                 source: "Institut d'Immunologie Vétérinaire - Cytokine défensive importante."
@@ -2476,7 +2476,7 @@ const quizzesData = {
             {
                 id: 68,
                 question: "Quel est le rôle des prostaglandines dans la protection gastrique féline ?",
-                options: ["Stimulation des contractions musculaires lisses de la paroi gastrique améliorant le brassage", "Protection muqueuse et régulation acide", "Activation des enzymes protéolytiques gastriques nécessaires à la dégradation des protéines", "Régulation du rythme péristaltique duodénal via les cellules entérochromaffines du plexus de"],
+                options: ["Stimulation des contractions musculaires lisses de la paroi gastrique améliorant le brassage", "Protection muqueuse et régulation acide", "Activation des enzymes protéolytiques gastriques nécessaires à la dégradation des protéines", "Régulation du rythme péristaltique duodénal via les cellules entérochromaffines"],
                 correct: 1,
                 explanation: "Les prostaglandines sont des médiateurs lipidiques produits localement dans les tissus gastriques. Dans l'estomac, elles stimulent la production de mucus protecteur et de bicarbonate, et réduisent la sécrétion d'acide gastrique. C'est pourquoi les anti-inflammatoires non stéroïdiens (AINS) comme l'aspirine ou l'ibuprofène, qui bloquent la production de prostaglandines, peuvent causer des ulcères gastriques sévères chez le chat — et sont particulièrement dangereux pour eux.",
                 source: "Institut de Gastroentérologie - Messagers chimiques protecteurs."
@@ -2484,7 +2484,7 @@ const quizzesData = {
             {
                 id: 69,
                 question: "Quel est le mécanisme de la 'feline primary secretory otitis media' ?",
-                options: ["Dégénérescence progressive des cellules ciliées cochléaires liée à l'exposition aux sons forts", "Accumulation de mucus dans l'oreille moyenne", "Colonisation bactérienne par Pseudomonas aeruginosa de l'oreille externe et du canal", "Rupture traumatique de la membrane tympanique par barotraumatisme lors d'une chute de"],
+                options: ["Dégénérescence progressive des cellules ciliées cochléaires liée à l'exposition aux sons forts", "Accumulation de mucus dans l'oreille moyenne", "Colonisation bactérienne par Pseudomonas aeruginosa de l'oreille externe et du canal", "Rupture traumatique de la membrane tympanique par barotraumatisme"],
                 correct: 1,
                 explanation: "La PSOM (Primary Secretory Otitis Media) est une accumulation de mucus épais dans l'oreille moyenne, particulièrement décrite chez le Cavalier King Charles Spaniel mais aussi rapportée chez le chat. Elle peut entraîner des douleurs chroniques, des démangeaisons, des otites récurrentes et dans les cas sévères, des signes neurologiques (perte d'équilibre, penchement de tête). Le traitement nécessite souvent une myringotomie pour drainer le mucus accumulé.",
                 source: "Journal d'Otologie Féline - Condition chronique progressive."
@@ -2874,7 +2874,7 @@ const quizzesData = {
             {
                 id: 20,
                 question: "Quel est le temps d'incubation moyen pour les œufs d'oiseau ?",
-                options: ["5-7 jours", "10-14 jours", "21-28 jours selon", "60 jours"],
+                options: ["5-7 jours", "10-14 jours", "21-28 jours", "60 jours"],
                 correct: 2,
                 explanation: "La durée d'incubation varie selon la taille de l'espèce : environ 11-14 jours pour les petits passereaux, 21 jours pour la poule, 35-40 jours pour les aigles et 80 jours pour le kiwi. L'incubation doit maintenir les œufs à environ 37-38°C. Les deux parents se relaient souvent. Si un œuf n'est pas retourné régulièrement, l'embryon adhère à la membrane et meurt — les parents retournent leurs œufs plusieurs fois par heure.",
                 source: "Centre d'Ornithologie - Le temps d'incubation varie considérablement selon les espèces."
@@ -2919,7 +2919,7 @@ const quizzesData = {
             {
                 id: 35,
                 question: "Quel est le système de communication principal chez les oiseaux aquatiques ?",
-                options: ["Vision uniquement", "Vocalisations et postures co", "Tactile", "Chimique"],
+                options: ["Signaux visuels uniquement", "Vocalisations et postures corporelles", "Contacts tactiles répétés", "Signaux chimiques odorants"],
                 correct: 1,
                 explanation: "Les oiseaux aquatiques communiquent principalement par des vocalisations (cris d'alarme, chants de parade, appels de contact) et des postures corporelles élaborées. Lors des parades nuptiales, de nombreuses espèces combinent les deux : le grèbe huppé exécute une danse symétrique spectaculaire avec son partenaire, se dressant hors de l'eau en miroir. Ces rituels garantissent que les partenaires appartiennent à la même espèce et évaluent leur qualité génétique.",
                 source: "Institut d'Éthologie Aviaire - La communication est multisensorielle."
@@ -2951,7 +2951,7 @@ const quizzesData = {
             {
                 id: 39,
                 question: "À quel âge un aiglon devient-il adulte sexuellement ?",
-                options: ["À 1-2 ans", "À 3-5 ans", "À 5-7 ans selon l'espèce", "À 10+ ans"],
+                options: ["À 1-2 ans", "À 3-5 ans", "À 5-7 ans", "À 10+ ans"],
                 correct: 2,
                 explanation: "Les grands rapaces comme l'aigle royal ou l'aigle de Bonelli atteignent leur maturité sexuelle entre 5 et 7 ans. Avant cela, le jeune aigle porte un plumage juvénile qui change progressivement à chaque mue annuelle. L'aigle pygargue à tête blanche des États-Unis, symbole national américain, ne développe sa tête et sa queue blanches emblématiques qu'à 5 ans. Cette maturité tardive correspond à une longue durée de vie (30-40 ans dans la nature).",
                 source: "Centre d'Étude des Rapaces - Les aigles mettent longtemps à maturer."
@@ -2975,7 +2975,7 @@ const quizzesData = {
             {
                 id: 42,
                 question: "À quel âge un caneton peut-il voler ?",
-                options: ["À 2-3 semaines", "À 4-6 semaines", "À 8-12 semaines selon", "À 4-6 mois"],
+                options: ["À 2-3 semaines", "À 4-6 semaines", "À 8-12 semaines", "À 4-6 mois"],
                 correct: 2,
                 explanation: "Les canetons de canard colvert prennent leur envol entre 50 et 60 jours (7-8 semaines). D'autres espèces de canards varient entre 8 et 12 semaines. Contrairement à beaucoup d'oiseaux, les canetons sont des nidicoles précoces : ils quittent le nid dès le premier jour de vie et nagent immédiatement, mais leurs plumes de vol ne seront prêtes que bien plus tard. Pendant cette période, ils sont particulièrement vulnérables aux prédateurs.",
                 source: "Centre d'Aviculture - Les canards volent généralement vers 10-12 semaines."
@@ -2991,7 +2991,7 @@ const quizzesData = {
             {
                 id: 44,
                 question: "Quel est le mécanisme de la thermorégulation chez les oiseaux hibernants ?",
-                options: ["Migration vers des zones équatoriales où la température reste stable toute", "Métabolisme élevé et tremblements musculaires continus pour maintenir", "Réduction du métabolisme et torpeur", "Accumulation de réserves lipidiques sous-cutanées servant d'isolation"],
+                options: ["Migration vers des zones équatoriales plus stables", "Métabolisme élevé et tremblements musculaires", "Réduction du métabolisme et torpeur", "Accumulation de réserves lipidiques isolantes"],
                 correct: 2,
                 explanation: "Contrairement aux mammifères, peu d'oiseaux hibernent vraiment. Mais certains entrent en torpeur — un ralentissement métabolique temporaire. L'engoulevent d'Amérique est le seul oiseau connu faisant une hibernation prolongée de plusieurs semaines. Les colibris entrent en torpeur chaque nuit pour économiser l'énergie. Le martinet noir, lui, ne dort pratiquement jamais — il peut rester en vol continu pendant 10 mois, dormant en planant.",
                 source: "Institut de Physiologie - Certains oiseaux entrent en torpeur."
@@ -3015,7 +3015,7 @@ const quizzesData = {
             {
                 id: 47,
                 question: "Quel est le processus de nidification chez les oiseaux cavicoles ?",
-                options: ["Construction d'une plateforme végétale suspendue entre deux branches par des fils de", "Utilisation ou creusement de cavités", "Assemblage d'un nid en coupe fixé à la fourche d'un arbuste par de la boue", "Creusement d'un terrier souterrain tapissé de plumes et de mousses pour isoler les"],
+                options: ["Construction d'une plateforme végétale suspendue entre deux branches", "Utilisation ou creusement de cavités", "Assemblage d'un nid en coupe fixé à la fourche d'un arbuste par de la boue", "Creusement d'un terrier souterrain tapissé de plumes et de mousses"],
                 correct: 1,
                 explanation: "Les oiseaux cavicoles nichent dans des creux naturels ou creusés — trous d'arbres, falaises, terriers. Le pic est l'exemple parfait : il creuse lui-même ses cavités avec son bec puissant, qui peut frapper 20 fois par seconde grâce à un crâne épaissi et un cerveau protégé par des muscles et une structure osseuse amortissante. Ces cavités sont ensuite souvent réutilisées par d'autres espèces (mésanges, chouettes, étourneaux) qui ne peuvent pas creuser elles-mêmes.",
                 source: "Centre d'Ornithologie - Les cavicoles creusent ou utilisent des cavités."
@@ -3023,7 +3023,7 @@ const quizzesData = {
             {
                 id: 48,
                 question: "À quel âge un jeune perroquet développe-t-il son plumage adulte ?",
-                options: ["À quelques semaines", "À 2-3 mois", "À 6-18 mois selon", "À 2+ ans"],
+                options: ["À quelques semaines", "À 2-3 mois", "À 6-18 mois", "À 2+ ans"],
                 correct: 2,
                 explanation: "Les perroquets développent leur plumage adulte progressivement au fil des mues successives. Les petites espèces comme la perruche ondulée atteignent leur couleur définitive vers 6-8 mois. Les grandes espèces comme l'Ara ararauna (ara bleu et jaune) mettent 18 mois à 2 ans. Certains grands cacatoès n'arborent leur plumage adulte complet qu'à 4-5 ans, ce qui coïncide avec leur maturité sexuelle.",
                 source: "Institut de Zoologie Aviaire - Le plumage adulte arrive progressivement."
@@ -3119,7 +3119,7 @@ const quizzesData = {
                 id: 25,
                 question: "Quel est le gène responsable de la détermination du sexe chez les oiseaux ?",
                 options: [
-                "Gène SRY comme chez",
+                "Gène SRY comme chez les mammifères",
                 "Gène DMRT1",
                 "Gène FEM",
                 "Gène ZW inversé"
@@ -3200,7 +3200,7 @@ const quizzesData = {
             {
                 id: 54,
                 question: "Quel est le rôle des marques génétiques sur les plumes ?",
-                options: ["Résistance mécanique renforcée par des liaisons croisées de kératine bêta", "Identification et communication", "Isolation thermique supplémentaire par emprisonnement d'air entre les", "Réduction de la friction en plongeon rapide"],
+                options: ["Résistance mécanique renforcée par des liaisons croisées de kératine bêta", "Identification et communication", "Isolation thermique par emprisonnement d'air entre les barbes", "Réduction de la friction en plongeon rapide"],
                 correct: 1,
                 explanation: "Les motifs et couleurs des plumes transmettent de nombreuses informations : l'identité spécifique (pour éviter les hybridations), le sexe, l'âge (juvénile vs adulte), et surtout la qualité génétique. Des études ont montré que la vivacité des couleurs (souvent liée à l'alimentation en caroténoïdes) indique la santé et la résistance parasitaire du porteur. Les femelles choisissent préférentiellement les mâles aux couleurs les plus vives — ce que Darwin appelait la sélection sexuelle.",
                 source: "Institut d'Éthologie Ornithologique - Les marques communiquent le statut."
@@ -3232,7 +3232,7 @@ const quizzesData = {
             {
                 id: 58,
                 question: "Quel est le processus du 'parasitisme de couvée' chez certains oiseaux ?",
-                options: ["Destruction des nids concurrents pour forcer la cohabitation et le partage des soins", "Ponte des œufs dans nids d'autres espèces", "Coopération entre espèces partageant volontairement le même nid pour diluer le risque de", "Adoption active des poussins abandonnés par d'autres espèces après détection de leurs cris de"],
+                options: ["Destruction des nids concurrents pour forcer la cohabitation et le partage des soins", "Ponte des œufs dans nids d'autres espèces", "Coopération entre espèces partageant volontairement le même nid", "Adoption active des poussins abandonnés par d'autres espèces"],
                 correct: 1,
                 explanation: "Le parasitisme de couvée est une stratégie reproductive où l'oiseau pond ses œufs dans le nid d'une autre espèce, qui élèvera le jeune parasite à sa place. Le coucou gris d'Europe en est l'exemple le plus connu : la femelle observe les nids d'oiseaux hôtes (rousserolle, rouge-gorge...) et pond un œuf mimétique quand l'hôte s'absente. Le jeune coucou expulse ensuite tous les œufs ou poussins du nid pour monopoliser les soins des parents adoptifs.",
                 source: "Institut d'Éthologie Aviaire - Stratégie reproductive du coucou."
@@ -3248,7 +3248,7 @@ const quizzesData = {
             {
                 id: 60,
                 question: "Quel est le rôle du 'lissage des plumes' chez les oiseaux de groupe ?",
-                options: ["Hygiène uniquement", "Hygiène, renforcement social et hiérarchie", "Stimulation de la production de mélatonine favorisant la synchronisation des cycles de", "Transmission de micro-organismes bénéfiques renforçant le microbiome cutané des"],
+                options: ["Hygiène uniquement", "Hygiène, renforcement social et hiérarchie", "Stimulation de la mélatonine synchronisant les cycles de sommeil", "Transmission de micro-organismes renforçant le microbiome cutané"],
                 correct: 1,
                 explanation: "L'allopreening (lissage mutuel des plumes) est un comportement observé chez de nombreuses espèces sociales (perroquets, corbeaux, cigognes, manchots). Il sert d'abord à l'hygiène en atteignant les zones inaccessibles seul (tête, cou). Mais c'est aussi un puissant outil de cohésion sociale : il renforce les liens entre partenaires, consolide les alliances et apaise les tensions. Les individus dominants reçoivent généralement plus de lissage qu'ils n'en donnent.",
                 source: "Centre d'Ornithologie Comportementale - L'allopreening a fonction sociale."
@@ -3277,7 +3277,7 @@ const quizzesData = {
             {
                 id: 63,
                 question: "Quel est le rôle des 'couleurs structurales' chez les oiseaux ?",
-                options: ["Renforcement de la kératine alaire pour résister aux contraintes mécaniques pendant le vol", "Communication, thermorégulation et camouflage", "Indicateur de statut reproducteur visible uniquement sous lumière ultraviolette par les", "Absorption sélective des longueurs d'onde nocives pour protéger la rétine lors du vol"],
+                options: ["Renforcement de la kératine alaire pour résister aux contraintes mécaniques pendant le vol", "Communication, thermorégulation et camouflage", "Indicateur de statut reproducteur visible sous lumière ultraviolette", "Absorption sélective des longueurs d'onde nocives pour protéger la rétine lors du vol"],
                 correct: 1,
                 explanation: "Les couleurs structurales des plumes (comme le bleu du geai ou le vert métallique du colibri) ne proviennent pas de pigments mais de nanostructures qui diffractent la lumière par interférence — comme un film de savon. Ces couleurs changent selon l'angle d'observation et sont souvent invisibles aux UV. Fonctionnellement, les couleurs vives servent à la communication sexuelle et à la reconnaissance spécifique, les couleurs cryptiques au camouflage, et les couleurs sombres à l'absorption de chaleur solaire.",
                 source: "Institut de Biophysique Aviaire - Interférence lumineuse crée couleurs."
@@ -3285,7 +3285,7 @@ const quizzesData = {
             {
                 id: 64,
                 question: "Quel est le processus de l'imprinting territorial chez les oiseaux ?",
-                options: ["Mémorisation des coordonnées géomagnétiques du territoire via des dépôts de magnétite", "Apprentissage précoce du habitat natal", "Reconnaissance des partenaires potentiels basée sur les signaux olfactifs du groupe", "Encodage de la carte migratoire via les constellations stellaires observées pendant les"],
+                options: ["Mémorisation des coordonnées géomagnétiques du territoire via des dépôts de magnétite", "Apprentissage précoce du habitat natal", "Reconnaissance des partenaires potentiels basée sur les signaux olfactifs du groupe", "Encodage de la carte migratoire via les constellations stellaires"],
                 correct: 1,
                 explanation: "L'empreinte territoriale se produit quand le jeune oiseau mémorise les caractéristiques de son habitat natal (odeurs, sons, paysages, latitude) pendant une période critique après l'envol. Cette mémoire le guidera pour revenir nicher exactement au même endroit à l'âge adulte — parfois à quelques mètres du nid d'origine. Ce phénomène, appelé philopatrie natale, est particulièrement fort chez les saumons mais aussi très documenté chez les oiseaux marins et migrateurs.",
                 source: "Institut d'Éthologie Spatiale - Imprinting détermine retour site."
@@ -3301,7 +3301,7 @@ const quizzesData = {
             {
                 id: 66,
                 question: "Quel est le rôle de la 'parole gestuelle' chez les corvidés ?",
-                options: ["Régulation de la distance sociale par des postures standardisées évitant les conflits", "Communication complexe par gestes et postures", "Transmission culturelle d'techniques d'utilisation d'outils via démonstration gestuelle aux", "Signalisation de la qualité génétique aux femelles par des parades ritualisées à composante"],
+                options: ["Régulation de la distance sociale par des postures standardisées évitant les conflits", "Communication complexe par gestes et postures", "Transmission culturelle des techniques d'outils par démonstration gestuelle", "Signalisation de la qualité génétique aux femelles par des parades ritualisées à composante"],
                 correct: 1,
                 explanation: "Les corvidés (corbeaux, corneilles, geais, pies) ont développé une communication gestuelle remarquablement sophistiquée. Des études ont montré que les corbeaux utilisent des gestes de pointage et de présentation d'objets pour attirer l'attention de leurs partenaires — une capacité longtemps crue exclusive aux grands singes et aux humains. Ils peuvent aussi montrer des objets, 'inviter' au jeu par des postures codées, et même 'mentir' en cachant de la nourriture quand ils se croient observés.",
                 source: "Institut de Cognition Aviaire - Les corvidés communiquent sophistiquement."
@@ -3309,7 +3309,7 @@ const quizzesData = {
             {
                 id: 67,
                 question: "Quel est le processus de la 'compétition spermique' chez les oiseaux ?",
-                options: ["Sélection des spermatozoïdes par la femelle via des cryptes utérines qui filtrent", "Compétition des spermes entre mâles", "Fécondation exclusive du premier mâle s'étant accouplé grâce à un mécanisme de", "Choix différé de la femelle qui stocke les spermes plusieurs semaines avant de"],
+                options: ["Sélection des spermatozoïdes par la femelle via des cryptes utérines qui filtrent", "Compétition des spermes entre mâles", "Fécondation exclusive par le premier mâle s'étant accouplé", "Choix différé de la femelle qui stocke les spermes plusieurs semaines"],
                 correct: 1,
                 explanation: "La compétition spermatique se produit quand une femelle s'accouple avec plusieurs mâles et que leurs spermatozoïdes rivalisent pour féconder les ovules. Chez les oiseaux, même les espèces apparemment monogames pratiquent souvent des accouplements extra-conjugaux. En réponse, les mâles ont évolué des testicules proportionnellement plus grands, des spermatozoïdes plus rapides, et des comportements de 'garde rapprochée' de la femelle pendant sa période fertile pour limiter les accouplements rivaux.",
                 source: "Université de Biologie Reproductive - Sperm competition est intense."
@@ -3424,7 +3424,7 @@ const quizzesData = {
             {
                 id: 7,
                 question: "À quel âge une tortue devient-elle adulte généralement ?",
-                options: ["À 2-3 ans", "À 5-10 ans", "À 20-50 ans selon l'espèce", "À 100 ans"],
+                options: ["À 2-3 ans", "À 5-10 ans", "À 20-50 ans", "À 100 ans"],
                 correct: 2,
                 explanation: "Les tortues ont une des maturités sexuelles les plus tardives du règne animal. La tortue verte marine n'est mature qu'entre 20 et 50 ans. La tortue terrestre géante des Galápagos attend 20 à 25 ans. Cette lenteur s'explique par leur métabolisme extrêmement lent et leur longévité exceptionnelle — investir longtemps dans la croissance avant de se reproduire est une stratégie viable quand on vit plus de 100 ans.",
                 source: "Centre de Soins des Tortues - L'âge de maturité varie beaucoup selon l'espèce."
@@ -3464,7 +3464,7 @@ const quizzesData = {
             {
                 id: 12,
                 question: "À quel âge une tortue terrestre devient-elle adulte ?",
-                options: ["À 5-10 ans", "À 15-20 ans", "À 20-30 ans selon l'espèce", "À 50+ ans"],
+                options: ["À 5-10 ans", "À 15-20 ans", "À 20-30 ans", "À 50+ ans"],
                 correct: 2,
                 explanation: "La tortue terrestre d'Hermann, commune en Europe du Sud, atteint sa maturité sexuelle entre 10 et 20 ans. Les grandes espèces méditerranéennes ou des Galápagos mettent 20 à 30 ans. Pendant toute cette période, la tortue grandit très lentement — on peut d'ailleurs estimer son âge en comptant les anneaux de croissance sur ses écailles (scutes), un peu comme les cernes d'un arbre.",
                 source: "Centre de Soins des Tortues - Les tortues maturent lentement."
@@ -3480,7 +3480,7 @@ const quizzesData = {
             {
                 id: 14,
                 question: "Combien de temps une tortue peut-elle survivre sans nourriture ?",
-                options: ["1-2 mois", "6 mois", "1-2 ans selon", "5+ ans"],
+                options: ["1-2 mois", "6 mois", "1-2 ans", "5+ ans"],
                 correct: 2,
                 explanation: "Les tortues peuvent survivre sans manger pendant des durées extraordinaires grâce à leur métabolisme ultra-lent. Pendant l'hibernation (ou estivation en été), elles réduisent toutes leurs fonctions vitales au minimum et puisent dans leurs réserves de graisse. Des tortues de Galápagos ont survécu plus d'un an sans eau ni nourriture à bord de navires. C'est d'ailleurs pourquoi les marins les emportaient comme provisions vivantes.",
                 source: "Centre de Physiologie Reptilienne - Les tortues peuvent jeûner longtemps."
@@ -3496,7 +3496,7 @@ const quizzesData = {
             {
                 id: 16,
                 question: "À quel âge un crocodile devient-il reproducteur ?",
-                options: ["À 2-3 ans", "À 5-10 ans", "À 10-15 ans selon l'espèce", "À 20+ ans"],
+                options: ["À 2-3 ans", "À 5-10 ans", "À 10-15 ans", "À 20+ ans"],
                 correct: 2,
                 explanation: "Les crocodiliens atteignent leur maturité sexuelle tardivement : entre 10 et 15 ans selon l'espèce et les conditions. Le crocodile du Nil est mature vers 12-15 ans, le crocodile marin vers 10-12 ans. La femelle pond entre 20 et 80 œufs dans un nid qu'elle surveille jalousement pendant 3 mois. Elle aide ensuite les jeunes à éclore et les transporte dans sa gueule jusqu'à l'eau — comportement parental très développé pour un reptile.",
                 source: "Centre d'Étude des Crocodiliens - La maturité arrive tardivement."
@@ -3512,7 +3512,7 @@ const quizzesData = {
             {
                 id: 18,
                 question: "À quel âge une tortue peut-elle pondre des œufs ?",
-                options: ["À 3-5 ans", "À 10-15 ans selon l'espèce", "À 20-30 ans", "À 50+ ans"],
+                options: ["À 3-5 ans", "À 10-15 ans", "À 20-30 ans", "À 50+ ans"],
                 correct: 1,
                 explanation: "L'âge de la première ponte varie énormément selon les espèces de tortues. La tortue de Floride peut pondre dès 5-8 ans, mais les tortues marines comme la tortue verte n'atteignent la maturité reproductive qu'entre 20 et 50 ans. Les grandes tortues terrestres des Galápagos pondent pour la première fois vers 20-25 ans. Cette maturité tardive les rend très vulnérables à la surpêche et la prédation avant même qu'elles aient pu se reproduire.",
                 source: "Centre de Reproduction Reptilienne - L'âge varie énormément selon l'espèce."
@@ -3528,7 +3528,7 @@ const quizzesData = {
             {
                 id: 20,
                 question: "Quel est le temps moyen de l'éclosion des œufs de tortue ?",
-                options: ["1-2 mois", "3-4 mois", "5-6 mois selon l'espèce", "8-12 mois"],
+                options: ["1-2 mois", "3-4 mois", "5-6 mois", "8-12 mois"],
                 correct: 2,
                 explanation: "L'incubation des œufs de tortues marines dure entre 45 et 70 jours selon la température du sable — plus il fait chaud, plus l'éclosion est rapide. Les tortues terrestres ont des durées plus longues : 90 à 120 jours pour la tortue d'Hermann. La température d'incubation détermine aussi le sexe des tortorues (TSD) : des températures plus chaudes produisent généralement plus de femelles, ce qui rend le changement climatique particulièrement préoccupant pour ces espèces.",
                 source: "Centre de Reproduction des Tortues - L'incubation varie selon conditions."
@@ -3544,7 +3544,7 @@ const quizzesData = {
             {
                 id: 22,
                 question: "À quelle température un reptile doit-il être maintenu ?",
-                options: ["15-20°C", "20-25°C", "25-35°C selon", "40°C+"],
+                options: ["15-20°C", "20-25°C", "25-35°C", "40°C+"],
                 correct: 2,
                 explanation: "Les reptiles en captivité ont des besoins thermiques précis qu'il faut respecter. Un pogona (dragon barbu) d'Australie a besoin d'une zone chaude à 40-45°C et d'une zone fraîche à 25-28°C. Un gecko léopard préfère 28-32°C. En dessous de leur température minimale, leur digestion s'arrête et leur système immunitaire s'effondre. C'est pourquoi un terrarium mal chauffé est l'une des premières causes de maladie chez les reptiles en captivité.",
                 source: "Centre de Soins Reptiliens - Les températures varient selon les espèces."
@@ -3568,7 +3568,7 @@ const quizzesData = {
             {
                 id: 25,
                 question: "À quel âge un python atteint-il sa pleine taille ?",
-                options: ["À 2-3 ans", "À 3-5 ans", "À 5-7 ans selon l'espèce", "À 10+ ans"],
+                options: ["À 2-3 ans", "À 3-5 ans", "À 5-7 ans", "À 10+ ans"],
                 correct: 2,
                 explanation: "Les pythons grandissent rapidement les premières années puis ralentissent. Un python royal (Ball python) atteint sa taille adulte (120-150 cm) entre 3 et 5 ans. Le python de Birmanie, lui, peut mettre 5 à 7 ans pour atteindre ses 4-5 mètres adultes. Contrairement aux mammifères, les reptiles ne cessent jamais complètement de croître — ils grandissent très lentement toute leur vie, d'où les spécimens records chez les très vieux individus.",
                 source: "Centre de Zoologie Ophidienne - La croissance est progressive et lente."
@@ -3584,7 +3584,7 @@ const quizzesData = {
             {
                 id: 27,
                 question: "À quelle profondeur peuvent plonger les tortues marines ?",
-                options: ["Jusqu'à 10 mètres", "Jusqu'à 50 mètres", "Jusqu'à 100-200 mètres selon", "Plus de 500 mètres"],
+                options: ["Jusqu'à 10 mètres", "Jusqu'à 50 mètres", "Jusqu'à 100-200 mètres selon l'espèce", "Plus de 500 mètres"],
                 correct: 2,
                 explanation: "Les tortues marines sont d'excellentes plongeuses. La tortue verte plonge généralement à 10-50 mètres, mais la tortue luth (la plus grande) détient le record avec des plongées documentées à plus de 1 200 mètres ! Elle suit les méduses (sa proie préférée) dans les profondeurs. Pour résister à de telles pressions, la tortue luth a une carapace flexible (pas d'os rigide) et des poumons qui se compriment sans dommage.",
                 source: "Institut de Biologie Marine - Les tortues luth plongent très profond."
@@ -3592,7 +3592,7 @@ const quizzesData = {
             {
                 id: 28,
                 question: "Quel est le temps moyen de digestion chez un serpent ?",
-                options: ["Quelques jours", "1-2 semaines", "2-4 semaines selon la taille", "1-2 mois"],
+                options: ["Quelques jours seulement", "Une à deux semaines", "Deux à quatre semaines", "Un à deux mois"],
                 correct: 2,
                 explanation: "La digestion d'un serpent est un processus fascinant et lent. Après avoir avalé une proie entière, le serpent la digère pendant 2 à 4 semaines selon sa taille. Son métabolisme s'emballe — le foie double de volume, les intestins se développent et la production d'acide gastrique augmente massivement. Un python python peut digérer un cochon entier. Pendant ce temps, il reste immobile et vulnérable, c'est pourquoi il choisit un endroit caché pour digérer.",
                 source: "Centre de Physiologie Reptilienne - La digestion est lente mais complète."
@@ -3608,7 +3608,7 @@ const quizzesData = {
             {
                 id: 30,
                 question: "Quel serpent pond le plus d'œufs en une ponte ?",
-                options: ["10-20 œufs", "30-50 œufs", "80-100 œufs selon", "150+ œufs"],
+                options: ["10-20 œufs", "30-50 œufs", "80-100 œufs", "150+ œufs"],
                 correct: 2,
                 explanation: "Les grands pythons sont les champions de la ponte chez les serpents. Le python de Birmanie peut pondre jusqu'à 100 œufs, et le python réticulé jusqu'à 80. La femelle s'enroule autour de ses œufs et produit de la chaleur par frissons musculaires (thermogenèse) pour maintenir une température d'incubation stable — comportement exceptionnel chez les reptiles. Pendant les 2-3 mois d'incubation, elle ne mange pas et peut perdre 40% de son poids.",
                 source: "Fédération Herpétologique - Certains pythons pondent plus de 100 œufs."
@@ -3701,7 +3701,7 @@ const quizzesData = {
             {
                 id: 18,
                 question: "Combien de temps une tortue peut-elle tenir sans respirer ?",
-                options: ["Quelques minutes", "30 minutes maximum", "1-2 heures selon l'espèce", "Plusieurs jours"],
+                options: ["Quelques minutes", "30 minutes maximum", "1-2 heures", "Plusieurs jours"],
                 correct: 2,
                 explanation: "Les tortues marines peuvent rester sous l'eau très longtemps grâce à leur métabolisme lent et leur capacité à ralentir leur rythme cardiaque. Au repos ou en sommeil, certaines espèces peuvent rester immergées 4 à 7 heures. En activité, c'est plus court : 30 minutes à 2 heures selon l'espèce. Chose fascinante : certaines tortues peuvent aussi absorber de l'oxygène dissous dans l'eau via des zones très vascularisées autour du cloaque — une forme de 'respiration cloacale'.",
                 source: "Université Marine - Les tortues marines peuvent apnéer longtemps."
@@ -3738,7 +3738,7 @@ const quizzesData = {
             {
                 id: 32,
                 question: "Quel est le processus de défense du caméléon face au prédateur ?",
-                options: ["Fuite", "Changement de couleur et imm", "Attaque directe", "Camouflage"],
+                options: ["Fuite rapide vers un abri", "Changement de couleur et immobilité", "Attaque directe du prédateur", "Camouflage dans le feuillage"],
                 correct: 1,
                 explanation: "Le caméléon face à un prédateur déploie plusieurs stratégies de défense. Il change d'abord de couleur pour se fondre dans son environnement (camouflage). Si découvert, il se gonfle latéralement pour paraître plus grand, ouvre grand la gueule, se balance pour imiter une feuille agitée par le vent, et siffle ou crache. En dernier recours, il peut mordre. Il se déplace aussi en balancement saccadé pour imiter le mouvement d'une feuille et dérouter les prédateurs à vision adaptée au mouvement.",
                 source: "Institut d'Éthologie Défensive - Multi-stratégies de défense."
@@ -3770,7 +3770,7 @@ const quizzesData = {
             {
                 id: 36,
                 question: "Quel est le processus de thermorégulation d'un reptile diurne ?",
-                options: ["Régulation biochimique autonome via des réactions exothermiques mitochondriales", "Basking au soleil pour augmenter température", "Génération de chaleur métabolique interne via l'oxydation des lipides comme les", "Absorption calorique depuis l'eau tempérée des milieux aquatiques chauds tropicaux"],
+                options: ["Régulation biochimique autonome via des réactions exothermiques mitochondriales", "Basking au soleil pour augmenter température", "Génération de chaleur métabolique interne par oxydation des lipides", "Absorption calorique depuis l'eau tempérée des milieux aquatiques chauds tropicaux"],
                 correct: 1,
                 explanation: "Le basking (bain de soleil) est le principal outil de thermorégulation des reptiles diurnes. Le matin, ils s'orientent perpendiculairement aux rayons du soleil pour maximiser la surface exposée et réchauffer rapidement leur corps. Une fois à température optimale (souvent 30-38°C selon l'espèce), ils cherchent l'ombre pour éviter la surchauffe. Certains lézards peuvent ainsi contrôler leur température à 1°C près en alternant exposition et ombre tout au long de la journée.",
                 source: "Institut de Thermorégulation Ectotherme - Comportemental et physique."
@@ -3778,7 +3778,7 @@ const quizzesData = {
             {
                 id: 37,
                 question: "À quel âge une tortue aquatique peut-elle se reproduire ?",
-                options: ["À 2-3 ans", "À 5-8 ans", "À 8-15 ans selon l'espèce", "À 20+ ans"],
+                options: ["À 2-3 ans", "À 5-8 ans", "À 8-15 ans", "À 20+ ans"],
                 correct: 2,
                 explanation: "Les tortues aquatiques d'eau douce atteignent leur maturité sexuelle entre 8 et 15 ans selon l'espèce et le sexe — les femelles prennent généralement plus de temps que les mâles. La cistude d'Europe (notre tortue aquatique native) est mature vers 10-14 ans. Cette maturité tardive combinée à un faible taux de survie juvénile rend ces espèces très sensibles aux perturbations humaines : la perte d'un seul adulte reproducteur a un impact significatif sur la population.",
                 source: "Centre de Reproduction Aquatique - Maturation très tardive."
@@ -3794,7 +3794,7 @@ const quizzesData = {
             {
                 id: 39,
                 question: "Quel est le rôle du cloaque chez les reptiles ?",
-                options: ["Respiration uniquement", "Cavité commune pour reproduc", "Digestion uniquement", "Stockage"],
+                options: ["Respiration uniquement", "Excrétion et reproduction", "Digestion uniquement", "Stockage"],
                 correct: 1,
                 explanation: "Le cloaque est une innovation évolutive des tétrapodes (vertébrés terrestres). Il regroupe en une seule ouverture toutes les fonctions d'évacuation : digestive (matières fécales), urinaire (urates chez les reptiles, qui excrètent de l'acide urique plutôt que de l'urée pour économiser l'eau) et reproductive (sperme, œufs). Cette économie anatomique est particulièrement adaptée aux animaux à peau imperméable qui doivent conserver l'eau précieusement.",
                 source: "Institut d'Anatomie Comparée - Multifonctionne structure reptilienne."
@@ -3802,7 +3802,7 @@ const quizzesData = {
             {
                 id: 40,
                 question: "À quel âge un lézard vert peut-il commencer à se reproduire ?",
-                options: ["À 1-2 ans", "À 2-3 ans", "À 3-4 ans selon l'espèce", "À 5+ ans"],
+                options: ["À 1-2 ans", "À 2-3 ans", "À 3-4 ans", "À 5+ ans"],
                 correct: 2,
                 explanation: "Le lézard vert d'Europe (Lacerta bilineata) atteint sa maturité sexuelle entre 2 et 3 ans. Les espèces tropicales plus grandes comme le varan du Nil maturent vers 3-4 ans. Le dragon de Komodo, le plus grand lézard vivant, attend 5 à 7 ans. La période de reproduction coïncide avec le printemps et les jours longs dans les régions tempérées — la photopériode déclenche la production hormonale qui stimule les comportements reproducteurs.",
                 source: "Centre d'Herpétologie - Maturation progressive et variable."
@@ -3810,7 +3810,7 @@ const quizzesData = {
             {
                 id: 41,
                 question: "Quel est le processus de la 'parthénogenèse' chez certains lézards ?",
-                options: ["Reproduction par hermaphrodisme séquentiel où les femelles deviennent mâles", "Reproduction asexuée par clonage", "Fécondation croisée par des individus bisexuels changeant de rôle selon les", "Reproduction par bourgeonnement parthenogénétique produisant des clones"],
+                options: ["Reproduction par hermaphrodisme séquentiel où les femelles deviennent mâles", "Reproduction asexuée par clonage", "Fécondation croisée entre individus changeant de rôle sexuel", "Reproduction par bourgeonnement parthenogénétique produisant des clones"],
                 correct: 1,
                 explanation: "La parthénogenèse permet à certaines femelles de se reproduire sans mâle. Les œufs se développent sans être fécondés, produisant des individus génétiquement identiques à la mère (clones). Ce phénomène est bien documenté chez certains varans (dragon de Komodo), certains geckos et lézards fouette-queue. Il survient parfois en captivité chez des espèces normalement sexuées, probablement comme réponse au manque de mâle. Les descendants sont souvent exclusivement de sexe femelle ou mâle selon l'espèce.",
                 source: "Institut de Génétique Reptilienne - Reproduction sans mâle possible."
@@ -3818,7 +3818,7 @@ const quizzesData = {
             {
                 id: 42,
                 question: "Quel est le temps moyen de vie d'un serpent venimeux en captivité ?",
-                options: ["2-5 ans", "5-10 ans", "10-20 ans selon", "30+ ans"],
+                options: ["2-5 ans", "5-10 ans", "10-20 ans", "30+ ans"],
                 correct: 2,
                 explanation: "Les serpents venimeux vivent généralement plus longtemps en captivité qu'à l'état sauvage, où la prédation et la concurrence alimentaire réduisent leur survie. Un cobra royal peut vivre 20 à 25 ans en captivité. Un crotale à sonnette, 25 à 30 ans. Un python royal (non venimeux mais proche en taille) détient le record de longévité documenté pour un serpent en captivité avec 48 ans. Les soins vétérinaires, la nourriture régulière et l'absence de prédateurs expliquent cette longévité accrue.",
                 source: "Centre de Zoologie Ophidienne - Longévité variable selon espèce."
@@ -3826,7 +3826,7 @@ const quizzesData = {
             {
                 id: 43,
                 question: "À quel âge une tortue marine atteint-elle la maturité sexuelle ?",
-                options: ["À 5-10 ans", "À 20-40 ans selon", "À 50+ ans", "Jamais vraiment"],
+                options: ["À 5-10 ans", "À 20-40 ans", "À 50+ ans", "Jamais vraiment"],
                 correct: 1,
                 explanation: "La maturité sexuelle extrêmement tardive des tortues marines (20 à 50 ans selon l'espèce) est l'une des raisons principales de leur vulnérabilité. La tortue caouanne mûrit vers 20-30 ans, la tortue verte entre 25 et 50 ans. Une tortue doit donc survivre des décennies entières avant de contribuer à la reproduction de son espèce. La capture accidentelle dans les filets de pêche et la destruction des plages de ponte avant la maturité sont catastrophiques pour les populations.",
                 source: "Institut de Biologie Marine - Maturation extrêmement lente."
@@ -3834,7 +3834,7 @@ const quizzesData = {
             {
                 id: 44,
                 question: "Quel est le record d'apnée enregistré chez une tortue marine ?",
-                options: ["30 minutes", "1 heure", "5-7 heures selon", "Plus de 10 heures"],
+                options: ["30 minutes", "1 heure", "5-7 heures", "Plus de 10 heures"],
                 correct: 2,
                 explanation: "Le record d'apnée chez les tortues marines est détenu par la tortue luth qui peut rester immergée jusqu'à 7 heures en dormance. Leur secret : un métabolisme extrêmement lent au repos, une hémoglobine très efficace pour transporter l'oxygène, et la capacité à tolérer des niveaux de CO2 élevés dans le sang. En cas de prise accidentelle dans un filet (une des premières causes de mortalité), une tortue déjà à bout de ressources se noie en quelques minutes.",
                 source: "Centre de Physiologie Marine - Adaptation remarquable."
@@ -3858,7 +3858,7 @@ const quizzesData = {
             {
                 id: 47,
                 question: "Quel est le temps d'hibernation typique pour un reptile tempéré ?",
-                options: ["1 mois", "2-3 mois", "4-6 mois selon", "7-8 mois"],
+                options: ["1 mois", "2-3 mois", "4-6 mois", "7-8 mois"],
                 correct: 2,
                 explanation: "Les reptiles des régions tempérées entrent en hibernation (torpeur hivernale) quand les températures descendent sous 10°C. La vipère aspic, par exemple, hiberne de novembre à mars dans des abris rocheux ou des terriers. Leur métabolisme ralentit à 5-10% du niveau normal, leur cœur peut ne battre que quelques fois par minute. Ils ne dorment pas vraiment — ils restent conscients mais incapables de bouger. Se réveiller trop tôt avant le printemps peut être fatal par manque de nourriture disponible.",
                 source: "Centre de Physiologie Saisonnière - Hibernation adaptée au climat."
@@ -3879,7 +3879,7 @@ const quizzesData = {
             {
                 id: 49,
                 question: "À quel âge un crocodile peut-il dépasser 4 mètres de long ?",
-                options: ["À 10-15 ans", "À 20-30 ans", "À 30-40 ans selon", "À 50+ ans"],
+                options: ["À 10-15 ans", "À 20-30 ans", "À 30-40 ans", "À 50+ ans"],
                 correct: 2,
                 explanation: "Les crocodiles grandissent toute leur vie, mais la croissance ralentit considérablement avec l'âge. Un crocodile du Nil grandit d'environ 30 cm par an les premières années, puis de quelques centimètres seulement à l'âge adulte. Dépasser 4 mètres de longueur prend généralement 30 à 40 ans. Les très grands spécimens (5-6 m) sont donc des individus très âgés — potentiellement centenaires. C'est pourquoi les crocodiles géants, protégés par leur taille, sont aussi les plus fertiles et importants pour la reproduction.",
                 source: "Centre d'Écologie Crocodilienne - Croissance très lente."
@@ -3966,7 +3966,7 @@ const quizzesData = {
             {
                 id: 25,
                 question: "Quel type d'antivenin est utilisé pour traiter les morsures de serpents ?",
-                options: ["Antivenin synthétique simple", "Sérum polyvalent ou spécifique selon", "Antibiotiques simples", "Antihistaminiques uniquement"],
+                options: ["Antivenin synthétique simple", "Sérum polyvalent ou spécifique selon l'espèce", "Antibiotiques simples", "Antihistaminiques uniquement"],
                 correct: 1,
                 explanation: "Les antivenins sont produits en injectant de petites doses de venin à des chevaux ou moutons, dont le système immunitaire fabrique des anticorps. Le sérum est ensuite extrait et purifié. Les antivenins spécifiques (monovalents) sont très efficaces contre une espèce précise, mais inutiles contre d'autres. Les antivenins polyvalents couvrent plusieurs espèces d'une même région mais sont moins efficaces individuellement. L'administration doit être faite rapidement — idéalement dans l'heure suivant la morsure.",
                 source: "Institut Toxinologique International - Les antivenins peuvent être polyvalents ou spécifiques."
@@ -4012,7 +4012,7 @@ const quizzesData = {
             {
                 id: 30,
                 question: "Quel est le rôle du sulfate de calcium dans la résine utilisée par certains serpents ?",
-                options: ["Lubrification", "Formation et durcissement des structures osseuses", "Digestion", "Communication"],
+                options: ["Lubrification des écailles", "Durcissement des structures osseuses", "Digestion des proies avalées", "Communication chimique"],
                 correct: 1,
                 explanation: "Les crocs des serpents venimeux sont des dents fortement minéralisées — leur extrémité contient des concentrations élevées de calcium et de zinc qui les rendent particulièrement durs et résistants à la flexion. Cette dureté est essentielle car les crocs doivent percer peaux, écailles ou plumes tout en conduisant le venin avec précision. Les crocs se cassent et se remplacent régulièrement (polyphyodontie), et plusieurs crocs de remplacement sont toujours en réserve dans la gencive, prêts à prendre la place.",
                 source: "Journal de Toxinologie - Le sulfate de calcium renforce les structures des crocs."
@@ -4113,7 +4113,7 @@ const quizzesData = {
             {
                 id: 62,
                 question: "Quel est le mécanisme de la 'coagulation sanguine' accélérée chez les serpents ?",
-                options: ["Coagulation identique aux mammifères via la voie extrinsèque mais avec des facteurs protéiques", "Coagulation plus rapide pour arrêter saignements", "Coagulation significativement ralentie en raison d'une concentration réduite en facteur VIII", "Coagulation inexistante compensée par une cicatrisation épidermique ultra-rapide par"],
+                options: ["Coagulation identique aux mammifères via la voie extrinsèque mais avec des facteurs protéiques", "Coagulation plus rapide pour arrêter saignements", "Coagulation significativement ralentie en raison d'une concentration réduite en facteur VIII", "Coagulation inexistante, compensée par une cicatrisation ultra-rapide"],
                 correct: 1,
                 explanation: "Les serpents ont effectivement des mécanismes de coagulation sanguine adaptés, mais l'ironie est que leur venin est souvent anticoagulant (hémotoxique). Les vipères injectent des enzymes qui consomment le fibrinogène de la proie, empêchant la coagulation et provoquant des hémorragies internes. Le serpent lui-même est immunisé contre son propre venin par des inhibiteurs spécifiques dans son sang. Certaines espèces produisent même des facteurs pro-coagulants — le venin du taipan cause paradoxalement un caillotage massif et fatal.",
                 source: "Institut d'Hématologie Reptilienne - Adaptation à l'hémostase."
@@ -4179,7 +4179,7 @@ const quizzesData = {
             {
                 id: 69,
                 question: "Quel est le rôle du 'spectacle' (écaille oculaire) chez les serpents ?",
-                options: ["Filtre optique permanent réduisant l'éblouissement lors de la chasse dans des", "Protection de l'œil durant la mue", "Lentille de focalisation variable permettant d'ajuster la mise au point comme", "Signalisation sexuelle par iridescence réfléchissant les UV visibles"],
+                options: ["Filtre optique permanent réduisant l'éblouissement pendant la chasse", "Protection de l'œil durant la mue", "Lentille à focale variable permettant d'ajuster la mise au point", "Signalisation sexuelle par iridescence réfléchissant les UV visibles"],
                 correct: 1,
                 explanation: "Le 'spectacle' est une écaille transparente et fusionnée qui recouvre l'œil des serpents en permanence (ils n'ont pas de paupières mobiles). Lors de la mue, cette écaille se soulève avec le reste de la peau — c'est pourquoi les yeux des serpents deviennent bleutés et opaques quelques jours avant la mue : le liquide de décollement s'accumule sous le spectacle. Après une mue réussie, le spectacle est parfaitement transparent à nouveau. Un spectacle retenu (mue incomplète) peut causer des infections oculaires graves.",
                 source: "Institut d'Anatomie Ophidienne - Adaptation à la mue."
@@ -4277,7 +4277,7 @@ const quizzesData = {
             {
                 id: 7,
                 question: "À quelle profondeur maximale les baleines peuvent-elles plonger ?",
-                options: ["100 mètres environ", "500 mètres pour certaines espèces", "2000+ mètres selon", "3000+ mètres"],
+                options: ["100 mètres environ", "500 mètres pour certaines espèces", "2000+ mètres", "3000+ mètres"],
                 correct: 2,
                 explanation: "Les capacit\u00e9s de plong\u00e9e varient selon les esp\u00e8ces. La baleine \u00e0 bec de Cuvier d\u00e9tient le record avec plus de 3 000 m\u00e8tres et plus de 3 heures d'apn\u00e9e. Ces exploits sont rendus possibles par des adaptations extraordinaires : effondrement des poumons, redistribution du sang vers les organes vitaux, et stockage d'oxyg\u00e8ne dans les muscles gr\u00e2ce \u00e0 la myoglobine.",
                 source: "Centre d'Étude des Cétacés - Certaines baleines plongent très profond."
@@ -4293,7 +4293,7 @@ const quizzesData = {
             {
                 id: 9,
                 question: "Combien d'années une baleine peut-elle vivre ?",
-                options: ["10-20 ans", "30-50 ans", "50-90+ ans selon", "200 ans"],
+                options: ["10-20 ans", "30-50 ans", "50-90+ ans", "200 ans"],
                 correct: 2,
                 explanation: "La long\u00e9vit\u00e9 des baleines est remarquable. La baleine de Bowhead est le mammif\u00e8re le plus long\u00e9vif : certains individus d\u00e9passent 200 ans, d\u00e9termin\u00e9 par l'analyse des acides amin\u00e9s dans les yeux. La baleine \u00e0 bosse vit 80 \u00e0 90 ans, et la baleine bleue environ 80 ans. Cette long\u00e9vit\u00e9 tient \u00e0 un m\u00e9tabolisme lent et des m\u00e9canismes de r\u00e9paration de l'ADN tr\u00e8s efficaces.",
                 source: "Institut de Longévité Marine - Les baleines peuvent vivre très longtemps."
@@ -4326,7 +4326,7 @@ const quizzesData = {
             {
                 id: 13,
                 question: "À quel âge un dauphin devient-il sexuellement mature ?",
-                options: ["À 2-3 ans", "À 5-7 ans selon l'espèce", "À 10-15 ans", "À 20+ ans"],
+                options: ["À 2-3 ans", "À 5-7 ans", "À 10-15 ans", "À 20+ ans"],
                 correct: 1,
                 explanation: "Les dauphins atteignent leur maturit\u00e9 sexuelle relativement t\u00f4t pour des mammif\u00e8res si intelligents et long\u00e9vifs. Le grand dauphin (Tursiops truncatus) devient sexuellement mature entre 5 et 12 ans selon le sexe \u2014 les femelles un peu plus t\u00f4t que les m\u00e2les. Ils peuvent vivre jusqu'\u00e0 40-50 ans, laissant une longue p\u00e9riode de vie adulte reproductive.",
                 source: "Centre de Recherche Cétologique - La maturité arrive relativement tôt."
@@ -4367,7 +4367,7 @@ const quizzesData = {
             {
                 id: 18,
                 question: "À quel âge une otarie devient-elle adulte reproductrice ?",
-                options: ["À 2-3 ans", "À 4-5 ans selon l'espèce", "À 6-8 ans", "À 10+ ans"],
+                options: ["À 2-3 ans", "À 4-5 ans", "À 6-8 ans", "À 10+ ans"],
                 correct: 1,
                 explanation: "Les otaries atteignent leur maturit\u00e9 sexuelle entre 3 et 6 ans selon l'esp\u00e8ce et le sexe. Les m\u00e2les, bien que matures biologiquement plus t\u00f4t, n'acc\u00e8dent g\u00e9n\u00e9ralement \u00e0 la reproduction qu'autour de 8-10 ans \u2014 ils doivent \u00eatre assez grands et forts pour \u00e9tablir un territoire sur les rookeries et d\u00e9fendre un harem de femelles.",
                 source: "Centre de Zoologie Marine - Maturité relativement rapide."
@@ -4383,7 +4383,7 @@ const quizzesData = {
             {
                 id: 20,
                 question: "Combien de temps peut survivre un phoque sans nourriture ?",
-                options: ["Quelques jours seulement", "2-4 semaines pour les jeunes phoques", "1-2 mois selon l'espèce", "3-4 mois lors de la saison de reproduction"],
+                options: ["Quelques jours seulement", "2-4 semaines pour les jeunes phoques", "1-2 mois", "3-4 mois lors de la saison de reproduction"],
                 correct: 2,
                 explanation: "Les phoques accumulent d'importantes r\u00e9serves de graisse pendant les p\u00e9riodes d'abondance. Cette \u00e9nergie leur permet de je\u00fbner pendant la reproduction \u00e0 terre ou lors des mues. Le phoque gris m\u00e2le peut je\u00fbner 6 \u00e0 8 semaines pendant la saison de reproduction, vivant uniquement sur ses r\u00e9serves de lard accunul\u00e9es.",
                 source: "Institut de Physiologie Marine - Métabolisme très économe."
@@ -4391,7 +4391,7 @@ const quizzesData = {
             {
                 id: 21,
                 question: "À quel âge une jeune baleine devient-elle indépendante ?",
-                options: ["À quelques semaines dès que le baleineau nage et accompagne", "À quelques mois quand la mère abandonne progressivement son", "À 6-12 mois selon l'espèce", "À 1-2 ans durée observée chez les cachalots dont les jeunes"],
+                options: ["À quelques semaines, dès que le baleineau sait nager", "À quelques mois, quand la mère cesse progressivement de l'allaiter", "À 6-12 mois", "À 1-2 ans, comme observé chez les cachalots"],
                 correct: 2,
                 explanation: "Les baleineaux sont allait\u00e9s entre 6 et 12 mois selon l'esp\u00e8ce. Pendant toute cette p\u00e9riode, le baleineau reste constamment pr\u00e8s de sa m\u00e8re, qui lui enseigne les routes migratoires et les zones d'alimentation. Ces connaissances transmises culturellement \u2014 routes migratoires, sources de nourriture \u2014 sont essentielles \u00e0 la survie de l'esp\u00e8ce.",
                 source: "Centre de Développement Juvénile - Allaitement prolongé."
@@ -4399,7 +4399,7 @@ const quizzesData = {
             {
                 id: 22,
                 question: "Quel est le diamètre de l'évent (spiracle) d'une baleine ?",
-                options: ["Quelques centimètres comparable à la narine d'un", "10-15 cm de diamètre mesure enregistrée chez plusieurs", "30-50 cm selon l'espèce", "Plus de 50 cm chez l'adulte"],
+                options: ["Quelques centimètres comparable à la narine d'un", "10-15 cm de diamètre mesure enregistrée chez plusieurs", "30-50 cm", "Plus de 50 cm chez l'adulte"],
                 correct: 2,
                 explanation: "L'\u00e9vent \u2014 l'\u00e9quivalent de nos narines, situ\u00e9 sur le sommet du cr\u00e2ne \u2014 peut mesurer 30 \u00e0 50 cm de diam\u00e8tre chez les grandes baleines. Il permet de ventiler des poumons de plusieurs centaines de litres. Le souffle caract\u00e9ristique peut s'\u00e9lever \u00e0 9-12 m\u00e8tres de hauteur et s'entendre \u00e0 plusieurs kilom\u00e8tres de distance.",
                 source: "Institut d'Anatomie Cétologique - Ouverture respiratoire large."
@@ -4423,7 +4423,7 @@ const quizzesData = {
             {
                 id: 25,
                 question: "À quel âge les jeunes dauphins se séparent de leur mère ?",
-                options: ["À quelques semaines", "À quelques mois", "À 1-2 ans selon l'espèce", "À 3-4 ans"],
+                options: ["À quelques semaines", "À quelques mois", "À 1-2 ans", "À 3-4 ans"],
                 correct: 2,
                 explanation: "Le lien m\u00e8re-petit est tr\u00e8s fort chez les dauphins. Apr\u00e8s le sevrage (vers 1 \u00e0 2 ans), les jeunes restent souvent dans le groupe de leur m\u00e8re encore plusieurs ann\u00e9es. Chez le grand dauphin, les m\u00e2les quittent le groupe natal vers 3-6 ans. Les femelles peuvent rester associ\u00e9es \u00e0 leur m\u00e8re toute leur vie, formant des alliances multig\u00e9n\u00e9rationnelles stables.",
                 source: "Centre d'Études Comportementales Cétacées - Liens mère-jeune prolongés."
@@ -4439,7 +4439,7 @@ const quizzesData = {
             {
                 id: 27,
                 question: "À quel âge les otaries mâles deviennent-ils territoriaux ?",
-                options: ["À 2-3 ans", "À 5-7 ans selon l'espèce", "À 8-10 ans", "À 12+ ans"],
+                options: ["À 2-3 ans", "À 5-7 ans", "À 8-10 ans", "À 12+ ans"],
                 correct: 1,
                 explanation: "La territorialit\u00e9 chez les otaries m\u00e2les est li\u00e9e \u00e0 leur taille et leur force. Les m\u00e2les atteignent leur plein d\u00e9veloppement physique entre 5 et 10 ans, p\u00e9riode o\u00f9 ils commencent \u00e0 \u00e9tablir des territoires sur les plages de reproduction (rookeries). Un m\u00e2le dominant peut contr\u00f4ler un harem de 5 \u00e0 30 femelles, mais doit le d\u00e9fendre lors de combats violents.",
                 source: "Centre d'Écologie Pinipède - Territorialité liée à la taille."
@@ -4447,7 +4447,7 @@ const quizzesData = {
             {
                 id: 28,
                 question: "Quel est le taux d'allaitement chez une baleine mère ?",
-                options: ["Continu", "Plusieurs fois par heure", "Une fois par jour", "Tous les 2-3 jours"],
+                options: ["Continu", "Plusieurs fois par heure", "Une seule fois par jour", "Tous les deux ou trois jours"],
                 correct: 1,
                 explanation: "L'allaitement chez les baleines est une prouesse logistique sous-marine. La m\u00e8re injecte litt\u00e9ralement son lait dans la bouche du baleineau sous pression \u2014 le baleineau ne t\u00e8te pas activement. Le lait est si \u00e9pais qu'il ne se diffuse pas dans l'eau. Une baleine bleue peut produire 300 \u00e0 600 litres de lait par jour, permettant au baleineau de grossir de 80 \u00e0 90 kg quotidiennement.",
                 source: "Institut de Reproduction Marine - Lait très nutritif allaitement fréquent."
@@ -4455,7 +4455,7 @@ const quizzesData = {
             {
                 id: 29,
                 question: "À quelle distance un cachalot peut-il émettre un clic ?",
-                options: ["Quelques km", "5-10 km", "15-20 km selon", "Plus de 30 km"],
+                options: ["Quelques km", "5-10 km", "15-20 km", "Plus de 30 km"],
                 correct: 2,
                 explanation: "Les clics d'\u00e9cholocalisation du cachalot sont les sons les plus puissants produits par un animal \u2014 jusqu'\u00e0 230 d\u00e9cibels. Produits dans le spermaceti (l'organe graisseux de son cr\u00e2ne massif), ils servent \u00e0 d\u00e9tecter les calmars g\u00e9ants dans l'obscurit\u00e9 des abysses. Ces sons peuvent potentiellement paralyser ou \u00e9tourdir des proies \u00e0 courte distance.",
                 source: "Institut d'Acoustique Marine - Sons très porteurs."
@@ -4463,7 +4463,7 @@ const quizzesData = {
             {
                 id: 30,
                 question: "Quel est le record de durée d'apnée chez un dauphin ?",
-                options: ["5-10 minutes", "15-20 minutes", "30+ minutes selon", "Plus de 45 minutes"],
+                options: ["5-10 minutes", "15-20 minutes", "30+ minutes", "Plus de 45 minutes"],
                 correct: 2,
                 explanation: "Les dauphins ont des capacit\u00e9s d'apn\u00e9e remarquables. Ces performances sont rendues possibles par une myoglobine musculaire tr\u00e8s concentr\u00e9e (qui donne une couleur sombre aux muscles), un r\u00e9flexe de bradycardie (ralentissement du c\u0153ur de 100 \u00e0 15 battements/min), et une tol\u00e9rance \u00e9lev\u00e9e au CO2. La plupart des plong\u00e9es courantes durent cependant 2 \u00e0 10 minutes.",
                 source: "Centre de Physiologie Plongée - Adaptations extrêmes."
@@ -4540,7 +4540,7 @@ const quizzesData = {
             {
                 id: 16,
                 question: "Combien de dents une baleine à dents peut-elle avoir ?",
-                options: ["0 dent", "10-20 dents", "50+ dents", "Jusqu'à 200+ selon"],
+                options: ["Aucune dent", "10 à 20 dents", "50 à 100 dents", "Jusqu'à 200 dents"],
                 correct: 3,
                 explanation: "Les baleines \u00e0 dents pr\u00e9sentent une grande variabilit\u00e9 dentaire. Le dauphin commun poss\u00e8de 80 \u00e0 100 dents coniques. L'orque en a 40 \u00e0 56, robustes et coniques, pouvant mesurer 10 cm. Le cachalot n'a des dents fonctionnelles qu'\u00e0 la m\u00e2choire inf\u00e9rieure. Le narval n'a g\u00e9n\u00e9ralement qu'une seule dent, transform\u00e9e en d\u00e9fense spirale pouvant atteindre 3 m\u00e8tres.",
                 source: "Musée Odontologique - Les baleines à dents peuvent avoir de nombreuses dents."
@@ -4556,7 +4556,7 @@ const quizzesData = {
             {
                 id: 18,
                 question: "Quel type de migration les baleines effectuent-elles ?",
-                options: ["Sédentaires et sans migration saisonnière", "Régionale courte", "Longue distance entre", "Aléatoire"],
+                options: ["Sédentaires, aucune migration", "Migration régionale courte", "Longue distance, pôles vers tropiques", "Déplacements totalement aléatoires"],
                 correct: 2,
                 explanation: "La migration des baleines est l'une des plus spectaculaires du r\u00e8gne animal. Elles passent l'\u00e9t\u00e9 dans les eaux polaires riches en krill pour s'alimenter, puis migrent vers les zones tropicales pour se reproduire en hiver. La baleine \u00e0 bosse parcourt jusqu'\u00e0 25 000 km par an \u2014 le record chez les mammif\u00e8res. Ces zones chaudes offrent moins de nourriture mais moins de pr\u00e9dateurs pour les baleineaux.",
                 source: "Université de Migration - Les baleines migrent sur des milliers de kilomètres."
@@ -4564,7 +4564,7 @@ const quizzesData = {
             {
                 id: 19,
                 question: "Quel est le système de thermorégulation chez les mammifères marins ?",
-                options: ["Ectothermes régulant leur température en se déplaçant entre eaux superficielles chaudes et", "Métabolisme élevé et isolation thermique", "Refroidissement actif par évaporation buccale lors des sorties à l'air libre sur les", "Changement de couleur cutanée permettant d'absorber plus ou moins de rayonnement solaire"],
+                options: ["Ectothermes régulant leur température en changeant de profondeur", "Métabolisme élevé et isolation thermique", "Refroidissement actif par évaporation buccale hors de l'eau", "Changement de couleur cutanée permettant d'absorber plus ou moins de rayonnement solaire"],
                 correct: 1,
                 explanation: "Contrairement aux reptiles (ectothermes), les mammif\u00e8res marins sont endothermes : ils produisent leur propre chaleur. Pour maintenir ~37\u00b0C dans des eaux proches de 0\u00b0C, ils combinent un m\u00e9tabolisme \u00e9lev\u00e9, une \u00e9paisse couche de lard (jusqu'\u00e0 50 cm), un pelage dense (phoques), et un syst\u00e8me d'\u00e9changeurs de chaleur \u00e0 contre-courant dans leurs nageoires pour r\u00e9cup\u00e9rer la chaleur du sang qui revient des extr\u00e9mit\u00e9s.",
                 source: "Institut de Thermoécologie - Les mammifères marins maintiennent une température interne."
@@ -4580,7 +4580,7 @@ const quizzesData = {
             {
                 id: 31,
                 question: "À quel âge une baleine peut-elle vivre ?",
-                options: ["20-30 ans", "40-50 ans", "50-80 ans selon l'espèce", "100+ ans"],
+                options: ["20-30 ans", "40-50 ans", "50-80 ans", "100+ ans"],
                 correct: 2,
                 explanation: "La long\u00e9vit\u00e9 des baleines est impressionnante. La baleine \u00e0 bosse vit environ 80-90 ans, le rorqual commun 85-90 ans. Mais le record absolu appartient \u00e0 la baleine de Bowhead : des harpons du 19\u00e8me si\u00e8cle retrouv\u00e9s dans des individus tu\u00e9s dans les ann\u00e9es 2000 prouvent que certains individus d\u00e9passent 200 ans \u2014 ce qui en fait le mammif\u00e8re le plus long\u00e9vif connu.",
                 source: "Institut de Longévité Marine - Les baleines vivent très longtemps."
@@ -4588,7 +4588,7 @@ const quizzesData = {
             {
                 id: 32,
                 question: "Quel est le processus de communication entre baleines à longue distance ?",
-                options: ["Percussion de la surface de l'eau via les nageoires pectorales pour créer des ondes basse", "Chants complexes portant sur plusieurs km", "Échanges visuels par synchronisation des sauts et acrobaties perceptibles à plusieurs km de", "Marquage chimique de zones de rencontre via des sécrétions cutanées persistant plusieurs jours"],
+                options: ["Percussion de la surface de l'eau via les nageoires pectorales pour créer des ondes basse", "Chants complexes portant sur plusieurs km", "Échanges visuels par synchronisation des sauts et des acrobaties", "Marquage chimique de zones de rencontre via des sécrétions cutanées persistant plusieurs jours"],
                 correct: 1,
                 explanation: "Les chants des baleines \u00e0 bosse peuvent porter jusqu'\u00e0 10 000 km sous l'eau. En 2000, des chercheurs ont observ\u00e9 qu'un nouveau type de chant apparu dans le Pacifique Ouest s'est r\u00e9pandu d'ouest en est en 2 ans, copi\u00e9 par des milliers de baleines. C'est l'un des exemples les plus clairs de transmission culturelle horizontale chez un animal non-humain.",
                 source: "Institut d'Acoustique Cétacée - Chants sophistiqués de navigation."
@@ -4596,7 +4596,7 @@ const quizzesData = {
             {
                 id: 33,
                 question: "À quel âge un phoque peut-il être complètement indépendant ?",
-                options: ["À quelques semaines", "À 4-6 semaines selon", "À 2-3 mois", "À 6+ mois"],
+                options: ["À quelques semaines", "À 4-6 semaines", "À 2-3 mois", "À 6+ mois"],
                 correct: 1,
                 explanation: "Le sevrage ultra-rapide du phoque gris est l'un des plus courts chez les mammif\u00e8res. La m\u00e8re allaite son petit seulement 3 semaines avec un lait contenant 60% de mati\u00e8res grasses, permettant au blanchon de passer de 14 kg \u00e0 40 kg. Puis elle l'abandonne brusquement. Le jeune phoque doit alors apprendre seul \u00e0 nager et chasser, je\u00fbnant plusieurs semaines le temps de ma\u00eetriser ces comp\u00e9tences.",
                 source: "Centre d'Élevage Pinipède - Sevrage très précoce."
@@ -4604,7 +4604,7 @@ const quizzesData = {
             {
                 id: 34,
                 question: "Quel est le rôle du 'blubber' (lard) chez les mammifères marins ?",
-                options: ["Stockage des contaminants lipophiles comme les PCB protégeant ainsi les organes", "Isolation thermique et réserve énergétique", "Flottabilité passive uniquement permettant l'économie d'énergie lors des pauses en", "Neutralisation des toxines marines ingérées avec les proies par séquestration dans les"],
+                options: ["Stockage des contaminants lipophiles comme les PCB protégeant ainsi les organes", "Isolation thermique et réserve énergétique", "Flottabilité passive permettant d'économiser l'énergie lors des pauses", "Neutralisation des toxines marines ingérées avec les proies"],
                 correct: 1,
                 explanation: "Le blubber remplit plusieurs fonctions vitales simultan\u00e9ment. Il isole thermiquement \u2014 une baleine polaire avec 50 cm de lard survit \u00e0 des eaux \u00e0 -2\u00b0C. Il stocke une \u00e9nergie consid\u00e9rable \u2014 une baleine \u00e0 bosse br\u00fcle son lard pendant sa migration de 8 000 km o\u00f9 elle ne mange presque pas. Il contribue aussi \u00e0 la flottabilit\u00e9 et \u00e0 la forme hydrodynamique du corps.",
                 source: "Institut de Physiologie Thermique Marine - Essentiel pour survie."
@@ -4612,7 +4612,7 @@ const quizzesData = {
             {
                 id: 35,
                 question: "À quelle vitesse peut nager une orque ?",
-                options: ["10-15 km/h", "25-35 km/h", "35-55 km/h selon", "60+ km/h"],
+                options: ["10-15 km/h", "25-35 km/h", "35-55 km/h", "60+ km/h"],
                 correct: 2,
                 explanation: "L'orque (Orcinus orca) est l'un des nageurs les plus rapides parmi les grands mammif\u00e8res marins, capable d'atteindre 55 km/h en chasse. Cette vitesse, combin\u00e9e \u00e0 l'intelligence collective des groupes familiaux, fait de l'orque le pr\u00e9dateur le plus redoutable des oc\u00e9ans. Elle est capable de chasser des baleines bleues en groupe, des requins blancs en solitaire, et m\u00eame de s'\u00e9chouer volontairement pour attraper des lions de mer.",
                 source: "Centre d'Écologie Orque - Prédateurs très rapides.",
@@ -4637,7 +4637,7 @@ const quizzesData = {
             {
                 id: 38,
                 question: "Quel est le rôle des 'barbillons' chez le phoque ?",
-                options: ["Génération de micro-turbulences hydrodynamiques améliorant la portance natatoire à faible", "Détection tactile des proies et obstacles", "Absorption de l'oxygène dissous dans l'eau lors des plongées profondes en complément des", "Signalisation d'état émotionnel lors des interactions sociales par mouvements vibratoires"],
+                options: ["Génération de micro-turbulences hydrodynamiques améliorant la portance natatoire à faible", "Détection tactile des proies et obstacles", "Absorption de l'oxygène dissous dans l'eau lors des plongées profondes", "Signalisation d'état émotionnel lors des interactions sociales par mouvements vibratoires"],
                 correct: 1,
                 explanation: "Les vibrisses (moustaches) des phoques sont des organes sensoriels extraordinaires. Elles peuvent d\u00e9tecter les turbulences cr\u00e9\u00e9es par un poisson pass\u00e9 30 secondes auparavant, permettant au phoque de suivre le sillage d'une proie dans l'obscurit\u00e9. Chaque vibrisse est reli\u00e9e \u00e0 une zone d\u00e9di\u00e9e du cerveau \u2014 leur repr\u00e9sentation c\u00e9r\u00e9brale est aussi \u00e9labor\u00e9e que le syst\u00e8me visuel humain.",
                 source: "Institut de Sensorimotricité Marine - Organes tactiles sensoriels."
@@ -4645,7 +4645,7 @@ const quizzesData = {
             {
                 id: 39,
                 question: "À quel âge une baleine femelle devient-elle ménopausée ?",
-                options: ["À 20-30 ans pour toutes les baleines à fanons selon", "À 40-50 ans selon l'espèce", "À 50 ans et au-delà", "La longévité ne peut être estimée avec certitude"],
+                options: ["À 20-30 ans pour toutes les baleines à fanons", "À 40-50 ans", "À 50 ans et au-delà", "La longévité ne peut être estimée avec certitude"],
                 correct: 1,
                 explanation: "La m\u00e9nopause est un ph\u00e9nom\u00e8ne rarissime dans le r\u00e8gne animal, observ\u00e9 chez seulement 5 esp\u00e8ces : l'humain, l'orque, le cachalot, le b\u00e9luga et le narval. Chez les orques, les femelles cessent de se reproduire vers 40-50 ans mais vivent encore plusieurs d\u00e9cennies. Ces 'grand-m\u00e8res' jouent un r\u00f4le crucial : les pods avec des grand-m\u00e8res survivent mieux gr\u00e2ce \u00e0 leur connaissance des zones de p\u00eache.",
                 source: "Institut de Biologie Reproductive - Ménopause chez les cétacés."
@@ -4653,7 +4653,7 @@ const quizzesData = {
             {
                 id: 40,
                 question: "Quel est le processus de la 'dive reflex' chez les pinnipèdes ?",
-                options: ["Arrêt volontaire de la respiration déclenché par la fermeture réflexe de l'épiglotte lors de", "Ralentissement cardiaque drastique lors de plongée", "Accélération cardiaque pour maximiser le débit sanguin vers les muscles actifs pendant la plongée", "Redistribution du volume sanguin vers les organes abdominaux pour réduire la consommation d'O2"],
+                options: ["Arrêt volontaire de la respiration par fermeture réflexe de l'épiglotte", "Ralentissement cardiaque drastique lors de plongée", "Accélération cardiaque pour maximiser le débit sanguin vers les muscles actifs pendant la plongée", "Redistribution du volume sanguin vers les organes abdominaux pour réduire la consommation d'O2"],
                 correct: 1,
                 explanation: "Le r\u00e9flexe de plong\u00e9e (dive reflex) est d\u00e9clench\u00e9 automatiquement d\u00e8s l'immersion. Chez les pinniped\u00e8s, il est extr\u00eamement d\u00e9velopp\u00e9 : la fr\u00e9quence cardiaque passe de 150 \u00e0 seulement 4 battements par minute en quelques secondes. La circulation sanguine se concentre sur le cerveau et le c\u0153ur. La rate se contracte pour lib\u00e9rer jusqu'\u00e0 50% d'h\u00e9maties suppl\u00e9mentaires dans le sang.",
                 source: "Institut de Physiologie Plongée - Adaptations cardiovasculaires."
@@ -4661,7 +4661,7 @@ const quizzesData = {
             {
                 id: 41,
                 question: "À quel âge un dauphin peut-il intégrer complètement un groupe social ?",
-                options: ["Immédiatement", "À quelques mois", "À 1-2 ans selon l'espèce", "À 3-5 ans"],
+                options: ["Immédiatement", "À quelques mois", "À 1-2 ans", "À 3-5 ans"],
                 correct: 2,
                 explanation: "Les dauphins sont des animaux profond\u00e9ment sociaux vivant en groupes stables (pods). Les jeunes s'int\u00e8grent progressivement \u00e0 la vie sociale, apprenant les hi\u00e9rarchies, les strat\u00e9gies de chasse coop\u00e9rative et les r\u00e8gles sociales. Certains comportements \u2014 comme utiliser des \u00e9ponges comme outils ou pousser des poissons sur les plages \u2014 sont transmis culturellement de g\u00e9n\u00e9ration en g\u00e9n\u00e9ration.",
                 source: "Centre d'Études Sociales Cétacées - Intégration progressive."
@@ -4669,7 +4669,7 @@ const quizzesData = {
             {
                 id: 42,
                 question: "Quel est le diamètre de l'événement d'écholocalisation d'un cachalot ?",
-                options: ["Quelques cm", "10-20 cm", "30-50 cm selon l'espèce", "Plus de 50 cm"],
+                options: ["Quelques cm", "10-20 cm", "30-50 cm", "Plus de 50 cm"],
                 correct: 1,
                 explanation: "Le 'melon' ou 'spermaceti' du cachalot est l'organe d'\u00e9cholocalisation le plus puissant du r\u00e8gne animal. Cet organe rempli d'huile peut peser jusqu'\u00e0 1 tonne et occuper un tiers de la longueur de la t\u00eate. Il concentre et dirige les clics ultrasonores vers l'avant. L'huile de spermaceti fut tr\u00e8s recherch\u00e9e au 19\u00e8me si\u00e8cle, d\u00e9clenchant la chasse intensive aux cachalots.",
                 source: "Institut d'Acoustique Cétacée - Organe très spécialisé."
@@ -4698,7 +4698,7 @@ const quizzesData = {
             {
                 id: 45,
                 question: "À quel âge un phoque femelle devient-elle reproductrice ?",
-                options: ["À 1-2 ans", "À 2-4 ans selon l'espèce", "À 5-7 ans", "À 10+ ans"],
+                options: ["À 1-2 ans", "À 2-4 ans", "À 5-7 ans", "À 10+ ans"],
                 correct: 1,
                 explanation: "Les phoques atteignent leur maturit\u00e9 sexuelle t\u00f4t. Le phoque gris femelle est fertile d\u00e8s 3-5 ans. Mais les m\u00e2les, bien que sexuellement matures, ne peuvent g\u00e9n\u00e9ralement pas se reproduire avant 6-10 ans car il faut \u00eatre assez grand et fort pour concurrencer les autres m\u00e2les sur les plages. Les femelles vivent en moyenne 25-35 ans, les m\u00e2les souvent moins en raison des combats.",
                 source: "Centre de Biologie Reproductive Pinipède - Maturation rapide."
@@ -4714,7 +4714,7 @@ const quizzesData = {
             {
                 id: 47,
                 question: "À quel âge une jeune orque devient-elle indépendante maternellement ?",
-                options: ["À 1-2 ans", "À 3-5 ans selon l'espèce", "À 5-8 ans", "À 10+ ans"],
+                options: ["À 1-2 ans", "À 3-5 ans", "À 5-8 ans", "À 10+ ans"],
                 correct: 2,
                 explanation: "Les orques vivent en groupes familiaux matriarcaux (pods) o\u00f9 les liens sont permanents. Fait exceptionnel : chez les orques r\u00e9sidentes, les fils m\u00e2les restent dans le pod de leur m\u00e8re toute leur vie. Une orque m\u00e2le peut d\u00e9pendre de sa m\u00e8re pour trouver de la nourriture jusqu'\u00e0 l'\u00e2ge de 30 ans. Les pods sans m\u00e8re voient leur taux de mortalit\u00e9 augmenter significativement.",
                 source: "Centre d'Études Orques - Liens maternels très prolongés."
@@ -4722,7 +4722,7 @@ const quizzesData = {
             {
                 id: 48,
                 question: "Quel est le rôle de l'enzyme catalase chez les mammifères marins lors des plongées profondes ?",
-                options: ["Catalyse de la dégradation des peroxydes lipidiques dans les tissus profonds lors des plongées", "Protection contre radicaux libres de l'oxygène", "Accélération du transit intestinal permettant une extraction maximale des nutriments des proies", "Régulation de la fréquence respiratoire en modifiant la sensibilité des chémorécepteurs au"],
+                options: ["Catalyse de la dégradation des peroxydes lipidiques dans les tissus profonds lors des plongées", "Protection contre radicaux libres de l'oxygène", "Accélération du transit intestinal permettant une extraction maximale des nutriments des proies", "Régulation de la fréquence respiratoire via les chémorécepteurs sanguins"],
                 correct: 1,
                 explanation: "Lors de plong\u00e9es profondes suivies de remont\u00e9es rapides, les mammif\u00e8res plongeurs sont expos\u00e9s \u00e0 des cycles d'isch\u00e9mie-reperfusion qui g\u00e9n\u00e8rent des radicaux libres potentiellement dangereux. Les c\u00e9tac\u00e9s et pinniped\u00e8s ont d\u00e9velopp\u00e9 des d\u00e9fenses antioxydantes tr\u00e8s efficaces, incluant des niveaux \u00e9lev\u00e9s de catalase, superoxyde dismutase et glutathion peroxydase dans leurs tissus.",
                 source: "Institut de Biochimie Marine - Adaptations antioxydantes."
@@ -4730,7 +4730,7 @@ const quizzesData = {
             {
                 id: 49,
                 question: "À quel âge une baleine franche peut-elle atteindre sa taille maximale ?",
-                options: ["À 20-30 ans", "À 30-40 ans selon", "À 40-50 ans", "À 50+ ans"],
+                options: ["À 20-30 ans", "À 30-40 ans", "À 40-50 ans", "À 50+ ans"],
                 correct: 1,
                 explanation: "Les grandes baleines grandissent lentement tout au long de leur vie. La baleine franche (right whale) est l'une des plus menac\u00e9es au monde (moins de 400 individus dans l'Atlantique Nord). Sa croissance tr\u00e8s lente et son faible taux de reproduction (un baleineau tous les 3 \u00e0 5 ans) la rendent extr\u00eamement vuln\u00e9rable aux impacts humains : collisions avec des navires et enchev\u00eatrement dans les filets.",
                 source: "Institut de Croissance Cétacée - Croissance très lente."
@@ -5092,7 +5092,7 @@ const quizzesData = {
             {
                 id: 2,
                 question: "Quel est le rugissement du lion utilisé pour ?",
-                options: ["Attirer les femelles en période de reproduction et signaler sa disponibilité aux", "Marquer le territoire et communiquer", "Coordonner les attaques de chasse et déstabiliser les proies par la peur avant", "Avertir les membres de la fierté d'un danger imminent comme l'approche d'hyènes"],
+                options: ["Attirer les femelles et signaler sa disponibilité pour la reproduction", "Marquer le territoire et communiquer", "Coordonner les attaques de chasse et déstabiliser les proies par la peur avant", "Avertir les membres de la fierté d'un danger imminent comme l'approche d'hyènes"],
                 correct: 1,
                 explanation: "Le rugissement du lion est une forme de communication puissante. Il peut porter jusqu'à 10 kilomètres et sert à marquer le territoire, appeler les autres lions et déclarer sa force. Les lions rugissent surtout au crépuscule et à l'aube.",
                 source: "Institut d'Éthologie Féline - Le rugissement porte jusqu'à 10 km."
@@ -5124,7 +5124,7 @@ const quizzesData = {
             {
                 id: 6,
                 question: "Quel est le rôle principal de la lionne dans la chasse ?",
-                options: ["Elle reste au camp pour surveiller et protéger les lionceaux pendant que le", "Elle chasse activement en groupe", "Elle traque ses proies seule en utilisant la végétation comme couvert", "Elle se charge uniquement de rabattre les proies"],
+                options: ["Elle reste au camp pour surveiller et protéger les lionceaux", "Elle chasse activement en groupe", "Elle traque ses proies seule en utilisant la végétation comme couvert", "Elle se charge uniquement de rabattre les proies"],
                 correct: 1,
                 explanation: "Les lionnes effectuent pr\u00e8s de 90% des chasses de la fierté, g\u00e9n\u00e9ralement en groupe de 2 \u00e0 8 individus. Elles coordonnent leurs attaques avec des r\u00f4les d\u00e9finis : certaines rabattent les proies tandis que d'autres encerclent. Les m\u00e2les profitent souvent du r\u00e9sultat de la chasse sans y participer, bien que leur pr\u00e9sence puisse aussi intimider d'autres pr\u00e9dateurs pour prot\u00e9ger la carcasse.",
                 source: "Centre de Recherche Africain - Les lionnes font 90% des chasses."
@@ -5198,7 +5198,7 @@ const quizzesData = {
             {
                 id: 12,
                 question: "Quelle est la taille du territoire d'une fierté de lions ?",
-                options: ["Quelques km²", "10-20 km²", "50-100 km² selon", "150+ km²"],
+                options: ["Quelques km²", "10-20 km²", "50-100 km²", "150+ km²"],
                 correct: 2,
                 explanation: "Le territoire d'une fierté varie de 20 \u00e0 400 km\u00b2 selon la disponibilit\u00e9 des proies et la qualit\u00e9 de l'habitat. Dans le Serengeti riche en proies, les territoires sont plus petits. Les lions d\u00e9limitent leur domaine par des rugissements port\u00e9s \u00e0 10 km, des marquages urinaires et des griffures sur les arbres. Les fronti\u00e8res sont d\u00e9fendues activement, parfois jusqu'\u00e0 la mort, contre les fiertés rivales.",
                 source: "Centre de Recherche Territoriale - Territoire très vaste."
@@ -5214,7 +5214,7 @@ const quizzesData = {
             {
                 id: 14,
                 question: "Quel est le nombre moyen de lions dans une fierté ?",
-                options: ["3-5 lions", "5-15 lions selon", "15-20 lions", "20+ lions"],
+                options: ["3-5 lions", "5-15 lions", "15-20 lions", "20+ lions"],
                 correct: 1,
                 explanation: "Une fierté de lions comprend typiquement 10 \u00e0 15 individus : une majorit\u00e9 de femelles li\u00e9es g\u00e9n\u00e9tiquement, leurs lionceaux, et 1 \u00e0 3 m\u00e2les (souvent des fr\u00e8res ou coalitions). C'est la seule esp\u00e8ce de f\u00e9lid\u00e9s \u00e0 vivre en groupe social stable. Certaines fiertés atteignent 30 individus dans des zones tr\u00e8s riches en proies comme le Serengeti.",
                 source: "Centre d'Écologie - Taille variable de la fierté."
@@ -5249,7 +5249,7 @@ const quizzesData = {
                 options: [
                 "À 3-4 mois",
                 "À 6-8 mois",
-                "À 12-18 mois selon",
+                "À 12-18 mois",
                 "À 2+ ans"
             ],
                 correct: 2,
@@ -5259,7 +5259,7 @@ const quizzesData = {
             {
                 id: 19,
                 question: "Quel est le record de distance parcourue par un lion en migration ?",
-                options: ["Quelques km", "50-100 km", "200-300 km selon", "500+ km"],
+                options: ["Quelques km", "50-100 km", "200-300 km", "500+ km"],
                 correct: 2,
                 explanation: "Les lions ont g\u00e9n\u00e9ralement un mode de vie s\u00e9dentaire li\u00e9 \u00e0 un territoire fixe. Cependant, ils peuvent parcourir 20 \u00e0 30 km par nuit en cherchant des proies. Dans certains \u00e9cosyst\u00e8mes comme le Serengeti, ils suivent partiellement les migrations de gnu sur des centaines de kilom\u00e8tres. Des individus expuls\u00e9s ont \u00e9t\u00e9 suivis sur 300 km \u00e0 la recherche d'une fierté \u00e0 conqu\u00e9rir.",
                 source: "Institut d'Écologie Migratoire - Déplacements saisonniers."
@@ -5267,7 +5267,7 @@ const quizzesData = {
             {
                 id: 20,
                 question: "Quel est l'âge moyen de vie d'un lion en nature ?",
-                options: ["8-10 ans", "10-14 ans", "14-20 ans selon", "20+ ans"],
+                options: ["8-10 ans", "10-14 ans", "14-20 ans", "20+ ans"],
                 correct: 1,
                 explanation: "En libert\u00e9, les lions vivent en moyenne 10 \u00e0 14 ans. Les m\u00e2les vivent souvent moins longtemps que les femelles car les combats pour les fiertés sont fr\u00e9quents et mortels. En captivit\u00e9, ils peuvent atteindre 20 ans. La population sauvage a chut\u00e9 de 90% en un si\u00e8cle \u2014 de 200 000 individus au d\u00e9but du 20\u00e8me si\u00e8cle \u00e0 environ 20 000 \u00e0 25 000 aujourd'hui, class\u00e9 esp\u00e8ce vuln\u00e9rable par l'UICN.",
                 source: "Centre de Longévité - Durée de vie naturelle courte."
@@ -5295,7 +5295,7 @@ const quizzesData = {
             {
                 id: 21,
                 question: "Quel est le mécanisme du 'coalitional male' chez les lions ?",
-                options: ["Compétition exclusive entre frères issus de la même portée sans alliance possible avec des", "Mâles s'unissent pour renverser les dominants", "Maintien de la dominance solitaire par un seul mâle pendant toute sa vie reproductive de 10 à 15", "Hiérarchie déterminée uniquement par le combat singulier sans possibilité d'entraide entre"],
+                options: ["Compétition entre frères sans alliance possible avec d'autres mâles", "Mâles s'unissent pour renverser les dominants", "Maintien de la dominance solitaire par un seul mâle pendant toute sa vie reproductive de 10 à 15", "Hiérarchie déterminée par le seul combat singulier, sans entraide"],
                 correct: 1,
                 explanation: "Les coalitions de m\u00e2les lions (g\u00e9n\u00e9ralement des fr\u00e8res ou demi-fr\u00e8res) sont bien plus efficaces que les m\u00e2les solitaires pour conqu\u00e9rir et maintenir le contr\u00f4le d'une fierté. Les coalitions de 3-4 m\u00e2les r\u00e8gnent en moyenne 4 ans contre 2 ans pour un m\u00e2le seul. Cette coop\u00e9ration entre apparent\u00e9s est un exemple de s\u00e9lection de parent\u00e8le : aider ses fr\u00e8res \u00e0 se reproduire propage indirectement ses propres g\u00e8nes.",
                 source: "Institut d'Éthologie Sociale - Stratégie complexe de coalition."
@@ -5311,7 +5311,7 @@ const quizzesData = {
             {
                 id: 23,
                 question: "Quel est le processus de la 'synchronisation des chaleurs' chez les lionnes ?",
-                options: ["Ovulation individuelle déclenchée par le comportement de cour du mâle dominant du groupe", "Femelles en groupe synchronisent cycles reproductifs", "Cycles reproductifs déterminés uniquement par la disponibilité des ressources alimentaires du territoire", "Reproduction individuelle désynchronisée pour étaler les naissances et réduire la compétition entre"],
+                options: ["Ovulation individuelle déclenchée par le comportement de cour du mâle dominant du groupe", "Femelles en groupe synchronisent cycles reproductifs", "Cycles reproductifs déterminés uniquement par la disponibilité des ressources alimentaires du territoire", "Reproduction désynchronisée pour étaler les naissances dans le temps"],
                 correct: 1,
                 explanation: "La synchronisation des chaleurs est un ph\u00e9nom\u00e8ne remarquable dans les fiertés. Les femelles du m\u00eame groupe se retrouvent fr\u00e9quemment en chaleur en m\u00eame temps, ce qui m\u00e8ne \u00e0 des naissances quasi-simultan\u00e9es. Cela permet l'allaitement collectif (une femelle peut allaiter les lionceaux d'une autre), augmente la survie des petits, et cr\u00e9e une coh\u00e9sion sociale plus forte dans la fierté.",
                 source: "Institut de Biologie Reproductive - Phéromones sociales."
@@ -5597,7 +5597,7 @@ const quizzesData = {
             {
                 id: 12,
                 question: "Quel est le mécanisme de la parade aérienne nuptiale ?",
-                options: ["Offrandes alimentaires répétées permettant à la femelle d'évaluer les capacités de chasse du", "Piqués et loopings spectaculaires pour séduction", "Démonstration de territoire par des survols prolongés à très basse altitude au-dessus du futur site de", "Chants mélodieux complexes émis depuis les points culminants du territoire pour attirer la"],
+                options: ["Offrandes alimentaires répétées permettant d'évaluer les capacités de chasse", "Piqués et loopings spectaculaires pour séduction", "Démonstration territoriale par des survols prolongés à basse altitude", "Chants mélodieux émis depuis les points culminants du territoire"],
                 correct: 1,
                 explanation: "La parade nuptiale de l'aigle royal est l'un des spectacles les plus impressionnants de la faune europ\u00e9enne. Les deux partenaires effectuent une s\u00e9rie de piqués vertigineux, loopings et remontées en chandelle au-dessus du territoire, parfois en se touchant les serres. Cette parade, appel\u00e9e 'sky dance' ou 'roller-coasting', peut durer plusieurs heures et se d\u00e9roule surtout de janvier \u00e0 mars, avant la ponte.",
                 source: "Institut d'Éthologie Reproductrice - Affichages élaborés."
@@ -5605,7 +5605,7 @@ const quizzesData = {
             {
                 id: 13,
                 question: "À quel âge les aigles royaux deviennent-ils adultes en apparence ?",
-                options: ["À 3-4 ans", "À 4-5 ans selon l'espèce", "À 5-6 ans", "À 6+ ans"],
+                options: ["À 3-4 ans", "À 4-5 ans", "À 5-6 ans", "À 6+ ans"],
                 correct: 1,
                 explanation: "L'aigle royal acquiert progressivement son apparence adulte sur 4 \u00e0 5 mues successives. Chaque ann\u00e9e, le jeune perd ses plumes blanches et brune-clair pour les remplacer par des plumes brun fonc\u00e9. La nuque dor\u00e9e caract\u00e9ristique (d'o\u00f9 le nom scientifique Aquila chrysaetos \u2014 'aigle \u00e0 queue dor\u00e9e') appara\u00eet en dernier. Ce changement progressif rend l'\u00e2ge des jeunes aigles identifiable sur le terrain par les ornithologues.",
                 source: "Centre d'Identification - Maturation très progressive."
@@ -5613,7 +5613,7 @@ const quizzesData = {
             {
                 id: 14,
                 question: "Quel est le temps moyen de vie d'un aigle royal ?",
-                options: ["10-15 ans", "20-30 ans", "30-50 ans selon", "50+ ans"],
+                options: ["10-15 ans", "20-30 ans", "30-50 ans", "50+ ans"],
                 correct: 2,
                 explanation: "L'aigle royal est parmi les oiseaux les plus longévifs. En captivit\u00e9, des individus ont atteint 46 ans. En libert\u00e9, la longévit\u00e9 moyenne est de 20-30 ans. Le record en nature est de 32 ans. Cette longévité est li\u00e9e \u00e0 leur position de pr\u00e9dateur apex (peu de pr\u00e9dateurs), \u00e0 leur fidélit\u00e9 territoriale (connaissance approfondie de leur milieu) et \u00e0 la solidit\u00e9 du lien de couple qui optimise le succ\u00e8s reproducteur.",
                 source: "Institut de Longévité - Longévité remarquable."
@@ -5690,7 +5690,7 @@ const quizzesData = {
                 question: "À quel âge un aiglon devient-il autonome en vol ?",
                 options: [
                 "À 2-3 mois",
-                "À 4-5 mois selon l'",
+                "À 4-5 mois",
                 "À 6 mois",
                 "À 8+ mois"
             ],
@@ -5725,7 +5725,7 @@ const quizzesData = {
                 options: [
                 "À 3-4 mois",
                 "À 6-8 mois",
-                "À 10-12 mois selon",
+                "À 10-12 mois",
                 "À 18+ mois"
             ],
                 correct: 2,
@@ -5743,7 +5743,7 @@ const quizzesData = {
             {
                 id: 27,
                 question: "À quel âge un aigle royal atteint-il pleine maturité reproductrice ?",
-                options: ["À 3 ans", "À 4-5 ans", "À 5-7 ans selon", "À 7+ ans"],
+                options: ["À 3 ans", "À 4-5 ans", "À 5-7 ans", "À 7+ ans"],
                 correct: 2,
                 explanation: "La maturit\u00e9 reproductrice de l'aigle royal co\u00efncide avec l'acquisition du plumage adulte, vers 5-7 ans. Mais \u00eatre sexuellement mature ne suffit pas : les jeunes doivent aussi \u00e9tablir un territoire et trouver un partenaire. Dans les populations denses, les bons territoires sont occup\u00e9s par des adultes \u00e9tablis, for\u00e7ant les jeunes \u00e0 errer comme 'flottants' pendant plusieurs ann\u00e9es suppl\u00e9mentaires en attendant qu'une place se lib\u00e8re.",
                 source: "Centre de Reproduction - Maturation tardive."
@@ -5837,7 +5837,7 @@ const quizzesData = {
             {
                 id: 25,
                 question: "Quel est le processus de territorialité chez les aigles royaux ?",
-                options: ["Tolérance des intrus tant qu'ils ne s'approchent pas du site de nidification actif pendant la", "Défense active du territoire par actes aériens", "Délimitation par dépôt de fientes sur les rochers marquant les limites sans confrontation", "Abandon du territoire à tout concurrent plus grand sans résistance pour éviter les blessures"],
+                options: ["Tolérance des intrus tant qu'ils ne s'approchent pas du nid actif", "Défense active du territoire par actes aériens", "Délimitation par dépôt de fientes sur les rochers marquant les limites sans confrontation", "Abandon du territoire à tout concurrent plus grand sans résistance pour éviter les blessures"],
                 correct: 1,
                 explanation: "La territorialit\u00e9 de l'aigle royal est multimodale. La d\u00e9fense primaire est a\u00e9rienne : les r\u00e9sidents d\u00e9collent \u00e0 vue d'un intrus et le pourchassent en piqués mena\u00e7ants jusqu'\u00e0 la fronti\u00e8re du territoire. Les survols r\u00e9guliers ('boundary patrols') servent \u00e0 surveiller et afficher la possession. Les cris et les parrades au-dessus du nid signalent l'occupation. Les confrontations physiques sont rares mais peuvent causer des blessures graves.",
                 source: "Institut d'Éthologie Territoriale - Démonstration élaborée."
@@ -5890,7 +5890,7 @@ const quizzesData = {
             {
                 id: 31,
                 question: "Quel est le processus de l'établissement du territoire chez les jeunes ?",
-                options: ["Héritage du territoire parental dès que les parents atteignent une taille critique insuffisante pour", "Compétition pour sites de nidification disponibles", "Attribution par consensus entre individus matures sans confrontation physique directe", "Colonisation aléatoire des zones non défendues sans évaluation préalable de la qualité du site"],
+                options: ["Héritage automatique du territoire parental, sans aucune compétition", "Compétition pour sites de nidification disponibles", "Attribution par consensus entre individus matures sans confrontation physique directe", "Colonisation aléatoire des zones non défendues sans évaluation préalable de la qualité du site"],
                 correct: 1,
                 explanation: "Les jeunes aigles royaux sans territoire errent sur de vastes zones, parfois 500 \u00e0 1 000 km de leur lieu de naissance. Ils recherchent des espaces libres o\u00f9 les adultes sont absents. L'\u00e9tablissement du territoire passe par des p\u00e9riodes de prospection intensive, de confrontations avec les r\u00e9sidents et parfois d'attente que des adultes meurent ou abandonnent. Dans les populations bien \u00e9tablies, il peut falloir plusieurs ann\u00e9es avant de trouver un territoire disponible.",
                 source: "Institut d'Éthologie Territoriale - Compétition intense."
@@ -5898,7 +5898,7 @@ const quizzesData = {
             {
                 id: 32,
                 question: "Quel est le rôle du 'dynamic soaring' dans l'efficacité énergétique ?",
-                options: ["Exploitation des vents de versant en volant au ras des crêtes rocheuses pour maintenir l'altitude sans", "Utilisation de gradients de vent pour vol sans effort", "Vol battu continu avec période de glissé planifié permettant de récupérer entre deux phases de propulsion", "Utilisation des courants d'air froids descendants pour accélérer lors des descentes vers les proies"],
+                options: ["Exploitation des vents de versant en volant au ras des crêtes", "Utilisation de gradients de vent pour vol sans effort", "Vol battu continu avec période de glissé planifié permettant de récupérer entre deux phases de propulsion", "Utilisation des courants d'air froids descendants pour accélérer lors des descentes vers les proies"],
                 correct: 1,
                 explanation: "Le 'dynamic soaring' est une technique de vol utilis\u00e9e par l'aigle royal dans les environnements montagneux \u00e0 fort vent. Il exploite les gradients de vitesse du vent (plus fort en altitude, plus faible pr\u00e8s du sol) pour acc\u00e9l\u00e9rer sans battre des ailes : monter face au vent (qui le propulse vers le haut), se retourner avec le vent dans le dos (qui l'acc\u00e9l\u00e8re), puis redescendre. Les albatros sont les champions de cette technique mais l'aigle royal en ma\u00eetrise une version adapt\u00e9e aux reliefs.",
                 source: "Institut d'Aérodynamique - Technique de vol extrême."
@@ -5914,7 +5914,7 @@ const quizzesData = {
             {
                 id: 34,
                 question: "Quel est le mécanisme du 'mate guarding' chez les aigles royaux ?",
-                options: ["Séparation des territoires de chasse des deux partenaires pour maximiser la surface couverte sans", "Proximité constante du couple lors de reproduction", "Indépendance totale des deux partenaires pendant la période de couvaison pour optimiser la recherche de", "Surveillance du périmètre par le seul mâle pendant que la femelle couve en permanence sans jamais quitter les"],
+                options: ["Séparation des territoires de chasse pour maximiser la surface couverte", "Proximité constante du couple lors de reproduction", "Indépendance totale des deux partenaires pendant toute la couvaison", "Surveillance du périmètre par le mâle pendant que la femelle couve"],
                 correct: 1,
                 explanation: "Le 'mate guarding' chez l'aigle royal est subtil. Le m\u00e2le surveille sa partenaire surtout en p\u00e9riode f\u00e9conde (avant la ponte), restant \u00e0 proximit\u00e9 et pourchassant les m\u00e2les intrus. Mais la vraie protection est territoriale : en maintenant un territoire exclusif bien d\u00e9fendu, le couple s'assure qu'aucun m\u00e2le \u00e9tranger ne peut approcher la femelle. La fid\u00e9lit\u00e9 \u00e0 long terme du couple r\u00e9duit aussi le risque d'infid\u00e9lit\u00e9 extraconjugale.",
                 source: "Université de Biologie Reproductive - Stratégie paternelle."
@@ -5922,7 +5922,7 @@ const quizzesData = {
             {
                 id: 35,
                 question: "À quel âge un aigle royal femelle commence-t-elle à pondre ?",
-                options: ["À 3 ans", "À 4-5 ans selon", "À 5-6 ans", "À 6+ ans"],
+                options: ["À 3 ans", "À 4-5 ans", "À 5-6 ans", "À 6+ ans"],
                 correct: 1,
                 explanation: "La femelle aigle royal commence \u00e0 pondre entre 4 et 7 ans, quand elle a acquis son plumage adulte et \u00e9tabli un territoire stable avec un partenaire. L'\u00e2ge de la premi\u00e8re ponte est li\u00e9 \u00e0 la disponibilit\u00e9 des territoires : dans les zones satur\u00e9es, les femelles peuvent attendre jusqu'\u00e0 8-9 ans. La premi\u00e8re saison de reproduction est souvent un \u00e9chec \u2014 les nouveaux couples manquent d'exp\u00e9rience et les premiers \u0153ufs sont souvent fertiles mais les aiglons ne survivent pas.",
                 source: "Centre de Biologie Reproductive - Maturité tardive."
@@ -6008,7 +6008,7 @@ const quizzesData = {
             {
                 id: 1,
                 question: "Quel est le poids moyen d'un tigre mâle ?",
-                options: ["100-150 kg", "150-200 kg", "200-260 kg selon la région", "260+ kg en toute"],
+                options: ["100-150 kg", "150-200 kg", "200-260 kg", "260+ kg en toute"],
                 correct: 2,
                 explanation: "Le tigre est le plus grand f\u00e9lid\u00e9 du monde. Le tigre de Sibérie (Amour) est le plus lourd : les m\u00e2les atteignent 200 \u00e0 300 kg et peuvent mesurer 3,7 m\u00e8tres de la t\u00eate \u00e0 la queue. Le tigre du Bengale, le plus r\u00e9pandu, p\u00e8se 175 \u00e0 260 kg. Cette masse imposante en fait un pr\u00e9dateur capable de s'attaquer \u00e0 des proies bien plus grosses que lui, comme le buffle d'eau ou le gaur.",
                 source: "National Geographic - Le tigre est le plus gros félin.",
@@ -6034,7 +6034,7 @@ const quizzesData = {
             {
                 id: 4,
                 question: "À quel âge les jeunes tigres deviennent-ils indépendants ?",
-                options: ["À 6 mois", "À 1-2 ans", "À 2-3 ans selon", "À 3-4 ans"],
+                options: ["À 6 mois", "À 1-2 ans", "À 2-3 ans", "À 3-4 ans"],
                 correct: 2,
                 explanation: "Les jeunes tigres restent avec leur m\u00e8re 2 \u00e0 3 ans, p\u00e9riode pendant laquelle ils apprennent toutes les techniques de chasse. La tigresse leur enseigne d'abord en apportant des proies vivantes \u00e9tourdies, puis en les accompagnant \u00e0 la chasse. L'ind\u00e9pendance est progressive : les jeunes quittent le territoire maternel pour \u00e9tablir le leur, parfois \u00e0 des centaines de kilom\u00e8tres.",
                 source: "Institut d'Éthologie - Indépendance progressive."
@@ -6082,7 +6082,7 @@ const quizzesData = {
             {
                 id: 10,
                 question: "Quel est le nombre de rayures sur un tigre en moyenne ?",
-                options: ["20-30 rayures", "40-60 rayures", "80-100 rayures selon", "Plus de 100"],
+                options: ["20-30 rayures", "40-60 rayures", "80-100 rayures", "Plus de 100"],
                 correct: 2,
                 explanation: "Un tigre poss\u00e8de en moyenne 100 rayures, mais ce nombre varie selon l'individu et la sous-esp\u00e8ce. Ces rayures sont verticales sur le corps et horizontales sur les pattes. Fait remarquable : les rayures se prolongent dans la peau, pas uniquement dans le pelage \u2014 un tigre ras\u00e9 reste ray\u00e9. Le motif est unique \u00e0 chaque individu, ce qui permet aux chercheurs d'identifier les tigres sur des cam\u00e9ras-pi\u00e8ges.",
                 source: "Institut d'Éthologie - Pattern unique par individu."
@@ -6114,7 +6114,7 @@ const quizzesData = {
             {
                 id: 14,
                 question: "Quel est le lifespan moyen d'un tigre en nature ?",
-                options: ["10-12 ans", "12-15 ans", "15-20 ans selon", "20+ ans"],
+                options: ["10-12 ans", "12-15 ans", "15-20 ans", "20+ ans"],
                 correct: 1,
                 explanation: "En libert\u00e9, les tigres vivent en moyenne 10 \u00e0 15 ans. Les femelles vivent souvent plus longtemps que les m\u00e2les, qui s'exposent davantage lors des combats territoriaux. En captivit\u00e9, ils peuvent atteindre 20-25 ans. La population mondiale de tigres sauvages est estim\u00e9e \u00e0 environ 3 500-5 000 individus \u2014 une remonte encourageante depuis le plus bas historique de 3 200 en 2010, gr\u00e2ce aux efforts de conservation.",
                 source: "Institut de Longévité Animale - Durée de vie estimée."
@@ -6130,7 +6130,7 @@ const quizzesData = {
             {
                 id: 16,
                 question: "À quel âge un tigre atteint sa taille adulte ?",
-                options: ["À 1-2 ans", "À 2-3 ans", "À 3-4 ans selon", "À 5+ ans"],
+                options: ["À 1-2 ans", "À 2-3 ans", "À 3-4 ans", "À 5+ ans"],
                 correct: 2,
                 explanation: "Les tigres atteignent leur taille adulte entre 3 et 4 ans, avec une croissance rapide pendant les 2 premi\u00e8res ann\u00e9es. Les m\u00e2les continuent de prendre de la masse musculaire jusqu'\u00e0 5-6 ans. Cette maturit\u00e9 physique tardive est coupl\u00e9e \u00e0 un apprentissage long : un jeune tigre ne ma\u00eetrise totalement les techniques de chasse complexes (comme s'attaquer \u00e0 de gros buffles) qu'apr\u00e8s plusieurs ann\u00e9es d'exp\u00e9rience.",
                 source: "Institut de Croissance Féline - Développement progressif."
@@ -6138,7 +6138,7 @@ const quizzesData = {
             {
                 id: 17,
                 question: "Quel est le record de saut en hauteur pour un tigre ?",
-                options: ["2 mètres", "3 mètres", "5-6 mètres selon", "10 mètres"],
+                options: ["2 mètres", "3 mètres", "5-6 mètres", "10 mètres"],
                 correct: 2,
                 explanation: "Le tigre est un sauteur exceptionnel. Il peut bondir jusqu'\u00e0 9-10 m\u00e8tres horizontalement et 5-6 m\u00e8tres en hauteur. Ces capacit\u00e9s athl\u00e9tiques sont essentielles pour sa technique de chasse : il s'approche en rampant, puis couvre les derniers m\u00e8tres en un ou deux bonds fulgurants, visant g\u00e9n\u00e9ralement la gorge ou la nuque de sa proie pour une mise \u00e0 mort rapide.",
                 source: "Institut de Biomécanique - Athlète exceptionnel."
@@ -6162,7 +6162,7 @@ const quizzesData = {
             {
                 id: 20,
                 question: "À quel âge une femelle tigre peut-elle se reproduire ?",
-                options: ["À 1 an", "À 2-3 ans selon", "À 3-4 ans", "À 5+ ans"],
+                options: ["À 1 an", "À 2-3 ans", "À 3-4 ans", "À 5+ ans"],
                 correct: 1,
                 explanation: "Les femelles tigres atteignent leur maturit\u00e9 sexuelle vers 3-4 ans. Elles sont en chaleur (\u0153strus) pendant 3 \u00e0 7 jours, toutes les 3 \u00e0 9 semaines si elles ne sont pas f\u00e9cond\u00e9es. Pendant cette p\u00e9riode, elles marquent intensivement leur territoire de ph\u00e9romones et de vocalises pour attirer les m\u00e2les. Les femelles \u00e9l\u00e8vent leurs petits seules, sans aide du m\u00e2le.",
                 source: "Institut de Reproduction - Maturité féline."
@@ -6190,7 +6190,7 @@ const quizzesData = {
             {
                 id: 11,
                 question: "Quel est le territoire moyen d'un tigre ?",
-                options: ["10-20 km²", "30-50 km²", "50-100 km² selon la disponib", "150+ km²"],
+                options: ["10-20 km²", "30-50 km²", "50-100 km²", "150+ km²"],
                 correct: 2,
                 explanation: "Le territoire d'un tigre varie consid\u00e9rablement selon le milieu et la disponibilit\u00e9 des proies. Une femelle occupe 20 \u00e0 60 km\u00b2, un m\u00e2le 60 \u00e0 200 km\u00b2 (englobant g\u00e9n\u00e9ralement les territoires de 2 \u00e0 7 femelles). En Sib\u00e9rie o\u00f9 les proies sont rares, les territoires peuvent d\u00e9passer 1 000 km\u00b2. Les tigres marquent leurs limites avec de l'urine, des s\u00e9cr\u00e9tions glandulaires et des griffures sur les arbres.",
                 source: "Centre de Recherche Territoriale - Vaste domaine."
@@ -6241,7 +6241,7 @@ const quizzesData = {
                 options: [
                 "À 3-4 mois",
                 "À 6-8 mois",
-                "À 10-12 mois selon",
+                "À 10-12 mois",
                 "À 18+ mois"
             ],
                 correct: 2,
@@ -6259,7 +6259,7 @@ const quizzesData = {
             {
                 id: 19,
                 question: "À quel âge un tigre atteint sa taille adulte maximale ?",
-                options: ["À 2-3 ans", "À 4-5 ans", "À 5-6 ans selon", "À 6+ ans"],
+                options: ["À 2-3 ans", "À 4-5 ans", "À 5-6 ans", "À 6+ ans"],
                 correct: 2,
                 explanation: "Bien que les tigres soient sexuellement matures vers 3-4 ans, ils n'atteignent leur pleine taille adulte et leur masse musculaire maximale qu'entre 5 et 6 ans. Les m\u00e2les continuent de prendre du poids et de la puissance apr\u00e8s 4 ans. Cette maturit\u00e9 physique tardive est li\u00e9e \u00e0 la n\u00e9cessit\u00e9 d'\u00eatre suffisamment puissant pour \u00e9tablir et d\u00e9fendre un large territoire contre d'autres m\u00e2les adultes.",
                 source: "Centre de Croissance - Développement progressif."
@@ -6267,7 +6267,7 @@ const quizzesData = {
             {
                 id: 20,
                 question: "Quel est l'âge moyen de vie d'un tigre en nature ?",
-                options: ["10-12 ans", "12-15 ans", "15-20 ans selon", "20+ ans"],
+                options: ["10-12 ans", "12-15 ans", "15-20 ans", "20+ ans"],
                 correct: 1,
                 explanation: "En libert\u00e9, les tigres vivent en moyenne 12 \u00e0 15 ans. Apr\u00e8s 10 ans, leurs dents s'usent, rendant la chasse plus difficile. Des tigres \u00e2g\u00e9s \u00e0 dents abim\u00e9es se rabattent parfois sur des proies plus faciles \u00e0 attraper \u2014 comme le b\u00e9tail ou, rarement, les humains \u2014 ce qui explique certains cas historiques de 'tigres man\u00e9aters'. En captivit\u00e9, avec soins v\u00e9t\u00e9rinaires, ils peuvent d\u00e9passer 20 ans.",
                 source: "Centre de Longévité - Durée de vie limitée."
@@ -6278,7 +6278,7 @@ const quizzesData = {
                 options: [
                 "Couleur uniquement",
                 "Rayures qui brisent la silhouette",
-                "Absence de son",
+                "Absence totale de bruit",
                 "Vitesse seulement"
             ],
                 correct: 1,
@@ -6288,7 +6288,7 @@ const quizzesData = {
             {
                 id: 22,
                 question: "À quelle vitesse un tigre peut-il atteindre lors d'une charge ?",
-                options: ["30 km/h", "40 km/h", "50-60 km/h sur courte distan", "80+ km/h"],
+                options: ["30 km/h", "40 km/h", "50-60 km/h", "80+ km/h"],
                 correct: 2,
                 explanation: "Le tigre est un athl\u00e8te explosif capable d'atteindre 50-60 km/h en quelques bond\u00e9es. Sa technique de chasse repose sur une approche silencieuse jusqu'\u00e0 5-10 m\u00e8tres, suivie d'un sprint foudroyant. Il utilise ses pattes avant comme des crampons pour immobiliser la proie et ses crocs pour \u00e9trangler. Une seule patte de tigre peut fracasser le cr\u00e2ne d'un buffle \u2014 la force d'un coup est estim\u00e9e \u00e0 plusieurs centaines de kg.",
                 source: "Institut de Biomécanique Féline - Sprint redoutable."
@@ -6296,7 +6296,7 @@ const quizzesData = {
             {
                 id: 23,
                 question: "Quel est le nombre moyen de petits tigres par année pour une femelle ?",
-                options: ["0,5", "1-2 par", "2-3 par an", "3+ par an"],
+                options: ["0-1 petit par an", "1-2 petits par an", "2-3 petits par an", "3+ petits par an"],
                 correct: 1,
                 explanation: "Les tigresses ont une port\u00e9e tous les 2 \u00e0 3 ans en moyenne. Si la port\u00e9e est perdue (pr\u00e9dation, infanticide, famine), la femelle entre rapidement en chaleur \u00e0 nouveau. Le succ\u00e8s reproducteur d'une femelle sur toute sa vie est de 6 \u00e0 10 jeunes qui survivent jusqu'\u00e0 l'ind\u00e9pendance. Dans les r\u00e9serves bien prot\u00e9g\u00e9es comme Ranthambore (Inde), certaines femelles \u00e9l\u00e8vent plus de 20 tigreaux sur toute leur vie.",
                 source: "Centre de Biologie Reproductive - Fertilité modérée."
@@ -6312,7 +6312,7 @@ const quizzesData = {
             {
                 id: 25,
                 question: "Quel est le temps moyen d'une chasse pour un tigre ?",
-                options: ["30 secondes à 1", "1-5 minutes selon", "15-20 minutes", "1 heure"],
+                options: ["30 secondes à 1 minute", "1-5 minutes", "15-20 minutes", "1 heure"],
                 correct: 1,
                 explanation: "La chasse du tigre est une s\u00e9quence pr\u00e9cise : d\u00e9tection de la proie (odorat, ouie, vision), approche rampante tr\u00e8s lente (parfois 30 minutes pour parcourir 100 m\u00e8tres), sprint final \u00e0 60 km/h, bond, immobilisation et mise \u00e0 mort par strangulation ou bris de la nuque. Toute la s\u00e9quence post-d\u00e9tection dure 1 \u00e0 5 minutes. L'\u00e9chec se produit souvent si la proie est alert\u00e9e au-del\u00e0 de 10 m\u00e8tres.",
                 source: "Centre d'Étude du Comportement - Chasse rapide."
@@ -6349,7 +6349,7 @@ const quizzesData = {
             {
                 id: 29,
                 question: "À quel âge un tigre peut-il être considéré comme sénior ?",
-                options: ["À 10 ans", "À 12 ans", "À 15 ans selon", "À 20+ ans"],
+                options: ["À 10 ans", "À 12 ans", "À 15 ans", "À 20+ ans"],
                 correct: 2,
                 explanation: "Les tigres \u00e2g\u00e9s de 12 \u00e0 15 ans entrent dans leur phase s\u00e9nior. Leurs dents s'usent progressivement, leur vitesse diminue et leurs blessures cicatrisent plus lentement. Beaucoup d'anciens m\u00e2les perdent leur territoire face \u00e0 des jeunes plus vigoureux. Certains individus s'adaptent en se sp\u00e9cialisant dans des proies plus faciles. Les tigres les plus c\u00e9l\u00e8bres de r\u00e9serves indiennes ont v\u00e9cu jusqu'\u00e0 16-18 ans en libert\u00e9.",
                 source: "Centre de Gérontologie Féline - Vieillesse relative."
@@ -6422,7 +6422,7 @@ const quizzesData = {
             {
                 id: 25,
                 question: "Quel est le rôle du 'allomothering' chez les femelles tigres ?",
-                options: ["Mères tigresses partageant leur territoire de chasse et leurs proies avec d'autres femelles en", "Femelles non-mères aident à l'élevage des jeunes", "Infanticide systématique des petits des femelles voisines pour réduire la compétition territoriale", "Enseignement des techniques de chasse aux jeunes d'autres femelles pendant les périodes de"],
+                options: ["Tigresses partageant territoire de chasse et proies avec d'autres femelles", "Femelles non-mères aident à l'élevage des jeunes", "Infanticide systématique des petits des femelles voisines pour réduire la compétition territoriale", "Enseignement de la chasse aux jeunes des autres femelles du secteur"],
                 correct: 1,
                 explanation: "Bien que les tigres soient g\u00e9n\u00e9ralement solitaires, des comportements d'allomothering ont \u00e9t\u00e9 observ\u00e9s dans de rares cas. Des femelles sans petits ont \u00e9t\u00e9 vues gardant des tigreaux orphelins ou aidant une femelle bless\u00e9e \u00e0 nourrir ses petits. Ce comportement, rare mais document\u00e9, sugg\u00e8re que les f\u00e9lid\u00e9s solitaires conservent une capacit\u00e9 de coop\u00e9ration sociale qui peut \u00eatre activ\u00e9e dans des circonstances exceptionnelles.",
                 source: "Université d'Éthologie Familiale - Comportement social."
@@ -6470,7 +6470,7 @@ const quizzesData = {
             {
                 id: 31,
                 question: "Quel est le mécanisme de la 'stalk-and-ambush' predation ?",
-                options: ["Poursuite à vitesse maximale sur longue distance compensant le manque d'élément", "Approche silencieuse puis attaque surprise", "Attaque frontale directe après vocalisation d'intimidation paralysant momentanément la proie de", "Encerclement par deux individus coopérant malgré la solitarité connue du tigre en dehors de la"],
+                options: ["Poursuite à vitesse maximale sur une longue distance", "Approche silencieuse puis attaque surprise", "Attaque frontale précédée d'un rugissement qui paralyse la proie", "Encerclement par deux individus coopérant lors de la traque"],
                 correct: 1,
                 explanation: "La chasse \u00e0 l'affût du tigre est un mod\u00e8le d'efficacit\u00e9 \u00e9nerg\u00e9tique. Il localise les proies \u00e0 l'ou\u00efe et \u00e0 l'odorat, puis s'approche en rampant, profitant de chaque bruit (vent, autres animaux) pour couvrir ses propres sons. La phase finale (10 m\u00e8tres) est un sprint explos\u00e9 avec 5 \u00e0 10 bonds. La mise \u00e0 mort est presque instantan\u00e9e : il vise la gorge pour \u00e9trangler (grosses proies) ou la nuque pour une mort rapide (petites proies).",
                 source: "Institut de Stratégie Prédatrice - Technique sophistiquée."
@@ -6499,7 +6499,7 @@ const quizzesData = {
             {
                 id: 34,
                 question: "Quel est le mécanisme de la 'cooperative hunting' absent chez les tigres ?",
-                options: ["Les tigres forment des groupes familiaux stables de 3 à 5 individus partageant les", "Tigres sont généralement solitaires", "Les femelles délèguent la chasse aux mâles et se consacrent exclusivement à", "Différence de comportement inexistante car les tigres modifient leur socialité"],
+                options: ["Les tigres forment des groupes familiaux stables de 3 à 5 individus", "Tigres sont généralement solitaires", "Les femelles délèguent la chasse aux mâles et élèvent seules les petits", "Différence de comportement inexistante car les tigres modifient leur socialité"],
                 correct: 1,
                 explanation: "Le tigre est l'exception parmi les grands f\u00e9lid\u00e9s : il chasse seul, contrairement aux lions qui chassent en groupe. Cette soli\u00e9tarité est adapt\u00e9e \u00e0 son environnement forestier dense o\u00f9 la coordination serait difficile. Cependant, des comportements temporairement coop\u00e9ratifs ont \u00e9t\u00e9 observ\u00e9s : une m\u00e8re chassant avec ses grands jeunes avant leur ind\u00e9pendance, ou deux fr\u00e8res de la m\u00eame port\u00e9e chassant \u00e0 proximit\u00e9 pendant la p\u00e9riode nomade.",
                 source: "Institut d'Éthologie Féline - Prédateurs solitaires."
@@ -6515,7 +6515,7 @@ const quizzesData = {
             {
                 id: 36,
                 question: "Quel est le processus de la 'natal philopatry' chez les tigres femelles ?",
-                options: ["Dispersion obligatoire loin de la zone natale pour éviter toute compétition avec", "Tendance à rester dans zone natale", "Migration saisonnière régulière entre forêts de basse et haute altitude selon", "Absence de pattern spatial cohérent"],
+                options: ["Dispersion obligatoire loin de la zone natale, sans exception", "Tendance à rester dans zone natale", "Migration saisonnière entre forêts de basse et de haute altitude", "Absence de pattern spatial cohérent"],
                 correct: 1,
                 explanation: "La philopatrie natale du tigre est un comportement nuanc\u00e9. Les femelles ont tendance \u00e0 rester proches de leur lieu de naissance et \u00e9tablissent leur territoire \u00e0 proximit\u00e9 de celui de leur m\u00e8re (si disponible). Les m\u00e2les, au contraire, se dispersent loin pour \u00e9viter la comp\u00e9tition et la consanguinit\u00e9. Cette asym\u00e9trie de dispersion entre sexes est une strat\u00e9gie \u00e9volutive efficace qui optimise \u00e0 la fois la transmission des connaissances locales et le brassage g\u00e9n\u00e9tique.",
                 source: "Institut d'Écologie Comportementale - Retour au site."
@@ -6523,7 +6523,7 @@ const quizzesData = {
             {
                 id: 37,
                 question: "À quel moment du cycle menstruel la femelle est-elle fertile ?",
-                options: ["Début du cycle lorsque les niveaux de progestérone sont à leur maximum", "Milieu du cycle - période d'estrus", "Fin du cycle lors du déclin hormonal déclenchant la nidation ou la menstruation", "Absence de cycle régulier chez les femelles sauvages qui ovulent uniquement en"],
+                options: ["Début du cycle lorsque les niveaux de progestérone sont à leur maximum", "Milieu du cycle - période d'estrus", "Fin du cycle lors du déclin hormonal déclenchant la nidation ou la menstruation", "Absence de cycle régulier, l'ovulation étant provoquée par l'accouplement"],
                 correct: 1,
                 explanation: "L'\u0153strus de la femelle tigre dure 3 \u00e0 7 jours et se produit toutes les 3 \u00e0 9 semaines si elle n'est pas f\u00e9cond\u00e9e. Pendant cette p\u00e9riode, sa chimie urinaire change radicalement, signal chimique per\u00e7u par les m\u00e2les \u00e0 grande distance. L'ovulation est induite par l'accouplement lui-m\u00eame (ovulation provoqu\u00e9e), m\u00e9canisme qui garantit qu'un accouplement effectif conduit \u00e0 une f\u00e9condation, m\u00eame si les rencontres sont rares en milieu sauvage.",
                 source: "Centre de Reproduction Féline - Fertilité cyclique."
@@ -6539,7 +6539,7 @@ const quizzesData = {
             {
                 id: 39,
                 question: "Quel est le mécanisme de la 'temporal gland secretion' du tigre ?",
-                options: ["Lubrification de la fourrure pour la rendre imperméable lors des longues sessions de nage dans les", "Communication chimique et marquage territorial", "Thermorégulation cutanée en facilitant l'évaporation de l'humidité lors des périodes de chaleur", "Défense active contre les ectoparasites en créant un environnement chimique hostile sur la"],
+                options: ["Lubrification de la fourrure pour la rendre imperméable à la nage", "Communication chimique et marquage territorial", "Thermorégulation cutanée en facilitant l'évaporation de l'humidité lors des périodes de chaleur", "Défense contre les parasites par un environnement chimique hostile"],
                 correct: 1,
                 explanation: "La glande temporale du tigre, situ\u00e9e entre l'\u0153il et l'oreille, s\u00e9cr\u00e8te un fluide chimique utilis\u00e9 dans le marquage social. Contrairement aux marques urinaires (longue dur\u00e9e, grande distance), les s\u00e9cr\u00e9tions temporales sont d\u00e9pos\u00e9es par frottement de la t\u00eate contre des surfaces lors d'interactions proches. Elles transmettent des informations sur l'identit\u00e9 individuelle et l'\u00e9tat \u00e9motionnel. Les tigreaux frottent fr\u00e9quemment leur t\u00eate contre leur m\u00e8re pour consolider le lien social.",
                 source: "Institut d'Olfaction Féline - Phéromones glandulaires."
@@ -6757,7 +6757,7 @@ const quizzesData = {
             {
                 id: 22,
                 question: "Où Harry Potter a-t-il grandi avant de découvrir qu'il était sorcier ?",
-                options: ["Dans un orphelinat de Surrey tenu par des Moldus qui ignoraient tout de son passé magique et dont la directrice l'a protégé à son insu des", "Dans la ferme de ses grands-parents maternels en Écosse", "Dans un appartement à Peckham partagé avec sa tante Marge", "Au 4 Privet Drive, chez sa tante Pétunia et son oncle Vernon Dursley"],
+                options: ["Dans un orphelinat du Surrey tenu par des Moldus ignorant tout de la magie", "Dans la ferme de ses grands-parents maternels en Écosse", "Dans un appartement à Peckham partagé avec sa tante Marge", "Au 4 Privet Drive, chez sa tante Pétunia et son oncle Vernon Dursley"],
                 correct: 3,
                 explanation: "Harry a grandi au 4 Privet Drive, Little Whinging, Surrey, chez sa tante Pétunia (sœur de sa mère Lily), son oncle Vernon et leur fils Dudley. Ils le logeaient dans le placard sous l'escalier jusqu'à ce qu'il reçoive ses lettres de Poudlard. Dumbledore avait placé Harry chez les Dursley précisément parce que le sang de Lily coulait dans les veines de Pétunia, renforçant la protection magique.",
                 source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitres 1-2 — L'Enfant qui a Survécu."
@@ -6781,7 +6781,7 @@ const quizzesData = {
             {
                 id: 25,
                 question: "Quel animal Hermione Granger a-t-elle comme animal de compagnie ?",
-                options: ["Un hibou tacheté nommé Chouette qu'elle a acheté à Eeylops Owl Emporium lors de sa", "Un lapin blanc nommé Angora qu'elle garde dans la Tour de Gryffondor et qui l'aide à", "Un rat blanc nommé Pattenrond qu'elle a reçu à Noël et dont la ressemblance", "Un chat roux aplati nommé Pattenrond"],
+                options: ["Un hibou tacheté nommé Chouette, acheté chez Eeylops Owl Emporium", "Un lapin blanc nommé Angora, gardé dans la Tour de Gryffondor", "Un rat blanc nommé Pattenrond, reçu en cadeau à Noël", "Un chat roux aplati nommé Pattenrond"],
                 correct: 3,
                 explanation: "Hermione possède un chat orange mi-crapaud nommé Pattenrond (Crookshanks en VO). Ce chat très intelligent reconnaît immédiatement que Croûtard (le rat de Ron) est en réalité un Animagus humain — Peter Pettigrow. Pattenrond est en fait un mi-Kneazle (créature magique), ce qui explique son intelligence supérieure à la normale.",
                 source: "J.K. Rowling, Harry Potter et le Prisonnier d'Azkaban (1999), Chapitre 4 — achat à la boutique de la Rue des Emprunteurs."
@@ -6821,7 +6821,7 @@ const quizzesData = {
             {
                 id: 30,
                 question: "Quelle est la formule pour ouvrir la trappe à l'Arbre Cogneur ?",
-                options: ["Il faut taper trois fois le nœud de l’arbre", "Il suffit d'approcher doucement en rampant depuis", "Il n'y a pas de formule", "Appuyer sur le nœud de l'arbre"],
+                options: ["Il faut taper trois fois le nœud de l’arbre", "Il suffit d'approcher doucement en rampant par-dessous", "Il n'y a pas de formule", "Appuyer sur le nœud de l'arbre"],
                 correct: 3,
                 explanation: "L'Arbre Cogneur est un arbre magique extrêmement violent qui attaque tout ce qui l'approche. Son seul point faible est un nœud à sa base : y appuyer (avec une branche longue ou la baguette) le paralyse instantanément. C'est grâce à cette méthode que Sirius Black entrait et sortait du tunnel menant à la Cabane Hurlante quand il était à Poudlard.",
                 source: "J.K. Rowling, Harry Potter et le Prisonnier d'Azkaban (1999), Chapitre 17 — L'Arbre Cogneur."
@@ -6985,7 +6985,7 @@ const quizzesData = {
             {
                 id: 28,
                 question: "Quel objet Sirius Black offre-t-il à Harry pour communiquer secrètement ?",
-                options: ["Un journal enchanté qui transcrit automatiquement les messages en écriture inversée pour tromper les éventuels censeurs du", "Une Plume-Rapporteur qui recopie chaque conversation tenue dans un rayon de 10 mètres dans un carnet", "Un Pensine de poche contenant les souvenirs d'enfance communs des Maraudeurs", "Un miroir en deux parties pour communiquer à distance"],
+                options: ["Un journal enchanté qui transcrit les messages en écriture inversée", "Une Plume-Rapporteur qui recopie chaque conversation tenue dans un rayon de 10 mètres dans un carnet", "Un Pensine de poche contenant les souvenirs d'enfance communs des Maraudeurs", "Un miroir en deux parties pour communiquer à distance"],
                 correct: 3,
                 explanation: "Sirius offre à Harry en cinquième année deux miroirs à deux faces (Two-Way Mirror) : chacun peut voir le visage de l'autre dans son miroir en prononçant son nom. Tragiquement, Harry ne s'en sert jamais de peur de déranger Sirius, et refuse d'utiliser l'objet à la veille du piège du Département des Mystères — ignorant qu'il aurait pu contacter Sirius directement.",
                 source: "J.K. Rowling, Harry Potter et l'Ordre du Phénix (2003), Chapitre 24 — cadeau de Sirius non ouvert."
@@ -6993,7 +6993,7 @@ const quizzesData = {
             {
                 id: 29,
                 question: "Quel est le résultat de la bataille du Département des Mystères ?",
-                options: ["Voldemort parvient à récupérer la prophétie avant que Harry ne la détruise", "Le Ministère reconnaît officiellement le retour de Voldemort après que Fudge a vu en personne Voldemort dans l'Atrium et ne peut plus dénier son", "Harry et l'A.D. parviennent à capturer Lucius Malefoy et plusieurs mangemorts qui sont emprisonnés à Azkaban avant que Voldemort n'intervienne", "Sirius Black meurt, la prophétie est détruite, Voldemort est vu par Fudge"],
+                options: ["Voldemort parvient à récupérer la prophétie avant que Harry ne la détruise", "Le Ministère reconnaît le retour de Voldemort, mais la prophétie est sauvée", "Harry et l'A.D. parviennent à capturer Lucius Malefoy et plusieurs mangemorts qui sont emprisonnés à Azkaban avant que Voldemort n'intervienne", "Sirius Black meurt, la prophétie est détruite, Voldemort est vu par Fudge"],
                 correct: 3,
                 explanation: "La bataille du Département des Mystères est un tournant de la saga. Sirius Black est tué par Bellatrix Lestrange (tombant à travers le voile). La prophétie est détruite (Harry la lâche). Voldemort lui-même apparaît dans l'Atrium de la MdM, forçant Fudge à admettre son retour. C'est la fin du déni politique. Plusieurs mangemorts sont capturés, mais Bellatrix s'échappe.",
                 source: "J.K. Rowling, Harry Potter et l'Ordre du Phénix (2003), Chapitres 35-36 — La bataille du Département des Mystères."
@@ -7001,7 +7001,7 @@ const quizzesData = {
             {
                 id: 30,
                 question: "Comment Harry détruit-il le Diadème de Serdaigle (Horcruxe) ?",
-                options: ["En le plongeant dans un chaudron d'eau de mer bouillie conjointement avec du venin de basilic", "En le lançant contre le miroir de Vérité dans la Salle sur Demande", "En prononçant la formule Horcruxeum Frangere que Hermione avait trouvée dans les archives de la bibliothèque interdite de Poudlard après des semaines de", "Il est détruit par le Fiendfye de Crabbe dans la Salle sur Demande"],
+                options: ["En le plongeant dans un chaudron d'eau de mer bouillie conjointement avec du venin de basilic", "En le lançant contre le miroir de Vérité dans la Salle sur Demande", "En prononçant la formule Horcruxeum Frangere trouvée par Hermione", "Il est détruit par le Fiendfye de Crabbe dans la Salle sur Demande"],
                 correct: 3,
                 explanation: "Le Diadème de Serdaigle est détruit involontairement par le Fiendfye (feu diabolique) déclenché par Vincent Crabbe dans la Salle sur Demande lors de la bataille de Poudlard. Le Fiendfye est un feu magique incontrôlable qui détruit tout sur son passage, y compris les Horcruxes — Crabbe lui-même en mourra, piégé par le feu qu'il ne peut contrôler.",
                 source: "J.K. Rowling, Harry Potter et les Reliques de la Mort (2007), Chapitre 31 — La bataille de Poudlard."
@@ -7025,7 +7025,7 @@ const quizzesData = {
             {
                 id: 33,
                 question: "Comment s'appelle le pub de Pré-au-Lard tenu par Madame Rosmerta ?",
-                options: ["Les Trois Balais", "La Citrouille Ailée", "L'Éclair d'Argent", "Les Trois Balais"],
+                options: ["Les Trois Balais", "La Citrouille Ailée", "L'Éclair d'Argent", "La Tête de Sanglier"],
                 correct: 0,
                 explanation: "Les Trois Balais est le pub principal de Pré-au-Lard, tenu par la belle Madame Rosmerta. C'est un lieu central de la vie sociale sorcière : Harry et ses amis s'y retrouvent lors des sorties à Pré-au-Lard, et c'est là qu'Harry entend pour la première fois la vérité sur la trahison de Sirius Black (tome 3). La Bièraubeurre y est réputée comme la meilleure du village.",
                 source: "J.K. Rowling, Harry Potter et le Prisonnier d'Azkaban (1999), Chapitre 10 — Les Trois Balais."
@@ -7033,7 +7033,7 @@ const quizzesData = {
             {
                 id: 34,
                 question: "Quel objet permet de voyager instantanément d'un endroit à un autre dans le monde sorcier ?",
-                options: ["Le Portoloin", "La Poudre de Cheminette", "L'Attrape-Portoloin", "Le Portoloin"],
+                options: ["Le Retourneur de Temps", "La Poudre de Cheminette", "L'Attrape-Portoloin", "Le Portoloin"],
                 correct: 3,
                 explanation: "Il existe plusieurs moyens de transport magique dans l'univers Potter : le Portoloin (objet enchanté qui transporte à une heure précise), la Poudre de Cheminette (voyage par les cheminées connectées), l'Apparition (téléportation directe, réservée aux sorciers majeurs ayant passé leur permis), et les balais. Chaque méthode a ses avantages et contraintes selon la situation.",
                 source: "J.K. Rowling, saga Harry Potter — moyens de transport magique détaillés dans plusieurs tomes."
@@ -9403,7 +9403,7 @@ const quizzesData = {
             {
                 id: 15,
                 question: "Quelle capitale européenne est la plus à l'est ?",
-                options: ["La capitale de Finlande", "La capitale de Grèce", "La capitale de Bulgarie", "La capitale de Chypre"],
+                options: ["Helsinki (Finlande)", "Athènes (Grèce)", "Sofia (Bulgarie)", "Nicosie (Chypre)"],
                 correct: 3,
                 explanation: "Nicosie (Lefkosia), capitale de Chypre, est la capitale européenne la plus à l'est, à environ 33°36' de longitude Est. Chypre est géographiquement en Asie mais politiquement membre de l'Union Européenne.",
                 source: "Eurostat — European capitals geolocation data."
@@ -9451,7 +9451,7 @@ const quizzesData = {
             {
                 id: 21,
                 question: "Dans quel pays se trouve la ville de Dubaï ?",
-                options: ["Arabie Saoudite", "Qatar", "Bahreïn", "Émirats Arabes Unis"],
+                options: ["L'Arabie Saoudite", "Le Sultanat d'Oman", "Le Royaume de Bahreïn", "Les Émirats Arabes Unis"],
                 correct: 3,
                 explanation: "Dubaï est la plus grande ville des Émirats Arabes Unis (EAU), un pays fédéral du Golfe Persique composé de 7 émirats. Abou Dhabi est la capitale fédérale. Dubaï compte environ 3,5 millions d'habitants.",
                 source: "Dubai Statistics Center — Population 2023."
@@ -9552,7 +9552,7 @@ const quizzesData = {
             {
                 id: 35,
                 question: "Qu'est-ce que le phénomène El Niño ?",
-                options: ["Une tempête tropicale récurrente", "Un refroidissement du Pacifique Nord", "Un réchauffement anormal du Pacifique équatorial est", "Un courant froid côtier sud-américain"],
+                options: ["Une tempête tropicale récurrente", "Un refroidissement du Pacifique Nord", "Un réchauffement anormal du Pacifique équatorial oriental", "Un courant froid côtier sud-américain"],
                 correct: 2,
                 explanation: "El Niño est un réchauffement anormal des eaux de surface de l'océan Pacifique tropical est, survenant tous les 2 à 7 ans. Il perturbe les régimes de pluie et de sécheresse à l'échelle mondiale.",
                 source: "WMO — El Niño/La Niña Update, World Meteorological Organization."

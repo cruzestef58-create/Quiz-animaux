@@ -1683,6 +1683,48 @@ footer p {
 }
 
 
+/* ---- Bouton "Prends Ta Place" ---- */
+.btn-place {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 1rem 2.5rem;
+    background: linear-gradient(135deg, rgba(212,175,55,0.15), rgba(155,93,229,0.12));
+    border: 2px solid rgba(212,175,55,0.35);
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    position: relative;
+    transition: transform 0.35s cubic-bezier(0.175,0.885,0.32,1.275), box-shadow 0.35s;
+    cursor: pointer;
+    overflow: hidden;
+}
+.btn-place::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(212,175,55,0.2), rgba(155,93,229,0.15));
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 50px;
+}
+.btn-place:hover {
+    transform: translateY(-4px) scale(1.04);
+    box-shadow: 0 12px 35px rgba(212,175,55,0.35), 0 0 30px rgba(155,93,229,0.2);
+}
+.btn-place:hover::after { opacity: 1; }
+.btn-place-sub {
+    font-size: 0.75rem;
+    font-weight: 500;
+    opacity: 0.7;
+    letter-spacing: 0.01em;
+}
+
+
 /* Ripple des boutons (etait injecte en JS au runtime) */
 @keyframes ripple {
     to { transform: scale(4); opacity: 0; }

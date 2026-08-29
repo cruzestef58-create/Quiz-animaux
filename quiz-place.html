@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prends Ta Place - QuizzlyUnivers</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .place-wrap { max-width: 900px; margin: 0 auto; }
+
+        /* ---------- Bandeau champion ---------- */
+        .champ-banner {
+            display: flex; align-items: center; justify-content: space-between;
+            gap: 1rem; flex-wrap: wrap;
+            background: linear-gradient(135deg, rgba(212,175,55,0.12), rgba(155,93,229,0.10));
+            border: 1px solid rgba(212,175,55,0.35);
+            border-radius: 16px; padding: 1.2rem 1.6rem; margin-bottom: 2rem;
+        }
+        .champ-id { display: flex; align-items: center; gap: 1rem; }
+        .champ-avatar { font-size: 2.8rem; line-height: 1; }
+        .champ-meta h3 { margin: 0; font-size: 1.15rem; color: #f0d98c; }
+        .champ-meta p  { margin: 0.15rem 0 0; font-size: 0.85rem; color: #94a3b8; }
+        .streak-box { text-align: center; }
+        .streak-num {
+            font-size: 2rem; font-weight: 800; line-height: 1;
+            background: linear-gradient(135deg, #d4af37, #f0d98c);
+            -webkit-background-clip: text; background-clip: text; color: transparent;
+        }
+        .streak-lbl { font-size: 0.7rem; color: #94a3b8; letter-spacing: 0.06em; text-transform: uppercase; }
+
+        /* ---------- Scores ---------- */
+        .score-row { display: flex; gap: 1rem; margin-bottom: 1.5rem; }
+        .score-box {
+            flex: 1; text-align: center; padding: 0.9rem;
+            border-radius: 12px; border: 2px solid transparent;
+            background: rgba(255,255,255,0.04);
+            transition: border-color 0.3s, background 0.3s;
+        }
+        .score-box.turn-active { border-color: currentColor; background: rgba(255,255,255,0.07); }
+        .score-box.you  { color: #4f8ef7; }
+        .score-box.opp  { color: #ef4444; }
+        .score-box .n   { font-size: 1.8rem; font-weight: 800; line-height: 1; }
+        .score-box .l   { font-size: 0.8rem; color: #94a3b8; margin-top: 0.2rem; }
+
+        /* ---------- Plateau 3x3 ---------- */
+        .board {
+            display: grid; grid-template-columns: repeat(3, 1fr);
+            gap: 0.8rem; margin-bottom: 1.5rem;
+        }
+        .cell {
+            aspect-ratio: 1; border-radius: 14px; cursor: pointer;
+            background: rgba(255,255,255,0.04);
+            border: 2px solid rgba(255,255,255,0.10);
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            gap: 0.4rem; padding: 0.5rem; text-align: center;
+            transition: transform 0.25s, border-color 0.25s, background 0.25s;
+        }
+        .cell:not(.taken):hover { transform: translateY(-4px); border-color: rgba(79,142,247,0.6); background: rgba(79,142,247,0.10); }
+        .cell .ic { font-size: 2rem; line-height: 1; }
+        .cell .nm { font-size: 0.78rem; font-weight: 600; color: #cbd5e1; line-height: 1.2; }
+        .cell.taken { cursor: not-allowed; }
+        .cell.you { background: rgba(79,142,247,0.22); border-color: #4f8ef7; }
+        .cell.opp { background: rgba(239,68,68,0.20); border-color: #ef4444; }
+        .cell.taken .nm { color: #fff; }
+        .cell.win { animation: cellwin 0.8s ease-in-out infinite alternate; }
+        @keyframes cellwin { from { box-shadow: 0 0 0 rgba(212,175,55,0); } to { box-shadow: 0 0 22px rgba(212,175,55,0.85); } }
+        .board.locked .cell:not(.taken) { cursor: wait; opacity: 0.55; }
+
+        /* ---------- Question ---------- */
+        .q-panel {
+            background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.10);
+            border-radius: 16px; padding: 1.8rem; margin-bottom: 1.5rem;
+        }
+        .q-theme {
+            display: inline-block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em;
+            text-transform: uppercase; color: #a5c8ff; background: rgba(79,142,247,0.18);
+            border: 1px solid rgba(79,142,247,0.35); border-radius: 20px;
+            padding: 0.25rem 0.8rem; margin-bottom: 1rem;
+        }
+        .q-text { font-size: 1.25rem; font-weight: 600; margin-bottom: 1.4rem; line-height: 1.45; }
+        .q-opts { display: grid; gap: 0.7rem; }
+        .q-opt {
+            text-align: left; padding: 0.95rem 1.2rem; border-radius: 10px;
+            background: rgba(255,255,255,0.05); border: 2px solid rgba(255,255,255,0.10);
+            color: #e2e8f0; font-size: 1rem; cursor: pointer; font-family: inherit;
+            transition: background 0.2s, border-color 0.2s, transform 0.2s;
+        }
+        .q-opt:hover:not(:disabled) { background: rgba(79,142,247,0.14); border-color: rgba(79,142,247,0.5); transform: translateX(4px); }
+        .q-opt:disabled { cursor: default; }
+        .q-opt.correct { background: rgba(34,197,94,0.22); border-color: #22c55e; color: #fff; }
+        .q-opt.wrong   { background: rgba(239,68,68,0.22); border-color: #ef4444; color: #fff; }
+
+        /* ---------- Chrono ---------- */
+        .timer-bar { height: 6px; border-radius: 3px; background: rgba(255,255,255,0.10); overflow: hidden; margin-bottom: 1.2rem; }
+        .timer-fill { height: 100%; width: 100%; border-radius: 3px; background: linear-gradient(90deg,#22c55e,#facc15,#ef4444); transform-origin: left; }
+
+        /* ---------- Log ---------- */
+        .log { min-height: 1.6rem; text-align: center; font-size: 0.95rem; color: #94a3b8; margin-bottom: 1rem; }
+        .log strong.you { color: #4f8ef7; }
+        .log strong.opp { color: #ef4444; }
+
+        /* ---------- Duel ---------- */
+        .duel-head { text-align: center; margin-bottom: 1.5rem; }
+        .duel-head h2 { font-size: 1.8rem; margin-bottom: 0.3rem; }
+        .duel-pips { display: flex; justify-content: center; gap: 0.4rem; margin-top: 0.8rem; }
+        .pip { width: 34px; height: 6px; border-radius: 3px; background: rgba(255,255,255,0.14); }
+        .pip.you { background: #4f8ef7; } .pip.opp { background: #ef4444; }
+
+        /* ---------- Écrans ---------- */
+        .screen { animation: fadeInUp 0.5s ease-out; }
+        .end-card { text-align: center; padding: 2.5rem 1.5rem; }
+        .end-emoji { font-size: 4.5rem; margin-bottom: 0.5rem; }
+        .end-card h2 { font-size: 2rem; margin-bottom: 0.6rem; }
+        .end-card p { color: #94a3b8; margin-bottom: 0.4rem; }
+        .rank-up {
+            display: inline-block; margin: 1rem 0;
+            background: linear-gradient(135deg, rgba(212,175,55,0.2), rgba(155,93,229,0.15));
+            border: 1px solid rgba(212,175,55,0.4); border-radius: 12px; padding: 0.8rem 1.4rem;
+            color: #f0d98c; font-weight: 700;
+        }
+        .rules { color:#94a3b8; font-size:0.92rem; line-height:1.7; }
+        .rules li { margin-bottom: 0.4rem; }
+        @media (max-width: 560px) {
+            .cell .ic { font-size: 1.5rem; } .cell .nm { font-size: 0.65rem; }
+            .q-text { font-size: 1.05rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo" onclick="location.href='index.html'">⚡ QuizzlyUnivers</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="javascript:void(0)" class="suggestion-button" onclick="suggestNewTheme()">Proposer un thème</a></li>
+                <li><a href="javascript:void(0)" class="report-button" onclick="openReportModal()">🐛 Signaler / Suggérer</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="place-wrap">
+
+            <!-- ÉCRAN ACCUEIL -->
+            <div id="screen-intro" class="screen">
+                <div class="quiz-header">
+                    <h1>👑 Prends Ta Place</h1>
+                    <p>Détrône le champion et défends ton titre le plus longtemps possible</p>
+                </div>
+
+                <div class="champ-banner">
+                    <div class="champ-id">
+                        <div class="champ-avatar" id="intro-avatar">🦊</div>
+                        <div class="champ-meta">
+                            <h3 id="intro-name">Champion en titre</h3>
+                            <p id="intro-desc">C'est lui qu'il faut battre</p>
+                        </div>
+                    </div>
+                    <div class="streak-box">
+                        <div class="streak-num" id="intro-streak">0</div>
+                        <div class="streak-lbl">Victoires d'affilée</div>
+                    </div>
+                    <div class="streak-box">
+                        <div class="streak-num" id="intro-best">0</div>
+                        <div class="streak-lbl">Record</div>
+                    </div>
+                </div>
+
+                <div class="q-panel">
+                    <h3 style="margin-bottom:1rem;">📜 Règles</h3>
+                    <ul class="rules">
+                        <li><strong>Manche 1 — Le Plateau.</strong> 9 thèmes en grille. Choisis une case, réponds à la question : si tu as juste tu captures la case, sinon le champion la prend.</li>
+                        <li><strong>Aligne 3 cases</strong> (ligne, colonne ou diagonale) pour remporter la manche immédiatement. Sinon, celui qui a le plus de cases gagne.</li>
+                        <li><strong>Manche 2 — Le Duel.</strong> 5 questions difficiles, 12 secondes chacune. Le meilleur score l'emporte.</li>
+                        <li><strong>Gagne et tu prends sa place.</strong> Ta série augmente, et le prochain champion sera plus fort.</li>
+                    </ul>
+                </div>
+
+                <div class="button-container">
+                    <button class="btn btn-primary" onclick="Place.start()">⚔️ Défier le champion</button>
+                    <button class="btn btn-secondary" onclick="location.href='index.html'">Retour à l'accueil</button>
+                </div>
+            </div>
+
+            <!-- ÉCRAN JEU -->
+            <div id="screen-game" class="screen" style="display:none;">
+                <div class="champ-banner">
+                    <div class="champ-id">
+                        <div class="champ-avatar" id="g-avatar">🦊</div>
+                        <div class="champ-meta">
+                            <h3 id="g-name">Champion</h3>
+                            <p id="g-phase">Manche 1 — Le Plateau</p>
+                        </div>
+                    </div>
+                    <div class="streak-box">
+                        <div class="streak-num" id="g-streak">0</div>
+                        <div class="streak-lbl">Série en cours</div>
+                    </div>
+                </div>
+
+                <div class="score-row">
+                    <div class="score-box you" id="box-you"><div class="n" id="sc-you">0</div><div class="l">Toi</div></div>
+                    <div class="score-box opp" id="box-opp"><div class="n" id="sc-opp">0</div><div class="l" id="lbl-opp">Champion</div></div>
+                </div>
+
+                <div class="log" id="log">À toi de jouer — choisis un thème.</div>
+
+                <div class="board" id="board"></div>
+
+                <div id="duel-zone" style="display:none;">
+                    <div class="duel-pips" id="pips"></div>
+                </div>
+
+                <div class="q-panel" id="q-panel" style="display:none;">
+                    <div class="timer-bar" id="timer-bar" style="display:none;"><div class="timer-fill" id="timer-fill"></div></div>
+                    <span class="q-theme" id="q-theme">Thème</span>
+                    <div class="q-text" id="q-text"></div>
+                    <div class="q-opts" id="q-opts"></div>
+                </div>
+            </div>
+
+            <!-- ÉCRAN FIN -->
+            <div id="screen-end" class="screen" style="display:none;">
+                <div class="q-panel end-card">
+                    <div class="end-emoji" id="end-emoji">🏆</div>
+                    <h2 id="end-title">Victoire !</h2>
+                    <p id="end-sub"></p>
+                    <div class="rank-up" id="end-rank" style="display:none;"></div>
+                    <p id="end-stats"></p>
+                    <div class="button-container" style="margin-top:1.5rem;">
+                        <button class="btn btn-primary" onclick="Place.start()">🔄 Rejouer</button>
+                        <button class="btn btn-secondary" onclick="location.href='index.html'">Accueil</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 QuizzlyUnivers — L'Univers du Quizz</p>
+    </footer>
+
+    <script src="questions.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="animations.js" defer></script>
+    <script src="place.js" defer></script>
+</body>
+</html>
