@@ -90,21 +90,47 @@ body::before {
 }
 
 .logo {
-    font-size: 1.6rem;
-    font-weight: 800;
-    background: linear-gradient(90deg, #4f8ef7 0%, #9b5de5 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    filter: drop-shadow(0 0 8px rgba(79, 142, 247, 0.5));
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    text-decoration: none;
     cursor: pointer;
     transition: transform 0.3s, filter 0.3s;
-    letter-spacing: -0.5px;
+    filter: drop-shadow(0 0 10px rgba(123, 116, 232, 0.35));
 }
 
 .logo:hover {
-    transform: scale(1.05);
-    filter: drop-shadow(0 0 14px rgba(79, 142, 247, 0.8));
+    transform: scale(1.04);
+    filter: drop-shadow(0 0 16px rgba(123, 116, 232, 0.6));
+}
+
+.logo-icone {
+    height: 44px;
+    width: auto;
+    display: block;
+}
+
+.logo-texte {
+    height: 30px;
+    width: auto;
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .logo-icone { height: 38px; }
+    .logo-texte { height: 25px; }
+}
+
+@media (max-width: 700px) {
+    .logo { gap: 0.45rem; }
+    .logo-icone { height: 32px; }
+    .logo-texte { height: 21px; }
+}
+
+@media (max-width: 430px) {
+    .logo-icone { height: 28px; }
+    /* Sous 430px le texte prend trop de place : on ne garde que l'icone */
+    .logo-texte { display: none; }
 }
 
 .nav-menu {
@@ -224,7 +250,6 @@ body::before {
     .nav-menu a { height: 34px; font-size: 0.86rem; }
     .report-button { padding: 0 0.9rem !important; font-size: 0.78rem !important; }
     .nav-menu a.nav-support { padding: 0 1.4rem; font-size: 0.78rem; }
-    .logo { font-size: 1.15rem; }
 }
 
 @media (max-width: 430px) {
@@ -232,7 +257,6 @@ body::before {
     .nav-menu li:last-child { margin-left: 0.25rem; }
     .nav-menu a { height: 32px; font-size: 0.8rem; }
     .nav-menu a.report-button, .nav-menu a.nav-support { font-size: 0.73rem; padding: 0 0.9rem; }
-    .logo { font-size: 1rem; }
 }
 
 /* Report Modal */
