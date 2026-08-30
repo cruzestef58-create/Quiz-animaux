@@ -1992,6 +1992,78 @@ footer p {
 .logo-icone { filter: drop-shadow(0 0 8px rgba(124, 58, 237, 0.55)); }
 
 
+/* ============================================================
+   Distinguer une CATEGORIE d'un QUIZ
+   Rond = une collection a ouvrir · Carre arrondi = un quiz a jouer
+   ============================================================ */
+
+/* ---- Carte de categorie : pastille ronde ---- */
+.category-card .theme-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 96px;
+    height: 96px;
+    font-size: 2.9rem;
+    border-radius: 50%;                      /* le rond signale une collection */
+    background: radial-gradient(circle at 35% 30%, rgba(124,58,237,0.30), rgba(37,99,235,0.16));
+    border: 2px solid rgba(124, 58, 237, 0.38);
+    box-shadow: inset 0 0 22px rgba(124,58,237,0.18);
+    margin-bottom: 1.2rem;
+}
+
+.category-card:hover .theme-icon {
+    border-color: rgba(192, 38, 211, 0.6);
+    box-shadow: inset 0 0 26px rgba(192,38,211,0.24), 0 0 22px rgba(124,58,237,0.3);
+}
+
+/* ---- Carte de quiz : tuile carree arrondie ---- */
+.quiz-card .theme-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 84px;
+    height: 84px;
+    font-size: 2.5rem;
+    border-radius: 22px;                     /* le carre signale un element jouable */
+    background: linear-gradient(140deg, rgba(37,99,235,0.24), rgba(34,211,238,0.14));
+    border: 2px solid rgba(34, 211, 238, 0.34);
+    animation: none;                         /* pas de rebond : c'est une action, pas une invitation */
+    margin-bottom: 1.1rem;
+}
+
+.quiz-card:hover .theme-icon {
+    border-color: rgba(34, 211, 238, 0.7);
+    box-shadow: 0 0 20px rgba(34, 211, 238, 0.28);
+}
+
+/* Liseré cyan a gauche : rappelle qu'on est un cran plus bas dans la navigation */
+.quiz-card {
+    border-left: 3px solid rgba(34, 211, 238, 0.5) !important;
+}
+
+/* ---- Fil d'Ariane dans le titre de section ---- */
+.fil-ariane {
+    font-size: 0.55em;
+    font-weight: 600;
+    color: var(--light-text);
+    vertical-align: middle;
+}
+
+.fil-sep {
+    display: inline-block;
+    margin: 0 0.5rem;
+    font-size: 0.6em;
+    color: rgba(168, 130, 255, 0.55);
+    vertical-align: middle;
+}
+
+@media (max-width: 520px) {
+    .category-card .theme-icon { width: 78px; height: 78px; font-size: 2.3rem; }
+    .quiz-card .theme-icon { width: 68px; height: 68px; font-size: 2rem; border-radius: 18px; }
+}
+
+
 /* Ripple des boutons (etait injecte en JS au runtime) */
 @keyframes ripple {
     to { transform: scale(4); opacity: 0; }

@@ -672,7 +672,9 @@ function createReportModal() {
                     <option value="general">Général / Autre</option>
                 </select>
                 <label class="report-label">Description</label>
-                <textarea id="report-text" class="report-textarea" placeholder="Décris le problème ou la suggestion ici…" rows="4"></textarea>
+                <textarea id="report-text" class="report-textarea" placeholder="Décris le problème ou la suggestion ici…" rows="4" maxlength="1000"></textarea>
+                <input type="text" id="report-gotcha" name="_gotcha" tabindex="-1" autocomplete="off"
+                       aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;height:0;width:0;">
                 <button id="report-submit-btn" class="btn btn-primary">Envoyer</button>
             </div>
             <div id="report-history" class="report-history"></div>
@@ -719,9 +721,10 @@ const DELAI_ENVOI_MS = 30 * 1000;   // 30 s entre deux envois
 const MAX_ENVOIS_JOUR = 5;
 
 function peutEnvoyer() {
-    let hist;
+    let hist = [];
     try {
-        hist = JSON.parse(localStorage.getItem('quizzly_envois') || '[]');
+        const parsed = JSON.parse(localStorage.getItem('quizzly_envois') || '[]');
+        if (Array.isArray(parsed)) hist = parsed.filter(t => typeof t === 'number');
     } catch (e) { hist = []; }
 
     const maintenant = Date.now();
@@ -747,6 +750,10 @@ async function submitReport() {
     const quiz = document.getElementById('report-quiz-select').value;
     const text = document.getElementById('report-text').value.trim();
 
+    // Piege a robots : un humain ne voit pas ce champ, donc ne le remplit jamais.
+    const piege = document.getElementById('report-gotcha');
+    if (piege && piege.value) { closeReportModal(); return; }
+
     if (!text) { alert('Merci d\'écrire une description avant d\'envoyer.'); return; }
     if (text.length > MAX_MESSAGE) { alert('Message trop long (1000 caractères maximum).'); return; }
 
@@ -762,6 +769,7 @@ async function submitReport() {
             method: 'POST',
             headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
             body: JSON.stringify({
+                _gotcha: '',
                 type: type === 'bug' ? '🐛 Bug / Erreur' : '💡 Suggestion',
                 quiz: quiz || 'Général',
                 message: text,
@@ -791,7 +799,15 @@ async function submitReport() {
 function renderReportHistory() {
     const container = document.getElementById('report-history');
     if (!container) return;
-    const reports = JSON.parse(localStorage.getItem('quizReports') || '[]');
+    // Lecture defensive : en navigation privee ou si la donnee est corrompue,
+    // un JSON.parse nu leverait une exception et casserait la fenetre.
+    let reports = [];
+    try {
+        const brut = localStorage.getItem('quizReports');
+        const parsed = brut ? JSON.parse(brut) : [];
+        if (Array.isArray(parsed)) reports = parsed.slice(-20);   // borne la croissance
+    } catch (e) { reports = []; }
+
     if (reports.length === 0) { container.innerHTML = ''; return; }
     container.innerHTML = `<h3>Tes signalements (${reports.length})</h3>` +
         reports.slice().reverse().map(r => `
@@ -893,12 +909,14 @@ const categories = {
         ]
     },
     filmsseries: {
-        label: '🎬 Films & Séries',
+        label: '🎬 Pop Culture',
         quizzes: [
             { icon: '⚡', title: 'Harry Potter', desc: 'Sorts, Horcruxes, Poudlard et tous les secrets de l\'univers de J.K. Rowling.', url: 'quiz-harry-potter.html' },
             { icon: '⭐', title: 'Star Wars', desc: 'La Force, les Jedi, les Sith et toute la saga Skywalker dans une galaxie très très lointaine.', url: 'quiz-star-wars.html' },
             { icon: '🩸', title: 'Jujutsu Kaisen', desc: 'Sukuna, Gojo, les fléaux maudits et toute la saga Jujutsu Kaisen de Gege Akutami.', url: 'quiz-jujutsu-kaisen.html' },
             { icon: '🎥', title: 'Cinéma', desc: 'Acteurs, réalisateurs, films cultes, séries, Cannes et Oscars — le cinéma en grand.', url: 'quiz-cinema.html' },
+            { icon: '🔴', title: 'Pokémon', desc: 'Types, évolutions, régions, légendaires et toute l\'histoire de la saga.', url: 'quiz-pokemon.html' },
+            { icon: '🦸', title: 'Marvel', desc: 'Super-héros, comics, Vengeurs, Pierres d\'Infinité et univers cinématographique.', url: 'quiz-marvel.html' },
         ]
     },
 };
@@ -910,15 +928,16 @@ function openCategory(key) {
     // Afficher les sous-thèmes
     const grid = document.getElementById('subthemes-grid');
     grid.innerHTML = cat.quizzes.map(q => `
-        <div class="theme-card" style="animation: fadeInUp 0.4s ease both;">
+        <div class="theme-card quiz-card" style="animation: fadeInUp 0.4s ease both;">
             <div class="theme-icon">${q.icon}</div>
             <h3>${q.title}</h3>
             <p>${q.desc}</p>
-            <a href="${q.url}" class="btn btn-primary">Commencer le Quiz</a>
+            <a href="${q.url}" class="btn btn-primary">▶ Commencer le quiz</a>
         </div>
     `).join('');
 
-    document.getElementById('themes-title').textContent = cat.label;
+    const titre = document.getElementById('themes-title');
+    titre.innerHTML = `<span class="fil-ariane">Thèmes</span><span class="fil-sep">›</span>${escapeHtml(cat.label)}`;
     document.getElementById('categories-view').classList.add('hidden');
     document.getElementById('subthemes-view').classList.remove('hidden');
     hideCategoryPagination();
@@ -1308,6 +1327,32 @@ function startQuizCinema(difficulty) {
     nextBtn.onclick = () => quizManager.nextQuestion();
 }
 window.startQuizCinema = startQuizCinema;
+
+function startQuizPokemon(difficulty) {
+    document.getElementById('difficulty-selection').style.display = 'none';
+    document.getElementById('quiz-container').style.display = 'block';
+
+    const quizData = quizzesData.pokemon;
+    quizManager = new QuizManager(quizData, difficulty);
+    quizManager.init();
+
+    const nextBtn = document.getElementById('next-button');
+    nextBtn.onclick = () => quizManager.nextQuestion();
+}
+window.startQuizPokemon = startQuizPokemon;
+
+function startQuizMarvel(difficulty) {
+    document.getElementById('difficulty-selection').style.display = 'none';
+    document.getElementById('quiz-container').style.display = 'block';
+
+    const quizData = quizzesData.marvel;
+    quizManager = new QuizManager(quizData, difficulty);
+    quizManager.init();
+
+    const nextBtn = document.getElementById('next-button');
+    nextBtn.onclick = () => quizManager.nextQuestion();
+}
+window.startQuizMarvel = startQuizMarvel;
 
 function startQuizCultureG(difficulty) {
     document.getElementById('difficulty-selection').style.display = 'none';

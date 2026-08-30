@@ -11709,4 +11709,1070 @@ const quizzesData = {
             }
         ]
     }
+,
+
+    pokemon: {
+        title: "Pokémon",
+        description: "Créatures, types, régions, évolutions et histoire de la saga",
+        facile: [
+            {
+                id: 1,
+                question: "Quel est le Pokémon emblématique de la saga ?",
+                options: ["Évoli", "Pikachu", "Salamèche", "Rondoudou"],
+                correct: 1,
+                explanation: "Pikachu, numéro 025 du Pokédex, est la mascotte officielle de la franchise depuis l'anime de 1997. De type Électrik, il accompagne Sacha dans la série télévisée et est devenu l'un des personnages les plus reconnus au monde.",
+                source: "The Pokémon Company — Pokédex officiel, entrée n°025."
+            },
+            {
+                id: 2,
+                question: "De quel type est Pikachu ?",
+                options: ["Feu", "Électrik", "Plante", "Psy"],
+                correct: 1,
+                explanation: "Pikachu est de type Électrik. Il stocke l'électricité dans les poches rouges de ses joues et la libère lors de ses attaques. Il évolue en Raichu au contact d'une Pierre Foudre.",
+                source: "The Pokémon Company — Pokédex officiel, types élémentaires."
+            },
+            {
+                id: 3,
+                question: "Combien de Pokémon comptait la première génération ?",
+                options: ["100 Pokémon", "151 Pokémon", "200 Pokémon", "251 Pokémon"],
+                correct: 1,
+                explanation: "La première génération compte 151 Pokémon, de Bulbizarre (001) à Mew (151). Ce chiffre est devenu culte et sert souvent de référence nostalgique pour les joueurs de la première heure.",
+                source: "Game Freak — Pokémon Rouge et Bleu, Pokédex national."
+            },
+            {
+                id: 4,
+                question: "Quel objet sert à capturer les Pokémon ?",
+                options: ["La Pierre Lune", "La Poké Ball", "Le Pokédex", "La Super Bonbon"],
+                correct: 1,
+                explanation: "La Poké Ball est l'outil de capture standard. Il en existe de nombreuses variantes : Super Ball, Hyper Ball, et la Master Ball qui capture n'importe quel Pokémon sans échec possible.",
+                source: "The Pokémon Company — Objets et mécaniques de jeu."
+            },
+            {
+                id: 5,
+                question: "Comment s'appelle le héros de la série animée ?",
+                options: ["Pierre", "Sacha", "Ondine", "Régis"],
+                correct: 1,
+                explanation: "Sacha (Ash Ketchum en version originale) est le héros de l'anime depuis 1997. Originaire du Bourg Palette, il voyage avec Pikachu dans le but de devenir Maître Pokémon.",
+                source: "The Pokémon Company — Série animée Pokémon, personnages principaux."
+            },
+            {
+                id: 6,
+                question: "Quelle est la région de la première génération ?",
+                options: ["Johto", "Kanto", "Hoenn", "Sinnoh"],
+                correct: 1,
+                explanation: "Kanto est la région des jeux Pokémon Rouge et Bleu. Elle s'inspire de la région réelle du Kantō au Japon, qui inclut Tokyo. Le Bourg Palette et la Ligue Indigo s'y trouvent.",
+                source: "Game Freak — Pokémon Rouge et Bleu, carte de Kanto."
+            },
+            {
+                id: 7,
+                question: "Comment s'appelle l'organisation criminelle de Kanto ?",
+                options: ["La Team Aqua", "La Team Rocket", "La Team Magma", "La Team Galaxie"],
+                correct: 1,
+                explanation: "La Team Rocket est l'organisation criminelle des jeux de première génération, dirigée par Giovanni. Dans l'anime, le trio Jessie, James et Miaouss poursuit inlassablement le Pikachu de Sacha.",
+                source: "The Pokémon Company — Antagonistes de la première génération."
+            },
+            {
+                id: 8,
+                question: "Quel Pokémon de départ est de type Feu à Kanto ?",
+                options: ["Bulbizarre", "Salamèche", "Carapuce", "Caninos"],
+                correct: 1,
+                explanation: "Salamèche est le starter de type Feu de Kanto. Il évolue en Reptincel puis en Dracaufeu. La flamme au bout de sa queue reflète sa santé : si elle s'éteint, le Pokémon meurt.",
+                source: "Game Freak — Pokémon Rouge et Bleu, Pokémon de départ."
+            },
+            {
+                id: 9,
+                question: "Quel Pokémon de départ est de type Eau à Kanto ?",
+                options: ["Bulbizarre", "Salamèche", "Carapuce", "Ptitard"],
+                correct: 2,
+                explanation: "Carapuce est le starter de type Eau de Kanto. Il évolue en Carabaffe puis en Tortank. Sa carapace le protège et lui permet de projeter de puissants jets d'eau.",
+                source: "Game Freak — Pokémon Rouge et Bleu, Pokémon de départ."
+            },
+            {
+                id: 10,
+                question: "Quel Pokémon de départ est de type Plante à Kanto ?",
+                options: ["Bulbizarre", "Salamèche", "Carapuce", "Chétiflor"],
+                correct: 0,
+                explanation: "Bulbizarre est le starter de type Plante et Poison de Kanto, et porte le numéro 001 du Pokédex. Il évolue en Herbizarre puis en Florizarre. Le bulbe sur son dos grandit en absorbant l'énergie solaire.",
+                source: "Game Freak — Pokémon Rouge et Bleu, Pokémon de départ."
+            },
+            {
+                id: 11,
+                question: "En quelle évolution Magicarpe se transforme-t-il ?",
+                options: ["Léviator", "Aquali", "Tortank", "Hypocéan"],
+                correct: 0,
+                explanation: "Magicarpe, réputé pour son inutilité au combat, évolue en Léviator au niveau 20. Ce contraste spectaculaire entre un poisson inoffensif et un dragon marin redoutable est l'une des évolutions les plus célèbres.",
+                source: "The Pokémon Company — Pokédex, évolution de Magicarpe."
+            },
+            {
+                id: 12,
+                question: "Quel appareil recense tous les Pokémon rencontrés ?",
+                options: ["La Poké Montre", "Le Pokédex", "Le Vokit", "Le Pokématos"],
+                correct: 1,
+                explanation: "Le Pokédex est une encyclopédie électronique portable qui enregistre automatiquement les données de chaque Pokémon vu ou capturé. Le Professeur Chen le confie au héros au début de l'aventure.",
+                source: "The Pokémon Company — Objets emblématiques de la saga."
+            },
+            {
+                id: 13,
+                question: "Comment s'appelle le professeur de la région de Kanto ?",
+                options: ["Professeur Orme", "Professeur Chen", "Professeur Seko", "Professeur Sorbier"],
+                correct: 1,
+                explanation: "Le Professeur Chen (Oak en version originale) est le spécialiste des Pokémon de Kanto. C'est lui qui remet le premier Pokémon et le Pokédex au héros. Chaque région possède son propre professeur.",
+                source: "Game Freak — Pokémon Rouge et Bleu, personnages."
+            },
+            {
+                id: 14,
+                question: "Quel Pokémon dort en travers des routes dans les jeux ?",
+                options: ["Rondoudou", "Ronflex", "Léviator", "Ectoplasma"],
+                correct: 1,
+                explanation: "Ronflex bloque certaines routes de Kanto et ne peut être réveillé qu'avec la Pokéflûte. Il pèse 460 kilos et passe l'essentiel de son temps à manger et à dormir.",
+                source: "Game Freak — Pokémon Rouge et Bleu, Pokémon bloquants."
+            },
+            {
+                id: 15,
+                question: "Quel Pokémon est réputé être le plus mignon et chante pour endormir ?",
+                options: ["Pikachu", "Rondoudou", "Évoli", "Miaouss"],
+                correct: 1,
+                explanation: "Rondoudou endort ses adversaires en chantant. Dans l'anime, il dessine au feutre sur le visage de ceux qui s'endorment pendant sa prestation, un gag récurrent de la série.",
+                source: "The Pokémon Company — Pokédex, capacité Berceuse."
+            },
+            {
+                id: 16,
+                question: "Quel Pokémon peut prendre l'apparence de n'importe quel autre ?",
+                options: ["Mew", "Métamorph", "Ectoplasma", "Mimiqui"],
+                correct: 1,
+                explanation: "Métamorph utilise la capacité Morphing pour copier l'apparence et les statistiques de son adversaire. Il est aussi très utilisé en élevage car il peut se reproduire avec presque tous les Pokémon.",
+                source: "The Pokémon Company — Pokédex, capacité Morphing."
+            },
+            {
+                id: 17,
+                question: "Quelle société développe les jeux Pokémon principaux ?",
+                options: ["Nintendo EPD", "Game Freak", "HAL Laboratory", "Creatures Inc."],
+                correct: 1,
+                explanation: "Game Freak développe les jeux principaux depuis 1996, sous la direction de Satoshi Tajiri. Nintendo en assure l'édition et The Pokémon Company gère la licence dans son ensemble.",
+                source: "Game Freak — Historique de la société, 1996."
+            },
+            {
+                id: 18,
+                question: "En quelle année est sorti le premier jeu Pokémon ?",
+                options: ["En 1991", "En 1996", "En 1999", "En 2001"],
+                correct: 1,
+                explanation: "Pokémon Rouge et Vert sont sortis au Japon le 27 février 1996 sur Game Boy. L'Occident a reçu Pokémon Rouge et Bleu en 1998, après un travail d'adaptation important.",
+                source: "Nintendo — Historique des sorties Pokémon, 1996."
+            },
+            {
+                id: 19,
+                question: "Quel Pokémon légendaire a été créé en laboratoire ?",
+                options: ["Mew", "Mewtwo", "Artikodin", "Lugia"],
+                correct: 1,
+                explanation: "Mewtwo a été créé génétiquement à partir de l'ADN de Mew, dans le Manoir Abandonné de l'Île Écume. De type Psy, il est l'un des Pokémon les plus puissants de la première génération.",
+                source: "Game Freak — Pokémon Rouge et Bleu, journaux du Manoir Abandonné."
+            },
+            {
+                id: 20,
+                question: "Quel Pokémon accompagne toujours Sacha dans l'anime ?",
+                options: ["Salamèche", "Pikachu", "Bulbizarre", "Dracaufeu"],
+                correct: 1,
+                explanation: "Pikachu refuse de rester dans sa Poké Ball et voyage sur l'épaule de Sacha depuis le tout premier épisode. Leur relation est le fil rouge émotionnel de la série animée.",
+                source: "The Pokémon Company — Série animée, épisode 1, 1997."
+            },
+            {
+                id: 21,
+                question: "Comment appelle-t-on un dresseur qui a battu tous les champions ?",
+                options: ["Un Maître Pokémon", "Un Champion d'Arène", "Un Dresseur d'élite", "Un Pokémon Ranger"],
+                correct: 0,
+                explanation: "Le titre de Maître Pokémon s'obtient après avoir battu les quatre membres du Conseil 4 puis le Maître en titre. C'est l'objectif ultime de Sacha dans l'anime.",
+                source: "The Pokémon Company — Structure de la Ligue Pokémon."
+            },
+            {
+                id: 22,
+                question: "Quel objet permet de faire évoluer certains Pokémon ?",
+                options: ["Une pierre d'évolution", "Une Super Potion", "Un Rappel", "Une Baie Oran"],
+                correct: 0,
+                explanation: "Les pierres d'évolution — Pierre Feu, Pierre Foudre, Pierre Eau, Pierre Plante, Pierre Lune — déclenchent l'évolution de certains Pokémon. Évoli en possède le plus grand nombre de destinations possibles.",
+                source: "The Pokémon Company — Objets d'évolution."
+            },
+            {
+                id: 23,
+                question: "Quel Pokémon est surnommé le Pokémon Évolutif ?",
+                options: ["Métamorph", "Évoli", "Mew", "Insécateur"],
+                correct: 1,
+                explanation: "Évoli possède un patrimoine génétique instable qui lui permet d'évoluer en huit formes différentes selon la méthode employée : pierre, amitié, lieu ou moment de la journée.",
+                source: "The Pokémon Company — Pokédex, entrée d'Évoli."
+            },
+            {
+                id: 24,
+                question: "Quel jeu mobile a relancé la popularité de Pokémon en 2016 ?",
+                options: ["Pokémon Masters", "Pokémon GO", "Pokémon Unite", "Pokémon Café Mix"],
+                correct: 1,
+                explanation: "Pokémon GO, développé par Niantic, utilise la réalité augmentée et la géolocalisation pour capturer des Pokémon dans le monde réel. Le jeu a dépassé le milliard de téléchargements.",
+                source: "Niantic — Pokémon GO, communiqué de lancement 2016."
+            },
+            {
+                id: 25,
+                question: "De quel type est Dracaufeu ?",
+                options: ["Feu et Dragon", "Feu et Vol", "Dragon et Vol", "Feu uniquement"],
+                correct: 1,
+                explanation: "Contrairement à une idée très répandue, Dracaufeu n'est pas de type Dragon mais de type Feu et Vol. Il est donc doublement vulnérable aux attaques Roche, une faiblesse redoutée des joueurs.",
+                source: "The Pokémon Company — Pokédex, entrée n°006."
+            },
+            {
+                id: 26,
+                question: "Combien de types élémentaires existe-t-il aujourd'hui ?",
+                options: ["15 types", "17 types", "18 types", "20 types"],
+                correct: 2,
+                explanation: "Il existe 18 types depuis la sixième génération, qui a introduit le type Fée pour rééquilibrer les Dragons, jugés trop puissants. Le type Ténèbres et le type Acier étaient apparus en deuxième génération.",
+                source: "The Pokémon Company — Table des types, sixième génération."
+            },
+            {
+                id: 27,
+                question: "Quel est le premier Pokémon du Pokédex national ?",
+                options: ["Pikachu", "Bulbizarre", "Salamèche", "Mew"],
+                correct: 1,
+                explanation: "Bulbizarre porte le numéro 001 du Pokédex national. L'ordre suit celui de la première génération, où les starters ouvrent la liste : Bulbizarre, Salamèche puis Carapuce.",
+                source: "The Pokémon Company — Pokédex national, numérotation."
+            },
+            {
+                id: 28,
+                question: "Où les dresseurs soignent-ils gratuitement leurs Pokémon ?",
+                options: ["À la Poké Boutique", "au Centre Pokémon", "à l'Arène", "au Laboratoire"],
+                correct: 1,
+                explanation: "Les Centres Pokémon, reconnaissables à leur toit rouge, soignent gratuitement les Pokémon blessés. L'infirmière Joëlle et son Leveinard y accueillent les dresseurs dans toutes les régions.",
+                source: "The Pokémon Company — Lieux emblématiques de la saga."
+            },
+            {
+                id: 29,
+                question: "Que remporte un dresseur qui bat un champion d'arène ?",
+                options: ["Une médaille", "Une Poké Ball rare", "Un Pokémon légendaire", "Une somme d'argent"],
+                correct: 0,
+                explanation: "Chaque victoire en arène rapporte un badge. Il en faut huit pour accéder à la Ligue Pokémon. Les badges augmentent aussi l'obéissance des Pokémon échangés et débloquent certaines capacités hors combat.",
+                source: "Game Freak — Système des badges d'arène."
+            },
+            {
+                id: 30,
+                question: "Quel Pokémon rose est considéré comme l'ancêtre de tous les autres ?",
+                options: ["Mewtwo", "Mew", "Rondoudou", "Melmetal"],
+                correct: 1,
+                explanation: "Mew possède l'ADN de tous les Pokémon connus, ce qui lui permet d'apprendre n'importe quelle capacité. Extrêmement rare, il n'était obtenable qu'à l'occasion d'événements officiels dans les premiers jeux.",
+                source: "The Pokémon Company — Pokédex, entrée n°151."
+            },
+            {
+                id: 101,
+                type: "vrai_faux",
+                question: "Pikachu évolue en Raichu grâce à une Pierre Foudre.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Pikachu n'évolue pas par niveau mais au contact d'une Pierre Foudre. Beaucoup de joueurs choisissent de ne pas le faire évoluer, car Raichu n'apprend plus de nouvelles capacités par la suite.",
+                source: "The Pokémon Company — Méthodes d'évolution, Pierre Foudre."
+            },
+            {
+                id: 102,
+                type: "vrai_faux",
+                question: "Dracaufeu est un Pokémon de type Dragon.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! C'est l'une des erreurs les plus répandues de la saga. Malgré son apparence de dragon, Dracaufeu est de type Feu et Vol. Il ne devient Dragon que sous sa Méga-Évolution X.",
+                source: "The Pokémon Company — Pokédex, entrée n°006, types."
+            },
+            {
+                id: 103,
+                type: "vrai_faux",
+                question: "Le type Fée a été introduit dès la première génération.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Le type Fée est apparu en 2013 avec la sixième génération (Pokémon X et Y). Il a été créé pour contrer la domination des Pokémon Dragon en combat compétitif.",
+                source: "The Pokémon Company — Pokémon X et Y, nouveautés 2013."
+            }
+        ],
+        moyen: [
+            {
+                id: 11,
+                question: "Combien d'évolutions différentes Évoli possède-t-il ?",
+                options: ["Cinq évolutions", "Six évolutions", "Huit évolutions", "Neuf évolutions"],
+                correct: 2,
+                explanation: "Évoli compte huit évolutions : Aquali, Voltali, Pyroli, Mentali, Noctali, Phyllali, Givrali et Nymphali. Chacune s'obtient par une méthode différente — pierre, amitié, lieu ou affection.",
+                source: "The Pokémon Company — Lignée évolutive d'Évoli."
+            },
+            {
+                id: 12,
+                question: "Quels sont les trois oiseaux légendaires de Kanto ?",
+                options: ["Lugia, Ho-Oh et Celebi", "Artikodin, Électhor et Sulfura", "Raikou, Entei et Suicune", "Latios, Latias et Rayquaza"],
+                correct: 1,
+                explanation: "Artikodin (Glace/Vol), Électhor (Électrik/Vol) et Sulfura (Feu/Vol) forment le trio légendaire de la première génération. Ils sont au cœur de l'intrigue du deuxième film de la série animée.",
+                source: "Game Freak — Pokémon Rouge et Bleu, Pokémon légendaires."
+            },
+            {
+                id: 13,
+                question: "Qui est le créateur de la franchise Pokémon ?",
+                options: ["Shigeru Miyamoto", "Satoshi Tajiri", "Junichi Masuda", "Ken Sugimori"],
+                correct: 1,
+                explanation: "Satoshi Tajiri a conçu Pokémon en s'inspirant de sa passion d'enfance pour la collection d'insectes. Ken Sugimori en a dessiné les créatures et Junichi Masuda composé les musiques.",
+                source: "Game Freak — Entretien fondateur de Satoshi Tajiri."
+            },
+            {
+                id: 14,
+                question: "Quelle est la région de la troisième génération ?",
+                options: ["Johto", "Hoenn", "Sinnoh", "Unys"],
+                correct: 1,
+                explanation: "Hoenn est la région de Pokémon Rubis et Saphir, sortis en 2002. Inspirée de l'île japonaise de Kyūshū, elle comporte de nombreuses zones maritimes et oppose la Team Aqua à la Team Magma.",
+                source: "Game Freak — Pokémon Rubis et Saphir, 2002."
+            },
+            {
+                id: 15,
+                question: "Quel type est efficace contre les Pokémon Dragon ?",
+                options: ["Le type Combat", "Le type Fée", "Le type Poison", "Le type Insecte"],
+                correct: 1,
+                explanation: "Les types Fée, Glace et Dragon sont efficaces contre les Dragons. Le type Fée y est de surcroît totalement immunisé aux attaques Dragon, ce qui en fait le contre idéal en combat compétitif.",
+                source: "The Pokémon Company — Table d'efficacité des types."
+            },
+            {
+                id: 16,
+                question: "Quel Pokémon est réputé pour son extrême rareté dans les jeux de première génération ?",
+                options: ["Mew", "Ronflex", "Insécateur", "Porygon"],
+                correct: 0,
+                explanation: "Mew n'était obtenable que lors d'événements officiels organisés par Nintendo. Sa légende s'est nourrie de rumeurs de cour de récréation, dont celle du camion près du S.S. Anne, entièrement fausse.",
+                source: "Nintendo — Distributions événementielles de Mew, 1996-1999."
+            },
+            {
+                id: 17,
+                question: "Que signifie l'abréviation PV dans les jeux Pokémon ?",
+                options: ["Points de Victoire", "Points de Vie", "Puissance Vitale", "Potentiel Variable"],
+                correct: 1,
+                explanation: "Les PV, ou Points de Vie, mesurent l'endurance d'un Pokémon au combat. Quand ils tombent à zéro, le Pokémon est K.O. et doit être soigné dans un Centre Pokémon ou avec un Rappel.",
+                source: "The Pokémon Company — Statistiques de combat."
+            },
+            {
+                id: 18,
+                question: "Quel Pokémon possède la capacité signature Draco-Choc dans la première génération ?",
+                options: ["Dracaufeu", "Dracolosse", "Léviator", "Ptéra"],
+                correct: 1,
+                explanation: "Dracolosse est le seul véritable Pokémon Dragon pleinement évolué de la première génération. Il met 55 niveaux à évoluer depuis Minidraco, l'une des progressions les plus longues du jeu.",
+                source: "Game Freak — Pokémon Rouge et Bleu, lignée de Minidraco."
+            },
+            {
+                id: 19,
+                question: "Quelle génération a introduit les types Ténèbres et Acier ?",
+                options: ["La deuxième génération", "La troisième génération", "La quatrième génération", "La sixième génération"],
+                correct: 0,
+                explanation: "Pokémon Or et Argent, sortis en 1999, ont ajouté les types Ténèbres et Acier pour équilibrer les Pokémon Psy, jugés trop dominants en première génération. Ils ont aussi introduit le cycle jour-nuit.",
+                source: "Game Freak — Pokémon Or et Argent, nouveautés 1999."
+            },
+            {
+                id: 20,
+                question: "Comment s'appelle la ligue finale de la région de Kanto ?",
+                options: ["La Ligue Indigo", "Le Conseil des Quatre", "La Tour de Combat", "L'Arène Suprême"],
+                correct: 0,
+                explanation: "La Ligue Indigo se situe sur la Route Victoire, à la frontière entre Kanto et Johto. Le dresseur doit y affronter successivement les quatre membres du Conseil 4 puis le Maître en titre.",
+                source: "Game Freak — Pokémon Rouge et Bleu, Ligue Pokémon."
+            },
+            {
+                id: 21,
+                question: "Quel Pokémon a été retiré d'un épisode de l'anime après un incident au Japon ?",
+                options: ["Ectoplasma", "Porygon", "Mewtwo", "Kadabra"],
+                correct: 1,
+                explanation: "L'épisode « Le Soldat Porygon », diffusé en 1997, contenait une séquence stroboscopique qui a provoqué des crises d'épilepsie chez des centaines d'enfants japonais. Porygon n'est jamais réapparu dans la série.",
+                source: "TV Tokyo — Retrait de l'épisode 38, décembre 1997."
+            },
+            {
+                id: 22,
+                question: "Quelle console a accueilli les premiers jeux Pokémon ?",
+                options: ["La NES", "La Game Boy", "La Super Nintendo", "La Nintendo 64"],
+                correct: 1,
+                explanation: "Pokémon Rouge et Vert sont sortis sur Game Boy en 1996, alors que la console était considérée en fin de vie. Le succès du jeu a prolongé sa carrière de plusieurs années.",
+                source: "Nintendo — Historique de la Game Boy et de Pokémon."
+            },
+            {
+                id: 23,
+                question: "Quel Pokémon fantôme est l'évolution finale de Fantominus ?",
+                options: ["Spectrum", "Ectoplasma", "Noctali", "Ténéfix"],
+                correct: 1,
+                explanation: "Fantominus évolue en Spectrum au niveau 25, puis en Ectoplasma uniquement par échange. Ce mode d'évolution obligeait les joueurs à posséder un câble link et un partenaire de jeu.",
+                source: "The Pokémon Company — Lignée évolutive de Fantominus."
+            },
+            {
+                id: 24,
+                question: "Quelle est la particularité du Pokémon Mimiqui ?",
+                options: ["Il change de type au combat", "Il se déguise en Pikachu", "Il copie les capacités adverses", "Il double sa vitesse la nuit"],
+                correct: 1,
+                explanation: "Mimiqui se dissimule sous un chiffon imitant grossièrement Pikachu, dans l'espoir d'être aimé. Son Pokédex précise que quiconque a vu son apparence réelle en est mort de terreur.",
+                source: "The Pokémon Company — Pokédex, entrée de Mimiqui, septième génération."
+            },
+            {
+                id: 25,
+                question: "Combien de badges faut-il obtenir pour accéder à la Ligue ?",
+                options: ["Six badges", "Huit badges", "Dix badges", "Douze badges"],
+                correct: 1,
+                explanation: "Huit badges d'arène sont nécessaires pour accéder à la Ligue Pokémon. Ce nombre est resté constant à travers la quasi-totalité des générations, devenant une signature de la structure des jeux.",
+                source: "Game Freak — Structure des jeux principaux Pokémon."
+            },
+            {
+                id: 201,
+                type: "vrai_faux",
+                question: "Certains Pokémon n'évoluent que par échange entre deux joueurs.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Ectoplasma, Alakazam, Scarabrute et Ossatueur figurent parmi les Pokémon qui n'évoluent que par échange entre deux consoles. Cette mécanique poussait les joueurs à se retrouver pour compléter leur Pokédex.",
+                source: "The Pokémon Company — Évolutions par échange."
+            },
+            {
+                id: 202,
+                type: "vrai_faux",
+                question: "Le nom Pokémon vient de la contraction de Pocket Monsters.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Pokémon est la contraction de « Pocket Monsters », le titre japonais original de la série. Ce nom fait référence aux créatures que l'on transporte dans sa poche à l'intérieur des Poké Balls.",
+                source: "The Pokémon Company — Origine du nom Pokémon."
+            },
+            {
+                id: 203,
+                type: "vrai_faux",
+                question: "Pokémon est la franchise médiatique la plus rentable de l'histoire.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Toutes activités confondues — jeux vidéo, cartes à collectionner, produits dérivés, films — Pokémon dépasse les 90 milliards de dollars de revenus cumulés, devant Hello Kitty et Star Wars.",
+                source: "Statista / TitleMax — Classement des franchises médiatiques les plus rentables."
+            }
+        ],
+        difficile: [
+            {
+                id: 31,
+                question: "Quel Pokémon a le plus grand nombre de formes régionales connues ?",
+                options: ["Évoli", "Ossatueur", "Miaouss", "Rattata"],
+                correct: 2,
+                explanation: "Miaouss possède trois formes régionales — Kanto, Alola et Galar — ainsi qu'un Gigamax. Il est le seul Pokémon à disposer d'autant de variantes officielles selon les régions.",
+                source: "The Pokémon Company — Formes régionales, huitième génération."
+            },
+            {
+                id: 32,
+                question: "Quelle est la statistique cachée qui influence la puissance d'un Pokémon ?",
+                options: ["Les IV, valeurs individuelles", "Le niveau d'amitié", "Le taux de capture", "La nature seule"],
+                correct: 0,
+                explanation: "Les IV (Individual Values) sont des valeurs invisibles de 0 à 31 attribuées à chaque statistique dès la rencontre. Combinées aux EV gagnés en combat et à la nature, elles déterminent la puissance finale.",
+                source: "Game Freak — Mécaniques de statistiques, IV et EV."
+            },
+            {
+                id: 33,
+                question: "Quel Pokémon possède le taux de capture le plus faible du jeu ?",
+                options: ["Mewtwo", "Les légendaires en général", "Métamorph", "Ronflex"],
+                correct: 1,
+                explanation: "Les Pokémon légendaires partagent généralement un taux de capture de 3 sur 255, le plus bas du jeu. Cela rend leur capture extrêmement longue sans Master Ball ni stratégie de statut et de PV réduits.",
+                source: "Game Freak — Taux de capture, données internes des jeux."
+            },
+            {
+                id: 34,
+                question: "Que désigne le terme shiny dans la communauté Pokémon ?",
+                options: ["Un Pokémon de niveau maximal", "Un Pokémon de couleur alternative", "Un Pokémon légendaire", "Un Pokémon parfaitement entraîné"],
+                correct: 1,
+                explanation: "Un Pokémon shiny, ou chromatique, arbore une coloration différente de la normale. Introduits en deuxième génération, ils apparaissent à raison d'environ 1 sur 8 192 dans les jeux d'origine.",
+                source: "The Pokémon Company — Pokémon chromatiques, Or et Argent."
+            },
+            {
+                id: 35,
+                question: "Quel glitch célèbre permettait de dupliquer des objets en première génération ?",
+                options: ["Le glitch MissingNo", "Le glitch de la Ligue", "Le glitch du vélo", "Le glitch de Mew sous le camion"],
+                correct: 0,
+                explanation: "MissingNo est un Pokémon erroné apparaissant sur la Route Cinabre après une manipulation précise. Sa rencontre multipliait par 128 le sixième objet du sac, une exploitation massivement utilisée par les joueurs.",
+                source: "Nintendo — Documentation des anomalies de Pokémon Rouge et Bleu."
+            },
+            {
+                id: 36,
+                question: "Comment s'appelle le système de reproduction des Pokémon ?",
+                options: ["La Pension Pokémon", "Le Laboratoire", "Le Centre d'élevage", "La Garderie royale"],
+                correct: 0,
+                explanation: "La Pension Pokémon, introduite dès la première génération et enrichie en deuxième, permet de faire garder deux Pokémon compatibles qui peuvent produire un Œuf. C'est la base de l'élevage compétitif.",
+                source: "Game Freak — Pension Pokémon et groupes d'œufs."
+            },
+            {
+                id: 37,
+                question: "Quel Pokémon change de forme selon la météo dans le jeu ?",
+                options: ["Morphéo", "Métamorph", "Deoxys", "Kyogre"],
+                correct: 0,
+                explanation: "Morphéo adopte quatre formes différentes selon la météo en cours : normale, ensoleillée, pluvieuse et neigeuse. Sa capacité spéciale Météo change également le type de son attaque signature.",
+                source: "The Pokémon Company — Pokédex de Morphéo, troisième génération."
+            },
+            {
+                id: 38,
+                question: "Quelle mécanique a été introduite par Pokémon X et Y en 2013 ?",
+                options: ["Les Méga-Évolutions", "Le Dynamax", "Le Térastal", "Les Capacités Z"],
+                correct: 0,
+                explanation: "Les Méga-Évolutions permettent une transformation temporaire en combat via une Méga-Gemme. Le Dynamax est apparu en huitième génération et le Térastal en neuvième, chaque génération apportant sa mécanique propre.",
+                source: "The Pokémon Company — Pokémon X et Y, Méga-Évolution."
+            },
+            {
+                id: 39,
+                question: "Quel Pokémon détient le record de statistique d'Attaque de base ?",
+                options: ["Dracolosse", "Mewtwo", "Rayquaza", "Les formes Primo-Groudon et Kyogre"],
+                correct: 3,
+                explanation: "Primo-Groudon atteint 180 en Attaque, l'une des valeurs les plus élevées du jeu. Les formes primitives introduites en Rubis Oméga et Saphir Alpha figurent parmi les Pokémon les plus puissants jamais créés.",
+                source: "The Pokémon Company — Statistiques de base, formes primitives."
+            },
+            {
+                id: 40,
+                question: "Quel est le nom japonais original de la franchise ?",
+                options: ["Poketto Monsuta", "Monster Ball", "Pocket Fighters", "Capsule Monsters"],
+                correct: 0,
+                explanation: "Le titre japonais est ポケットモンスター (Poketto Monsutā), soit « Pocket Monsters ». Le projet s'appelait initialement Capsule Monsters, mais ce nom posait des problèmes de dépôt de marque.",
+                source: "Game Freak — Genèse du projet, entretiens de développement."
+            },
+            {
+                id: 301,
+                type: "vrai_faux",
+                question: "Il est possible de rencontrer Mew sous un camion près du S.S. Anne.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! C'est la rumeur de cour de récréation la plus célèbre de l'histoire du jeu vidéo. Le camion existe bien dans le code, mais aucune manipulation ne permet d'y trouver Mew. La légende s'est propagée dans le monde entier.",
+                source: "Nintendo — Démentis officiels sur les rumeurs de Pokémon Rouge et Bleu."
+            },
+            {
+                id: 302,
+                type: "vrai_faux",
+                question: "Le jeu de cartes Pokémon est plus ancien que la série animée.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le jeu de cartes à collectionner est sorti au Japon en octobre 1996, tandis que la série animée a débuté en avril 1997. Les cartes sont donc antérieures de six mois environ.",
+                source: "The Pokémon Company — Chronologie des produits Pokémon."
+            },
+            {
+                id: 303,
+                type: "vrai_faux",
+                question: "Satoshi Tajiri s'est inspiré de sa collection d'insectes pour créer Pokémon.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Enfant, Satoshi Tajiri collectionnait les insectes dans la banlieue de Tokyo, au point d'être surnommé « Docteur Insecte ». L'urbanisation ayant fait disparaître ces terrains, il a voulu recréer cette expérience en jeu vidéo.",
+                source: "Time Magazine — Entretien avec Satoshi Tajiri, 1999."
+            }
+        ]
+    }
+,
+
+    marvel: {
+        title: "Marvel",
+        description: "Super-héros, comics, MCU et univers Marvel",
+        facile: [
+            {
+                id: 1,
+                question: "Quelle est la véritable identité de Spider-Man ?",
+                options: ["Bruce Banner", "Peter Parker", "Tony Stark", "Steve Rogers"],
+                correct: 1,
+                explanation: "Peter Parker, lycéen new-yorkais orphelin élevé par son oncle Ben et sa tante May, devient Spider-Man après la morsure d'une araignée radioactive. Il apparaît pour la première fois en 1962.",
+                source: "Marvel Comics — Amazing Fantasy n°15, août 1962."
+            },
+            {
+                id: 2,
+                question: "Qui se cache derrière l'armure d'Iron Man ?",
+                options: ["Bruce Wayne", "Tony Stark", "Reed Richards", "Hank Pym"],
+                correct: 1,
+                explanation: "Tony Stark, milliardaire et génie de l'ingénierie, conçoit sa première armure alors qu'il est retenu prisonnier. Le personnage est créé en 1963 et lance l'univers cinématographique Marvel en 2008.",
+                source: "Marvel Comics — Tales of Suspense n°39, mars 1963."
+            },
+            {
+                id: 3,
+                question: "Quel est le vrai nom de Captain America ?",
+                options: ["Sam Wilson", "Steve Rogers", "Bucky Barnes", "Clint Barton"],
+                correct: 1,
+                explanation: "Steve Rogers, jeune homme frêle refusé à l'armée, reçoit le sérum du super-soldat pendant la Seconde Guerre mondiale. Créé en 1941, il est l'un des plus anciens héros Marvel.",
+                source: "Marvel Comics — Captain America Comics n°1, mars 1941."
+            },
+            {
+                id: 4,
+                question: "En quel personnage se transforme Bruce Banner ?",
+                options: ["La Chose", "Hulk", "Wolverine", "Colossus"],
+                correct: 1,
+                explanation: "Le scientifique Bruce Banner se transforme en Hulk après une exposition aux rayons gamma. Plus il est en colère, plus il devient puissant. Le personnage est créé en 1962 par Stan Lee et Jack Kirby.",
+                source: "Marvel Comics — The Incredible Hulk n°1, mai 1962."
+            },
+            {
+                id: 5,
+                question: "Quel est le nom du marteau de Thor ?",
+                options: ["Gungnir", "Mjolnir", "Stormbreaker", "Excalibur"],
+                correct: 1,
+                explanation: "Mjolnir est forgé au cœur d'une étoile mourante. Seul celui qui en est digne peut le soulever, une règle qui devient un ressort comique et dramatique majeur de la saga.",
+                source: "Marvel Comics — Journey into Mystery n°83, août 1962."
+            },
+            {
+                id: 6,
+                question: "Comment s'appelle l'équipe de super-héros réunissant Iron Man et Thor ?",
+                options: ["Les Quatre Fantastiques", "Les Vengeurs", "Les X-Men", "Les Défenseurs"],
+                correct: 1,
+                explanation: "Les Vengeurs (Avengers) sont créés en 1963. L'équipe initiale réunit Iron Man, Thor, Hulk, Ant-Man et la Guêpe. Captain America les rejoint dès le quatrième numéro.",
+                source: "Marvel Comics — The Avengers n°1, septembre 1963."
+            },
+            {
+                id: 7,
+                question: "Quel métal compose le bouclier de Captain America ?",
+                options: ["L'adamantium", "Le vibranium", "L'uru", "Le titane"],
+                correct: 1,
+                explanation: "Le bouclier est fait de vibranium, un métal originaire du Wakanda capable d'absorber les vibrations et les chocs. L'adamantium, lui, recouvre le squelette de Wolverine.",
+                source: "Marvel Comics — Origines du bouclier de Captain America."
+            },
+            {
+                id: 8,
+                question: "Quel est le pays fictif dirigé par Black Panther ?",
+                options: ["La Latvérie", "Le Wakanda", "La Sokovie", "Atlantis"],
+                correct: 1,
+                explanation: "Le Wakanda est une nation africaine technologiquement très avancée grâce à ses gisements de vibranium. T'Challa en est le roi et le protecteur sous le nom de Black Panther.",
+                source: "Marvel Comics — Fantastic Four n°52, juillet 1966."
+            },
+            {
+                id: 9,
+                question: "Quel super-héros possède des griffes rétractables ?",
+                options: ["Cyclope", "Wolverine", "Le Fauve", "Diablo"],
+                correct: 1,
+                explanation: "Wolverine, de son vrai nom Logan, possède des griffes en adamantium et un facteur de guérison qui le rend quasi immortel. Il apparaît d'abord comme adversaire de Hulk en 1974.",
+                source: "Marvel Comics — The Incredible Hulk n°180-181, 1974."
+            },
+            {
+                id: 10,
+                question: "Quel film a lancé l'univers cinématographique Marvel en 2008 ?",
+                options: ["Hulk", "Iron Man", "Thor", "Captain America"],
+                correct: 1,
+                explanation: "Iron Man, réalisé par Jon Favreau avec Robert Downey Jr., sort en 2008 et fonde le MCU. Le pari était risqué : Iron Man était alors un personnage secondaire du catalogue Marvel.",
+                source: "Marvel Studios — Iron Man, notes de production 2008."
+            },
+            {
+                id: 11,
+                question: "Qui est le principal antagoniste de la saga de l'Infini ?",
+                options: ["Loki", "Thanos", "Ultron", "Kang"],
+                correct: 1,
+                explanation: "Thanos cherche à réunir les six Pierres d'Infinité pour éliminer la moitié de la vie dans l'univers. Il domine la trame narrative du MCU de 2012 à 2019, aboutissement dans Avengers: Endgame.",
+                source: "Marvel Studios — Avengers: Infinity War et Endgame."
+            },
+            {
+                id: 12,
+                question: "Combien y a-t-il de Pierres d'Infinité ?",
+                options: ["Quatre pierres", "Cinq pierres", "Six pierres", "Sept pierres"],
+                correct: 2,
+                explanation: "Il existe six Pierres d'Infinité : Espace, Esprit, Réalité, Pouvoir, Temps et Âme. Chacune contrôle un aspect fondamental de l'existence, et leur réunion confère un pouvoir quasi illimité.",
+                source: "Marvel Studios — Les Pierres d'Infinité, univers cinématographique."
+            },
+            {
+                id: 13,
+                question: "Qui a cofondé Marvel et fait de nombreux caméos au cinéma ?",
+                options: ["Bob Kane", "Stan Lee", "Jack Kirby", "Jim Lee"],
+                correct: 1,
+                explanation: "Stan Lee a cocréé Spider-Man, les X-Men, Iron Man et bien d'autres avec Jack Kirby et Steve Ditko. Il apparaît en caméo dans presque tous les films Marvel jusqu'à sa mort en 2018.",
+                source: "Marvel Entertainment — Hommage à Stan Lee, 2018."
+            },
+            {
+                id: 14,
+                question: "Quel est le frère adoptif de Thor ?",
+                options: ["Heimdall", "Loki", "Baldur", "Fandral"],
+                correct: 1,
+                explanation: "Loki, dieu de la malice, est en réalité un Géant des Glaces recueilli et élevé par Odin. Son ambiguïté entre ennemi et allié en fait l'un des personnages les plus appréciés du public.",
+                source: "Marvel Comics — Journey into Mystery n°85, octobre 1962."
+            },
+            {
+                id: 15,
+                question: "Quelle équipe compte Star-Lord et Rocket dans ses rangs ?",
+                options: ["Les Éternels", "Les Gardiens de la Galaxie", "Les Inhumains", "Les Illuminati"],
+                correct: 1,
+                explanation: "Les Gardiens de la Galaxie réunissent Star-Lord, Gamora, Drax, Rocket et Groot. Leur adaptation en 2014 a imposé un ton comique et musical inédit dans l'univers Marvel.",
+                source: "Marvel Studios — Les Gardiens de la Galaxie, 2014."
+            },
+            {
+                id: 16,
+                question: "Quelle phrase Groot répète-t-il en permanence ?",
+                options: ["Je suis Groot", "Groot arrive", "Groot est là", "Pour Groot"],
+                correct: 0,
+                explanation: "Groot ne prononce que « Je suis Groot », mais l'intonation lui permet d'exprimer des sens très différents. Seul Rocket parvient à le comprendre parfaitement.",
+                source: "Marvel Studios — Les Gardiens de la Galaxie, dialogues."
+            },
+            {
+                id: 17,
+                question: "Quelle agence Nick Fury dirige-t-il ?",
+                options: ["Le S.H.I.E.L.D.", "L'HYDRA", "Le S.W.O.R.D.", "Le T.V.A."],
+                correct: 0,
+                explanation: "Nick Fury dirige le S.H.I.E.L.D., agence de renseignement chargée de gérer les menaces surhumaines. C'est lui qui réunit l'équipe des Vengeurs dans le film de 2012.",
+                source: "Marvel Studios — Avengers, 2012."
+            },
+            {
+                id: 18,
+                question: "Quel héros Marvel est aveugle ?",
+                options: ["Le Punisher", "Daredevil", "Luke Cage", "Iron Fist"],
+                correct: 1,
+                explanation: "Matt Murdock, avocat le jour et Daredevil la nuit, a perdu la vue enfant dans un accident chimique. Ses autres sens sont devenus surhumains, notamment un sens radar très développé.",
+                source: "Marvel Comics — Daredevil n°1, avril 1964."
+            },
+            {
+                id: 19,
+                question: "Quel héros porte un costume rouge et noir avec un humour très décalé ?",
+                options: ["Punisher", "Deadpool", "Venom", "Carnage"],
+                correct: 1,
+                explanation: "Wade Wilson, alias Deadpool, possède un facteur de guérison qui le rend presque impossible à tuer. Il est connu pour briser le quatrième mur en s'adressant directement au lecteur ou au spectateur.",
+                source: "Marvel Comics — The New Mutants n°98, février 1991."
+            },
+            {
+                id: 20,
+                question: "Quel est le nom du majordome numérique de Tony Stark ?",
+                options: ["FRIDAY", "JARVIS", "KAREN", "EDITH"],
+                correct: 1,
+                explanation: "JARVIS assiste Tony Stark dans la gestion de ses armures et de sa maison. Après les événements d'Ultron, son code devient la base de Vision, et FRIDAY prend le relais.",
+                source: "Marvel Studios — Iron Man et Avengers: L'Ère d'Ultron."
+            },
+            {
+                id: 21,
+                question: "Quelle équipe de mutants dirige le Professeur Xavier ?",
+                options: ["Les Vengeurs", "Les X-Men", "Les Quatre Fantastiques", "Les Éternels"],
+                correct: 1,
+                explanation: "Charles Xavier fonde l'école pour jeunes surdoués et les X-Men, une équipe de mutants luttant pour la coexistence pacifique. Le récit sert d'allégorie aux discriminations depuis 1963.",
+                source: "Marvel Comics — The X-Men n°1, septembre 1963."
+            },
+            {
+                id: 22,
+                question: "Quel est le principal adversaire des X-Men ?",
+                options: ["Le Docteur Fatalis", "Magnéto", "Le Bouffon Vert", "Red Skull"],
+                correct: 1,
+                explanation: "Magnéto contrôle le magnétisme et défend la suprématie des mutants. Rescapé des camps nazis, son passé explique sa méfiance radicale envers l'humanité, ce qui en fait un antagoniste nuancé.",
+                source: "Marvel Comics — The X-Men n°1, septembre 1963."
+            },
+            {
+                id: 23,
+                question: "Quel super-héros peut changer de taille ?",
+                options: ["Vision", "Ant-Man", "Faucon", "Œil-de-Faucon"],
+                correct: 1,
+                explanation: "Ant-Man utilise les particules Pym pour rétrécir jusqu'à la taille d'une fourmi ou grandir démesurément. Hank Pym crée le personnage, Scott Lang lui succède dans les films.",
+                source: "Marvel Comics — Tales to Astonish n°35, septembre 1962."
+            },
+            {
+                id: 24,
+                question: "Quel journal emploie Peter Parker comme photographe ?",
+                options: ["Le Daily Planet", "Le Daily Bugle", "Le New York Times", "Le Gotham Gazette"],
+                correct: 1,
+                explanation: "Peter Parker vend au Daily Bugle des photos de Spider-Man, c'est-à-dire de lui-même. Son rédacteur en chef J. Jonah Jameson mène pourtant une campagne acharnée contre le héros.",
+                source: "Marvel Comics — The Amazing Spider-Man, Daily Bugle."
+            },
+            {
+                id: 25,
+                question: "Quel héros est un maître des arts mystiques ?",
+                options: ["Docteur Strange", "Docteur Fatalis", "Moon Knight", "Blade"],
+                correct: 0,
+                explanation: "Stephen Strange, chirurgien brillant et arrogant, perd l'usage de ses mains dans un accident. Il apprend la magie auprès de l'Ancien au Kamar-Taj et devient Sorcier Suprême.",
+                source: "Marvel Comics — Strange Tales n°110, juillet 1963."
+            },
+            {
+                id: 26,
+                question: "Quel personnage devient Captain America après Steve Rogers ?",
+                options: ["Bucky Barnes", "Sam Wilson", "James Rhodes", "Clint Barton"],
+                correct: 1,
+                explanation: "Sam Wilson, jusqu'alors le Faucon, reçoit le bouclier des mains de Steve Rogers à la fin d'Avengers: Endgame. La série Falcon et le Soldat de l'Hiver développe cette transmission.",
+                source: "Marvel Studios — Avengers: Endgame et Falcon and the Winter Soldier."
+            },
+            {
+                id: 27,
+                question: "Quel symbiote extraterrestre s'attache à un hôte humain ?",
+                options: ["Ultron", "Venom", "Vision", "Sentry"],
+                correct: 1,
+                explanation: "Venom est un symbiote qui fusionne avec un hôte pour lui conférer force et agilité. Il s'attache d'abord à Spider-Man, puis à Eddie Brock qui devient sa version la plus connue.",
+                source: "Marvel Comics — The Amazing Spider-Man n°300, mai 1988."
+            },
+            {
+                id: 28,
+                question: "Quel héros manie un arc et des flèches ?",
+                options: ["Faucon", "Œil-de-Faucon", "Black Widow", "Winter Soldier"],
+                correct: 1,
+                explanation: "Clint Barton, alias Œil-de-Faucon, est un archer d'exception sans aucun super-pouvoir. Il compense par une précision infaillible et un arsenal de flèches spécialisées.",
+                source: "Marvel Comics — Tales of Suspense n°57, septembre 1964."
+            },
+            {
+                id: 29,
+                question: "Quelle société possède Marvel depuis 2009 ?",
+                options: ["Warner Bros.", "Disney", "Sony", "Paramount"],
+                correct: 1,
+                explanation: "Disney a racheté Marvel Entertainment en 2009 pour environ 4 milliards de dollars. L'opération s'est révélée extrêmement rentable, le MCU dépassant depuis les 30 milliards de recettes.",
+                source: "The Walt Disney Company — Communiqué d'acquisition, 2009."
+            },
+            {
+                id: 30,
+                question: "Quel film Marvel a conclu la saga de l'Infini en 2019 ?",
+                options: ["Infinity War", "Avengers: Endgame", "Captain Marvel", "Spider-Man: Far From Home"],
+                correct: 1,
+                explanation: "Avengers: Endgame conclut onze ans de récit en 22 films. Devenu brièvement le plus gros succès du box-office mondial, il dépasse les 2,79 milliards de dollars de recettes.",
+                source: "Marvel Studios — Avengers: Endgame, données box-office 2019."
+            },
+            {
+                id: 101,
+                type: "vrai_faux",
+                question: "Spider-Man a été créé par Stan Lee et Steve Ditko.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Stan Lee a imaginé le concept et Steve Ditko a conçu le costume ainsi que l'apparence définitive du personnage. Spider-Man apparaît pour la première fois dans Amazing Fantasy n°15, en 1962.",
+                source: "Marvel Comics — Amazing Fantasy n°15, crédits de création."
+            },
+            {
+                id: 102,
+                type: "vrai_faux",
+                question: "Le bouclier de Captain America est fait d'adamantium.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Le bouclier est en vibranium, un métal absorbant les vibrations, originaire du Wakanda. L'adamantium est un alliage artificiel indestructible, celui qui recouvre le squelette de Wolverine.",
+                source: "Marvel Comics — Composition du bouclier de Captain America."
+            },
+            {
+                id: 103,
+                type: "vrai_faux",
+                question: "Marvel s'appelait autrefois Timely Comics.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Fondée en 1939 par Martin Goodman sous le nom de Timely Publications, la société devient Atlas Comics dans les années 1950, puis Marvel Comics au début des années 1960.",
+                source: "Marvel Entertainment — Histoire de la société, 1939."
+            }
+        ],
+        moyen: [
+            {
+                id: 11,
+                question: "Quelle Pierre d'Infinité était dissimulée dans le sceptre de Loki ?",
+                options: ["La Pierre de l'Espace", "La Pierre de l'Esprit", "La Pierre du Temps", "La Pierre de l'Âme"],
+                correct: 1,
+                explanation: "La Pierre de l'Esprit, de couleur jaune, se trouvait dans le sceptre de Loki avant d'être intégrée au front de Vision. Elle permet de contrôler les esprits et d'amplifier les capacités mentales.",
+                source: "Marvel Studios — Avengers et L'Ère d'Ultron."
+            },
+            {
+                id: 12,
+                question: "Quel objet contenait la Pierre de l'Espace dans le MCU ?",
+                options: ["L'Œil d'Agamotto", "Le Tesseract", "L'Éther", "L'Orbe"],
+                correct: 1,
+                explanation: "Le Tesseract est un cube bleu abritant la Pierre de l'Espace. Étudié par HYDRA pendant la guerre puis par le S.H.I.E.L.D., il permet d'ouvrir des portails à travers l'univers.",
+                source: "Marvel Studios — Captain America: First Avenger et Avengers."
+            },
+            {
+                id: 13,
+                question: "Quel est le vrai nom du Soldat de l'Hiver ?",
+                options: ["Sam Wilson", "Bucky Barnes", "Brock Rumlow", "Everett Ross"],
+                correct: 1,
+                explanation: "James Buchanan « Bucky » Barnes, ami d'enfance de Steve Rogers, est cru mort pendant la guerre. Capturé et conditionné par HYDRA, il devient un assassin doté d'un bras métallique.",
+                source: "Marvel Comics — Captain America n°1 vol.5, janvier 2005."
+            },
+            {
+                id: 14,
+                question: "Quelle organisation infiltre le S.H.I.E.L.D. dans Le Soldat de l'Hiver ?",
+                options: ["La Main", "HYDRA", "L'A.I.M.", "Les Dix Anneaux"],
+                correct: 1,
+                explanation: "HYDRA, ancienne division scientifique nazie, s'infiltre secrètement dans le S.H.I.E.L.D. dès sa fondation. La révélation de 2014 bouleverse durablement la structure du MCU.",
+                source: "Marvel Studios — Captain America: Le Soldat de l'Hiver, 2014."
+            },
+            {
+                id: 15,
+                question: "Quel héros a été le premier créé par Marvel ?",
+                options: ["Captain America", "La Torche Humaine originelle", "Namor", "Spider-Man"],
+                correct: 1,
+                explanation: "La Torche Humaine originelle, un androïde, apparaît dans Marvel Comics n°1 en octobre 1939, aux côtés de Namor. Ces personnages précèdent Captain America de deux ans.",
+                source: "Marvel Comics — Marvel Comics n°1, octobre 1939."
+            },
+            {
+                id: 16,
+                question: "Quel personnage devient Vision dans le MCU ?",
+                options: ["JARVIS", "Ultron", "FRIDAY", "Zola"],
+                correct: 0,
+                explanation: "Vision naît de la fusion du code de JARVIS, d'un corps synthétique conçu par Ultron et de la Pierre de l'Esprit. Sa capacité à soulever Mjolnir surprend l'ensemble des Vengeurs.",
+                source: "Marvel Studios — Avengers: L'Ère d'Ultron, 2015."
+            },
+            {
+                id: 17,
+                question: "Quel est le nom du royaume de Thor ?",
+                options: ["Vanaheim", "Asgard", "Jotunheim", "Niflheim"],
+                correct: 1,
+                explanation: "Asgard est l'un des Neuf Royaumes, dirigé par Odin puis par Thor. Détruit lors du Ragnarök, le peuple asgardien s'installe ensuite sur Terre, à New Asgard, en Norvège.",
+                source: "Marvel Studios — Thor: Ragnarok, 2017."
+            },
+            {
+                id: 18,
+                question: "Quel scientifique devient le Docteur Fatalis ?",
+                options: ["Otto Octavius", "Victor Von Fatalis", "Curt Connors", "Norman Osborn"],
+                correct: 1,
+                explanation: "Victor Von Fatalis (Doctor Doom) règne sur la Latvérie. Génie scientifique et maître de la magie, il est l'ennemi juré des Quatre Fantastiques et l'un des plus grands vilains de Marvel.",
+                source: "Marvel Comics — Fantastic Four n°5, juillet 1962."
+            },
+            {
+                id: 19,
+                question: "Quelle est la particularité de la série WandaVision ?",
+                options: ["Elle est entièrement animée", "Elle pastiche les sitcoms par décennie", "Elle se déroule dans le futur", "Elle est muette"],
+                correct: 1,
+                explanation: "WandaVision traverse les époques de la sitcom américaine, des années 1950 aux années 2000, avec les codes visuels de chaque décennie. Ce dispositif traduit le deuil de Wanda Maximoff.",
+                source: "Marvel Studios — WandaVision, Disney+, 2021."
+            },
+            {
+                id: 20,
+                question: "Quel est le vrai nom de Black Widow ?",
+                options: ["Maria Hill", "Natasha Romanoff", "Sharon Carter", "Melina Vostokoff"],
+                correct: 1,
+                explanation: "Natasha Romanoff, ancienne espionne russe formée dans la Chambre Rouge, rejoint le S.H.I.E.L.D. puis les Vengeurs. Elle se sacrifie sur Vormir pour obtenir la Pierre de l'Âme.",
+                source: "Marvel Comics — Tales of Suspense n°52, avril 1964."
+            },
+            {
+                id: 21,
+                question: "Qui a créé Ultron dans le MCU ?",
+                options: ["Hank Pym", "Tony Stark et Bruce Banner", "Nick Fury", "Le Docteur Fatalis"],
+                correct: 1,
+                explanation: "Dans les films, Tony Stark et Bruce Banner créent Ultron comme programme de défense planétaire. Dans les comics, c'est Hank Pym qui en est l'inventeur, une différence notable entre les deux versions.",
+                source: "Marvel Studios — Avengers: L'Ère d'Ultron, 2015."
+            },
+            {
+                id: 22,
+                question: "Quel héros porte le nom de code Faucon ?",
+                options: ["Bucky Barnes", "Sam Wilson", "Clint Barton", "James Rhodes"],
+                correct: 1,
+                explanation: "Sam Wilson vole grâce à un harnais à ailes conçu par l'armée. Vétéran et conseiller pour anciens combattants, il devient l'un des plus proches alliés de Steve Rogers.",
+                source: "Marvel Comics — Captain America n°117, septembre 1969."
+            },
+            {
+                id: 23,
+                question: "Quelle mini-série suit un agent temporel traquant les variants ?",
+                options: ["Hawkeye", "Loki", "Moon Knight", "Ms. Marvel"],
+                correct: 1,
+                explanation: "La série Loki met en scène le Tribunal des Variations Anachroniques (TVA), chargé de préserver la Ligne Temporelle Sacrée. Elle introduit le multivers et le personnage de Kang.",
+                source: "Marvel Studios — Loki, Disney+, 2021."
+            },
+            {
+                id: 24,
+                question: "Quel personnage a le facteur de guérison le plus célèbre ?",
+                options: ["Hulk", "Wolverine", "Vision", "Colossus"],
+                correct: 1,
+                explanation: "Le facteur de guérison de Wolverine lui permet de survivre à des blessures mortelles et ralentit considérablement son vieillissement, ce qui explique qu'il ait traversé plus d'un siècle d'histoire.",
+                source: "Marvel Comics — Pouvoirs de Wolverine, fiche officielle."
+            },
+            {
+                id: 25,
+                question: "Quel est le premier film Marvel avec une héroïne en rôle-titre ?",
+                options: ["Black Widow", "Captain Marvel", "Ant-Man et la Guêpe", "Elektra"],
+                correct: 1,
+                explanation: "Captain Marvel, sorti en 2019 avec Brie Larson, est le premier film du MCU centré sur une héroïne. Dans le catalogue Marvel plus large, Elektra était sorti dès 2005 chez la Fox.",
+                source: "Marvel Studios — Captain Marvel, 2019."
+            },
+            {
+                id: 201,
+                type: "vrai_faux",
+                question: "Stan Lee apparaît en caméo dans presque tous les films Marvel.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Stan Lee est apparu dans plus de quarante productions Marvel, du premier X-Men de 2000 jusqu'à Avengers: Endgame. Ses caméos ont été tournés à l'avance et diffusés après sa mort en 2018.",
+                source: "Marvel Entertainment — Filmographie des caméos de Stan Lee."
+            },
+            {
+                id: 202,
+                type: "vrai_faux",
+                question: "Les X-Men et les Vengeurs ont longtemps été séparés au cinéma pour des raisons de droits.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Les droits cinématographiques des X-Men appartenaient à la Fox et ceux de Spider-Man à Sony. Le rachat de la Fox par Disney en 2019 a permis de réunir ces personnages dans un même univers.",
+                source: "The Walt Disney Company — Acquisition de 21st Century Fox, 2019."
+            },
+            {
+                id: 203,
+                type: "vrai_faux",
+                question: "Thanos réussit à éliminer la moitié de la vie dans Infinity War.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Contrairement à la plupart des films de super-héros, Infinity War se conclut sur la victoire du vilain. Le claquement de doigts efface la moitié des êtres vivants, situation résolue seulement dans Endgame.",
+                source: "Marvel Studios — Avengers: Infinity War, 2018."
+            }
+        ],
+        difficile: [
+            {
+                id: 31,
+                question: "En quelle année Marvel a-t-elle été fondée ?",
+                options: ["En 1934", "En 1939", "En 1945", "En 1961"],
+                correct: 1,
+                explanation: "Martin Goodman fonde Timely Publications en 1939. Le premier fascicule, Marvel Comics n°1, paraît en octobre de la même année et introduit Namor et la Torche Humaine originelle.",
+                source: "Marvel Entertainment — Chronologie de la société depuis 1939."
+            },
+            {
+                id: 32,
+                question: "Quel événement des comics oppose les héros sur l'enregistrement des super-humains ?",
+                options: ["Secret Wars", "Civil War", "House of M", "Infinity Gauntlet"],
+                correct: 1,
+                explanation: "Civil War, publié en 2006-2007, divise les héros entre partisans du recensement mené par Iron Man et opposants menés par Captain America. Le film de 2016 en reprend le principe sans le contexte politique.",
+                source: "Marvel Comics — Civil War, série limitée 2006-2007."
+            },
+            {
+                id: 33,
+                question: "Quelle est la couleur de la Pierre de la Réalité ?",
+                options: ["Bleue", "Rouge", "Verte", "Orange"],
+                correct: 1,
+                explanation: "La Pierre de la Réalité est rouge et prend la forme liquide de l'Éther dans Thor: Le Monde des Ténèbres. Elle permet de modifier la matière et de transformer la réalité à volonté.",
+                source: "Marvel Studios — Thor: Le Monde des Ténèbres, 2013."
+            },
+            {
+                id: 34,
+                question: "Quel scénariste a marqué Daredevil dans les années 1980 ?",
+                options: ["Chris Claremont", "Frank Miller", "Alan Moore", "Grant Morrison"],
+                correct: 1,
+                explanation: "Frank Miller a redéfini Daredevil en lui donnant une tonalité sombre et criminelle, introduisant Elektra et approfondissant le Caïd. Son travail a durablement influencé le personnage.",
+                source: "Marvel Comics — Daredevil, run de Frank Miller, 1979-1983."
+            },
+            {
+                id: 35,
+                question: "Quel personnage est surnommé le Sorcier Suprême ?",
+                options: ["Scarlet Witch", "Docteur Strange", "Agatha Harkness", "L'Ancien"],
+                correct: 1,
+                explanation: "Le titre de Sorcier Suprême désigne le plus puissant protecteur magique de la dimension terrestre. Il est porté par l'Ancien puis par Stephen Strange, et brièvement par Wong dans le MCU.",
+                source: "Marvel Comics — Doctor Strange, mythologie des arts mystiques."
+            },
+            {
+                id: 36,
+                question: "Quel événement a introduit le multivers dans les comics Marvel ?",
+                options: ["Le concept de Terre-616", "La Guerre Kree-Skrull", "Le Ragnarök", "L'Ère d'Apocalypse"],
+                correct: 0,
+                explanation: "La désignation Terre-616 identifie la continuité principale des comics Marvel, distinguée des univers parallèles. Le MCU porte le numéro Terre-199999 dans cette classification.",
+                source: "Marvel Comics — Official Handbook of the Marvel Universe."
+            },
+            {
+                id: 37,
+                question: "Quel héros a le premier soulevé Mjolnir en dehors de Thor dans le MCU ?",
+                options: ["Captain America", "Vision", "Hulk", "Black Widow"],
+                correct: 1,
+                explanation: "Vision soulève Mjolnir dans L'Ère d'Ultron, sous les regards médusés des Vengeurs. Captain America ne le fera qu'en 2019 dans Endgame, après l'avoir légèrement bougé quatre ans plus tôt.",
+                source: "Marvel Studios — Avengers: L'Ère d'Ultron, 2015."
+            },
+            {
+                id: 38,
+                question: "Quelle race extraterrestre métamorphe apparaît dans Captain Marvel ?",
+                options: ["Les Krees", "Les Skrulls", "Les Chitauris", "Les Célestes"],
+                correct: 1,
+                explanation: "Les Skrulls peuvent prendre l'apparence de n'importe quel être vivant. Présentés d'abord comme des envahisseurs, ils sont réhabilités en réfugiés dans Captain Marvel, inversant les attentes du public.",
+                source: "Marvel Comics — Fantastic Four n°2, janvier 1962."
+            },
+            {
+                id: 39,
+                question: "Quel personnage a créé le sérum du super-soldat ?",
+                options: ["Howard Stark", "Abraham Erskine", "Arnim Zola", "Hank Pym"],
+                correct: 1,
+                explanation: "Le docteur Abraham Erskine, scientifique allemand ayant fui le régime nazi, met au point le sérum et choisit Steve Rogers pour sa bonté. Assassiné aussitôt après, il emporte la formule avec lui.",
+                source: "Marvel Studios — Captain America: First Avenger, 2011."
+            },
+            {
+                id: 40,
+                question: "Quel dessinateur a cocréé la majorité des héros Marvel avec Stan Lee ?",
+                options: ["Steve Ditko", "Jack Kirby", "John Romita", "Neal Adams"],
+                correct: 1,
+                explanation: "Jack Kirby a cocréé les Quatre Fantastiques, Hulk, Thor, les X-Men et Black Panther. Surnommé « le Roi », son style dynamique a défini l'esthétique des comics de super-héros.",
+                source: "Marvel Comics — Crédits de création, œuvre de Jack Kirby."
+            },
+            {
+                id: 301,
+                type: "vrai_faux",
+                question: "Spider-Man appartenait aux studios Sony pour le cinéma.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Sony détient les droits cinématographiques de Spider-Man depuis 1999. Un accord de partage conclu en 2015 avec Marvel Studios a permis l'intégration du personnage dans le MCU.",
+                source: "Sony Pictures / Marvel Studios — Accord de coproduction, 2015."
+            },
+            {
+                id: 302,
+                type: "vrai_faux",
+                question: "Black Panther est le premier super-héros noir des comics grand public.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Créé en 1966 par Stan Lee et Jack Kirby, T'Challa précède de plusieurs années Falcon et Luke Cage. Son apparition en pleine lutte pour les droits civiques revêtait une portée symbolique forte.",
+                source: "Marvel Comics — Fantastic Four n°52, juillet 1966."
+            },
+            {
+                id: 303,
+                type: "vrai_faux",
+                question: "Le nom Hulk était initialement prévu en gris et non en vert.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Hulk était gris dans son premier numéro, mais les problèmes d'impression rendaient la teinte irrégulière d'une page à l'autre. Stan Lee opta pour le vert dès le deuxième numéro.",
+                source: "Marvel Comics — The Incredible Hulk n°1 et n°2, 1962."
+            }
+        ]
+    }
 };
