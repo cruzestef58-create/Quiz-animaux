@@ -577,12 +577,12 @@ body::before {
 }
 
 .hero .subtitle {
-    font-size: 1.1rem;
-    background: linear-gradient(90deg, var(--warning-color), var(--secondary-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-weight: 600;
+    font-size: 1.05rem;
+    /* Le titre porte deja un degrade : un second degrade au-dessous surchargeait
+       la zone. Une couleur unie, lavande claire, laisse respirer et reste lisible. */
+    color: #b9a7e8;
+    font-weight: 500;
+    letter-spacing: 0.01em;
     opacity: 0;
     animation: fadeInUp 1s ease-out 0.4s forwards;
 }
@@ -1211,6 +1211,7 @@ body::before {
 .difficulty-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;        /* meme hauteur pour les trois cartes */
     gap: 1.5rem;
     margin-bottom: 2rem;
 }
@@ -1222,6 +1223,11 @@ body::before {
 }
 
 .difficulty-card {
+    /* Colonne flex : le badge est pousse en bas, donc les trois badges
+       s'alignent quelle que soit la longueur du texte au-dessus. */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: rgba(255,255,255,0.04);
     border-radius: 18px;
     padding: 2.5rem;
@@ -1244,10 +1250,10 @@ body::before {
     border-color: rgba(37,99,235,0.3);
 }
 
+/* La carte "moyen" ne doit pas etre mise en avant : elle etait agrandie de 3 %,
+   ce qui la desalignait des deux autres, et coloree en bleu sans raison. */
 .difficulty-card.active {
-    border-color: rgba(37,99,235,0.5);
-    box-shadow: 0 0 0 1px rgba(37,99,235,0.4), 0 15px 40px rgba(37,99,235,0.2), 0 0 30px rgba(37,99,235,0.15);
-    transform: scale(1.03);
+    border-color: rgba(255, 255, 255, 0.12);
 }
 
 .difficulty-level {
@@ -1282,10 +1288,16 @@ body::before {
 }
 
 .difficulty-badge {
-    display: inline-block;
-    background: linear-gradient(135deg, rgba(37,99,235,0.3), rgba(124,58,237,0.3));
-    border: 1px solid rgba(37,99,235,0.4);
-    color: #a5c8ff;
+    /* Hauteur fixe et contenu centre : un badge d'une ligne et un badge de deux
+       lignes occupent alors la meme boite, donc les trois s'alignent exactement. */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 4rem;   /* hauteur d un badge sur deux lignes */
+    margin-top: auto;            /* colle le badge en bas de la carte */
+    background: linear-gradient(135deg, rgba(124,58,237,0.26), rgba(192,38,211,0.20));
+    border: 1px solid rgba(124,58,237,0.42);
+    color: #cbb7ff;
     padding: 0.5rem 1.5rem;
     border-radius: 20px;
     font-size: 0.9rem;
@@ -1992,57 +2004,9 @@ footer p {
 .logo-icone { filter: drop-shadow(0 0 8px rgba(124, 58, 237, 0.55)); }
 
 
-/* ============================================================
-   Distinguer une CATEGORIE d'un QUIZ
-   Rond = une collection a ouvrir · Carre arrondi = un quiz a jouer
-   ============================================================ */
-
-/* ---- Carte de categorie : pastille ronde ---- */
-.category-card .theme-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 96px;
-    height: 96px;
-    font-size: 2.9rem;
-    border-radius: 50%;                      /* le rond signale une collection */
-    background: radial-gradient(circle at 35% 30%, rgba(124,58,237,0.30), rgba(37,99,235,0.16));
-    border: 2px solid rgba(124, 58, 237, 0.38);
-    box-shadow: inset 0 0 22px rgba(124,58,237,0.18);
-    margin-bottom: 1.2rem;
-}
-
-.category-card:hover .theme-icon {
-    border-color: rgba(192, 38, 211, 0.6);
-    box-shadow: inset 0 0 26px rgba(192,38,211,0.24), 0 0 22px rgba(124,58,237,0.3);
-}
-
-/* ---- Carte de quiz : tuile carree arrondie ---- */
-.quiz-card .theme-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 84px;
-    height: 84px;
-    font-size: 2.5rem;
-    border-radius: 22px;                     /* le carre signale un element jouable */
-    background: linear-gradient(140deg, rgba(37,99,235,0.24), rgba(34,211,238,0.14));
-    border: 2px solid rgba(34, 211, 238, 0.34);
-    animation: none;                         /* pas de rebond : c'est une action, pas une invitation */
-    margin-bottom: 1.1rem;
-}
-
-.quiz-card:hover .theme-icon {
-    border-color: rgba(34, 211, 238, 0.7);
-    box-shadow: 0 0 20px rgba(34, 211, 238, 0.28);
-}
-
-/* Liseré cyan a gauche : rappelle qu'on est un cran plus bas dans la navigation */
-.quiz-card {
-    border-left: 3px solid rgba(34, 211, 238, 0.5) !important;
-}
-
-/* ---- Fil d'Ariane dans le titre de section ---- */
+/* ---- Reperage discret : on est dans un theme ---- */
+/* Pas de traitement visuel lourd sur les icones : seul le libelle du bouton
+   et le fil d'Ariane indiquent qu'on est descendu d'un niveau. */
 .fil-ariane {
     font-size: 0.55em;
     font-weight: 600;
@@ -2056,11 +2020,6 @@ footer p {
     font-size: 0.6em;
     color: rgba(168, 130, 255, 0.55);
     vertical-align: middle;
-}
-
-@media (max-width: 520px) {
-    .category-card .theme-icon { width: 78px; height: 78px; font-size: 2.3rem; }
-    .quiz-card .theme-icon { width: 68px; height: 68px; font-size: 2rem; border-radius: 18px; }
 }
 
 
