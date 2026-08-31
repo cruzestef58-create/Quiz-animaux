@@ -887,6 +887,18 @@ body::before {
     display: block;
 }
 
+/* Icones emoji (memes dimensions que les SVG) */
+.emoji-icone {
+    display: block;
+    line-height: 1;
+    text-align: center;
+    font-style: normal;
+}
+
+.theme-icon .emoji-icone { font-size: 58px; line-height: 72px; }
+.titre-icone .emoji-icone { font-size: 1em; line-height: 1.15; }
+.search-result-icon .emoji-icone { font-size: 28px; line-height: 34px; }
+
 /* Icone dans le titre d'une page de quiz */
 .titre-icone {
     display: inline-block;
@@ -907,6 +919,7 @@ body::before {
 
 @media (max-width: 520px) {
     .theme-icon { width: 60px; height: 60px; }
+    .theme-icon .emoji-icone { font-size: 48px; line-height: 60px; }
 }
 
 @keyframes bounce {
