@@ -847,76 +847,76 @@ const categories = {
     felins: {
         label: '🐾 Félins',
         quizzes: [
-            { icon: '🐱', title: 'Les Chats', desc: 'Comportement, biologie et secrets du monde félin domestique.', url: 'quiz-les-chats.html' },
-            { icon: '🦁', title: 'Le Lion', desc: 'Le roi de la savane, sa vie sociale et ses stratégies de chasse.', url: 'quiz-le-lion.html' },
-            { icon: '🐅', title: 'Le Tigre', desc: 'Le plus grand félin sauvage et ses mystères en forêt profonde.', url: 'quiz-le-tigre.html' },
+            { icon: 'chat', title: 'Les Chats', desc: 'Comportement, biologie et secrets du monde félin domestique.', url: 'quiz-les-chats.html' },
+            { icon: 'lion', title: 'Le Lion', desc: 'Le roi de la savane, sa vie sociale et ses stratégies de chasse.', url: 'quiz-le-lion.html' },
+            { icon: 'tigre', title: 'Le Tigre', desc: 'Le plus grand félin sauvage et ses mystères en forêt profonde.', url: 'quiz-le-tigre.html' },
         ]
     },
     oiseaux: {
         label: '🦅 Oiseaux',
         quizzes: [
-            { icon: '🐦', title: 'L\'Ornithologie', desc: 'Biologie, migration et comportements du monde des oiseaux.', url: 'quiz-ornithologie.html' },
-            { icon: '🦅', title: 'L\'Aigle Royal', desc: 'Le roi des rapaces et ses capacités de vol exceptionnelles.', url: 'quiz-aigle-royal.html' },
+            { icon: 'oiseau', title: 'L\'Ornithologie', desc: 'Biologie, migration et comportements du monde des oiseaux.', url: 'quiz-ornithologie.html' },
+            { icon: 'aigle', title: 'L\'Aigle Royal', desc: 'Le roi des rapaces et ses capacités de vol exceptionnelles.', url: 'quiz-aigle-royal.html' },
         ]
     },
     canides: {
         label: '🐕 Canidés',
         quizzes: [
-            { icon: '🐕', title: 'Les Chiens', desc: 'Races, biologie, sens et histoire du meilleur ami de l\'humain.', url: 'quiz-les-chiens.html' },
-            { icon: '🎓', title: 'L\'Éducation Canine', desc: 'Secrets pour éduquer votre chien et comprendre son comportement.', url: 'quiz-education-canine.html' },
+            { icon: 'chien', title: 'Les Chiens', desc: 'Races, biologie, sens et histoire du meilleur ami de l\'humain.', url: 'quiz-les-chiens.html' },
+            { icon: 'dressage', title: 'L\'Éducation Canine', desc: 'Secrets pour éduquer votre chien et comprendre son comportement.', url: 'quiz-education-canine.html' },
         ]
     },
     reptiles: {
         label: '🐍 Reptiles',
         quizzes: [
-            { icon: '🐍', title: 'Les Reptiles', desc: 'Serpents, lézards, tortues, crocodiliens et leurs adaptations.', url: 'quiz-reptiles.html' },
+            { icon: 'serpent', title: 'Les Reptiles', desc: 'Serpents, lézards, tortues, crocodiliens et leurs adaptations.', url: 'quiz-reptiles.html' },
         ]
     },
     marins: {
         label: '🌊 Mammifères Marins',
         quizzes: [
-            { icon: '🐋', title: 'Les Mammifères Marins', desc: 'Baleines, dauphins, phoques et merveilles des océans.', url: 'quiz-mammiferes-marins.html' },
+            { icon: 'baleine', title: 'Les Mammifères Marins', desc: 'Baleines, dauphins, phoques et merveilles des océans.', url: 'quiz-mammiferes-marins.html' },
         ]
     },
     sciences: {
         label: '🔬 Sciences',
         quizzes: [
-            { icon: '🫀', title: 'Le Corps Humain', desc: 'Anatomie, physiologie et biologie — des organes aux cellules.', url: 'quiz-corps-humain.html' },
+            { icon: 'coeur', title: 'Le Corps Humain', desc: 'Anatomie, physiologie et biologie — des organes aux cellules.', url: 'quiz-corps-humain.html' },
         ]
     },
     geographie: {
         label: '🌍 Géographie',
         quizzes: [
-            { icon: '🌍', title: 'Géographie Mondiale', desc: 'Capitales, pays, fleuves, reliefs et géopolitique — partez à la conquête du monde.', url: 'quiz-geographie.html' },
+            { icon: 'globe', title: 'Géographie Mondiale', desc: 'Capitales, pays, fleuves, reliefs et géopolitique — partez à la conquête du monde.', url: 'quiz-geographie.html' },
         ]
     },
     histoire: {
         label: '🇫🇷 Histoire',
         quizzes: [
-            { icon: '⚜️', title: 'Histoire de France', desc: 'Rois, révolutions, guerres et grands personnages qui ont forgé l\'identité française.', url: 'quiz-histoire-france.html' },
+            { icon: 'lys', title: 'Histoire de France', desc: 'Rois, révolutions, guerres et grands personnages qui ont forgé l\'identité française.', url: 'quiz-histoire-france.html' },
         ]
     },
     cultureg: {
         label: '🧠 Culture Générale',
         quizzes: [
-            { icon: '🧠', title: 'Culture Générale', desc: 'Sciences, arts, littérature, sport, histoire — tous les savoirs essentiels.', url: 'quiz-culture-generale.html' },
+            { icon: 'livre', title: 'Culture Générale', desc: 'Sciences, arts, littérature, sport, histoire — tous les savoirs essentiels.', url: 'quiz-culture-generale.html' },
         ]
     },
     astrologie: {
         label: '🔮 Astrologie',
         quizzes: [
-            { icon: '🔮', title: 'Astrologie', desc: 'Les 12 signes, les éléments, les planètes et le zodiaque chinois.', url: 'quiz-astrologie.html' },
+            { icon: 'astro', title: 'Astrologie', desc: 'Les 12 signes, les éléments, les planètes et le zodiaque chinois.', url: 'quiz-astrologie.html' },
         ]
     },
     filmsseries: {
         label: '🎬 Pop Culture',
         quizzes: [
-            { icon: '⚡', title: 'Harry Potter', desc: 'Sorts, Horcruxes, Poudlard et tous les secrets de l\'univers de J.K. Rowling.', url: 'quiz-harry-potter.html' },
-            { icon: '⭐', title: 'Star Wars', desc: 'La Force, les Jedi, les Sith et toute la saga Skywalker dans une galaxie très très lointaine.', url: 'quiz-star-wars.html' },
-            { icon: '🩸', title: 'Jujutsu Kaisen', desc: 'Sukuna, Gojo, les fléaux maudits et toute la saga Jujutsu Kaisen de Gege Akutami.', url: 'quiz-jujutsu-kaisen.html' },
-            { icon: '🎥', title: 'Cinéma', desc: 'Acteurs, réalisateurs, films cultes, séries, Cannes et Oscars — le cinéma en grand.', url: 'quiz-cinema.html' },
-            { icon: '🔴', title: 'Pokémon', desc: 'Types, évolutions, régions, légendaires et toute l\'histoire de la saga.', url: 'quiz-pokemon.html' },
-            { icon: '🦸', title: 'Marvel', desc: 'Super-héros, comics, Vengeurs, Pierres d\'Infinité et univers cinématographique.', url: 'quiz-marvel.html' },
+            { icon: 'eclair', title: 'Harry Potter', desc: 'Sorts, Horcruxes, Poudlard et tous les secrets de l\'univers de J.K. Rowling.', url: 'quiz-harry-potter.html' },
+            { icon: 'sabre', title: 'Star Wars', desc: 'La Force, les Jedi, les Sith et toute la saga Skywalker dans une galaxie très très lointaine.', url: 'quiz-star-wars.html' },
+            { icon: 'oeil', title: 'Jujutsu Kaisen', desc: 'Sukuna, Gojo, les fléaux maudits et toute la saga Jujutsu Kaisen de Gege Akutami.', url: 'quiz-jujutsu-kaisen.html' },
+            { icon: 'clap', title: 'Cinéma', desc: 'Acteurs, réalisateurs, films cultes, séries, Cannes et Oscars — le cinéma en grand.', url: 'quiz-cinema.html' },
+            { icon: 'bille', title: 'Pokémon', desc: 'Types, évolutions, régions, légendaires et toute l\'histoire de la saga.', url: 'quiz-pokemon.html' },
+            { icon: 'bouclier', title: 'Marvel', desc: 'Super-héros, comics, Vengeurs, Pierres d\'Infinité et univers cinématographique.', url: 'quiz-marvel.html' },
         ]
     },
 };
@@ -929,7 +929,7 @@ function openCategory(key) {
     const grid = document.getElementById('subthemes-grid');
     grid.innerHTML = cat.quizzes.map(q => `
         <div class="theme-card quiz-card" style="animation: fadeInUp 0.4s ease both;">
-            <div class="theme-icon">${q.icon}</div>
+            <div class="theme-icon">${icone(q.icon)}</div>
             <h3>${q.title}</h3>
             <p>${q.desc}</p>
             <a href="${q.url}" class="btn btn-primary">▶ Commencer le quiz</a>
@@ -1106,7 +1106,7 @@ function initSearch() {
         } else {
             resultsBox.innerHTML = matches.map(q => `
                 <a class="search-result-item" href="${q.url}">
-                    <span class="search-result-icon">${q.icon}</span>
+                    <span class="search-result-icon">${icone(q.icon)}</span>
                     <div class="search-result-info">
                         <div class="search-result-title">${highlight(q.title, raw)}</div>
                         <div class="search-result-desc">${q.desc}</div>
@@ -1166,6 +1166,10 @@ function showCategoriesView() {
 
 // Init au chargement de la page d'accueil
 document.addEventListener('DOMContentLoaded', () => {
+    // Remplace les marqueurs data-icone par leur SVG
+    document.querySelectorAll('[data-icone]').forEach(el => {
+        el.innerHTML = icone(el.dataset.icone);
+    });
     initSearch();
     renderCategoryPage(1);
     // Lance automatiquement le mode aléatoire si on est sur la bonne page
