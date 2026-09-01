@@ -59,6 +59,18 @@ const ICONES = {
 };
 
 /* Renvoie le SVG d'une icône, ou une chaîne vide si la clé est inconnue */
+// Compteur pour rendre uniques les identifiants de degrades.
+// Sans ca, deux copies de la meme icone sur la page partagent le meme id :
+// le navigateur applique la premiere, et si elle est dans un bloc masque
+// (display:none) les parties degradees ne s'affichent pas du tout.
+let _icone_n = 0;
+
 function icone(cle) {
-    return ICONES[cle] || '';
+    const src = ICONES[cle];
+    if (!src) return '';
+    if (src.indexOf('id="') === -1) return src;
+    const sfx = '_' + (++_icone_n);
+    return src
+        .replace(/id="([\w-]+)"/g, (m, id) => 'id="' + id + sfx + '"')
+        .replace(/url\(#([\w-]+)\)/g, (m, id) => 'url(#' + id + sfx + ')');
 }
