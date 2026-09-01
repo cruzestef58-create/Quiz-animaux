@@ -287,6 +287,39 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Les chiens ont des phases de sommeil paradoxal (REM) similaires aux humains, pendant lesquelles ils rêvent. On peut observer leurs pattes bouger, leur museau frémir ou de petits aboiements étouffés. Des études sur l'activité cérébrale des chiens pendant le sommeil ont confirmé qu'ils revivent des expériences de la journée.",
                 source: "Stanley Coren - Do Dogs Dream? MIT Press : les chiens ont un sommeil REM avec activité onirique."
+            },
+            {
+                id: 401,
+                type: "vrai_faux",
+                question: "Frotter le nez d'un chiot dans ses saletés l'aide à apprendre la propreté.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Le chiot ne fait pas le lien entre la punition et un acte passé. Il apprend surtout à craindre son maître et à se cacher pour faire ses besoins, ce qui retarde l'apprentissage. La méthode efficace consiste à sortir le chiot très régulièrement et à le féliciter dehors.",
+                source: "American Veterinary Society of Animal Behavior — position statement sur la punition."
+            },
+            {
+                id: 402,
+                question: "Quelle est la durée idéale d'une séance d'éducation avec un chiot ?",
+                options: ["Une heure d'affilée", "Cinq à dix minutes", "Trente minutes minimum", "Deux heures réparties le matin"],
+                correct: 1,
+                explanation: "L'attention d'un chiot est très courte. Plusieurs micro-séances de cinq à dix minutes réparties dans la journée donnent de bien meilleurs résultats qu'une longue session, qui le fatigue et le démotive.",
+                source: "École Nationale Vétérinaire d'Alfort — fiches de comportement du jeune chien."
+            },
+            {
+                id: 403,
+                question: "Que traduit généralement un bâillement chez un chien qui n'est pas fatigué ?",
+                options: ["De la faim", "Un signal d'apaisement", "De l'agressivité", "Un début de maladie"],
+                correct: 1,
+                explanation: "Le bâillement fait partie des signaux d'apaisement décrits par Turid Rugaas. Le chien l'utilise pour désamorcer une tension, envers un humain ou un congénère. Le détourner du regard et le lécher de truffe appartiennent à la même famille de signaux.",
+                source: "Turid Rugaas — Les signaux d'apaisement, 1997."
+            },
+            {
+                id: 404,
+                question: "Quelle période est déterminante pour la socialisation du chiot ?",
+                options: ["De trois à quatorze semaines", "De six à neuf mois", "Après la première année", "Dès la naissance et pendant deux semaines"],
+                correct: 0,
+                explanation: "Entre trois et quatorze semaines environ, le chiot enregistre sans peur ce qu'il rencontre. Les expériences positives faites durant cette fenêtre conditionnent son équilibre adulte. Passé ce délai, chaque nouveauté demande beaucoup plus de travail.",
+                source: "Scott et Fuller — Genetics and the Social Behavior of the Dog, 1965."
             }
         ],
         moyen: [
@@ -586,6 +619,31 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Faux ! Chez le chien, le bâillement est souvent un signal d'apaisement — un moyen de désamorcer une tension ou d'exprimer un inconfort. Un chien qui bâille face à un étranger ou lors d'une situation stressante communique en réalité son malaise. Interpréter le bâillement uniquement comme de la fatigue est une erreur fréquente.",
                 source: "Turid Rugaas - On Talking Terms With Dogs (1997) : le bâillement comme signal d'apaisement chez le chien."
+            },
+            {
+                id: 405,
+                type: "vrai_faux",
+                question: "Le clicker constitue une récompense pour le chien.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Le clicker est un marqueur : il indique précisément l'instant où le chien a bien agi. Il n'a de valeur que parce qu'il annonce une récompense qui arrive juste après. Sans friandise associée, le son perd tout effet en quelques répétitions.",
+                source: "Karen Pryor — Don't Shoot the Dog, 1984."
+            },
+            {
+                id: 406,
+                question: "Qu'appelle-t-on l'extinction en apprentissage animal ?",
+                options: ["Le fait de punir un comportement jusqu'à sa disparition", "La disparition d'un comportement qui n'est plus récompensé", "L'oubli progressif d'un ordre appris avec l'âge", "Le fait de retirer le chien de son environnement habituel"],
+                correct: 1,
+                explanation: "Un comportement qui ne rapporte plus rien finit par s'éteindre. Attention au pic d'extinction : juste avant de disparaître, le comportement s'intensifie souvent, ce qui pousse beaucoup de maîtres à céder et à le renforcer davantage.",
+                source: "B.F. Skinner — The Behavior of Organisms, 1938."
+            },
+            {
+                id: 407,
+                question: "Que désigne le seuil de réactivité chez un chien ?",
+                options: ["Le seuil de douleur physique qu'il supporte pendant un soin", "La distance au-delà de laquelle il ne réagit plus au déclencheur", "Le nombre maximal d'ordres qu'il est capable de retenir", "Son niveau d'énergie disponible au fil de la journée"],
+                correct: 1,
+                explanation: "Sous le seuil, le chien perçoit le déclencheur mais reste capable d'écouter. Au-delà, il est submergé et n'apprend plus rien. Tout le travail de rééducation consiste à rester sous ce seuil et à le repousser progressivement.",
+                source: "Association Française des Vétérinaires Comportementalistes — protocoles de réactivité."
             }
         ],
         difficile: [
@@ -865,6 +923,30 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Le nez du chien est si puissant qu'il peut détecter des odeurs à travers le sol. Les chiens cadavres sont entraînés à trouver des corps enterrés à plusieurs mètres de profondeur. Le système olfactif du chien contient 300 millions de récepteurs contre seulement 6 millions chez l'humain.",
                 source: "Institut National de Police Scientifique - Les chiens pisteurs peuvent sentir à plus d'un mètre de profondeur."
+            },
+            {
+                id: 408,
+                question: "Quel effet produit un renforcement à ratio variable ?",
+                options: ["Un apprentissage plus rapide au départ", "Un comportement très résistant à l'extinction", "Une dépendance à la friandise", "Une baisse de motivation progressive"],
+                correct: 1,
+                explanation: "Récompenser de façon imprévisible produit des comportements extrêmement persistants — c'est le principe des machines à sous. En éducation, on apprend d'abord en récompensant à chaque fois, puis on passe au ratio variable pour ancrer durablement.",
+                source: "Ferster et Skinner — Schedules of Reinforcement, 1957."
+            },
+            {
+                id: 409,
+                question: "En quoi consiste le contre-conditionnement ?",
+                options: ["Apprendre l'ordre inverse d'un ordre connu", "Changer l'émotion associée à un déclencheur", "Interdire un comportement par la punition", "Fatiguer le chien avant l'exercice"],
+                correct: 1,
+                explanation: "Il s'agit d'associer systématiquement le déclencheur qui effraie le chien à quelque chose d'agréable, jusqu'à ce que sa réaction émotionnelle s'inverse. On le combine presque toujours avec la désensibilisation, qui gère l'intensité du déclencheur.",
+                source: "Karen Overall — Manual of Clinical Behavioral Medicine for Dogs and Cats, 2013."
+            },
+            {
+                id: 410,
+                question: "Qu'est-ce que l'impuissance apprise chez le chien ?",
+                options: ["Un refus délibéré d'obéir malgré une bonne compréhension", "L'abandon de toute tentative après des situations incontrôlables", "Une incapacité physique temporaire à exécuter un ordre", "Une phase normale et passagère de l'adolescence canine"],
+                correct: 1,
+                explanation: "Exposé à des événements désagréables qu'il ne peut ni éviter ni contrôler, l'animal cesse d'essayer, même quand une issue redevient possible. Ce calme apparent est souvent pris à tort pour de l'obéissance.",
+                source: "Martin Seligman — travaux sur l'impuissance apprise, 1967."
             }
         ]
     },
@@ -1138,6 +1220,39 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Faux ! Malgré son nom, le Bouledogue Français a été développé en Angleterre au XIXe siècle, à partir de bouledogues anglais miniatures. Il a été importé et popularisé en France (notamment par les artistes de Montmartre), ce qui lui a valu son nom. Sa popularité mondiale actuelle en fait l'une des races les plus vendues.",
                 source: "FCI — Le Bouledogue Français a des origines anglaises malgré son appellation."
+            },
+            {
+                id: 401,
+                type: "vrai_faux",
+                question: "Le chien voit uniquement en noir et blanc.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Le chien possède deux types de cônes et perçoit les bleus et les jaunes. Le rouge et le vert lui apparaissent en revanche comme des nuances de gris-jaune. Sa vision ressemble à celle d'un humain daltonien deutéranope.",
+                source: "Neitz, Geist et Jacobs — Visual Neuroscience, 1989."
+            },
+            {
+                id: 402,
+                question: "Combien de dents possède un chien adulte ?",
+                options: ["Trente-deux", "Trente-six", "Quarante-deux", "Quarante-huit"],
+                correct: 2,
+                explanation: "Le chien adulte compte quarante-deux dents définitives, contre vingt-huit dents de lait chez le chiot. Le remplacement s'achève vers sept mois.",
+                source: "Association Vétérinaire Dentaire Américaine — formule dentaire du chien."
+            },
+            {
+                id: 403,
+                question: "Pourquoi un chien halète-t-il quand il a chaud ?",
+                options: ["Pour appeler ses congénères à distance", "Parce qu'il transpire très peu par la peau", "Pour mieux percevoir les odeurs environnantes", "Pour ralentir son rythme cardiaque au repos"],
+                correct: 1,
+                explanation: "Les glandes sudoripares du chien se limitent essentiellement aux coussinets. L'évaporation dans les voies respiratoires, provoquée par le halètement, constitue son principal moyen de perdre de la chaleur.",
+                source: "Merck Veterinary Manual — thermorégulation chez le chien."
+            },
+            {
+                id: 404,
+                question: "Quelle race est réputée être la plus rapide au sprint ?",
+                options: ["Le border collie", "Le lévrier greyhound", "Le berger allemand", "Le dobermann"],
+                correct: 1,
+                explanation: "Le greyhound atteint environ soixante-dix kilomètres par heure sur une courte distance. Sa colonne très souple et sa foulée suspendue lui permettent d'avoir les quatre pattes en l'air deux fois par cycle.",
+                source: "Fédération Cynologique Internationale — standard du greyhound."
             }
         ],
         moyen: [
@@ -1407,6 +1522,31 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Le Lévrier Irlandais (Irish Wolfhound) est officiellement la plus grande race de chien du monde en hauteur, pouvant dépasser 90 cm au garrot. Le Dogue Allemand le dispute parfois en hauteur mais le Lévrier Irlandais est plus grand en moyenne. À ne pas confondre avec la race la plus lourde (Mastiff anglais).",
                 source: "FCI / Guinness World Records - L'Irish Wolfhound est la race la plus haute au garrot."
+            },
+            {
+                id: 405,
+                type: "vrai_faux",
+                question: "La truffe humide d'un chien indique forcément qu'il est en bonne santé.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! L'humidité de la truffe varie avec la température, l'activité et le moment de la journée. Un chien malade peut avoir la truffe humide, et un chien parfaitement sain l'avoir sèche au réveil. Ce n'est pas un indicateur fiable.",
+                source: "American Kennel Club — mythes sur la santé canine."
+            },
+            {
+                id: 406,
+                question: "Combien de récepteurs olfactifs compte environ un chien ?",
+                options: ["Environ cinq millions de récepteurs", "Environ cinquante millions", "Deux cents à trois cents millions", "Près de deux milliards de récepteurs"],
+                correct: 2,
+                explanation: "Selon les races, le chien dispose de deux cents à trois cents millions de récepteurs olfactifs, contre environ cinq millions chez l'humain. La zone du cerveau dédiée à l'odorat y est aussi proportionnellement bien plus vaste.",
+                source: "Alexandra Horowitz — Inside of a Dog, 2009."
+            },
+            {
+                id: 407,
+                question: "Qu'est-ce que l'organe voméronasal chez le chien ?",
+                options: ["Une glande à la base de la queue", "Un organe olfactif dédié aux phéromones", "Un muscle de l'oreille interne", "Une portion du système digestif"],
+                correct: 1,
+                explanation: "Aussi appelé organe de Jacobson, il se situe au-dessus du palais et détecte les molécules sociales et sexuelles. C'est lui qui explique la mimique de retroussement des babines observée après le flairage d'une urine.",
+                source: "Adams et Wiekamp — Journal of Anatomy, 1984."
             }
         ],
         difficile: [
@@ -1676,6 +1816,30 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Le Greyhound est le chien le plus rapide du monde avec une vitesse de pointe de 72 km/h sur de courtes distances. Il dépasse même le cheval au sprint sur 100 mètres. Cette vitesse exceptionnelle est rendue possible par sa morphologie unique : dos flexible, longues pattes et muscles puissants.",
                 source: "Fédération Cynologique Internationale - Record de vitesse du Greyhound : 72 km/h."
+            },
+            {
+                id: 408,
+                question: "Quelle particularité anatomique explique que le chien puisse pister longtemps ?",
+                options: ["Un cœur surdimensionné irriguant fortement le museau", "Des narines qui séparent l'air inspiré de l'air expiré", "Une langue très vascularisée qui capte les odeurs", "Un cerveau refroidi en permanence par le halètement"],
+                correct: 1,
+                explanation: "Les fentes latérales des narines évacuent l'air expiré sur les côtés, sans perturber le flux entrant. Le chien peut ainsi renifler en continu, à raison de cinq à dix inspirations par seconde, sans diluer l'échantillon odorant.",
+                source: "Settles et al. — Journal of Biomechanical Engineering, 2003."
+            },
+            {
+                id: 409,
+                question: "Que désigne la dysplasie coxo-fémorale ?",
+                options: ["Une malformation de la hanche", "Une inflammation de l'oreille", "Une anomalie de la rétine", "Un trouble de la coagulation"],
+                correct: 0,
+                explanation: "C'est un défaut d'emboîtement entre la tête du fémur et la cavité du bassin, à forte composante héréditaire. Fréquente chez les grandes races, elle conduit à l'arthrose et fait l'objet d'un dépistage radiographique avant reproduction.",
+                source: "Fédération Cynologique Internationale — protocole officiel de dépistage."
+            },
+            {
+                id: 410,
+                question: "Combien de temps dure en moyenne la gestation chez la chienne ?",
+                options: ["Environ quarante jours", "Environ soixante-trois jours", "Environ quatre-vingt-dix jours", "Environ cent vingt jours"],
+                correct: 1,
+                explanation: "La gestation dure soixante-trois jours en moyenne à partir de l'ovulation, avec une variation de quelques jours selon la date exacte de la saillie. Les portées comptent de un à douze chiots selon la taille de la race.",
+                source: "Concannon — Animal Reproduction Science, 2011."
             }
         ]
     },
@@ -1950,6 +2114,39 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Les chats (et tous les félins) ont perdu au cours de l'évolution le gène codant pour les récepteurs du goût sucré. Ils ne ressentent donc pas la saveur sucrée. Cette mutation s'explique par leur régime carnivore strict — le sucre n'ayant aucun intérêt nutritionnel pour eux, ce sens a disparu au fil du temps.",
                 source: "Li et al. (2005), PLOS Genetics - Les chats ont perdu le récepteur du goût sucré (gène Tas1r2 non fonctionnel)."
+            },
+            {
+                id: 401,
+                type: "vrai_faux",
+                question: "Le ronronnement d'un chat signifie toujours qu'il est heureux.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Le chat ronronne aussi quand il souffre, chez le vétérinaire ou en fin de vie. Les vibrations, entre vingt-cinq et cent cinquante hertz, auraient un effet apaisant et favoriseraient la consolidation osseuse. C'est un mécanisme d'auto-réconfort autant qu'un signe de bien-être.",
+                source: "Elizabeth von Muggenthaler — Fauna Communications Research Institute, 2001."
+            },
+            {
+                id: 402,
+                question: "Pourquoi les chats retombent-ils souvent sur leurs pattes ?",
+                options: ["Grâce à leur queue qui fait office de gouvernail aérien", "Grâce au réflexe de redressement lié à l'oreille interne", "Parce que leur corps très léger freine fortement la chute", "Parce qu'ils voient parfaitement le sol dans le noir"],
+                correct: 1,
+                explanation: "Le vestibule de l'oreille interne renseigne le chat sur son orientation. Il plie ensuite le tronc en deux et fait tourner l'avant puis l'arrière du corps en sens inverse. Le réflexe apparaît vers trois semaines et est complet vers sept semaines.",
+                source: "Marey — Comptes rendus de l'Académie des sciences, 1894."
+            },
+            {
+                id: 403,
+                question: "Que sont les vibrisses d'un chat ?",
+                options: ["Ses griffes rétractiles", "Ses moustaches sensorielles", "Les poils de sa queue", "Ses coussinets plantaires"],
+                correct: 1,
+                explanation: "Ces poils épais, implantés profondément et reliés à de nombreux récepteurs, détectent les courants d'air et les obstacles. Leur envergure correspond à peu près à la largeur du corps, ce qui aide le chat à juger s'il peut passer.",
+                source: "Ahl — Neuroscience and Biobehavioral Reviews, 1986."
+            },
+            {
+                id: 404,
+                question: "Quelle est la température corporelle normale d'un chat ?",
+                options: ["Environ trente-cinq degrés", "Environ trente-sept degrés", "Environ trente-neuf degrés", "Environ quarante-deux degrés"],
+                correct: 2,
+                explanation: "Le chat se situe entre trente-huit et trente-neuf degrés, soit un peu plus que l'humain. Au-delà de trente-neuf degrés et demi au repos, une consultation s'impose.",
+                source: "Merck Veterinary Manual — constantes physiologiques du chat."
             }
         ],
         moyen: [
@@ -2234,6 +2431,31 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Le Maine Coon est officiellement la plus grande race de chat domestique. Les mâles pèsent entre 6 et 11 kg et peuvent mesurer jusqu'à 1,20 m de long. Originaire de l'État du Maine (USA), il est surnommé 'le chien des chats' pour son caractère joueur et sociable. Le record du monde de longueur appartient à un Maine Coon de 121 cm.",
                 source: "Guinness World Records - Le Maine Coon détient le record de la plus grande race de chat domestique."
+            },
+            {
+                id: 405,
+                type: "vrai_faux",
+                question: "Les chats sont incapables de percevoir le goût sucré.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le gène Tas1r2, nécessaire au récepteur du sucré, est non fonctionnel chez tous les félins. Carnivores stricts, ils n'en ont aucun usage. C'est pourquoi un chat attiré par un dessert l'est par la matière grasse, jamais par le sucre.",
+                source: "Li et al. — PLoS Genetics, 2005."
+            },
+            {
+                id: 406,
+                question: "Que provoque la cataire chez la majorité des chats ?",
+                options: ["Une somnolence profonde", "Une réaction d'euphorie brève", "Des troubles digestifs", "Une perte d'appétit"],
+                correct: 1,
+                explanation: "La népétalactone de la cataire se fixe sur les récepteurs olfactifs et déclenche roulades et frottements pendant cinq à quinze minutes. La sensibilité est héréditaire : environ un tiers des chats n'y réagit pas, et les chatons y sont insensibles.",
+                source: "Bol et al. — BMC Veterinary Research, 2017."
+            },
+            {
+                id: 407,
+                question: "Pourquoi le chat a-t-il besoin de taurine dans son alimentation ?",
+                options: ["Pour digérer les fibres végétales de son alimentation", "Parce qu'il ne peut pas la synthétiser en quantité suffisante", "Pour réguler sa température corporelle en hiver", "Parce qu'elle renforce la kératine de ses griffes"],
+                correct: 1,
+                explanation: "Une carence en taurine provoque une dégénérescence de la rétine et une grave maladie du cœur. Le chat n'en fabrique presque pas et doit la trouver dans la viande, ce qui rend un régime végétarien dangereux pour lui.",
+                source: "Hayes, Carey et Schmidt — Science, 1975."
             }
         ],
         difficile: [
@@ -2523,6 +2745,30 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Le ronronnement produit des vibrations entre 25 et 50 Hz, une fréquence connue pour stimuler la densité osseuse et favoriser la guérison. Des études suggèrent que ces vibrations ont des effets thérapeutiques sur les os et les muscles, ce qui pourrait expliquer pourquoi les chats récupèrent vite de leurs blessures.",
                 source: "Clinton T. Rubin - Low-Level Mechanical Signals and Bone (2001) : les vibrations à 25-50 Hz favorisent la réparation osseuse."
+            },
+            {
+                id: 408,
+                question: "Qu'est-ce que le tapetum lucidum chez le chat ?",
+                options: ["Une membrane transparente qui protège l'œil", "Une couche réfléchissante derrière la rétine", "Un muscle qui commande l'ouverture de la pupille", "Un canal lacrymal reliant l'œil à la narine"],
+                correct: 1,
+                explanation: "Cette couche renvoie la lumière une seconde fois vers les photorécepteurs, ce qui double environ la sensibilité nocturne et explique les yeux brillants dans le noir. Le gain de sensibilité se paie par une image un peu moins nette.",
+                source: "Ollivier et al. — Veterinary Ophthalmology, 2004."
+            },
+            {
+                id: 409,
+                question: "Pourquoi les chats écaille-de-tortue sont-ils presque toujours des femelles ?",
+                options: ["À cause d'une sélection ancienne pratiquée par les éleveurs", "Parce que le gène de couleur est porté par le chromosome X", "Sous l'effet d'une alimentation riche en pigments", "Par une mutation apparue récemment dans les élevages"],
+                correct: 1,
+                explanation: "Le gène orange se trouve sur le chromosome X. Il faut donc deux X porteurs d'allèles différents pour obtenir la mosaïque, ce qui suppose d'être femelle. Les rares mâles écaille-de-tortue sont XXY et généralement stériles.",
+                source: "Centerwall et Benirschke — Journal of Heredity, 1973."
+            },
+            {
+                id: 410,
+                question: "Combien de vertèbres compte en moyenne la queue d'un chat ?",
+                options: ["Environ cinq", "Environ dix", "Environ vingt-trois", "Environ quarante"],
+                correct: 2,
+                explanation: "La queue compte entre dix-huit et vingt-trois vertèbres caudales, soit près de dix pour cent du squelette. Elle sert de balancier lors des déplacements en hauteur et joue un rôle important dans la communication.",
+                source: "Hudson et Hamilton — Atlas of Feline Anatomy, 1993."
             }
         ]
     },
@@ -2796,6 +3042,39 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Les perroquets Ara (Ara ararauna, Ara macao) peuvent vivre de 60 à 80 ans en captivité, parfois même plus. Ce sont parmi les animaux de compagnie à la plus grande longévité. Il est donc important d'inclure son perroquet dans son testament ! En nature, leur espérance de vie est de 30 à 50 ans.",
                 source: "World Parrot Trust - Les Aras ont une espérance de vie de 60 à 80 ans en captivité."
+            },
+            {
+                id: 401,
+                type: "vrai_faux",
+                question: "Les os des oiseaux sont creux, ce qui allège leur squelette.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! De nombreux os sont pneumatisés, c'est-à-dire creusés et reliés aux sacs aériens. Ils restent solides grâce à un réseau interne de travées. Chez certaines espèces, le squelette pèse moins lourd que l'ensemble des plumes.",
+                source: "Museum national d'Histoire naturelle — anatomie aviaire."
+            },
+            {
+                id: 402,
+                question: "Quel est le plus grand oiseau du monde ?",
+                options: ["Le condor des Andes", "L'autruche d'Afrique", "L'albatros hurleur", "L'aigle royal"],
+                correct: 1,
+                explanation: "L'autruche atteint deux mètres soixante-dix et cent cinquante kilos. Incapable de voler, elle court à soixante-dix kilomètres par heure. L'albatros hurleur détient en revanche le record d'envergure, avec près de trois mètres cinquante.",
+                source: "Union Internationale pour la Conservation de la Nature — fiches espèces."
+            },
+            {
+                id: 403,
+                question: "Comment appelle-t-on la science qui étudie les oiseaux ?",
+                options: ["L'ichtyologie", "L'ornithologie", "L'entomologie", "L'herpétologie"],
+                correct: 1,
+                explanation: "Le terme vient du grec ornis, l'oiseau. L'ichtyologie concerne les poissons, l'entomologie les insectes et l'herpétologie les reptiles et amphibiens.",
+                source: "Dictionnaire de l'Académie française."
+            },
+            {
+                id: 404,
+                question: "Pourquoi les flamants roses ont-ils cette couleur ?",
+                options: ["À cause d'un pigment d'origine génétique", "À cause des caroténoïdes de leur nourriture", "Pour effrayer les prédateurs par leur couleur", "À cause de la forte salinité de leur milieu"],
+                correct: 1,
+                explanation: "Les caroténoïdes des micro-algues et des petits crustacés qu'ils filtrent se fixent dans les plumes. Un flamant nourri sans ces pigments devient blanc, ce qui a longtemps posé problème dans les zoos.",
+                source: "Fox — Comparative Biochemistry and Physiology, 1962."
             }
         ],
         moyen: [
@@ -3070,6 +3349,31 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Faux ! Les oiseaux migrateurs utilisent plusieurs systèmes de navigation : le champ magnétique terrestre (boussole interne), la position du soleil, les étoiles (pour certaines espèces), et des repères visuels. La navigation par les étoiles n'est qu'un outil parmi d'autres. Certaines espèces comme le rouge-gorge utilisent principalement la magnétoception.",
                 source: "Wiltschko & Wiltschko (2003), Journal of Experimental Biology : les oiseaux combinent plusieurs systèmes de navigation."
+            },
+            {
+                id: 405,
+                type: "vrai_faux",
+                question: "Toucher un oisillon tombé du nid fait que ses parents l'abandonnent.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! La grande majorité des oiseaux ont un odorat peu développé et ne rejettent pas un petit manipulé. Cette croyance très répandue conduit à laisser mourir des oisillons qu'il aurait suffi de replacer dans leur nid.",
+                source: "Ligue pour la Protection des Oiseaux — que faire face à un oisillon."
+            },
+            {
+                id: 406,
+                question: "Quel oiseau détient le record de migration la plus longue ?",
+                options: ["La cigogne blanche", "La sterne arctique", "Le martinet noir", "L'oie cendrée"],
+                correct: 1,
+                explanation: "La sterne arctique relie l'Arctique à l'Antarctique et parcourt jusqu'à quatre-vingt-dix mille kilomètres par an en comptant les détours. Sur une vie entière, cela représente plusieurs allers-retours vers la Lune.",
+                source: "Egevang et al. — PNAS, 2010."
+            },
+            {
+                id: 407,
+                question: "Qu'est-ce que le syrinx chez un oiseau ?",
+                options: ["Une glande à la base de la queue", "Son organe vocal", "Une plume de vol spécialisée", "Une portion de l'estomac"],
+                correct: 1,
+                explanation: "Situé à la jonction des bronches, le syrinx permet à certaines espèces d'émettre deux sons simultanément, chaque côté vibrant indépendamment. C'est ce qui donne aux chants de grive leur richesse.",
+                source: "Suthers — Journal of Comparative Physiology, 1990."
             }
         ],
         difficile: [
@@ -3364,6 +3668,30 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Le colibri est le seul oiseau capable de voler en marche arrière, de côté et même en stationnaire. Ses ailes battent jusqu'à 80 fois par seconde et décrivent un 8 horizontal, produisant une portance dans les deux sens. Son cœur bat jusqu'à 1 200 fois par minute en vol.",
                 source: "Warrick et al. (2005), Nature - Mécanisme de vol du colibri : le seul oiseau à maîtriser le vol en marche arrière."
+            },
+            {
+                id: 408,
+                question: "Comment fonctionne la respiration des oiseaux ?",
+                options: ["Par des poumons qui se gonflent et se dégonflent", "Par un flux d'air unidirectionnel traversant les poumons", "Par la peau et les poumons", "Par des branchies modifiées"],
+                correct: 1,
+                explanation: "Grâce aux sacs aériens, l'air traverse les poumons toujours dans le même sens, y compris à l'expiration. Ce circuit assure un apport d'oxygène continu et permet aux oies à tête barrée de franchir l'Himalaya.",
+                source: "Scheid et Piiper — Respiration Physiology, 1971."
+            },
+            {
+                id: 409,
+                question: "Qu'appelle-t-on le dimorphisme sexuel chez les oiseaux ?",
+                options: ["La différence d'aspect entre mâle et femelle", "La capacité à changer de sexe", "La présence de deux types de plumes", "Un mode de reproduction particulier"],
+                correct: 0,
+                explanation: "Chez le canard colvert ou le paon, le mâle arbore des couleurs vives tandis que la femelle reste discrète pour la couvaison. Chez d'autres espèces comme le rouge-gorge, les deux sexes sont quasiment identiques.",
+                source: "Darwin — La Filiation de l'homme, 1871."
+            },
+            {
+                id: 410,
+                question: "Comment les oiseaux migrateurs s'orientent-ils la nuit ?",
+                options: ["Uniquement grâce aux variations de température", "Par les étoiles et le champ magnétique terrestre", "En suivant les lumières des grandes villes", "En se guidant sur les courants marins dominants"],
+                correct: 1,
+                explanation: "Les expériences en planétarium ont montré que les passereaux se repèrent sur la rotation du ciel étoilé. Ils disposent en plus d'une boussole magnétique, liée à des protéines de la rétine sensibles au champ terrestre.",
+                source: "Stephen Emlen — Science, 1970."
             }
         ]
     },
@@ -3639,6 +3967,39 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Faux ! Les serpents n'ont pas d'oreilles externes ni de tympan. Ils ne captent pas les sons aériens comme nous. En revanche, ils perçoivent les vibrations du sol via leur mâchoire inférieure et leur os carré — une forme de 'hearing' par conduction osseuse. Les charmes de cobra au son de flûte fonctionnent surtout grâce au mouvement visuel, pas à la musique.",
                 source: "Encyclopédie des Reptiles - Les serpents 'entendent' par conduction osseuse, sans oreilles externes."
+            },
+            {
+                id: 401,
+                type: "vrai_faux",
+                question: "Les reptiles produisent leur propre chaleur corporelle.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Ils sont ectothermes : leur température dépend du milieu. C'est pourquoi on les voit lézarder au soleil le matin puis chercher l'ombre. Cette dépendance explique aussi leur rareté aux hautes latitudes.",
+                source: "Museum national d'Histoire naturelle — thermorégulation des reptiles."
+            },
+            {
+                id: 402,
+                question: "Quel est le plus grand serpent du monde en masse ?",
+                options: ["Le cobra royal", "L'anaconda vert", "Le mamba noir", "La vipère du Gabon"],
+                correct: 1,
+                explanation: "L'anaconda vert peut dépasser deux cents kilos pour environ cinq mètres. Le python réticulé est plus long, jusqu'à sept mètres, mais nettement plus fin.",
+                source: "Rivas — Smithsonian Tropical Research Institute, 2000."
+            },
+            {
+                id: 403,
+                question: "Pourquoi un serpent tire-t-il la langue ?",
+                options: ["Pour se rafraîchir par évaporation", "Pour capter les molécules odorantes", "Pour menacer un adversaire proche", "Pour boire l'eau des flaques"],
+                correct: 1,
+                explanation: "La langue fourchue capte les particules en suspension et les dépose sur l'organe de Jacobson, au palais. Les deux pointes permettent de comparer les concentrations et donc de suivre une piste.",
+                source: "Schwenk — Science, 1994."
+            },
+            {
+                id: 404,
+                question: "Combien de temps peut vivre une tortue géante des Galapagos ?",
+                options: ["Environ trente ans", "Environ soixante ans", "Plus de cent ans", "Environ quinze ans"],
+                correct: 2,
+                explanation: "Ces tortues dépassent régulièrement le siècle. Harriet, morte en 2006 en Australie, était estimée à cent soixante-quinze ans. Leur métabolisme lent contribue à cette longévité exceptionnelle.",
+                source: "Union Internationale pour la Conservation de la Nature — Chelonoidis niger."
             }
         ],
         moyen: [
@@ -3923,6 +4284,31 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Chez de nombreux reptiles (crocodiles, tortues, certains lézards), le sexe n'est pas déterminé génétiquement mais par la température à laquelle les œufs sont incubés. C'est la 'TSD' (Temperature-dependent Sex Determination). Le réchauffement climatique représente un danger réel : une augmentation de température pourrait déséquilibrer les ratios mâles/femelles.",
                 source: "Bull (1980), Science : la détermination du sexe par la température chez les reptiles (TSD)."
+            },
+            {
+                id: 405,
+                type: "vrai_faux",
+                question: "Le caméléon change de couleur uniquement pour se camoufler.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Le changement traduit surtout l'humeur, la température et les intentions sociales. Un mâle en parade devient très vif, un individu stressé s'assombrit. Le camouflage n'est qu'un usage parmi d'autres.",
+                source: "Teyssier et al. — Nature Communications, 2015."
+            },
+            {
+                id: 406,
+                question: "Comment les crocodiles régulent-ils leur température ?",
+                options: ["En transpirant abondamment", "En ouvrant la gueule pour évacuer la chaleur", "En changeant la couleur de leur peau", "En accélérant leur respiration"],
+                correct: 1,
+                explanation: "La gueule ouverte au soleil expose les muqueuses et permet une évaporation qui rafraîchit la tête. Le crocodile alterne aussi bains et bains de soleil pour rester dans sa plage de température optimale.",
+                source: "Grigg et Kirshner — Biology and Evolution of Crocodylians, 2015."
+            },
+            {
+                id: 407,
+                question: "Qu'est-ce que l'autotomie chez certains lézards ?",
+                options: ["La capacité de changer de sexe", "L'abandon volontaire de la queue", "La reproduction sans mâle", "La mue de la peau entière"],
+                correct: 1,
+                explanation: "Des plans de rupture préformés dans les vertèbres caudales permettent au lézard de se détacher de sa queue, qui continue de bouger et occupe le prédateur. La repousse est cartilagineuse et souvent d'une teinte différente.",
+                source: "Bateman et Fleming — Journal of Zoology, 2009."
             }
         ],
         difficile: [
@@ -4218,6 +4604,30 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Le crocodile du Nil peut rester immergé jusqu'à 2 heures en ralentissant son métabolisme. En conditions normales, il remonte respirer toutes les 15 à 20 minutes. Cette capacité d'apnée est rendue possible par un système cardiovasculaire unique qui redirige le sang vers les organes vitaux.",
                 source: "Grigg & Kirshner (2015), Biology and Evolution of Crocodylians - Apnée jusqu'à 2h possible."
+            },
+            {
+                id: 408,
+                question: "De quoi dépend le sexe des petits chez beaucoup de tortues ?",
+                options: ["Des chromosomes sexuels hérités des parents", "De la température d'incubation des œufs", "De l'âge de la mère au moment de la ponte", "Du nombre d'œufs contenus dans la ponte"],
+                correct: 1,
+                explanation: "Chez de nombreuses tortues, les températures les plus chaudes donnent des femelles et les plus fraîches des mâles. Ce mécanisme rend ces espèces particulièrement vulnérables au réchauffement climatique.",
+                source: "Bull — Quarterly Review of Biology, 1980."
+            },
+            {
+                id: 409,
+                question: "Qu'est-ce que la fosse loréale chez certains serpents ?",
+                options: ["Une glande à venin", "Un organe détectant l'infrarouge", "Une cavité auditive", "Un réservoir de graisse"],
+                correct: 1,
+                explanation: "Située entre l'œil et la narine chez les crotales et les pythons, elle perçoit le rayonnement thermique des proies. Le serpent obtient ainsi une image de chaleur qui lui permet de chasser dans l'obscurité totale.",
+                source: "Gracheva et al. — Nature, 2010."
+            },
+            {
+                id: 410,
+                question: "Quelle particularité présente le venin de la vipère de Russell ?",
+                options: ["Il agit exclusivement sur le système nerveux", "Il perturbe fortement la coagulation du sang", "Il attaque uniquement les fibres musculaires", "Il est totalement inoffensif pour l'humain"],
+                correct: 1,
+                explanation: "Son venin hémotoxique déclenche des troubles majeurs de la coagulation et des hémorragies. Un de ses composants, isolé en laboratoire, sert aujourd'hui de réactif standard pour tester la coagulation.",
+                source: "Organisation mondiale de la Santé — envenimations par morsures de serpent."
             }
         ]
     },
@@ -4494,6 +4904,39 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! La baleine bleue est non seulement le plus grand animal vivant aujourd'hui, mais aussi le plus grand de toute l'histoire de la vie sur Terre — plus grande que n'importe quel dinosaure. Elle peut atteindre 33 mètres et 200 tonnes. Son cœur seul pèse environ 600 kg et est aussi grand qu'une petite voiture.",
                 source: "NOAA - La baleine bleue est l'être vivant le plus grand de toute l'histoire de la Terre."
+            },
+            {
+                id: 401,
+                type: "vrai_faux",
+                question: "Les dauphins sont des poissons.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Ce sont des mammifères : ils respirent de l'air par un évent, mettent au monde des petits vivants et les allaitent. Leur nageoire caudale est horizontale, alors que celle des poissons est verticale.",
+                source: "Museum national d'Histoire naturelle — classification des cétacés."
+            },
+            {
+                id: 402,
+                question: "Quel est le plus grand animal ayant jamais vécu sur Terre ?",
+                options: ["Le cachalot", "La baleine bleue", "Le requin baleine", "Le diplodocus"],
+                correct: 1,
+                explanation: "La baleine bleue atteint trente mètres pour près de cent cinquante tonnes. Son cœur pèse à lui seul environ six cents kilos et sa langue peut égaler la masse d'un éléphant.",
+                source: "Union Internationale pour la Conservation de la Nature — Balaenoptera musculus."
+            },
+            {
+                id: 403,
+                question: "Comment les dauphins localisent-ils leurs proies ?",
+                options: ["Par la vue uniquement", "Par écholocation", "Par l'odorat", "Par le champ magnétique"],
+                correct: 1,
+                explanation: "Ils émettent des clics et analysent l'écho renvoyé. Le melon, masse graisseuse du front, focalise les sons, et la mâchoire inférieure conduit le retour vers l'oreille interne.",
+                source: "Au — The Sonar of Dolphins, 1993."
+            },
+            {
+                id: 404,
+                question: "Que mangent principalement les baleines à fanons ?",
+                options: ["De gros poissons", "Du krill et du plancton", "Des phoques", "Des algues"],
+                correct: 1,
+                explanation: "Elles filtrent d'énormes volumes d'eau à travers leurs fanons de kératine pour retenir krill et petits poissons. Une baleine bleue peut en ingérer jusqu'à quatre tonnes par jour en période d'alimentation.",
+                source: "Goldbogen et al. — Nature, 2019."
             }
         ],
         moyen: [
@@ -4769,6 +5212,31 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Le cachalot (Physeter macrocephalus) est le champion de plongée parmi les baleines à dents. Il peut descendre à plus de 3 000 mètres de profondeur et rester immergé plus de 90 minutes, pour chasser des calmars géants dans les abysses. Son crâne particulier, rempli de spermaceti, joue un rôle dans sa plongée et sa communication.",
                 source: "Watkins et al. (2002), Marine Mammal Science - Les cachalots plongent à plus de 3 000 m de profondeur."
+            },
+            {
+                id: 405,
+                type: "vrai_faux",
+                question: "Le cachalot est le plus grand des prédateurs à dents.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Avec ses vingt mètres, le cachalot dépasse largement tous les autres odontocètes. Il plonge à plus de mille mètres pour chasser les calmars géants, et les ventouses laissent des cicatrices circulaires sur sa peau.",
+                source: "Whitehead — Sperm Whales: Social Evolution in the Ocean, 2003."
+            },
+            {
+                id: 406,
+                question: "Comment les phoques supportent-ils les longues apnées ?",
+                options: ["Ils stockent l'air comprimé dans leurs poumons", "Ils stockent l'oxygène dans le sang et les muscles", "Ils absorbent l'oxygène directement par la peau", "Ils ralentissent fortement leur digestion en plongée"],
+                correct: 1,
+                explanation: "Leur sang très riche en hémoglobine et leurs muscles chargés en myoglobine constituent une réserve d'oxygène. Le rythme cardiaque chute fortement et la circulation se concentre sur le cerveau et le cœur.",
+                source: "Ponganis — Diving Physiology of Marine Mammals, 2015."
+            },
+            {
+                id: 407,
+                question: "Qu'est-ce que le chant des baleines à bosse ?",
+                options: ["Un cri d'alerte lancé à l'approche d'un prédateur", "Une longue séquence sonore surtout émise par les mâles", "Un procédé qui facilite la digestion en plongée", "Un bruit involontaire produit au niveau de l'évent"],
+                correct: 1,
+                explanation: "Ces séquences structurées durent de dix à vingt minutes et se répètent pendant des heures. Tous les mâles d'une même population chantent la même version, qui évolue d'année en année comme une mode culturelle.",
+                source: "Payne et McVay — Science, 1971."
             }
         ],
         difficile: [
@@ -5073,6 +5541,30 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Malgré leur surnom de 'baleines tueuses', les orques appartiennent à la famille des Delphinidés — la même famille que les dauphins. Ce sont donc les plus grands dauphins du monde, pouvant atteindre 9 mètres et 6 tonnes. Leur classification comme 'baleine' est populaire mais scientifiquement incorrecte.",
                 source: "Musée d'Histoire Naturelle - L'orque (Orcinus orca) appartient à la famille des Delphinidés (dauphins)."
+            },
+            {
+                id: 408,
+                question: "Qu'est-ce que le rete mirabile chez les cétacés ?",
+                options: ["Un organe de digestion propre aux cétacés", "Un réseau sanguin d'échange thermique", "Une glande hormonale située sous l'évent", "Un muscle puissant de la nageoire caudale"],
+                correct: 1,
+                explanation: "Ce réseau de vaisseaux entrelacés récupère la chaleur du sang artériel avant qu'elle ne se perde dans les extrémités. Il permet aussi de réguler la température des testicules malgré leur position interne.",
+                source: "Rommel et al. — Anatomical Record, 1992."
+            },
+            {
+                id: 409,
+                question: "Pourquoi les orques sont-elles classées parmi les dauphins ?",
+                options: ["En raison de leur taille proche de celle des dauphins", "Parce qu'elles appartiennent à la famille des Delphinidés", "Parce qu'elles vivent dans les eaux froides polaires", "En raison de leur régime alimentaire très varié"],
+                correct: 1,
+                explanation: "L'orque est le plus grand membre des Delphinidés, malgré son nom populaire de baleine tueuse. Elle en partage l'anatomie crânienne, l'écholocation et l'organisation sociale en groupes matrilinéaires stables.",
+                source: "Ford — Marine Mammal Science, 2009."
+            },
+            {
+                id: 410,
+                question: "Qu'est-ce que la ménopause chez l'orque femelle ?",
+                options: ["Un phénomène qui n'existe pas chez l'animal sauvage", "Un arrêt de reproduction suivi de décennies de vie", "Une maladie fréquente chez les femelles âgées", "Un changement de couleur de la peau avec l'âge"],
+                correct: 1,
+                explanation: "L'orque fait partie des très rares espèces où les femelles cessent de se reproduire vers quarante ans mais vivent parfois jusqu'à quatre-vingt-dix ans. Les matriarches guident le groupe vers les zones de pêche lors des années difficiles.",
+                source: "Croft et al. — Current Biology, 2017."
             }
         ]
     },
@@ -5178,6 +5670,39 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Le lion africain est classé 'vulnérable' par l'UICN avec environ 20 000 à 25 000 individus sauvages restants. Leur population a diminué de 43% en 21 ans. Les principales menaces sont la perte d'habitat, les conflits avec les éleveurs, le braconnage et les maladies. Certaines sous-populations régionales sont classées 'en danger'.",
                 source: "IUCN Red List - Le lion africain est classé 'vulnérable', avec une population en déclin de 43%."
+            },
+            {
+                id: 401,
+                type: "vrai_faux",
+                question: "C'est le lion mâle qui chasse pour le groupe.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Ce sont les lionnes qui assurent la majorité des chasses, souvent en coopération. Le mâle défend le territoire et la troupe contre les intrus, et intervient surtout sur les proies de grande taille.",
+                source: "Schaller — The Serengeti Lion, 1972."
+            },
+            {
+                id: 402,
+                question: "Comment appelle-t-on un groupe de lions ?",
+                options: ["Une meute", "Une troupe", "Un banc", "Une harde"],
+                correct: 1,
+                explanation: "On parle de troupe, ou de fierté par traduction de l'anglais pride. Elle réunit généralement des lionnes apparentées, leurs petits et un ou quelques mâles.",
+                source: "Union Internationale pour la Conservation de la Nature — Panthera leo."
+            },
+            {
+                id: 403,
+                question: "Jusqu'à quelle distance porte le rugissement d'un lion ?",
+                options: ["Environ un kilomètre", "Environ cinq kilomètres", "Environ vingt kilomètres", "Environ cent mètres"],
+                correct: 1,
+                explanation: "Le rugissement s'entend jusqu'à cinq kilomètres. Les cordes vocales aplaties et chargées de graisse permettent de produire un son très puissant sans effort excessif.",
+                source: "Klemuk et al. — PLoS ONE, 2011."
+            },
+            {
+                id: 404,
+                question: "Où vit la dernière population de lions d'Asie ?",
+                options: ["Dans les montagnes du nord de l'Iran", "Dans la forêt de Gir en Inde", "Dans le sud-est de la Turquie", "Dans le désert d'Arabie saoudite"],
+                correct: 1,
+                explanation: "Quelques centaines de lions d'Asie subsistent dans le parc national de Gir, au Gujarat. Réduite à une dizaine d'individus au début du vingtième siècle, la population remonte lentement grâce à la protection.",
+                source: "Wildlife Institute of India — recensement du lion asiatique."
             }
         ],
         moyen: [
@@ -5289,6 +5814,31 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Les lions sont des animaux nocturnes et peuvent parcourir de très grandes distances la nuit, notamment les mâles qui patrouillent leur territoire. Des études GPS ont enregistré des déplacements allant jusqu'à 50 km en une seule nuit lors de rondes de territoire ou de recherche de femelles.",
                 source: "Stander (1992), Behavioral Ecology - Les lions parcourent de grandes distances la nuit pour patrouiller."
+            },
+            {
+                id: 405,
+                type: "vrai_faux",
+                question: "La crinière du lion renseigne sur son état de santé.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Une crinière sombre et fournie signale un taux de testostérone élevé et une bonne condition. Les lionnes préfèrent ces mâles, et les rivaux hésitent davantage à les affronter.",
+                source: "West et Packer — Science, 2002."
+            },
+            {
+                id: 406,
+                question: "Combien de temps un lion dort-il par jour en moyenne ?",
+                options: ["Environ six heures", "Environ dix heures", "Environ vingt heures", "Environ deux heures"],
+                correct: 2,
+                explanation: "Le lion se repose jusqu'à vingt heures par jour. Ce mode de vie économise l'énergie entre des chasses coûteuses, dont une grande partie se solde par un échec.",
+                source: "Schaller — The Serengeti Lion, 1972."
+            },
+            {
+                id: 407,
+                question: "Que se passe-t-il quand un nouveau mâle prend le contrôle d'une troupe ?",
+                options: ["Il adopte les lionceaux existants", "Il tue souvent les lionceaux non sevrés", "Il quitte le groupe après un mois", "Il partage le territoire avec l'ancien mâle"],
+                correct: 1,
+                explanation: "L'infanticide ramène les lionnes en chaleur en quelques jours au lieu de deux ans. Le nouveau mâle, dont le règne dure rarement plus de trois ans, maximise ainsi sa descendance.",
+                source: "Packer et Pusey — American Naturalist, 1983."
             }
         ],
         difficile: [
@@ -5398,6 +5948,30 @@ const quizzesData = {
                 correct: 1,
                 explanation: "C'est faux ! Les lionnes chassent en groupe de façon coordonnée, ce qui est rare chez les félins. Elles utilisent des stratégies d'encerclement et de rabattage pour capturer des proies bien plus grandes qu'elles, comme les buffles ou les zèbres. Certaines jouent le rôle de 'rabatteuses', d'autres celui de 'plongeuses' pour l'attaque finale.",
                 source: "Stander P.E. (1992) - Cooperative hunting in lions : stratégies de chasse collective documentées."
+            },
+            {
+                id: 408,
+                question: "Quelle proportion de chasses aboutit environ chez le lion ?",
+                options: ["Plus de quatre-vingts pour cent", "Entre vingt et trente pour cent", "Environ soixante pour cent", "Moins de cinq pour cent"],
+                correct: 1,
+                explanation: "Le taux de réussite tourne autour d'un quart des tentatives, et monte lors des chasses coopératives ou de nuit. Le lion vole aussi fréquemment les proies des hyènes et des guépards.",
+                source: "Stander — Behavioral Ecology and Sociobiology, 1992."
+            },
+            {
+                id: 409,
+                question: "Qu'est-ce que le flehmen observé chez le lion ?",
+                options: ["Un grognement d'intimidation lancé face à un rival", "Un retroussement des babines pour analyser une odeur", "Une posture de soumission adoptée par les jeunes mâles", "Une technique de chasse en terrain découvert"],
+                correct: 1,
+                explanation: "En retroussant la lèvre supérieure, le lion dirige les molécules vers l'organe voméronasal. Il évalue ainsi l'état reproducteur des femelles à partir de leurs marquages urinaires.",
+                source: "Hart et Leedy — Journal of Mammalogy, 1987."
+            },
+            {
+                id: 410,
+                question: "Combien pèse en moyenne un lion mâle adulte d'Afrique ?",
+                options: ["Environ quatre-vingts kilos", "Environ cent quatre-vingts kilos", "Environ trois cents kilos", "Environ quatre cents kilos"],
+                correct: 1,
+                explanation: "Un mâle adulte pèse en général entre cent cinquante et deux cent vingt-cinq kilos, contre cent vingt à cent cinquante pour une lionne. Le tigre de Sibérie le dépasse et reste le plus lourd des félins.",
+                source: "Union Internationale pour la Conservation de la Nature — Panthera leo."
             }
         ]
     },
@@ -5583,6 +6157,39 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! L'aigle royal utilise et agrandit le même nid (l'aerie ou eyrie) pendant de nombreuses années. Un vieux nid peut peser plusieurs tonnes et mesurer plusieurs mètres de diamètre. Le record documenté est un nid de 2,5 m de profondeur et 1,8 m de large, pesant environ 1 tonne. Chaque année, le couple ajoute de nouvelles branches.",
                 source: "Watson J. (2010) - The Golden Eagle : les nids d'aigle royal peuvent atteindre plus d'une tonne."
+            },
+            {
+                id: 401,
+                type: "vrai_faux",
+                question: "L'aigle royal peut repérer une proie à plusieurs kilomètres.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Son acuité visuelle dépasse largement la nôtre, grâce à une densité de photorécepteurs bien supérieure et à deux zones de vision fine par œil. Il distingue un lièvre à plus de deux kilomètres.",
+                source: "Reymond — Vision Research, 1985."
+            },
+            {
+                id: 402,
+                question: "Quelle est l'envergure d'un aigle royal adulte ?",
+                options: ["Environ un mètre", "Environ deux mètres", "Environ trois mètres cinquante", "Environ soixante centimètres"],
+                correct: 1,
+                explanation: "L'envergure se situe entre un mètre quatre-vingts et deux mètres trente. Comme chez la plupart des rapaces, la femelle est nettement plus grande que le mâle.",
+                source: "Ligue pour la Protection des Oiseaux — fiche aigle royal."
+            },
+            {
+                id: 403,
+                question: "De quoi se nourrit principalement l'aigle royal ?",
+                options: ["De poissons capturés à la surface des lacs", "De mammifères de taille moyenne", "De graines et de baies en automne", "D'insectes et de petits invertébrés"],
+                correct: 1,
+                explanation: "Marmottes, lièvres et jeunes ongulés composent l'essentiel de son régime. Il consomme aussi des charognes en hiver, quand les proies vivantes se font rares.",
+                source: "Watson — The Golden Eagle, 2010."
+            },
+            {
+                id: 404,
+                question: "Comment appelle-t-on le nid d'un aigle ?",
+                options: ["Un terrier", "Une aire", "Une hutte", "Une tanière"],
+                correct: 1,
+                explanation: "L'aire est construite sur une falaise ou un grand arbre, et réutilisée d'année en année. Agrandie à chaque saison, elle peut finir par peser plusieurs centaines de kilos.",
+                source: "Museum national d'Histoire naturelle — glossaire ornithologique."
             }
         ],
         moyen: [
@@ -5794,6 +6401,31 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Faux ! Les juvéniles se distinguent des adultes par des taches blanches à la base de la queue et aux ailes — visibles en vol. Ce plumage juvénile disparaît progressivement sur 4 à 5 ans pour laisser place au plumage adulte brun foncé avec la nuque dorée caractéristique. Cette différence permet aux observateurs d'estimer l'âge des individus.",
                 source: "Flint et al. - Aging Golden Eagles : la maturité du plumage prend 4 à 5 ans."
+            },
+            {
+                id: 405,
+                type: "vrai_faux",
+                question: "L'aigle royal est présent uniquement en Europe.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Il occupe tout l'hémisphère nord : Amérique du Nord, Europe, Afrique du Nord et une grande partie de l'Asie. C'est l'un des rapaces à la répartition la plus vaste au monde.",
+                source: "Union Internationale pour la Conservation de la Nature — Aquila chrysaetos."
+            },
+            {
+                id: 406,
+                question: "À quelle vitesse l'aigle royal pique-t-il sur une proie ?",
+                options: ["Environ cinquante kilomètres par heure", "Plus de deux cents kilomètres par heure", "Environ trente kilomètres par heure", "Plus de cinq cents kilomètres par heure"],
+                correct: 1,
+                explanation: "En piqué, il dépasse deux cents kilomètres par heure. Le faucon pèlerin va plus vite encore, avec des pointes mesurées au-delà de trois cents.",
+                source: "Watson — The Golden Eagle, 2010."
+            },
+            {
+                id: 407,
+                question: "Combien d'œufs pond généralement une femelle d'aigle royal ?",
+                options: ["Un seul", "Un à trois", "Cinq à sept", "Une dizaine"],
+                correct: 1,
+                explanation: "La ponte compte le plus souvent deux œufs, parfois un ou trois. L'aîné, éclos quelques jours plus tôt, élimine fréquemment le cadet : c'est le caïnisme, courant chez les grands rapaces.",
+                source: "Ligue pour la Protection des Oiseaux — reproduction des rapaces."
             }
         ],
         difficile: [
@@ -5998,6 +6630,30 @@ const quizzesData = {
                 correct: 1,
                 explanation: "C'est faux ! Un aigle royal pèse 3 à 6 kg et peut soulever au maximum environ 5 à 6 kg — à peu près son propre poids dans les meilleures conditions. En pratique, il chasse surtout des proies de 1 à 3 kg (lièvres, lapins). Les cas de capture d'agneaux ou de faons sont rares et souvent exagérés.",
                 source: "Katzner T. et al. - Golden Eagle prey selection : capacité de transport limitée à ~5 kg."
+            },
+            {
+                id: 408,
+                question: "Qu'est-ce que le caïnisme chez les rapaces ?",
+                options: ["Le vol d'un nid à un congénère", "L'élimination du cadet par l'aîné", "Le partage des proies entre couvées", "L'abandon du nid après l'éclosion"],
+                correct: 1,
+                explanation: "L'éclosion décalée donne un avantage décisif au premier né, qui monopolise la nourriture et agresse le second. La seconde ponte joue en réalité le rôle d'assurance en cas d'échec du premier œuf.",
+                source: "Simmons — Journal of Zoology, 1988."
+            },
+            {
+                id: 409,
+                question: "À quel âge l'aigle royal acquiert-il son plumage adulte ?",
+                options: ["Vers un an", "Vers quatre à cinq ans", "Dès la première mue", "Vers dix ans"],
+                correct: 1,
+                explanation: "Le jeune porte des taches blanches nettes sur les ailes et la queue, qui disparaissent progressivement au fil des mues. Le plumage définitif est atteint vers quatre ou cinq ans, âge de la première reproduction.",
+                source: "Watson — The Golden Eagle, 2010."
+            },
+            {
+                id: 410,
+                question: "Quelle particularité présentent les serres de l'aigle royal ?",
+                options: ["Elles sont rétractiles comme celles des félins", "Elles exercent une pression de plusieurs centaines de newtons", "Elles sont dépourvues de griffes et servent d'appui", "Elles servent surtout à marcher au sol entre deux vols"],
+                correct: 1,
+                explanation: "La force de serrage, plusieurs fois supérieure à celle d'une main humaine, tue la proie par perforation. Le tendon fléchisseur se bloque automatiquement, ce qui permet de maintenir la prise sans effort musculaire continu.",
+                source: "Fowler et al. — PLoS ONE, 2009."
             }
         ]
     },
@@ -6184,6 +6840,39 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Le tigre est un félin solitaire et territorial. Chaque adulte possède un vaste territoire qu'il marque avec de l'urine et des griffures. Mâles et femelles ne se retrouvent que pour s'accoupler. La femelle élève seule ses petits. Cette solitude est une adaptation à la chasse en forêt dense où un seul prédateur est plus efficace qu'un groupe.",
                 source: "Sunquist M. & F. (2002) - Wild Cats of the World : le tigre est fondamentalement solitaire et territorial."
+            },
+            {
+                id: 401,
+                type: "vrai_faux",
+                question: "Les rayures du tigre sont uniques à chaque individu.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Comme des empreintes digitales, aucun tigre n'a le même motif. Les chercheurs s'en servent pour identifier les individus sur les pièges photographiques et estimer les populations sauvages.",
+                source: "Karanth et Nichols — Ecology, 1998."
+            },
+            {
+                id: 402,
+                question: "Quelle est la plus grande sous-espèce de tigre ?",
+                options: ["Le tigre de Sumatra", "Le tigre de Sibérie", "Le tigre du Bengale", "Le tigre d'Indochine"],
+                correct: 1,
+                explanation: "Le tigre de Sibérie, ou tigre de l'Amour, dépasse trois cents kilos. Sa fourrure épaisse et sa couche de graisse lui permettent de supporter des hivers à moins quarante degrés.",
+                source: "Union Internationale pour la Conservation de la Nature — Panthera tigris altaica."
+            },
+            {
+                id: 403,
+                question: "Le tigre est-il un bon nageur ?",
+                options: ["Non, il évite l'eau comme la plupart des félins", "Oui, il nage volontiers sur plusieurs kilomètres", "Il ne sait pas nager et se noierait rapidement", "Il nage uniquement pour fuir un danger immédiat"],
+                correct: 1,
+                explanation: "Contrairement à la plupart des félins, le tigre apprécie l'eau et s'y rafraîchit. Il traverse sans difficulté des rivières larges de plusieurs kilomètres, notamment dans les mangroves des Sundarbans.",
+                source: "Sunquist — Wild Cats of the World, 2002."
+            },
+            {
+                id: 404,
+                question: "Le tigre vit-il en groupe ou en solitaire ?",
+                options: ["En groupe familial", "En solitaire", "En couple permanent", "En troupe de dix individus"],
+                correct: 1,
+                explanation: "Le tigre est solitaire et territorial. Seuls la femelle et ses petits vivent ensemble, pendant environ deux ans. Les rencontres entre adultes se limitent à la reproduction et aux conflits de territoire.",
+                source: "Schaller — The Deer and the Tiger, 1967."
             }
         ],
         moyen: [
@@ -6379,6 +7068,31 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Faux ! C'est l'inverse. Le tigre de Sibérie (aussi appelé tigre de l'Amour) est la plus grande sous-espèce de tigre. Les mâles peuvent peser jusqu'à 300 kg et mesurer 3,7 mètres. Le tigre du Bengale est plus commun (environ 2 500 individus) mais plus petit en moyenne. Le tigre de Sumatra est la plus petite sous-espèce vivante.",
                 source: "WWF Tiger Programme - Le tigre de Sibérie est la plus grande sous-espèce de tigre."
+            },
+            {
+                id: 405,
+                type: "vrai_faux",
+                question: "La peau du tigre est rayée sous sa fourrure.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Les rayures sont pigmentées jusque dans la peau. Un tigre rasé conserverait donc son motif, ce qui n'est pas le cas de tous les félins tachetés.",
+                source: "Sunquist — Wild Cats of the World, 2002."
+            },
+            {
+                id: 406,
+                question: "Combien de sous-espèces de tigres subsistent aujourd'hui ?",
+                options: ["Deux", "Six", "Neuf", "Une seule"],
+                correct: 1,
+                explanation: "Six sous-espèces subsistent à l'état sauvage. Trois se sont éteintes au vingtième siècle : les tigres de Bali, de Java et de la Caspienne. Il reste environ quatre mille tigres sauvages au total.",
+                source: "Union Internationale pour la Conservation de la Nature — Panthera tigris."
+            },
+            {
+                id: 407,
+                question: "Que sont les tigres blancs du Bengale ?",
+                options: ["Une sous-espèce distincte vivant dans l'Himalaya", "Des tigres du Bengale porteurs d'une mutation récessive", "Des tigres albinos dépourvus de tout pigment", "Des hybrides nés d'un croisement avec le lion"],
+                correct: 1,
+                explanation: "Ce n'est pas une sous-espèce mais une variation de couleur liée à un gène récessif. Les individus en captivité descendent presque tous d'un même mâle capturé en 1951, d'où une consanguinité importante.",
+                source: "Xu et al. — Current Biology, 2013."
             }
         ],
         difficile: [
@@ -6578,6 +7292,30 @@ const quizzesData = {
                 correct: 1,
                 explanation: "C'est faux et alarmant ! En 1900, il y avait environ 100 000 tigres sauvages. Aujourd'hui, il n'en reste que 3 900 à 4 500, soit une réduction de plus de 95%. La déforestation, le braconnage et la réduction des proies ont conduit à cette situation critique. 6 des 9 sous-espèces historiques sont aujourd'hui éteintes ou en voie de l'être.",
                 source: "WWF Tiger Conservation Program (2023) : environ 3 900 tigres sauvages restants dans le monde."
+            },
+            {
+                id: 408,
+                question: "Quelle est la taille d'un territoire de tigre mâle en Sibérie ?",
+                options: ["Environ dix kilomètres carrés de forêt", "Plusieurs centaines de kilomètres carrés", "Un seul kilomètre carré autour du repaire", "Environ cinquante hectares de terrain"],
+                correct: 1,
+                explanation: "Faute de proies abondantes, un mâle sibérien peut occuper plus de mille kilomètres carrés, contre quelques dizaines en Inde. Le territoire d'un mâle recouvre celui de plusieurs femelles.",
+                source: "Goodrich et al. — Journal of Mammalogy, 2010."
+            },
+            {
+                id: 409,
+                question: "Combien de temps dure la gestation chez la tigresse ?",
+                options: ["Environ soixante jours", "Environ cent cinq jours", "Environ six mois", "Environ un an"],
+                correct: 1,
+                explanation: "La gestation dure entre cent et cent huit jours. La portée compte deux à quatre petits, aveugles à la naissance, dont une bonne moitié n'atteint pas l'âge adulte.",
+                source: "Sunquist — Wild Cats of the World, 2002."
+            },
+            {
+                id: 410,
+                question: "Pourquoi le tigre rugit-il dans les très basses fréquences ?",
+                options: ["Pour économiser son énergie pendant la chasse nocturne", "Parce que les infrasons traversent mieux la végétation dense", "Pour imiter le cri d'autres animaux de la forêt", "Parce que les basses fréquences portent mieux sous l'eau"],
+                correct: 1,
+                explanation: "Le rugissement contient des composantes sous les vingt hertz, peu absorbées par la forêt. Ces infrasons portent à plusieurs kilomètres et provoquent une réaction de sidération chez les proies.",
+                source: "Walsh et al. — Acoustical Society of America, 2000."
             }
         ]
     },
@@ -6843,6 +7581,39 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Dans les livres, Harry hérite des yeux verts de sa mère Lily Potter — un détail important car Rogue reconnaît ce regard. En revanche, Daniel Radcliffe (qui joue Harry dans les films) a les yeux bleus. Les producteurs ont essayé des lentilles vertes mais elles causaient des irritations oculaires, donc ils ont gardé les yeux naturels de l'acteur.",
                 source: "J.K. Rowling - Harry Potter et la Pierre Philosophale : description des yeux verts d'Harry."
+            },
+            {
+                id: 401,
+                type: "vrai_faux",
+                question: "Le Choixpeau magique a envisagé d'envoyer Harry à Serpentard.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le Choixpeau insiste sur le potentiel de Harry à Serpentard, mais cède devant son refus. Cette hésitation nourrit tout au long de la saga le doute de Harry sur sa propre nature.",
+                source: "J.K. Rowling — Harry Potter à l'école des sorciers, 1997."
+            },
+            {
+                id: 402,
+                question: "Quel est le patronus de Harry Potter ?",
+                options: ["Un loup", "Un cerf", "Un aigle", "Une biche"],
+                correct: 1,
+                explanation: "Le patronus de Harry prend la forme d'un cerf, en écho à la forme d'animagus de son père James. Celui de Lily, sa mère, était une biche.",
+                source: "J.K. Rowling — Harry Potter et le prisonnier d'Azkaban, 1999."
+            },
+            {
+                id: 403,
+                question: "Quelle matière enseigne Severus Rogue au début de la saga ?",
+                options: ["La métamorphose", "Les potions", "La défense contre les forces du Mal", "Les sortilèges"],
+                correct: 1,
+                explanation: "Rogue enseigne les potions pendant les cinq premières années. Il obtient enfin le poste de défense contre les forces du Mal dans le sixième tome, poste réputé maudit.",
+                source: "J.K. Rowling — Harry Potter à l'école des sorciers, 1997."
+            },
+            {
+                id: 404,
+                question: "Quel est le nom du chien à trois têtes gardant la pierre philosophale ?",
+                options: ["Crockdur", "Touffu", "Croûtard", "Crocdur"],
+                correct: 1,
+                explanation: "Touffu appartient à Hagrid, qui l'a acheté à un Grec dans un pub. Comme Cerbère, il s'endort dès qu'on lui joue de la musique.",
+                source: "J.K. Rowling — Harry Potter à l'école des sorciers, 1997."
             }
         ],
         moyen: [
@@ -7103,6 +7874,31 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Dans le premier tome, Ron utilise la vieille baguette de son frère Charlie, ce qui explique pourquoi ses sorts partent souvent de travers. La baguette cassée dans l'accident de voiture volante (tome 2) est également celle héritée. Ce n'est qu'à partir du tome 3 qu'il reçoit une baguette qui lui est propre, achetée par ses parents.",
                 source: "J.K. Rowling - Harry Potter à l'École des Sorciers : Ron emprunte la vieille baguette de Charlie."
+            },
+            {
+                id: 405,
+                type: "vrai_faux",
+                question: "Les Horcruxes sont au nombre de sept dans la saga.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Voldemort en a créé six volontairement et visait un total de sept fragments d'âme. Harry devient un septième Horcruxe accidentel, ce que Voldemort ignore jusqu'à la fin.",
+                source: "J.K. Rowling — Harry Potter et les reliques de la Mort, 2007."
+            },
+            {
+                id: 406,
+                question: "Quelles sont les trois Reliques de la Mort ?",
+                options: ["La cape, la baguette et la pierre", "La coupe, le médaillon et le diadème", "Le miroir, la carte et le vif d'or", "Le journal, la bague et le serpent"],
+                correct: 0,
+                explanation: "La Baguette de Sureau, la Pierre de Résurrection et la Cape d'Invisibilité forment les Reliques. Celui qui réunit les trois devient selon la légende le maître de la Mort.",
+                source: "J.K. Rowling — Harry Potter et les reliques de la Mort, 2007."
+            },
+            {
+                id: 407,
+                question: "Qui tue Dumbledore ?",
+                options: ["Drago Malefoy", "Severus Rogue", "Bellatrix Lestrange", "Voldemort"],
+                correct: 1,
+                explanation: "Rogue lance le sortilège de mort au sommet de la tour d'astronomie, en exécution d'un accord passé avec Dumbledore lui-même, déjà condamné par la malédiction de la bague.",
+                source: "J.K. Rowling — Harry Potter et le Prince de sang-mêlé, 2005."
             }
         ],
         difficile: [
@@ -7372,6 +8168,30 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Le Choixpeau Magique met presque quatre minutes à décider pour Harry (ce sont les fameux 'nearly hatted' ou 'hat stall' dans la version anglaise). Il envisage sérieusement Serpentard, considérant que Harry a le courage, la ruse et la volonté d'y réussir. C'est Harry lui-même qui insiste mentalement pour ne pas aller en Serpentard.",
                 source: "J.K. Rowling - Harry Potter à l'École des Sorciers, Chapitre 7 : le Choixpeau hésite longuement pour Harry."
+            },
+            {
+                id: 408,
+                question: "Quel objet Dumbledore lègue-t-il à Hermione dans son testament ?",
+                options: ["Le Vif d'or", "Les Contes de Beedle le Barde", "Le Déluminateur", "L'épée de Gryffondor"],
+                correct: 1,
+                explanation: "Hermione reçoit le recueil de contes en runes, qui contient l'histoire des trois frères et donc la clé des Reliques. Ron hérite du Déluminateur et Harry du Vif d'or.",
+                source: "J.K. Rowling — Harry Potter et les reliques de la Mort, 2007."
+            },
+            {
+                id: 409,
+                question: "Quel est le vrai prénom de Voldemort ?",
+                options: ["Thomas", "Tom", "Marvolo", "Salazar"],
+                correct: 1,
+                explanation: "Tom Elvis Jedusor dans la traduction française, anagramme de Je suis Voldemort. En anglais, Tom Marvolo Riddle donne I am Lord Voldemort.",
+                source: "J.K. Rowling — Harry Potter et la Chambre des secrets, 1998."
+            },
+            {
+                id: 410,
+                question: "Quelle créature garde les coffres de Gringotts en profondeur ?",
+                options: ["Un basilic", "Un dragon", "Un troll", "Une chimère"],
+                correct: 1,
+                explanation: "Un dragon ukrainien à pointes, aveugli et conditionné par le bruit des crécelles, garde les coffres les plus profonds. Harry, Ron et Hermione s'en échappent sur son dos.",
+                source: "J.K. Rowling — Harry Potter et les reliques de la Mort, 2007."
             }
         ]
     },
@@ -7651,6 +8471,39 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Les Sith suivent la Règle de Deux, établie par Dark Bane après la destruction de l'ancien ordre Sith. Selon cette règle, il ne peut y avoir qu'un seul Maître Sith et un seul apprenti à la fois. Ainsi, la haine entre eux maintient leur pouvoir — l'apprenti cherche toujours à surpasser le maître.",
                 source: "Star Wars: The Phantom Menace (1999) — Yoda mentionne la Règle de Deux des Sith."
+            },
+            {
+                id: 401,
+                type: "vrai_faux",
+                question: "Dark Vador est le père de Luke Skywalker.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! La révélation intervient à la fin de L'Empire contre-attaque. La réplique exacte est Non, je suis ton père, souvent citée à tort comme Luke, je suis ton père.",
+                source: "Lucasfilm — Star Wars épisode V, 1980."
+            },
+            {
+                id: 402,
+                question: "Quel est le nom du vaisseau de Han Solo ?",
+                options: ["L'Étoile Noire", "Le Faucon Millenium", "Le Destroyer stellaire", "Le Razor Crest"],
+                correct: 1,
+                explanation: "Le Faucon Millenium, cargo corellien modifié, est gagné par Han au jeu contre Lando Calrissian. Il revendique avoir couvert la Course de Kessel en moins de douze parsecs.",
+                source: "Lucasfilm — Star Wars épisode IV, 1977."
+            },
+            {
+                id: 403,
+                question: "Quelle est la planète natale de Luke Skywalker ?",
+                options: ["Naboo", "Tatooine", "Alderaan", "Endor"],
+                correct: 1,
+                explanation: "Luke grandit sur Tatooine, planète désertique à deux soleils, chez son oncle et sa tante. Anakin y avait vécu enfant comme esclave.",
+                source: "Lucasfilm — Star Wars épisode IV, 1977."
+            },
+            {
+                id: 404,
+                question: "De quelle couleur est le sabre laser de Yoda ?",
+                options: ["Bleu", "Vert", "Rouge", "Violet"],
+                correct: 1,
+                explanation: "Yoda manie un sabre vert, révélé dans L'Attaque des clones. Le violet est la couleur unique de Mace Windu, obtenue à la demande de Samuel L. Jackson.",
+                source: "Lucasfilm — Star Wars épisode II, 2002."
             }
         ],
         moyen: [
@@ -7842,6 +8695,31 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Din Djarin est le Mandalorien de la série éponyme Disney+. C'est un chasseur de primes solitaire qui adopte Grogu (Baby Yoda) et lutte pour le protéger. Son histoire révèle la culture mandaorienne en profondeur. La série, créée par Jon Favreau, est l'une des plus populaires de Disney+.",
                 source: "The Mandalorian (2019), Disney+ — Din Djarin, le Mandalorien."
+            },
+            {
+                id: 405,
+                type: "vrai_faux",
+                question: "Le personnage de Yoda a une espèce clairement nommée dans les films.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! L'espèce de Yoda n'a jamais été nommée officiellement. George Lucas a délibérément entretenu le mystère, et la règle a été maintenue pour Grogu dans The Mandalorian.",
+                source: "Lucasfilm Story Group — canon officiel."
+            },
+            {
+                id: 406,
+                question: "Qui a construit C-3PO ?",
+                options: ["Obi-Wan Kenobi", "Anakin Skywalker", "Les ingénieurs de Naboo", "Owen Lars"],
+                correct: 1,
+                explanation: "Anakin assemble C-3PO enfant sur Tatooine, à partir de pièces de récupération, pour aider sa mère. Le droïde apparaît d'abord sans revêtement extérieur.",
+                source: "Lucasfilm — Star Wars épisode I, 1999."
+            },
+            {
+                id: 407,
+                question: "Quel est le nom de la sœur jumelle de Luke ?",
+                options: ["Padmé", "Leia", "Rey", "Ahsoka"],
+                correct: 1,
+                explanation: "Leia Organa est séparée de Luke à la naissance et confiée à la famille royale d'Alderaan. Leur lien de parenté n'est révélé que dans Le Retour du Jedi.",
+                source: "Lucasfilm — Star Wars épisode VI, 1983."
             }
         ],
         difficile: [
@@ -7972,6 +8850,30 @@ const quizzesData = {
                 correct: 3,
                 explanation: "La base de Scarif est la station/archive impériale sur la planète Scarif où sont stockés les plans de l'Étoile de la Mort. Rogue One culmine sur l'assaut de cette base par Jyn Erso et son équipe. C'est sur Scarif que les plans sont transmis à Leia — transition directe vers le début d'Episode IV.",
                 source: "Rogue One: A Star Wars Story (2016) — assaut sur Scarif."
+            },
+            {
+                id: 408,
+                question: "Quel ordre exécuté par les clones élimine les Jedi ?",
+                options: ["L'ordre 55", "L'ordre 66", "L'ordre 22", "L'ordre 99"],
+                correct: 1,
+                explanation: "L'ordre 66, inscrit dans la programmation biologique des clones via une puce inhibitrice, transforme les soldats en exécuteurs des Jedi sur simple commande de Palpatine.",
+                source: "Lucasfilm — Star Wars épisode III, 2005."
+            },
+            {
+                id: 409,
+                question: "Quelle planète est détruite par l'Étoile de la Mort dans l'épisode IV ?",
+                options: ["Naboo", "Alderaan", "Coruscant", "Dantooine"],
+                correct: 1,
+                explanation: "Tarkin détruit Alderaan, planète pacifique et natale de Leia, pour faire une démonstration de force. Leia est contrainte d'assister à sa destruction.",
+                source: "Lucasfilm — Star Wars épisode IV, 1977."
+            },
+            {
+                id: 410,
+                question: "Comment se nomme le code moral que suivent les Sith ?",
+                options: ["Le Code Jedi", "La Règle des Deux", "Le Traité de Coruscant", "La Voie du Mandalore"],
+                correct: 1,
+                explanation: "Instaurée par Dark Bane, la Règle des Deux limite les Sith à un maître et un apprenti. Elle évite les guerres internes qui avaient auparavant décimé l'ordre.",
+                source: "Lucasfilm Story Group — canon officiel."
             }
         ]
     },
@@ -8271,6 +9173,39 @@ const quizzesData = {
                 correct: 2,
                 explanation: "Jujutsu Kaisen est créé par Gege Akutami (pseudonyme), publié dans le Weekly Shōnen Jump depuis mars 2018. Akutami est connu pour sa narration impitoyable — il n'hésite pas à tuer des personnages importants. Le manga a vendu plus de 80 millions d'exemplaires dans le monde en 2023.",
                 source: "Weekly Shōnen Jump — Jujutsu Kaisen par Gege Akutami (2018-présent)."
+            },
+            {
+                id: 401,
+                type: "vrai_faux",
+                question: "Yuji Itadori devient le réceptacle de Sukuna en avalant un doigt.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Yuji ingère l'un des vingt doigts de Sukuna pour sauver ses camarades. Devenu son réceptacle, il conserve exceptionnellement le contrôle de son corps.",
+                source: "Gege Akutami — Jujutsu Kaisen, chapitre 1, 2018."
+            },
+            {
+                id: 402,
+                question: "Combien de doigts compte Sukuna au total ?",
+                options: ["Dix", "Quinze", "Vingt", "Vingt-cinq"],
+                correct: 2,
+                explanation: "Sukuna possédait quatre bras et deux visages, d'où ses vingt doigts. Chacun constitue un objet maudit de grade spécial, et leur récupération structure toute l'intrigue.",
+                source: "Gege Akutami — Jujutsu Kaisen, 2018."
+            },
+            {
+                id: 403,
+                question: "Quel est le nom de la technique héritée de Gojo Satoru ?",
+                options: ["L'Expansion du Territoire", "Le Sans-Limite", "Les Dix Ombres", "La Résonance"],
+                correct: 1,
+                explanation: "Le Sans-Limite, associé aux Six Yeux, lui permet de manipuler l'espace entre lui et toute chose. C'est cette combinaison qui le rend pratiquement invulnérable.",
+                source: "Gege Akutami — Jujutsu Kaisen, 2018."
+            },
+            {
+                id: 404,
+                question: "Dans quelle école étudient les protagonistes ?",
+                options: ["L'école de Kyoto", "L'école d'exorcisme de Tokyo", "L'académie de Shibuya", "L'institut de Sendai"],
+                correct: 1,
+                explanation: "Yuji, Megumi et Nobara intègrent le lycée d'exorcisme de Tokyo. Une école rivale existe à Kyoto, et les deux s'affrontent lors du tournoi inter-écoles.",
+                source: "Gege Akutami — Jujutsu Kaisen, 2018."
             }
         ],
         moyen: [
@@ -8440,6 +9375,31 @@ const quizzesData = {
                 correct: 1,
                 explanation: "La Projection Sorcery de Naobito Zen'in fonctionne comme une animation : il découpe chaque seconde en 24 frames et dépose une 'animation' sur sa cible. Tout ce qui ne respecte pas le chemin prévu dans l'animation est figé pendant une seconde. C'est pourquoi sa vitesse est comparée à celle de Gojo.",
                 source: "Gege Akutami — Jujutsu Kaisen, technique de Naobito Zen'in expliquée."
+            },
+            {
+                id: 405,
+                type: "vrai_faux",
+                question: "L'Extension du Territoire garantit que les attaques touchent leur cible.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Dans un territoire pleinement déployé, la technique de l'utilisateur ne peut pas manquer sa cible. C'est ce qui rend cette capacité si décisive, et si coûteuse en énergie.",
+                source: "Gege Akutami — Jujutsu Kaisen, 2018."
+            },
+            {
+                id: 406,
+                question: "Quelle est la technique de Megumi Fushiguro ?",
+                options: ["Le Sans-Limite", "Les Dix Ombres", "La Poupée de paille", "Le Cœur Maudit"],
+                correct: 1,
+                explanation: "Les Dix Ombres permettent d'invoquer des shikigami depuis son ombre. Chaque familier vaincu peut être hérité par un autre utilisateur de la lignée Zen'in.",
+                source: "Gege Akutami — Jujutsu Kaisen, 2018."
+            },
+            {
+                id: 407,
+                question: "D'où provient l'énergie maudite selon l'œuvre ?",
+                options: ["Des objets anciens chargés d'histoire", "Des émotions négatives des humains", "Du rayonnement lunaire nocturne", "Des lignées familiales uniquement"],
+                correct: 1,
+                explanation: "Les émotions négatives non évacuées s'accumulent et donnent naissance aux fléaux. Les hôpitaux et les écoles, chargés en angoisse, en produisent particulièrement.",
+                source: "Gege Akutami — Jujutsu Kaisen, 2018."
             }
         ],
         difficile: [
@@ -8559,6 +9519,30 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Le passé de Gojo et Geto est exploré dans le manga (arc Hidden Inventory) et dans JJK 0. Ils étaient les deux élèves les plus forts de leur génération et meilleurs amis pendant leurs années de lycée. La rupture idéologique de Geto — qui décide que les 'moldus' sont inutiles — est l'une des déchirures les plus tragiques de la série.",
                 source: "Gege Akutami — Jujutsu Kaisen, arc Hidden Inventory / Premature Death, passé de Gojo et Geto."
+            },
+            {
+                id: 408,
+                question: "Quel événement majeur se déroule dans l'arc de Shibuya ?",
+                options: ["La mort de Sukuna", "Le scellement de Gojo", "La destruction de Kyoto", "Le retour de Yuta"],
+                correct: 1,
+                explanation: "Gojo est enfermé dans le Prison Realm par Kenjaku, ce qui bouleverse l'équilibre des forces. Des milliers de civils périssent dans l'incident.",
+                source: "Gege Akutami — Jujutsu Kaisen, arc de Shibuya, 2019."
+            },
+            {
+                id: 409,
+                question: "Qui est le personnage caché derrière Suguru Geto après sa mort ?",
+                options: ["Sukuna", "Kenjaku", "Mahito", "Toji"],
+                correct: 1,
+                explanation: "Kenjaku, un esprit millénaire, transfère son cerveau dans le corps de Geto. Il manipule ainsi les événements depuis des siècles en changeant régulièrement d'enveloppe.",
+                source: "Gege Akutami — Jujutsu Kaisen, 2019."
+            },
+            {
+                id: 410,
+                question: "Quelle particularité définit Toji Fushiguro ?",
+                options: ["Une énergie maudite colossale", "Une absence totale d'énergie maudite", "Une technique héritée des Gojo", "Un territoire indestructible"],
+                correct: 1,
+                explanation: "Toji naît avec le Corps Céleste Restreint : zéro énergie maudite, mais des capacités physiques et une perception surhumaines. Cette absence le rend indétectable par les exorcistes.",
+                source: "Gege Akutami — Jujutsu Kaisen, arc Gojo's Past, 2019."
             }
         ]
     },
@@ -8833,6 +9817,39 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Le foie possède une capacité de régénération exceptionnelle. Après ablation chirurgicale de 70% de sa masse (hépatectomie partielle), il peut se régénérer à sa taille initiale en quelques semaines grâce à la prolifération des hépatocytes restants.",
                 source: "Michalopoulos G.K. — Liver Regeneration. Science, 2007."
+            },
+            {
+                id: 401,
+                type: "vrai_faux",
+                question: "Le cerveau humain contient des récepteurs de la douleur.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Le tissu cérébral lui-même est dépourvu de nocicepteurs. C'est pourquoi certaines opérations se pratiquent sur patient éveillé. Les maux de tête proviennent des méninges et des vaisseaux, pas du cerveau.",
+                source: "Ray et Wolff — Archives of Surgery, 1940."
+            },
+            {
+                id: 402,
+                question: "Combien d'os compte le squelette d'un adulte ?",
+                options: ["Cent quatre-vingt-six", "Deux cent six", "Trois cents", "Cent vingt"],
+                correct: 1,
+                explanation: "L'adulte possède deux cent six os. Le nouveau-né en compte près de trois cents, dont beaucoup fusionnent au cours de la croissance, notamment au crâne et au sacrum.",
+                source: "Gray's Anatomy, 42e édition."
+            },
+            {
+                id: 403,
+                question: "Quel est le plus grand organe du corps humain ?",
+                options: ["Le foie", "La peau", "Les poumons", "L'intestin grêle"],
+                correct: 1,
+                explanation: "La peau couvre environ deux mètres carrés et pèse jusqu'à cinq kilos. Elle assure la protection, la régulation thermique et la synthèse de vitamine D.",
+                source: "Institut national de la santé et de la recherche médicale — dossier peau."
+            },
+            {
+                id: 404,
+                question: "Combien de litres de sang contient un adulte moyen ?",
+                options: ["Environ deux litres", "Environ cinq litres", "Environ dix litres", "Environ vingt litres"],
+                correct: 1,
+                explanation: "Un adulte contient environ cinq litres de sang, soit sept pour cent de sa masse. La perte d'un tiers de ce volume met la vie en danger immédiat.",
+                source: "Établissement français du sang — physiologie du sang."
             }
         ],
         moyen: [
@@ -8982,6 +9999,31 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Le cerveau est croisé : l'hémisphère gauche contrôle le côté droit du corps et vice versa. Cette décussation (croisement) se produit dans le tronc cérébral pour les voies motrices (faisceau pyramidal) et dans la moelle épinière pour certaines voies sensitives.",
                 source: "Kandel E.R. — Principles of Neural Science — Latéralisation cérébrale."
+            },
+            {
+                id: 405,
+                type: "vrai_faux",
+                question: "L'estomac produit un acide capable de dissoudre du métal.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! L'acide chlorhydrique gastrique a un pH proche de un ou deux, assez corrosif pour attaquer certains métaux. La paroi se protège par une couche de mucus renouvelée en permanence.",
+                source: "Guyton et Hall — Textbook of Medical Physiology, 2020."
+            },
+            {
+                id: 406,
+                question: "Quel est le plus petit os du corps humain ?",
+                options: ["Le scaphoïde", "L'étrier", "La phalange du petit doigt", "Le coccyx"],
+                correct: 1,
+                explanation: "L'étrier, dans l'oreille moyenne, mesure environ trois millimètres. Avec le marteau et l'enclume, il transmet et amplifie les vibrations du tympan vers l'oreille interne.",
+                source: "Gray's Anatomy, 42e édition."
+            },
+            {
+                id: 407,
+                question: "Combien de temps vit un globule rouge ?",
+                options: ["Environ un jour", "Environ cent vingt jours", "Environ cinq ans", "Toute la vie"],
+                correct: 1,
+                explanation: "Le globule rouge circule environ cent vingt jours avant d'être détruit dans la rate. Dépourvu de noyau, il ne peut pas se réparer, ce qui limite sa durée de vie.",
+                source: "Institut national de la santé et de la recherche médicale — hématologie."
             }
         ],
         difficile: [
@@ -9091,6 +10133,30 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Les empreintes digitales se développent entre la 10e et la 24e semaine de grossesse, formées par les mouvements du fœtus dans le liquide amniotique combinés à la croissance de la peau. Elles sont uniques à chaque individu (même les jumeaux identiques ont des empreintes différentes) et restent stables toute la vie.",
                 source: "Babler W.J. — Embryologic development of epidermal ridges. Birth Defects, 1991."
+            },
+            {
+                id: 408,
+                question: "Qu'est-ce que la barrière hémato-encéphalique ?",
+                options: ["Une membrane protectrice autour du cœur", "Un filtre entre le sang et le cerveau", "Une valve située à la sortie de l'aorte", "Une couche profonde de la peau"],
+                correct: 1,
+                explanation: "Les cellules des capillaires cérébraux sont soudées par des jonctions serrées qui bloquent la plupart des molécules. Cette protection complique aussi énormément l'administration des médicaments au cerveau.",
+                source: "Abbott et al. — Nature Reviews Neuroscience, 2006."
+            },
+            {
+                id: 409,
+                question: "Quel organe produit l'insuline ?",
+                options: ["Le foie", "Le pancréas", "La rate", "La thyroïde"],
+                correct: 1,
+                explanation: "Les cellules bêta des îlots de Langerhans, dans le pancréas, sécrètent l'insuline qui fait entrer le glucose dans les cellules. Leur destruction auto-immune provoque le diabète de type 1.",
+                source: "Banting et Best — Journal of Laboratory and Clinical Medicine, 1922."
+            },
+            {
+                id: 410,
+                question: "Combien de paires de chromosomes possède une cellule humaine ?",
+                options: ["Vingt et une", "Vingt-trois", "Quarante-six", "Douze"],
+                correct: 1,
+                explanation: "La cellule contient vingt-trois paires, soit quarante-six chromosomes, dont une paire détermine le sexe. Les gamètes n'en portent que vingt-trois au total.",
+                source: "Tjio et Levan — Hereditas, 1956."
             }
         ]
     },
@@ -9365,6 +10431,39 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! La Russie s'étend sur 11 fuseaux horaires, de UTC+2 à UTC+12. Si on inclut les territoires d'outre-mer, la France atteint 12 fuseaux, mais en territoire continu c'est bien la Russie.",
                 source: "Russian Federal Agency on Technical Regulating — Time zones Russia."
+            },
+            {
+                id: 401,
+                type: "vrai_faux",
+                question: "Le Sahara est le plus grand désert du monde.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Le plus grand désert est l'Antarctique. Un désert se définit par ses très faibles précipitations, pas par sa chaleur. Le Sahara reste toutefois le plus grand désert chaud.",
+                source: "Organisation météorologique mondiale — classification des climats arides."
+            },
+            {
+                id: 402,
+                question: "Quel est le plus long fleuve d'Europe ?",
+                options: ["Le Danube", "La Volga", "Le Rhin", "La Loire"],
+                correct: 1,
+                explanation: "La Volga parcourt environ trois mille cinq cents kilomètres à travers la Russie avant de se jeter dans la mer Caspienne. Le Danube, deuxième, traverse dix pays.",
+                source: "Encyclopædia Britannica — Volga River."
+            },
+            {
+                id: 403,
+                question: "Quel pays compte le plus d'habitants au monde ?",
+                options: ["La Chine", "L'Inde", "Les États-Unis", "L'Indonésie"],
+                correct: 1,
+                explanation: "L'Inde a dépassé la Chine en 2023 avec plus d'un milliard quatre cents millions d'habitants. Sa population reste par ailleurs beaucoup plus jeune que celle de la Chine.",
+                source: "Nations unies — World Population Prospects, 2023."
+            },
+            {
+                id: 404,
+                question: "Combien de pays le continent africain compte-t-il ?",
+                options: ["Trente-neuf", "Cinquante-quatre", "Soixante-douze", "Vingt-huit"],
+                correct: 1,
+                explanation: "L'Afrique réunit cinquante-quatre États reconnus par les Nations unies. C'est le continent qui en compte le plus, devant l'Europe et l'Asie.",
+                source: "Union africaine — États membres."
             }
         ],
         moyen: [
@@ -9514,6 +10613,31 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! L'Afrique compte 54 États souverains reconnus par l'ONU, soit le plus grand nombre de pays d'un continent. Elle représente environ 20% de la surface terrestre.",
                 source: "African Union — Member States list, 54 countries."
+            },
+            {
+                id: 405,
+                type: "vrai_faux",
+                question: "L'Australie est à la fois un pays et un continent.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! L'Australie constitue le plus petit continent et un pays à part entière. On parle parfois d'Océanie pour désigner l'ensemble régional incluant la Nouvelle-Zélande et les îles du Pacifique.",
+                source: "Institut géographique national — nomenclature des continents."
+            },
+            {
+                id: 406,
+                question: "Quel détroit sépare l'Europe de l'Afrique ?",
+                options: ["Le Bosphore", "Le détroit de Gibraltar", "Le canal de Suez", "Le détroit de Malacca"],
+                correct: 1,
+                explanation: "Large de quatorze kilomètres au plus étroit, Gibraltar relie l'Atlantique à la Méditerranée. Le Bosphore sépare pour sa part l'Europe de l'Asie, à Istanbul.",
+                source: "Organisation hydrographique internationale — limites des mers."
+            },
+            {
+                id: 407,
+                question: "Quelle est la capitale de l'Australie ?",
+                options: ["Sydney", "Canberra", "Melbourne", "Perth"],
+                correct: 1,
+                explanation: "Canberra a été créée de toutes pièces en 1913 pour trancher la rivalité entre Sydney et Melbourne. Elle se situe à peu près à mi-chemin entre les deux.",
+                source: "Gouvernement australien — histoire de la capitale."
             }
         ],
         difficile: [
@@ -9623,6 +10747,30 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! L'Oural est la frontière géographique conventionnelle entre l'Europe et l'Asie. Cette frontière suit les monts Oural du nord au sud, puis le fleuve Oural, la mer Caspienne et le Caucase. La Russie est donc transcontinentale.",
                 source: "Royal Geographical Society — Europe-Asia boundary convention."
+            },
+            {
+                id: 408,
+                question: "Quel pays possède la plus longue frontière terrestre du monde ?",
+                options: ["La Russie", "Le Canada", "La Chine", "Le Brésil"],
+                correct: 1,
+                explanation: "Le Canada détient la plus longue frontière avec un seul pays, près de neuf mille kilomètres avec les États-Unis en comptant l'Alaska. La Russie, elle, borde le plus grand nombre d'États.",
+                source: "CIA World Factbook — land boundaries."
+            },
+            {
+                id: 409,
+                question: "Où se situe le point le plus profond des océans ?",
+                options: ["La fosse de Porto Rico", "La fosse des Mariannes", "La fosse du Japon", "La fosse de Java"],
+                correct: 1,
+                explanation: "Le Challenger Deep, dans la fosse des Mariannes, descend à près de onze mille mètres. L'Everest y tiendrait entièrement, avec plus de deux kilomètres d'eau au-dessus du sommet.",
+                source: "National Oceanic and Atmospheric Administration — Mariana Trench."
+            },
+            {
+                id: 410,
+                question: "Quel pays traverse le plus de fuseaux horaires ?",
+                options: ["La Russie", "La France", "Les États-Unis", "La Chine"],
+                correct: 1,
+                explanation: "En comptant ses territoires d'outre-mer répartis sur tous les océans, la France couvre douze fuseaux horaires. La Russie, la plus étendue d'un seul tenant, en compte onze.",
+                source: "Bureau international des poids et mesures — fuseaux horaires."
             }
         ]
     },
@@ -9777,6 +10925,39 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Faux ! Cette affirmation n'a pas de sens comparatif. Sous la Ve République (depuis 1958), la France a eu 8 présidents : de Gaulle, Pompidou, Giscard d'Estaing, Mitterrand, Chirac, Sarkozy, Hollande et Macron.",
                 source: "Conseil constitutionnel — Liste des présidents de la Ve République."
+            },
+            {
+                id: 401,
+                type: "vrai_faux",
+                question: "La prise de la Bastille a libéré des centaines de prisonniers.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! La forteresse ne détenait que sept prisonniers le 14 juillet 1789. Sa prise avait surtout une valeur symbolique et visait la poudre entreposée dans ses murs.",
+                source: "Archives nationales — fonds de la Bastille."
+            },
+            {
+                id: 402,
+                question: "Qui fut le premier roi des Francs à se convertir au christianisme ?",
+                options: ["Charlemagne", "Clovis", "Dagobert", "Hugues Capet"],
+                correct: 1,
+                explanation: "Clovis reçoit le baptême à Reims vers 496 des mains de saint Remi. Cette conversion lui assure l'appui de l'Église et de l'aristocratie gallo-romaine.",
+                source: "Grégoire de Tours — Histoire des Francs, VIe siècle."
+            },
+            {
+                id: 403,
+                question: "En quelle année Napoléon Bonaparte est-il sacré empereur ?",
+                options: ["1799", "1804", "1812", "1815"],
+                correct: 1,
+                explanation: "Le sacre a lieu le 2 décembre 1804 à Notre-Dame de Paris. Napoléon prend la couronne des mains du pape pour se couronner lui-même, geste immortalisé par David.",
+                source: "Archives nationales — actes du Premier Empire."
+            },
+            {
+                id: 404,
+                question: "Quel roi est surnommé le Roi-Soleil ?",
+                options: ["Louis XIV", "Louis XVI", "François Ier", "Henri IV"],
+                correct: 0,
+                explanation: "Louis XIV règne soixante-douze ans, le règne le plus long de l'histoire de France. Le surnom vient de son rôle d'Apollon dans un ballet de cour en 1653.",
+                source: "Château de Versailles — ressources historiques."
             }
         ],
         moyen: [
@@ -9886,6 +11067,31 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! La Première Guerre mondiale fit environ 1,4 million de morts militaires français (et 300 000 civils). La Seconde Guerre mondiale causa environ 600 000 morts français toutes causes confondues. La Grande Guerre fut proportionnellement dévastatrice pour la France.",
                 source: "Audoin-Rouzeau S. & Becker A. — 14-18 : retrouver la Guerre, Gallimard, 2000."
+            },
+            {
+                id: 405,
+                type: "vrai_faux",
+                question: "La Révolution française a instauré un nouveau calendrier.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le calendrier républicain, adopté en 1793, comptait douze mois de trente jours aux noms poétiques comme Thermidor ou Brumaire. Napoléon l'abolit fin 1805.",
+                source: "Bulletin des lois de la République française, an II."
+            },
+            {
+                id: 406,
+                question: "Quel traité met fin à la guerre de Cent Ans ?",
+                options: ["Le traité de Verdun", "Aucun traité formel", "Le traité de Westphalie", "Le traité des Pyrénées"],
+                correct: 1,
+                explanation: "La guerre s'achève en 1453 avec la bataille de Castillon, sans traité de paix signé. Les Anglais ne conservent que Calais, perdue en 1558.",
+                source: "Jean Favier — La Guerre de Cent Ans, 1980."
+            },
+            {
+                id: 407,
+                question: "Qui proclame la Troisième République en 1870 ?",
+                options: ["Adolphe Thiers", "Léon Gambetta", "Jules Ferry", "Patrice de Mac-Mahon"],
+                correct: 1,
+                explanation: "Gambetta proclame la République le 4 septembre 1870 à l'Hôtel de Ville, après la défaite de Sedan et la capture de Napoléon III. Elle durera jusqu'en 1940.",
+                source: "Assemblée nationale — chronologie républicaine."
             }
         ],
         difficile: [
@@ -9995,6 +11201,30 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Faux ! L'Italie est le pays qui possède le plus grand nombre de sites classés au patrimoine mondial de l'UNESCO (58 sites en 2023), devant la Chine (57) et l'Allemagne (52). La France en compte 52, à égalité avec l'Allemagne et l'Iran.",
                 source: "UNESCO World Heritage Centre — World Heritage List statistics 2023."
+            },
+            {
+                id: 408,
+                question: "Quel édit accorde la liberté de culte aux protestants en 1598 ?",
+                options: ["L'édit de Fontainebleau", "L'édit de Nantes", "L'édit de Villers-Cotterêts", "L'édit de Saint-Germain"],
+                correct: 1,
+                explanation: "Signé par Henri IV, l'édit de Nantes met fin aux guerres de Religion. Louis XIV le révoque en 1685 par l'édit de Fontainebleau, provoquant l'exil de centaines de milliers de protestants.",
+                source: "Archives nationales — édit de Nantes, avril 1598."
+            },
+            {
+                id: 409,
+                question: "Que fut la Fronde au XVIIe siècle ?",
+                options: ["Une révolte contre le pouvoir royal", "Une guerre contre l'Espagne", "Une famine majeure", "Une réforme fiscale"],
+                correct: 0,
+                explanation: "Entre 1648 et 1653, parlementaires puis grands nobles se soulèvent contre Mazarin et la régence. Le jeune Louis XIV en garde une méfiance durable envers Paris et la noblesse.",
+                source: "Orest Ranum — The Fronde, 1993."
+            },
+            {
+                id: 410,
+                question: "Quelle loi établit la séparation des Églises et de l'État ?",
+                options: ["La loi de 1881", "La loi de 1905", "La loi de 1789", "La loi de 1958"],
+                correct: 1,
+                explanation: "Votée le 9 décembre 1905, elle garantit la liberté de conscience et supprime le financement public des cultes. Elle constitue le fondement de la laïcité française.",
+                source: "Journal officiel de la République française, 11 décembre 1905."
             }
         ]
     }
@@ -10390,6 +11620,39 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Sorti en 1995, Toy Story est le premier long-métrage intégralement créé en images de synthèse. Sa production a demandé quatre ans et le rendu final a mobilisé des centaines d'ordinateurs pendant des mois.",
                 source: "Pixar Animation Studios — Toy Story production history."
+            },
+            {
+                id: 401,
+                type: "vrai_faux",
+                question: "Le premier long métrage entièrement parlant est Le Chanteur de jazz.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Sorti en 1927, Le Chanteur de jazz reste largement muet, avec quelques séquences chantées et parlées. Le premier film intégralement parlant est Lights of New York, l'année suivante.",
+                source: "Bibliothèque du Congrès — histoire du cinéma sonore."
+            },
+            {
+                id: 402,
+                question: "Qui a réalisé le film Titanic sorti en 1997 ?",
+                options: ["Steven Spielberg", "James Cameron", "Ridley Scott", "Martin Scorsese"],
+                correct: 1,
+                explanation: "James Cameron a également réalisé Terminator, Aliens et Avatar. Titanic a remporté onze Oscars, record égalé avec Ben-Hur et Le Retour du roi.",
+                source: "Academy of Motion Picture Arts and Sciences — palmarès 1998."
+            },
+            {
+                id: 403,
+                question: "Quel studio a produit Le Roi Lion en 1994 ?",
+                options: ["Pixar", "Disney", "DreamWorks", "Warner Bros"],
+                correct: 1,
+                explanation: "Le film est produit par Walt Disney Animation Studios. C'est l'un des rares grands succès Disney à scénario original, sans adaptation d'un conte existant.",
+                source: "Walt Disney Company — archives de production."
+            },
+            {
+                id: 404,
+                question: "Comment appelle-t-on la personne qui dirige les acteurs sur un tournage ?",
+                options: ["Le producteur", "Le réalisateur", "Le scénariste", "Le monteur"],
+                correct: 1,
+                explanation: "Le réalisateur dirige les acteurs et fait les choix artistiques. Le producteur gère le financement et l'organisation, deux rôles souvent confondus par le public.",
+                source: "Centre national du cinéma — métiers du cinéma."
             }
         ],
         moyen: [
@@ -10603,6 +11866,31 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Parasite, de Bong Joon-ho, a réussi cet exploit rare : Palme d'Or à Cannes en 2019, puis Oscar du meilleur film en 2020. Avant lui, seul Marty (1955) avait décroché les deux récompenses.",
                 source: "Festival de Cannes / Academy of Motion Picture Arts and Sciences."
+            },
+            {
+                id: 405,
+                type: "vrai_faux",
+                question: "Alfred Hitchcock n'a jamais reçu l'Oscar du meilleur réalisateur.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Nommé cinq fois, il n'a jamais gagné. Rebecca a remporté l'Oscar du meilleur film en 1941, mais la statuette revient alors au producteur, David O. Selznick.",
+                source: "Academy of Motion Picture Arts and Sciences — historique des nominations."
+            },
+            {
+                id: 406,
+                question: "Quel film a remporté la première Palme d'or à Cannes en 1955 ?",
+                options: ["La Dolce Vita", "Marty", "Le Troisième Homme", "Les Parapluies de Cherbourg"],
+                correct: 1,
+                explanation: "Marty, de Delbert Mann, inaugure la Palme d'or sous ce nom. Avant 1955, la récompense s'appelait Grand Prix du Festival international du film.",
+                source: "Festival de Cannes — palmarès officiel."
+            },
+            {
+                id: 407,
+                question: "Quelle actrice détient le record de statuettes d'interprétation aux Oscars ?",
+                options: ["Meryl Streep", "Katharine Hepburn", "Bette Davis", "Ingrid Bergman"],
+                correct: 1,
+                explanation: "Katharine Hepburn a remporté quatre Oscars de la meilleure actrice. Meryl Streep détient le record de nominations, avec vingt et une, pour trois victoires.",
+                source: "Academy of Motion Picture Arts and Sciences — records."
             }
         ],
         difficile: [
@@ -10760,6 +12048,30 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Jane Campion a obtenu la Palme d'Or en 1993 pour La Leçon de piano, ex æquo avec Adieu ma concubine. Julia Ducournau l'a remportée en 2021 pour Titane et Justine Triet en 2023 pour Anatomie d'une chute.",
                 source: "Festival de Cannes — Palmarès officiel, 1993, 2021 et 2023."
+            },
+            {
+                id: 408,
+                question: "Qu'appelle-t-on un plan-séquence au cinéma ?",
+                options: ["Un plan très rapproché", "Une scène tournée sans coupure", "Un plan filmé au ralenti", "Un plan sans dialogue"],
+                correct: 1,
+                explanation: "Le plan-séquence enchaîne toute une scène en une seule prise continue. Le Fils de Saul et 1917 en ont fait un parti pris esthétique majeur.",
+                source: "Cahiers du cinéma — lexique technique."
+            },
+            {
+                id: 409,
+                question: "Quel film est considéré comme le premier long métrage d'animation en couleur ?",
+                options: ["Les Aventures de Pinocchio", "Blanche-Neige et les Sept Nains", "La Belle au bois dormant", "Le Roi et l'Oiseau"],
+                correct: 1,
+                explanation: "Sorti en 1937, Blanche-Neige est le premier long métrage d'animation en Technicolor. Surnommé la folie de Disney pendant sa production, il fut un immense succès.",
+                source: "Walt Disney Company — archives de production."
+            },
+            {
+                id: 410,
+                question: "Que désigne le montage alterné ?",
+                options: ["Un changement de format d'image en cours de scène", "L'entrelacement de deux actions simultanées", "Le doublage du film en plusieurs langues", "Un effet de ralenti appliqué au montage"],
+                correct: 1,
+                explanation: "Le montage alterné fait progresser deux actions parallèles en les entrecoupant, créant du suspense. D.W. Griffith en a systématisé l'usage dès les années 1910.",
+                source: "Bordwell et Thompson — Film Art, 2016."
             }
         ]
     }
@@ -11035,6 +12347,39 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Les chauves-souris sont les seuls mammifères pratiquant un vol actif. D'autres, comme les écureuils volants ou les colugos, ne font que planer grâce à une membrane, sans véritable vol battu.",
                 source: "Smithsonian National Museum of Natural History — Order Chiroptera."
+            },
+            {
+                id: 401,
+                type: "vrai_faux",
+                question: "La Grande Muraille de Chine est visible à l'œil nu depuis la Lune.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Elle est bien trop étroite. Même en orbite basse, à quatre cents kilomètres, elle est difficile à distinguer sans instrument. Les astronautes chinois l'ont eux-mêmes démenti.",
+                source: "Agence spatiale européenne — observation de la Terre."
+            },
+            {
+                id: 402,
+                question: "Combien de continents compte la Terre selon le modèle français ?",
+                options: ["Quatre", "Cinq", "Six", "Sept"],
+                correct: 1,
+                explanation: "Le modèle enseigné en France retient cinq continents, symbolisés par les anneaux olympiques. D'autres pays en comptent six ou sept selon qu'ils séparent les Amériques ou l'Antarctique.",
+                source: "Institut géographique national — nomenclature des continents."
+            },
+            {
+                id: 403,
+                question: "Qui a peint La Joconde ?",
+                options: ["Michel-Ange", "Léonard de Vinci", "Raphaël", "Botticelli"],
+                correct: 1,
+                explanation: "Léonard de Vinci la peint entre 1503 et 1519. Il l'emporte en France où François Ier l'acquiert. Son vol en 1911 par un employé du Louvre a fait sa célébrité mondiale.",
+                source: "Musée du Louvre — notice de La Joconde."
+            },
+            {
+                id: 404,
+                question: "Quelle planète est la plus proche du Soleil ?",
+                options: ["Vénus", "Mercure", "Mars", "La Terre"],
+                correct: 1,
+                explanation: "Mercure orbite à cinquante-huit millions de kilomètres du Soleil. Vénus est pourtant plus chaude, à cause de son épaisse atmosphère de dioxyde de carbone.",
+                source: "NASA — Solar System Exploration."
             }
         ],
         moyen: [
@@ -11184,6 +12529,31 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Le verre peut être fondu et refondu indéfiniment sans que ses propriétés se dégradent, contrairement au papier ou à la plupart des plastiques dont les fibres ou les polymères s'altèrent à chaque cycle.",
                 source: "ADEME — Le recyclage du verre en France."
+            },
+            {
+                id: 405,
+                type: "vrai_faux",
+                question: "Le diamant et le graphite sont composés du même élément.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Tous deux sont du carbone pur. Seule l'organisation des atomes change : structure tridimensionnelle très rigide pour le diamant, feuillets glissants pour le graphite.",
+                source: "Union internationale de chimie pure et appliquée — allotropie du carbone."
+            },
+            {
+                id: 406,
+                question: "Qui a écrit Les Misérables ?",
+                options: ["Émile Zola", "Victor Hugo", "Gustave Flaubert", "Honoré de Balzac"],
+                correct: 1,
+                explanation: "Publié en 1862 depuis son exil à Guernesey, le roman suit Jean Valjean sur plusieurs décennies. Hugo y dénonce la misère sociale et l'injustice pénale.",
+                source: "Bibliothèque nationale de France — manuscrits de Victor Hugo."
+            },
+            {
+                id: 407,
+                question: "Quel est l'élément chimique le plus abondant de l'univers ?",
+                options: ["L'oxygène", "L'hydrogène", "Le carbone", "Le fer"],
+                correct: 1,
+                explanation: "L'hydrogène représente environ trois quarts de la matière ordinaire. Formé dans les premières minutes après le Big Bang, il constitue le combustible des étoiles.",
+                source: "Union astronomique internationale — abondances cosmiques."
             }
         ],
         difficile: [
@@ -11293,6 +12663,30 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Rome est tombée en 476, mais l'Empire romain d'Orient, dit byzantin, s'est maintenu depuis Constantinople jusqu'à sa prise par les Ottomans en 1453, soit près de mille ans de plus.",
                 source: "Dumbarton Oaks — Byzantine Studies, chronology of the Eastern Roman Empire."
+            },
+            {
+                id: 408,
+                question: "En quelle année a eu lieu la chute du mur de Berlin ?",
+                options: ["1985", "1989", "1991", "1993"],
+                correct: 1,
+                explanation: "Le mur tombe le 9 novembre 1989 après vingt-huit ans de séparation, à la suite d'une annonce confuse d'un responsable est-allemand. La réunification allemande suit en octobre 1990.",
+                source: "Bundesarchiv — documents sur la réunification."
+            },
+            {
+                id: 409,
+                question: "Qui a formulé la théorie de la relativité générale ?",
+                options: ["Isaac Newton", "Albert Einstein", "Niels Bohr", "Max Planck"],
+                correct: 1,
+                explanation: "Einstein publie sa théorie en 1915. Elle décrit la gravitation comme une courbure de l'espace-temps et fut confirmée en 1919 par l'observation d'une éclipse.",
+                source: "Annalen der Physik — Die Grundlage der allgemeinen Relativitätstheorie, 1916."
+            },
+            {
+                id: 410,
+                question: "Quelle est la langue la plus parlée au monde comme langue maternelle ?",
+                options: ["L'anglais", "Le mandarin", "L'espagnol", "L'hindi"],
+                correct: 1,
+                explanation: "Le mandarin compte près de neuf cents millions de locuteurs natifs. L'anglais domine en revanche largement si l'on inclut les locuteurs qui l'ont appris comme seconde langue.",
+                source: "Ethnologue — Languages of the World, 2023."
             }
         ]
     }
@@ -11488,6 +12882,39 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Tous les autres signes figurent un animal ou un personnage. La Balance, symbole d'équilibre et de justice, est la seule exception. Elle était d'ailleurs associée aux pinces du Scorpion dans les traditions babyloniennes anciennes.",
                 source: "Ridpath I. — Star Tales, constellation Libra."
+            },
+            {
+                id: 401,
+                type: "vrai_faux",
+                question: "Le zodiaque occidental compte douze signes.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Les douze signes correspondent à un découpage de l'écliptique en secteurs de trente degrés. Ce système remonte à la Babylone du Ve siècle avant notre ère.",
+                source: "Bibliothèque nationale de France — traités d'astrologie ancienne."
+            },
+            {
+                id: 402,
+                question: "Quel élément est associé au signe du Bélier ?",
+                options: ["L'eau", "Le feu", "L'air", "La terre"],
+                correct: 1,
+                explanation: "Le Bélier ouvre la série des signes de feu, avec le Lion et le Sagittaire. Ces signes sont traditionnellement associés à l'élan et à l'initiative.",
+                source: "Traité d'astrologie occidentale — correspondances élémentaires."
+            },
+            {
+                id: 403,
+                question: "Quel signe correspond à une naissance le 1er janvier ?",
+                options: ["Sagittaire", "Capricorne", "Verseau", "Poissons"],
+                correct: 1,
+                explanation: "Le Capricorne court du 22 décembre au 19 janvier environ. Il est le premier signe de l'année civile et le dernier de l'année solaire commencée au Bélier.",
+                source: "Éphémérides astronomiques — dates des signes tropicaux."
+            },
+            {
+                id: 404,
+                question: "Combien d'animaux compte le zodiaque chinois ?",
+                options: ["Dix", "Douze", "Quinze", "Huit"],
+                correct: 1,
+                explanation: "Douze animaux se succèdent sur un cycle de douze ans, du Rat au Cochon. Combinés aux cinq éléments, ils forment un cycle complet de soixante ans.",
+                source: "Musée national des arts asiatiques Guimet — calendrier chinois."
             }
         ],
         moyen: [
@@ -11597,6 +13024,31 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! L'effet Barnum, ou effet Forer, désigne notre tendance à reconnaître comme personnelle une description vague qui pourrait s'appliquer à presque tout le monde. Forer l'a démontré en 1948 en donnant le même texte à tous ses étudiants, qui l'ont jugé très juste.",
                 source: "Forer B.R. — The fallacy of personal validation, Journal of Abnormal Psychology, 1949."
+            },
+            {
+                id: 405,
+                type: "vrai_faux",
+                question: "L'astrologie et l'astronomie désignent la même discipline.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! L'astronomie est une science qui étudie les objets célestes par l'observation et la mesure. L'astrologie interprète les positions des astres pour en tirer des significations humaines et ne relève pas de la démarche scientifique.",
+                source: "Académie des sciences — distinction astronomie et astrologie."
+            },
+            {
+                id: 406,
+                question: "Que désigne l'ascendant en astrologie ?",
+                options: ["Le signe astrologique du père de la personne", "Le signe qui se levait à l'horizon à la naissance", "La planète la plus proche au moment du calcul", "Le signe diamétralement opposé au signe solaire"],
+                correct: 1,
+                explanation: "L'ascendant correspond au signe qui montait à l'est au moment précis de la naissance. Son calcul exige l'heure et le lieu exacts, car il change environ toutes les deux heures.",
+                source: "Traité d'astrologie occidentale — calcul du thème natal."
+            },
+            {
+                id: 407,
+                question: "Quelle planète gouverne traditionnellement le signe du Taureau ?",
+                options: ["Mars", "Vénus", "Jupiter", "Saturne"],
+                correct: 1,
+                explanation: "Vénus régit le Taureau et la Balance dans le système traditionnel. Mars gouverne le Bélier, Jupiter le Sagittaire et Saturne le Capricorne.",
+                source: "Ptolémée — Tetrabiblos, IIe siècle."
             }
         ],
         difficile: [
@@ -11706,6 +13158,30 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Les astronomes babyloniens ont divisé l'écliptique en douze secteurs de 30° vers le Ve siècle avant notre ère. Ce découpage régulier remplaçait des repères stellaires irréguliers et facilitait les calculs de position.",
                 source: "Rochberg F. — The Heavenly Writing, Cambridge University Press, 2004."
+            },
+            {
+                id: 408,
+                question: "Qu'est-ce que la précession des équinoxes en astrologie ?",
+                options: ["Le retard des saisons par rapport au calendrier", "Le décalage progressif entre signes et constellations", "Un cycle lunaire de dix-neuf ans environ", "Une éclipse totale visible tous les siècles"],
+                correct: 1,
+                explanation: "L'axe terrestre décrit un cercle en vingt-six mille ans. Les signes tropicaux, calés sur les saisons, se sont ainsi décalés d'environ un signe par rapport aux constellations réelles.",
+                source: "Union astronomique internationale — mouvement de précession."
+            },
+            {
+                id: 409,
+                question: "Que sont les maisons astrologiques ?",
+                options: ["Les douze secteurs du thème natal", "Les habitations des divinités", "Les phases de la Lune", "Les planètes visibles"],
+                correct: 0,
+                explanation: "Le thème natal est divisé en douze maisons, chacune associée à un domaine de la vie comme le travail ou les relations. Plusieurs systèmes de découpage coexistent et donnent des résultats différents.",
+                source: "Traité d'astrologie occidentale — systèmes de domification."
+            },
+            {
+                id: 410,
+                question: "Quel signe du zodiaque chinois ouvre le cycle ?",
+                options: ["Le Dragon", "Le Rat", "Le Tigre", "Le Cheval"],
+                correct: 1,
+                explanation: "Le Rat ouvre le cycle. La légende raconte qu'il gagna la course organisée par l'Empereur de Jade en se faisant porter par le Bœuf avant de bondir juste avant l'arrivée.",
+                source: "Musée national des arts asiatiques Guimet — mythes du calendrier chinois."
             }
         ]
     }
@@ -11981,6 +13457,39 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Faux ! Le type Fée est apparu en 2013 avec la sixième génération (Pokémon X et Y). Il a été créé pour contrer la domination des Pokémon Dragon en combat compétitif.",
                 source: "The Pokémon Company — Pokémon X et Y, nouveautés 2013."
+            },
+            {
+                id: 401,
+                type: "vrai_faux",
+                question: "Pikachu est le tout premier Pokémon du Pokédex national.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Le numéro 001 est Bulbizarre. Pikachu porte le numéro 025. Il doit sa notoriété à son rôle central dans le dessin animé, pas à sa place dans le Pokédex.",
+                source: "The Pokémon Company — Pokédex national."
+            },
+            {
+                id: 402,
+                question: "Combien de Pokémon comptait la première génération ?",
+                options: ["Cent", "Cent cinquante et un", "Deux cent cinquante et un", "Cent cinquante"],
+                correct: 1,
+                explanation: "La première génération compte cent cinquante et un Pokémon. Mew, le cent cinquante et unième, était initialement caché et non documenté dans le jeu.",
+                source: "The Pokémon Company — Pokémon Rouge et Vert, 1996."
+            },
+            {
+                id: 403,
+                question: "Quel type est efficace contre les Pokémon de type Eau ?",
+                options: ["Feu", "Plante", "Vol", "Roche"],
+                correct: 1,
+                explanation: "Les types Plante et Électrik infligent des dégâts doublés à l'Eau. Le Feu est au contraire peu efficace contre elle.",
+                source: "The Pokémon Company — table des types."
+            },
+            {
+                id: 404,
+                question: "Quelle est l'évolution finale de Salamèche ?",
+                options: ["Reptincel", "Dracaufeu", "Dracolosse", "Léviator"],
+                correct: 1,
+                explanation: "Salamèche évolue en Reptincel puis en Dracaufeu. Malgré son allure, Dracaufeu est de type Feu et Vol, et non Dragon.",
+                source: "The Pokémon Company — Pokédex national."
             }
         ],
         moyen: [
@@ -12130,6 +13639,31 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Toutes activités confondues — jeux vidéo, cartes à collectionner, produits dérivés, films — Pokémon dépasse les 90 milliards de dollars de revenus cumulés, devant Hello Kitty et Star Wars.",
                 source: "Statista / TitleMax — Classement des franchises médiatiques les plus rentables."
+            },
+            {
+                id: 405,
+                type: "vrai_faux",
+                question: "Le type Ténèbres existait dès la première génération.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Les types Ténèbres et Acier apparaissent en deuxième génération, pour rééquilibrer le type Psy jugé trop puissant. Le type Fée arrive plus tard, en sixième génération.",
+                source: "The Pokémon Company — Pokémon Or et Argent, 1999."
+            },
+            {
+                id: 406,
+                question: "Quel Pokémon est surnommé le Pokémon mirage ?",
+                options: ["Mewtwo", "Mew", "Celebi", "Jirachi"],
+                correct: 1,
+                explanation: "Mew est présenté comme extrêmement rare et longtemps considéré comme une légende. Son ADN a servi à créer Mewtwo en laboratoire.",
+                source: "The Pokémon Company — Pokédex national."
+            },
+            {
+                id: 407,
+                question: "Combien de badges faut-il obtenir dans la région de Kanto ?",
+                options: ["Six", "Huit", "Dix", "Quatre"],
+                correct: 1,
+                explanation: "Huit badges d'arène sont nécessaires pour accéder à la Ligue Pokémon. Ce nombre est resté la norme dans la grande majorité des régions suivantes.",
+                source: "The Pokémon Company — Pokémon Rouge et Bleu, 1996."
             }
         ],
         difficile: [
@@ -12239,6 +13773,30 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Enfant, Satoshi Tajiri collectionnait les insectes dans la banlieue de Tokyo, au point d'être surnommé « Docteur Insecte ». L'urbanisation ayant fait disparaître ces terrains, il a voulu recréer cette expérience en jeu vidéo.",
                 source: "Time Magazine — Entretien avec Satoshi Tajiri, 1999."
+            },
+            {
+                id: 408,
+                question: "Quel Pokémon a le plus grand nombre de formes régionales connues ?",
+                options: ["Évoli", "Ossatueur", "Raichu", "Miaouss"],
+                correct: 3,
+                explanation: "Miaouss possède des formes d'Alola, de Galar et une forme normale, chacune avec des types différents. Cette diversité en fait un cas unique dans la série.",
+                source: "The Pokémon Company — Pokédex des formes régionales."
+            },
+            {
+                id: 409,
+                question: "Quel est le seul type sans aucune faiblesse en première génération ?",
+                options: ["Normal", "Dragon", "Aucun", "Spectre"],
+                correct: 2,
+                explanation: "Chaque type avait au moins une faiblesse dès la première génération. En revanche, le type Dragon n'était vulnérable qu'à lui-même et à la Glace, ce qui le rendait très difficile à contrer.",
+                source: "The Pokémon Company — table des types, première génération."
+            },
+            {
+                id: 410,
+                question: "Qui a créé la franchise Pokémon ?",
+                options: ["Shigeru Miyamoto", "Satoshi Tajiri", "Hideo Kojima", "Masahiro Sakurai"],
+                correct: 1,
+                explanation: "Satoshi Tajiri a imaginé Pokémon à partir de sa passion d'enfance pour la collecte d'insectes. Ken Sugimori en a conçu les illustrations originales.",
+                source: "Game Freak — historique de la société."
             }
         ]
     }
@@ -12514,6 +14072,39 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Fondée en 1939 par Martin Goodman sous le nom de Timely Publications, la société devient Atlas Comics dans les années 1950, puis Marvel Comics au début des années 1960.",
                 source: "Marvel Entertainment — Histoire de la société, 1939."
+            },
+            {
+                id: 401,
+                type: "vrai_faux",
+                question: "Spider-Man a été créé par Stan Lee et Steve Ditko.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le duo crée Spider-Man en 1962 dans Amazing Fantasy numéro 15. Ditko conçoit le costume emblématique, que l'éditeur trouvait au départ trop risqué.",
+                source: "Marvel Comics — Amazing Fantasy n°15, août 1962."
+            },
+            {
+                id: 402,
+                question: "Quel métal compose le bouclier de Captain America ?",
+                options: ["L'adamantium", "Le vibranium", "L'uru", "Le titane"],
+                correct: 1,
+                explanation: "Le bouclier est fait d'un alliage de vibranium, métal originaire du Wakanda capable d'absorber les vibrations. L'adamantium est le métal du squelette de Wolverine.",
+                source: "Marvel Comics — Captain America Comics, 1941."
+            },
+            {
+                id: 403,
+                question: "Quelle est l'identité civile d'Iron Man ?",
+                options: ["Bruce Banner", "Tony Stark", "Steve Rogers", "Scott Lang"],
+                correct: 1,
+                explanation: "Tony Stark, industriel et ingénieur, construit sa première armure en captivité. Le personnage naît en 1963, en pleine guerre froide.",
+                source: "Marvel Comics — Tales of Suspense n°39, 1963."
+            },
+            {
+                id: 404,
+                question: "Quel est le royaume d'origine de Thor ?",
+                options: ["Wakanda", "Asgard", "Latvérie", "Attilan"],
+                correct: 1,
+                explanation: "Thor vient d'Asgard, l'un des Neuf Royaumes inspirés de la mythologie nordique. Son marteau Mjolnir a été forgé au cœur d'une étoile mourante.",
+                source: "Marvel Comics — Journey into Mystery n°83, 1962."
             }
         ],
         moyen: [
@@ -12663,6 +14254,31 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Contrairement à la plupart des films de super-héros, Infinity War se conclut sur la victoire du vilain. Le claquement de doigts efface la moitié des êtres vivants, situation résolue seulement dans Endgame.",
                 source: "Marvel Studios — Avengers: Infinity War, 2018."
+            },
+            {
+                id: 405,
+                type: "vrai_faux",
+                question: "Wolverine est apparu pour la première fois dans un comic X-Men.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Wolverine apparaît d'abord dans Incredible Hulk numéro 180 en 1974, comme adversaire du Hulk. Il rejoint les X-Men l'année suivante.",
+                source: "Marvel Comics — The Incredible Hulk n°180, 1974."
+            },
+            {
+                id: 406,
+                question: "Combien y a-t-il de Pierres d'Infinité ?",
+                options: ["Quatre", "Six", "Huit", "Dix"],
+                correct: 1,
+                explanation: "Six pierres existent : Espace, Esprit, Réalité, Pouvoir, Temps et Âme. Réunies, elles confèrent un pouvoir quasi absolu sur l'univers.",
+                source: "Marvel Comics — The Infinity Gauntlet, 1991."
+            },
+            {
+                id: 407,
+                question: "Qui est le créateur d'Ultron dans les comics ?",
+                options: ["Tony Stark", "Hank Pym", "Reed Richards", "Bruce Banner"],
+                correct: 1,
+                explanation: "Dans les comics, c'est Hank Pym, le premier Ant-Man, qui crée Ultron. Le film Avengers : L'Ère d'Ultron attribue cette création à Tony Stark et Bruce Banner.",
+                source: "Marvel Comics — Avengers n°54, 1968."
             }
         ],
         difficile: [
@@ -12772,6 +14388,30 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Hulk était gris dans son premier numéro, mais les problèmes d'impression rendaient la teinte irrégulière d'une page à l'autre. Stan Lee opta pour le vert dès le deuxième numéro.",
                 source: "Marvel Comics — The Incredible Hulk n°1 et n°2, 1962."
+            },
+            {
+                id: 408,
+                question: "Quel est le vrai nom de Black Panther ?",
+                options: ["N'Jobu", "T'Challa", "M'Baku", "Erik Killmonger"],
+                correct: 1,
+                explanation: "T'Challa hérite du titre de Black Panther et du trône du Wakanda à la mort de son père T'Chaka. Le titre est à la fois politique et rituel.",
+                source: "Marvel Comics — Fantastic Four n°52, 1966."
+            },
+            {
+                id: 409,
+                question: "Dans quel comic apparaît pour la première fois Thanos ?",
+                options: ["Avengers n°1", "Iron Man n°55", "Fantastic Four n°48", "Silver Surfer n°1"],
+                correct: 1,
+                explanation: "Thanos est créé par Jim Starlin et apparaît en 1973 dans Iron Man numéro 55. Starlin s'est inspiré de ses cours de psychologie pour concevoir le personnage.",
+                source: "Marvel Comics — Iron Man n°55, février 1973."
+            },
+            {
+                id: 410,
+                question: "Quelle équipe Charles Xavier fonde-t-il ?",
+                options: ["Les Vengeurs", "Les X-Men", "Les Quatre Fantastiques", "Les Défenseurs"],
+                correct: 1,
+                explanation: "Xavier fonde les X-Men et son institut pour jeunes mutants doués. Le premier numéro paraît en 1963, la même année que les Vengeurs.",
+                source: "Marvel Comics — The X-Men n°1, septembre 1963."
             }
         ]
     }
