@@ -887,6 +887,14 @@ body::before {
     display: block;
 }
 
+/* Illustrations en images */
+.img-icone {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
 /* Icones emoji (memes dimensions que les SVG) */
 .emoji-icone {
     display: block;

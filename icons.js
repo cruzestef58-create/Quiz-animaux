@@ -10,23 +10,23 @@ const ICONES = {
   /* ---------- Animaux ---------- */
   patte: `<svg viewBox="0 0 64 64" fill="none"><defs><linearGradient id="pa1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9d5ff"/><stop offset="1" stop-color="#a855f7"/></linearGradient><linearGradient id="pa2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d8b4fe"/><stop offset="1" stop-color="#9333ea"/></linearGradient></defs><ellipse cx="32" cy="43" rx="16" ry="13" fill="url(#pa1)"/><path d="M32 30 c-9 0-16 6-16 13 0 3 1 5 3 7 -1-8 6-14 13-14 7 0 14 6 13 14 2-2 3-4 3-7 0-7-7-13-16-13z" fill="#c084fc" opacity=".5"/><ellipse cx="26" cy="45" rx="3.5" ry="4.5" fill="#7e22ce" opacity=".35"/><ellipse cx="38" cy="45" rx="3.5" ry="4.5" fill="#7e22ce" opacity=".35"/><ellipse cx="14" cy="27" rx="7" ry="9" fill="url(#pa2)"/><ellipse cx="25" cy="17" rx="6.5" ry="9" fill="url(#pa2)"/><ellipse cx="39" cy="17" rx="6.5" ry="9" fill="url(#pa2)"/><ellipse cx="50" cy="27" rx="7" ry="9" fill="url(#pa2)"/><ellipse cx="13" cy="24" rx="2.5" ry="3.5" fill="#f3e8ff" opacity=".55"/><ellipse cx="24" cy="14" rx="2.3" ry="3.5" fill="#f3e8ff" opacity=".55"/><ellipse cx="38" cy="14" rx="2.3" ry="3.5" fill="#f3e8ff" opacity=".55"/><ellipse cx="49" cy="24" rx="2.5" ry="3.5" fill="#f3e8ff" opacity=".55"/></svg>`,
 
-  chat: `<span class="emoji-icone">🐱</span>`,
+  chat: `<img src="img/chat.png" alt="" class="img-icone" width="256" height="256">`,
 
-  lion: `<span class="emoji-icone">🦁</span>`,
+  lion: `<img src="img/lion.png" alt="" class="img-icone" width="256" height="256">`,
 
-  tigre: `<span class="emoji-icone">🐯</span>`,
+  tigre: `<img src="img/tigre.png" alt="" class="img-icone" width="256" height="256">`,
 
-  oiseau: `<span class="emoji-icone">🦜</span>`,
+  oiseau: `<img src="img/oiseau.png" alt="" class="img-icone" width="256" height="256">`,
 
-  aigle: `<span class="emoji-icone">🦅</span>`,
+  aigle: `<img src="img/aigle.png" alt="" class="img-icone" width="256" height="256">`,
 
-  chien: `<span class="emoji-icone">🐶</span>`,
+  chien: `<img src="img/chien.png" alt="" class="img-icone" width="256" height="256">`,
 
-  dressage: `<svg viewBox="0 0 64 64" fill="none"><defs><linearGradient id="dr1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5eead4"/><stop offset="1" stop-color="#0d9488"/></linearGradient><linearGradient id="dr2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fef3c7"/><stop offset="1" stop-color="#d97706"/></linearGradient><linearGradient id="dr3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1f5f9"/><stop offset="1" stop-color="#94a3b8"/></linearGradient></defs><path d="M46 6 C55 8 60 14 58 21" stroke="#0f766e" stroke-width="4.6" stroke-linecap="round" fill="none"/><circle cx="58" cy="24" r="3.8" fill="none" stroke="url(#dr3)" stroke-width="2.8"/><ellipse cx="32" cy="26" rx="21" ry="17" fill="none" stroke="url(#dr1)" stroke-width="8.5"/><ellipse cx="32" cy="26" rx="21" ry="17" fill="none" stroke="#ccfbf1" stroke-width="1.6" opacity=".4" stroke-dasharray="4 6"/><rect x="24" y="4" width="16" height="9.5" rx="2.4" fill="url(#dr3)"/><rect x="27.5" y="7.2" width="9" height="3.2" rx="1.6" fill="#475569"/><path d="M32 43 v4" stroke="url(#dr3)" stroke-width="2.4" stroke-linecap="round"/><circle cx="32" cy="47.5" r="2.6" fill="none" stroke="url(#dr3)" stroke-width="2"/><path d="M25 55 c0-3.2 2.6-5 7-5 4.4 0 7 1.8 7 5 0 3.2-2.6 5-7 5 -4.4 0-7-1.8-7-5Z" fill="url(#dr2)"/><path d="M21.6 52.6 a3.4 3.4 0 1 1 4.4-2.2 M21.6 57.4 a3.4 3.4 0 1 0 4.4 2.2 M42.4 52.6 a3.4 3.4 0 1 0 -4.4-2.2 M42.4 57.4 a3.4 3.4 0 1 1 -4.4 2.2" fill="url(#dr2)"/><path d="M28 55 h8" stroke="#92400e" stroke-width="1.5" stroke-linecap="round" opacity=".5"/><path d="M18 18 C21 13 26 10 32 10" stroke="#ccfbf1" stroke-width="2.4" stroke-linecap="round" opacity=".5" fill="none"/></svg>`,
+  dressage: `<img src="img/dressage.png" alt="" class="img-icone" width="256" height="256">`,
 
-  serpent: `<svg viewBox="0 0 64 64" fill="none"><defs><linearGradient id="se1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#86efac"/><stop offset="1" stop-color="#15803d"/></linearGradient><linearGradient id="se2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bbf7d0"/><stop offset="1" stop-color="#22c55e"/></linearGradient></defs><path d="M52 56 C52 47 12 49 12 38 C12 29 30 29 34 24" stroke="url(#se1)" stroke-width="11" stroke-linecap="round" fill="none"/><path d="M52 56 C52 50 40 51 28 52" stroke="#166534" stroke-width="11" stroke-linecap="round" fill="none" opacity=".0"/><path d="M50 55 C46 51 34 52 24 52" stroke="#dcfce7" stroke-width="2.2" stroke-linecap="round" opacity=".35" fill="none"/><ellipse cx="20" cy="45" rx="3" ry="2" fill="#dcfce7" opacity=".5"/><ellipse cx="33" cy="49" rx="3" ry="2" fill="#dcfce7" opacity=".5"/><ellipse cx="16" cy="35" rx="2.6" ry="2" fill="#dcfce7" opacity=".5"/><ellipse cx="27" cy="30" rx="2.6" ry="2" fill="#dcfce7" opacity=".5"/><path d="M34 24 C30 17 34 9 42 8 C51 7 58 13 57 21 C56 27 51 30 46 29 C41 28 39 24 40 20" fill="none" stroke="url(#se1)" stroke-width="11" stroke-linecap="round"/><ellipse cx="43" cy="15" rx="12" ry="10" fill="url(#se2)"/><ellipse cx="43" cy="12" rx="10" ry="6" fill="#4ade80" opacity=".5"/><ellipse cx="38" cy="14" rx="2.6" ry="3.2" fill="#0f172a"/><ellipse cx="48" cy="14" rx="2.6" ry="3.2" fill="#0f172a"/><circle cx="38.9" cy="12.8" r="1.1" fill="#fff"/><circle cx="48.9" cy="12.8" r="1.1" fill="#fff"/><path d="M43 22 v5 M43 27 l-4 3 M43 27 l4 3" stroke="#ef4444" stroke-width="2" stroke-linecap="round"/></svg>`,
+  serpent: `<img src="img/serpent.png" alt="" class="img-icone" width="256" height="256">`,
 
-  baleine: `<span class="emoji-icone">🐋</span>`,
+  baleine: `<img src="img/baleine.png" alt="" class="img-icone" width="256" height="256">`,
 
   /* ---------- Savoirs ---------- */
   coeur: `<svg viewBox="0 0 64 64" fill="none"><defs><linearGradient id="co1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fb7185"/><stop offset="1" stop-color="#be123c"/></linearGradient></defs><path d="M32 56 C9 40 4 25 13 17 C21 10 30 14 32 22 C34 14 43 10 51 17 C60 25 55 40 32 56Z" fill="url(#co1)"/><path d="M18 20 c-4 4-4 10 0 15" stroke="#fecdd3" stroke-width="3" stroke-linecap="round" opacity=".55"/><path d="M14 33 h7 l3.5 -8 5 17 3.5 -9 3 5 h5.5" stroke="#fff1f2" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/><circle cx="49" cy="38" r="2.4" fill="#fecdd3" opacity=".8"/></svg>`,
