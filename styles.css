@@ -707,6 +707,18 @@ body::before {
 .search-result-icon {
     font-size: 1.8rem;
     flex-shrink: 0;
+    /* Taille imposee au conteneur : les illustrations en <img> portent un
+       attribut width de 256, sans cela elles s'affichent en pleine taille. */
+    width: 34px;
+    height: 34px;
+    display: block;
+}
+
+.search-result-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
 }
 
 .search-result-info {
