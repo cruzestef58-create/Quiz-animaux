@@ -14,8 +14,25 @@ function escapeHtml(v) {
 }
 
 /* Longueurs maximales acceptees a la saisie */
+// Une image de question ne peut pointer que vers le site lui-meme ou Wikimedia.
+// Bloque javascript:, data: et tout domaine tiers, meme si la base de questions
+// venait a etre modifiee.
+function urlImageSure(url) {
+    if (typeof url !== 'string' || !url) return false;
+    if (/^(https?:)?\/\//i.test(url)) {
+        try {
+            const u = new URL(url, location.href);
+            return u.protocol === 'https:' &&
+                   /^(upload|commons)\.wikimedia\.org$/i.test(u.hostname);
+        } catch (e) { return false; }
+    }
+    // Chemin relatif : on refuse tout ce qui ressemble a un protocole
+    return !/^[a-z][a-z0-9+.-]*:/i.test(url);
+}
+
 const MAX_RECHERCHE = 60;
 const MAX_MESSAGE   = 1000;
+const MAX_QUIZ      = 80;
 
 
 // Quiz Controller
@@ -93,15 +110,15 @@ class QuizManager {
 
         let html = `
             <div class="question-number">Question ${this.currentQuestion + 1}</div>
-            <div class="question-text">${question.question}</div>
-            ${question.image ? `<div class="question-image"><img src="${question.image}" alt="Illustration de la question" loading="lazy" onerror="this.parentElement.style.display='none'"></div>` : ''}
+            <div class="question-text">${escapeHtml(question.question)}</div>
+            ${urlImageSure(question.image) ? `<div class="question-image"><img src="${escapeHtml(question.image)}" alt="Illustration de la question" loading="lazy" onerror="this.parentElement.style.display='none'"></div>` : ''}
         `;
 
         if (question.type === 'vrai_faux') {
             html += `<div class="vf-options">`;
             question.options.forEach((option, index) => {
                 const icon = index === 0 ? '✅' : '❌';
-                html += `<button class="vf-btn" data-index="${index}">${icon} ${option}</button>`;
+                html += `<button class="vf-btn" data-index="${index}">${icon} ${escapeHtml(option)}</button>`;
             });
             html += `</div>`;
         } else {
@@ -113,7 +130,7 @@ class QuizManager {
                 html += `
                     <label class="option" data-index="${item.index}">
                         <input type="radio" name="answer" value="${item.index}">
-                        <span>${item.option}</span>
+                        <span>${escapeHtml(item.option)}</span>
                     </label>
                 `;
             });
@@ -123,11 +140,11 @@ class QuizManager {
         html += `
             <div class="explanation" id="question-explanation">
                 <div class="explanation-title">💡 Explication :</div>
-                <div class="explanation-text">${question.explanation || 'Pas d\'explication disponible.'}</div>
+                <div class="explanation-text">${escapeHtml(question.explanation || 'Pas d\'explication disponible.')}</div>
             </div>
             <div class="source" id="question-source">
                 <div class="source-title">📚 Source :</div>
-                <div class="source-text">${question.source}</div>
+                <div class="source-text">${escapeHtml(question.source)}</div>
             </div>
         `;
 
@@ -312,16 +329,16 @@ class QuizManager {
                     border-radius: 12px;
                 ">
                     <p style="color: white; font-weight: 700; margin-bottom: 0.6rem; line-height: 1.5;">
-                        ${icon} <span style="color: ${labelGood};">Question ${index + 1}</span> — ${question.question}
+                        ${icon} <span style="color: ${labelGood};">Question ${index + 1}</span> — ${escapeHtml(question.question)}
                     </p>
                     <p style="color: #94a3b8; margin-bottom: 0.3rem; font-size: 0.95rem;">
-                        Votre réponse : <strong style="color: ${isCorrect ? 'rgba(16,185,129,0.9)' : 'rgba(239,68,68,0.9)'};">${question.options[this.selectedAnswers[index]] ?? '—'}</strong>
+                        Votre réponse : <strong style="color: ${isCorrect ? 'rgba(16,185,129,0.9)' : 'rgba(239,68,68,0.9)'};">${escapeHtml(question.options[this.selectedAnswers[index]] ?? '—')}</strong>
                     </p>
                     ${!isCorrect ? `
                     <p style="color: #94a3b8; margin-bottom: 0.3rem; font-size: 0.95rem;">
-                        Bonne réponse : <strong style="color: rgba(16, 185, 129, 0.9);">${question.options[question.correct]}</strong>
+                        Bonne réponse : <strong style="color: rgba(16, 185, 129, 0.9);">${escapeHtml(question.options[question.correct])}</strong>
                     </p>` : ''}
-                    <p style="font-size: 0.75rem; color: #64748b; margin-top: 0.5rem; font-style: italic;">${question.source}</p>
+                    <p style="font-size: 0.75rem; color: #64748b; margin-top: 0.5rem; font-style: italic;">${escapeHtml(question.source)}</p>
                 </div>
             `;
         });
@@ -659,18 +676,9 @@ function createReportModal() {
                     <button class="report-type-btn" data-type="suggestion">💡 Suggestion</button>
                 </div>
                 <label class="report-label">Quiz concerné</label>
-                <select id="report-quiz-select" class="report-select">
-                    <option value="">— Choisir un quiz —</option>
-                    <option>Éducation Canine</option>
-                    <option>Les Chats</option>
-                    <option>Ornithologie</option>
-                    <option>Reptiles</option>
-                    <option>Mammifères Marins</option>
-                    <option>Le Lion</option>
-                    <option>L'Aigle Royal</option>
-                    <option>Le Tigre</option>
-                    <option value="general">Général / Autre</option>
-                </select>
+                <input type="text" id="report-quiz" class="report-input"
+                       placeholder="Ex : Les Chats, Marvel, Histoire de France… (laisse vide si général)"
+                       maxlength="80" autocomplete="off">
                 <label class="report-label">Description</label>
                 <textarea id="report-text" class="report-textarea" placeholder="Décris le problème ou la suggestion ici…" rows="4" maxlength="1000"></textarea>
                 <input type="text" id="report-gotcha" name="_gotcha" tabindex="-1" autocomplete="off"
@@ -747,7 +755,7 @@ function peutEnvoyer() {
 async function submitReport() {
     const typeBtn = document.querySelector('.report-type-btn.active');
     const type = typeBtn ? typeBtn.dataset.type : 'bug';
-    const quiz = document.getElementById('report-quiz-select').value;
+    const quiz = document.getElementById('report-quiz').value.trim().slice(0, MAX_QUIZ);
     const text = document.getElementById('report-text').value.trim();
 
     // Piege a robots : un humain ne voit pas ce champ, donc ne le remplit jamais.
@@ -778,7 +786,7 @@ async function submitReport() {
         });
 
         if (res.ok) {
-            document.getElementById('report-quiz-select').value = '';
+            document.getElementById('report-quiz').value = '';
             document.getElementById('report-text').value = '';
             submitBtn.textContent = '✅ Envoyé !';
             setTimeout(() => {
@@ -812,7 +820,7 @@ function renderReportHistory() {
     container.innerHTML = `<h3>Tes signalements (${reports.length})</h3>` +
         reports.slice().reverse().map(r => `
             <div class="report-card">
-                <span class="report-tag report-tag-${r.type}">${r.type === 'bug' ? '🐛 Bug' : '💡 Suggestion'}</span>
+                <span class="report-tag report-tag-${r.type === 'bug' ? 'bug' : 'suggestion'}">${r.type === 'bug' ? '🐛 Bug' : '💡 Suggestion'}</span>
                 <span class="report-quiz-tag">${escapeHtml(r.quiz)}</span>
                 <p>${escapeHtml(r.text)}</p>
                 <small>${escapeHtml(r.date)}</small>
@@ -983,10 +991,13 @@ function normalize(str) {
 }
 
 function highlight(text, query) {
-    if (!query) return text;
-    const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    // On echappe D'ABORD, on ajoute <mark> ensuite : le texte affiche ne peut
+    // jamais contenir de HTML, meme si un titre en contenait un jour.
+    const sur = escapeHtml(text);
+    if (!query) return sur;
+    const escaped = escapeHtml(query).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     const re = new RegExp(`(${escaped})`, 'gi');
-    return text.replace(re, '<mark>$1</mark>');
+    return sur.replace(re, '<mark>$1</mark>');
 }
 
 

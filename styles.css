@@ -309,7 +309,8 @@ body::before {
     font-weight: 600;
 }
 
-.report-select {
+.report-select,
+.report-input {
     width: 100%;
     padding: 0.6rem 0.8rem;
     border: 2px solid rgba(255,255,255,0.15);
@@ -321,8 +322,14 @@ body::before {
     color: var(--dark-text);
 }
 
-.report-select:focus {
+.report-select:focus,
+.report-input:focus {
     border-color: var(--primary-color);
+}
+
+.report-input::placeholder {
+    color: var(--light-text);
+    opacity: 0.55;
 }
 
 .report-textarea {
