@@ -2121,3 +2121,379 @@ footer p {
         scroll-behavior: auto !important;
     }
 }
+
+/* ============================================================
+   Animation d'entree + visite guidee
+   ============================================================ */
+
+#intro-ecran {
+    position: fixed;
+    inset: 0;
+    z-index: 9998;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.9rem;
+    background: radial-gradient(circle at 50% 45%, #1a1033 0%, var(--dark-bg) 65%);
+    opacity: 1;
+    transition: opacity 0.55s ease, visibility 0.55s;
+}
+
+#intro-ecran.intro-sortie {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.intro-halo {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(124,58,237,0.38) 0%, rgba(124,58,237,0) 70%);
+    animation: introHalo 1.6s ease-out both;
+}
+
+.intro-logo {
+    width: 104px;
+    height: 104px;
+    object-fit: contain;
+    position: relative;
+    animation: introLogo 0.9s cubic-bezier(0.2, 0.9, 0.25, 1.1) both;
+}
+
+.intro-nom {
+    position: relative;
+    font-size: 1.45rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    background: linear-gradient(90deg, var(--accent-cyan), var(--primary-color), var(--accent-magenta));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: introNom 0.7s ease-out 0.28s both;
+}
+
+.intro-trait {
+    position: relative;
+    height: 3px;
+    width: 0;
+    border-radius: 2px;
+    background: linear-gradient(90deg, var(--accent-cyan), var(--accent-magenta));
+    animation: introTrait 0.75s ease-out 0.4s both;
+}
+
+@keyframes introLogo {
+    from { opacity: 0; transform: scale(0.55) translateY(14px); }
+    to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+@keyframes introNom {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes introTrait {
+    from { width: 0; opacity: 0; }
+    to   { width: 190px; opacity: 1; }
+}
+@keyframes introHalo {
+    0%   { opacity: 0; transform: scale(0.6); }
+    55%  { opacity: 1; transform: scale(1); }
+    100% { opacity: 0.55; transform: scale(1.12); }
+}
+
+/* Les animations de la page attendent la fin de l'ecran d'entree */
+body.intro-en-cours .container *,
+body.intro-en-cours .navbar * {
+    animation-play-state: paused !important;
+}
+
+/* ---------- Bouton d'ouverture ---------- */
+
+.btn-visite {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1.4rem;
+    padding: 0.6rem 1.3rem;
+    border: 1px solid rgba(255,255,255,0.22);
+    border-radius: 999px;
+    background: rgba(255,255,255,0.06);
+    color: var(--dark-text);
+    font-size: 0.92rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s, transform 0.2s;
+}
+
+.btn-visite:hover {
+    border-color: var(--primary-color);
+    background: rgba(124,58,237,0.16);
+    transform: translateY(-2px);
+}
+
+/* ---------- Voile et projecteur ---------- */
+
+#visite-voile {
+    position: fixed;
+    inset: 0;
+    z-index: 9990;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s;
+}
+
+#visite-voile.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+#visite-svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#visite-trou,
+#visite-halo {
+    transition: x 0.35s ease, y 0.35s ease, width 0.35s ease, height 0.35s ease;
+}
+
+#visite-halo {
+    stroke: var(--accent-cyan);
+    stroke-width: 2;
+    filter: drop-shadow(0 0 14px rgba(34, 211, 238, 0.85));
+}
+
+/* Pas de verrou de defilement ici : la visite doit pouvoir amener
+   elle-meme chaque cible a l'ecran. Le voile bloque deja les clics,
+   et le projecteur se recale a chaque defilement. */
+body.visite-active {
+    overscroll-behavior: contain;
+}
+
+/* ---------- Bulle explicative ---------- */
+
+#visite-bulle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9992;
+    width: min(400px, calc(100vw - 32px));
+    padding: 1.4rem 1.5rem 1.2rem;
+    border: 1px solid rgba(255,255,255,0.16);
+    border-radius: 18px;
+    background: linear-gradient(160deg, #1a1130 0%, #120c22 100%);
+    box-shadow: 0 24px 60px rgba(0,0,0,0.6);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.28s ease, visibility 0.28s, transform 0.35s cubic-bezier(0.2,0.8,0.3,1);
+}
+
+#visite-bulle.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+#visite-bulle h3 {
+    margin: 0.35rem 0 0.6rem;
+    font-size: 1.18rem;
+    color: #fff;
+}
+
+#visite-bulle p {
+    margin: 0;
+    font-size: 0.94rem;
+    line-height: 1.6;
+    color: var(--light-text);
+}
+
+.visite-etape {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    color: var(--accent-cyan);
+}
+
+.visite-fermer {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.8rem;
+    border: none;
+    background: none;
+    color: var(--light-text);
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0.2rem 0.4rem;
+    border-radius: 8px;
+}
+
+.visite-fermer:hover {
+    color: #fff;
+    background: rgba(255,255,255,0.08);
+}
+
+.visite-pied {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1.1rem;
+}
+
+.visite-points {
+    display: flex;
+    gap: 6px;
+}
+
+.visite-point {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.22);
+    transition: background 0.2s, transform 0.2s;
+}
+
+.visite-point.actif {
+    background: var(--accent-cyan);
+    transform: scale(1.25);
+}
+
+.visite-boutons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.visite-btn {
+    white-space: nowrap;
+    padding: 0.5rem 1.05rem;
+    border: none;
+    border-radius: 999px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-magenta));
+    color: #fff;
+    font-size: 0.88rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: filter 0.2s, transform 0.2s;
+}
+
+.visite-btn:hover {
+    filter: brightness(1.12);
+    transform: translateY(-1px);
+}
+
+.visite-btn-plat {
+    background: rgba(255,255,255,0.08);
+    color: var(--light-text);
+}
+
+/* ---------- Apercus dans la bulle ---------- */
+
+.visite-niveaux {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    margin-top: 0.9rem;
+}
+
+.visite-niveau {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    background: rgba(255,255,255,0.04);
+    font-size: 0.82rem;
+    color: var(--light-text);
+}
+
+.visite-niveau b {
+    color: #fff;
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+.visite-fiche {
+    margin-top: 0.9rem;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.visite-fiche-ligne {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.82rem;
+    line-height: 1.5;
+    color: var(--light-text);
+    background: rgba(124,58,237,0.1);
+}
+
+.visite-fiche-ligne span {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: var(--accent-cyan);
+    margin-bottom: 0.25rem;
+}
+
+.visite-fiche-src {
+    background: rgba(255,255,255,0.035);
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.visite-fiche-src span {
+    color: var(--accent-yellow);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #intro-ecran,
+    #visite-trou,
+    #visite-halo,
+    #visite-bulle,
+    .intro-logo,
+    .intro-nom,
+    .intro-trait,
+    .intro-halo {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* Sur petit ecran, la bulle doit laisser assez de place a la carte
+   qu'elle designe : sans cela elle finirait par la recouvrir. */
+@media (max-width: 560px) {
+    #visite-bulle {
+        width: calc(100vw - 20px);
+        padding: 0.95rem 1.05rem 0.85rem;
+    }
+    #visite-bulle h3 {
+        margin: 0.2rem 0 0.4rem;
+        font-size: 1.04rem;
+    }
+    #visite-bulle p {
+        font-size: 0.86rem;
+        line-height: 1.5;
+    }
+    .visite-etape { font-size: 0.66rem; }
+    .visite-pied { margin-top: 0.75rem; }
+    .visite-btn { padding: 0.44rem 0.9rem; font-size: 0.83rem; }
+    .visite-niveaux { gap: 0.35rem; margin-top: 0.7rem; }
+    .visite-niveau { padding: 0.4rem 0.6rem; font-size: 0.78rem; }
+    .visite-fiche { margin-top: 0.7rem; }
+    .visite-fiche-ligne { padding: 0.5rem 0.65rem; font-size: 0.78rem; }
+}
+
+/* Fenetres etroites (petit portable) : une bulle de 400 px ne laisse pas
+   la place de se poser a cote d'une carte de theme. On la resserre. */
+@media (min-width: 561px) and (max-width: 980px) {
+    #visite-bulle {
+        width: 330px;
+        padding: 1.15rem 1.2rem 1rem;
+    }
+    #visite-bulle h3 { font-size: 1.08rem; }
+    #visite-bulle p { font-size: 0.88rem; }
+}
