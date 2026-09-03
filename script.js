@@ -916,6 +916,13 @@ const categories = {
             { icon: 'astro', title: 'Astrologie', desc: 'Les 12 signes, les éléments, les planètes et le zodiaque chinois.', url: 'quiz-astrologie.html' },
         ]
     },
+    musique: {
+        label: '🎧 Musique',
+        quizzes: [
+            { icon: 'note', title: 'La Musique', desc: 'Instruments, solfège, grands compositeurs et histoire des musiques du monde.', url: 'quiz-musique.html' },
+            { icon: 'micro', title: 'Le Rap', desc: 'Origines du hip-hop, artistes cultes, albums majeurs et rap français.', url: 'quiz-rap.html' },
+        ]
+    },
     filmsseries: {
         label: '🎬 Pop Culture',
         quizzes: [
@@ -1381,6 +1388,30 @@ function startQuizCultureG(difficulty) {
     nextBtn.onclick = () => quizManager.nextQuestion();
 }
 window.startQuizCultureG = startQuizCultureG;
+
+function startQuizMusique(difficulty) {
+    document.getElementById('difficulty-selection').style.display = 'none';
+    document.getElementById('quiz-container').style.display = 'block';
+
+    const quizData = quizzesData.musique;
+    quizManager = new QuizManager(quizData, difficulty);
+    quizManager.init();
+
+    const nextBtn = document.getElementById('next-button');
+    nextBtn.onclick = () => quizManager.nextQuestion();
+}
+
+function startQuizRap(difficulty) {
+    document.getElementById('difficulty-selection').style.display = 'none';
+    document.getElementById('quiz-container').style.display = 'block';
+
+    const quizData = quizzesData.rap;
+    quizManager = new QuizManager(quizData, difficulty);
+    quizManager.init();
+
+    const nextBtn = document.getElementById('next-button');
+    nextBtn.onclick = () => quizManager.nextQuestion();
+}
 
 function startQuizAstrologie(difficulty) {
     document.getElementById('difficulty-selection').style.display = 'none';

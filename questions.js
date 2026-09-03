@@ -2176,11 +2176,11 @@ const quizzesData = {
             },
             {
                 id: 14,
-                question: "Quelle est la température corporelle normale d'un chat ?",
-                options: ["37°C", "38-39°C", "40-41°C", "42°C"],
+                question: "Pourquoi un chat pétrit-il avec ses pattes avant ?",
+                options: ["Pour aiguiser ses griffes", "Par réflexe hérité de la tétée", "Pour marquer visuellement le sol", "Pour se réchauffer les coussinets"],
                 correct: 1,
-                explanation: "La température normale d'un chat est de 38 à 39°C. En dessous de 37,5°C on parle d'hypothermie, au-dessus de 39,5°C de fièvre. Contrairement à l'humain, il n'est pas possible de détecter la fièvre d'un chat en touchant son nez (sec ou humide, ça ne veut rien dire). Seul un thermomètre rectal donne une mesure fiable. Un chat qui fait 40°C ou plus doit être vu rapidement par un vétérinaire.",
-                source: "Organisation Mondiale de la Santé Animale - La température normale d'un chat est 38-39°C."
+                explanation: "Le chaton pétrit les mamelles de sa mère pour stimuler la montée de lait. Le geste persiste à l'âge adulte comme signe d'apaisement, souvent accompagné de ronronnement.",
+                source: "Association vétérinaire féline internationale — comportement du chat."
             },
             {
                 id: 15,
@@ -2890,11 +2890,11 @@ const quizzesData = {
             },
             {
                 id: 15,
-                question: "Quel oiseau pond les plus gros œufs ?",
-                options: ["L'aigle", "Le cygne", "L'autruche", "La grue"],
-                correct: 2,
-                explanation: "L'autruche pond effectivement les plus gros œufs de tout le règne animal, pesant entre 1,5 et 2 kg. Ironiquement, ce sont aussi les plus petits œufs proportionnellement au poids de la femelle (environ 1%). La coquille est si épaisse et résistante (environ 2 mm) qu'un humain adulte peut se tenir dessus sans la casser. Une femelle pond entre 10 et 15 œufs par saison.",
-                source: "Muséum de Zoologie - L'autruche pond des œufs de 1,5-2 kg."
+                question: "Quel oiseau est capable de voler en arrière ?",
+                options: ["Le martinet", "Le colibri", "La mésange", "Le pic vert"],
+                correct: 1,
+                explanation: "Ses ailes décrivent un huit et fournissent une portance dans les deux sens du battement. Il bat jusqu'à quatre-vingts fois par seconde.",
+                source: "Muséum national d'Histoire naturelle — biomécanique du vol."
             },
             {
                 id: 16,
@@ -3096,11 +3096,11 @@ const quizzesData = {
             },
             {
                 id: 13,
-                question: "Quel est le plus petit oiseau du monde ?",
-                options: ["Le roitelet", "L'alouette", "Le colibri", "La mésange"],
-                correct: 2,
-                explanation: "Le colibri abeille de Cuba est bien le plus petit oiseau du monde avec ses 5-6 cm et 2 grammes. Pour sa survie, il doit consommer chaque jour son équivalent en poids de nectar, visitant jusqu'à 1 500 fleurs par jour. Son cœur bat à 1 200 battements par minute en vol. La nuit, il entre en torpeur — sa température chute de 40°C à environ 20°C pour économiser l'énergie jusqu'au matin.",
-                source: "Musée d'Histoire Naturelle - Le colibri abeille mesure environ 5 cm et pèse 2 grammes."
+                question: "Que désigne la mue chez les oiseaux ?",
+                options: ["Le changement de partenaire", "Le remplacement périodique du plumage", "La migration saisonnière", "La construction d'un nouveau nid"],
+                correct: 1,
+                explanation: "Les plumes usées tombent et sont remplacées, souvent après la reproduction. Certains canards perdent toutes leurs rémiges d'un coup et restent incapables de voler plusieurs semaines.",
+                source: "Ligue pour la protection des oiseaux — biologie des oiseaux."
             },
             {
                 id: 14,
@@ -4154,11 +4154,11 @@ const quizzesData = {
             },
             {
                 id: 39,
-                question: "Quel est le rôle du cloaque chez les reptiles ?",
-                options: ["Respiration uniquement", "Excrétion et reproduction", "Digestion uniquement", "Stockage"],
+                question: "Comment un serpent avale-t-il une proie plus large que sa tête ?",
+                options: ["Il la découpe avec ses crochets", "Ses mâchoires sont reliées par un ligament très extensible", "Il la ramollit longuement avant", "Il dilate son crâne de façon réversible"],
                 correct: 1,
-                explanation: "Le cloaque est une innovation évolutive des tétrapodes (vertébrés terrestres). Il regroupe en une seule ouverture toutes les fonctions d'évacuation : digestive (matières fécales), urinaire (urates chez les reptiles, qui excrètent de l'acide urique plutôt que de l'urée pour économiser l'eau) et reproductive (sperme, œufs). Cette économie anatomique est particulièrement adaptée aux animaux à peau imperméable qui doivent conserver l'eau précieusement.",
-                source: "Institut d'Anatomie Comparée - Multifonctionne structure reptilienne."
+                explanation: "Les deux moitiés de la mâchoire inférieure ne sont pas soudées et l'os carré agit comme une charnière mobile. Les dents recourbées font progresser la proie vers l'arrière.",
+                source: "Muséum national d'Histoire naturelle — anatomie des squamates."
             },
             {
                 id: 40,
@@ -5337,11 +5337,11 @@ const quizzesData = {
             },
             {
                 id: 51,
-                question: "Quel est le mécanisme d'osmorégulation chez les cétacés marins ?",
-                options: ["Excrétion de sel par des glandes nasales comme chez les reptiles marins et certains oiseaux côtiers", "Reins hautement concentrés et métabolisme de l'eau", "Absorption cutanée d'eau douce depuis l'eau de mer via des aquaporines dermiques spécialisées", "Urines très concentrées éliminant l'excès de sodium avec une perte hydrique minimale"],
+                question: "Comment les cétacés dorment-ils sans se noyer ?",
+                options: ["Ils remontent en flottant inconscients", "Ils dorment un hémisphère cérébral à la fois", "Ils retiennent leur souffle plusieurs heures", "Ils s'échouent sur les hauts-fonds"],
                 correct: 1,
-                explanation: "Les reins des c\u00e9tac\u00e9s marins sont organis\u00e9s en centaines de 'renicules' \u2014 de petits lobules r\u00e9naux ind\u00e9pendants. Cette structure augmente massivement la surface de filtration. Les c\u00e9tac\u00e9s ne boivent pas d'eau de mer : l'eau de leurs proies leur suffit. Ils excrètent des urines 2 \u00e0 4 fois plus concentr\u00e9es que l'eau de mer pour maintenir leur \u00e9quilibre hydrique.",
-                source: "Institut de Physiologie Osmorégulatrice Marine - Les reins concentrent l'urine extrêmement."
+                explanation: "Le sommeil unihémisphérique laisse une moitié du cerveau éveillée pour commander la remontée et la respiration. L'œil opposé à l'hémisphère endormi reste ouvert.",
+                source: "Lyamin et al. — Neuroscience and Biobehavioral Reviews, 2008."
             },
             {
                 id: 52,
@@ -5366,11 +5366,11 @@ const quizzesData = {
             },
             {
                 id: 54,
-                question: "Quel est le rôle des cavités nasales compliquées des cétacés ?",
-                options: ["Respiration uniquement", "Écholocalisation et production de sons", "Olfaction exacerbée", "Thermorégulation"],
+                question: "Qu'est-ce que le bélugas possède et que la plupart des cétacés n'ont pas ?",
+                options: ["Des dents remplaçables", "Des vertèbres cervicales non soudées", "Une nageoire dorsale rigide", "Un second évent"],
                 correct: 1,
-                explanation: "Chez le dauphin, les l\u00e8vres phoniques (phonic lips) vibrent pour cr\u00e9er des clics ultra-rapides (jusqu'\u00e0 700 clics par seconde). Ces sons sont focalis\u00e9s par le melon frontal vers l'avant. L'oreille interne est anatomiquement isol\u00e9e du cr\u00e2ne par des coussins de graisse pour \u00e9viter la confusion entre sons \u00e9mis et re\u00e7us \u2014 une conception quasi-st\u00e9r\u00e9ophonique unique.",
-                source: "Institut d'Anatomie Cétologique - Les cavités nasales produisent l'écholocalisation."
+                explanation: "Ses cervicales libres lui permettent de tourner la tête, ce qui est exceptionnel chez les cétacés. Cette mobilité l'aide à chasser sous la banquise.",
+                source: "National Oceanic and Atmospheric Administration — Delphinapterus leucas."
             },
             {
                 id: 55,
@@ -5703,6 +5703,122 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Quelques centaines de lions d'Asie subsistent dans le parc national de Gir, au Gujarat. Réduite à une dizaine d'individus au début du vingtième siècle, la population remonte lentement grâce à la protection.",
                 source: "Wildlife Institute of India — recensement du lion asiatique."
+            },
+            {
+                id: 1101,
+                type: "vrai_faux",
+                question: "Les lionceaux naissent avec des taches sur le pelage.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Ces rosettes sombres aident au camouflage dans les hautes herbes. Elles s'estompent en grandissant, mais restent parfois visibles sur le ventre des adultes.",
+                source: "George Schaller — The Serengeti Lion, 1972."
+            },
+            {
+                id: 1102,
+                type: "vrai_faux",
+                question: "Le lion possède des griffes rétractiles.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Comme presque tous les félins, il les rentre au repos, ce qui les garde acérées. Seul le guépard fait exception, ses griffes restant partiellement sorties.",
+                source: "Muséum national d'Histoire naturelle — anatomie des félins."
+            },
+            {
+                id: 1103,
+                type: "vrai_faux",
+                question: "Le lion boit tous les jours quand il le peut.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Il s'abreuve quotidiennement dès qu'un point d'eau est accessible. En zone aride, il tire une partie de son eau du sang et des tissus de ses proies.",
+                source: "George Schaller — The Serengeti Lion, 1972."
+            },
+            {
+                id: 1104,
+                type: "vrai_faux",
+                question: "Le lion vit uniquement en Afrique aujourd'hui.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Une petite population subsiste en Inde, dans la forêt de Gir. C'est le seul endroit hors d'Afrique où l'espèce survit à l'état sauvage.",
+                source: "Union internationale pour la conservation de la nature — fiche Panthera leo."
+            },
+            {
+                id: 1105,
+                question: "Quelle est la couleur des yeux des lionceaux à la naissance ?",
+                options: ["Verts", "Bleu-gris", "Ambrés comme les adultes", "Noirs"],
+                correct: 1,
+                explanation: "Les yeux virent au brun ambré vers deux ou trois mois. Les petits naissent en outre les paupières closes et ne les ouvrent qu'au bout d'une semaine environ.",
+                source: "George Schaller — The Serengeti Lion, 1972."
+            },
+            {
+                id: 1106,
+                question: "Que porte le lion au bout de la queue ?",
+                options: ["Rien de particulier", "Une touffe de poils noirs", "Une crinière miniature", "Une zone dépourvue de poils"],
+                correct: 1,
+                explanation: "Ce pinceau sombre, absent à la naissance, apparaît vers cinq mois. Il sert de signal visuel lors des déplacements en herbe haute.",
+                source: "Muséum national d'Histoire naturelle — anatomie des félins."
+            },
+            {
+                id: 1107,
+                question: "Combien de dents possède un lion adulte ?",
+                options: ["Vingt-six", "Trente", "Trente-six", "Quarante-deux"],
+                correct: 1,
+                explanation: "Le lion compte trente dents, dont quatre canines pouvant atteindre sept centimètres. Ses carnassières cisaillent la viande plutôt que de la broyer.",
+                source: "Muséum national d'Histoire naturelle — anatomie des félins."
+            },
+            {
+                id: 1108,
+                question: "Quel animal est le principal concurrent du lion pour la nourriture ?",
+                options: ["Le guépard", "La hyène tachetée", "Le chacal", "Le vautour"],
+                correct: 1,
+                explanation: "Les deux espèces se volent régulièrement leurs proies, dans les deux sens. Contrairement à l'idée reçue, le lion dérobe souvent aux hyènes plutôt que l'inverse.",
+                source: "George Schaller — The Serengeti Lion, 1972."
+            },
+            {
+                id: 1109,
+                question: "Quelle proie de grande taille les lions attaquent-ils en groupe ?",
+                options: ["Le lièvre des savanes", "Le buffle d'Afrique", "La pintade", "Le suricate"],
+                correct: 1,
+                explanation: "Un buffle adulte pèse jusqu'à huit cents kilos et se défend farouchement. Ces attaques peuvent durer des heures et coûtent parfois la vie à un lion.",
+                source: "George Schaller — The Serengeti Lion, 1972."
+            },
+            {
+                id: 1110,
+                question: "Comment les lions d'une même troupe se saluent-ils ?",
+                options: ["En rugissant longuement face à face", "En se frottant la tête l'un contre l'autre", "En se mordillant doucement le bout de la queue", "En restant immobiles à bonne distance l'un de l'autre"],
+                correct: 1,
+                explanation: "Ce frottement des têtes, accompagné de léchages, renforce la cohésion du groupe et mélange les odeurs. C'est le geste social le plus fréquent chez l'espèce.",
+                source: "George Schaller — The Serengeti Lion, 1972."
+            },
+            {
+                id: 1111,
+                question: "Quelle est la durée de vie d'un lion en captivité ?",
+                options: ["Environ dix ans", "Environ vingt ans", "Environ trente ans", "Environ quarante ans"],
+                correct: 1,
+                explanation: "Protégés des blessures et de la faim, les lions de parcs zoologiques dépassent souvent vingt ans, contre douze à quinze dans la nature.",
+                source: "Union internationale pour la conservation de la nature — fiche Panthera leo."
+            },
+            {
+                id: 1112,
+                question: "Quel félin est plus grand que le lion ?",
+                options: ["Le léopard", "Le tigre", "Le jaguar", "Le puma"],
+                correct: 1,
+                explanation: "Le tigre de Sibérie dépasse trois cents kilos, contre deux cent vingt-cinq pour un gros lion mâle. Le lion reste toutefois le plus grand félin d'Afrique.",
+                source: "Union internationale pour la conservation de la nature — fiche Panthera leo."
+            },
+            {
+                id: 1113,
+                question: "Que mange un lion en moyenne par jour ?",
+                options: ["Environ un kilo de viande", "Environ sept kilos de viande", "Environ trente kilos de viande", "Environ cinquante kilos de viande"],
+                correct: 1,
+                explanation: "La moyenne quotidienne tourne autour de sept kilos, mais l'alimentation est irrégulière : un lion peut engloutir trente kilos d'un coup puis jeûner plusieurs jours.",
+                source: "George Schaller — The Serengeti Lion, 1972."
+            },
+            {
+                id: 1114,
+                question: "Dans quel parc célèbre de Tanzanie étudie-t-on les lions depuis les années 1960 ?",
+                options: ["Le parc Kruger", "Le Serengeti", "Le delta de l'Okavango", "Le parc d'Etosha"],
+                correct: 1,
+                explanation: "Les recherches menées là par George Schaller puis Craig Packer ont fondé presque tout ce que l'on sait du comportement social de l'espèce.",
+                source: "Craig Packer — Lions in the Balance, 2015."
             }
         ],
         moyen: [
@@ -5839,6 +5955,130 @@ const quizzesData = {
                 correct: 1,
                 explanation: "L'infanticide ramène les lionnes en chaleur en quelques jours au lieu de deux ans. Le nouveau mâle, dont le règne dure rarement plus de trois ans, maximise ainsi sa descendance.",
                 source: "Packer et Pusey — American Naturalist, 1983."
+            },
+            {
+                id: 1201,
+                type: "vrai_faux",
+                question: "Les lions mâles sans territoire sont appelés nomades.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Chassés de leur troupe natale vers deux ou trois ans, ils errent seuls ou en coalition jusqu'à pouvoir conquérir un groupe. Cette période est la plus meurtrière de leur vie.",
+                source: "George Schaller — The Serengeti Lion, 1972."
+            },
+            {
+                id: 1202,
+                type: "vrai_faux",
+                question: "Une lionne peut allaiter les petits d'une autre femelle du groupe.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Les femelles d'une même troupe, souvent apparentées, mettent bas à peu près en même temps et élèvent les petits en commun. Cet allaitement croisé est rare chez les mammifères.",
+                source: "George Schaller — The Serengeti Lion, 1972."
+            },
+            {
+                id: 1203,
+                type: "vrai_faux",
+                question: "Le lion chasse principalement en plein midi.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Il chasse surtout la nuit et à l'aube. Sa vision nocturne, six fois plus sensible que la nôtre, lui donne un net avantage sur ses proies dans l'obscurité.",
+                source: "George Schaller — The Serengeti Lion, 1972."
+            },
+            {
+                id: 1204,
+                type: "vrai_faux",
+                question: "Les lionnes d'une troupe sont généralement apparentées entre elles.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Les femelles restent dans leur groupe natal toute leur vie, contrairement aux mâles. Une troupe est donc un noyau de sœurs, cousines, mères et filles.",
+                source: "George Schaller — The Serengeti Lion, 1972."
+            },
+            {
+                id: 1205,
+                question: "Combien de temps un mâle conserve-t-il en moyenne le contrôle d'une troupe ?",
+                options: ["Environ six mois", "Environ deux à trois ans", "Environ dix ans", "Toute sa vie adulte"],
+                correct: 1,
+                explanation: "Il est presque toujours évincé par une coalition plus jeune. Cette brièveté explique la pression à se reproduire vite, et donc l'infanticide à la prise de pouvoir.",
+                source: "George Schaller — The Serengeti Lion, 1972."
+            },
+            {
+                id: 1206,
+                question: "Pourquoi les mâles s'associent-ils en coalitions ?",
+                options: ["Pour rendre les chasses collectives plus efficaces", "Pour conquérir et défendre une troupe plus longtemps", "Pour élever ensemble les lionceaux du groupe", "Pour parcourir de plus longues distances en saison sèche"],
+                correct: 1,
+                explanation: "Une coalition de trois ou quatre mâles tient un territoire bien plus longtemps qu'un solitaire. Ces alliances réunissent souvent des frères issus de la même portée.",
+                source: "Craig Packer — Lions in the Balance, 2015."
+            },
+            {
+                id: 1207,
+                question: "Quelle est la vitesse de pointe d'un lion ?",
+                options: ["Environ trente kilomètres par heure", "Environ soixante kilomètres par heure", "Environ cent kilomètres par heure", "Environ quinze kilomètres par heure"],
+                correct: 1,
+                explanation: "Il ne tient cette vitesse que sur une centaine de mètres. C'est pourquoi il privilégie l'approche silencieuse jusqu'à une trentaine de mètres avant de bondir.",
+                source: "George Schaller — The Serengeti Lion, 1972."
+            },
+            {
+                id: 1208,
+                question: "Comment un lion marque-t-il son territoire ?",
+                options: ["Uniquement par le rugissement", "Par l'urine, les griffades et le rugissement", "En déposant des poils sur les buissons", "En creusant des trous au sol"],
+                correct: 1,
+                explanation: "Il vaporise une urine chargée en marqueurs chimiques sur la végétation, griffe les troncs et rugit. Ces trois signaux se complètent, à courte et longue portée.",
+                source: "George Schaller — The Serengeti Lion, 1972."
+            },
+            {
+                id: 1209,
+                question: "Que sont les lions blancs de Timbavati ?",
+                options: ["Une sous-espèce distincte propre à cette réserve", "Des lions porteurs d'une mutation récessive", "Des lions albinos totalement dépourvus de pigment", "Des hybrides issus d'un croisement avec le tigre blanc"],
+                correct: 1,
+                explanation: "Leur robe claire vient d'un gène récessif, le leucisme, qui n'affecte ni les yeux ni la peau. Ils ne constituent pas une sous-espèce.",
+                source: "Muséum national d'Histoire naturelle — génétique des félins."
+            },
+            {
+                id: 1210,
+                question: "Quelle sous-espèce de lion a disparu d'Afrique du Nord au vingtième siècle ?",
+                options: ["Le lion du Katanga", "Le lion de l'Atlas", "Le lion du Transvaal", "Le lion du Sénégal"],
+                correct: 1,
+                explanation: "Aussi appelé lion de Barbarie, il vivait au Maghreb et arborait une crinière très fournie. Le dernier individu sauvage aurait été abattu au Maroc dans les années 1940.",
+                source: "Union internationale pour la conservation de la nature — fiche Panthera leo."
+            },
+            {
+                id: 1211,
+                question: "Que font les lions d'une troupe après un repas copieux ?",
+                options: ["Ils repartent chasser dès la digestion entamée", "Ils se reposent jusqu'à vingt heures d'affilée", "Ils changent aussitôt de secteur de territoire", "Ils se dispersent pour la nuit puis se regroupent"],
+                correct: 1,
+                explanation: "La digestion d'une trentaine de kilos de viande immobilise l'animal très longtemps. Cette économie d'énergie est indispensable entre deux chasses souvent infructueuses.",
+                source: "George Schaller — The Serengeti Lion, 1972."
+            },
+            {
+                id: 1212,
+                question: "Quel sens le lion utilise-t-il pour détecter une proie à distance la nuit ?",
+                options: ["Uniquement l'odorat", "La vue, très adaptée à la faible lumière", "L'écholocation", "La détection des vibrations du sol"],
+                correct: 1,
+                explanation: "Une couche réfléchissante derrière la rétine double la lumière disponible. Sa vision nocturne dépasse largement la nôtre, ce qui explique ses chasses de nuit.",
+                source: "Muséum national d'Histoire naturelle — vision des félins."
+            },
+            {
+                id: 1213,
+                question: "Combien reste-t-il environ de lions à l'état sauvage en Afrique ?",
+                options: ["Environ deux mille individus répartis en Afrique", "Environ vingt à vingt-cinq mille", "Environ cent mille comme au début du siècle", "Environ un million sur l'ensemble du continent"],
+                correct: 1,
+                explanation: "La population a chuté de plus de moitié en vingt-cinq ans. La perte d'habitat, les conflits avec les éleveurs et la raréfaction des proies en sont les causes principales.",
+                source: "Union internationale pour la conservation de la nature — fiche Panthera leo."
+            },
+            {
+                id: 1214,
+                question: "Quel est le rôle des vibrisses chez le lion ?",
+                options: ["Elles filtrent l'air inspiré des poussières de la savane", "Elles renseignent sur les obstacles et la position de la proie", "Elles participent à la thermorégulation de la face", "Elles ne remplissent aucune fonction connue à ce jour"],
+                correct: 1,
+                explanation: "Reliées à de nombreux récepteurs, elles guident la morsure finale sur une proie que le lion ne voit plus de si près. La disposition des taches à leur base est propre à chaque individu.",
+                source: "Muséum national d'Histoire naturelle — anatomie des félins."
+            },
+            {
+                id: 1215,
+                question: "Pourquoi les lionnes synchronisent-elles souvent leurs naissances ?",
+                options: ["Pour limiter le nombre total de portées par an", "Pour élever les petits en commun et les protéger", "Pour raccourcir la durée de la gestation", "Pour éviter la présence des mâles au moment des naissances"],
+                correct: 1,
+                explanation: "Élevés ensemble, les lionceaux bénéficient de la vigilance de plusieurs femelles et de l'allaitement croisé. Un petit isolé serait bien plus exposé à l'infanticide.",
+                source: "George Schaller — The Serengeti Lion, 1972."
             }
         ],
         difficile: [
@@ -5972,6 +6212,122 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Un mâle adulte pèse en général entre cent cinquante et deux cent vingt-cinq kilos, contre cent vingt à cent cinquante pour une lionne. Le tigre de Sibérie le dépasse et reste le plus lourd des félins.",
                 source: "Union Internationale pour la Conservation de la Nature — Panthera leo."
+            },
+            {
+                id: 1301,
+                type: "vrai_faux",
+                question: "Le lion et le tigre peuvent donner une descendance en captivité.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le croisement d'un lion mâle et d'une tigresse donne le ligre, celui d'un tigre et d'une lionne le tigron. Ces hybrides n'existent pas dans la nature, les aires de répartition ne se recouvrant plus.",
+                source: "Muséum national d'Histoire naturelle — hybridation chez les félins."
+            },
+            {
+                id: 1302,
+                type: "vrai_faux",
+                question: "Les lions mâles participent parfois à la chasse aux grosses proies.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Leur masse est décisive contre les buffles ou les jeunes éléphants. Ils laissent en revanche les chasses rapides aux femelles, plus légères et plus agiles.",
+                source: "George Schaller — The Serengeti Lion, 1972."
+            },
+            {
+                id: 1303,
+                type: "vrai_faux",
+                question: "Les lions du Serengeti ont fait l'objet d'un suivi individuel sur plusieurs décennies.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Chaque animal est identifié par la disposition des taches à la base de ses vibrisses. Ce suivi ininterrompu depuis 1966 constitue l'une des plus longues études de terrain sur un mammifère.",
+                source: "Craig Packer — Lions in the Balance, 2015."
+            },
+            {
+                id: 1304,
+                type: "vrai_faux",
+                question: "Une lionne entre en chaleur une seule fois par an.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Elle est polyœstrienne : les cycles se répètent toute l'année. Après la perte d'une portée, un nouveau cycle peut reprendre en quelques jours seulement.",
+                source: "George Schaller — The Serengeti Lion, 1972."
+            },
+            {
+                id: 1305,
+                question: "Combien de fois les lions s'accouplent-ils pendant une période de chaleurs ?",
+                options: ["Une seule fois durant toute la période", "Plusieurs centaines de fois en quelques jours", "Environ dix fois réparties sur la semaine", "Une fois par jour pendant près d'un mois"],
+                correct: 1,
+                explanation: "L'accouplement se répète toutes les quinze à trente minutes durant plusieurs jours. Cette fréquence extrême s'explique par l'ovulation induite chez la femelle.",
+                source: "George Schaller — The Serengeti Lion, 1972."
+            },
+            {
+                id: 1306,
+                question: "Quelle proportion de lionceaux atteint l'âge de deux ans ?",
+                options: ["Environ quatre-vingt-dix pour cent", "Moins de la moitié", "Environ soixante-dix pour cent", "La quasi-totalité"],
+                correct: 1,
+                explanation: "Prédation, famine et surtout infanticide déciment les portées. Ce taux explique la pression reproductive constante qui pèse sur les femelles.",
+                source: "George Schaller — The Serengeti Lion, 1972."
+            },
+            {
+                id: 1307,
+                question: "Que désigne la sélection de parentèle appliquée aux lions ?",
+                options: ["Le choix du partenaire opéré par la femelle", "L'avantage évolutif à aider des individus apparentés", "La séparation des jeunes mâles du groupe natal", "La hiérarchie de dominance établie entre les femelles"],
+                correct: 1,
+                explanation: "En aidant des sœurs ou des cousines, une lionne favorise indirectement des gènes qu'elle partage. Cela éclaire la coopération dans une troupe de femelles apparentées.",
+                source: "Craig Packer — Lions in the Balance, 2015."
+            },
+            {
+                id: 1308,
+                question: "Quel épisode historique a rendu célèbres deux lions du Kenya en 1898 ?",
+                options: ["La chasse royale de Nairobi", "Les mangeurs d'hommes de Tsavo", "La grande sécheresse du Masai Mara", "L'expédition allemande du Kilimandjaro"],
+                correct: 1,
+                explanation: "Deux mâles sans crinière ont tué des dizaines d'ouvriers du chantier ferroviaire de Tsavo. L'examen ultérieur de leurs crânes a révélé de graves lésions dentaires expliquant ce comportement.",
+                source: "Field Museum de Chicago — collection des lions de Tsavo."
+            },
+            {
+                id: 1309,
+                question: "Quelle particularité présente le larynx du lion ?",
+                options: ["Il est totalement dépourvu de cordes vocales", "Ses cordes vocales sont plates et chargées de graisse", "Il possède deux poches d'air servant de résonateurs", "Il est fixé au sternum par un ligament très rigide"],
+                correct: 1,
+                explanation: "Cette forme aplatie permet de produire un son très puissant sans effort musculaire excessif. C'est ce qui explique la portée du rugissement, jusqu'à cinq kilomètres.",
+                source: "Klemuk et al. — PLoS ONE, 2011."
+            },
+            {
+                id: 1310,
+                question: "Comment les lions d'Asie se distinguent-ils morphologiquement des lions d'Afrique ?",
+                options: ["Ils sont nettement plus grands et plus lourds que les africains", "Ils portent un repli de peau sur le ventre et une crinière plus courte", "Ils sont dépourvus de la touffe de poils au bout de la queue", "Ils possèdent des griffes non rétractiles comme le guépard"],
+                correct: 1,
+                explanation: "Ce pli ventral longitudinal est presque constant chez les lions de Gir et rare en Afrique. Leur crinière laisse aussi les oreilles bien visibles.",
+                source: "Wildlife Institute of India — Panthera leo persica."
+            },
+            {
+                id: 1311,
+                question: "Quel facteur explique le mieux la variation de taille des troupes ?",
+                options: ["Le climat et la pluviométrie moyenne de la région", "La disponibilité en proies et la pression des concurrents", "L'âge et l'expérience du mâle dominant de la troupe", "La proximité immédiate d'un point d'eau permanent"],
+                correct: 1,
+                explanation: "Là où les grandes proies abondent, les troupes atteignent une vingtaine d'individus. En milieu pauvre, elles se réduisent à quelques femelles.",
+                source: "Craig Packer — Lions in the Balance, 2015."
+            },
+            {
+                id: 1312,
+                question: "Que révèle l'analyse génétique sur l'origine du lion moderne ?",
+                options: ["Une origine sud-américaine remontant à un million d'années", "Une origine africaine puis une expansion vers l'Eurasie", "Une domestication ancienne pratiquée en Égypte pharaonique", "Une divergence très récente d'avec le léopard africain"],
+                correct: 1,
+                explanation: "L'espèce apparaît en Afrique il y a environ un million d'années avant de coloniser l'Eurasie puis l'Amérique du Nord. Les populations extra-africaines ont ensuite disparu.",
+                source: "Bertola et al. — Scientific Reports, 2016."
+            },
+            {
+                id: 1313,
+                question: "Pourquoi les lionnes préfèrent-elles les mâles à crinière sombre ?",
+                options: ["Ils passent plus inaperçus lors de l'approche des proies", "La couleur signale un taux de testostérone et une condition élevés", "Ils défendent un territoire nettement plus vaste que les autres", "Ils sont systématiquement plus jeunes que leurs rivaux"],
+                correct: 1,
+                explanation: "Des expériences avec des mannequins ont montré que les femelles s'approchent davantage des crinières sombres, et que les mâles les évitent. La couleur est un signal honnête de qualité.",
+                source: "West et Packer — Science, 2002."
+            },
+            {
+                id: 1314,
+                question: "Quel rôle joue le lion dans l'équilibre de son écosystème ?",
+                options: ["Il disperse les graines des arbres qu'il consomme", "Il régule les populations d'herbivores en tant que superprédateur", "Il enrichit le sol en azote par ses déplacements", "Il limite la propagation des feux de brousse saisonniers"],
+                correct: 1,
+                explanation: "En pesant sur les grands herbivores, il évite le surpâturage et façonne indirectement la végétation. Sa disparition entraîne des cascades écologiques bien documentées.",
+                source: "Craig Packer — Lions in the Balance, 2015."
             }
         ]
     },
@@ -6190,6 +6546,39 @@ const quizzesData = {
                 correct: 1,
                 explanation: "L'aire est construite sur une falaise ou un grand arbre, et réutilisée d'année en année. Agrandie à chaque saison, elle peut finir par peser plusieurs centaines de kilos.",
                 source: "Museum national d'Histoire naturelle — glossaire ornithologique."
+            },
+            {
+                id: 1101,
+                type: "vrai_faux",
+                question: "L'aigle royal construit son nid au sol.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Il l'installe sur une falaise ou dans un grand arbre, souvent en surplomb. Le site est réutilisé et agrandi d'année en année.",
+                source: "Ligue pour la protection des oiseaux — fiches rapaces."
+            },
+            {
+                id: 1102,
+                question: "Comment appelle-t-on le jeune aigle qui n'a pas encore quitté le nid ?",
+                options: ["Un poussin", "un aiglon", "Un fauconneau", "Un éperviteau"],
+                correct: 1,
+                explanation: "L'aiglon reste au nid une dizaine de semaines avant son premier envol. Ses parents continuent de le nourrir plusieurs mois après.",
+                source: "Ligue pour la protection des oiseaux — fiches rapaces."
+            },
+            {
+                id: 1103,
+                question: "Quelle est la durée de vie moyenne d'un aigle royal en nature ?",
+                options: ["Environ cinq ans", "Une vingtaine d'années", "Environ cinquante ans", "Environ deux ans"],
+                correct: 1,
+                explanation: "Il vit une vingtaine d'années dans la nature, et peut dépasser quarante ans en captivité. La mortalité est surtout élevée durant les deux premières années.",
+                source: "Jeff Watson — The Golden Eagle, 2010."
+            },
+            {
+                id: 1104,
+                question: "Que fait un aigle royal en vol plané ?",
+                options: ["Il bat des ailes en continu pour rester en altitude", "Il exploite les courants ascendants pour économiser son énergie", "Il descend en pente douce jusqu'à devoir se reposer", "Il ne vole qu'à la faveur de la nuit et du vent frais"],
+                correct: 1,
+                explanation: "Il utilise les ascendances thermiques et les courants de pente pour prendre de l'altitude sans effort. Il peut ainsi rester en l'air des heures.",
+                source: "Jeff Watson — The Golden Eagle, 2010."
             }
         ],
         moyen: [
@@ -6426,6 +6815,56 @@ const quizzesData = {
                 correct: 1,
                 explanation: "La ponte compte le plus souvent deux œufs, parfois un ou trois. L'aîné, éclos quelques jours plus tôt, élimine fréquemment le cadet : c'est le caïnisme, courant chez les grands rapaces.",
                 source: "Ligue pour la Protection des Oiseaux — reproduction des rapaces."
+            },
+            {
+                id: 1201,
+                type: "vrai_faux",
+                question: "L'aigle royal forme des couples durables.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le couple reste uni plusieurs années, souvent à vie, et défend le même territoire. Les parades nuptiales en vol se répètent chaque hiver.",
+                source: "Jeff Watson — The Golden Eagle, 2010."
+            },
+            {
+                id: 1202,
+                type: "vrai_faux",
+                question: "L'aigle royal est protégé en France.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Il est intégralement protégé depuis 1976 : destruction, capture et perturbation sont interdites. La population française compte quelques centaines de couples, surtout en montagne.",
+                source: "Ligue pour la protection des oiseaux — fiches rapaces."
+            },
+            {
+                id: 1203,
+                question: "Combien de temps dure l'incubation des œufs chez l'aigle royal ?",
+                options: ["Environ vingt jours", "Environ quarante-cinq jours", "Environ dix jours", "Environ trois mois"],
+                correct: 1,
+                explanation: "L'incubation dure entre quarante et quarante-cinq jours, assurée surtout par la femelle. Le mâle chasse et ravitaille pendant cette période.",
+                source: "Jeff Watson — The Golden Eagle, 2010."
+            },
+            {
+                id: 1204,
+                question: "Quelle est la taille du territoire d'un couple d'aigles royaux ?",
+                options: ["Quelques hectares", "Plusieurs dizaines de kilomètres carrés", "Un kilomètre carré", "Plus de mille kilomètres carrés"],
+                correct: 1,
+                explanation: "Selon la richesse en proies, un couple défend de vingt à deux cents kilomètres carrés. Il patrouille ses limites en vol démonstratif.",
+                source: "Jeff Watson — The Golden Eagle, 2010."
+            },
+            {
+                id: 1205,
+                question: "Quel comportement de parade l'aigle royal pratique-t-il ?",
+                options: ["Une danse au sol", "Un vol ondulant en festons", "Un chant prolongé", "Une offrande de branchages"],
+                correct: 1,
+                explanation: "L'oiseau enchaîne piqués et remontées en dessinant des vagues dans le ciel. Cette parade sert autant à séduire qu'à signaler la possession du territoire.",
+                source: "Jeff Watson — The Golden Eagle, 2010."
+            },
+            {
+                id: 1206,
+                question: "De quoi l'aigle royal se nourrit-il en hiver quand les proies manquent ?",
+                options: ["De baies et de graines", "De charognes", "De poissons exclusivement", "Il jeûne totalement"],
+                correct: 1,
+                explanation: "Il exploite volontiers les cadavres d'ongulés morts de froid ou d'avalanche. Ce comportement charognard est essentiel à sa survie hivernale en montagne.",
+                source: "Jeff Watson — The Golden Eagle, 2010."
             }
         ],
         difficile: [
@@ -6654,6 +7093,39 @@ const quizzesData = {
                 correct: 1,
                 explanation: "La force de serrage, plusieurs fois supérieure à celle d'une main humaine, tue la proie par perforation. Le tendon fléchisseur se bloque automatiquement, ce qui permet de maintenir la prise sans effort musculaire continu.",
                 source: "Fowler et al. — PLoS ONE, 2009."
+            },
+            {
+                id: 1301,
+                type: "vrai_faux",
+                question: "La femelle de l'aigle royal est plus grande que le mâle.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Ce dimorphisme inversé est courant chez les rapaces : la femelle pèse jusqu'à un tiers de plus. Plusieurs hypothèses l'expliquent, dont le partage des proies au sein du couple.",
+                source: "Jeff Watson — The Golden Eagle, 2010."
+            },
+            {
+                id: 1302,
+                question: "Que désigne le dimorphisme sexuel inversé chez les rapaces ?",
+                options: ["Le mâle est plus grand que la femelle", "La femelle est plus grande que le mâle", "Les deux sexes sont identiques", "La taille varie selon la saison"],
+                correct: 1,
+                explanation: "Contrairement à la majorité des oiseaux, la femelle domine en taille. Ce trait est presque général chez les rapaces diurnes et les chouettes.",
+                source: "Jeff Watson — The Golden Eagle, 2010."
+            },
+            {
+                id: 1303,
+                question: "Quelle adaptation permet à l'aigle de fixer une proie en vol rapide ?",
+                options: ["Un cou rigide qui bloque la tête dans l'axe du corps", "Un système de stabilisation de la tête et une fovéa très dense", "Une double paupière opaque protégeant l'œil en piqué", "Des yeux capables de bouger indépendamment l'un de l'autre"],
+                correct: 1,
+                explanation: "Il maintient la tête remarquablement stable pendant que le corps se déplace, et sa rétine possède deux zones de vision très fine par œil. La netteté reste ainsi constante.",
+                source: "Reymond — Vision Research, 1985."
+            },
+            {
+                id: 1304,
+                question: "Quel facteur menace le plus l'aigle royal en Europe aujourd'hui ?",
+                options: ["La concurrence alimentaire avec les autres grands rapaces", "Les collisions, l'empoisonnement et le dérangement des sites de nid", "Le réchauffement des océans et la baisse des ressources", "La disparition progressive des insectes pollinisateurs"],
+                correct: 1,
+                explanation: "Lignes électriques, éoliennes, appâts empoisonnés et fréquentation des falaises pèsent le plus lourd. La protection légale a néanmoins permis un redressement des effectifs.",
+                source: "Ligue pour la protection des oiseaux — fiches rapaces."
             }
         ]
     },
@@ -6873,6 +7345,39 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Le tigre est solitaire et territorial. Seuls la femelle et ses petits vivent ensemble, pendant environ deux ans. Les rencontres entre adultes se limitent à la reproduction et aux conflits de territoire.",
                 source: "Schaller — The Deer and the Tiger, 1967."
+            },
+            {
+                id: 1101,
+                type: "vrai_faux",
+                question: "Le tigre chasse principalement à l'affût.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Il approche en silence jusqu'à quelques mètres avant de bondir. Peu endurant, il abandonne si la proie détale sur une longue distance.",
+                source: "Mel Sunquist — Wild Cats of the World, 2002."
+            },
+            {
+                id: 1102,
+                question: "Combien pèse un tigre du Bengale mâle adulte ?",
+                options: ["Environ soixante kilos", "Environ deux cents kilos", "Environ cinq cents kilos", "Environ trente kilos"],
+                correct: 1,
+                explanation: "Un mâle du Bengale pèse entre cent quatre-vingts et deux cent cinquante kilos. Le tigre de Sibérie, plus lourd, peut dépasser trois cents kilos.",
+                source: "Union internationale pour la conservation de la nature — fiche Panthera tigris."
+            },
+            {
+                id: 1103,
+                question: "Combien de petits compte une portée de tigre en moyenne ?",
+                options: ["Un seul", "Deux à quatre", "Six à huit", "Une dizaine"],
+                correct: 1,
+                explanation: "La portée compte le plus souvent deux ou trois petits, aveugles à la naissance. La mortalité juvénile dépasse la moitié.",
+                source: "Mel Sunquist — Wild Cats of the World, 2002."
+            },
+            {
+                id: 1104,
+                question: "Dans quel type de milieu vit principalement le tigre ?",
+                options: ["Le désert", "La forêt dense et les zones humides", "La haute montagne enneigée", "La savane ouverte"],
+                correct: 1,
+                explanation: "On le trouve de la mangrove des Sundarbans aux forêts de conifères sibériennes. Il lui faut du couvert végétal pour approcher ses proies.",
+                source: "Union internationale pour la conservation de la nature — fiche Panthera tigris."
             }
         ],
         moyen: [
@@ -7093,6 +7598,48 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Ce n'est pas une sous-espèce mais une variation de couleur liée à un gène récessif. Les individus en captivité descendent presque tous d'un même mâle capturé en 1951, d'où une consanguinité importante.",
                 source: "Xu et al. — Current Biology, 2013."
+            },
+            {
+                id: 1201,
+                type: "vrai_faux",
+                question: "Le tigre marque son territoire avec de l'urine et des griffades.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Il vaporise une urine mêlée de sécrétions odorantes sur les troncs et griffe l'écorce en hauteur. Ces marques renseignent sur l'identité et l'état reproducteur.",
+                source: "Mel Sunquist — Wild Cats of the World, 2002."
+            },
+            {
+                id: 1202,
+                type: "vrai_faux",
+                question: "Les tigres vivent en groupes familiaux comme les lions.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Le tigre est solitaire. Seule la femelle accompagnée de ses jeunes forme une unité durable, pendant environ deux ans.",
+                source: "Mel Sunquist — Wild Cats of the World, 2002."
+            },
+            {
+                id: 1203,
+                question: "Quelle proportion des tentatives de chasse aboutit chez le tigre ?",
+                options: ["Environ quatre-vingts pour cent", "Environ dix pour cent", "Environ cinquante pour cent", "La quasi-totalité"],
+                correct: 1,
+                explanation: "Environ une tentative sur dix réussit. Un tigre doit donc chasser très souvent, et consomme une cinquantaine de grandes proies par an.",
+                source: "Mel Sunquist — Wild Cats of the World, 2002."
+            },
+            {
+                id: 1204,
+                question: "Que fait un tigre d'une grande proie qu'il ne peut finir ?",
+                options: ["Il l'abandonne aussitôt rassasié sans y revenir", "Il la traîne à couvert et la recouvre pour y revenir", "Il la partage avec les autres tigres du secteur", "Il la hisse dans un arbre hors de portée"],
+                correct: 1,
+                explanation: "Il tire la carcasse à l'abri, la dissimule sous des feuilles et revient plusieurs jours de suite. C'est le léopard, plus léger, qui hisse ses proies dans les arbres.",
+                source: "Mel Sunquist — Wild Cats of the World, 2002."
+            },
+            {
+                id: 1205,
+                question: "Combien reste-t-il environ de tigres sauvages dans le monde ?",
+                options: ["Une centaine", "Environ quatre à cinq mille", "Environ cinquante mille", "Plus de cent mille"],
+                correct: 1,
+                explanation: "La population est tombée d'environ cent mille individus au début du vingtième siècle à quelques milliers. Elle remonte légèrement depuis 2010 dans certains pays.",
+                source: "Union internationale pour la conservation de la nature — fiche Panthera tigris."
             }
         ],
         difficile: [
@@ -7316,6 +7863,39 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Le rugissement contient des composantes sous les vingt hertz, peu absorbées par la forêt. Ces infrasons portent à plusieurs kilomètres et provoquent une réaction de sidération chez les proies.",
                 source: "Walsh et al. — Acoustical Society of America, 2000."
+            },
+            {
+                id: 1301,
+                type: "vrai_faux",
+                question: "Le tigre possède les plus longues canines de tous les félins actuels.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Elles atteignent sept à huit centimètres, davantage que celles du lion. Elles servent à sectionner la nuque ou à étouffer la proie à la gorge.",
+                source: "Mel Sunquist — Wild Cats of the World, 2002."
+            },
+            {
+                id: 1302,
+                question: "Quelle est la principale cause du déclin du tigre au vingtième siècle ?",
+                options: ["Les épidémies virales touchant les grands félins", "La chasse et la destruction de son habitat", "La concurrence directe avec le léopard des neiges", "Le réchauffement climatique et la montée des eaux"],
+                correct: 1,
+                explanation: "Chasse de trophée, braconnage pour la médecine traditionnelle et conversion des forêts en terres agricoles se sont conjugués. Trois sous-espèces ont disparu.",
+                source: "Union internationale pour la conservation de la nature — fiche Panthera tigris."
+            },
+            {
+                id: 1303,
+                question: "Quel programme international vise à doubler les populations de tigres ?",
+                options: ["Le protocole de Kyoto", "L'initiative TX2 lancée en 2010", "La convention de Ramsar", "Le programme MAB de l'UNESCO"],
+                correct: 1,
+                explanation: "Adopté au sommet de Saint-Pétersbourg en 2010 par les treize pays abritant l'espèce, il visait un doublement des effectifs en douze ans. Le Népal et l'Inde s'en sont approchés.",
+                source: "Union internationale pour la conservation de la nature — fiche Panthera tigris."
+            },
+            {
+                id: 1304,
+                question: "Comment les chercheurs identifient-ils les tigres individuellement ?",
+                options: ["Par des marques auriculaires posées lors d'une capture", "Par le motif unique de leurs rayures sur les pièges photographiques", "Par l'analyse spectrale de leur rugissement enregistré", "Par la couleur et la forme de leurs iris"],
+                correct: 1,
+                explanation: "Chaque flanc porte un motif unique, comme une empreinte digitale. Les pièges photographiques permettent ainsi de recenser sans capturer les animaux.",
+                source: "Karanth et Nichols — Ecology, 1998."
             }
         ]
     },
@@ -8483,11 +9063,11 @@ const quizzesData = {
             },
             {
                 id: 402,
-                question: "Quel est le nom du vaisseau de Han Solo ?",
-                options: ["L'Étoile Noire", "Le Faucon Millenium", "Le Destroyer stellaire", "Le Razor Crest"],
+                question: "Quel droïde astromécano accompagne Luke Skywalker ?",
+                options: ["C-3PO", "R2-D2", "BB-8", "K-2SO"],
                 correct: 1,
-                explanation: "Le Faucon Millenium, cargo corellien modifié, est gagné par Han au jeu contre Lando Calrissian. Il revendique avoir couvert la Course de Kessel en moins de douze parsecs.",
-                source: "Lucasfilm — Star Wars épisode IV, 1977."
+                explanation: "Il transporte les plans de l'Étoile de la Mort au début de l'épisode IV et sert de copilote de chasse. Il ne s'exprime que par sifflements, traduits par C-3PO.",
+                source: "Lucasfilm — canon officiel Star Wars."
             },
             {
                 id: 403,
@@ -8720,6 +9300,41 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Leia Organa est séparée de Luke à la naissance et confiée à la famille royale d'Alderaan. Leur lien de parenté n'est révélé que dans Le Retour du Jedi.",
                 source: "Lucasfilm — Star Wars épisode VI, 1983."
+            },
+            {
+                id: 1201,
+                type: "vrai_faux",
+                question: "Chewbacca est un Wookiee originaire de Kashyyyk.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Copilote du Faucon Millenium, il a été libéré de l'esclavage par Han Solo. La dette de vie wookiee explique leur inséparabilité.",
+                source: "Lucasfilm — canon officiel Star Wars."
+            },
+            {
+                id: 1202,
+                type: "vrai_faux",
+                question: "Le sabre laser de Luke dans l'épisode IV appartenait à son père.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Obi-Wan le lui remet en affirmant que Vador l'a assassiné, une vérité qu'il présente d'un certain point de vue. L'arme sera perdue sur Bespin.",
+                source: "Lucasfilm — canon officiel Star Wars."
+            },
+            {
+                id: 1203,
+                type: "vrai_faux",
+                question: "Boba Fett est un clone de Jango Fett.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Il est un clone non modifié, élevé comme son fils, contrairement aux soldats de l'armée clone accélérés et conditionnés.",
+                source: "Lucasfilm — canon officiel Star Wars."
+            },
+            {
+                id: 1204,
+                question: "Quel est le nom de la station spatiale détruite dans l'épisode IV ?",
+                options: ["La Base Starkiller", "L'Étoile de la Mort", "L'Exécuteur", "La Citadelle"],
+                correct: 1,
+                explanation: "Sa faiblesse, un puits d'échappement thermique, avait été délibérément introduite par son concepteur Galen Erso. C'est l'objet du film Rogue One.",
+                source: "Lucasfilm — canon officiel Star Wars."
             }
         ],
         difficile: [
@@ -8874,6 +9489,121 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Instaurée par Dark Bane, la Règle des Deux limite les Sith à un maître et un apprenti. Elle évite les guerres internes qui avaient auparavant décimé l'ordre.",
                 source: "Lucasfilm Story Group — canon officiel."
+            },
+            {
+                id: 1301,
+                type: "vrai_faux",
+                question: "Le personnage de Dark Vador porte une armure de maintien en vie.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Gravement brûlé sur Mustafar, il dépend entièrement de son armure. Le souffle caractéristique provient de son système respiratoire artificiel.",
+                source: "Lucasfilm — canon officiel Star Wars."
+            },
+            {
+                id: 1302,
+                type: "vrai_faux",
+                question: "Les midi-chloriens ont été introduits dans la première trilogie.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Ils apparaissent dans La Menace fantôme, en 1999. Le concept, qui donne une base biologique à la Force, a divisé le public.",
+                source: "Lucasfilm — canon officiel Star Wars."
+            },
+            {
+                id: 1303,
+                type: "vrai_faux",
+                question: "Le sabre laser de Mace Windu est violet à la demande de son interprète.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Samuel L. Jackson voulait pouvoir se repérer dans les scènes de bataille. George Lucas a accepté cette couleur unique.",
+                source: "Lucasfilm — canon officiel Star Wars."
+            },
+            {
+                id: 1304,
+                question: "Quel planète abrite le temple Jedi dans la prélogie ?",
+                options: ["Naboo", "Coruscant", "Kamino", "Geonosis"],
+                correct: 1,
+                explanation: "Cité-planète entièrement urbanisée, elle abrite le Sénat et le temple Jedi. Kamino est la planète des cloneurs.",
+                source: "Lucasfilm — canon officiel Star Wars."
+            },
+            {
+                id: 1305,
+                question: "Qui est le maître d'Obi-Wan Kenobi ?",
+                options: ["Mace Windu", "Qui-Gon Jinn", "Yoda seul", "Ki-Adi-Mundi"],
+                correct: 1,
+                explanation: "Tué par Dark Maul sur Naboo, il fait promettre à Obi-Wan de former Anakin. Il avait lui-même été formé par le comte Dooku.",
+                source: "Lucasfilm — canon officiel Star Wars."
+            },
+            {
+                id: 1306,
+                question: "Quel est le vrai nom de l'Empereur Palpatine ?",
+                options: ["Dark Plagueis", "Dark Sidious", "Dark Bane", "Dark Tyranus"],
+                correct: 1,
+                explanation: "Sénateur de Naboo sous son identité publique, il est Dark Sidious côté Sith. Dooku portait le nom de Dark Tyranus.",
+                source: "Lucasfilm — canon officiel Star Wars."
+            },
+            {
+                id: 1307,
+                question: "Sur quelle planète Luke s'entraîne-t-il auprès de Yoda ?",
+                options: ["Hoth", "Dagobah", "Endor", "Yavin 4"],
+                correct: 1,
+                explanation: "Ce monde marécageux masque la présence de Yoda dans la Force. Hoth est la planète glacée du début de l'épisode V.",
+                source: "Lucasfilm — canon officiel Star Wars."
+            },
+            {
+                id: 1308,
+                question: "Quel vaisseau amiral dirige Dark Vador dans l'épisode V ?",
+                options: ["Le Tantive IV", "L'Exécuteur", "Le Dévastateur", "Le Finalizer"],
+                correct: 1,
+                explanation: "Ce Super Destroyer stellaire de classe Executor mesure dix-neuf kilomètres. Il sera détruit à la bataille d'Endor.",
+                source: "Lucasfilm — canon officiel Star Wars."
+            },
+            {
+                id: 1309,
+                question: "Quelle espèce vit sur la lune forestière d'Endor ?",
+                options: ["Les Gungans", "Les Ewoks", "Les Jawas", "Les Tusken"],
+                correct: 1,
+                explanation: "Leur aide s'avère décisive contre les troupes impériales lors de la bataille finale. Les Gungans vivent sur Naboo.",
+                source: "Lucasfilm — canon officiel Star Wars."
+            },
+            {
+                id: 1310,
+                question: "Comment se nomme l'ordre militaire des Mandaloriens ?",
+                options: ["Le Code Jedi", "La Voie du Mandalore", "La Règle des Deux", "Le Concordat"],
+                correct: 1,
+                explanation: "Ce code régit le port du casque et les traditions guerrières. Il structure toute la série The Mandalorian.",
+                source: "Lucasfilm — canon officiel Star Wars."
+            },
+            {
+                id: 1311,
+                question: "Quel personnage trahit Han Solo sur Bespin ?",
+                options: ["Boba Fett", "Lando Calrissian", "Dengar", "Bossk"],
+                correct: 1,
+                explanation: "Administrateur de Cloud City, il cède sous la pression impériale avant de se racheter en participant au sauvetage. Il pilotera le Faucon à Endor.",
+                source: "Lucasfilm — canon officiel Star Wars."
+            },
+            {
+                id: 1312,
+                question: "Quelle arme utilise le Général Grievous ?",
+                options: ["Un blaster lourd", "Quatre sabres laser simultanément", "Un fouet énergétique", "Un canon à ions portatif"],
+                correct: 1,
+                explanation: "Ses bras se dédoublent, lui permettant de manier quatre sabres pris à des Jedi vaincus. Cyborg, il n'est pas sensible à la Force.",
+                source: "Lucasfilm — canon officiel Star Wars."
+            },
+            {
+                id: 1313,
+                question: "Quel film explore le vol des plans de l'Étoile de la Mort ?",
+                options: ["Solo", "Rogue One", "L'Ascension de Skywalker", "Le Réveil de la Force"],
+                correct: 1,
+                explanation: "Sorti en 2016, il se termine quelques minutes avant le début de l'épisode IV. Aucun de ses héros principaux ne survit.",
+                source: "Lucasfilm — canon officiel Star Wars."
+            },
+            {
+                id: 1314,
+                question: "Quelle est la particularité du sabre laser de Kylo Ren ?",
+                options: ["Il est à double lame comme celui de Dark Maul", "Il possède une garde crossguard instable", "Il change de couleur selon l'état de son porteur", "Il se déploie en fouet articulé de plusieurs mètres"],
+                correct: 1,
+                explanation: "Son cristal fendu rend la lame instable, d'où les évents latéraux formant une garde. Le design a été justifié dans le récit après coup.",
+                source: "Lucasfilm — canon officiel Star Wars."
             }
         ]
     },
@@ -9400,6 +10130,81 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Les émotions négatives non évacuées s'accumulent et donnent naissance aux fléaux. Les hôpitaux et les écoles, chargés en angoisse, en produisent particulièrement.",
                 source: "Gege Akutami — Jujutsu Kaisen, 2018."
+            },
+            {
+                id: 1201,
+                type: "vrai_faux",
+                question: "Nobara Kugisaki utilise un marteau et des clous.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Sa technique de la Poupée de paille repose sur la transmission de dégâts par un clou planté dans un mannequin. Elle est la troisième élève de première année à Tokyo.",
+                source: "Gege Akutami — Jujutsu Kaisen, éditions Shueisha."
+            },
+            {
+                id: 1202,
+                type: "vrai_faux",
+                question: "Panda est un simple animal.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! C'est un Corps Maudit Mutant créé par le directeur Masamichi Yaga. Il possède plusieurs noyaux, ce qui lui donne différentes formes de combat.",
+                source: "Gege Akutami — Jujutsu Kaisen, éditions Shueisha."
+            },
+            {
+                id: 1203,
+                type: "vrai_faux",
+                question: "Les fléaux sont classés par grades.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! L'échelle va du grade 4, le plus faible, au grade spécial. Les exorcistes sont classés selon la même hiérarchie.",
+                source: "Gege Akutami — Jujutsu Kaisen, éditions Shueisha."
+            },
+            {
+                id: 1204,
+                question: "Quel est le nom du fléau spécial lié à Yuji ?",
+                options: ["Mahito", "Sukuna", "Jogo", "Hanami"],
+                correct: 1,
+                explanation: "Surnommé le Roi des fléaux, il occupe le corps de Yuji après l'ingestion d'un de ses doigts. Il n'obéit à personne et poursuit ses propres fins.",
+                source: "Gege Akutami — Jujutsu Kaisen, éditions Shueisha."
+            },
+            {
+                id: 1205,
+                question: "Quelle école rivalise avec celle de Tokyo ?",
+                options: ["L'école de Sendai", "L'école de Kyoto", "L'académie d'Osaka", "L'institut de Nagoya"],
+                correct: 1,
+                explanation: "Les deux établissements s'affrontent lors du tournoi inter-écoles. Leurs cultures et leurs méthodes diffèrent nettement.",
+                source: "Gege Akutami — Jujutsu Kaisen, éditions Shueisha."
+            },
+            {
+                id: 1206,
+                question: "Qui dirige l'école d'exorcisme de Tokyo ?",
+                options: ["Satoru Gojo", "Masamichi Yaga", "Kento Nanami", "Yuta Okkotsu"],
+                correct: 1,
+                explanation: "Ancien professeur de Gojo et de Geto, il est aussi le créateur de Panda. Il assume la direction de l'établissement.",
+                source: "Gege Akutami — Jujutsu Kaisen, éditions Shueisha."
+            },
+            {
+                id: 1207,
+                question: "Quelle est la particularité de Kento Nanami au combat ?",
+                options: ["Il manipule le feu et les flammes maudites", "Il applique un ratio fixe pour créer un point faible", "Il invoque des familiers depuis son ombre", "Il annule les techniques adverses par simple contact"],
+                correct: 1,
+                explanation: "Sa technique du Ratio divise la cible selon la proportion sept contre trois, créant un point faible artificiel. Ancien salarié, il a repris l'exorcisme par pragmatisme.",
+                source: "Gege Akutami — Jujutsu Kaisen, éditions Shueisha."
+            },
+            {
+                id: 1208,
+                question: "Quel personnage est surnommé le plus fort des exorcistes ?",
+                options: ["Yuta Okkotsu", "Satoru Gojo", "Suguru Geto", "Maki Zen'in"],
+                correct: 1,
+                explanation: "La combinaison du Sans-Limite et des Six Yeux le rend pratiquement invulnérable. Son existence seule dissuade la plupart des fléaux d'agir.",
+                source: "Gege Akutami — Jujutsu Kaisen, éditions Shueisha."
+            },
+            {
+                id: 1209,
+                question: "Que sont les objets maudits dans l'œuvre ?",
+                options: ["Des armes rituelles forgées par les exorcistes eux-mêmes", "Des objets chargés d'énergie maudite, comme les doigts de Sukuna", "Des reliques anciennes totalement dépourvues de pouvoir", "Des talismans de protection distribués aux élèves"],
+                correct: 1,
+                explanation: "Ils doivent être scellés ou détruits car ils attirent les fléaux. Les vingt doigts de Sukuna en sont les exemples les plus dangereux.",
+                source: "Gege Akutami — Jujutsu Kaisen, éditions Shueisha."
             }
         ],
         difficile: [
@@ -9543,6 +10348,121 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Toji naît avec le Corps Céleste Restreint : zéro énergie maudite, mais des capacités physiques et une perception surhumaines. Cette absence le rend indétectable par les exorcistes.",
                 source: "Gege Akutami — Jujutsu Kaisen, arc Gojo's Past, 2019."
+            },
+            {
+                id: 1301,
+                type: "vrai_faux",
+                question: "Maki Zen'in ne possède presque pas d'énergie maudite.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Comme Toji, elle compense par des capacités physiques hors norme et l'usage d'armes maudites. Sa famille l'a longtemps méprisée pour cette raison.",
+                source: "Gege Akutami — Jujutsu Kaisen, éditions Shueisha."
+            },
+            {
+                id: 1302,
+                type: "vrai_faux",
+                question: "L'Extension du Territoire consomme énormément d'énergie maudite.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Son coût est tel que la plupart des utilisateurs ne peuvent la déployer qu'une fois ou deux par jour. C'est ce qui empêche son usage systématique.",
+                source: "Gege Akutami — Jujutsu Kaisen, éditions Shueisha."
+            },
+            {
+                id: 1303,
+                type: "vrai_faux",
+                question: "Yuta Okkotsu est le héros du volume préquel Jujutsu Kaisen 0.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le récit précède la série principale et met en scène sa relation avec Rika. Il est présenté comme un exorciste de grade spécial.",
+                source: "Gege Akutami — Jujutsu Kaisen, éditions Shueisha."
+            },
+            {
+                id: 1304,
+                question: "Quelle est la technique de Yuji lui appartenant en propre ?",
+                options: ["Le Sans-Limite", "Le Dismantle", "La Divergent Fist", "Les Dix Ombres"],
+                correct: 1,
+                explanation: "Il fait suivre son coup d'une seconde décharge d'énergie maudite retardée. Il ne dispose pas de technique héritée à proprement parler.",
+                source: "Gege Akutami — Jujutsu Kaisen, éditions Shueisha."
+            },
+            {
+                id: 1305,
+                question: "Qui est Mahito dans l'œuvre ?",
+                options: ["Un exorciste de grade spécial venu de Kyoto", "Un fléau capable de remodeler les âmes", "Un membre influent du clan Zen'in", "Un professeur de l'école d'exorcisme de Tokyo"],
+                correct: 1,
+                explanation: "Sa technique de l'Âme Oisive lui permet de transformer le corps en touchant l'âme. Il est l'un des principaux antagonistes de l'arc de Shibuya.",
+                source: "Gege Akutami — Jujutsu Kaisen, éditions Shueisha."
+            },
+            {
+                id: 1306,
+                question: "Quel clan est associé aux Dix Ombres ?",
+                options: ["Le clan Gojo", "Le clan Zen'in", "Le clan Kamo", "Le clan Inumaki"],
+                correct: 1,
+                explanation: "Megumi Fushiguro est né dans cette lignée avant d'être recueilli par Gojo. Les trois grands clans sont Gojo, Zen'in et Kamo.",
+                source: "Gege Akutami — Jujutsu Kaisen, éditions Shueisha."
+            },
+            {
+                id: 1307,
+                question: "Quelle particularité définit Toge Inumaki ?",
+                options: ["Il manipule les ombres", "Il utilise des paroles maudites", "Il crée des barrières", "Il soigne les blessures"],
+                correct: 1,
+                explanation: "Ses mots portent une contrainte directe sur celui qui les entend, ce qui l'oblige à ne parler qu'en noms d'ingrédients d'onigiri. L'usage abîme sa gorge.",
+                source: "Gege Akutami — Jujutsu Kaisen, éditions Shueisha."
+            },
+            {
+                id: 1308,
+                question: "Que sont les serments contraignants dans l'œuvre ?",
+                options: ["Des alliances scellées entre les trois grands clans", "Des règles imposées à soi-même en échange de puissance", "Des sceaux posés par les fléaux sur leurs adversaires", "Des contrats commerciaux passés avec les autorités"],
+                correct: 1,
+                explanation: "Accepter une restriction accroît l'efficacité de la technique. Révéler le fonctionnement de son pouvoir à l'adversaire en est un exemple.",
+                source: "Gege Akutami — Jujutsu Kaisen, éditions Shueisha."
+            },
+            {
+                id: 1309,
+                question: "Qui est Yuki Tsukumo ?",
+                options: ["Une élève de dernière année à Kyoto", "Une exorciste de grade spécial", "Un fléau ancien scellé depuis des siècles", "La sœur aînée de Maki dans le clan Zen'in"],
+                correct: 1,
+                explanation: "Elle est l'une des quatre exorcistes de grade spécial et cherche une solution radicale au problème de l'énergie maudite. Elle voyage en dehors des structures officielles.",
+                source: "Gege Akutami — Jujutsu Kaisen, éditions Shueisha."
+            },
+            {
+                id: 1310,
+                question: "Quel est l'objectif principal de Kenjaku ?",
+                options: ["Protéger les exorcistes des attaques de fléaux", "Provoquer l'évolution de l'humanité par l'énergie maudite", "Détruire Sukuna et récupérer ses vingt doigts", "Prendre la direction de l'école d'exorcisme de Kyoto"],
+                correct: 1,
+                explanation: "Il orchestre depuis des siècles des événements visant à faire évoluer l'humanité. Le Culling Game en est l'aboutissement.",
+                source: "Gege Akutami — Jujutsu Kaisen, éditions Shueisha."
+            },
+            {
+                id: 1311,
+                question: "Quelle technique permet à Gojo de manipuler l'espace ?",
+                options: ["Le Ratio", "Le Sans-Limite", "L'Âme Oisive", "La Poupée de paille"],
+                correct: 1,
+                explanation: "Elle lui permet de rendre l'espace entre lui et une cible infiniment divisible. Ses attaques Bleu et Rouge en sont des applications.",
+                source: "Gege Akutami — Jujutsu Kaisen, éditions Shueisha."
+            },
+            {
+                id: 1312,
+                question: "Quel arc suit directement celui de Shibuya ?",
+                options: ["Le tournoi inter-écoles", "L'arc du Culling Game", "L'arc de la prison souterraine", "L'arc de Gojo's Past"],
+                correct: 1,
+                explanation: "Kenjaku y lance un jeu mortel à l'échelle du Japon, avec des règles imposées aux participants. Il fait suite au scellement de Gojo.",
+                source: "Gege Akutami — Jujutsu Kaisen, éditions Shueisha."
+            },
+            {
+                id: 1313,
+                question: "Quel personnage utilise des armes maudites plutôt qu'une technique ?",
+                options: ["Nobara Kugisaki", "Maki Zen'in", "Toge Inumaki", "Megumi Fushiguro"],
+                correct: 1,
+                explanation: "Dépourvue d'énergie maudite exploitable, elle s'appuie sur des armes chargées et sur des capacités physiques exceptionnelles.",
+                source: "Gege Akutami — Jujutsu Kaisen, éditions Shueisha."
+            },
+            {
+                id: 1314,
+                question: "Que désigne le terme fléau dans l'œuvre ?",
+                options: ["Un exorciste corrompu par une trop forte énergie maudite", "Une entité née des émotions négatives humaines", "Une arme scellée dans un sanctuaire par les grands clans", "Un territoire déployé où les attaques ne manquent jamais"],
+                correct: 1,
+                explanation: "Les émotions négatives non évacuées s'accumulent et se matérialisent. Les lieux de forte densité humaine en produisent davantage.",
+                source: "Gege Akutami — Jujutsu Kaisen, éditions Shueisha."
             }
         ]
     },
@@ -10024,6 +10944,81 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Le globule rouge circule environ cent vingt jours avant d'être détruit dans la rate. Dépourvu de noyau, il ne peut pas se réparer, ce qui limite sa durée de vie.",
                 source: "Institut national de la santé et de la recherche médicale — hématologie."
+            },
+            {
+                id: 1201,
+                type: "vrai_faux",
+                question: "Le foie est capable de se régénérer après une ablation partielle.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! C'est le seul organe humain à posséder cette capacité : il peut retrouver sa masse initiale en quelques semaines après le retrait de plus de la moitié de son volume.",
+                source: "Institut national de la santé et de la recherche médicale — dossiers thématiques."
+            },
+            {
+                id: 1202,
+                type: "vrai_faux",
+                question: "Les poumons sont symétriques et comptent trois lobes chacun.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Le poumon droit compte trois lobes, le gauche seulement deux : il doit laisser la place au cœur. C'est ce qu'on appelle l'échancrure cardiaque.",
+                source: "Gray's Anatomy, 42e édition."
+            },
+            {
+                id: 1203,
+                type: "vrai_faux",
+                question: "L'appendice est aujourd'hui considéré comme totalement inutile.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Longtemps tenu pour un vestige, il abriterait un réservoir de bactéries intestinales utiles à la reconstitution de la flore après une infection.",
+                source: "Institut national de la santé et de la recherche médicale — dossiers thématiques."
+            },
+            {
+                id: 1204,
+                question: "Combien de temps met la nourriture à traverser le tube digestif ?",
+                options: ["Environ deux heures du repas à l'élimination", "Entre vingt-quatre et soixante-douze heures", "Environ six heures pour la totalité du trajet", "Plus d'une semaine dans des conditions normales"],
+                correct: 1,
+                explanation: "L'estomac se vide en quelques heures, l'intestin grêle prend environ six heures et le côlon la majeure partie du temps restant. Les fibres accélèrent nettement le transit.",
+                source: "Institut national de la santé et de la recherche médicale — physiologie digestive."
+            },
+            {
+                id: 1205,
+                question: "Combien de litres d'air un adulte respire-t-il environ par jour ?",
+                options: ["Environ mille litres", "Environ douze mille litres", "Environ cent litres", "Environ cent mille litres"],
+                correct: 1,
+                explanation: "Au repos, on inspire environ un demi-litre par cycle, quinze fois par minute. Cela représente près de douze mille litres sur vingt-quatre heures.",
+                source: "Guyton et Hall — Textbook of Medical Physiology, 2020."
+            },
+            {
+                id: 1206,
+                question: "Quel organe filtre le sang pour produire l'urine ?",
+                options: ["Le foie", "Les reins", "La rate", "Le pancréas"],
+                correct: 1,
+                explanation: "Les deux reins filtrent environ cent quatre-vingts litres de plasma par jour, dont ils réabsorbent l'essentiel. Seul un litre et demi environ est éliminé.",
+                source: "Guyton et Hall — Textbook of Medical Physiology, 2020."
+            },
+            {
+                id: 1207,
+                question: "Combien de temps met un globule rouge à faire un tour complet de l'organisme ?",
+                options: ["Environ une minute", "Environ une heure", "Environ une journée", "Environ une seconde"],
+                correct: 0,
+                explanation: "Le sang effectue un circuit complet en une minute environ au repos. À l'effort, ce délai tombe à une vingtaine de secondes.",
+                source: "Guyton et Hall — Textbook of Medical Physiology, 2020."
+            },
+            {
+                id: 1208,
+                question: "Quelle partie de l'œil contient les cellules photosensibles ?",
+                options: ["La cornée", "La rétine", "Le cristallin", "L'iris"],
+                correct: 1,
+                explanation: "La rétine porte les cônes, sensibles aux couleurs, et les bâtonnets, actifs en faible lumière. Le cristallin ne fait que focaliser l'image sur elle.",
+                source: "Gray's Anatomy, 42e édition."
+            },
+            {
+                id: 1209,
+                question: "Que produit la moelle osseuse ?",
+                options: ["Les hormones sexuelles", "Les cellules du sang", "La bile", "Les enzymes digestives"],
+                correct: 1,
+                explanation: "Elle fabrique globules rouges, globules blancs et plaquettes. Chez l'adulte, cette production se concentre dans les os plats comme le bassin et le sternum.",
+                source: "Institut national de la santé et de la recherche médicale — dossiers thématiques."
             }
         ],
         difficile: [
@@ -10157,6 +11152,122 @@ const quizzesData = {
                 correct: 1,
                 explanation: "La cellule contient vingt-trois paires, soit quarante-six chromosomes, dont une paire détermine le sexe. Les gamètes n'en portent que vingt-trois au total.",
                 source: "Tjio et Levan — Hereditas, 1956."
+            },
+            {
+                id: 1301,
+                type: "vrai_faux",
+                question: "Le corps humain contient plus de cellules bactériennes que de cellules humaines.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le rapport est estimé autour de un pour un, avec des travaux plaçant les bactéries légèrement en tête. Le microbiote intestinal en concentre l'essentiel.",
+                source: "Sender, Fuchs et Milo — PLoS Biology, 2016."
+            },
+            {
+                id: 1302,
+                type: "vrai_faux",
+                question: "Le nerf vague relie le cerveau à plusieurs organes de l'abdomen.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Dixième paire crânienne, il innerve cœur, poumons et tube digestif. C'est le principal support du système parasympathique.",
+                source: "Gray's Anatomy, 42e édition."
+            },
+            {
+                id: 1303,
+                type: "vrai_faux",
+                question: "La peau se renouvelle intégralement en quelques semaines.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! L'épiderme se renouvelle en trois à six semaines environ, les cellules migrant de la couche basale vers la surface avant de desquamer.",
+                source: "Institut national de la santé et de la recherche médicale — dossiers thématiques."
+            },
+            {
+                id: 1304,
+                type: "vrai_faux",
+                question: "Le cœur bat grâce à une commande venue exclusivement du cerveau.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Le nœud sinusal, situé dans l'oreillette droite, génère lui-même l'impulsion. Un cœur isolé continue de battre : le système nerveux ne fait qu'ajuster le rythme.",
+                source: "Guyton et Hall — Textbook of Medical Physiology, 2020."
+            },
+            {
+                id: 1305,
+                question: "Quelle hormone régule le cycle veille-sommeil ?",
+                options: ["L'insuline", "La mélatonine", "L'adrénaline", "La thyroxine"],
+                correct: 1,
+                explanation: "Sécrétée par la glande pinéale à l'obscurité, elle signale à l'organisme qu'il fait nuit. La lumière bleue des écrans en retarde la production.",
+                source: "Institut national de la santé et de la recherche médicale — dossiers thématiques."
+            },
+            {
+                id: 1306,
+                question: "Que désigne la synapse ?",
+                options: ["Le corps cellulaire contenant le noyau du neurone", "La zone de communication entre deux neurones", "La gaine isolante qui entoure l'axone", "Le liquide céphalorachidien entourant le cerveau"],
+                correct: 1,
+                explanation: "Le signal électrique y est converti en signal chimique par des neurotransmetteurs. Un neurone humain peut compter plusieurs milliers de synapses.",
+                source: "Gray's Anatomy, 42e édition."
+            },
+            {
+                id: 1307,
+                question: "Quelle est la fonction principale des alvéoles pulmonaires ?",
+                options: ["Filtrer les poussières présentes dans l'air inspiré", "Assurer les échanges gazeux avec le sang", "Réchauffer et humidifier l'air avant les bronches", "Produire le mucus qui tapisse les voies aériennes"],
+                correct: 1,
+                explanation: "Les trois cents millions d'alvéoles offrent une surface d'échange d'environ soixante-dix mètres carrés. L'oxygène y passe dans le sang et le gaz carbonique en ressort.",
+                source: "Guyton et Hall — Textbook of Medical Physiology, 2020."
+            },
+            {
+                id: 1308,
+                question: "Qu'est-ce que l'homéostasie ?",
+                options: ["La croissance des tissus", "Le maintien d'un équilibre interne stable", "La destruction des cellules mortes", "La transmission des caractères héréditaires"],
+                correct: 1,
+                explanation: "Température, pH, glycémie et volume sanguin sont maintenus dans des plages étroites. Le terme a été forgé par Walter Cannon en 1926.",
+                source: "Guyton et Hall — Textbook of Medical Physiology, 2020."
+            },
+            {
+                id: 1309,
+                question: "Quel type de cellule assure la myélinisation dans le système nerveux central ?",
+                options: ["Les astrocytes", "Les oligodendrocytes", "Les cellules de Schwann", "Les cellules microgliales"],
+                correct: 1,
+                explanation: "Ils enroulent leurs prolongements autour des axones pour former la gaine de myéline. Les cellules de Schwann jouent ce rôle dans le système nerveux périphérique.",
+                source: "Gray's Anatomy, 42e édition."
+            },
+            {
+                id: 1310,
+                question: "Que sont les cellules souches pluripotentes ?",
+                options: ["Des cellules déjà spécialisées dans un tissu précis", "Des cellules capables de donner tous les types cellulaires de l'organisme", "Des cellules ayant définitivement cessé de se diviser", "Des cellules propres au système immunitaire et à la défense"],
+                correct: 1,
+                explanation: "Elles peuvent se différencier en n'importe quel tissu. Leur reprogrammation à partir de cellules adultes a valu le prix Nobel à Shinya Yamanaka en 2012.",
+                source: "Comité Nobel — prix de physiologie ou médecine 2012."
+            },
+            {
+                id: 1311,
+                question: "Quelle structure sépare la cavité thoracique de l'abdomen ?",
+                options: ["Le péritoine", "Le diaphragme", "La plèvre", "Le péricarde"],
+                correct: 1,
+                explanation: "Ce muscle en forme de coupole est le principal moteur de la respiration. Sa contraction abaisse le plancher thoracique et fait entrer l'air.",
+                source: "Gray's Anatomy, 42e édition."
+            },
+            {
+                id: 1312,
+                question: "Qu'est-ce que la barrière placentaire ?",
+                options: ["Une membrane isolant totalement le fœtus du sang maternel", "Une interface filtrant les échanges entre mère et fœtus", "Une couche protectrice tapissant la paroi de l'utérus", "Un repli de l'endomètre formé au début de la grossesse"],
+                correct: 1,
+                explanation: "Elle laisse passer nutriments, gaz et anticorps, mais aussi certains virus, l'alcool et de nombreux médicaments. Son imperméabilité est très partielle.",
+                source: "Institut national de la santé et de la recherche médicale — grossesse et développement."
+            },
+            {
+                id: 1313,
+                question: "Quel élément du sang assure la coagulation ?",
+                options: ["Les globules rouges", "Les plaquettes", "Les lymphocytes", "Le plasma seul"],
+                correct: 1,
+                explanation: "Les plaquettes s'agrègent sur la brèche et déclenchent une cascade enzymatique aboutissant à la fibrine. Le caillot se forme en quelques minutes.",
+                source: "Guyton et Hall — Textbook of Medical Physiology, 2020."
+            },
+            {
+                id: 1314,
+                question: "Que mesure la pression artérielle systolique ?",
+                options: ["La pression pendant le remplissage du cœur", "La pression au moment de la contraction du cœur", "La vitesse du sang dans les artères", "Le volume total de sang"],
+                correct: 1,
+                explanation: "C'est le premier chiffre de la mesure. Le second, la diastolique, correspond à la phase de relâchement entre deux battements.",
+                source: "Guyton et Hall — Textbook of Medical Physiology, 2020."
             }
         ]
     },
@@ -10616,28 +11727,102 @@ const quizzesData = {
             },
             {
                 id: 405,
-                type: "vrai_faux",
-                question: "L'Australie est à la fois un pays et un continent.",
-                options: ["Vrai", "Faux"],
-                correct: 0,
-                explanation: "Vrai ! L'Australie constitue le plus petit continent et un pays à part entière. On parle parfois d'Océanie pour désigner l'ensemble régional incluant la Nouvelle-Zélande et les îles du Pacifique.",
-                source: "Institut géographique national — nomenclature des continents."
+                question: "Quel pays possède la plus longue façade maritime du monde ?",
+                options: ["La Russie", "Le Canada", "L'Indonésie", "L'Australie"],
+                correct: 1,
+                explanation: "Ses côtes découpées et ses innombrables îles arctiques totalisent plus de deux cent mille kilomètres. C'est près de six fois la circonférence de la Terre.",
+                source: "CIA World Factbook — coastline."
             },
             {
                 id: 406,
-                question: "Quel détroit sépare l'Europe de l'Afrique ?",
-                options: ["Le Bosphore", "Le détroit de Gibraltar", "Le canal de Suez", "Le détroit de Malacca"],
+                question: "Quel massif montagneux traverse le Maroc, l'Algérie et la Tunisie ?",
+                options: ["Le Hoggar", "L'Atlas", "Le Tibesti", "L'Adrar"],
                 correct: 1,
-                explanation: "Large de quatorze kilomètres au plus étroit, Gibraltar relie l'Atlantique à la Méditerranée. Le Bosphore sépare pour sa part l'Europe de l'Asie, à Istanbul.",
-                source: "Organisation hydrographique internationale — limites des mers."
+                explanation: "Il culmine au Toubkal, à plus de quatre mille mètres, et fait barrage aux masses d'air venues de l'Atlantique. Il sépare la côte méditerranéenne du Sahara.",
+                source: "Encyclopædia Britannica — Atlas Mountains."
             },
             {
                 id: 407,
-                question: "Quelle est la capitale de l'Australie ?",
-                options: ["Sydney", "Canberra", "Melbourne", "Perth"],
+                question: "Quelle est la plus grande île du monde ?",
+                options: ["Madagascar", "Le Groenland", "Bornéo", "La Nouvelle-Guinée"],
                 correct: 1,
-                explanation: "Canberra a été créée de toutes pièces en 1913 pour trancher la rivalité entre Sydney et Melbourne. Elle se situe à peu près à mi-chemin entre les deux.",
-                source: "Gouvernement australien — histoire de la capitale."
+                explanation: "L'Australie, plus vaste, est classée comme continent et non comme île. Le Groenland conserve donc le titre avec environ deux millions de kilomètres carrés.",
+                source: "Institut géographique national — nomenclature."
+            },
+            {
+                id: 1201,
+                type: "vrai_faux",
+                question: "Le lac Baïkal est le lac le plus profond du monde.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Il descend à plus de mille six cents mètres et contient à lui seul environ un cinquième de l'eau douce liquide de la planète.",
+                source: "Encyclopædia Britannica — notices géographiques."
+            },
+            {
+                id: 1202,
+                type: "vrai_faux",
+                question: "L'Islande se situe sur une dorsale océanique.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! L'île chevauche la dorsale médio-atlantique, où les plaques nord-américaine et eurasienne s'écartent. D'où son volcanisme et ses sources chaudes.",
+                source: "Encyclopædia Britannica — notices géographiques."
+            },
+            {
+                id: 1203,
+                type: "vrai_faux",
+                question: "Le Nil traverse uniquement l'Égypte.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Il traverse ou borde une dizaine de pays, de l'Ouganda et de l'Éthiopie jusqu'au Soudan puis à l'Égypte. Son bassin couvre plus de trois millions de kilomètres carrés.",
+                source: "Encyclopædia Britannica — notices géographiques."
+            },
+            {
+                id: 1204,
+                question: "Quel pays possède le plus grand nombre d'îles au monde ?",
+                options: ["L'Indonésie", "La Suède", "Les Philippines", "Le Canada"],
+                correct: 1,
+                explanation: "La Suède en compte plus de deux cent vingt mille, la grande majorité inhabitées. L'Indonésie en a environ dix-sept mille, mais bien plus peuplées.",
+                source: "Encyclopædia Britannica — notices géographiques."
+            },
+            {
+                id: 1205,
+                question: "Quelle chaîne de montagnes sépare l'Europe de l'Asie ?",
+                options: ["Les Carpates", "L'Oural", "Le Caucase seul", "Les Alpes dinariques"],
+                correct: 1,
+                explanation: "La limite conventionnelle suit l'Oural puis le fleuve du même nom, la mer Caspienne et le Caucase. C'est une convention, non une frontière naturelle nette.",
+                source: "Institut géographique national — nomenclature officielle."
+            },
+            {
+                id: 1206,
+                question: "Quel est le plus grand désert chaud du monde ?",
+                options: ["Le Kalahari", "Le Sahara", "Le désert de Gobi", "Le désert d'Atacama"],
+                correct: 1,
+                explanation: "Le Sahara couvre plus de neuf millions de kilomètres carrés, presque la superficie des États-Unis. Le Gobi est un désert froid.",
+                source: "Encyclopædia Britannica — notices géographiques."
+            },
+            {
+                id: 1207,
+                question: "Quelle mer est en réalité un lac salé fermé ?",
+                options: ["La mer Noire", "La mer Caspienne", "La mer Rouge", "La mer d'Aral autrefois seulement"],
+                correct: 1,
+                explanation: "Sans communication avec l'océan, la Caspienne est le plus grand plan d'eau fermé du monde. Son statut juridique a longtemps opposé les pays riverains.",
+                source: "Encyclopædia Britannica — notices géographiques."
+            },
+            {
+                id: 1208,
+                question: "Quel pays est entièrement entouré par l'Afrique du Sud ?",
+                options: ["Le Botswana", "Le Lesotho", "L'Eswatini", "La Namibie"],
+                correct: 1,
+                explanation: "Le Lesotho est l'un des trois seuls États au monde totalement enclavés dans un autre, avec Saint-Marin et le Vatican.",
+                source: "Nations unies — données statistiques."
+            },
+            {
+                id: 1209,
+                question: "Quel fleuve traverse Paris, Rouen et se jette dans la Manche ?",
+                options: ["La Loire", "La Seine", "La Garonne", "La Meuse"],
+                correct: 1,
+                explanation: "Longue de sept cent soixante-dix kilomètres, elle prend sa source en Bourgogne et rejoint la mer au Havre. Son estuaire est l'un des plus fréquentés d'Europe.",
+                source: "Institut géographique national — hydrographie française."
             }
         ],
         difficile: [
@@ -10771,6 +11956,122 @@ const quizzesData = {
                 correct: 1,
                 explanation: "En comptant ses territoires d'outre-mer répartis sur tous les océans, la France couvre douze fuseaux horaires. La Russie, la plus étendue d'un seul tenant, en compte onze.",
                 source: "Bureau international des poids et mesures — fuseaux horaires."
+            },
+            {
+                id: 1301,
+                type: "vrai_faux",
+                question: "La ligne de changement de date suit approximativement le méridien 180.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Elle s'en écarte par endroits pour éviter de couper des pays ou des archipels, comme les Kiribati qui l'ont fait dévier vers l'est en 1995.",
+                source: "Institut géographique national — nomenclature officielle."
+            },
+            {
+                id: 1302,
+                type: "vrai_faux",
+                question: "L'Everest continue de gagner quelques millimètres par an.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! La collision entre les plaques indienne et eurasienne soulève l'Himalaya d'environ quatre millimètres par an, en partie compensés par l'érosion.",
+                source: "Encyclopædia Britannica — notices géographiques."
+            },
+            {
+                id: 1303,
+                type: "vrai_faux",
+                question: "Le Groenland est plus grand que l'Australie.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Le Groenland fait environ deux millions de kilomètres carrés contre près de huit pour l'Australie. La projection de Mercator exagère fortement les hautes latitudes.",
+                source: "Institut géographique national — nomenclature officielle."
+            },
+            {
+                id: 1304,
+                type: "vrai_faux",
+                question: "Le Vatican est le plus petit État reconnu au monde.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Il couvre quarante-quatre hectares, soit environ 0,44 kilomètre carré, pour quelques centaines d'habitants. Monaco vient juste après.",
+                source: "Nations unies — données statistiques."
+            },
+            {
+                id: 1305,
+                question: "Quel courant marin réchauffe les côtes de l'Europe de l'Ouest ?",
+                options: ["Le courant de Humboldt", "La dérive nord-atlantique", "Le courant de Benguela", "Le courant du Labrador"],
+                correct: 1,
+                explanation: "Prolongement du Gulf Stream, il explique que Brest soit bien plus douce que Terre-Neuve à latitude comparable. Son affaiblissement est étroitement surveillé.",
+                source: "Encyclopædia Britannica — notices géographiques."
+            },
+            {
+                id: 1306,
+                question: "Quel fleuve d'Amérique du Sud a le plus fort débit du monde ?",
+                options: ["L'Orénoque", "L'Amazone", "Le Paraná", "Le rio Madeira"],
+                correct: 1,
+                explanation: "Son débit dépasse deux cents mille mètres cubes par seconde, plus que les six fleuves suivants réunis. Il déverse un cinquième de l'eau douce arrivant aux océans.",
+                source: "Encyclopædia Britannica — notices géographiques."
+            },
+            {
+                id: 1307,
+                question: "Que désigne le Sahel ?",
+                options: ["Une chaîne de montagnes d'Afrique de l'Est", "Une bande de transition entre Sahara et savanes", "Un désert d'Asie centrale", "Un plateau d'Afrique australe"],
+                correct: 1,
+                explanation: "Cette bande semi-aride traverse le continent de l'Atlantique à la mer Rouge. Elle est particulièrement exposée à la sécheresse et à la désertification.",
+                source: "Encyclopædia Britannica — notices géographiques."
+            },
+            {
+                id: 1308,
+                question: "Quel pays compte le plus de volcans actifs ?",
+                options: ["Le Japon", "L'Indonésie", "Le Chili", "L'Islande"],
+                correct: 1,
+                explanation: "L'archipel en compte plus de cent trente, du fait de sa position sur la ceinture de feu du Pacifique. L'éruption du Tambora en 1815 y a provoqué une année sans été.",
+                source: "Encyclopædia Britannica — notices géographiques."
+            },
+            {
+                id: 1309,
+                question: "Quelle est la particularité géographique du Chili ?",
+                options: ["Il est totalement enclavé entre deux pays voisins", "Il s'étire sur plus de quatre mille kilomètres du nord au sud", "Il est constitué exclusivement d'îles et d'archipels", "Il ne possède aucun relief dépassant mille mètres"],
+                correct: 1,
+                explanation: "Long de plus de quatre mille kilomètres pour une largeur moyenne inférieure à deux cents, il traverse presque tous les climats, du désert d'Atacama aux glaciers de Patagonie.",
+                source: "Encyclopædia Britannica — notices géographiques."
+            },
+            {
+                id: 1310,
+                question: "Quel détroit relie la mer Méditerranée à la mer Noire ?",
+                options: ["Le détroit de Messine", "Le Bosphore et les Dardanelles", "Le détroit d'Ormuz", "Le canal de Corinthe"],
+                correct: 1,
+                explanation: "Le passage se fait par les Dardanelles, la mer de Marmara puis le Bosphore. Il est régi par la convention de Montreux depuis 1936.",
+                source: "Institut géographique national — nomenclature officielle."
+            },
+            {
+                id: 1311,
+                question: "Que mesure l'échelle de Richter ?",
+                options: ["L'intensité des dégâts ressentis en surface", "La magnitude, c'est-à-dire l'énergie libérée", "La profondeur à laquelle se situe l'épicentre", "La durée totale pendant laquelle le sol tremble"],
+                correct: 1,
+                explanation: "Elle est logarithmique : un degré de plus correspond à une énergie environ trente fois supérieure. L'intensité ressentie relève d'une autre échelle, celle de Mercalli.",
+                source: "Encyclopædia Britannica — notices géographiques."
+            },
+            {
+                id: 1312,
+                question: "Quel pays a la plus faible densité de population au monde ?",
+                options: ["Le Canada", "La Mongolie", "L'Australie", "La Namibie"],
+                correct: 1,
+                explanation: "Avec environ deux habitants au kilomètre carré, la Mongolie devance largement la Namibie et l'Australie. Près de la moitié de sa population vit à Oulan-Bator.",
+                source: "Nations unies — données statistiques."
+            },
+            {
+                id: 1313,
+                question: "Où se situe le point le plus bas des terres émergées ?",
+                options: ["La vallée de la Mort", "Les rives de la mer Morte", "La dépression de Qattara", "Le lac Assal"],
+                correct: 1,
+                explanation: "Les rives de la mer Morte descendent à plus de quatre cents mètres sous le niveau des océans. Le niveau du lac continue de baisser d'environ un mètre par an.",
+                source: "Encyclopædia Britannica — notices géographiques."
+            },
+            {
+                id: 1314,
+                question: "Quel phénomène climatique périodique réchauffe le Pacifique équatorial ?",
+                options: ["La mousson", "El Niño", "L'oscillation nord-atlantique", "Le jet-stream"],
+                correct: 1,
+                explanation: "Tous les deux à sept ans, l'affaiblissement des alizés fait remonter des eaux chaudes vers l'est. Les conséquences sur les pluies se font sentir sur toute la planète.",
+                source: "Organisation météorologique mondiale — dossiers El Niño."
             }
         ]
     },
@@ -10958,6 +12259,72 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Louis XIV règne soixante-douze ans, le règne le plus long de l'histoire de France. Le surnom vient de son rôle d'Apollon dans un ballet de cour en 1653.",
                 source: "Château de Versailles — ressources historiques."
+            },
+            {
+                id: 1101,
+                type: "vrai_faux",
+                question: "Jeanne d'Arc a été brûlée à Rouen.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Condamnée pour hérésie par un tribunal ecclésiastique, elle est exécutée place du Vieux-Marché le 30 mai 1431. Un procès en réhabilitation l'innocentera vingt-cinq ans plus tard.",
+                source: "Archives nationales de France — fonds historiques."
+            },
+            {
+                id: 1102,
+                type: "vrai_faux",
+                question: "Vercingétorix a vaincu Jules César à Alésia.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! C'est l'inverse : le chef arverne y est défait en 52 avant notre ère après un long siège. Emmené à Rome, il y sera exécuté six ans plus tard.",
+                source: "Bibliothèque nationale de France — collections d'histoire."
+            },
+            {
+                id: 1103,
+                question: "Quel roi est surnommé Charlemagne ?",
+                options: ["Charles le Chauve, roi de Francie occidentale", "Charles Ier, roi des Francs", "Charles Martel, vainqueur de Poitiers", "Charles VII, sacré grâce à Jeanne d'Arc"],
+                correct: 1,
+                explanation: "Couronné empereur à Rome en 800, il règne sur un territoire couvrant une grande partie de l'Europe occidentale. Son nom vient du latin Carolus Magnus, Charles le Grand.",
+                source: "Bibliothèque nationale de France — collections d'histoire."
+            },
+            {
+                id: 1104,
+                question: "Quelle bataille marque la victoire de Napoléon en 1805 ?",
+                options: ["Waterloo", "Austerlitz", "Trafalgar", "Leipzig"],
+                correct: 1,
+                explanation: "Livrée le 2 décembre 1805, un an jour pour jour après le sacre, elle écrase les armées russe et autrichienne. On l'appelle la bataille des Trois Empereurs.",
+                source: "Archives nationales de France — fonds historiques."
+            },
+            {
+                id: 1105,
+                question: "En quelle année a lieu la Révolution française ?",
+                options: ["1769", "1789", "1799", "1815"],
+                correct: 1,
+                explanation: "Les États généraux se réunissent en mai, la Bastille tombe le 14 juillet et la Déclaration des droits de l'homme est adoptée en août. Tout se joue en quelques mois.",
+                source: "Archives nationales de France — fonds historiques."
+            },
+            {
+                id: 1106,
+                question: "Qui était le général chef de la France libre pendant la Seconde Guerre mondiale ?",
+                options: ["Philippe Pétain", "Charles de Gaulle", "Maxime Weygand", "Jean de Lattre de Tassigny"],
+                correct: 1,
+                explanation: "Depuis Londres, il lance l'appel du 18 juin 1940 à poursuivre le combat. Il fondera la Ve République en 1958.",
+                source: "Archives nationales de France — fonds historiques."
+            },
+            {
+                id: 1107,
+                question: "Quel monument parisien a été construit pour l'Exposition universelle de 1889 ?",
+                options: ["L'Arc de triomphe", "La tour Eiffel", "Le Sacré-Cœur", "L'Opéra Garnier"],
+                correct: 1,
+                explanation: "Haute de trois cents mètres, elle devait être démontée au bout de vingt ans. Son utilité comme antenne de radiotélégraphie l'a sauvée.",
+                source: "Bibliothèque nationale de France — collections d'histoire."
+            },
+            {
+                id: 1108,
+                question: "Quel personnage a conduit les Gaulois contre César ?",
+                options: ["Brennus", "Vercingétorix", "Ambiorix", "Ariovist"],
+                correct: 1,
+                explanation: "Chef arverne, il fédère les tribus gauloises avant d'être vaincu à Alésia en 52 avant notre ère. Il est mort exécuté à Rome six ans plus tard.",
+                source: "Bibliothèque nationale de France — sources antiques."
             }
         ],
         moyen: [
@@ -11092,6 +12459,122 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Gambetta proclame la République le 4 septembre 1870 à l'Hôtel de Ville, après la défaite de Sedan et la capture de Napoléon III. Elle durera jusqu'en 1940.",
                 source: "Assemblée nationale — chronologie républicaine."
+            },
+            {
+                id: 1201,
+                type: "vrai_faux",
+                question: "La Commune de Paris a duré moins de trois mois.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Proclamée le 18 mars 1871, elle est écrasée lors de la Semaine sanglante fin mai. Environ soixante-douze jours au total.",
+                source: "Archives nationales de France — fonds historiques."
+            },
+            {
+                id: 1202,
+                type: "vrai_faux",
+                question: "L'affaire Dreyfus a divisé la France à la fin du dix-neuvième siècle.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Condamné à tort pour espionnage en 1894, l'officier ne sera réhabilité qu'en 1906. L'affaire a opposé dreyfusards et antidreyfusards jusque dans les familles.",
+                source: "Archives nationales de France — fonds historiques."
+            },
+            {
+                id: 1203,
+                type: "vrai_faux",
+                question: "Le suffrage universel masculin a été instauré en France en 1848.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! La Deuxième République l'établit, portant le corps électoral de deux cent cinquante mille à plus de neuf millions d'hommes. Les femmes devront attendre 1944.",
+                source: "Archives nationales de France — fonds historiques."
+            },
+            {
+                id: 1204,
+                type: "vrai_faux",
+                question: "Louis XVI a été guillotiné en 1793.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Jugé par la Convention et condamné à une courte majorité, il est exécuté le 21 janvier 1793 place de la Révolution, aujourd'hui place de la Concorde.",
+                source: "Archives nationales de France — fonds historiques."
+            },
+            {
+                id: 1205,
+                question: "Quel cardinal était le principal ministre de Louis XIII ?",
+                options: ["Mazarin", "Richelieu", "Fleury", "Retz"],
+                correct: 1,
+                explanation: "Principal ministre de 1624 à 1642, il affaiblit la noblesse et les protestants pour renforcer l'autorité royale. Il fonde aussi l'Académie française en 1635.",
+                source: "Bibliothèque nationale de France — collections d'histoire."
+            },
+            {
+                id: 1206,
+                question: "Quelle dynastie succède aux Carolingiens en 987 ?",
+                options: ["Les Mérovingiens", "Les Capétiens", "Les Valois", "Les Bourbons"],
+                correct: 1,
+                explanation: "L'élection d'Hugues Capet ouvre une lignée qui régnera, à travers ses branches, jusqu'en 1848. C'est l'une des plus longues dynasties européennes.",
+                source: "Bibliothèque nationale de France — collections d'histoire."
+            },
+            {
+                id: 1207,
+                question: "Quel roi a fait construire le château de Chambord ?",
+                options: ["Louis XI", "François Ier", "Henri II", "Charles IX"],
+                correct: 1,
+                explanation: "Lancé en 1519, le chantier illustre l'arrivée de la Renaissance italienne en France. Le roi n'y aura séjourné que quelques semaines au total.",
+                source: "Bibliothèque nationale de France — collections d'histoire."
+            },
+            {
+                id: 1208,
+                question: "Quelle guerre oppose la France à la Prusse en 1870 ?",
+                options: ["La guerre de Sept Ans", "La guerre franco-prussienne", "La guerre de Succession d'Espagne", "La guerre de Crimée"],
+                correct: 1,
+                explanation: "La défaite de Sedan entraîne la chute de Napoléon III et la proclamation de la République. La France y perd l'Alsace et une partie de la Lorraine.",
+                source: "Archives nationales de France — fonds historiques."
+            },
+            {
+                id: 1209,
+                question: "Que sont les Trente Glorieuses ?",
+                options: ["Trente batailles gagnées sous Napoléon", "La période de forte croissance de 1945 à 1975", "Les trente années du règne de Louis XV", "Une révolte paysanne du dix-septième siècle"],
+                correct: 1,
+                explanation: "Reconstruction, plein emploi et hausse du niveau de vie caractérisent ces trois décennies. Le terme a été forgé par l'économiste Jean Fourastié en 1979.",
+                source: "Archives nationales de France — fonds historiques."
+            },
+            {
+                id: 1210,
+                question: "Quel traité met fin à la Première Guerre mondiale en 1919 ?",
+                options: ["Le traité de Vienne", "Le traité de Versailles", "Le traité de Francfort", "Le traité de Rome"],
+                correct: 1,
+                explanation: "Signé dans la galerie des Glaces le 28 juin 1919, il impose de lourdes réparations à l'Allemagne. Ses conditions nourriront les tensions des années 1930.",
+                source: "Archives nationales de France — fonds historiques."
+            },
+            {
+                id: 1211,
+                question: "Quel événement marque le printemps 1968 en France ?",
+                options: ["La fin officielle de la guerre d'Algérie", "Un vaste mouvement étudiant et une grève générale", "Le premier essai nucléaire français au Sahara", "L'entrée de la France dans le Marché commun"],
+                correct: 1,
+                explanation: "Parti des universités, le mouvement gagne les usines et débouche sur la plus grande grève de l'histoire du pays. De Gaulle dissout l'Assemblée en mai.",
+                source: "Archives nationales de France — fonds historiques."
+            },
+            {
+                id: 1212,
+                question: "En quelle année les femmes obtiennent-elles le droit de vote en France ?",
+                options: ["1919", "1944", "1946", "1958"],
+                correct: 1,
+                explanation: "L'ordonnance du 21 avril 1944, signée à Alger, leur accorde le droit de vote et d'éligibilité. Elles votent pour la première fois aux municipales de 1945.",
+                source: "Archives nationales de France — fonds historiques."
+            },
+            {
+                id: 1213,
+                question: "Qui dirige le gouvernement de Vichy à partir de 1940 ?",
+                options: ["Pierre Laval seul", "Philippe Pétain", "Paul Reynaud", "Édouard Daladier"],
+                correct: 1,
+                explanation: "Investi des pleins pouvoirs par l'Assemblée nationale en juillet 1940, il met en place la Révolution nationale et la collaboration avec l'Allemagne.",
+                source: "Archives nationales de France — fonds historiques."
+            },
+            {
+                id: 1214,
+                question: "Quel accord met fin à la guerre d'Algérie en 1962 ?",
+                options: ["Les accords de Genève", "Les accords d'Évian", "Le traité d'Alger", "Les accords de Matignon"],
+                correct: 1,
+                explanation: "Signés le 18 mars 1962, ils prévoient un cessez-le-feu et un référendum d'autodétermination. L'indépendance est proclamée le 5 juillet suivant.",
+                source: "Archives nationales de France — fonds historiques."
             }
         ],
         difficile: [
@@ -11225,6 +12708,122 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Votée le 9 décembre 1905, elle garantit la liberté de conscience et supprime le financement public des cultes. Elle constitue le fondement de la laïcité française.",
                 source: "Journal officiel de la République française, 11 décembre 1905."
+            },
+            {
+                id: 1301,
+                type: "vrai_faux",
+                question: "La bataille de Poitiers de 732 est attribuée à Charles Martel.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Il y arrête une expédition omeyyade venue d'Espagne. La portée réelle de l'événement a longtemps été amplifiée par l'historiographie postérieure.",
+                source: "Bibliothèque nationale de France — collections d'histoire."
+            },
+            {
+                id: 1302,
+                type: "vrai_faux",
+                question: "L'ordonnance de Villers-Cotterêts impose le français dans les actes officiels.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Signée par François Ier en 1539, elle remplace le latin dans les actes de justice et d'administration. Certains de ses articles sont toujours en vigueur.",
+                source: "Archives nationales de France — fonds historiques."
+            },
+            {
+                id: 1303,
+                type: "vrai_faux",
+                question: "Le Code civil a été promulgué sous Napoléon en 1804.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Il unifie le droit privé français et sera exporté dans une grande partie de l'Europe. Napoléon le considérait comme son œuvre la plus durable.",
+                source: "Archives nationales de France — fonds historiques."
+            },
+            {
+                id: 1304,
+                type: "vrai_faux",
+                question: "La Fronde a opposé le Parlement de Paris à la régence d'Anne d'Autriche.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Commencée en 1648 par une révolte parlementaire, elle s'est prolongée par la Fronde des princes. Le jeune Louis XIV en gardera une défiance durable envers Paris.",
+                source: "Bibliothèque nationale de France — collections d'histoire."
+            },
+            {
+                id: 1305,
+                question: "Quel roi met fin aux guerres de Religion par l'édit de Nantes ?",
+                options: ["Charles IX", "Henri IV", "Louis XIII", "François II"],
+                correct: 1,
+                explanation: "Signé en 1598, l'édit accorde aux protestants la liberté de conscience et des places de sûreté. Il sera révoqué par Louis XIV en 1685.",
+                source: "Archives nationales de France — fonds historiques."
+            },
+            {
+                id: 1306,
+                question: "Que désigne la nuit du 4 août 1789 ?",
+                options: ["La prise des Tuileries", "L'abolition des privilèges", "L'exécution du roi", "La fuite à Varennes"],
+                correct: 1,
+                explanation: "Dans une séance nocturne, l'Assemblée abolit les droits féodaux et les privilèges des ordres. Les décrets définitifs seront plus nuancés que l'élan initial.",
+                source: "Archives nationales de France — fonds historiques."
+            },
+            {
+                id: 1307,
+                question: "Quel régime succède au Directoire en 1799 ?",
+                options: ["La Convention", "Le Consulat", "Le Premier Empire", "La Restauration"],
+                correct: 1,
+                explanation: "Le coup d'État du 18 Brumaire installe trois consuls, dont Bonaparte, qui concentre rapidement le pouvoir. L'Empire ne sera proclamé qu'en 1804.",
+                source: "Archives nationales de France — fonds historiques."
+            },
+            {
+                id: 1308,
+                question: "Quelle bataille de 1415 est une lourde défaite française face aux Anglais ?",
+                options: ["Crécy", "Azincourt", "Bouvines", "Castillon"],
+                correct: 1,
+                explanation: "La chevalerie française y est décimée par les archers anglais dans un terrain boueux. Crécy date de 1346 et Castillon, en 1453, clôt la guerre de Cent Ans.",
+                source: "Bibliothèque nationale de France — collections d'histoire."
+            },
+            {
+                id: 1309,
+                question: "Qui était Colbert auprès de Louis XIV ?",
+                options: ["Son principal maréchal et chef des armées", "Son contrôleur général des finances", "Son confesseur et directeur de conscience", "Son ambassadeur permanent auprès de Rome"],
+                correct: 1,
+                explanation: "Il développe manufactures, marine et commerce colonial selon une doctrine devenue le colbertisme. Il fonde aussi plusieurs académies.",
+                source: "Bibliothèque nationale de France — collections d'histoire."
+            },
+            {
+                id: 1310,
+                question: "Quelle assemblée rédige la Constitution de la Ve République ?",
+                options: ["L'Assemblée constituante élue en 1946", "Un comité sous l'autorité de De Gaulle et Michel Debré", "Le Sénat de la IVe République réuni en congrès", "Le Conseil d'État statuant seul en formation plénière"],
+                correct: 1,
+                explanation: "Rédigé à l'été 1958 sous l'impulsion de De Gaulle et de Michel Debré, le texte est approuvé par référendum en septembre. Il renforce nettement l'exécutif.",
+                source: "Archives nationales de France — fonds historiques."
+            },
+            {
+                id: 1311,
+                question: "Que fut la Terreur pendant la Révolution ?",
+                options: ["Une famine généralisée qui frappa tout le royaume", "Une période de répression politique en 1793-1794", "Une invasion étrangère repoussée aux frontières", "Une révolte des campagnes contre les nouveaux impôts"],
+                correct: 1,
+                explanation: "Sous l'autorité du Comité de salut public, des milliers de condamnations à mort sont prononcées. Elle prend fin avec la chute de Robespierre en juillet 1794.",
+                source: "Archives nationales de France — fonds historiques."
+            },
+            {
+                id: 1312,
+                question: "Quel souverain a fait bâtir la Sainte-Chapelle à Paris ?",
+                options: ["Philippe Auguste", "Louis IX", "Philippe le Bel", "Charles V"],
+                correct: 1,
+                explanation: "Achevée en 1248, elle devait abriter la couronne d'épines acquise à prix d'or. Ses verrières comptent parmi les plus vastes du gothique rayonnant.",
+                source: "Bibliothèque nationale de France — collections d'histoire."
+            },
+            {
+                id: 1313,
+                question: "Quelle réforme scolaire porte le nom de Jules Ferry ?",
+                options: ["La création du baccalauréat comme examen national", "L'école primaire gratuite, laïque et obligatoire", "L'instauration de la mixité dans toutes les classes", "L'ouverture officielle des universités aux femmes"],
+                correct: 1,
+                explanation: "Les lois de 1881 et 1882 rendent l'école primaire gratuite puis obligatoire et laïque. Elles fondent le modèle scolaire républicain.",
+                source: "Archives nationales de France — fonds historiques."
+            },
+            {
+                id: 1314,
+                question: "Quel événement de 1685 provoque l'exil de nombreux protestants français ?",
+                options: ["Le massacre de la Saint-Barthélemy à Paris", "La révocation de l'édit de Nantes", "La paix d'Alès signée sous Louis XIII", "Le siège et la prise de La Rochelle"],
+                correct: 1,
+                explanation: "L'édit de Fontainebleau interdit le culte réformé. Entre deux cent mille et trois cent mille huguenots quittent le royaume, au profit des pays voisins.",
+                source: "Archives nationales de France — fonds historiques."
             }
         ]
     }
@@ -11891,6 +13490,15 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Katharine Hepburn a remporté quatre Oscars de la meilleure actrice. Meryl Streep détient le record de nominations, avec vingt et une, pour trois victoires.",
                 source: "Academy of Motion Picture Arts and Sciences — records."
+            },
+            {
+                id: 1201,
+                type: "vrai_faux",
+                question: "Le Festival de Cannes a été créé avant la Seconde Guerre mondiale.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Prévu pour septembre 1939, il est annulé par la déclaration de guerre et n'aura finalement lieu qu'en 1946. Sa création répondait à la mainmise fasciste sur la Mostra de Venise.",
+                source: "Cahiers du cinéma et archives du Centre national du cinéma."
             }
         ],
         difficile: [
@@ -12072,6 +13680,72 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Le montage alterné fait progresser deux actions parallèles en les entrecoupant, créant du suspense. D.W. Griffith en a systématisé l'usage dès les années 1910.",
                 source: "Bordwell et Thompson — Film Art, 2016."
+            },
+            {
+                id: 1301,
+                type: "vrai_faux",
+                question: "La Nouvelle Vague désigne un mouvement du cinéma français des années 1950 et 1960.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Truffaut, Godard, Chabrol et Rohmer, souvent critiques aux Cahiers du cinéma, tournent en décors réels avec de petites équipes. Ils rompent avec le cinéma de studio.",
+                source: "Cahiers du cinéma et archives du Centre national du cinéma."
+            },
+            {
+                id: 1302,
+                type: "vrai_faux",
+                question: "Le format Cinémascope a été introduit pour concurrencer la télévision.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Lancé en 1953, ce format très large offrait une expérience impossible sur le petit écran. Les studios ont multiplié les procédés spectaculaires à cette période.",
+                source: "Cahiers du cinéma et archives du Centre national du cinéma."
+            },
+            {
+                id: 1303,
+                question: "Quel réalisateur japonais a réalisé Les Sept Samouraïs ?",
+                options: ["Yasujiro Ozu", "Akira Kurosawa", "Kenji Mizoguchi", "Hayao Miyazaki"],
+                correct: 1,
+                explanation: "Sorti en 1954, le film a inspiré Les Sept Mercenaires et de nombreux récits d'équipe réunie pour une mission. Son montage des combats a fait école.",
+                source: "Cahiers du cinéma et archives du Centre national du cinéma."
+            },
+            {
+                id: 1304,
+                question: "Qu'appelle-t-on le montage parallèle ?",
+                options: ["Le doublage simultané du film en deux langues", "L'alternance entre deux actions liées thématiquement", "La projection de l'image sur deux écrans côte à côte", "Le tournage de deux versions distinctes du même film"],
+                correct: 1,
+                explanation: "Contrairement au montage alterné, les actions ne sont pas forcément simultanées : leur rapprochement produit un sens. Le baptême du Parrain en est un exemple célèbre.",
+                source: "Cahiers du cinéma et archives du Centre national du cinéma."
+            },
+            {
+                id: 1305,
+                question: "Quel film muet de 1927 mêle science-fiction et critique sociale ?",
+                options: ["Le Cuirassé Potemkine", "Metropolis", "Nosferatu", "L'Aurore"],
+                correct: 1,
+                explanation: "Réalisé par Fritz Lang, il oppose une élite en surface à des ouvriers souterrains. Sa version intégrale n'a été partiellement retrouvée qu'en 2008.",
+                source: "Cahiers du cinéma et archives du Centre national du cinéma."
+            },
+            {
+                id: 1306,
+                question: "Que désigne le terme travelling ?",
+                options: ["Un changement de focale sans bouger", "Un déplacement de la caméra dans l'espace", "Une prise de vue au ralenti", "Un raccord entre deux plans"],
+                correct: 1,
+                explanation: "La caméra se déplace sur rails, sur grue ou à l'épaule. Le zoom, lui, ne fait que modifier la focale sans changer le point de vue.",
+                source: "Cahiers du cinéma et archives du Centre national du cinéma."
+            },
+            {
+                id: 1307,
+                question: "Quel réalisateur italien a signé La Dolce Vita ?",
+                options: ["Vittorio De Sica", "Federico Fellini", "Roberto Rossellini", "Luchino Visconti"],
+                correct: 1,
+                explanation: "Sorti en 1960, le film a remporté la Palme d'or et donné le mot paparazzi, du nom d'un photographe du film.",
+                source: "Cahiers du cinéma et archives du Centre national du cinéma."
+            },
+            {
+                id: 1308,
+                question: "Qu'est-ce que le néoréalisme italien ?",
+                options: ["Un mouvement de films tournés en studio et très stylisés", "Un courant tournant en décors réels avec des acteurs non professionnels", "Une école d'animation fondée à Rome après-guerre", "Un procédé de colorisation employé dans les années 1950"],
+                correct: 1,
+                explanation: "Né dans l'Italie de l'après-guerre, il filme la pauvreté au plus près du réel. Le Voleur de bicyclette en est l'œuvre emblématique.",
+                source: "Cahiers du cinéma et archives du Centre national du cinéma."
             }
         ]
     }
@@ -12350,12 +14024,11 @@ const quizzesData = {
             },
             {
                 id: 401,
-                type: "vrai_faux",
-                question: "La Grande Muraille de Chine est visible à l'œil nu depuis la Lune.",
-                options: ["Vrai", "Faux"],
+                question: "Combien de côtés compte un hexagone ?",
+                options: ["Cinq", "Six", "Sept", "Huit"],
                 correct: 1,
-                explanation: "Faux ! Elle est bien trop étroite. Même en orbite basse, à quatre cents kilomètres, elle est difficile à distinguer sans instrument. Les astronautes chinois l'ont eux-mêmes démenti.",
-                source: "Agence spatiale européenne — observation de la Terre."
+                explanation: "Le préfixe hexa vient du grec pour six. La France est surnommée l'Hexagone en raison de la forme approximative de son territoire.",
+                source: "Encyclopædia Britannica — géométrie élémentaire."
             },
             {
                 id: 402,
@@ -12367,19 +14040,19 @@ const quizzesData = {
             },
             {
                 id: 403,
-                question: "Qui a peint La Joconde ?",
-                options: ["Michel-Ange", "Léonard de Vinci", "Raphaël", "Botticelli"],
+                question: "Quel est le plus grand mammifère terrestre ?",
+                options: ["Le rhinocéros blanc", "L'éléphant d'Afrique", "L'hippopotame", "La girafe"],
                 correct: 1,
-                explanation: "Léonard de Vinci la peint entre 1503 et 1519. Il l'emporte en France où François Ier l'acquiert. Son vol en 1911 par un employé du Louvre a fait sa célébrité mondiale.",
-                source: "Musée du Louvre — notice de La Joconde."
+                explanation: "Un mâle peut atteindre six tonnes et quatre mètres au garrot. La baleine bleue est plus grande encore, mais elle est marine.",
+                source: "Union internationale pour la conservation de la nature — Loxodonta africana."
             },
             {
                 id: 404,
-                question: "Quelle planète est la plus proche du Soleil ?",
-                options: ["Vénus", "Mercure", "Mars", "La Terre"],
+                question: "Dans quel pays se trouve la ville de Marrakech ?",
+                options: ["L'Algérie", "Le Maroc", "La Tunisie", "L'Égypte"],
                 correct: 1,
-                explanation: "Mercure orbite à cinquante-huit millions de kilomètres du Soleil. Vénus est pourtant plus chaude, à cause de son épaisse atmosphère de dioxyde de carbone.",
-                source: "NASA — Solar System Exploration."
+                explanation: "Fondée au onzième siècle, elle est l'une des quatre villes impériales du pays. Sa place Jemaa el-Fna est classée par l'UNESCO.",
+                source: "Encyclopædia Britannica — Marrakech."
             }
         ],
         moyen: [
@@ -12541,11 +14214,11 @@ const quizzesData = {
             },
             {
                 id: 406,
-                question: "Qui a écrit Les Misérables ?",
-                options: ["Émile Zola", "Victor Hugo", "Gustave Flaubert", "Honoré de Balzac"],
+                question: "Quel est le symbole chimique du fer ?",
+                options: ["F", "Fe", "Fr", "Er"],
                 correct: 1,
-                explanation: "Publié en 1862 depuis son exil à Guernesey, le roman suit Jean Valjean sur plusieurs décennies. Hugo y dénonce la misère sociale et l'injustice pénale.",
-                source: "Bibliothèque nationale de France — manuscrits de Victor Hugo."
+                explanation: "Il vient du latin ferrum. F désigne le fluor et Fr le francium, élément radioactif extrêmement rare.",
+                source: "Union internationale de chimie pure et appliquée — tableau périodique."
             },
             {
                 id: 407,
@@ -12554,6 +14227,81 @@ const quizzesData = {
                 correct: 1,
                 explanation: "L'hydrogène représente environ trois quarts de la matière ordinaire. Formé dans les premières minutes après le Big Bang, il constitue le combustible des étoiles.",
                 source: "Union astronomique internationale — abondances cosmiques."
+            },
+            {
+                id: 1201,
+                type: "vrai_faux",
+                question: "La Tour de Pise penche à cause d'un sol instable.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le sous-sol argileux et sableux s'est tassé de façon inégale dès le chantier, au douzième siècle. Des travaux menés dans les années 1990 ont réduit l'inclinaison sans la supprimer.",
+                source: "Encyclopædia Britannica — notices de référence."
+            },
+            {
+                id: 1202,
+                type: "vrai_faux",
+                question: "Le mont Everest est le point le plus éloigné du centre de la Terre.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! C'est le Chimborazo, en Équateur : le renflement équatorial de la planète place son sommet plus loin du centre, malgré une altitude bien inférieure.",
+                source: "NASA — Solar System Exploration."
+            },
+            {
+                id: 1203,
+                type: "vrai_faux",
+                question: "Le premier vaccin a été mis au point contre la variole.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Edward Jenner utilise en 1796 le virus de la vaccine, bénin, pour protéger de la variole. Le mot vaccin vient du latin vacca, la vache.",
+                source: "Encyclopædia Britannica — notices de référence."
+            },
+            {
+                id: 1204,
+                question: "Quel pays a inventé le papier ?",
+                options: ["L'Égypte", "La Chine", "La Grèce", "L'Inde"],
+                correct: 1,
+                explanation: "Attribué à Cai Lun vers l'an 105, le procédé se diffuse ensuite vers l'ouest. Le papyrus égyptien, plus ancien, relève d'une technique différente.",
+                source: "Encyclopædia Britannica — notices de référence."
+            },
+            {
+                id: 1205,
+                question: "Combien de temps met la lumière du Soleil pour atteindre la Terre ?",
+                options: ["Environ une seconde", "Environ huit minutes", "Environ une heure", "Environ un jour"],
+                correct: 1,
+                explanation: "Cent cinquante millions de kilomètres à trois cent mille kilomètres par seconde donnent huit minutes et vingt secondes. On voit donc toujours le Soleil tel qu'il était il y a huit minutes.",
+                source: "NASA — Solar System Exploration."
+            },
+            {
+                id: 1206,
+                question: "Quel est l'astre le plus proche de la Terre ?",
+                options: ["Mars", "La Lune", "Vénus", "Le Soleil"],
+                correct: 1,
+                explanation: "Elle orbite à environ trois cent quatre-vingt mille kilomètres. Vénus, la planète la plus proche, reste à plus de quarante millions de kilomètres au minimum.",
+                source: "NASA — Solar System Exploration."
+            },
+            {
+                id: 1207,
+                question: "Quel est le métal liquide à température ambiante ?",
+                options: ["Le plomb", "Le mercure", "L'étain", "Le zinc"],
+                correct: 1,
+                explanation: "Son point de fusion est de moins trente-neuf degrés. Longtemps employé dans les thermomètres, il est aujourd'hui écarté pour sa toxicité.",
+                source: "Encyclopædia Britannica — notices de référence."
+            },
+            {
+                id: 1208,
+                question: "Quel océan est le plus vaste ?",
+                options: ["L'océan Atlantique", "L'océan Pacifique", "L'océan Indien", "L'océan Arctique"],
+                correct: 1,
+                explanation: "Il couvre environ un tiers de la surface du globe, davantage que toutes les terres émergées réunies. Il contient aussi la fosse la plus profonde.",
+                source: "Encyclopædia Britannica — notices de référence."
+            },
+            {
+                id: 1209,
+                question: "Quel scientifique a énoncé les lois du mouvement et de la gravitation ?",
+                options: ["Galilée", "Isaac Newton", "Nicolas Copernic", "Johannes Kepler"],
+                correct: 1,
+                explanation: "Publiées en 1687 dans les Principia, ses trois lois du mouvement et sa loi de la gravitation universelle ont fondé la mécanique classique.",
+                source: "Encyclopædia Britannica — notices de référence."
             }
         ],
         difficile: [
@@ -12687,6 +14435,122 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Le mandarin compte près de neuf cents millions de locuteurs natifs. L'anglais domine en revanche largement si l'on inclut les locuteurs qui l'ont appris comme seconde langue.",
                 source: "Ethnologue — Languages of the World, 2023."
+            },
+            {
+                id: 1301,
+                type: "vrai_faux",
+                question: "Le zéro absolu correspond à moins deux cent soixante-treize degrés Celsius environ.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Il vaut exactement moins 273,15 degrés. À cette température, l'agitation thermique atteindrait son minimum ; elle est inatteignable en pratique.",
+                source: "Bureau international des poids et mesures — définition du kelvin."
+            },
+            {
+                id: 1302,
+                type: "vrai_faux",
+                question: "La Joconde a été volée au Louvre au début du vingtième siècle.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Un employé italien l'a dérobée en 1911 et gardée deux ans avant d'être arrêté à Florence. Le vol a énormément contribué à la célébrité du tableau.",
+                source: "Musée du Louvre — histoire des collections."
+            },
+            {
+                id: 1303,
+                type: "vrai_faux",
+                question: "L'ADN a une structure en double hélice décrite en 1953.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Watson et Crick la publient dans Nature, en s'appuyant notamment sur les clichés de diffraction de Rosalind Franklin. Sa contribution a longtemps été minorée.",
+                source: "Nature — Watson et Crick, avril 1953."
+            },
+            {
+                id: 1304,
+                type: "vrai_faux",
+                question: "Le son se propage plus vite dans l'eau que dans l'air.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Environ mille cinq cents mètres par seconde dans l'eau contre trois cent quarante dans l'air. Il va plus vite encore dans les solides.",
+                source: "Encyclopædia Britannica — notices de référence."
+            },
+            {
+                id: 1305,
+                question: "Quelle civilisation a construit Machu Picchu ?",
+                options: ["Les Mayas", "Les Incas", "Les Aztèques", "Les Olmèques"],
+                correct: 1,
+                explanation: "Édifiée vers 1450 au Pérou, la cité fut abandonnée après la conquête espagnole et redécouverte en 1911. Les Mayas et les Aztèques vivaient en Méso-Amérique.",
+                source: "Encyclopædia Britannica — notices de référence."
+            },
+            {
+                id: 1306,
+                question: "Quel est l'organe le plus lourd du corps humain ?",
+                options: ["Le cerveau", "Le foie", "Les poumons", "Le cœur"],
+                correct: 1,
+                explanation: "Le foie pèse environ un kilo et demi chez l'adulte. La peau est plus lourde encore, mais elle est classée comme organe le plus grand plutôt que le plus lourd des organes internes.",
+                source: "Gray's Anatomy, 42e édition."
+            },
+            {
+                id: 1307,
+                question: "Quelle guerre a duré de 1337 à 1453 ?",
+                options: ["La guerre de Trente Ans", "La guerre de Cent Ans", "La guerre des Deux-Roses", "La guerre de Succession d'Espagne"],
+                correct: 1,
+                explanation: "Malgré son nom, elle s'étend sur cent seize ans, entrecoupés de longues trêves. Elle oppose les royaumes de France et d'Angleterre.",
+                source: "Bibliothèque nationale de France — collections."
+            },
+            {
+                id: 1308,
+                question: "Qui a peint Guernica ?",
+                options: ["Salvador Dalí", "Pablo Picasso", "Joan Miró", "Georges Braque"],
+                correct: 1,
+                explanation: "Peint en 1937 après le bombardement de la ville basque, le tableau est devenu un symbole universel contre la guerre. Il mesure près de huit mètres de long.",
+                source: "Musée Reina Sofía — notice de Guernica."
+            },
+            {
+                id: 1309,
+                question: "Quelle planète possède les anneaux les plus visibles ?",
+                options: ["Jupiter", "Saturne", "Uranus", "Neptune"],
+                correct: 1,
+                explanation: "Ses anneaux, composés de glace et de roches, s'étendent sur des centaines de milliers de kilomètres pour une épaisseur souvent inférieure à un kilomètre. Les autres géantes en ont aussi, mais ténus.",
+                source: "NASA — Solar System Exploration."
+            },
+            {
+                id: 1310,
+                question: "Qu'est-ce que la photosynthèse ?",
+                options: ["La respiration nocturne des plantes en l'absence de lumière", "La transformation de lumière, eau et gaz carbonique en matière organique", "La montée de la sève brute dans le tronc au printemps", "La germination d'une graine placée dans un sol humide"],
+                correct: 1,
+                explanation: "Les plantes y produisent des sucres et rejettent de l'oxygène. C'est le processus qui a rendu l'atmosphère terrestre respirable.",
+                source: "Encyclopædia Britannica — notices de référence."
+            },
+            {
+                id: 1311,
+                question: "Quel pays a le plus de fuseaux horaires métropolitains d'un seul tenant ?",
+                options: ["Les États-Unis", "La Russie", "Le Canada", "La Chine"],
+                correct: 1,
+                explanation: "La Russie en couvre onze d'ouest en est. La Chine, presque aussi large, a fait le choix d'une heure unique sur tout son territoire.",
+                source: "Encyclopædia Britannica — notices de référence."
+            },
+            {
+                id: 1312,
+                question: "Quelle invention est attribuée à Gutenberg vers 1450 ?",
+                options: ["La fabrication du papier à partir de fibres végétales", "L'imprimerie à caractères mobiles métalliques", "L'encre grasse spécialement conçue pour l'impression", "La reliure cousue permettant de relier les cahiers"],
+                correct: 1,
+                explanation: "Le procédé existait déjà en Asie sous d'autres formes, mais son système de caractères métalliques et sa presse ont permis une diffusion massive en Europe.",
+                source: "Bibliothèque nationale de France — collections."
+            },
+            {
+                id: 1313,
+                question: "Quel gaz compose majoritairement l'atmosphère terrestre ?",
+                options: ["L'oxygène", "L'azote", "Le gaz carbonique", "L'argon"],
+                correct: 1,
+                explanation: "L'azote représente environ soixante-dix-huit pour cent de l'air, l'oxygène vingt et un. Le gaz carbonique en constitue moins d'un demi pour cent.",
+                source: "Encyclopædia Britannica — notices de référence."
+            },
+            {
+                id: 1314,
+                question: "Qui a proposé le modèle héliocentrique au seizième siècle ?",
+                options: ["Ptolémée", "Nicolas Copernic", "Tycho Brahe", "Giordano Bruno"],
+                correct: 1,
+                explanation: "Son ouvrage paraît en 1543, l'année de sa mort. Galilée en apportera les preuves observationnelles au siècle suivant, au prix d'un procès.",
+                source: "Encyclopædia Britannica — notices de référence."
             }
         ]
     }
@@ -12894,11 +14758,11 @@ const quizzesData = {
             },
             {
                 id: 402,
-                question: "Quel élément est associé au signe du Bélier ?",
-                options: ["L'eau", "Le feu", "L'air", "La terre"],
+                question: "Quel signe précède immédiatement le Bélier ?",
+                options: ["Le Verseau", "Les Poissons", "Le Capricorne", "Le Taureau"],
                 correct: 1,
-                explanation: "Le Bélier ouvre la série des signes de feu, avec le Lion et le Sagittaire. Ces signes sont traditionnellement associés à l'élan et à l'initiative.",
-                source: "Traité d'astrologie occidentale — correspondances élémentaires."
+                explanation: "Les Poissons ferment le cycle, du 19 février au 20 mars environ, juste avant l'équinoxe de printemps qui ouvre le Bélier.",
+                source: "Traité d'astrologie occidentale — ordre des signes."
             },
             {
                 id: 403,
@@ -12910,11 +14774,36 @@ const quizzesData = {
             },
             {
                 id: 404,
-                question: "Combien d'animaux compte le zodiaque chinois ?",
-                options: ["Dix", "Douze", "Quinze", "Huit"],
+                question: "Quel élément est associé au signe du Cancer ?",
+                options: ["Le feu", "L'eau", "L'air", "La terre"],
                 correct: 1,
-                explanation: "Douze animaux se succèdent sur un cycle de douze ans, du Rat au Cochon. Combinés aux cinq éléments, ils forment un cycle complet de soixante ans.",
-                source: "Musée national des arts asiatiques Guimet — calendrier chinois."
+                explanation: "Cancer, Scorpion et Poissons forment la triplicité d'eau. Le Cancer est en outre un signe cardinal, ouvrant l'été.",
+                source: "Traité d'astrologie occidentale — correspondances élémentaires."
+            },
+            {
+                id: 1101,
+                type: "vrai_faux",
+                question: "Le signe du Poissons ferme le zodiaque.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Il occupe le douzième et dernier secteur, du 19 février au 20 mars environ. Le Bélier ouvre à l'inverse le cycle, au moment de l'équinoxe de printemps.",
+                source: "Traité d'astrologie occidentale — correspondances traditionnelles."
+            },
+            {
+                id: 1102,
+                question: "Quel animal symbolise le signe du Lion ?",
+                options: ["Le tigre", "Le lion", "Le léopard", "Le loup"],
+                correct: 1,
+                explanation: "Cinquième signe du zodiaque, il court du 23 juillet au 22 août environ. Il est associé au Soleil dans le système traditionnel.",
+                source: "Traité d'astrologie occidentale — correspondances traditionnelles."
+            },
+            {
+                id: 1103,
+                question: "Quel signe est représenté par une balance ?",
+                options: ["La Vierge", "La Balance", "Le Capricorne", "Le Verseau"],
+                correct: 1,
+                explanation: "Septième signe du zodiaque, la Balance est le seul dont le symbole soit un objet et non un être vivant. Elle s'étend du 23 septembre au 22 octobre environ.",
+                source: "Traité d'astrologie occidentale — correspondances traditionnelles."
             }
         ],
         moyen: [
@@ -13027,12 +14916,11 @@ const quizzesData = {
             },
             {
                 id: 405,
-                type: "vrai_faux",
-                question: "L'astrologie et l'astronomie désignent la même discipline.",
-                options: ["Vrai", "Faux"],
+                question: "Que désigne une planète en exil dans un thème ?",
+                options: ["Sa position la plus favorable", "Le signe opposé à celui qu'elle gouverne", "Son mouvement rétrograde", "Sa disparition sous l'horizon"],
                 correct: 1,
-                explanation: "Faux ! L'astronomie est une science qui étudie les objets célestes par l'observation et la mesure. L'astrologie interprète les positions des astres pour en tirer des significations humaines et ne relève pas de la démarche scientifique.",
-                source: "Académie des sciences — distinction astronomie et astrologie."
+                explanation: "Mars gouverne le Bélier, elle est donc en exil dans la Balance. La tradition y voit une position d'expression contrariée.",
+                source: "Ptolémée — Tetrabiblos, IIe siècle."
             },
             {
                 id: 406,
@@ -13049,6 +14937,122 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Vénus régit le Taureau et la Balance dans le système traditionnel. Mars gouverne le Bélier, Jupiter le Sagittaire et Saturne le Capricorne.",
                 source: "Ptolémée — Tetrabiblos, IIe siècle."
+            },
+            {
+                id: 1201,
+                type: "vrai_faux",
+                question: "Le zodiaque chinois attribue un animal à chaque année.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le cycle de douze animaux se combine à cinq éléments, formant une période complète de soixante ans. L'année commence au Nouvel An lunaire, pas au 1er janvier.",
+                source: "Musée national des arts asiatiques Guimet — calendrier chinois."
+            },
+            {
+                id: 1202,
+                type: "vrai_faux",
+                question: "Les signes de terre sont le Taureau, la Vierge et le Capricorne.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Chaque élément regroupe trois signes espacés de quatre secteurs. On parle de triplicité dans la terminologie traditionnelle.",
+                source: "Traité d'astrologie occidentale — correspondances traditionnelles."
+            },
+            {
+                id: 1203,
+                type: "vrai_faux",
+                question: "Le Soleil met un mois environ à traverser chaque signe.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Il parcourt les trente degrés d'un secteur en une trentaine de jours. C'est ce qui fixe les dates approximatives de chaque signe solaire.",
+                source: "Union astronomique internationale — données de référence."
+            },
+            {
+                id: 1204,
+                type: "vrai_faux",
+                question: "Un thème natal peut être calculé sans connaître l'heure de naissance.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Sans l'heure exacte, l'ascendant et les maisons ne peuvent pas être déterminés, car ils changent toutes les deux heures environ. Seules les positions planétaires restent approximables.",
+                source: "Traité d'astrologie occidentale — correspondances traditionnelles."
+            },
+            {
+                id: 1205,
+                question: "Combien de signes composent chaque élément ?",
+                options: ["Deux signes", "Trois signes", "Quatre signes", "Six signes"],
+                correct: 1,
+                explanation: "Feu, terre, air et eau regroupent chacun trois signes. Douze signes divisés par quatre éléments donnent bien trois signes par élément.",
+                source: "Traité d'astrologie occidentale — correspondances traditionnelles."
+            },
+            {
+                id: 1206,
+                question: "Quelle planète gouverne traditionnellement le signe du Lion ?",
+                options: ["La Lune", "Le Soleil", "Mercure", "Mars"],
+                correct: 1,
+                explanation: "Dans le système traditionnel, le Soleil régit le Lion et la Lune le Cancer. Ce sont les deux seuls signes à n'avoir qu'un seul luminaire pour maître.",
+                source: "Ptolémée — Tetrabiblos, IIe siècle."
+            },
+            {
+                id: 1207,
+                question: "Que désigne un signe cardinal en astrologie ?",
+                options: ["Un signe placé au centre du thème", "Un signe qui ouvre une saison", "Un signe dépourvu d'élément", "Un signe visible uniquement la nuit"],
+                correct: 1,
+                explanation: "Bélier, Cancer, Balance et Capricorne commencent chacun une saison. On distingue ensuite les signes fixes et les signes mutables.",
+                source: "Traité d'astrologie occidentale — correspondances traditionnelles."
+            },
+            {
+                id: 1208,
+                question: "Quel élément regroupe les Gémeaux, la Balance et le Verseau ?",
+                options: ["Le feu", "L'air", "La terre", "L'eau"],
+                correct: 1,
+                explanation: "Ces trois signes forment la triplicité d'air, traditionnellement associée à l'échange et à la relation. Le feu réunit Bélier, Lion et Sagittaire.",
+                source: "Traité d'astrologie occidentale — correspondances traditionnelles."
+            },
+            {
+                id: 1209,
+                question: "Quel animal du zodiaque chinois précède le Bœuf ?",
+                options: ["Le Cochon", "Le Rat", "Le Tigre", "Le Lapin"],
+                correct: 1,
+                explanation: "L'ordre commence par le Rat, suivi du Bœuf puis du Tigre. La légende raconte que le Rat s'est fait porter par le Bœuf avant de bondir juste avant l'arrivée.",
+                source: "Musée national des arts asiatiques Guimet — calendrier chinois."
+            },
+            {
+                id: 1210,
+                question: "Que sont les luminaires en astrologie traditionnelle ?",
+                options: ["Les étoiles les plus brillantes", "Le Soleil et la Lune", "Les planètes visibles à l'œil nu", "Les comètes"],
+                correct: 1,
+                explanation: "On les distingue des cinq planètes visibles connues des Anciens. Ensemble, ils forment les sept astres du système classique.",
+                source: "Ptolémée — Tetrabiblos, IIe siècle."
+            },
+            {
+                id: 1211,
+                question: "Quel signe est associé à l'archer ?",
+                options: ["Le Scorpion", "Le Sagittaire", "Le Capricorne", "Le Bélier"],
+                correct: 1,
+                explanation: "Neuvième signe du zodiaque, il est représenté par un centaure tirant à l'arc. Il court du 22 novembre au 21 décembre environ.",
+                source: "Traité d'astrologie occidentale — correspondances traditionnelles."
+            },
+            {
+                id: 1212,
+                question: "Combien de temps dure un cycle complet du zodiaque chinois avec les éléments ?",
+                options: ["Douze ans", "Soixante ans", "Cent ans", "Vingt-quatre ans"],
+                correct: 1,
+                explanation: "Douze animaux combinés à cinq éléments donnent soixante combinaisons. Ce cycle sexagésimal structure le calendrier traditionnel chinois.",
+                source: "Musée national des arts asiatiques Guimet — calendrier chinois."
+            },
+            {
+                id: 1213,
+                question: "Quel signe suit immédiatement le Taureau ?",
+                options: ["Le Bélier", "Les Gémeaux", "Le Cancer", "Le Lion"],
+                correct: 1,
+                explanation: "L'ordre est Bélier, Taureau, Gémeaux, Cancer. Les Gémeaux s'étendent du 21 mai au 20 juin environ.",
+                source: "Traité d'astrologie occidentale — correspondances traditionnelles."
+            },
+            {
+                id: 1214,
+                question: "Que désigne le terme conjonction entre deux planètes ?",
+                options: ["Leur opposition dans le ciel", "Leur rapprochement à la même longitude", "Leur disparition sous l'horizon", "Leur changement de sens apparent"],
+                correct: 1,
+                explanation: "Deux astres occupant la même position sur l'écliptique sont dits en conjonction. C'est l'un des aspects majeurs de la tradition astrologique.",
+                source: "Traité d'astrologie occidentale — correspondances traditionnelles."
             }
         ],
         difficile: [
@@ -13182,6 +15186,122 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Le Rat ouvre le cycle. La légende raconte qu'il gagna la course organisée par l'Empereur de Jade en se faisant porter par le Bœuf avant de bondir juste avant l'arrivée.",
                 source: "Musée national des arts asiatiques Guimet — mythes du calendrier chinois."
+            },
+            {
+                id: 1301,
+                type: "vrai_faux",
+                question: "Le mouvement rétrograde des planètes est une illusion d'optique.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Il résulte du dépassement d'une planète par la Terre sur son orbite, qui donne l'impression d'un recul. Aucune planète ne recule réellement.",
+                source: "Union astronomique internationale — données de référence."
+            },
+            {
+                id: 1302,
+                type: "vrai_faux",
+                question: "L'astrologie et l'astronomie étaient longtemps pratiquées par les mêmes savants.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Kepler établissait des thèmes astrologiques tout en formulant ses lois du mouvement planétaire. La séparation des deux disciplines ne s'achève qu'au dix-huitième siècle.",
+                source: "Bibliothèque nationale de France — histoire des sciences."
+            },
+            {
+                id: 1303,
+                type: "vrai_faux",
+                question: "Les constellations du zodiaque ne font pas toutes la même taille.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! La Vierge s'étend sur bien plus de ciel que le Scorpion. Le zodiaque astrologique découpe pourtant douze secteurs strictement égaux de trente degrés.",
+                source: "Union astronomique internationale — données de référence."
+            },
+            {
+                id: 1304,
+                type: "vrai_faux",
+                question: "Le Serpentaire est parfois évoqué comme un treizième signe.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le Soleil traverse effectivement cette constellation, reconnue par les astronomes. Le zodiaque astrologique traditionnel n'en tient toutefois aucun compte, restant fixé sur douze secteurs.",
+                source: "Union astronomique internationale — données de référence."
+            },
+            {
+                id: 1305,
+                question: "Que désigne le milieu du ciel dans un thème natal ?",
+                options: ["Le point le plus bas du thème, sous l'horizon", "Le point culminant, sommet de la dixième maison", "Le centre géométrique exact de la carte du ciel", "La position occupée par le Soleil à la naissance"],
+                correct: 1,
+                explanation: "Souvent noté MC, il correspond au point le plus haut atteint par l'écliptique au moment de la naissance. Il est traditionnellement associé à la vocation.",
+                source: "Traité d'astrologie occidentale — correspondances traditionnelles."
+            },
+            {
+                id: 1306,
+                question: "Qu'est-ce qu'un aspect de carré en astrologie ?",
+                options: ["Un écart de soixante degrés", "Un écart de quatre-vingt-dix degrés", "Un écart de cent vingt degrés", "Un écart de cent quatre-vingts degrés"],
+                correct: 1,
+                explanation: "Le carré est traditionnellement lu comme un aspect de tension. Le trigone, à cent vingt degrés, passe au contraire pour harmonieux.",
+                source: "Traité d'astrologie occidentale — correspondances traditionnelles."
+            },
+            {
+                id: 1307,
+                question: "Que sont les décans dans la tradition astrologique ?",
+                options: ["Les dix planètes principales", "Les subdivisions de dix degrés d'un signe", "Les dix premiers jours d'un signe uniquement", "Les aspects entre planètes lentes"],
+                correct: 1,
+                explanation: "Chaque signe se divise en trois décans de dix degrés, chacun rattaché à une planète. Le système remonte à l'Égypte ancienne.",
+                source: "Ptolémée — Tetrabiblos, IIe siècle."
+            },
+            {
+                id: 1308,
+                question: "Quel astronome grec a codifié l'astrologie dans le Tetrabiblos ?",
+                options: ["Aristarque de Samos", "Claude Ptolémée", "Hipparque", "Ératosthène"],
+                correct: 1,
+                explanation: "Rédigé au deuxième siècle à Alexandrie, l'ouvrage a servi de référence pendant plus de mille ans. Son auteur est aussi l'auteur de l'Almageste, traité d'astronomie.",
+                source: "Ptolémée — Tetrabiblos, IIe siècle."
+            },
+            {
+                id: 1309,
+                question: "Que désignent les nœuds lunaires ?",
+                options: ["Les différentes phases visibles de la Lune", "Les points d'intersection de l'orbite lunaire et de l'écliptique", "Les moments où se produit une éclipse totale", "Les deux extrémités du grand axe de l'orbite terrestre"],
+                correct: 1,
+                explanation: "Le nœud nord et le nœud sud se déplacent lentement à rebours du zodiaque. C'est près d'eux que se produisent les éclipses.",
+                source: "Union astronomique internationale — données de référence."
+            },
+            {
+                id: 1310,
+                question: "Quelle planète met environ vingt-neuf ans à parcourir le zodiaque ?",
+                options: ["Jupiter", "Saturne", "Uranus", "Mars"],
+                correct: 1,
+                explanation: "Sa révolution d'environ vingt-neuf ans et demi donne lieu au fameux retour de Saturne. Jupiter en met douze et Uranus quatre-vingt-quatre.",
+                source: "Union astronomique internationale — données de référence."
+            },
+            {
+                id: 1311,
+                question: "Que désigne l'astrologie sidérale ?",
+                options: ["Une astrologie fondée sur le rythme des saisons", "Une astrologie calée sur la position réelle des constellations", "Une astrologie limitée aux seules planètes lentes", "Une astrologie pratiquée uniquement durant la nuit"],
+                correct: 1,
+                explanation: "Utilisée notamment en Inde, elle tient compte de la précession des équinoxes. Elle décale les signes d'environ vingt-quatre degrés par rapport au zodiaque tropical occidental.",
+                source: "Union astronomique internationale — données de référence."
+            },
+            {
+                id: 1312,
+                question: "Quelles planètes étaient inconnues des astrologues de l'Antiquité ?",
+                options: ["Mars, Jupiter et Saturne", "Uranus, Neptune et Pluton", "Vénus et Mercure", "La Lune et le Soleil"],
+                correct: 1,
+                explanation: "Elles ne sont visibles qu'au télescope : Uranus est découverte en 1781, Neptune en 1846 et Pluton en 1930. Le système traditionnel ne comptait que sept astres.",
+                source: "Union astronomique internationale — données de référence."
+            },
+            {
+                id: 1313,
+                question: "Que désigne le terme domicile d'une planète ?",
+                options: ["Le signe où elle se trouve à la naissance", "Le signe qu'elle gouverne traditionnellement", "La maison la plus proche de l'ascendant", "Sa position au moment d'une éclipse"],
+                correct: 1,
+                explanation: "Mars est en domicile dans le Bélier, Vénus dans le Taureau et la Balance. Le signe opposé constitue son exil.",
+                source: "Ptolémée — Tetrabiblos, IIe siècle."
+            },
+            {
+                id: 1314,
+                question: "Quel écart sépare aujourd'hui le zodiaque tropical des constellations réelles ?",
+                options: ["Aucun écart", "Environ un signe entier", "Environ six signes", "Environ trois degrés"],
+                correct: 1,
+                explanation: "La précession des équinoxes décale l'axe terrestre d'un tour complet en vingt-six mille ans. Depuis l'Antiquité, l'écart accumulé atteint à peu près un secteur de trente degrés.",
+                source: "Union astronomique internationale — données de référence."
             }
         ]
     }
@@ -13469,11 +15589,11 @@ const quizzesData = {
             },
             {
                 id: 402,
-                question: "Combien de Pokémon comptait la première génération ?",
-                options: ["Cent", "Cent cinquante et un", "Deux cent cinquante et un", "Cent cinquante"],
+                question: "Quel type est efficace contre les Pokémon de type Feu ?",
+                options: ["Plante", "Eau", "Insecte", "Acier"],
                 correct: 1,
-                explanation: "La première génération compte cent cinquante et un Pokémon. Mew, le cent cinquante et unième, était initialement caché et non documenté dans le jeu.",
-                source: "The Pokémon Company — Pokémon Rouge et Vert, 1996."
+                explanation: "L'Eau, la Roche et le Sol infligent des dégâts doublés au Feu. La Plante y est au contraire très vulnérable.",
+                source: "The Pokémon Company — table des types."
             },
             {
                 id: 403,
@@ -13664,6 +15784,81 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Huit badges d'arène sont nécessaires pour accéder à la Ligue Pokémon. Ce nombre est resté la norme dans la grande majorité des régions suivantes.",
                 source: "The Pokémon Company — Pokémon Rouge et Bleu, 1996."
+            },
+            {
+                id: 1201,
+                type: "vrai_faux",
+                question: "Un Pokémon peut avoir deux types à la fois.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Dracaufeu est Feu et Vol, Roucarnage est Normal et Vol. Le double type modifie profondément les faiblesses et les résistances.",
+                source: "The Pokémon Company — Pokédex national et guides officiels."
+            },
+            {
+                id: 1202,
+                type: "vrai_faux",
+                question: "Les Pokémon légendaires peuvent se reproduire à la Pension.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! La quasi-totalité des légendaires appartient au groupe d'œufs Inconnu et ne peut pas se reproduire. Manaphy fait figure d'exception notable.",
+                source: "The Pokémon Company — Pokédex national et guides officiels."
+            },
+            {
+                id: 1203,
+                type: "vrai_faux",
+                question: "Le type Fée a été introduit pour contenir le type Dragon.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Apparu en sixième génération, il résiste au Dragon et lui inflige des dégâts doublés. Les équipes construites autour des dragons dominaient jusque-là la compétition.",
+                source: "The Pokémon Company — Pokédex national et guides officiels."
+            },
+            {
+                id: 1204,
+                question: "Quel objet permet à un Pokémon d'évoluer par échange ?",
+                options: ["Une pierre d'évolution comme la Pierre Feu ou la Pierre Eau", "Certains objets tenus comme le Roche Royale", "Le Multi Exp partagé avec toute l'équipe", "La Corde Sortie utilisée dans les grottes"],
+                correct: 1,
+                explanation: "Plusieurs Pokémon n'évoluent qu'échangés, parfois en tenant un objet précis. Ce mécanisme encourageait les échanges entre joueurs dès la première génération.",
+                source: "The Pokémon Company — Pokédex national et guides officiels."
+            },
+            {
+                id: 1205,
+                question: "Quel type est totalement insensible aux attaques de type Normal ?",
+                options: ["Le type Acier", "Le type Spectre", "Le type Roche", "Le type Ténèbres"],
+                correct: 1,
+                explanation: "Aucune attaque Normal ni Combat n'affecte les Spectre. Symétriquement, les attaques Spectre n'ont aucun effet sur les Pokémon Normal.",
+                source: "The Pokémon Company — Pokédex national et guides officiels."
+            },
+            {
+                id: 1206,
+                question: "Quelle région apparaît dans Pokémon Or et Argent ?",
+                options: ["Hoenn", "Johto", "Sinnoh", "Unys"],
+                correct: 1,
+                explanation: "Johto est la région de la deuxième génération, sortie en 1999. Le jeu permettait ensuite de revenir explorer Kanto, une prouesse technique pour l'époque.",
+                source: "Game Freak — historique des jeux."
+            },
+            {
+                id: 1207,
+                question: "Que fait la capacité Métamorph en combat ?",
+                options: ["Elle soigne l'ensemble de l'équipe en un seul tour", "Elle copie l'apparence et les capacités de l'adversaire", "Elle double la vitesse jusqu'à la fin du combat", "Elle empêche définitivement l'adversaire de fuir"],
+                correct: 1,
+                explanation: "Métamorph prend la forme du Pokémon adverse et en récupère les capacités, mais conserve ses propres points de vie. Il est très utilisé pour la reproduction.",
+                source: "The Pokémon Company — Pokédex national et guides officiels."
+            },
+            {
+                id: 1208,
+                question: "Combien de Pokémon comptait la deuxième génération ?",
+                options: ["Cinquante", "Cent", "Cent cinquante et un", "Deux cents"],
+                correct: 1,
+                explanation: "Cent nouveaux Pokémon portent le Pokédex national à deux cent cinquante et un. C'est aussi cette génération qui introduit le jour, la nuit et les objets tenus.",
+                source: "Game Freak — historique des jeux."
+            },
+            {
+                id: 1209,
+                question: "Quel Pokémon est le partenaire emblématique du personnage de Sacha dans le dessin animé ?",
+                options: ["Salamèche", "Pikachu", "Bulbizarre", "Carapuce"],
+                correct: 1,
+                explanation: "Reçu du professeur Chen faute d'être arrivé à l'heure, il refuse d'abord d'entrer dans sa Poké Ball. Cette relation est le fil rouge de la série.",
+                source: "The Pokémon Company — Pokédex national et guides officiels."
             }
         ],
         difficile: [
@@ -13776,11 +15971,11 @@ const quizzesData = {
             },
             {
                 id: 408,
-                question: "Quel Pokémon a le plus grand nombre de formes régionales connues ?",
-                options: ["Évoli", "Ossatueur", "Raichu", "Miaouss"],
-                correct: 3,
-                explanation: "Miaouss possède des formes d'Alola, de Galar et une forme normale, chacune avec des types différents. Cette diversité en fait un cas unique dans la série.",
-                source: "The Pokémon Company — Pokédex des formes régionales."
+                question: "Quelle mécanique a été introduite dans Pokémon Écarlate et Violet ?",
+                options: ["Le Dynamax", "Le phénomène Terastal", "La Méga-Évolution", "La Transe Z"],
+                correct: 1,
+                explanation: "Le Terastal change le type du Pokémon pour celui de son Téra-Type et renforce les attaques correspondantes. Il remplace le Dynamax de la génération précédente.",
+                source: "Game Freak — historique des mécaniques de combat."
             },
             {
                 id: 409,
@@ -13797,6 +15992,122 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Satoshi Tajiri a imaginé Pokémon à partir de sa passion d'enfance pour la collecte d'insectes. Ken Sugimori en a conçu les illustrations originales.",
                 source: "Game Freak — historique de la société."
+            },
+            {
+                id: 1301,
+                type: "vrai_faux",
+                question: "Les valeurs individuelles influencent les statistiques d'un Pokémon.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Chaque Pokémon possède des IV cachés, de zéro à trente et un par statistique. Combinés aux EV gagnés au combat, ils expliquent que deux individus du même niveau diffèrent.",
+                source: "The Pokémon Company — Pokédex national et guides officiels."
+            },
+            {
+                id: 1302,
+                type: "vrai_faux",
+                question: "MissingNo est un bug célèbre de la première génération.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Cette entrée non prévue apparaît via une manipulation à Cramois'Île et duplique le sixième objet du sac. Elle peut corrompre la sauvegarde.",
+                source: "Game Freak — historique des jeux."
+            },
+            {
+                id: 1303,
+                type: "vrai_faux",
+                question: "La nature d'un Pokémon modifie deux de ses statistiques.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Chaque nature augmente une statistique de dix pour cent et en diminue une autre d'autant. Certaines natures sont neutres et n'affectent rien.",
+                source: "The Pokémon Company — Pokédex national et guides officiels."
+            },
+            {
+                id: 1304,
+                type: "vrai_faux",
+                question: "Le type Acier a été introduit en même temps que le type Ténèbres.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Tous deux apparaissent en deuxième génération. L'Acier résiste à un nombre record de types, ce qui en fait un pilier défensif.",
+                source: "The Pokémon Company — Pokédex national et guides officiels."
+            },
+            {
+                id: 1305,
+                question: "Que désigne le terme shiny pour un Pokémon ?",
+                options: ["Un Pokémon ayant atteint le niveau cent maximal", "Un Pokémon à la coloration alternative rare", "Un Pokémon légendaire capturé en combat unique", "Un Pokémon obtenu par échange avec un autre dresseur"],
+                correct: 1,
+                explanation: "La probabilité était de un sur huit mille cent quatre-vingt-douze dans les premières générations. Elle a été augmentée depuis, et plusieurs méthodes permettent d'améliorer les chances.",
+                source: "The Pokémon Company — Pokédex national et guides officiels."
+            },
+            {
+                id: 1306,
+                question: "Quel Pokémon possède la statistique d'attaque de base la plus élevée parmi les non-légendaires ?",
+                options: ["Dracaufeu sous sa forme Méga-Évolution X", "Rhinastoc en Méga-Évolution", "Ronflex avec son objet tenu maximal", "Léviator dans sa forme chromatique rouge"],
+                correct: 1,
+                explanation: "Sa Méga-Évolution atteint une attaque de base de cent quatre-vingt-un, la plus haute hors légendaires. Sa faible vitesse en limite toutefois l'usage.",
+                source: "The Pokémon Company — Pokédex national et guides officiels."
+            },
+            {
+                id: 1307,
+                question: "Quelle génération a introduit les Méga-Évolutions ?",
+                options: ["La quatrième", "La sixième", "La septième", "La huitième"],
+                correct: 1,
+                explanation: "Introduites dans Pokémon X et Y en 2013, elles ne durent que le temps d'un combat et exigent une Méga-Gemme. Elles ont été retirées des générations suivantes.",
+                source: "Game Freak — historique des jeux."
+            },
+            {
+                id: 1308,
+                question: "Que sont les EV dans les jeux Pokémon ?",
+                options: ["Des points d'expérience classiques gagnés en combat", "Des points d'effort gagnés en battant certains Pokémon", "Des objets de soin utilisables une fois par combat", "Des capacités cachées révélées par un objet spécial"],
+                correct: 1,
+                explanation: "Chaque adversaire vaincu octroie des points d'effort dans une statistique donnée. Un Pokémon peut en accumuler cinq cent dix au total, deux cent cinquante-deux au maximum par statistique.",
+                source: "The Pokémon Company — Pokédex national et guides officiels."
+            },
+            {
+                id: 1309,
+                question: "Quel Pokémon légendaire est présenté comme le créateur de l'univers dans la quatrième génération ?",
+                options: ["Dialga", "Arceus", "Palkia", "Giratina"],
+                correct: 1,
+                explanation: "Le mythe de Sinnoh en fait l'origine de toute chose, capable de changer de type selon la plaque qu'il tient. Dialga régit le temps et Palkia l'espace.",
+                source: "The Pokémon Company — Pokédex national et guides officiels."
+            },
+            {
+                id: 1310,
+                question: "Quelle capacité met fin au combat en un coup si elle touche ?",
+                options: ["Ultralaser", "Guillotine", "Séisme", "Damoclès"],
+                correct: 1,
+                explanation: "Les capacités à K.O. direct comme Guillotine ou Glaciation ont une précision de trente pour cent et échouent contre un adversaire de niveau supérieur.",
+                source: "The Pokémon Company — Pokédex national et guides officiels."
+            },
+            {
+                id: 1311,
+                question: "Quel est le seul type sans faiblesse à l'issue de la sixième génération ?",
+                options: ["Le type Normal, insensible aux attaques Spectre", "Aucun type n'est sans faiblesse", "Le type Acier, qui résiste au plus grand nombre", "Le type Fée, introduit en sixième génération"],
+                correct: 1,
+                explanation: "Chaque type possède au moins une faiblesse. L'Acier en a le moins, avec seulement trois : Feu, Combat et Sol.",
+                source: "The Pokémon Company — Pokédex national et guides officiels."
+            },
+            {
+                id: 1312,
+                question: "Comment s'appelle l'organisation criminelle de la première génération ?",
+                options: ["La Team Aqua", "La Team Rocket", "La Team Galaxie", "La Team Plasma"],
+                correct: 1,
+                explanation: "Dirigée par Giovanni, également champion d'arène de Jadielle, elle exploite les Pokémon à des fins lucratives. Chaque région a ensuite eu son organisation.",
+                source: "The Pokémon Company — Pokédex national et guides officiels."
+            },
+            {
+                id: 1313,
+                question: "Quel phénomène de combat a été introduit dans Pokémon Épée et Bouclier ?",
+                options: ["La Méga-Évolution", "Le Dynamax", "Le Terastal", "La Transe Z"],
+                correct: 1,
+                explanation: "Le Dynamax gonfle le Pokémon pendant trois tours et renforce ses capacités. Le Terastal est arrivé plus tard, avec Écarlate et Violet.",
+                source: "Game Freak — historique des jeux."
+            },
+            {
+                id: 1314,
+                question: "Quel studio développe la série principale des jeux Pokémon ?",
+                options: ["Nintendo EPD", "Game Freak", "HAL Laboratory", "Creatures Inc."],
+                correct: 1,
+                explanation: "Fondé par Satoshi Tajiri en 1989, le studio développe les jeux tandis que Nintendo les édite. Creatures Inc. gère notamment le jeu de cartes.",
+                source: "Game Freak — historique des jeux."
             }
         ]
     }
@@ -14075,20 +16386,19 @@ const quizzesData = {
             },
             {
                 id: 401,
-                type: "vrai_faux",
-                question: "Spider-Man a été créé par Stan Lee et Steve Ditko.",
-                options: ["Vrai", "Faux"],
-                correct: 0,
-                explanation: "Vrai ! Le duo crée Spider-Man en 1962 dans Amazing Fantasy numéro 15. Ditko conçoit le costume emblématique, que l'éditeur trouvait au départ trop risqué.",
-                source: "Marvel Comics — Amazing Fantasy n°15, août 1962."
+                question: "Quelle est l'identité civile de Hulk ?",
+                options: ["Peter Parker", "Bruce Banner", "Clint Barton", "Sam Wilson"],
+                correct: 1,
+                explanation: "Physicien exposé aux rayons gamma lors d'un essai, il se transforme sous l'effet de la colère. Le personnage naît en 1962.",
+                source: "Marvel Comics — archives éditoriales."
             },
             {
                 id: 402,
-                question: "Quel métal compose le bouclier de Captain America ?",
-                options: ["L'adamantium", "Le vibranium", "L'uru", "Le titane"],
+                question: "Quelle ville Spider-Man protège-t-il principalement ?",
+                options: ["Gotham City", "New York", "Chicago", "Los Angeles"],
                 correct: 1,
-                explanation: "Le bouclier est fait d'un alliage de vibranium, métal originaire du Wakanda capable d'absorber les vibrations. L'adamantium est le métal du squelette de Wolverine.",
-                source: "Marvel Comics — Captain America Comics, 1941."
+                explanation: "Il opère surtout dans le Queens et Manhattan. Gotham City appartient à l'univers concurrent DC Comics.",
+                source: "Marvel Comics — archives éditoriales."
             },
             {
                 id: 403,
@@ -14266,11 +16576,11 @@ const quizzesData = {
             },
             {
                 id: 406,
-                question: "Combien y a-t-il de Pierres d'Infinité ?",
-                options: ["Quatre", "Six", "Huit", "Dix"],
+                question: "Quel personnage porte le nom de Vif-Argent ?",
+                options: ["Sam Wilson", "Pietro Maximoff", "Scott Lang", "Matt Murdock"],
                 correct: 1,
-                explanation: "Six pierres existent : Espace, Esprit, Réalité, Pouvoir, Temps et Âme. Réunies, elles confèrent un pouvoir quasi absolu sur l'univers.",
-                source: "Marvel Comics — The Infinity Gauntlet, 1991."
+                explanation: "Frère jumeau de la Sorcière Rouge, il possède une vitesse surhumaine. Il apparaît dans les comics dès 1964, au sein de la Confrérie avant de rejoindre les Vengeurs.",
+                source: "Marvel Comics — archives éditoriales."
             },
             {
                 id: 407,
@@ -14279,6 +16589,81 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Dans les comics, c'est Hank Pym, le premier Ant-Man, qui crée Ultron. Le film Avengers : L'Ère d'Ultron attribue cette création à Tony Stark et Bruce Banner.",
                 source: "Marvel Comics — Avengers n°54, 1968."
+            },
+            {
+                id: 1201,
+                type: "vrai_faux",
+                question: "Stan Lee apparaît en caméo dans de nombreux films Marvel.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Il a fait des apparitions dans la quasi-totalité des films de l'univers cinématographique jusqu'à sa mort en 2018. Certaines ont été tournées à l'avance.",
+                source: "Marvel Studios — productions cinématographiques."
+            },
+            {
+                id: 1202,
+                type: "vrai_faux",
+                question: "Daredevil est aveugle.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Matt Murdock a perdu la vue enfant dans un accident chimique qui a en retour décuplé ses autres sens. Avocat le jour, il combat le crime la nuit.",
+                source: "Marvel Comics — archives éditoriales."
+            },
+            {
+                id: 1203,
+                type: "vrai_faux",
+                question: "Les Quatre Fantastiques ont été créés avant les Vengeurs.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Leur premier numéro paraît en 1961, deux ans avant celui des Vengeurs. C'est ce succès qui a lancé l'ère Marvel moderne.",
+                source: "Marvel Comics — archives éditoriales."
+            },
+            {
+                id: 1204,
+                question: "Quel personnage est connu sous le nom de Docteur Strange ?",
+                options: ["Reed Richards", "Stephen Strange", "Bruce Banner", "Hank McCoy"],
+                correct: 1,
+                explanation: "Chirurgien réputé, il perd l'usage de ses mains dans un accident et découvre la magie au Népal. Il devient le Sorcier Suprême.",
+                source: "Marvel Comics — archives éditoriales."
+            },
+            {
+                id: 1205,
+                question: "Quel est le nom du frère adoptif de Thor ?",
+                options: ["Heimdall", "Loki", "Balder", "Fandral"],
+                correct: 1,
+                explanation: "Fils du roi des géants des glaces recueilli par Odin, il est le dieu de la malice. Son ambivalence en a fait l'un des personnages les plus populaires de la franchise.",
+                source: "Marvel Comics — archives éditoriales."
+            },
+            {
+                id: 1206,
+                question: "Dans quel film Spider-Man rejoint-il l'univers cinématographique Marvel ?",
+                options: ["Spider-Man: Homecoming", "Captain America: Civil War", "Avengers: Infinity War", "Doctor Strange"],
+                correct: 1,
+                explanation: "Il y apparaît en 2016 avant d'avoir son propre film l'année suivante. Cette arrivée a résulté d'un accord entre Sony et Marvel Studios.",
+                source: "Marvel Studios — productions cinématographiques."
+            },
+            {
+                id: 1207,
+                question: "Quelle est l'identité de Black Widow ?",
+                options: ["Carol Danvers", "Natasha Romanoff", "Wanda Maximoff", "Jennifer Walters"],
+                correct: 1,
+                explanation: "Ancienne espionne formée dans la Chambre rouge, elle rejoint le SHIELD puis les Vengeurs. Le personnage apparaît dans les comics dès 1964.",
+                source: "Marvel Comics — archives éditoriales."
+            },
+            {
+                id: 1208,
+                question: "Quel groupe de héros comprend Star-Lord et Gamora ?",
+                options: ["Les Illuminati réunis en conseil secret", "Les Gardiens de la Galaxie", "Les Inhumains du royaume d'Attilan", "Les Défenseurs réunis par Docteur Strange"],
+                correct: 1,
+                explanation: "L'équipe réunit aussi Drax, Rocket et Groot. Le film de 2014 a fait de personnages obscurs des vedettes mondiales.",
+                source: "Marvel Studios — productions cinématographiques."
+            },
+            {
+                id: 1209,
+                question: "Quelle est la particularité de la Panthère noire au combat ?",
+                options: ["Il vole grâce à un réacteur dorsal miniaturisé", "Il porte un costume en vibranium absorbant les chocs", "Il change de taille à volonté grâce aux particules Pym", "Il contrôle le métal par la pensée à grande distance"],
+                correct: 1,
+                explanation: "Son costume absorbe l'énergie cinétique et peut la restituer. Il tire aussi sa force d'une herbe rituelle propre au Wakanda.",
+                source: "Marvel Comics — archives éditoriales."
             }
         ],
         difficile: [
@@ -14412,6 +16797,1630 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Xavier fonde les X-Men et son institut pour jeunes mutants doués. Le premier numéro paraît en 1963, la même année que les Vengeurs.",
                 source: "Marvel Comics — The X-Men n°1, septembre 1963."
+            },
+            {
+                id: 1301,
+                type: "vrai_faux",
+                question: "Le personnage de Deadpool brise régulièrement le quatrième mur.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Il s'adresse directement au lecteur et commente sa propre nature de personnage de fiction. Ce procédé est devenu sa marque de fabrique dès les années 1990.",
+                source: "Marvel Comics — archives éditoriales."
+            },
+            {
+                id: 1302,
+                type: "vrai_faux",
+                question: "Les X-Men et les Vengeurs se sont déjà affrontés dans les comics.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! La série Avengers vs. X-Men, publiée en 2012, oppose les deux équipes autour de la Force Phénix. De tels crossovers rythment l'édition Marvel.",
+                source: "Marvel Comics — archives éditoriales."
+            },
+            {
+                id: 1303,
+                type: "vrai_faux",
+                question: "Le Punisher ne possède aucun super-pouvoir.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Frank Castle est un ancien militaire qui ne dispose que de son entraînement et de son armement. C'est ce qui le distingue radicalement des autres justiciers.",
+                source: "Marvel Comics — archives éditoriales."
+            },
+            {
+                id: 1304,
+                type: "vrai_faux",
+                question: "Captain Marvel a d'abord été un personnage masculin chez Marvel.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le titre a été porté par le Kree Mar-Vell dès 1967. Carol Danvers, longtemps appelée Miss Marvel, ne reprend le nom qu'en 2012.",
+                source: "Marvel Comics — archives éditoriales."
+            },
+            {
+                id: 1305,
+                question: "Quel événement des comics oppose les héros autour d'une loi d'enregistrement ?",
+                options: ["Secret Wars", "Civil War", "House of M", "Infinity Gauntlet"],
+                correct: 1,
+                explanation: "Publié en 2006, l'arc oppose Iron Man, favorable au recensement des super-héros, à Captain America qui s'y refuse. Il a inspiré le film de 2016.",
+                source: "Marvel Comics — archives éditoriales."
+            },
+            {
+                id: 1306,
+                question: "Quel est le nom du royaume dirigé par Namor ?",
+                options: ["Attilan", "Atlantis", "Asgard", "Wakanda"],
+                correct: 1,
+                explanation: "Prince des mers, Namor règne sur Atlantis. Apparu en 1939, il est l'un des tout premiers personnages Marvel, antérieur à la maison d'édition sous son nom actuel.",
+                source: "Marvel Comics — archives éditoriales."
+            },
+            {
+                id: 1307,
+                question: "Quel arc de comics fait dire à la Sorcière Rouge qu'il ne reste plus de mutants ?",
+                options: ["Civil War", "House of M", "Secret Invasion", "Age of Apocalypse"],
+                correct: 1,
+                explanation: "Publié en 2005, il se conclut sur une phrase qui prive la quasi-totalité des mutants de leurs pouvoirs. Ses conséquences ont structuré l'édition Marvel pendant des années.",
+                source: "Marvel Comics — House of M, 2005."
+            },
+            {
+                id: 1308,
+                question: "Quel personnage porte le titre de Sorcier Suprême avant Stephen Strange ?",
+                options: ["Wong", "L'Ancien", "Mordo", "Clea"],
+                correct: 1,
+                explanation: "L'Ancien détenait le titre et forme Strange avant de le lui transmettre. Mordo, autre disciple, deviendra un adversaire.",
+                source: "Marvel Comics — archives éditoriales."
+            },
+            {
+                id: 1309,
+                question: "Quelle équipe de mutants est dirigée par Magnéto dans les comics ?",
+                options: ["Les Nouveaux Mutants", "La Confrérie des mauvais mutants", "Les Éternels", "Les Vengeurs de la Côte Ouest"],
+                correct: 1,
+                explanation: "Fondée en opposition au projet de coexistence de Xavier, elle prône la suprématie mutante. Les deux hommes ont pourtant été proches.",
+                source: "Marvel Comics — archives éditoriales."
+            },
+            {
+                id: 1310,
+                question: "Quel métal compose le squelette de Wolverine ?",
+                options: ["Le vibranium", "L'adamantium", "L'uru", "Le carbonadium"],
+                correct: 1,
+                explanation: "Greffé de force lors du programme Arme X, ce métal indestructible recouvre ses os et ses griffes. Son facteur de guérison lui a permis de survivre à l'opération.",
+                source: "Marvel Comics — archives éditoriales."
+            },
+            {
+                id: 1311,
+                question: "Quel film clôt la Saga de l'Infini au cinéma ?",
+                options: ["Avengers: Infinity War", "Avengers: Endgame", "Spider-Man: Far From Home", "Captain Marvel"],
+                correct: 1,
+                explanation: "Sorti en 2019, il conclut vingt-deux films. Far From Home fait office d'épilogue à la phase.",
+                source: "Marvel Studios — productions cinématographiques."
+            },
+            {
+                id: 1312,
+                question: "Quel personnage est aussi connu sous le nom de Bucky Barnes ?",
+                options: ["Falcon, devenu ensuite Captain America", "Le Soldat de l'hiver", "Crossbones, homme de main du Crâne rouge", "Agent 13, du SHIELD puis de la CIA"],
+                correct: 1,
+                explanation: "Ami d'enfance de Steve Rogers, il est capturé puis conditionné comme assassin par l'Hydra. Il reprendra un temps le bouclier de Captain America.",
+                source: "Marvel Comics — archives éditoriales."
+            },
+            {
+                id: 1313,
+                question: "Quel est le vrai nom de la Sorcière Rouge ?",
+                options: ["Jean Grey", "Wanda Maximoff", "Ororo Munroe", "Betsy Braddock"],
+                correct: 1,
+                explanation: "Sœur jumelle de Vif-Argent, elle manipule la probabilité puis la magie du chaos. Le récit House of M la place au cœur d'une réécriture de la réalité.",
+                source: "Marvel Comics — archives éditoriales."
+            },
+            {
+                id: 1314,
+                question: "Quelle équipe Nick Fury dirige-t-il ?",
+                options: ["Le Damage Control", "Le SHIELD", "Le SWORD à l'origine", "La Division Alpha"],
+                correct: 1,
+                explanation: "Le SHIELD est une agence de renseignement chargée des menaces extraordinaires. Fury en est le directeur et l'initiateur du projet Avengers.",
+                source: "Marvel Studios — productions cinématographiques."
+            }
+        ]
+    },
+    musique: {
+        title: "La Musique",
+        description: "Instruments, solfège, grands compositeurs et histoire des musiques du monde",
+        facile: [
+            {
+                id: 1,
+                type: "vrai_faux",
+                question: "Une octave contient douze demi-tons.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Du do au do suivant, on compte douze demi-tons. C'est la base du système tempéré occidental, celui du piano où l'on trouve sept touches blanches et cinq noires par octave.",
+                source: "Conservatoire national supérieur de musique de Paris — bases du solfège."
+            },
+            {
+                id: 2,
+                type: "vrai_faux",
+                question: "Beethoven était devenu sourd à la fin de sa vie.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Sa surdité s'installe dès la trentaine et devient totale vers 1818. Il a composé la Neuvième Symphonie sans pouvoir l'entendre, et il a fallu le retourner vers le public pour qu'il voie les applaudissements à la création.",
+                source: "Beethoven-Haus Bonn — correspondance et cahiers de conversation."
+            },
+            {
+                id: 3,
+                type: "vrai_faux",
+                question: "Le violon se joue uniquement avec un archet.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Le pizzicato consiste à pincer les cordes avec les doigts. De nombreuses partitions l'exigent, et il est très courant dans le jazz et les musiques traditionnelles.",
+                source: "Conservatoire national supérieur de musique de Paris — techniques de cordes."
+            },
+            {
+                id: 4,
+                question: "Combien de touches compte un piano de concert standard ?",
+                options: ["Soixante-douze touches", "Quatre-vingt-huit touches", "Cent deux touches", "Soixante-quatre touches"],
+                correct: 1,
+                explanation: "Le piano moderne compte quatre-vingt-huit touches, soit sept octaves et un peu plus, du la le plus grave au do le plus aigu. Ce format s'est imposé à la fin du dix-neuvième siècle.",
+                source: "Steinway & Sons — histoire du piano moderne."
+            },
+            {
+                id: 5,
+                question: "Combien de cordes possède une guitare classique ?",
+                options: ["Quatre cordes en nylon", "Six cordes en nylon", "Huit cordes doublées", "Douze cordes métalliques"],
+                correct: 1,
+                explanation: "La guitare classique compte six cordes en nylon, accordées mi la ré sol si mi. La guitare douze cordes double chaque corde pour enrichir le son.",
+                source: "Musée de la musique, Philharmonie de Paris — famille des guitares."
+            },
+            {
+                id: 6,
+                question: "Quel est l'instrument le plus grave de la famille des cordes frottées ?",
+                options: ["L'alto, à peine plus grand que le violon", "La contrebasse", "Le violoncelle, joué entre les jambes", "Le violon baryton"],
+                correct: 1,
+                explanation: "La contrebasse descend plus bas que le violoncelle. Elle est si grande que le musicien joue debout ou perché sur un tabouret, et elle sert de socle harmonique à l'orchestre.",
+                source: "Philharmonie de Paris — les instruments de l'orchestre."
+            },
+            {
+                id: 7,
+                question: "Comment appelle-t-on un ensemble de quatre musiciens ?",
+                options: ["Un quintette", "Un quatuor", "Un trio élargi", "Un octuor"],
+                correct: 1,
+                explanation: "Le quatuor à cordes réunit deux violons, un alto et un violoncelle. C'est l'une des formations les plus exigeantes, Haydn en ayant fixé la forme au dix-huitième siècle.",
+                source: "Philharmonie de Paris — formations de musique de chambre."
+            },
+            {
+                id: 8,
+                question: "Quel compositeur a écrit la Neuvième Symphonie et son Ode à la joie ?",
+                options: ["Wolfgang Amadeus Mozart", "Ludwig van Beethoven", "Johann Sebastian Bach", "Franz Schubert"],
+                correct: 1,
+                explanation: "Créée en 1824, cette symphonie introduit pour la première fois un chœur dans le genre. L'Ode à la joie est devenue l'hymne officiel de l'Union européenne.",
+                source: "Beethoven-Haus Bonn — Symphonie n°9 en ré mineur."
+            },
+            {
+                id: 9,
+                question: "Quel instrument à vent utilise une anche double ?",
+                options: ["La clarinette", "Le hautbois", "La flûte traversière", "La trompette"],
+                correct: 1,
+                explanation: "Le hautbois et le basson utilisent deux lamelles de roseau qui vibrent l'une contre l'autre. La clarinette n'en a qu'une, et la flûte aucune : le son y naît du souffle sur un biseau.",
+                source: "Philharmonie de Paris — les bois de l'orchestre."
+            },
+            {
+                id: 10,
+                question: "Que mesure le tempo d'un morceau ?",
+                options: ["Sa hauteur générale", "Sa vitesse d'exécution", "Son volume sonore", "Sa durée totale"],
+                correct: 1,
+                explanation: "Le tempo s'exprime en battements par minute. Une marche tourne autour de cent vingt, une berceuse autour de soixante. Les indications italiennes comme allegro ou adagio le désignaient avant le métronome.",
+                source: "Conservatoire national supérieur de musique de Paris — bases du solfège."
+            },
+            {
+                id: 11,
+                question: "Quel groupe britannique a enregistré l'album Abbey Road ?",
+                options: ["Les Rolling Stones", "Les Beatles", "Pink Floyd", "Led Zeppelin"],
+                correct: 1,
+                explanation: "Sorti en 1969, c'est le dernier album enregistré ensemble par le groupe. Sa pochette, montrant le passage piéton devant le studio, est l'une des plus imitées de l'histoire.",
+                source: "Abbey Road Studios — archives de production."
+            },
+            {
+                id: 12,
+                question: "Quelle est la voix féminine la plus aiguë ?",
+                options: ["Le contralto", "Le soprano", "Le mezzo-soprano", "Le ténor"],
+                correct: 1,
+                explanation: "Le soprano occupe le registre le plus haut, suivi du mezzo-soprano puis du contralto, la plus grave. Le ténor est une voix d'homme.",
+                source: "Opéra national de Paris — classification des voix."
+            },
+            {
+                id: 101,
+                type: "vrai_faux",
+                question: "Le violoncelle se joue debout.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Le musicien est assis, l'instrument calé entre les jambes et posé sur une pique. C'est la contrebasse qui se joue debout ou sur un tabouret haut.",
+                source: "Philharmonie de Paris — ressources pédagogiques."
+            },
+            {
+                id: 102,
+                type: "vrai_faux",
+                question: "L'orgue est l'instrument qui compte le plus de tuyaux.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Un grand orgue d'église peut aligner plusieurs milliers de tuyaux, du plus petit comme un crayon au plus grand de plus de dix mètres. Chaque jeu correspond à une couleur sonore différente.",
+                source: "Philharmonie de Paris — ressources pédagogiques."
+            },
+            {
+                id: 103,
+                type: "vrai_faux",
+                question: "La batterie fait partie de la famille des cordes.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Elle appartient aux percussions. Le batteur frappe peaux et cymbales, sans qu'aucune corde n'entre en jeu.",
+                source: "Philharmonie de Paris — ressources pédagogiques."
+            },
+            {
+                id: 104,
+                type: "vrai_faux",
+                question: "Un chef d'orchestre produit du son avec sa baguette.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Sa baguette ne sonne pas. Il indique le tempo, les nuances et les entrées, et c'est en répétition qu'il façonne l'interprétation.",
+                source: "Philharmonie de Paris — ressources pédagogiques."
+            },
+            {
+                id: 105,
+                type: "vrai_faux",
+                question: "Mozart composait déjà enfant.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Ses premières pièces datent de ses cinq ans, et son père l'a promené dans toutes les cours d'Europe. Il a laissé plus de six cents œuvres avant de mourir à trente-cinq ans.",
+                source: "Mozarteum de Salzbourg — catalogue Köchel."
+            },
+            {
+                id: 106,
+                question: "Quel instrument possède un clavier et des marteaux frappant des cordes ?",
+                options: ["L'orgue", "Le piano", "Le clavecin", "L'accordéon"],
+                correct: 1,
+                explanation: "Le piano frappe ses cordes avec des marteaux feutrés, ce qui permet de jouer fort ou doux selon la force du doigt. Le clavecin, lui, les pince, d'où un volume presque invariable.",
+                source: "Philharmonie de Paris — ressources pédagogiques."
+            },
+            {
+                id: 107,
+                question: "Comment appelle-t-on les sept notes de la gamme en France ?",
+                options: ["A, B, C, D, E, F, G", "Do, ré, mi, fa, sol, la, si", "Alpha, bêta, gamma et suivantes", "I, II, III, IV, V, VI, VII"],
+                correct: 1,
+                explanation: "Ces syllabes viennent d'un hymne latin à saint Jean, chaque vers commençant un degré plus haut. Les pays anglo-saxons et germaniques utilisent les lettres.",
+                source: "Conservatoire national supérieur de musique de Paris — bases du solfège."
+            },
+            {
+                id: 108,
+                question: "Quel instrument est associé à la musique traditionnelle écossaise ?",
+                options: ["La cornemuse", "Le banjo", "La balalaïka", "Le sitar"],
+                correct: 0,
+                explanation: "L'air entre dans un sac que le joueur presse sous le bras, ce qui donne un son continu. Le banjo vient des États-Unis, la balalaïka de Russie et le sitar d'Inde.",
+                source: "Philharmonie de Paris — ressources pédagogiques."
+            },
+            {
+                id: 109,
+                question: "Que signifie le terme forte sur une partition ?",
+                options: ["Jouer plus vite", "Jouer fort", "Jouer plus lentement", "Jouer de façon détachée"],
+                correct: 1,
+                explanation: "Les nuances vont de pianissimo, très doux, à fortissimo, très fort. Elles sont écrites en italien car les premiers imprimeurs de musique étaient italiens.",
+                source: "Conservatoire national supérieur de musique de Paris — bases du solfège."
+            },
+            {
+                id: 110,
+                question: "Quel instrument à cordes se pince avec les doigts et possède une caisse triangulaire ?",
+                options: ["Le violon", "La harpe", "La mandoline", "Le luth"],
+                correct: 1,
+                explanation: "La harpe de concert compte quarante-sept cordes et sept pédales qui modifient la hauteur des notes. C'est l'un des plus anciens instruments connus.",
+                source: "Philharmonie de Paris — ressources pédagogiques."
+            },
+            {
+                id: 111,
+                question: "Quel groupe suédois a connu un succès mondial avec Dancing Queen ?",
+                options: ["Roxette", "ABBA", "A-ha", "Europe"],
+                correct: 1,
+                explanation: "Formé en 1972, le quatuor s'est fait connaître en remportant le concours Eurovision avec Waterloo. Ses chansons ont donné naissance à la comédie musicale Mamma Mia.",
+                source: "Rock and Roll Hall of Fame — dossier ABBA."
+            },
+            {
+                id: 112,
+                question: "Quel instrument Louis Armstrong jouait-il ?",
+                options: ["Le trombone", "La trompette", "Le saxophone", "La clarinette basse"],
+                correct: 1,
+                explanation: "Il a imposé le solo improvisé comme cœur du jazz et popularisé le scat, ce chant sans paroles. Sa voix rauque est devenue aussi célèbre que son jeu.",
+                source: "Smithsonian Institution — collection jazz."
+            },
+            {
+                id: 113,
+                question: "Comment appelle-t-on l'ensemble des musiciens dirigé par un chef ?",
+                options: ["Une chorale", "Un orchestre", "Une fanfare de rue", "Un conservatoire"],
+                correct: 1,
+                explanation: "L'orchestre symphonique réunit cordes, bois, cuivres et percussions, parfois plus de cent musiciens. La chorale ne regroupe que des voix.",
+                source: "Philharmonie de Paris — ressources pédagogiques."
+            },
+            {
+                id: 114,
+                question: "Quel style musical est né en Jamaïque dans les années 1960 ?",
+                options: ["Le blues", "Le reggae", "La salsa", "Le fado"],
+                correct: 1,
+                explanation: "Caractérisé par son accentuation sur les temps faibles, il a été porté dans le monde entier par Bob Marley. Il descend du ska et du rocksteady.",
+                source: "UNESCO — patrimoine culturel immatériel de l'humanité."
+            },
+            {
+                id: 115,
+                question: "Que fait un luthier ?",
+                options: ["Il dirige les répétitions", "Il fabrique et répare les instruments à cordes", "Il compose pour le théâtre", "Il enregistre les disques"],
+                correct: 1,
+                explanation: "Le métier tire son nom du luth. Un violon de facture artisanale demande plusieurs centaines d'heures de travail et plus de soixante-dix pièces de bois.",
+                source: "Philharmonie de Paris — ressources pédagogiques."
+            },
+            {
+                id: 116,
+                question: "Quel opéra de Bizet met en scène une cigarière andalouse ?",
+                options: ["La Traviata", "Carmen", "Tosca", "La Bohème"],
+                correct: 1,
+                explanation: "Créé en 1875, l'ouvrage fut d'abord un échec avant de devenir l'un des opéras les plus joués au monde. Bizet est mort trois mois après la première.",
+                source: "Opéra national de Paris — répertoire lyrique."
+            },
+            {
+                id: 117,
+                question: "Quel instrument à vent est le plus grave des cuivres d'orchestre ?",
+                options: ["Le trombone", "Le tuba", "Le cor d'harmonie", "La trompette basse"],
+                correct: 1,
+                explanation: "Le tuba peut développer plus de cinq mètres de tubage une fois déroulé. Il fonde l'assise grave de la section de cuivres.",
+                source: "Philharmonie de Paris — ressources pédagogiques."
+            },
+            {
+                id: 118,
+                question: "Que désigne une partition ?",
+                options: ["La salle où joue l'orchestre", "Le document écrit qui note la musique", "La durée totale d'un concert", "Le nom de la note la plus grave"],
+                correct: 1,
+                explanation: "Elle superpose les portées de chaque instrument, ce qui permet au chef de tout lire d'un coup d'œil. Chaque musicien ne dispose en général que de sa propre ligne.",
+                source: "Conservatoire national supérieur de musique de Paris — bases du solfège."
+            }
+        ],
+        moyen: [
+            {
+                id: 13,
+                type: "vrai_faux",
+                question: "Les quatre cordes du violon sont accordées par quintes.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Sol, ré, la et mi s'enchaînent de quinte en quinte. Cet accord régulier facilite les doigtés et donne à l'instrument son ambitus de plus de trois octaves.",
+                source: "Conservatoire national supérieur de musique de Paris — accord des cordes."
+            },
+            {
+                id: 14,
+                type: "vrai_faux",
+                question: "Le jazz est né à La Nouvelle-Orléans.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! La ville a vu converger au début du vingtième siècle le blues, le ragtime, les fanfares et les chants de travail. Le style a ensuite remonté le Mississippi jusqu'à Chicago puis New York.",
+                source: "Smithsonian Institution — National Museum of American History, collection jazz."
+            },
+            {
+                id: 15,
+                type: "vrai_faux",
+                question: "Une grille de blues compte traditionnellement seize mesures.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! La grille classique en compte douze, réparties en trois groupes de quatre sur les degrés I, IV et V. Cette structure est devenue le socle du rock et de la soul.",
+                source: "Smithsonian Institution — histoire du blues."
+            },
+            {
+                id: 16,
+                question: "Qui a composé Les Quatre Saisons ?",
+                options: ["Jean-Sébastien Bach", "Antonio Vivaldi", "Georg Friedrich Haendel", "Arcangelo Corelli"],
+                correct: 1,
+                explanation: "Publié vers 1725, ce cycle de quatre concertos pour violon accompagne chacun un sonnet décrivant la saison. C'est l'une des premières grandes œuvres de musique descriptive.",
+                source: "Bibliothèque nationale de France — fonds Vivaldi."
+            },
+            {
+                id: 17,
+                question: "Combien de temps compte une mesure à trois quarts ?",
+                options: ["Deux noires par mesure", "Trois noires par mesure", "Quatre noires par mesure", "Six croches par mesure"],
+                correct: 1,
+                explanation: "Le chiffre du haut donne le nombre de temps, celui du bas l'unité. Trois quarts signifie donc trois noires : c'est la mesure de la valse.",
+                source: "Conservatoire national supérieur de musique de Paris — bases du solfège."
+            },
+            {
+                id: 18,
+                question: "Qui a composé la Symphonie du Nouveau Monde ?",
+                options: ["Piotr Ilitch Tchaïkovski", "Antonín Dvořák", "Gustav Mahler", "Jean Sibelius"],
+                correct: 1,
+                explanation: "Écrite en 1893 pendant son séjour aux États-Unis, elle mêle son écriture tchèque à des couleurs inspirées des musiques afro-américaines et amérindiennes. Neil Armstrong l'a emportée sur la Lune.",
+                source: "Musée Antonín Dvořák, Prague — Symphonie n°9."
+            },
+            {
+                id: 19,
+                question: "Quel instrument Miles Davis a-t-il rendu célèbre ?",
+                options: ["Le saxophone ténor", "La trompette", "Le piano", "La contrebasse"],
+                correct: 1,
+                explanation: "Sa sonorité dépouillée, souvent avec sourdine, a marqué le jazz de Kind of Blue au jazz-rock de Bitches Brew. Il a réinventé son style à chaque décennie.",
+                source: "Smithsonian Institution — collection jazz."
+            },
+            {
+                id: 20,
+                question: "Qu'est-ce qu'un accord parfait majeur ?",
+                options: ["Une fondamentale et sa seule octave", "Une fondamentale, sa tierce majeure et sa quinte juste", "Trois notes séparées par des secondes", "Une superposition de quatre quintes"],
+                correct: 1,
+                explanation: "Do, mi et sol forment l'accord parfait de do majeur. Abaisser la tierce d'un demi-ton donne l'accord mineur, à la couleur plus sombre.",
+                source: "Conservatoire national supérieur de musique de Paris — harmonie tonale."
+            },
+            {
+                id: 21,
+                question: "Quelle famille d'instruments regroupe le xylophone et le vibraphone ?",
+                options: ["Les cordes pincées", "Les percussions à clavier", "Les cuivres graves", "Les bois à anche"],
+                correct: 1,
+                explanation: "Ces instruments à lames se jouent avec des mailloches. Le xylophone a des lames en bois, le vibraphone des lames métalliques et un moteur qui crée le vibrato.",
+                source: "Philharmonie de Paris — famille des percussions."
+            },
+            {
+                id: 31,
+                question: "Quel instrument est au centre du concerto pour clarinette de Mozart ?",
+                options: ["Le hautbois", "La clarinette", "Le basson", "Le cor de basset moderne"],
+                correct: 1,
+                explanation: "Composé en 1791, quelques semaines avant la mort de Mozart, il fut écrit pour son ami Anton Stadler. C'est l'une des pages les plus jouées du répertoire de l'instrument.",
+                source: "Mozarteum de Salzbourg — catalogue Köchel."
+            },
+            {
+                id: 32,
+                question: "Que désigne le terme a cappella ?",
+                options: ["Un chant accompagné au seul piano", "Un chant sans aucun accompagnement", "Un morceau joué à deux instruments", "Un passage improvisé par le soliste"],
+                correct: 1,
+                explanation: "L'expression vient de la musique d'église, chantée sans instruments. Elle désigne aujourd'hui toute formation vocale qui se passe d'accompagnement.",
+                source: "Philharmonie de Paris — lexique musical."
+            },
+            {
+                id: 33,
+                question: "Quel courant musical Elvis Presley a-t-il popularisé dans les années 1950 ?",
+                options: ["Le rhythm and blues traditionnel", "Le rock and roll", "La country classique", "Le doo-wop vocal"],
+                correct: 1,
+                explanation: "En mêlant blues, country et gospel, il a porté ce style neuf auprès du grand public américain. Sun Records à Memphis fut le laboratoire de cette rencontre.",
+                source: "Rock and Roll Hall of Fame — dossier Elvis Presley."
+            },
+            {
+                id: 101,
+                type: "vrai_faux",
+                question: "Une gamme mineure naturelle utilise les mêmes notes que sa relative majeure.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! La mineur et do majeur partagent exactement les mêmes sept notes, seule la note de départ change. C'est ce qui donne à chaque tonalité majeure une relative mineure.",
+                source: "Conservatoire national supérieur de musique de Paris — traité d'harmonie."
+            },
+            {
+                id: 102,
+                type: "vrai_faux",
+                question: "Le saxophone appartient à la famille des cuivres.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Malgré son corps en métal, il est classé dans les bois car le son naît de la vibration d'une anche, comme à la clarinette. La classification tient au mode de production du son, pas au matériau.",
+                source: "Philharmonie de Paris — ressources pédagogiques."
+            },
+            {
+                id: 103,
+                type: "vrai_faux",
+                question: "Le Boléro de Ravel repose sur un unique thème répété.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le même thème revient dix-huit fois sur un rythme de caisse claire immuable, seule l'orchestration change. Ravel lui-même le décrivait comme une œuvre sans musique.",
+                source: "Bibliothèque nationale de France — fonds Maurice Ravel."
+            },
+            {
+                id: 104,
+                type: "vrai_faux",
+                question: "Un métronome indique la nuance à jouer.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Il donne la vitesse, en battements par minute. Les nuances comme piano ou forte concernent l'intensité et se lisent directement sur la partition.",
+                source: "Conservatoire national supérieur de musique de Paris — traité d'harmonie."
+            },
+            {
+                id: 105,
+                type: "vrai_faux",
+                question: "La gamme pentatonique compte cinq notes.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Présente dans les musiques traditionnelles du monde entier comme dans le blues et le rock, elle évite les demi-tons les plus tendus, ce qui la rend très consonante.",
+                source: "Conservatoire national supérieur de musique de Paris — traité d'harmonie."
+            },
+            {
+                id: 106,
+                question: "Qu'est-ce qu'une modulation en musique ?",
+                options: ["Un changement de nuance progressif", "Un changement de tonalité au cours du morceau", "Une variation du tempo", "Un effet de vibrato à la main gauche"],
+                correct: 1,
+                explanation: "Le compositeur quitte la tonalité de départ pour une autre, souvent voisine, avant d'y revenir. C'est l'un des principaux moteurs de tension et de renouvellement du discours.",
+                source: "Conservatoire national supérieur de musique de Paris — traité d'harmonie."
+            },
+            {
+                id: 107,
+                question: "Quel compositeur a écrit l'opéra La Flûte enchantée ?",
+                options: ["Giuseppe Verdi", "Wolfgang Amadeus Mozart", "Richard Wagner", "Gioachino Rossini"],
+                correct: 1,
+                explanation: "Créé en 1791, quelques semaines avant sa mort, cet opéra en allemand mêle conte initiatique et symbolique maçonnique. L'air de la Reine de la nuit est l'un des plus redoutés du répertoire.",
+                source: "Mozarteum de Salzbourg — catalogue Köchel."
+            },
+            {
+                id: 108,
+                question: "Que désigne le terme crescendo ?",
+                options: ["Un ralentissement progressif", "Une augmentation progressive de l'intensité", "Un retour au thème initial", "Un silence prolongé"],
+                correct: 1,
+                explanation: "Il se note par un angle qui s'ouvre sous la portée. Son contraire, le decrescendo, referme l'angle et fait diminuer le son.",
+                source: "Conservatoire national supérieur de musique de Paris — traité d'harmonie."
+            },
+            {
+                id: 109,
+                question: "Quel style est né à Vienne et se danse à trois temps ?",
+                options: ["Le tango", "La valse", "Le boléro", "La mazurka"],
+                correct: 1,
+                explanation: "Popularisée au dix-neuvième siècle par la famille Strauss, elle a d'abord scandalisé parce que les danseurs se tenaient enlacés. Le Beau Danube bleu en est l'exemple le plus célèbre.",
+                source: "Philharmonie de Paris — ressources pédagogiques."
+            },
+            {
+                id: 110,
+                question: "Quel groupe a enregistré l'album The Dark Side of the Moon ?",
+                options: ["Led Zeppelin", "Pink Floyd", "The Who", "Genesis"],
+                correct: 1,
+                explanation: "Sorti en 1973, il est resté plus de quinze ans dans les classements américains. Son prisme en couverture est devenu l'une des images les plus reconnaissables du rock.",
+                source: "Rock and Roll Hall of Fame — dossier Pink Floyd."
+            },
+            {
+                id: 111,
+                question: "Qu'appelle-t-on un leitmotiv ?",
+                options: ["Un passage joué deux fois de suite", "Un thème associé à un personnage ou une idée", "La note la plus aiguë d'une œuvre", "Une pause marquée entre deux mouvements"],
+                correct: 1,
+                explanation: "Wagner en a systématisé l'usage dans ses opéras : chaque personnage, objet ou sentiment possède son motif, qui se transforme au fil de l'action. Le cinéma en a hérité directement.",
+                source: "Bayreuther Festspiele — dossiers sur l'œuvre de Wagner."
+            },
+            {
+                id: 112,
+                question: "Quel instrument tient la ligne de basse dans un groupe de rock ?",
+                options: ["La guitare rythmique", "La basse électrique", "Le clavier d'accompagnement", "La caisse claire"],
+                correct: 1,
+                explanation: "Généralement à quatre cordes, elle relie l'harmonie au rythme en dialoguant avec la grosse caisse. Elle s'est imposée dans les années 1950 avec la Fender Precision.",
+                source: "Philharmonie de Paris — ressources pédagogiques."
+            },
+            {
+                id: 113,
+                question: "Quelle danse argentine est née dans les faubourgs de Buenos Aires ?",
+                options: ["La samba", "Le tango", "La rumba", "Le flamenco"],
+                correct: 1,
+                explanation: "Né à la fin du dix-neuvième siècle dans les quartiers populaires, il doit sa couleur au bandonéon. Astor Piazzolla l'a plus tard hissé au rang de musique de concert.",
+                source: "UNESCO — patrimoine culturel immatériel de l'humanité."
+            },
+            {
+                id: 114,
+                question: "Qu'est-ce qu'un arpège ?",
+                options: ["Un accord dont les notes sont jouées successivement", "Un accord plaqué d'un seul coup", "Une gamme jouée très vite", "Un silence entre deux phrases"],
+                correct: 1,
+                explanation: "Le mot vient de l'italien arpeggiare, jouer de la harpe. C'est la base de l'accompagnement à la guitare comme au piano.",
+                source: "Conservatoire national supérieur de musique de Paris — traité d'harmonie."
+            },
+            {
+                id: 115,
+                question: "Quel compositeur est l'auteur des Nocturnes pour piano les plus célèbres ?",
+                options: ["Franz Liszt", "Frédéric Chopin", "Robert Schumann", "Johannes Brahms"],
+                correct: 1,
+                explanation: "Il a porté ce genre nocturne, inventé par John Field, à son sommet expressif. Presque toute son œuvre est écrite pour le piano seul.",
+                source: "Bibliothèque nationale de France — fonds Frédéric Chopin."
+            },
+            {
+                id: 116,
+                question: "Que désigne le solfège ?",
+                options: ["L'art de fabriquer les instruments", "L'apprentissage de la lecture et de l'écriture musicales", "La direction d'un ensemble vocal", "L'accord d'un piano"],
+                correct: 1,
+                explanation: "Il couvre la lecture des notes, le rythme, les intervalles et la dictée musicale. Longtemps préalable obligatoire, il est aujourd'hui souvent enseigné en parallèle de l'instrument.",
+                source: "Conservatoire national supérieur de musique de Paris — traité d'harmonie."
+            },
+            {
+                id: 117,
+                question: "Quel instrument à clavier fonctionne avec un soufflet actionné par le musicien ?",
+                options: ["Le clavecin", "L'accordéon", "Le célesta", "L'orgue de barbarie"],
+                correct: 1,
+                explanation: "Le soufflet pousse l'air à travers des anches métalliques libres. Instrument populaire par excellence, il est présent du musette au tango en passant par les musiques d'Europe de l'Est.",
+                source: "Philharmonie de Paris — ressources pédagogiques."
+            },
+            {
+                id: 118,
+                question: "Quel groupe irlandais est mené par le chanteur Bono ?",
+                options: ["The Cranberries", "U2", "The Corrs", "Thin Lizzy"],
+                correct: 1,
+                explanation: "Formé à Dublin en 1976, le quatuor a marqué les années 1980 avec The Joshua Tree. Il reste l'un des groupes les plus primés de l'histoire des Grammy Awards.",
+                source: "Recording Academy — palmarès des Grammy Awards."
+            }
+        ],
+        difficile: [
+            {
+                id: 22,
+                type: "vrai_faux",
+                question: "Le diapason international est fixé à 440 hertz.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le la du milieu du clavier a été normalisé à 440 hertz en 1939 puis confirmé en 1955. Certains orchestres montent volontairement à 442 ou 443 pour un son plus brillant.",
+                source: "Organisation internationale de normalisation — norme ISO 16."
+            },
+            {
+                id: 23,
+                type: "vrai_faux",
+                question: "Une quinte juste correspond à un rapport de fréquences de trois sur deux.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Cette proportion simple explique pourquoi l'intervalle sonne si stable à l'oreille. Pythagore l'avait déjà mise en évidence sur une corde tendue.",
+                source: "Institut de recherche et coordination acoustique-musique — acoustique musicale."
+            },
+            {
+                id: 24,
+                type: "vrai_faux",
+                question: "Le contrepoint consiste à jouer plusieurs mélodies indépendantes simultanément.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Chaque voix garde sa propre ligne tout en s'accordant aux autres. Bach en a poussé l'art à son sommet avec L'Art de la fugue.",
+                source: "Bach-Archiv Leipzig — traités d'écriture."
+            },
+            {
+                id: 25,
+                question: "Qu'est-ce qu'une cadence parfaite en harmonie tonale ?",
+                options: ["Un passage du premier au quatrième degré", "Un enchaînement du cinquième au premier degré", "Une suspension prolongée de l'accord final", "Une modulation vers le ton voisin"],
+                correct: 1,
+                explanation: "L'enchaînement dominante puis tonique produit la conclusion la plus stable qui soit. C'est la ponctuation finale de l'immense majorité des œuvres tonales.",
+                source: "Conservatoire national supérieur de musique de Paris — traité d'harmonie."
+            },
+            {
+                id: 26,
+                question: "Quel compositeur a théorisé le dodécaphonisme ?",
+                options: ["Igor Stravinsky", "Arnold Schoenberg", "Claude Debussy", "Béla Bartók"],
+                correct: 1,
+                explanation: "Vers 1923, il propose d'organiser les douze sons en séries où aucune note ne se répète avant que toutes soient entendues. Ses élèves Berg et Webern prolongeront la méthode.",
+                source: "Arnold Schönberg Center, Vienne — écrits théoriques."
+            },
+            {
+                id: 27,
+                question: "Quelle œuvre a provoqué un scandale lors de sa création en 1913 ?",
+                options: ["Le Boléro de Ravel", "Le Sacre du printemps de Stravinsky", "La Mer de Debussy", "Le Pierrot lunaire de Schoenberg"],
+                correct: 1,
+                explanation: "La première au Théâtre des Champs-Élysées a tourné à l'émeute : rythmes heurtés, dissonances et chorégraphie de Nijinski ont divisé la salle. L'œuvre est aujourd'hui un pilier du répertoire.",
+                source: "Bibliothèque nationale de France — archives des Ballets russes."
+            },
+            {
+                id: 28,
+                question: "À quel degré de la gamme correspond le mode dorien ?",
+                options: ["Au premier degré, sur do", "Au deuxième degré, sur ré", "Au quatrième degré, sur fa", "Au cinquième degré, sur sol"],
+                correct: 1,
+                explanation: "Jouer les touches blanches de ré à ré donne le mode dorien, mineur mais avec une sixte majeure. Très utilisé dans le jazz modal et les musiques traditionnelles.",
+                source: "Conservatoire national supérieur de musique de Paris — modes anciens."
+            },
+            {
+                id: 29,
+                question: "Qui a posé les bases de la notation sur portée au onzième siècle ?",
+                options: ["Grégoire le Grand", "Guido d'Arezzo", "Pérotin", "Philippe de Vitry"],
+                correct: 1,
+                explanation: "Ce moine italien met au point la portée à lignes et nomme les notes d'après un hymne à saint Jean. Sa méthode permet enfin d'apprendre un chant sans l'avoir entendu.",
+                source: "Bibliothèque apostolique vaticane — manuscrits de Guido d'Arezzo."
+            },
+            {
+                id: 30,
+                question: "Que signifie le tempérament égal utilisé sur le piano ?",
+                options: ["Chaque octave est accordée un peu plus haut", "L'octave est divisée en douze intervalles identiques", "Seules les quintes sont parfaitement justes", "Les tierces sont accordées selon les proportions naturelles"],
+                correct: 1,
+                explanation: "Ce compromis rend tous les intervalles légèrement faux mais également faux, ce qui permet de jouer dans les vingt-quatre tonalités sans réaccorder. Il s'impose au dix-huitième siècle.",
+                source: "Institut de recherche et coordination acoustique-musique — acoustique musicale."
+            },
+            {
+                id: 34,
+                question: "Qu'est-ce qu'une fugue en musique ?",
+                options: ["Une pièce libre sans structure fixe", "Une forme où un thème est imité successivement par plusieurs voix", "Une improvisation sur une basse donnée", "Une danse rapide à trois temps"],
+                correct: 1,
+                explanation: "Le sujet est exposé par une voix puis repris par les autres à des hauteurs différentes, avant d'être développé. Bach en a laissé les exemples les plus aboutis.",
+                source: "Bach-Archiv Leipzig — traités d'écriture."
+            },
+            {
+                id: 35,
+                question: "Quel compositeur est associé au courant impressionniste français ?",
+                options: ["Camille Saint-Saëns", "Claude Debussy", "Hector Berlioz", "César Franck"],
+                correct: 1,
+                explanation: "Ses gammes par tons et ses harmonies flottantes rompent avec la tension tonale traditionnelle. Il refusait pourtant l'étiquette d'impressionniste qu'on lui accolait.",
+                source: "Bibliothèque nationale de France — fonds Claude Debussy."
+            },
+            {
+                id: 36,
+                question: "Que désigne la basse continue dans la musique baroque ?",
+                options: ["Une ligne de basse jouée à l'unisson par tout l'orchestre", "Une ligne de basse chiffrée réalisée en accords par un instrument harmonique", "Un bourdon tenu du début à la fin", "Une reprise obligatoire du thème initial"],
+                correct: 1,
+                explanation: "Le claveciniste ou l'organiste lit une basse surmontée de chiffres et improvise les accords correspondants. Cette pratique structure presque toute la musique des dix-septième et dix-huitième siècles.",
+                source: "Centre de musique baroque de Versailles — traités d'accompagnement."
+            },
+            {
+                id: 201,
+                type: "vrai_faux",
+                question: "Le cycle des quintes fait revenir au point de départ après douze étapes.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! En enchaînant douze quintes justes, on parcourt les douze tonalités avant de retrouver la note initiale. En accord juste, le compte tombe légèrement à côté : c'est le comma pythagoricien, que le tempérament égal corrige.",
+                source: "Conservatoire national supérieur de musique de Paris — traité d'harmonie."
+            },
+            {
+                id: 202,
+                type: "vrai_faux",
+                question: "Le Clavier bien tempéré de Bach parcourt les vingt-quatre tonalités.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Chacun des deux livres contient un prélude et une fugue dans chacune des vingt-quatre tonalités majeures et mineures. L'ouvrage démontrait l'intérêt d'un accord permettant de jouer partout.",
+                source: "Bach-Archiv Leipzig — Das wohltemperierte Klavier."
+            },
+            {
+                id: 203,
+                type: "vrai_faux",
+                question: "Un intervalle de triton était surnommé le diable en musique.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Cette quarte augmentée, jugée instable et difficile à chanter, était évitée dans la musique médiévale. Elle est devenue centrale dans le jazz et le rock.",
+                source: "Conservatoire national supérieur de musique de Paris — traité d'harmonie."
+            },
+            {
+                id: 204,
+                type: "vrai_faux",
+                question: "Le sérialisme intégral étend la série aux durées et aux intensités.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Après Schoenberg, des compositeurs comme Boulez et Stockhausen ont appliqué le principe sériel non plus aux seules hauteurs, mais aussi aux rythmes, aux nuances et aux timbres.",
+                source: "Institut de recherche et coordination acoustique-musique — dossiers sur la musique sérielle."
+            },
+            {
+                id: 205,
+                type: "vrai_faux",
+                question: "Les harmoniques d'un son déterminent son timbre.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Deux instruments jouant la même note se distinguent par l'intensité relative de leurs harmoniques. C'est ce spectre qui fait qu'une flûte ne sonne pas comme un violon.",
+                source: "Institut de recherche et coordination acoustique-musique — acoustique musicale."
+            },
+            {
+                id: 206,
+                question: "Qu'est-ce qu'un mode mixolydien ?",
+                options: ["Le mode construit sur le premier degré", "Le mode construit sur le cinquième degré", "Un mode à six notes seulement", "Un mode propre à la musique indienne"],
+                correct: 1,
+                explanation: "Jouer les touches blanches de sol à sol donne ce mode majeur à septième mineure. Très présent dans le rock, le folk et le jazz modal.",
+                source: "Conservatoire national supérieur de musique de Paris — traité d'harmonie."
+            },
+            {
+                id: 207,
+                question: "Quel compositeur a écrit le cycle L'Anneau du Nibelung ?",
+                options: ["Giuseppe Verdi", "Richard Wagner", "Richard Strauss", "Anton Bruckner"],
+                correct: 1,
+                explanation: "Quatre opéras, quinze heures de musique et vingt-six ans de travail. Wagner a fait construire à Bayreuth un théâtre spécialement conçu pour cette œuvre.",
+                source: "Bayreuther Festspiele — archives du Ring."
+            },
+            {
+                id: 208,
+                question: "Que désigne la polyrythmie ?",
+                options: ["La répétition d'un même rythme", "La superposition de rythmes différents", "L'accélération continue du tempo", "Un rythme joué à contretemps"],
+                correct: 1,
+                explanation: "Deux pulsations distinctes coexistent, par exemple trois notes contre deux. Fondamentale dans les musiques d'Afrique de l'Ouest, elle a nourri le jazz puis les musiques actuelles.",
+                source: "Musée du quai Branly — musiques d'Afrique de l'Ouest."
+            },
+            {
+                id: 209,
+                question: "Qu'appelle-t-on la forme sonate ?",
+                options: ["Une pièce en un seul mouvement continu", "Un plan en exposition, développement et réexposition", "Une suite de danses enchaînées", "Une improvisation sur un thème donné"],
+                correct: 1,
+                explanation: "Deux thèmes contrastés sont exposés, travaillés, puis réexposés dans la tonalité principale. Ce plan structure la plupart des premiers mouvements de symphonies classiques.",
+                source: "Conservatoire national supérieur de musique de Paris — traité d'harmonie."
+            },
+            {
+                id: 210,
+                question: "Quel compositeur russe a écrit le ballet Le Lac des cygnes ?",
+                options: ["Sergueï Prokofiev", "Piotr Ilitch Tchaïkovski", "Modeste Moussorgski", "Nikolaï Rimski-Korsakov"],
+                correct: 1,
+                explanation: "Créé en 1877, le ballet fut d'abord mal reçu avant de devenir la référence absolue du genre. Il a aussi écrit Casse-Noisette et La Belle au bois dormant.",
+                source: "Théâtre Bolchoï — archives du répertoire."
+            },
+            {
+                id: 211,
+                question: "Qu'est-ce que le tempérament mésotonique ?",
+                options: ["Un accord où toutes les quintes sont justes", "Un accord privilégiant la pureté des tierces majeures", "Un accord réservé aux instruments à vent", "Un accord fondé sur des quarts de ton"],
+                correct: 1,
+                explanation: "Répandu à la Renaissance, il sacrifie légèrement les quintes pour obtenir des tierces très pures. Il sonne magnifiquement dans quelques tonalités et devient inutilisable dans les autres.",
+                source: "Centre de musique baroque de Versailles — traités d'accord."
+            },
+            {
+                id: 212,
+                question: "Quel courant du jazz Charlie Parker a-t-il fondé avec Dizzy Gillespie ?",
+                options: ["Le swing des grands orchestres", "Le be-bop", "Le jazz cool", "Le free jazz"],
+                correct: 1,
+                explanation: "Au début des années 1940, ils imposent des tempos rapides, des harmonies enrichies et un phrasé virtuose. Le jazz cesse alors d'être une musique de danse pour devenir une musique d'écoute.",
+                source: "Smithsonian Institution — collection jazz."
+            },
+            {
+                id: 213,
+                question: "Que désigne l'ambitus d'une voix ou d'un instrument ?",
+                options: ["Sa puissance maximale", "L'étendue entre sa note la plus grave et la plus aiguë", "Sa capacité à tenir une note longtemps", "La précision de sa justesse"],
+                correct: 1,
+                explanation: "Un soprano couvre environ deux octaves, un piano plus de sept. C'est un critère essentiel pour attribuer un rôle ou écrire une partie.",
+                source: "Conservatoire national supérieur de musique de Paris — traité d'harmonie."
+            },
+            {
+                id: 214,
+                question: "Quel compositeur hongrois a collecté les musiques paysannes d'Europe centrale ?",
+                options: ["Zoltán Kodály seul", "Béla Bartók", "Ernő Dohnányi", "Franz Liszt"],
+                correct: 1,
+                explanation: "Avec Kodály, il a enregistré des milliers de mélodies au phonographe dès 1905. Ce matériau a nourri une écriture savante profondément renouvelée.",
+                source: "Institut de musicologie de l'Académie hongroise des sciences — fonds Bartók."
+            },
+            {
+                id: 215,
+                question: "Qu'est-ce qu'une appoggiature ?",
+                options: ["Une note répétée rapidement", "Une note étrangère à l'accord qui se résout sur une note voisine", "Un accord de sept sons", "Un signe de reprise"],
+                correct: 1,
+                explanation: "Elle crée une brève dissonance expressive avant de se résoudre. C'est l'un des ornements les plus employés dans la musique baroque et classique.",
+                source: "Conservatoire national supérieur de musique de Paris — traité d'harmonie."
+            },
+            {
+                id: 216,
+                question: "Quelle technique vocale consiste à passer rapidement d'une voix de poitrine à une voix de tête ?",
+                options: ["Le vibrato", "Le yodel", "Le trille", "Le portamento"],
+                correct: 1,
+                explanation: "Pratiqué dans les Alpes mais aussi chez les Pygmées d'Afrique centrale, il exploite la rupture entre les registres. Le vibrato désigne au contraire une oscillation de hauteur.",
+                source: "Philharmonie de Paris — ressources pédagogiques."
+            },
+            {
+                id: 217,
+                question: "Quel instrument électronique se joue sans être touché ?",
+                options: ["Le synthétiseur modulaire", "Le thérémine", "Les ondes Martenot", "Le mellotron"],
+                correct: 1,
+                explanation: "Inventé en 1920 par Lev Termen, il se pilote par la position des mains dans deux champs électromagnétiques. Son timbre a longtemps servi au cinéma fantastique.",
+                source: "Philharmonie de Paris — ressources pédagogiques."
+            },
+            {
+                id: 218,
+                question: "Que désigne la basse d'Alberti ?",
+                options: ["Une basse tenue sur une seule note", "Un accompagnement d'accords brisés en motif régulier", "Une ligne de basse improvisée", "Un doublement de la mélodie à l'octave grave"],
+                correct: 1,
+                explanation: "La main gauche égrène les notes de l'accord selon un schéma répétitif, très courant chez Mozart et Haydn. Elle donne du mouvement sans surcharger l'harmonie.",
+                source: "Conservatoire national supérieur de musique de Paris — traité d'harmonie."
+            }
+        ]
+    },
+    rap: {
+        title: "Le Rap",
+        description: "Origines du hip-hop, artistes cultes, albums majeurs et rap français",
+        facile: [
+            {
+                id: 1,
+                type: "vrai_faux",
+                question: "Le rap est né dans le Bronx, à New York.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le hip-hop apparaît au début des années 1970 dans les block parties du Bronx. Les DJ y font tourner les breaks des disques funk pendant que les MC animent la foule au micro.",
+                source: "Smithsonian Institution — National Museum of African American History and Culture."
+            },
+            {
+                id: 2,
+                type: "vrai_faux",
+                question: "Le sampling consiste à réutiliser un extrait sonore existant.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le producteur découpe un fragment d'un disque puis le rejoue en boucle. La technique a fondé l'esthétique du rap et soulève depuis les années 1990 d'importantes questions de droits d'auteur.",
+                source: "Smithsonian Institution — histoire des techniques hip-hop."
+            },
+            {
+                id: 3,
+                type: "vrai_faux",
+                question: "Le freestyle désigne obligatoirement un texte appris par cœur.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Le freestyle désigne au contraire une improvisation, ou un texte libre sans thème imposé. C'est l'exercice roi des battles et des radios spécialisées.",
+                source: "Smithsonian Institution — lexique du hip-hop."
+            },
+            {
+                id: 4,
+                question: "Que signifie l'abréviation MC dans le rap ?",
+                options: ["Music Creator", "Master of Ceremonies", "Microphone Champion", "Main Composer"],
+                correct: 1,
+                explanation: "À l'origine, le MC anime la soirée et chauffe le public pendant que le DJ mixe. Le rôle a évolué jusqu'à désigner le rappeur lui-même.",
+                source: "Smithsonian Institution — lexique du hip-hop."
+            },
+            {
+                id: 5,
+                question: "Quel DJ jamaïcain est considéré comme un pionnier du hip-hop au Bronx ?",
+                options: ["Afrika Bambaataa", "DJ Kool Herc", "Grandmaster Flash", "Grand Wizzard Theodore"],
+                correct: 1,
+                explanation: "Lors d'une fête de quartier en 1973, il isole et répète les passages instrumentaux les plus dansants. Cette invention du break a ouvert la voie à toute la culture qui a suivi.",
+                source: "Smithsonian Institution — origines du hip-hop."
+            },
+            {
+                id: 6,
+                question: "Combien d'éléments compte traditionnellement la culture hip-hop ?",
+                options: ["Trois éléments fondateurs", "Quatre éléments fondateurs", "Cinq éléments fondateurs", "Six éléments fondateurs"],
+                correct: 1,
+                explanation: "Le DJing, le MCing, la danse et le graffiti forment le socle. Certains y ajoutent la connaissance comme cinquième élément, à la suite d'Afrika Bambaataa.",
+                source: "Smithsonian Institution — les piliers du hip-hop."
+            },
+            {
+                id: 7,
+                question: "Que fait un beatmaker ?",
+                options: ["Il écrit les textes des rappeurs", "Il compose l'instrumental", "Il gère les concerts", "Il mixe le disque en studio"],
+                correct: 1,
+                explanation: "Le beatmaker construit la boucle rythmique et harmonique sur laquelle le rappeur pose son texte. Certains, comme Dr. Dre ou DJ Premier, sont devenus aussi célèbres que les interprètes.",
+                source: "Smithsonian Institution — métiers du hip-hop."
+            },
+            {
+                id: 8,
+                question: "Quel rappeur américain se fait appeler Slim Shady ?",
+                options: ["Snoop Dogg", "Eminem", "50 Cent", "Jay-Z"],
+                correct: 1,
+                explanation: "Ce pseudonyme désigne l'alter ego provocateur de Marshall Mathers, apparu sur The Slim Shady LP en 1999. Il lui sert à endosser ses textes les plus outranciers.",
+                source: "Recording Academy — biographie des lauréats."
+            },
+            {
+                id: 9,
+                question: "Quel groupe marseillais a sorti L'École du micro d'argent ?",
+                options: ["NTM", "IAM", "Fonky Family", "Assassin"],
+                correct: 1,
+                explanation: "Sorti en 1997, cet album est considéré comme l'un des sommets du rap français. Ses textes mêlent références à l'Égypte antique, aux arts martiaux et à la vie marseillaise.",
+                source: "Syndicat national de l'édition phonographique — certifications."
+            },
+            {
+                id: 10,
+                question: "Quel album de Nas, sorti en 1994, est considéré comme un classique absolu ?",
+                options: ["Ready to Die", "Illmatic", "Reasonable Doubt", "The Chronic"],
+                correct: 1,
+                explanation: "Dix titres, une production réunissant DJ Premier, Pete Rock et Q-Tip, et un portrait au scalpel du Queensbridge. Il est régulièrement cité comme le meilleur album de rap jamais publié.",
+                source: "Recording Academy — Grammy Hall of Fame."
+            },
+            {
+                id: 11,
+                question: "Quel rappeur américain a été tué à Las Vegas en 1996 ?",
+                options: ["The Notorious B.I.G.", "Tupac Shakur", "Big L", "Eazy-E"],
+                correct: 1,
+                explanation: "Il est abattu en voiture le 7 septembre 1996 et meurt six jours plus tard. Son rival Notorious B.I.G. sera tué à Los Angeles six mois après, et les deux affaires restent non élucidées.",
+                source: "Las Vegas Metropolitan Police Department — dossier public."
+            },
+            {
+                id: 12,
+                question: "Comment appelle-t-on la danse associée aux origines du hip-hop ?",
+                options: ["Le krump", "Le breakdance", "Le voguing", "Le locking"],
+                correct: 1,
+                explanation: "Les danseurs, appelés b-boys et b-girls, se produisaient sur les breaks isolés par les DJ. La discipline est devenue sport olympique aux Jeux de Paris en 2024.",
+                source: "Comité international olympique — programme des Jeux de 2024."
+            },
+            {
+                id: 101,
+                type: "vrai_faux",
+                question: "Le graffiti fait partie des piliers de la culture hip-hop.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Il figure parmi les quatre éléments fondateurs, aux côtés du DJing, du MCing et de la danse. Les trains du métro new-yorkais en furent les premiers supports.",
+                source: "Smithsonian Institution — National Museum of African American History and Culture."
+            },
+            {
+                id: 102,
+                type: "vrai_faux",
+                question: "Un instrumental de rap s'appelle aussi une prod.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Abréviation de production, le mot désigne la base musicale sur laquelle le rappeur écrit. On parle aussi de beat ou d'instru.",
+                source: "Smithsonian Institution — National Museum of African American History and Culture."
+            },
+            {
+                id: 103,
+                type: "vrai_faux",
+                question: "Le rap français est apparu dans les années 2000.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Il émerge dès le milieu des années 1980, avec l'émission H.I.P. H.O.P. diffusée en 1984 sur TF1. La compilation Rapattitude paraît en 1990, bien avant les années 2000.",
+                source: "Syndicat national de l'édition phonographique — certifications et classements."
+            },
+            {
+                id: 104,
+                type: "vrai_faux",
+                question: "Une mixtape est toujours vendue en magasin.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Historiquement diffusée gratuitement ou sous le manteau, elle sert à se faire connaître entre deux albums. Beaucoup d'artistes ont percé grâce à ce format.",
+                source: "Smithsonian Institution — National Museum of African American History and Culture."
+            },
+            {
+                id: 105,
+                type: "vrai_faux",
+                question: "Le mot flow désigne la manière de poser sa voix sur le rythme.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Il recouvre le débit, le placement des syllabes et les accents. Deux rappeurs sur la même instrumentale peuvent avoir des flows radicalement différents.",
+                source: "Smithsonian Institution — National Museum of African American History and Culture."
+            },
+            {
+                id: 106,
+                question: "Quel rappeur américain a sorti l'album The Marshall Mathers LP ?",
+                options: ["Jay-Z", "Eminem", "Ludacris", "Nelly"],
+                correct: 1,
+                explanation: "Publié en 2000, il est devenu l'un des albums de rap les plus vendus au monde. Marshall Mathers est le vrai nom de son auteur.",
+                source: "Recording Academy — palmarès et biographies."
+            },
+            {
+                id: 107,
+                question: "Comment appelle-t-on un affrontement verbal entre deux rappeurs ?",
+                options: ["Un featuring", "Un clash", "Un sample", "Un remix"],
+                correct: 1,
+                explanation: "Le clash se règle par disques interposés ou en battle sur scène. Le featuring désigne au contraire une collaboration amicale.",
+                source: "Smithsonian Institution — National Museum of African American History and Culture."
+            },
+            {
+                id: 108,
+                question: "Que désigne un featuring ?",
+                options: ["Une reprise d'un ancien titre", "La participation d'un artiste invité sur un morceau", "Un concert en plein air", "Le premier single d'un album"],
+                correct: 1,
+                explanation: "Souvent abrégé en feat., il permet de croiser les publics et les styles. C'est devenu un ressort commercial majeur du genre.",
+                source: "Smithsonian Institution — National Museum of African American History and Culture."
+            },
+            {
+                id: 109,
+                question: "Dans quelle ville américaine le rap G-funk s'est-il développé ?",
+                options: ["New York", "Los Angeles", "Atlanta", "Detroit"],
+                correct: 1,
+                explanation: "Le son de la côte Ouest, porté par Dr. Dre et Snoop Dogg au début des années 1990, s'est construit à Los Angeles autour de basses rondes et de synthétiseurs aigus.",
+                source: "Recording Academy — palmarès et biographies."
+            },
+            {
+                id: 110,
+                question: "Quel rappeur français est connu pour le titre Bella ?",
+                options: ["Nekfeu", "Maître Gims", "Soprano", "Black M"],
+                correct: 1,
+                explanation: "Sorti en 2013 alors qu'il était encore membre de la Sexion d'Assaut, le titre a été l'un des plus gros succès francophones de la décennie.",
+                source: "Syndicat national de l'édition phonographique — certifications et classements."
+            },
+            {
+                id: 111,
+                question: "Que désigne le terme instru dans le rap ?",
+                options: ["Le texte du refrain", "La musique sans les voix", "Le studio d'enregistrement", "Le clip vidéo"],
+                correct: 1,
+                explanation: "Le rappeur écrit et enregistre par-dessus. Les instrus circulent aussi seules, ce qui permet à plusieurs artistes de poser sur la même base.",
+                source: "Smithsonian Institution — National Museum of African American History and Culture."
+            },
+            {
+                id: 112,
+                question: "Quel groupe américain a sorti Straight Outta Compton en 1988 ?",
+                options: ["Public Enemy", "N.W.A", "Run-DMC", "Beastie Boys"],
+                correct: 1,
+                explanation: "L'album a imposé le gangsta rap et déclenché une polémique nationale. Il réunissait notamment Ice Cube, Dr. Dre et Eazy-E.",
+                source: "Recording Academy — palmarès et biographies."
+            },
+            {
+                id: 113,
+                question: "Quel rappeur français a sorti l'album Feu en 2015 ?",
+                options: ["Orelsan", "Nekfeu", "Vald", "Lomepal"],
+                correct: 1,
+                explanation: "Premier album solo de l'ancien membre de 1995, il a été certifié disque de diamant. Son auteur mène en parallèle une carrière d'acteur.",
+                source: "Syndicat national de l'édition phonographique — certifications et classements."
+            },
+            {
+                id: 114,
+                question: "Comment appelle-t-on les paroles d'un morceau de rap ?",
+                options: ["Le refrain uniquement", "Le texte, ou les lyrics", "La prod", "Le mix"],
+                correct: 1,
+                explanation: "On parle aussi de couplets pour les parties écrites entre les refrains. Un couplet compte le plus souvent seize mesures.",
+                source: "Smithsonian Institution — National Museum of African American History and Culture."
+            },
+            {
+                id: 115,
+                question: "Quel rappeur canadien a sorti l'album Take Care ?",
+                options: ["The Weeknd", "Drake", "Tory Lanez", "PartyNextDoor"],
+                correct: 1,
+                explanation: "Sorti en 2011, l'album a imposé un rap mélancolique mêlé de chant. Son auteur, originaire de Toronto, est l'un des artistes les plus écoutés au monde.",
+                source: "Recording Academy — palmarès et biographies."
+            },
+            {
+                id: 116,
+                question: "Que signifie l'expression poser un couplet ?",
+                options: ["Produire l'instrumental", "Enregistrer sa partie rappée", "Mixer le morceau", "Signer chez un label"],
+                correct: 1,
+                explanation: "L'expression vient du fait de poser sa voix sur une instrumentale déjà composée. Un couplet standard fait seize mesures.",
+                source: "Smithsonian Institution — National Museum of African American History and Culture."
+            },
+            {
+                id: 117,
+                question: "Quel groupe français a sorti l'album Les Princes de la ville en 1999 ?",
+                options: ["Sniper", "113", "Mafia K'1 Fry", "Fonky Family"],
+                correct: 1,
+                explanation: "Le trio de Vitry-sur-Seine y raconte la vie en banlieue parisienne. L'album a reçu la Victoire de la musique du meilleur album rap en 2000.",
+                source: "Syndicat national de l'édition phonographique — certifications et classements."
+            },
+            {
+                id: 118,
+                question: "Que désigne le mot punchline ?",
+                options: ["La conclusion d'un album", "Une phrase choc destinée à marquer", "Le rythme de base d'un morceau", "Le nom du producteur"],
+                correct: 1,
+                explanation: "Elle repose souvent sur un jeu de mots ou une image inattendue. C'est l'un des critères de jugement en battle.",
+                source: "Smithsonian Institution — National Museum of African American History and Culture."
+            }
+        ],
+        moyen: [
+            {
+                id: 13,
+                type: "vrai_faux",
+                question: "Le label Death Row Records était implanté sur la côte Ouest.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Fondé à Los Angeles en 1991, il a réuni Dr. Dre, Snoop Dogg et Tupac. Il incarnait la côte Ouest dans la rivalité qui l'opposait à Bad Boy Records, à New York.",
+                source: "Recording Industry Association of America — historique des labels."
+            },
+            {
+                id: 14,
+                type: "vrai_faux",
+                question: "Une punchline désigne une phrase choc destinée à marquer l'auditeur.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Elle repose souvent sur un jeu de mots, une image inattendue ou une pique adressée à un rival. C'est l'un des critères de jugement dans les battles.",
+                source: "Smithsonian Institution — lexique du hip-hop."
+            },
+            {
+                id: 15,
+                type: "vrai_faux",
+                question: "Le scratch a été inventé dans les studios de Los Angeles dans les années 1990.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Le scratch naît à New York dans les années 1970. Grand Wizzard Theodore en est généralement crédité, après avoir découvert l'effet en arrêtant un disque à la main.",
+                source: "Smithsonian Institution — origines du turntablism."
+            },
+            {
+                id: 16,
+                question: "Quel groupe a sorti Enter the Wu-Tang (36 Chambers) ?",
+                options: ["A Tribe Called Quest", "Wu-Tang Clan", "Public Enemy", "Mobb Deep"],
+                correct: 1,
+                explanation: "Publié en 1993, ce premier album impose un son brut construit par RZA sur des samples de films de kung-fu. Le collectif comptait neuf membres, chacun libre de signer en solo ailleurs.",
+                source: "Recording Academy — Grammy Hall of Fame."
+            },
+            {
+                id: 17,
+                question: "Quel producteur a fondé le label Aftermath Entertainment ?",
+                options: ["Puff Daddy", "Dr. Dre", "Rick Rubin", "Timbaland"],
+                correct: 1,
+                explanation: "Créé en 1996 après son départ de Death Row, le label a lancé Eminem puis 50 Cent et Kendrick Lamar. Son fondateur y a imposé un son très travaillé, loin du sampling brut.",
+                source: "Recording Industry Association of America — historique des labels."
+            },
+            {
+                id: 18,
+                question: "Quel morceau de Grandmaster Flash décrit la misère du ghetto en 1982 ?",
+                options: ["Planet Rock", "The Message", "Rapper's Delight", "Sucker M.C.'s"],
+                correct: 1,
+                explanation: "Ce titre rompt avec le rap festif des débuts et ouvre la voie au rap conscient. Son refrain sur le point de rupture est devenu l'une des phrases les plus citées du genre.",
+                source: "Bibliothèque du Congrès — National Recording Registry."
+            },
+            {
+                id: 19,
+                question: "Quel album de MC Solaar est sorti en 1991 ?",
+                options: ["Prose combat", "Qui sème le vent récolte le tempo", "Paradisiaque", "Cinquième as"],
+                correct: 1,
+                explanation: "Premier album du rappeur, il installe un rap français fondé sur les jeux de mots et les allitérations. Il ouvre la voie à la reconnaissance grand public du genre en France.",
+                source: "Syndicat national de l'édition phonographique — certifications."
+            },
+            {
+                id: 20,
+                question: "Quel groupe de Seine-Saint-Denis a marqué le rap français des années 1990 ?",
+                options: ["Ministère A.M.E.R.", "NTM", "113", "Lunatic"],
+                correct: 1,
+                explanation: "Formé à Saint-Denis, le duo composé de Kool Shen et JoeyStarr a imposé une écriture frontale sur la banlieue. Ses concerts et ses démêlés judiciaires ont marqué la décennie.",
+                source: "Syndicat national de l'édition phonographique — certifications."
+            },
+            {
+                id: 21,
+                question: "Quel album de Kaaris, sorti en 2013, a marqué l'essor de la trap en France ?",
+                options: ["Bandit saleté", "Or Noir", "Le Bruit de mon âme", "Dozo"],
+                correct: 1,
+                explanation: "Produit en grande partie par Therapy, l'album impose des basses saturées et des rythmes hachés venus d'Atlanta. Il a durablement changé la sonorité du rap français.",
+                source: "Syndicat national de l'édition phonographique — certifications."
+            },
+            {
+                id: 31,
+                question: "Quel rappeur a fondé le label Roc-A-Fella Records en 1995 ?",
+                options: ["Nas", "Jay-Z", "Diddy", "LL Cool J"],
+                correct: 1,
+                explanation: "Créé avec Damon Dash et Kareem Burke faute de contrat en major, le label a publié Reasonable Doubt puis lancé Kanye West. Il a fait de son fondateur un patron autant qu'un artiste.",
+                source: "Recording Industry Association of America — historique des labels."
+            },
+            {
+                id: 32,
+                question: "Quel groupe américain est connu pour ses textes politiques et le titre Fight the Power ?",
+                options: ["N.W.A", "Public Enemy", "Beastie Boys", "Cypress Hill"],
+                correct: 1,
+                explanation: "Écrit en 1989 pour le film de Spike Lee Do the Right Thing, le morceau est devenu un hymne militant. Le groupe alliait un discours frontal à des productions denses et bruitistes.",
+                source: "Bibliothèque du Congrès — National Recording Registry."
+            },
+            {
+                id: 33,
+                question: "Quel duo formait le groupe Lunatic ?",
+                options: ["Kery James et Rohff", "Booba et Ali", "Oxmo Puccino et Lino", "Rim'K et AP"],
+                correct: 1,
+                explanation: "Actif dans les années 1990, le duo des Hauts-de-Seine a publié Mauvais œil en 2000. Sa séparation a précédé les carrières solo de ses deux membres.",
+                source: "Syndicat national de l'édition phonographique — certifications."
+            },
+            {
+                id: 201,
+                type: "vrai_faux",
+                question: "Le sampling a donné lieu à de nombreux procès pour droits d'auteur.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! À partir des années 1990, la justice américaine a imposé l'autorisation préalable pour tout emprunt, même bref. Cela a fortement renchéri les productions fondées sur les samples.",
+                source: "Smithsonian Institution — National Museum of African American History and Culture."
+            },
+            {
+                id: 202,
+                type: "vrai_faux",
+                question: "Le rap conscient désigne un rap centré sur les questions sociales et politiques.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Porté par Public Enemy ou KRS-One aux États-Unis, par Kery James ou Casey en France, il s'oppose dans les classifications au rap festif ou au gangsta rap.",
+                source: "Smithsonian Institution — National Museum of African American History and Culture."
+            },
+            {
+                id: 203,
+                type: "vrai_faux",
+                question: "Kanye West a produit des morceaux avant de devenir rappeur.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Il s'est d'abord fait un nom comme beatmaker pour Roc-A-Fella, notamment sur The Blueprint de Jay-Z en 2001. Son premier album solo est sorti trois ans plus tard.",
+                source: "Recording Academy — palmarès et biographies."
+            },
+            {
+                id: 204,
+                type: "vrai_faux",
+                question: "La trap est née à New York.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Elle s'est développée à Atlanta à partir de la fin des années 1990, autour de T.I., Gucci Mane et Young Jeezy. Ses charleys triolets et ses basses saturées ont ensuite conquis le monde.",
+                source: "Recording Academy — palmarès et biographies."
+            },
+            {
+                id: 205,
+                type: "vrai_faux",
+                question: "Le terme old school désigne le rap des débuts, jusqu'au milieu des années 1980.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Il couvre la période des pionniers, marquée par des rythmes disco et des textes festifs. Vient ensuite l'âge d'or, à l'écriture plus complexe.",
+                source: "Smithsonian Institution — National Museum of African American History and Culture."
+            },
+            {
+                id: 206,
+                question: "Quel album de Jay-Z, sorti en 1996, est son premier disque solo ?",
+                options: ["The Blueprint", "Reasonable Doubt", "Vol. 2... Hard Knock Life", "In My Lifetime"],
+                correct: 1,
+                explanation: "Publié sur son propre label faute de contrat en major, il est aujourd'hui considéré comme un classique. Son succès a été progressif plutôt qu'immédiat.",
+                source: "Recording Academy — palmarès et biographies."
+            },
+            {
+                id: 207,
+                question: "Quel rappeur français a sorti Mauvais Œil avec le duo Lunatic ?",
+                options: ["Rohff", "Booba", "Kery James", "Oxmo Puccino"],
+                correct: 1,
+                explanation: "Sorti en 2000, l'album du duo formé avec Ali est resté longtemps culte malgré une diffusion confidentielle. Le duo s'est séparé peu après.",
+                source: "Syndicat national de l'édition phonographique — certifications et classements."
+            },
+            {
+                id: 208,
+                question: "Quel producteur a signé l'essentiel des productions de Gang Starr ?",
+                options: ["Pete Rock", "DJ Premier", "Large Professor", "9th Wonder"],
+                correct: 1,
+                explanation: "Son style, fait de boucles de jazz et de refrains scratchés, a défini une esthétique new-yorkaise imitée dans le monde entier. Il formait le duo avec le rappeur Guru.",
+                source: "Smithsonian Institution — National Museum of African American History and Culture."
+            },
+            {
+                id: 209,
+                question: "Quel morceau d'Eminem sert de thème au film 8 Mile ?",
+                options: ["Stan", "Lose Yourself", "The Real Slim Shady", "Without Me"],
+                correct: 1,
+                explanation: "Le titre a remporté l'Oscar de la meilleure chanson originale en 2003, une première pour un morceau de rap. Le film s'inspire de la jeunesse du rappeur à Detroit.",
+                source: "Academy of Motion Picture Arts and Sciences — palmarès 2003."
+            },
+            {
+                id: 210,
+                question: "Quel collectif français réunit notamment Nekfeu et Alpha Wann ?",
+                options: ["L'Entourage", "1995", "La Scred Connexion", "Casseurs Flowters"],
+                correct: 1,
+                explanation: "Le groupe s'est fait connaître à partir de 2011 par ses freestyles en ligne. Son album La Source est sorti en 2013.",
+                source: "Syndicat national de l'édition phonographique — certifications et classements."
+            },
+            {
+                id: 211,
+                question: "Quel rappeur américain a sorti l'album good kid, m.A.A.d city ?",
+                options: ["J. Cole", "Kendrick Lamar", "Big Sean", "Schoolboy Q"],
+                correct: 1,
+                explanation: "Publié en 2012, cet album raconte une journée de son adolescence à Compton. Sa construction en récit continu a marqué la décennie.",
+                source: "Recording Academy — palmarès et biographies."
+            },
+            {
+                id: 212,
+                question: "Que désigne le terme battle dans le hip-hop ?",
+                options: ["Un concert de plusieurs artistes", "Une confrontation improvisée entre deux participants", "La sortie simultanée de deux albums", "Une tournée internationale"],
+                correct: 1,
+                explanation: "Elle peut opposer des rappeurs, des danseurs ou des DJ. Le principe remonte aux block parties du Bronx et structure encore la scène.",
+                source: "Smithsonian Institution — National Museum of African American History and Culture."
+            },
+            {
+                id: 213,
+                question: "Quel rappeur français est à l'origine du morceau Le Bilan ?",
+                options: ["Rohff", "Kery James", "Sinik", "Diam's"],
+                correct: 1,
+                explanation: "Sorti en 2008, le morceau dresse un constat sévère sur la société française et les banlieues. Son auteur, ancien membre d'Ideal J, est une figure du rap conscient.",
+                source: "Syndicat national de l'édition phonographique — certifications et classements."
+            },
+            {
+                id: 214,
+                question: "Quel duo américain est composé d'André 3000 et Big Boi ?",
+                options: ["Mobb Deep", "OutKast", "EPMD", "Clipse"],
+                correct: 1,
+                explanation: "Venu d'Atlanta, le duo a imposé un rap sudiste inventif, mêlant funk, soul et électronique. Speakerboxxx/The Love Below a été récompensé par le Grammy de l'album de l'année.",
+                source: "Recording Academy — palmarès et biographies."
+            },
+            {
+                id: 215,
+                question: "Que désigne le mot beef entre deux artistes ?",
+                options: ["Une collaboration surprise", "Un conflit ouvert et durable", "Un concert commun", "Un contrat partagé"],
+                correct: 1,
+                explanation: "Plus long qu'un simple clash, le beef s'installe dans la durée et déborde souvent des disques. Celui entre Tupac et Notorious B.I.G. reste le plus célèbre.",
+                source: "Smithsonian Institution — National Museum of African American History and Culture."
+            },
+            {
+                id: 216,
+                question: "Quelle rappeuse française a sorti l'album Dans ma bulle en 2006 ?",
+                options: ["Keny Arkana", "Diam's", "Casey", "Lady Laistee"],
+                correct: 1,
+                explanation: "L'album s'est vendu à plus d'un million d'exemplaires, un record pour une rappeuse francophone. Il a remporté la Victoire de la musique de l'album de l'année.",
+                source: "Syndicat national de l'édition phonographique — certifications et classements."
+            },
+            {
+                id: 217,
+                question: "Quel rappeur américain a fondé le label Cash Money avec son frère ?",
+                options: ["Lil Wayne", "Birdman", "Rick Ross", "Master P"],
+                correct: 1,
+                explanation: "Fondé à La Nouvelle-Orléans en 1991 avec Slim, le label a lancé Lil Wayne, Drake et Nicki Minaj. Il a imposé le son du Sud dans les années 2000.",
+                source: "Recording Academy — palmarès et biographies."
+            },
+            {
+                id: 218,
+                question: "Quel morceau de Booba et Rohff a marqué leur rivalité au début des années 2000 ?",
+                options: ["Un simple duo amical", "Une série de morceaux d'attaque mutuelle", "Un album commun", "Une tournée partagée"],
+                correct: 1,
+                explanation: "Les deux rappeurs se sont attaqués par disques interposés pendant plus de quinze ans. Ce beef est l'un des plus longs de l'histoire du rap français.",
+                source: "Syndicat national de l'édition phonographique — certifications et classements."
+            }
+        ],
+        difficile: [
+            {
+                id: 22,
+                type: "vrai_faux",
+                question: "Rapper's Delight du Sugarhill Gang est sorti en 1979.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! C'est le premier titre de rap à connaître un succès commercial mondial. Sa ligne de basse reprend celle de Good Times de Chic, ce qui a valu au groupe un procès rapidement réglé.",
+                source: "Bibliothèque du Congrès — National Recording Registry."
+            },
+            {
+                id: 23,
+                type: "vrai_faux",
+                question: "Le boom bap désigne un style de production fondé sur une batterie sèche et lourde.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! L'onomatopée imite la grosse caisse et la caisse claire. Ce son de samples poussiéreux et de rythmes carrés domine le rap new-yorkais des années 1990.",
+                source: "Smithsonian Institution — esthétiques de production hip-hop."
+            },
+            {
+                id: 24,
+                type: "vrai_faux",
+                question: "L'âge d'or du rap désigne la période allant de la fin des années 1980 au milieu des années 1990.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Cette période voit exploser la diversité des styles, avec Public Enemy, De La Soul, A Tribe Called Quest, Nas et Wu-Tang. Elle sert encore de référence esthétique.",
+                source: "Smithsonian Institution — chronologie du hip-hop."
+            },
+            {
+                id: 25,
+                question: "Quel album a valu à Kendrick Lamar le prix Pulitzer de la musique en 2018 ?",
+                options: ["good kid, m.A.A.d city", "DAMN.", "To Pimp a Butterfly", "Section.80"],
+                correct: 1,
+                explanation: "C'est la première fois que cette récompense, jusque-là réservée au classique et au jazz, distingue un album de rap. Le jury a salué une œuvre sur la complexité de la vie afro-américaine.",
+                source: "The Pulitzer Prizes — palmarès 2018, catégorie musique."
+            },
+            {
+                id: 26,
+                question: "Quelle collaboration de 1986 a fait exploser la fusion entre rap et rock ?",
+                options: ["Fight the Power avec Public Enemy", "Walk This Way de Run-DMC et Aerosmith", "Bring the Noise avec Anthrax", "Rock Box en solo"],
+                correct: 1,
+                explanation: "La reprise du titre d'Aerosmith par Run-DMC, avec les deux groupes réunis dans le clip, a ouvert le rap aux radios rock et relancé la carrière d'Aerosmith.",
+                source: "Rock and Roll Hall of Fame — dossier Run-DMC."
+            },
+            {
+                id: 27,
+                question: "Quel est le nom de naissance de Jay-Z ?",
+                options: ["Christopher Wallace", "Shawn Carter", "Andre Young", "Curtis Jackson"],
+                correct: 1,
+                explanation: "Christopher Wallace était Notorious B.I.G., Andre Young est Dr. Dre et Curtis Jackson est 50 Cent. Le rappeur de Brooklyn a fondé Roc-A-Fella Records en 1995.",
+                source: "Recording Academy — biographies des lauréats."
+            },
+            {
+                id: 28,
+                question: "Que désigne le turntablism ?",
+                options: ["Le fait de rapper sans instrumental", "L'usage des platines comme instrument à part entière", "La production assistée par ordinateur", "L'écriture collective d'un morceau"],
+                correct: 1,
+                explanation: "Le turntabliste manipule disques et table de mixage pour créer des sons inédits. Des championnats internationaux, comme le DMC, récompensent cette virtuosité depuis 1985.",
+                source: "Smithsonian Institution — origines du turntablism."
+            },
+            {
+                id: 29,
+                question: "Quel est le premier album solo de Booba, sorti en 2002 ?",
+                options: ["Panthéon", "Temps mort", "Ouest Side", "Lunatic"],
+                correct: 1,
+                explanation: "Publié après la séparation du duo Lunatic, il impose une écriture dense et sombre. Il est régulièrement cité comme un tournant esthétique du rap français.",
+                source: "Syndicat national de l'édition phonographique — certifications."
+            },
+            {
+                id: 30,
+                question: "Qu'appelle-t-on des rimes multisyllabiques ?",
+                options: ["Des rimes reposant sur une seule voyelle finale", "Des rimes portant sur plusieurs syllabes consécutives", "Des rimes répétées à chaque fin de mesure", "Des rimes placées en début de vers"],
+                correct: 1,
+                explanation: "Au lieu de faire rimer la dernière syllabe, le rappeur fait correspondre des groupes entiers. Cette densité, popularisée par Rakim puis Eminem, a profondément transformé l'écriture.",
+                source: "Smithsonian Institution — techniques d'écriture du rap."
+            },
+            {
+                id: 34,
+                question: "Quel producteur est associé au son de DJ Premier et du duo Gang Starr ?",
+                options: ["Pete Rock", "DJ Premier lui-même, avec le MC Guru", "J Dilla", "Large Professor"],
+                correct: 1,
+                explanation: "Le duo réunissait le rappeur Guru et le producteur DJ Premier. Leurs scratchs de refrains et leurs boucles de jazz ont défini une esthétique new-yorkaise imitée partout.",
+                source: "Smithsonian Institution — esthétiques de production hip-hop."
+            },
+            {
+                id: 35,
+                question: "Quel album de Dr. Dre, sorti en 1992, a imposé le son G-funk ?",
+                options: ["Doggystyle", "The Chronic", "Straight Outta Compton", "2001"],
+                correct: 1,
+                explanation: "Ses basses rondes, ses nappes de synthétiseur aiguës et ses tempos ralentis ont défini le son de la côte Ouest. L'album a aussi révélé Snoop Dogg au grand public.",
+                source: "Recording Academy — Grammy Hall of Fame."
+            },
+            {
+                id: 36,
+                question: "Que désigne le terme crew dans la culture hip-hop ?",
+                options: ["Le public d'un concert", "Un collectif d'artistes ou de danseurs", "Le matériel de sonorisation", "Le contrat liant un artiste à son label"],
+                correct: 1,
+                explanation: "Le crew réunit des membres partageant un nom et un territoire, qu'il s'agisse de graffeurs, de danseurs ou de rappeurs. L'appartenance au crew structure la scène depuis les origines.",
+                source: "Smithsonian Institution — lexique du hip-hop."
+            },
+            {
+                id: 301,
+                type: "vrai_faux",
+                question: "Afrika Bambaataa a fondé la Zulu Nation.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Créée en 1973 dans le Bronx, cette organisation voulait détourner les jeunes des gangs vers la musique et la danse. Elle a diffusé l'idée du hip-hop comme culture unifiée.",
+                source: "Smithsonian Institution — National Museum of African American History and Culture."
+            },
+            {
+                id: 302,
+                type: "vrai_faux",
+                question: "Planet Rock d'Afrika Bambaataa emprunte à Kraftwerk.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le morceau de 1982 reprend des éléments de Trans-Europe Express et Numbers du groupe allemand. Cette rencontre entre électronique européenne et hip-hop a fondé l'electro-funk.",
+                source: "Bibliothèque du Congrès — National Recording Registry."
+            },
+            {
+                id: 303,
+                type: "vrai_faux",
+                question: "Le MPC est une machine servant à échantillonner et séquencer.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Conçue par Roger Linn pour Akai à la fin des années 1980, elle permet de découper des samples et de les déclencher sur des pads. Elle a façonné le son de tout un pan du rap.",
+                source: "Smithsonian Institution — National Museum of African American History and Culture."
+            },
+            {
+                id: 304,
+                type: "vrai_faux",
+                question: "Le terme boom bap a été popularisé par un album de KRS-One.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Son album Return of the Boom Bap, sorti en 1993, a fixé le terme. L'onomatopée imitait déjà la grosse caisse et la caisse claire dans le jargon des producteurs.",
+                source: "Smithsonian Institution — National Museum of African American History and Culture."
+            },
+            {
+                id: 305,
+                type: "vrai_faux",
+                question: "Rakim est considéré comme l'un des inventeurs du flow moderne.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Avec Eric B. à la fin des années 1980, il abandonne le débit scandé des pionniers pour un phrasé fluide, aux rimes internes et multisyllabiques. Presque tous les MC suivants s'en réclament.",
+                source: "Smithsonian Institution — National Museum of African American History and Culture."
+            },
+            {
+                id: 306,
+                question: "Quel album de Public Enemy, sorti en 1988, est considéré comme un sommet du rap politique ?",
+                options: ["Yo! Bum Rush the Show", "It Takes a Nation of Millions to Hold Us Back", "Fear of a Black Planet", "Apocalypse 91"],
+                correct: 1,
+                explanation: "Produit par le Bomb Squad, l'album superpose des dizaines de samples en couches denses. Sa charge politique et sa violence sonore ont marqué une rupture.",
+                source: "Recording Academy — palmarès et biographies."
+            },
+            {
+                id: 307,
+                question: "Quel producteur est associé au son de J Dilla et au label Stones Throw ?",
+                options: ["Madlib", "Pete Rock", "Just Blaze", "The Alchemist"],
+                correct: 0,
+                explanation: "Son association avec J Dilla sous le nom de Jaylib, puis le disque Madvillainy avec MF DOOM, ont fait de lui une figure centrale du rap indépendant des années 2000.",
+                source: "Smithsonian Institution — National Museum of African American History and Culture."
+            },
+            {
+                id: 308,
+                question: "Quel rappeur britannique a popularisé le grime au début des années 2000 ?",
+                options: ["Stormzy", "Dizzee Rascal", "Skepta", "Kano"],
+                correct: 1,
+                explanation: "Son album Boy in da Corner, sorti en 2003, a remporté le Mercury Prize. Le grime combine tempos rapides, basses lourdes et débit haché, dans un style propre à Londres.",
+                source: "Mercury Prize — palmarès officiel."
+            },
+            {
+                id: 309,
+                question: "Que désigne le terme scratch dans sa forme la plus simple ?",
+                options: ["Le fait de couper le son brutalement", "Le fait de faire aller et venir un disque sous la pointe de lecture", "Le doublage de la voix en studio", "Le mixage de deux morceaux en fondu"],
+                correct: 1,
+                explanation: "Le geste crée un son rythmique caractéristique. De nombreuses figures ont été codifiées : baby scratch, transformer, crab et beaucoup d'autres.",
+                source: "Smithsonian Institution — National Museum of African American History and Culture."
+            },
+            {
+                id: 310,
+                question: "Quel album de MF DOOM et Madlib est sorti en 2004 ?",
+                options: ["Operation: Doomsday", "Madvillainy", "Vaudeville Villain", "Mm..Food"],
+                correct: 1,
+                explanation: "Devenu culte dans le rap indépendant, l'album enchaîne des morceaux très courts sur des productions à base de samples obscurs. Son auteur portait un masque inspiré du personnage Docteur Fatalis.",
+                source: "Smithsonian Institution — National Museum of African American History and Culture."
+            },
+            {
+                id: 311,
+                question: "Quel rappeur français est à l'origine de l'album Or Noir Part II ?",
+                options: ["Niska", "Kaaris", "Gradur", "Sofiane"],
+                correct: 1,
+                explanation: "Sorti en 2015, il prolonge l'album qui avait imposé la trap en France deux ans plus tôt. Son auteur vient de Sevran, en Seine-Saint-Denis.",
+                source: "Syndicat national de l'édition phonographique — certifications et classements."
+            },
+            {
+                id: 312,
+                question: "Quelle particularité définit le style de Missy Elliott ?",
+                options: ["Un usage exclusif du chant", "Une association étroite avec le producteur Timbaland", "Un refus total des clips", "Une carrière limitée à la scène"],
+                correct: 1,
+                explanation: "Leur collaboration a produit des rythmes syncopés et des sonorités inédites dès la fin des années 1990. Ses clips ont profondément marqué l'esthétique visuelle du genre.",
+                source: "Recording Academy — palmarès et biographies."
+            },
+            {
+                id: 313,
+                question: "Quel morceau de N.W.A a valu au groupe une lettre du FBI ?",
+                options: ["Straight Outta Compton", "Fuck tha Police", "Express Yourself", "Gangsta Gangsta"],
+                correct: 1,
+                explanation: "Le bureau fédéral avait écrit à la maison de disques pour dénoncer le morceau en 1989. La polémique a considérablement accru la notoriété du groupe.",
+                source: "Bibliothèque du Congrès — archives sur la censure musicale."
+            },
+            {
+                id: 314,
+                question: "Quel label indépendant new-yorkais a été cofondé par Rick Rubin ?",
+                options: ["Tommy Boy", "Def Jam", "Loud Records", "Rawkus"],
+                correct: 1,
+                explanation: "Créé en 1984 dans sa chambre d'étudiant avec Russell Simmons, il a publié Run-DMC, LL Cool J et les Beastie Boys. Il a fait passer le rap du disque local au marché mondial.",
+                source: "Recording Academy — palmarès et biographies."
+            },
+            {
+                id: 315,
+                question: "Que désigne le terme freestyle en radio dans les années 1990 ?",
+                options: ["Un morceau enregistré en studio à l'avance", "Une performance improvisée ou inédite en direct", "Une rediffusion d'un ancien concert", "Un mixage réalisé par le DJ seul"],
+                correct: 1,
+                explanation: "Les émissions comme celle de Stretch Armstrong et Bobbito à New York ont révélé de nombreux artistes. Certains freestyles y sont devenus légendaires.",
+                source: "Smithsonian Institution — National Museum of African American History and Culture."
+            },
+            {
+                id: 316,
+                question: "Quel rappeur français a sorti Qu'Allah bénisse la France en 2004 ?",
+                options: ["Médine", "Abd al Malik", "Kery James", "Rocé"],
+                correct: 1,
+                explanation: "Récit autobiographique, l'album a été suivi d'un livre puis d'un film. Son auteur, venu de Strasbourg, y raconte son parcours et sa conversion.",
+                source: "Syndicat national de l'édition phonographique — certifications et classements."
+            },
+            {
+                id: 317,
+                question: "Quel duo formait Eric B. & Rakim ?",
+                options: ["Deux rappeurs alternant les couplets", "Un DJ et un MC", "Deux producteurs sans rappeur", "Un chanteur et un danseur"],
+                correct: 1,
+                explanation: "Eric B. tenait les platines et la production, Rakim écrivait et rappait. Leur album Paid in Full, sorti en 1987, est l'un des piliers de l'âge d'or.",
+                source: "Smithsonian Institution — National Museum of African American History and Culture."
+            },
+            {
+                id: 318,
+                question: "Quelle technique consiste à enchaîner deux disques identiques pour prolonger un break ?",
+                options: ["Le beatmatching simple", "Le merry-go-round de DJ Kool Herc", "Le back-spin isolé", "Le beat juggling moderne"],
+                correct: 1,
+                explanation: "En alternant deux exemplaires du même disque, le DJ fait durer indéfiniment le passage instrumental. C'est ce procédé qui a rendu possible la danse puis le rap.",
+                source: "Smithsonian Institution — National Museum of African American History and Culture."
             }
         ]
     }

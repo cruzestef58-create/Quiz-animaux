@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://upload.wikimedia.org https://commons.wikimedia.org; font-src 'self'; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'; frame-src 'none'; child-src 'none'; worker-src 'none'; media-src 'none'; manifest-src 'self'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Quiz Rap — hip-hop, albums cultes et rap français</title>
+    <meta name="description" content="Quiz de rap gratuit : origines du hip-hop dans le Bronx, artistes cultes, albums majeurs et rap français. 3 niveaux, sources citées.">
+    <meta name="theme-color" content="#0a0616">
+    <meta name="author" content="Esteban Cruz">
+    <link rel="canonical" href="https://quizzlyunivers.fr/quiz-rap.html">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="QuizzlyUnivers">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:title" content="Quiz Rap — hip-hop, albums cultes et rap français">
+    <meta property="og:description" content="Quiz de rap gratuit : origines du hip-hop dans le Bronx, artistes cultes, albums majeurs et rap français. 3 niveaux, sources citées.">
+    <meta property="og:url" content="https://quizzlyunivers.fr/quiz-rap.html">
+    <meta property="og:image" content="https://quizzlyunivers.fr/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Quiz Rap — hip-hop, albums cultes et rap français">
+    <meta name="twitter:description" content="Quiz de rap gratuit : origines du hip-hop dans le Bronx, artistes cultes, albums majeurs et rap français. 3 niveaux, sources citées.">
+    <meta name="twitter:image" content="https://quizzlyunivers.fr/og-image.png">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Quiz",
+  "name": "Quiz Rap — hip-hop, albums cultes et rap français",
+  "description": "Quiz de rap gratuit : origines du hip-hop dans le Bronx, artistes cultes, albums majeurs et rap français. 3 niveaux, sources citées.",
+  "url": "https://quizzlyunivers.fr/quiz-rap.html",
+  "inLanguage": "fr-FR",
+  "educationalLevel": "beginner, intermediate, advanced",
+  "isAccessibleForFree": true,
+  "author": {
+    "@type": "Person",
+    "name": "Esteban Cruz"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "QuizzlyUnivers",
+    "url": "https://quizzlyunivers.fr/"
+  }
+}
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a class="logo" href="index.html" aria-label="QuizzlyUnivers — accueil">
+                <img src="logo-icone.png" alt="" class="logo-icone">
+                <img src="logo-texte.png" alt="QuizzlyUnivers" class="logo-texte">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="javascript:void(0)" class="suggestion-button" onclick="suggestNewTheme()">Proposer<span class="nav-long">&nbsp;un thème</span></a></li>
+                <li><a href="javascript:void(0)" class="report-button" onclick="openReportModal()">🐛 Signaler<span class="nav-long">&nbsp;/ Suggérer</span></a></li>
+                <li><a href="javascript:void(0)" class="nav-support" onclick="openSupportModal()">♥ Soutenir</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="quiz-container">
+            <!-- Difficulté Selection -->
+            <div id="difficulty-selection" class="difficulty-selection">
+                <div class="difficulty-header">
+                    <h2>Choisissez votre niveau de difficulté</h2>
+                    <p>Sélectionnez le niveau qui vous convient le mieux</p>
+                </div>
+                <div class="difficulty-grid">
+                    <div class="difficulty-card" onclick="startQuizRap('facile')">
+                        <div class="difficulty-level">⭐</div>
+                        <h3>Facile</h3>
+                        <p>des questions de base pour débuter</p>
+                        <div class="difficulty-badge">Auditeur</div>
+                    </div>
+                    <div class="difficulty-card active" onclick="startQuizRap('moyen')">
+                        <div class="difficulty-level">⭐⭐</div>
+                        <h3>Moyen</h3>
+                        <p>des questions intermédiaires</p>
+                        <div class="difficulty-badge">Connaisseur</div>
+                    </div>
+                    <div class="difficulty-card" onclick="startQuizRap('difficile')">
+                        <div class="difficulty-level">⭐⭐⭐</div>
+                        <h3>Difficile</h3>
+                        <p>des questions avancées</p>
+                        <div class="difficulty-badge">Puriste</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quiz Section -->
+            <div id="quiz-container" style="display: none;">
+                <div class="quiz-header">
+                    <h1><span class="titre-icone" data-icone="micro"></span>Le Rap</h1>
+                    <p>Origines du hip-hop, artistes cultes, albums majeurs et rap français</p>
+                </div>
+                <div class="progress-bar">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+                <p style="text-align: center; margin-bottom: 1rem; color: #94a3b8;" id="progress-text"></p>
+
+                <div class="question-card" id="question-container">
+                    <!-- Les questions seront générées ici par JavaScript -->
+                </div>
+
+                <div class="button-container">
+                    <button id="next-button" class="btn btn-primary">Suivante →</button>
+                </div>
+            </div>
+
+            <!-- Résultats -->
+            <div id="results-container" class="results-container" style="display: none;">
+                <div class="results-header">
+                    <h2>🎉 Quiz Terminé!</h2>
+                    <p id="results-message"></p>
+                </div>
+
+                <div class="results-score">
+                    <div class="score-circle">
+                        <span id="score-percentage">0%</span>
+                    </div>
+                    <div class="score-details">
+                        <p><strong id="score-text">0/10</strong> bonnes réponses</p>
+                        <p id="performance-message"></p>
+                    </div>
+                </div>
+
+                <div id="review-section" class="review-section">
+                    <!-- Les réponses seront affichées ici -->
+                </div>
+
+                <div class="button-container">
+                    <button class="btn btn-primary" onclick="location.reload()">Recommencer</button>
+                    <button class="btn btn-secondary" onclick="location.href='index.html'">Retour à l'accueil</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Info Section -->
+        <section class="info" style="margin-top: 3rem;">
+            <h2>À propos de ce Quiz</h2>
+            <div class="info-content">
+                <div>
+                    <p>Ce quiz couvre le rap des block parties du Bronx aux scènes actuelles : les pionniers, les techniques de production et d'écriture, les albums qui ont fait date, et bien sûr le rap français.</p>
+                </div>
+                <div>
+                    <ul>
+                        <li>🎤 Des origines à aujourd'hui</li>
+                        <li>📚 Sources documentaires vérifiées</li>
+                        <li>🇫🇷 Rap américain et rap français</li>
+                        <li>✅ Questions Vrai/Faux incluses</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 QuizzlyUnivers — L'Univers du Quizz</p>
+    </footer>
+
+    <script src="questions.js" defer></script>
+    <script src="icons.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="animations.js" defer></script>
+</body>
+</html>
