@@ -919,8 +919,8 @@ const categories = {
     musique: {
         label: '🎧 Musique',
         quizzes: [
-            { icon: 'note', title: 'La Musique', desc: 'Instruments, solfège, grands compositeurs et histoire des musiques du monde.', url: 'quiz-musique.html' },
-            { icon: 'micro', title: 'Le Rap', desc: 'Origines du hip-hop, artistes cultes, albums majeurs et rap français.', url: 'quiz-rap.html' },
+            { icon: 'note', title: 'La Musique', desc: 'Instruments, solfège, grands compositeurs et histoire des musiques du monde.', url: 'quiz-musique.html' , nouveau: true },
+            { icon: 'micro', title: 'Le Rap', desc: 'Origines du hip-hop, artistes cultes, albums majeurs et rap français.', url: 'quiz-rap.html' , nouveau: true },
         ]
     },
     filmsseries: {
@@ -944,6 +944,7 @@ function openCategory(key) {
     const grid = document.getElementById('subthemes-grid');
     grid.innerHTML = cat.quizzes.map(q => `
         <div class="theme-card quiz-card" style="animation: fadeInUp 0.4s ease both;">
+            ${q.nouveau ? '<span class="etiquette-nouveau">Nouveau</span>' : ''}
             <div class="theme-icon">${icone(q.icon)}</div>
             <h3>${q.title}</h3>
             <p>${q.desc}</p>
