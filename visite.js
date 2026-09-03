@@ -90,7 +90,7 @@
         {
             titre: 'Deux modes rapides',
             texte: "Le mode Aléatoire pioche dans tous les thèmes à la fois. QuizzlySpeed te chronomètre : dix secondes par question, et les points dépendent de ta vitesse.",
-            cible: () => document.querySelector('.btn-random') && document.querySelector('.btn-random').parentElement
+            cible: () => document.querySelector('.modes')
         }
     ];
 

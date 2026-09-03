@@ -419,118 +419,114 @@ body::before {
 }
 
 /* Bouton Mode Aléatoire */
-.btn-random {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.25rem;
-    margin-top: 2rem;
-    padding: 1rem 2.5rem;
-    background: linear-gradient(135deg, rgba(37,99,235,0.15), rgba(124,58,237,0.15));
-    border: 2px solid transparent;
-    border-radius: 50px;
-    background-clip: padding-box;
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 800;
-    letter-spacing: 0.02em;
+/* ============================================================
+   Les deux modes de jeu, sur l'accueil.
+   Deux cartes de largeur identique, illustration à gauche,
+   texte à droite. Chaque mode a sa couleur d'accent, portée
+   par un liseré et non par le fond, pour rester lisible.
+   ============================================================ */
+
+.modes {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    max-width: 760px;
+    margin: 2rem auto 0;
+}
+
+.mode {
     position: relative;
-    transition: transform 0.35s cubic-bezier(0.175,0.885,0.32,1.275), box-shadow 0.35s;
-    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.15rem 1.3rem 1.15rem 1.5rem;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+    background: rgba(255,255,255,0.035);
+    text-align: left;
+    text-decoration: none;
+    color: #fff;
     overflow: hidden;
+    transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
 }
 
-.btn-random::before {
+/* Liseré vertical : c'est lui qui porte la couleur du mode */
+.mode::before {
     content: '';
     position: absolute;
-    inset: 0;
-    border-radius: 50px;
-    padding: 2px;
-    background: linear-gradient(135deg, #2563eb, #7c3aed);
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    pointer-events: none;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: var(--mode-accent);
 }
 
-.btn-random::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(37,99,235,0.2), rgba(124,58,237,0.2));
-    opacity: 0;
-    transition: opacity 0.3s;
-    border-radius: 50px;
+.mode-aleatoire { --mode-accent: linear-gradient(180deg, #60a5fa, #7c3aed); --mode-lueur: rgba(96,165,250,0.28); }
+.mode-chrono    { --mode-accent: linear-gradient(180deg, #fbbf24, #f97316); --mode-lueur: rgba(251,191,36,0.28); }
+
+.mode:hover {
+    transform: translateY(-3px);
+    border-color: rgba(255,255,255,0.22);
+    background: rgba(255,255,255,0.06);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.4), 0 0 0 1px var(--mode-lueur);
 }
 
-.btn-random:hover {
-    transform: translateY(-4px) scale(1.04);
-    box-shadow: 0 12px 35px rgba(37,99,235,0.35), 0 0 30px rgba(124,58,237,0.2);
+.mode-icone {
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+    filter: drop-shadow(0 3px 8px rgba(0,0,0,0.45));
 }
 
-.btn-random:hover::after {
+.mode-texte {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-width: 0;
+}
+
+.mode-texte strong {
+    font-size: 1.04rem;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+}
+
+.mode-texte small {
+    font-size: 0.79rem;
+    font-weight: 500;
+    line-height: 1.35;
+    color: var(--light-text);
+}
+
+.mode-fleche {
+    margin-left: auto;
+    padding-left: 0.4rem;
+    font-size: 1.15rem;
+    opacity: 0.45;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.mode:hover .mode-fleche {
     opacity: 1;
+    transform: translateX(4px);
 }
 
-.btn-random-sub {
-    font-size: 0.8rem;
-    font-weight: 500;
-    opacity: 0.7;
-    letter-spacing: 0.01em;
+@media (max-width: 760px) {
+    .modes {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+        max-width: 420px;
+    }
+    .mode { padding: 1rem 1.1rem 1rem 1.3rem; }
+    .mode-icone { width: 46px; height: 46px; }
+    .mode-texte strong { font-size: 1rem; }
+    .mode-texte small { font-size: 0.77rem; }
 }
 
-/* ── QuizzlySpeed Button (homepage) ── */
-.btn-speed {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.25rem;
-    padding: 1rem 2.5rem;
-    background: linear-gradient(135deg, rgba(255,140,0,0.15), rgba(255,69,0,0.12));
-    border: 2px solid transparent;
-    border-radius: 50px;
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 800;
-    letter-spacing: 0.02em;
-    position: relative;
-    transition: transform 0.35s cubic-bezier(0.175,0.885,0.32,1.275), box-shadow 0.35s;
-    cursor: pointer;
-    overflow: hidden;
-}
-.btn-speed::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: 50px;
-    padding: 2px;
-    background: linear-gradient(135deg, #ff8c00, #ff4500, #ffd700);
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    pointer-events: none;
-}
-.btn-speed::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(255,140,0,0.2), rgba(255,69,0,0.15));
-    opacity: 0;
-    transition: opacity 0.3s;
-    border-radius: 50px;
-}
-.btn-speed:hover {
-    transform: translateY(-4px) scale(1.04);
-    box-shadow: 0 12px 35px rgba(255,140,0,0.4), 0 0 30px rgba(255,69,0,0.2);
-}
-.btn-speed:hover::after { opacity: 1; }
-.btn-speed-sub {
-    font-size: 0.75rem;
-    font-weight: 500;
-    opacity: 0.7;
-    letter-spacing: 0.01em;
+@media (prefers-reduced-motion: reduce) {
+    .mode, .mode-fleche { transition: none; }
+    .mode:hover { transform: none; }
 }
 
 /* Hero Section */
@@ -2545,16 +2541,7 @@ body.visite-active {
     .hero p { font-size: 1rem; }
     .hero .subtitle { font-size: 0.84rem; }
 
-    /* Les deux modes prennent toute la largeur au lieu d'une colonne etroite */
-    .btn-random,
-    .btn-speed {
-        width: 100%;
-        padding: 0.9rem 1rem;
-        font-size: 1.02rem;
-    }
-
-    .btn-random-sub,
-    .btn-speed-sub { font-size: 0.76rem; }
+    /* Les cartes de mode sont réglées dans leur propre bloc, plus haut */
 
     .btn-visite { margin-top: 1.1rem; }
 
@@ -2659,17 +2646,4 @@ body.visite-active {
     }
 }
 
-/* Illustration dans les boutons de mode de jeu.
-   Les boutons sont en colonne : l'image occupe donc sa propre ligne,
-   au-dessus du titre. On la dimensionne en conséquence. */
-.icone-mode {
-    width: 46px;
-    height: 46px;
-    object-fit: contain;
-    margin-bottom: 0.15rem;
-    filter: drop-shadow(0 3px 8px rgba(0,0,0,0.45));
-}
-
-@media (max-width: 560px) {
-    .icone-mode { width: 38px; height: 38px; }
 }

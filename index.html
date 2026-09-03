@@ -78,14 +78,22 @@
             <h1>Bienvenue sur QuizzlyUnivers</h1>
             <p>Animaux, géographie, histoire, cinéma, Pokémon, Marvel et bien d'autres univers</p>
             <p class="subtitle">Des questions vérifiées et sourcées · 3 niveaux de difficulté · 100 % gratuit</p>
-            <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; margin-top:2rem;">
-                <a href="quiz-aleatoire.html" class="btn-random" style="margin-top:0;">
-                    <img src="img/des.png" alt="" class="icone-mode" width="256" height="256"> Mode Aléatoire
-                    <span class="btn-random-sub">10 questions de tous les thèmes</span>
+            <div class="modes">
+                <a href="quiz-aleatoire.html" class="mode mode-aleatoire">
+                    <img src="img/des.png" alt="" class="mode-icone" width="256" height="256">
+                    <span class="mode-texte">
+                        <strong>Mode Aléatoire</strong>
+                        <small>10 questions tirées de tous les thèmes</small>
+                    </span>
+                    <span class="mode-fleche" aria-hidden="true">→</span>
                 </a>
-                <a href="quiz-speed.html" class="btn-speed">
-                    <img src="img/chrono.png" alt="" class="icone-mode" width="256" height="256"> QuizzlySpeed
-                    <span class="btn-speed-sub">Culture G · Chrono 10s · Points vitesse</span>
+                <a href="quiz-speed.html" class="mode mode-chrono">
+                    <img src="img/chrono.png" alt="" class="mode-icone" width="256" height="256">
+                    <span class="mode-texte">
+                        <strong>QuizzlySpeed</strong>
+                        <small>Culture générale · 10 s par question</small>
+                    </span>
+                    <span class="mode-fleche" aria-hidden="true">→</span>
                 </a>
             </div>
             <button type="button" id="bouton-visite" class="btn-visite">
